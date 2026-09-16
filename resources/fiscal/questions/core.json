@@ -1,0 +1,27 @@
+[
+  {
+    "fact_key": "provider.municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento prestador?",
+    "rank": 10,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.event_municipality_ibge",
+    "prompt": "Em qual município o evento foi realizado?",
+    "rank": 20,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.construction_municipality_ibge",
+    "prompt": "Em qual município a obra está localizada?",
+    "rank": 20,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.construction_work_id",
+    "prompt": "Qual é o identificador da obra?",
+    "rank": 30,
+    "answer_type": "STRING"
+  }
+]
+
