@@ -1,0 +1,53 @@
+services:
+  app:
+    build:
+      context: .
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "true"
+      DB_CONNECTION: pgsql
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: fiscal_engine
+      DB_USERNAME: fiscal_engine
+      DB_PASSWORD: fiscal_engine_local
+      CACHE_STORE: array
+      QUEUE_CONNECTION: sync
+      SESSION_DRIVER: array
+    volumes:
+      - .:/var/www/html
+      - vendor_data:/var/www/html/vendor
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    image: nginx:1.28-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html:ro
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app
+
+  postgres:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_DB: fiscal_engine
+      POSTGRES_USER: fiscal_engine
+      POSTGRES_PASSWORD: fiscal_engine_local
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fiscal_engine -d fiscal_engine"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  vendor_data:
+
