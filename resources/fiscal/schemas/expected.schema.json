@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiscal-engine.local/schemas/expected.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status"],
+  "properties": {
+    "status": {"enum": ["VALID", "VALID_WITH_WARNINGS", "ACTION_REQUIRED", "INVALID"]},
+    "reason_codes": {"type": "array", "items": {"type": "string"}},
+    "missing_facts": {"type": "array", "items": {"type": "string"}},
+    "decision": {"type": "object"}
+  }
+}
+

@@ -1,0 +1,15 @@
+[
+  {"key": "provider.tax_regime", "type": "ENUM", "material": true, "allowed_values": ["SIMPLES_NACIONAL", "MEI", "LUCRO_PRESUMIDO", "LUCRO_REAL"]},
+  {"key": "provider.municipality_ibge", "type": "CODE", "material": true},
+  {"key": "customer.municipality_ibge", "type": "CODE", "material": true},
+  {"key": "service.lc116_code", "type": "CODE", "material": true},
+  {"key": "service.ctribnac_code", "type": "CODE", "material": true},
+  {"key": "operation.amount", "type": "DECIMAL", "material": true},
+  {"key": "operation.execution_municipality_ibge", "type": "CODE", "material": false},
+  {"key": "operation.event_municipality_ibge", "type": "CODE", "material": false},
+  {"key": "operation.construction_municipality_ibge", "type": "CODE", "material": false},
+  {"key": "operation.construction_work_id", "type": "STRING", "material": false},
+  {"key": "resolved.iss.rate", "type": "DECIMAL", "material": true},
+  {"key": "resolved.iss.location_strategy", "type": "ENUM", "material": true, "allowed_values": ["PROVIDER_ESTABLISHMENT", "SERVICE_EXECUTION_LOCATION", "EVENT_LOCATION", "CONSTRUCTION_WORK_LOCATION", "CUSTOMER_ESTABLISHMENT", "IMPORT_CUSTOMER_LOCATION"]}
+]
+

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiscal-engine.local/schemas/fact-definitions.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["key", "type", "material"],
+    "properties": {
+      "key": {"type": "string", "pattern": "^[a-z][a-z0-9_.]+$"},
+      "type": {"enum": ["BOOLEAN", "STRING", "CODE", "INTEGER", "DECIMAL", "DATE", "ENUM"]},
+      "material": {"type": "boolean"},
+      "allowed_values": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+    }
+  }
+}
+

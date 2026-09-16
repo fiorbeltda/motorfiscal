@@ -1,0 +1,18 @@
+{
+  "rule_id": "TEST.PROVIDER.SIMPLES",
+  "version": "1.0.0",
+  "kind": "CLASSIFICATION",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {
+    "all": [
+      {"fact": "provider.tax_regime", "operator": "EQ", "value": "SIMPLES_NACIONAL"}
+    ]
+  },
+  "effects": [
+    {"type": "SET_DECISION_VALUE", "path": "test.provider_simples", "value": true}
+  ],
+  "source_id": "SOURCE.SYNTHETIC.TEST",
+  "reason_codes": ["TEST_PROVIDER_SIMPLES_MATCHED"]
+}
+

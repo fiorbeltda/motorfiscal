@@ -4,7 +4,5 @@ includes:
 parameters:
     paths:
         - app/Modules
-        - app/Console
     level: 8
     treatPhpDocTypesAsCertain: false
-

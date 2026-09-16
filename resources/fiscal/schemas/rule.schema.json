@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiscal-engine.local/schemas/rule.schema.json",
+  "title": "Fiscal Rule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["rule_id", "version", "kind", "effective_from", "when", "effects", "source_id", "reason_codes"],
+  "properties": {
+    "rule_id": {"type": "string", "pattern": "^[A-Z0-9_.-]+$"},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "kind": {"enum": ["CLASSIFICATION", "INCIDENCE", "LOCATION", "RESPONSIBILITY", "TREATMENT", "CALCULATION", "PROJECTION", "INVARIANT"]},
+    "effective_from": {"type": "string", "format": "date"},
+    "effective_to": {"type": ["string", "null"], "format": "date"},
+    "when": {"$ref": "#/$defs/condition"},
+    "effects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {"enum": ["SELECT_STRATEGY", "SET_DECISION_VALUE", "ADD_CANDIDATE", "EXCLUDE_CANDIDATE", "APPLY_TREATMENT", "SET_RESPONSIBLE_PARTY", "SET_TEMPORAL_ANCHOR", "REQUIRE_DETAIL_GROUP", "ADD_OBLIGATION_IMPACT", "ADD_WARNING", "REQUEST_MANUAL_REVIEW", "SELECT_FORMULA"]}
+        }
+      }
+    },
+    "source_id": {"type": "string", "minLength": 1},
+    "reason_codes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "condition": {
+      "oneOf": [
+        {"type": "object", "required": ["all"], "additionalProperties": false, "properties": {"all": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}}}},
+        {"type": "object", "required": ["any"], "additionalProperties": false, "properties": {"any": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}}}},
+        {"type": "object", "required": ["not"], "additionalProperties": false, "properties": {"not": {"$ref": "#/$defs/condition"}}},
+        {
+          "type": "object",
+          "required": ["operator"],
+          "anyOf": [{"required": ["fact"]}, {"required": ["left_fact"]}],
+          "properties": {
+            "fact": {"type": "string"},
+            "left_fact": {"type": "string"},
+            "right_fact": {"type": "string"},
+            "operator": {"enum": ["EQ", "NEQ", "IN", "NOT_IN", "EXISTS", "NOT_EXISTS", "GT", "GTE", "LT", "LTE", "BETWEEN", "DATE_BEFORE", "DATE_ON_OR_BEFORE", "DATE_AFTER", "DATE_ON_OR_AFTER", "CODE_PREFIX", "IN_CATALOG", "NOT_IN_CATALOG"]},
+            "value": {},
+            "catalog": {"type": "string"}
+          }
+        }
+      ]
+    }
+  }
+}
+

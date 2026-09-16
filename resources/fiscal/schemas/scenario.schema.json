@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiscal-engine.local/schemas/scenario.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scenario_id", "competence_date", "knowledge_at", "rule_bundle_id", "facts"],
+  "properties": {
+    "scenario_id": {"type": "string", "minLength": 1},
+    "competence_date": {"type": "string", "format": "date"},
+    "knowledge_at": {"type": "string", "format": "date-time"},
+    "rule_bundle_id": {"type": "string", "minLength": 1},
+    "catalog_versions": {"type": "object", "additionalProperties": {"type": "string"}},
+    "facts": {"type": "object"}
+  }
+}
+

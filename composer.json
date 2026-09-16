@@ -6,6 +6,7 @@
     "keywords": ["laravel", "fiscal-engine", "rules-engine", "nfse", "iss"],
     "license": "MIT",
     "require": {
+        "brick/math": "^0.18",
         "php": "^8.5",
         "laravel/framework": "^13.0",
         "opis/json-schema": "^2.6"
