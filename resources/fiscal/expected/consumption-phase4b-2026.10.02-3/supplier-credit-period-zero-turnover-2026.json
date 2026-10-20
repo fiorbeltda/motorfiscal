@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_PERIOD_ZERO_TURNOVER_POLICY_REQUIRED"
+  ],
+  "missing_facts": [
+    "rtc.supplier_credit_period"
+  ],
+  "decision_hash": "731f664a8f8656e95dff576a10684afd08281cb262c4bf3fc9f4e5a231709dbc"
+}

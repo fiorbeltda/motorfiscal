@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_PERSONAL_USE_INPUT_CREDIT_BASIS_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "57b9ff7f5db26242747fbbb853263ca20769bd7d273058cda53d6580da95ffb3"
+}

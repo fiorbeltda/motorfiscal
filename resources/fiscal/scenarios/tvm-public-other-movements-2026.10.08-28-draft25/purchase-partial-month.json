@@ -1,0 +1,1552 @@
+{
+    "evidence_scope": "SYNTHETIC_PRIVATE_REALIZATION_JOURNALS_NOT_TAXPAYER_BOOK_APPROVAL",
+    "identity": {
+        "generated_at": "2026-10-06T08:00:00.000-03:00",
+        "event_sequence": 1
+    },
+    "book": {
+        "supplier_id": "11111111000191",
+        "document_id": "dps-1",
+        "period_end": "2026-09-30",
+        "observed_on": "2026-10-06",
+        "analytical_book_complete": true,
+        "pgcc_complete": true,
+        "pgcc_account_mapping_qualified": true,
+        "opening_balances_qualified": true,
+        "book_source_hash": "452cd42ca3d79a7bc7147f861010650c4a4b0b597857c466ff3419fc2e072839",
+        "pgcc_source_hash": "e906954749a84abd32e2791e93a2316837499b948111e0fd4f982f5086c35f0d",
+        "book_evidence_id": "FIXTURE.BOOK",
+        "pgcc_evidence_id": "FIXTURE.PGCC",
+        "first_reporting_period": false,
+        "closing_frequency": "M",
+        "accounts": [
+            {
+                "cCta": "interest000",
+                "natSaldoInic": "C",
+                "vSaldoInic": "0.00",
+                "vMovDebt": "0.00",
+                "vMovCred": "1000.00",
+                "natSaldoFinal": "C",
+                "vSaldoFinal": "1000.00",
+                "natVApur": "C",
+                "vApur": "1000.00",
+                "financial_entry_ids": [
+                    "interest"
+                ],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "0.00",
+                    "nature": "C",
+                    "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+                },
+                "vAjusteCred": "0.00",
+                "vAjusteDebt": "0.00"
+            },
+            {
+                "cCta": "principal000",
+                "natSaldoInic": "D",
+                "vSaldoInic": "0.00",
+                "vMovDebt": "10000.00",
+                "vMovCred": "0.00",
+                "natSaldoFinal": "D",
+                "vSaldoFinal": "10000.00",
+                "natVApur": "D",
+                "vApur": "10000.00",
+                "financial_entry_ids": [
+                    "principal"
+                ],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "0.00",
+                    "nature": "D",
+                    "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+                }
+            },
+            {
+                "cCta": "funding000",
+                "natSaldoInic": "D",
+                "vSaldoInic": "0.00",
+                "vMovDebt": "200.00",
+                "vMovCred": "0.00",
+                "natSaldoFinal": "D",
+                "vSaldoFinal": "200.00",
+                "natVApur": "D",
+                "vApur": "200.00",
+                "financial_entry_ids": [
+                    "funding"
+                ],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "0.00",
+                    "nature": "D",
+                    "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+                }
+            },
+            {
+                "cCta": "correspondent000",
+                "natSaldoInic": "D",
+                "vSaldoInic": "0.00",
+                "vMovDebt": "100.00",
+                "vMovCred": "0.00",
+                "natSaldoFinal": "D",
+                "vSaldoFinal": "100.00",
+                "natVApur": "D",
+                "vApur": "100.00",
+                "financial_entry_ids": [
+                    "correspondent"
+                ],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "0.00",
+                    "nature": "D",
+                    "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+                }
+            },
+            {
+                "cCta": "debt000",
+                "natSaldoInic": "D",
+                "vSaldoInic": "11075.00",
+                "vMovDebt": "50.00",
+                "vMovCred": "5562.50",
+                "vAjusteDebt": "50.00",
+                "vAjusteCred": "0.00",
+                "natSaldoFinal": "D",
+                "vSaldoFinal": "5562.50",
+                "natVApur": "D",
+                "vApur": "0.00",
+                "financial_entry_ids": [],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "11075.00",
+                    "nature": "D",
+                    "source_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+                }
+            },
+            {
+                "cCta": "cash000",
+                "natSaldoInic": "D",
+                "vSaldoInic": "10000.00",
+                "vMovDebt": "5562.50",
+                "vMovCred": "0.00",
+                "vAjusteDebt": "5562.50",
+                "vAjusteCred": "0.00",
+                "natSaldoFinal": "D",
+                "vSaldoFinal": "15562.50",
+                "natVApur": "D",
+                "vApur": "0.00",
+                "financial_entry_ids": [],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "10000.00",
+                    "nature": "D",
+                    "source_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+                }
+            },
+            {
+                "cCta": "curve000",
+                "natSaldoInic": "C",
+                "vSaldoInic": "0.00",
+                "vMovDebt": "0.00",
+                "vMovCred": "50.00",
+                "vAjusteDebt": "0.00",
+                "vAjusteCred": "50.00",
+                "natSaldoFinal": "C",
+                "vSaldoFinal": "50.00",
+                "natVApur": "C",
+                "vApur": "0.00",
+                "financial_entry_ids": [
+                    "yield1"
+                ],
+                "previous_balance": {
+                    "period": "2026-08",
+                    "amount": "0.00",
+                    "nature": "C",
+                    "source_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+                }
+            }
+        ],
+        "pgcc_accounts": [
+            {
+                "cCta": "interest000",
+                "indCta": "A",
+                "codNat": "4",
+                "valid_from": "2026-01-01"
+            },
+            {
+                "cCta": "principal000",
+                "indCta": "A",
+                "codNat": "1",
+                "valid_from": "2026-01-01"
+            },
+            {
+                "cCta": "funding000",
+                "indCta": "A",
+                "codNat": "5",
+                "valid_from": "2026-01-01"
+            },
+            {
+                "cCta": "correspondent000",
+                "indCta": "A",
+                "codNat": "5",
+                "valid_from": "2026-01-01"
+            },
+            {
+                "cCta": "debt000",
+                "indCta": "A",
+                "codNat": "1",
+                "valid_from": "2026-01-01"
+            },
+            {
+                "cCta": "cash000",
+                "indCta": "A",
+                "codNat": "1",
+                "valid_from": "2026-01-01"
+            },
+            {
+                "cCta": "curve000",
+                "indCta": "A",
+                "codNat": "4",
+                "valid_from": "2026-01-01"
+            }
+        ]
+    },
+    "deductions": {
+        "supplier_id": "11111111000191",
+        "document_id": "dps-1",
+        "period_end": "2026-09-30",
+        "observed_on": "2026-10-05",
+        "documents_qualified": true,
+        "deduction_allocation_complete": true,
+        "monthly_period_closed_previously": false,
+        "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "documents": [
+            {
+                "tpDFe": "03",
+                "chDFe": "11111111111111111111111111111111111111111111",
+                "dtEmi": "2026-09-20",
+                "tpAtiv": "01",
+                "vOper": "100.00",
+                "vDedTotal": "100.00",
+                "vDed": "100.00",
+                "document_validity_qualified": true,
+                "document_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "evidence_id": "FIXTURE.DFE",
+                "financial_entry_ids": [
+                    "correspondent"
+                ],
+                "items": [],
+                "pgcc_account_codes": [
+                    "correspondent000"
+                ],
+                "account_binding_evidence": {
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "evidence_id": "FIXTURE.D1121.DOCUMENT.ACCOUNT",
+                    "observed_on": "2026-10-05",
+                    "valid_from": "2026-09-01",
+                    "valid_to": "2026-09-30",
+                    "scope": "SYNTHETIC_DOCUMENT_ACCOUNT_BINDING_NO_REMOTE_VERIFICATION",
+                    "value": {
+                        "chDFe": "11111111111111111111111111111111111111111111",
+                        "tpDFe": "03",
+                        "dtEmi": "2026-09-20",
+                        "tpAtiv": "01",
+                        "vDed": "100.00",
+                        "financial_entry_ids": [
+                            "correspondent"
+                        ],
+                        "pgcc_account_codes": [
+                            "correspondent000"
+                        ],
+                        "period_end": "2026-09-30"
+                    },
+                    "source_hash": "af3a0c67d150de182b5abea6072ca87c69e04bf9dfe4c4715880f26e52190f54"
+                }
+            }
+        ]
+    },
+    "prerequisites": {
+        "supplier_id": "11111111000191",
+        "period_end": "2026-09-30",
+        "pgcc_source_hash": "e906954749a84abd32e2791e93a2316837499b948111e0fd4f982f5086c35f0d",
+        "contributor_registration_qualified": true,
+        "auxiliary_obligations_qualified": true,
+        "contributor_source_hash": "e266a42eb0e03177ca5f09a90c7314a7f9ad99fd0ff1d4c0eeabad988430fa07",
+        "obligations_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04",
+        "existing_closing": false,
+        "negative_base_use_requested": false,
+        "D1106_required": false,
+        "D2101_required": true,
+        "D1121_required": true
+    },
+    "contributor": {
+        "complete": true,
+        "supplier_id": "11111111000191",
+        "registered_supplier_id": "11111111000191",
+        "registration_status": "ACTIVE",
+        "registration_qualified": true,
+        "regimes_qualified": true,
+        "tax_nature_qualified": true,
+        "dere_start_qualified": true,
+        "valid_from": "2026-01-01",
+        "period_end": "2026-09-30",
+        "observed_on": "2026-10-05",
+        "registration_validity": {
+            "valid_from": "2026-01-01",
+            "valid_to": "2026-12-31"
+        },
+        "dere_start_on": "2026-01-01",
+        "regTribPrinc": "1",
+        "regTribSecund": [],
+        "indNatTrib": "0",
+        "servFinanc": {
+            "tpAtividades": [
+                "01A",
+                "03A"
+            ]
+        },
+        "evidence_scope": "SYNTHETIC_CONTRIBUTOR_AND_START_CALENDAR",
+        "evidence": {
+            "registration": {
+                "evidence_id": "FIXTURE.D1001.REGISTRATION",
+                "supplier_id": "11111111000191",
+                "qualified": true,
+                "value": "ACTIVE",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "observed_on": "2026-10-05",
+                "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+                "source_hash": "866344d22e6353447363ca3916827da30c8a3339763e2526718e2a65932f55e9"
+            },
+            "regimes": {
+                "evidence_id": "FIXTURE.D1001.REGIMES",
+                "supplier_id": "11111111000191",
+                "qualified": true,
+                "value": {
+                    "principal": "1",
+                    "secondary": []
+                },
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "observed_on": "2026-10-05",
+                "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+                "source_hash": "23a28d1e5c67eaa10efb9047cadd0a2e93681c3fed975d1d2762e3f34a11a276"
+            },
+            "tax_nature": {
+                "evidence_id": "FIXTURE.D1001.TAX_NATURE",
+                "supplier_id": "11111111000191",
+                "qualified": true,
+                "value": "0",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "observed_on": "2026-10-05",
+                "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+                "source_hash": "3e965f1abc828a6e5b342e0a711f66b14799501bd2aa19c217af573b27c5a722"
+            },
+            "dere_start": {
+                "evidence_id": "FIXTURE.D1001.DERE_START",
+                "supplier_id": "11111111000191",
+                "qualified": true,
+                "value": "2026-01-01",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "observed_on": "2026-10-05",
+                "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+                "source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a"
+            },
+            "activities": {
+                "evidence_id": "FIXTURE.D1001.ACTIVITIES",
+                "supplier_id": "11111111000191",
+                "qualified": true,
+                "value": [
+                    "01A",
+                    "03A"
+                ],
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "observed_on": "2026-10-05",
+                "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+                "source_hash": "799e48c6846d081359106940373c3291738da0fdd21c46c3822c9ecd7f0fbf7b"
+            }
+        },
+        "registration_source_hash": "866344d22e6353447363ca3916827da30c8a3339763e2526718e2a65932f55e9",
+        "regimes_source_hash": "23a28d1e5c67eaa10efb9047cadd0a2e93681c3fed975d1d2762e3f34a11a276",
+        "tax_nature_source_hash": "3e965f1abc828a6e5b342e0a711f66b14799501bd2aa19c217af573b27c5a722",
+        "dere_start_source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a",
+        "activities_source_hash": "799e48c6846d081359106940373c3291738da0fdd21c46c3822c9ecd7f0fbf7b",
+        "source_hash": "e266a42eb0e03177ca5f09a90c7314a7f9ad99fd0ff1d4c0eeabad988430fa07"
+    },
+    "contributor_identity": {
+        "generated_at": "2026-10-05T08:00:00.000-03:00",
+        "event_sequence": 1
+    },
+    "pgcc": {
+        "complete": true,
+        "supplier_id": "11111111000191",
+        "planoCtaRef": "1",
+        "freqEncerr": "M",
+        "period_end": "2026-09-30",
+        "valid_from": "2026-01-01",
+        "observed_on": "2026-10-06",
+        "institution_type": "COMMERCIAL_BANK",
+        "institution_evidence": {
+            "evidence_id": "FIXTURE.PGCC.INSTITUTION",
+            "qualified": true,
+            "supplier_id": "11111111000191",
+            "value": "COMMERCIAL_BANK",
+            "valid_from": "2026-01-01",
+            "valid_to": "2026-12-31",
+            "observed_on": "2026-10-05",
+            "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+            "source_hash": "9cfe086c0de921d109d7ed95437235560079ad66a6ab80e904871924b9539fa1"
+        },
+        "accounts": [
+            {
+                "cCtaInterna": "ASSET",
+                "cDbrMista": "000",
+                "cCta": "ASSET000",
+                "nomeCta": "OPERAÇÕES DE CRÉDITO",
+                "indCta": "S",
+                "nivelCta": 1,
+                "natCta": "D",
+                "codNat": "1",
+                "cCtaRef": "1600000007",
+                "valid_from": "2026-01-01",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.ASSET",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "ASSET000",
+                            "cCtaRef": "1600000007",
+                            "natCta": "D",
+                            "codNat": "1"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "bea767152b8128307ebb1f14308ce6935cf50a6f8e5d559a12f31887c3625c25"
+                }
+            },
+            {
+                "cCtaInterna": "REVENUE",
+                "cDbrMista": "000",
+                "cCta": "REVENUE000",
+                "nomeCta": "RECEITAS OPERACIONAIS",
+                "indCta": "S",
+                "nivelCta": 1,
+                "natCta": "C",
+                "codNat": "4",
+                "cCtaRef": "7100000006",
+                "valid_from": "2026-01-01",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.REVENUE",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "REVENUE000",
+                            "cCtaRef": "7100000006",
+                            "natCta": "C",
+                            "codNat": "4"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "df18d276558a59dd5a92934ecf09c03ab7be1d044e927c944e7a3ebb6ef543d1"
+                }
+            },
+            {
+                "cCtaInterna": "EXPENSE",
+                "cDbrMista": "000",
+                "cCta": "EXPENSE000",
+                "nomeCta": "(-) DESPESAS OPERACIONAIS",
+                "indCta": "S",
+                "nivelCta": 1,
+                "natCta": "D",
+                "codNat": "5",
+                "cCtaRef": "8100000005",
+                "valid_from": "2026-01-01",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.EXPENSE",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "EXPENSE000",
+                            "cCtaRef": "8100000005",
+                            "natCta": "D",
+                            "codNat": "5"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "9df08974426d8047ad26fbdd906657e1daf14170940b4fa9fa50c7e1418fa22c"
+                }
+            },
+            {
+                "cCtaInterna": "interest",
+                "cDbrMista": "000",
+                "cCta": "interest000",
+                "nomeCta": "Rendas - Outros Empréstimos",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "C",
+                "codNat": "4",
+                "cCtaRef": "7110599002",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "REVENUE000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "311011101",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.interest",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "interest000",
+                            "cCtaRef": "7110599002",
+                            "codTrib": "311011101",
+                            "natCta": "C",
+                            "codNat": "4"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "8ab45ea8efdf941b6aad97ccfacfce98150f56637ab988ccf7c4edc9915cf8f7"
+                }
+            },
+            {
+                "cCtaInterna": "principal",
+                "cDbrMista": "000",
+                "cCta": "principal000",
+                "nomeCta": "Saldo Contratual",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "D",
+                "codNat": "1",
+                "cCtaRef": "1612001104",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "ASSET000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "110112001",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.principal",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "principal000",
+                            "cCtaRef": "1612001104",
+                            "codTrib": "110112001",
+                            "natCta": "D",
+                            "codNat": "1"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "d0fe872f0028bd30f838a0b434864a5efaa55704667d6362867b5171aa7f82b9"
+                }
+            },
+            {
+                "cCtaInterna": "funding",
+                "cDbrMista": "000",
+                "cCta": "funding000",
+                "nomeCta": "(-) DESPESAS DE DEPÓSITOS A PRAZO",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "D",
+                "codNat": "5",
+                "cCtaRef": "8113000009",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "EXPENSE000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "411011201",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.funding",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "funding000",
+                            "cCtaRef": "8113000009",
+                            "codTrib": "411011201",
+                            "natCta": "D",
+                            "codNat": "5"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "2c3d68d1c6fef650ef94c74d6b64f4a87b1306f98f8aca62cc828f3824d478ea"
+                }
+            },
+            {
+                "cCtaInterna": "correspondent",
+                "cDbrMista": "000",
+                "cCta": "correspondent000",
+                "nomeCta": "Despesa de correspondente bancario",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "D",
+                "codNat": "5",
+                "cCtaRef": "8199900006",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "EXPENSE000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "411011105",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.CORRESPONDENT",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "correspondent000",
+                            "cCtaRef": "8199900006",
+                            "codTrib": "411011105",
+                            "natCta": "D",
+                            "codNat": "5"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "e39b6f1b584ae8bba2901905e61c231bd371121bb8c21145c5059af265667cef"
+                }
+            },
+            {
+                "cCtaInterna": "TVM",
+                "cDbrMista": "000",
+                "cCta": "TVM000",
+                "nomeCta": "Titulos e valores mobiliarios",
+                "indCta": "S",
+                "nivelCta": 1,
+                "natCta": "D",
+                "codNat": "1",
+                "cCtaRef": "1300000008",
+                "valid_from": "2026-01-01",
+                "mapping_evidence": {
+                    "evidence_id": "FIXTURE.PGCC.TVM000",
+                    "qualified": true,
+                    "supplier_id": "11111111000191",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "TVM000",
+                            "cCtaRef": "1300000008",
+                            "natCta": "D",
+                            "codNat": "1"
+                        }
+                    },
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-05",
+                    "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+                    "source_hash": "39e1e7b8f47b2bba1063a98eba5295be9ba017ed2df645ed1f90a8d9be4685f1"
+                }
+            },
+            {
+                "cCtaInterna": "CASH",
+                "cDbrMista": "000",
+                "cCta": "CASH000",
+                "nomeCta": "Disponibilidades",
+                "indCta": "S",
+                "nivelCta": 1,
+                "natCta": "D",
+                "codNat": "1",
+                "cCtaRef": "1100000002",
+                "valid_from": "2026-01-01",
+                "mapping_evidence": {
+                    "qualified": true,
+                    "evidence_id": "SYNTHETIC.BOOK.JOURNALS",
+                    "supplier_id": "11111111000191",
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-06",
+                    "scope": "SYNTHETIC_INDEPENDENT_ACCOUNTING_JOURNAL_AND_TAX_COMPONENT_MAPPING",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "CASH000",
+                            "natCta": "D",
+                            "codNat": "1",
+                            "cCtaRef": "1100000002"
+                        }
+                    },
+                    "source_hash": "16903649ca07fe7b5b36ccc1f79935e10744232e708f6b3cc22197452bda6991"
+                }
+            },
+            {
+                "cCtaInterna": "debt",
+                "cDbrMista": "000",
+                "cCta": "debt000",
+                "nomeCta": "Synthetic realization debt000",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "D",
+                "codNat": "1",
+                "cCtaRef": "1311033105",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "TVM000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "110113001",
+                "mapping_evidence": {
+                    "qualified": true,
+                    "evidence_id": "SYNTHETIC.BOOK.JOURNALS",
+                    "supplier_id": "11111111000191",
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-06",
+                    "scope": "SYNTHETIC_INDEPENDENT_ACCOUNTING_JOURNAL_AND_TAX_COMPONENT_MAPPING",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "debt000",
+                            "natCta": "D",
+                            "codNat": "1",
+                            "cCtaRef": "1311033105",
+                            "codTrib": "110113001"
+                        }
+                    },
+                    "source_hash": "012e53035ba26c7c25c4d50b621185688f86a993b99fc5708ebbd13bc65c71af"
+                }
+            },
+            {
+                "cCtaInterna": "cash",
+                "cDbrMista": "000",
+                "cCta": "cash000",
+                "nomeCta": "Synthetic realization cash000",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "D",
+                "codNat": "1",
+                "cCtaRef": "1111000008",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "CASH000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "118915099",
+                "mapping_evidence": {
+                    "qualified": true,
+                    "evidence_id": "SYNTHETIC.BOOK.JOURNALS",
+                    "supplier_id": "11111111000191",
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-06",
+                    "scope": "SYNTHETIC_INDEPENDENT_ACCOUNTING_JOURNAL_AND_TAX_COMPONENT_MAPPING",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "cash000",
+                            "natCta": "D",
+                            "codNat": "1",
+                            "cCtaRef": "1111000008",
+                            "codTrib": "118915099"
+                        }
+                    },
+                    "source_hash": "df497effaa0c0496e7c5ed04c743ac419c8e3ded2e986e1119466ebcaeb3c221"
+                }
+            },
+            {
+                "cCtaInterna": "curve",
+                "cDbrMista": "000",
+                "cCta": "curve000",
+                "nomeCta": "Synthetic realization curve000",
+                "indCta": "A",
+                "nivelCta": 2,
+                "natCta": "C",
+                "codNat": "4",
+                "cCtaRef": "7151000000",
+                "valid_from": "2026-01-01",
+                "cCtaSup": "REVENUE000",
+                "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+                "codTrib": "311011201",
+                "mapping_evidence": {
+                    "qualified": true,
+                    "evidence_id": "SYNTHETIC.BOOK.JOURNALS",
+                    "supplier_id": "11111111000191",
+                    "valid_from": "2026-01-01",
+                    "valid_to": "2026-12-31",
+                    "observed_on": "2026-10-06",
+                    "scope": "SYNTHETIC_INDEPENDENT_ACCOUNTING_JOURNAL_AND_TAX_COMPONENT_MAPPING",
+                    "value": {
+                        "institution_type": "COMMERCIAL_BANK",
+                        "mapping": {
+                            "cCta": "curve000",
+                            "natCta": "C",
+                            "codNat": "4",
+                            "cCtaRef": "7151000000",
+                            "codTrib": "311011201"
+                        }
+                    },
+                    "source_hash": "c461d7e580a39c0123ffcd69f46120ad3a296c518fe53538ec8d2bcccc23ccb4"
+                }
+            }
+        ],
+        "source_hash": "e906954749a84abd32e2791e93a2316837499b948111e0fd4f982f5086c35f0d"
+    },
+    "pgcc_identity": {
+        "generated_at": "2026-10-06T08:00:00.000-03:00",
+        "event_sequence": 1,
+        "contributor_supplier_id": "11111111000191",
+        "contributor_qualified": true,
+        "dere_start_qualified": true,
+        "contributor_source_hash": "e266a42eb0e03177ca5f09a90c7314a7f9ad99fd0ff1d4c0eeabad988430fa07",
+        "dere_start_source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a",
+        "contributor_valid_from": "2026-01-01",
+        "dere_start_on": "2026-01-01",
+        "observed_on": "2026-10-06"
+    },
+    "financial_scenario": "purchase-partial-financial.json",
+    "securities_realization_book": [
+        {
+            "parent_id": "tvm1",
+            "asset_account": "debt000",
+            "cash_account": "cash000",
+            "component_accounts": [],
+            "daily_memory": {
+                "status": "RESOLVED",
+                "reason": "RTC_DERE_D2101_DAILY_LOCAL_MEMORY_CALCULATED",
+                "contract": "DERE-D2101-DAILY-MEMORY-LOCAL-2026.10.06-1",
+                "supplier_id": "11111111000191",
+                "period": "2026-09",
+                "idTitulo": "BRFIXTDEB019",
+                "cCta": "debt000",
+                "method": {
+                    "cost_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+                    "event_timing": "BEFORE_DAILY_RATE",
+                    "benchmark_method": "REMAINING_POSITION_COMPOUND_WITH_REALIZED_INTEREST_RETAINED",
+                    "coupon_effect": "ACCOUNTING_ONLY_NO_ACQUISITION_COST_OR_BENCHMARK_REDUCTION",
+                    "normative_homologation_claimed": false
+                },
+                "monthly": {
+                    "vSaldoContIni": "11075.00",
+                    "vEntradas": "0.00",
+                    "vSaidas": "5562.50",
+                    "vJurosRec": "0.00",
+                    "vVarMensal": "50.00",
+                    "vSaldoContFin": "5562.50",
+                    "vSelic": "82.26",
+                    "vPisCofins": "5.00",
+                    "vApur": "45.00"
+                },
+                "closing_quantity": "500.00000000",
+                "closing_acquisition_cost": "5500.00000000",
+                "closing_unit_cost": "11.00000000",
+                "realized_sale_gain": "0.00",
+                "daily_memory": [
+                    {
+                        "date": "2026-09-01",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11000.00000000",
+                        "daily_selic_interest": "5.68260000",
+                        "accumulated_selic_interest": "5.68260000",
+                        "remaining_benchmark_balance": "11005.68260000",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-01",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-02",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11005.68260000",
+                        "daily_selic_interest": "5.68553563",
+                        "accumulated_selic_interest": "11.36813563",
+                        "remaining_benchmark_balance": "11011.36813563",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-02",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-03",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11011.36813563",
+                        "daily_selic_interest": "5.68847278",
+                        "accumulated_selic_interest": "17.05660841",
+                        "remaining_benchmark_balance": "11017.05660841",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-03",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-04",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11017.05660841",
+                        "daily_selic_interest": "5.69141144",
+                        "accumulated_selic_interest": "22.74801985",
+                        "remaining_benchmark_balance": "11022.74801985",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-04",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-05",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "11022.74801985",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "22.74801985",
+                        "remaining_benchmark_balance": "11022.74801985",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-05",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-06",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "11022.74801985",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "22.74801985",
+                        "remaining_benchmark_balance": "11022.74801985",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-06",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-07",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "11022.74801985",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "22.74801985",
+                        "remaining_benchmark_balance": "11022.74801985",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-07",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-08",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11022.74801985",
+                        "daily_selic_interest": "5.69435163",
+                        "accumulated_selic_interest": "28.44237148",
+                        "remaining_benchmark_balance": "11028.44237148",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-08",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-09",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11028.44237148",
+                        "daily_selic_interest": "5.69729333",
+                        "accumulated_selic_interest": "34.13966481",
+                        "remaining_benchmark_balance": "11034.13966481",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11075.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-09",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-10",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11034.13966481",
+                        "daily_selic_interest": "5.70023655",
+                        "accumulated_selic_interest": "39.83990136",
+                        "remaining_benchmark_balance": "11039.83990136",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11125.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-10",
+                        "appropriation": "50.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-11",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "11039.83990136",
+                        "daily_selic_interest": "5.70318129",
+                        "accumulated_selic_interest": "45.54308265",
+                        "remaining_benchmark_balance": "11045.54308265",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11125.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-11",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-12",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "11045.54308265",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "45.54308265",
+                        "remaining_benchmark_balance": "11045.54308265",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11125.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-12",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-13",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "11045.54308265",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "45.54308265",
+                        "remaining_benchmark_balance": "11045.54308265",
+                        "quantity": "1000.00000000",
+                        "acquisition_cost": "11000.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "11125.00000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-13",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-14",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "5522.77154133",
+                        "daily_selic_interest": "2.85306378",
+                        "accumulated_selic_interest": "48.39614643",
+                        "remaining_benchmark_balance": "5525.62460511",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-14",
+                        "appropriation": "0.00000000",
+                        "operations": [
+                            {
+                                "id": "sale1",
+                                "sequence": 1,
+                                "kind": "SELL",
+                                "quantity": "500.00000000",
+                                "acquisition_unit_price": null,
+                                "book_amount": "5562.50",
+                                "acquisition_cost_released": "5500.00000000",
+                                "benchmark_balance_released": "5522.77154132",
+                                "realized_sale_gain": "0.00",
+                                "quantity_after": "500.00000000",
+                                "acquisition_cost_after": "5500.00000000",
+                                "unit_cost_after": "11.00000000",
+                                "book_balance_after": "5562.50000000"
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2026-09-15",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "5525.62460511",
+                        "daily_selic_interest": "2.85453767",
+                        "accumulated_selic_interest": "51.25068410",
+                        "remaining_benchmark_balance": "5528.47914278",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-15",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-16",
+                        "rate_observed": true,
+                        "daily_percent": "0.051660",
+                        "selic_basis": "5528.47914278",
+                        "daily_selic_interest": "2.85601233",
+                        "accumulated_selic_interest": "54.10669643",
+                        "remaining_benchmark_balance": "5531.33515511",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-16",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-17",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5531.33515511",
+                        "daily_selic_interest": "2.80925450",
+                        "accumulated_selic_interest": "56.91595093",
+                        "remaining_benchmark_balance": "5534.14440961",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-17",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-18",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5534.14440961",
+                        "daily_selic_interest": "2.81068126",
+                        "accumulated_selic_interest": "59.72663219",
+                        "remaining_benchmark_balance": "5536.95509087",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-18",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-19",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "5536.95509087",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "59.72663219",
+                        "remaining_benchmark_balance": "5536.95509087",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-19",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-20",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "5536.95509087",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "59.72663219",
+                        "remaining_benchmark_balance": "5536.95509087",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-20",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-21",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5536.95509087",
+                        "daily_selic_interest": "2.81210875",
+                        "accumulated_selic_interest": "62.53874094",
+                        "remaining_benchmark_balance": "5539.76719962",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-21",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-22",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5539.76719962",
+                        "daily_selic_interest": "2.81353697",
+                        "accumulated_selic_interest": "65.35227791",
+                        "remaining_benchmark_balance": "5542.58073659",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-22",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-23",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5542.58073659",
+                        "daily_selic_interest": "2.81496590",
+                        "accumulated_selic_interest": "68.16724381",
+                        "remaining_benchmark_balance": "5545.39570249",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-23",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-24",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5545.39570249",
+                        "daily_selic_interest": "2.81639557",
+                        "accumulated_selic_interest": "70.98363938",
+                        "remaining_benchmark_balance": "5548.21209806",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-24",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-25",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5548.21209806",
+                        "daily_selic_interest": "2.81782596",
+                        "accumulated_selic_interest": "73.80146534",
+                        "remaining_benchmark_balance": "5551.02992402",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-25",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-26",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "5551.02992402",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "73.80146534",
+                        "remaining_benchmark_balance": "5551.02992402",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-26",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-27",
+                        "rate_observed": false,
+                        "daily_percent": "0",
+                        "selic_basis": "5551.02992402",
+                        "daily_selic_interest": "0.00000000",
+                        "accumulated_selic_interest": "73.80146534",
+                        "remaining_benchmark_balance": "5551.02992402",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-27",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-28",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5551.02992402",
+                        "daily_selic_interest": "2.81925708",
+                        "accumulated_selic_interest": "76.62072242",
+                        "remaining_benchmark_balance": "5553.84918110",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-28",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-29",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5553.84918110",
+                        "daily_selic_interest": "2.82068892",
+                        "accumulated_selic_interest": "79.44141134",
+                        "remaining_benchmark_balance": "5556.66987002",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-29",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    },
+                    {
+                        "date": "2026-09-30",
+                        "rate_observed": true,
+                        "daily_percent": "0.050788",
+                        "selic_basis": "5556.66987002",
+                        "daily_selic_interest": "2.82212149",
+                        "accumulated_selic_interest": "82.26353283",
+                        "remaining_benchmark_balance": "5559.49199151",
+                        "quantity": "500.00000000",
+                        "acquisition_cost": "5500.00000000",
+                        "unit_cost": "11.00000000",
+                        "book_balance": "5562.50000000",
+                        "contract_curve_id": "FIXTURE.CURVE.2026-09-30",
+                        "appropriation": "0.00000000",
+                        "operations": []
+                    }
+                ],
+                "daily_rates_applied": 21,
+                "memory_days": 30,
+                "operations_count": 1,
+                "input_hash": "22dca6d60e452086e6209c9dcd5b907ad989765dba283eb032c7fa4606758b5a",
+                "series_hash": "12ad2d87c6d6a16e367dcd5b59031c0c24b8641d1050f7c4af98d5767941a7b1",
+                "official_data_sha256": "43cffec8577702c1afd462ea51c0d27fd60ed77e3864cc543082ad377761be6a",
+                "source_hash": "b7756c7b0cec5cff46d77e1b1ea5d657a4e2476fa6033f8192561c17dd70ab2d",
+                "rounding_contract": "DERE_HALF_EVEN_8_2",
+                "rounding_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04",
+                "memory_evidence_hash": "ad7c66671c5e95daa261566bd9a9a1a76ac3d0086155b0f8273813a4402cb812",
+                "method_evidence_hash": "4e9788f76c319ff1691607bf89d7c7df03ee764b6249c7de577715da16f3d99e",
+                "retention_years": 5,
+                "normative_method_homologated": false,
+                "financial_base_integration_performed": false,
+                "xml_projection_performed": false,
+                "negative_base_created": false,
+                "cross_title_loss_offset_performed": false,
+                "sale_gain_tax_treatment_performed": false,
+                "posting_performed": false,
+                "production_ready": false
+            },
+            "journals": [
+                {
+                    "event_id": "CURVE:2026-09-10",
+                    "parent_id": "tvm1",
+                    "date": "2026-09-10",
+                    "lines": [
+                        {
+                            "cCta": "curve000",
+                            "nature": "C",
+                            "amount": "50.00",
+                            "financial_entry_id": "yield1"
+                        },
+                        {
+                            "cCta": "debt000",
+                            "nature": "D",
+                            "amount": "50.00",
+                            "financial_entry_id": null
+                        }
+                    ]
+                },
+                {
+                    "event_id": "SELL:sale1",
+                    "parent_id": "tvm1",
+                    "date": "2026-09-14",
+                    "lines": [
+                        {
+                            "cCta": "cash000",
+                            "nature": "D",
+                            "amount": "5562.50",
+                            "financial_entry_id": null
+                        },
+                        {
+                            "cCta": "debt000",
+                            "nature": "C",
+                            "amount": "5562.50",
+                            "financial_entry_id": null
+                        }
+                    ]
+                }
+            ],
+            "independent_evidence": {
+                "qualified": true,
+                "evidence_id": "SYNTHETIC.BOOK.JOURNALS",
+                "supplier_id": "11111111000191",
+                "valid_from": "2026-09-01",
+                "valid_to": "2026-09-30",
+                "observed_on": "2026-10-06",
+                "scope": "SYNTHETIC_INDEPENDENT_ACCOUNTING_JOURNAL_AND_TAX_COMPONENT_MAPPING",
+                "value": {
+                    "supplier_id": "11111111000191",
+                    "period": "2026-09",
+                    "parent_id": "tvm1",
+                    "qualification_hash": "fa5585614f00a9d93187da05df1424b09c2cb8b3500302977994f692ccb2bdf4",
+                    "asset_account": "debt000",
+                    "cash_account": "cash000",
+                    "component_accounts": [],
+                    "journals": [
+                        {
+                            "event_id": "CURVE:2026-09-10",
+                            "parent_id": "tvm1",
+                            "date": "2026-09-10",
+                            "lines": [
+                                {
+                                    "cCta": "curve000",
+                                    "nature": "C",
+                                    "amount": "50.00",
+                                    "financial_entry_id": "yield1"
+                                },
+                                {
+                                    "cCta": "debt000",
+                                    "nature": "D",
+                                    "amount": "50.00",
+                                    "financial_entry_id": null
+                                }
+                            ]
+                        },
+                        {
+                            "event_id": "SELL:sale1",
+                            "parent_id": "tvm1",
+                            "date": "2026-09-14",
+                            "lines": [
+                                {
+                                    "cCta": "cash000",
+                                    "nature": "D",
+                                    "amount": "5562.50",
+                                    "financial_entry_id": null
+                                },
+                                {
+                                    "cCta": "debt000",
+                                    "nature": "C",
+                                    "amount": "5562.50",
+                                    "financial_entry_id": null
+                                }
+                            ]
+                        }
+                    ],
+                    "daily_memory_hash": "1774fe66bac10a4d79c4a9956b6425b02d1902410e1f0e7f3fcc24b6a9835db6",
+                    "book_source_hash": "452cd42ca3d79a7bc7147f861010650c4a4b0b597857c466ff3419fc2e072839",
+                    "pgcc_source_hash": "e906954749a84abd32e2791e93a2316837499b948111e0fd4f982f5086c35f0d",
+                    "book_content_hash": "84817cb2768c6947dd645690eb3c994e8f88a03871664931cfe49980cadeb36f",
+                    "pgcc_content_hash": "21c8f0a8e09d16c4633a8cc031505a677366b8fa099e67b5a454d5d456c9114c"
+                },
+                "source_hash": "4859fba02f8fd45f1cafc9004b4a697cf2e3ec623d291be431bb2c850a374cb6"
+            }
+        }
+    ],
+    "debt_yield": {
+        "supplier_id": "11111111000191",
+        "period_end": "2026-09-30",
+        "observed_on": "2026-10-06",
+        "financial_entry_ids": [
+            "yield1"
+        ],
+        "previous_title_balances": {
+            "yield1": {
+                "qualified": true,
+                "evidence_id": "SYNTHETIC.CURRENT.PUBLIC.DEFERRAL.PRIOR.TITLE",
+                "supplier_id": "11111111000191",
+                "valid_from": "2026-08-01",
+                "valid_to": "2026-08-31",
+                "observed_on": "2026-10-06",
+                "scope": "SYNTHETIC_INDEPENDENT_CURRENT_COMPONENT_QUALIFICATION",
+                "value": {
+                    "supplier_id": "11111111000191",
+                    "period": "2026-08",
+                    "idTitulo": "BRFIXTDEB019",
+                    "cCta": "debt000",
+                    "vSaldoContFin": "11075.00"
+                },
+                "source_hash": "a3369487fb1064af40599cd7fae015535204a31ac422e764dccbc788f71fb935"
+            }
+        },
+        "evidence": {
+            "qualified": true,
+            "evidence_id": "SYNTHETIC.CURRENT.PUBLIC.DEFERRAL.MONTH",
+            "supplier_id": "11111111000191",
+            "valid_from": "2026-09-01",
+            "valid_to": "2026-09-30",
+            "observed_on": "2026-10-06",
+            "scope": "SYNTHETIC_INDEPENDENT_CURRENT_COMPONENT_QUALIFICATION",
+            "value": {
+                "supplier_id": "11111111000191",
+                "period_end": "2026-09-30",
+                "detail": {
+                    "supplier_id": "11111111000191",
+                    "period_end": "2026-09-30",
+                    "observed_on": "2026-10-06",
+                    "financial_entry_ids": [
+                        "yield1"
+                    ],
+                    "previous_title_balances": {
+                        "yield1": {
+                            "qualified": true,
+                            "evidence_id": "SYNTHETIC.CURRENT.PUBLIC.DEFERRAL.PRIOR.TITLE",
+                            "supplier_id": "11111111000191",
+                            "valid_from": "2026-08-01",
+                            "valid_to": "2026-08-31",
+                            "observed_on": "2026-10-06",
+                            "scope": "SYNTHETIC_INDEPENDENT_CURRENT_COMPONENT_QUALIFICATION",
+                            "value": {
+                                "supplier_id": "11111111000191",
+                                "period": "2026-08",
+                                "idTitulo": "BRFIXTDEB019",
+                                "cCta": "debt000",
+                                "vSaldoContFin": "11075.00"
+                            },
+                            "source_hash": "a3369487fb1064af40599cd7fae015535204a31ac422e764dccbc788f71fb935"
+                        }
+                    }
+                },
+                "operation_hash": "d2a825a5b248625b9fb66a294c480d079e29f6ce8daf58f340d3963d2bb1a7f7",
+                "book_input_hash": "84817cb2768c6947dd645690eb3c994e8f88a03871664931cfe49980cadeb36f",
+                "pgcc_source_hash": "e906954749a84abd32e2791e93a2316837499b948111e0fd4f982f5086c35f0d"
+            },
+            "source_hash": "504f9114f5a14f931c51a4f142872afa8933b9bd7577151531282811ee7481f3"
+        }
+    }
+}

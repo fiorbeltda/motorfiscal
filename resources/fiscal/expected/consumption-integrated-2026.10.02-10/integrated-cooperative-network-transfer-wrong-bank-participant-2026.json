@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_BANK_PARTICIPANT_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "36d7afccd2ab45b008a2823fe83e478997a974541a78f0fe56001f230e76dfb7"
+}

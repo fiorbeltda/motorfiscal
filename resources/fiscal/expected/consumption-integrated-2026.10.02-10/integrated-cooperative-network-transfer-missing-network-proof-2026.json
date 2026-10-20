@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_NETWORK_EVIDENCE_MISSING:acquirer_registry_evidence_id"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_zero_proof"
+  ],
+  "decision_hash": "1faf5543a77fbc5591f263a594109bf5dca6b6eca73e972347cd5fc46d753583"
+}

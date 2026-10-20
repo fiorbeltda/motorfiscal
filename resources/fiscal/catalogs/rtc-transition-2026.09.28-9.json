@@ -1,0 +1,126 @@
+{
+  "version": "2026.09.28-9",
+  "status": "SANDBOX_CANDIDATE",
+  "source_id": "LC214-CONSOLIDATED-CAMARA-2026",
+  "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+  "simples_option_windows": [
+    {
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-06-30",
+      "filing_from": "2026-09-01",
+      "filing_to": "2026-09-30",
+      "cancellation_through": "2026-11-30",
+      "published_at": "2026-09-18T00:00:00-03:00",
+      "status": "ACTIVE",
+      "source_id": "RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918",
+      "source_hash": "b19d49de35ce6bf2a9d446f2c7c204e39f91899e7525e6842d7c982bcc7776cb"
+    },
+    {
+      "valid_from": "2027-07-01",
+      "valid_to": "2027-12-31",
+      "filing_from": "2027-03-01",
+      "filing_to": "2027-03-31",
+      "cancellation_through": "2027-05-31",
+      "published_at": "2026-08-12T09:41:00-03:00",
+      "status": "ACTIVE",
+      "source_id": "CGSN-SIMPLES-OPTIONS-2027-GOVBR-2026",
+      "source_hash": "26a26fc6d16f7515464c404390fb31fd7c025e3b1057d6e17510f162814d9a8a"
+    }
+  ],
+  "rows": [
+    {
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "TEST",
+      "iss_factor": "1.00",
+      "icms_factor": "1.00",
+      "pis_cofins_status": "COEXISTS",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 arts. 343, 346"
+    },
+    {
+      "valid_from": "2027-01-01",
+      "valid_to": "2028-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "INITIAL",
+      "iss_factor": "1.00",
+      "icms_factor": "1.00",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 arts. 344-347"
+    },
+    {
+      "valid_from": "2029-01-01",
+      "valid_to": "2029-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.90",
+      "icms_factor": "0.90",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2030-01-01",
+      "valid_to": "2030-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.80",
+      "icms_factor": "0.80",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2031-01-01",
+      "valid_to": "2031-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.70",
+      "icms_factor": "0.70",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2032-01-01",
+      "valid_to": "2032-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.60",
+      "icms_factor": "0.60",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2033-01-01",
+      "valid_to": "2033-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "FINAL",
+      "iss_factor": "0.00",
+      "icms_factor": "0.00",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "EXTINCT",
+      "source_article": "LC214 transition provisions"
+    }
+  ],
+  "collection_qualification": true,
+  "split_deployments": [],
+  "platform_responsibility_qualification": true,
+  "iss_frozen_transition": true,
+  "iss_frozen_law_source_id": "LC116-CAMARA-20260928",
+  "iss_frozen_law_source_hash": "9f3ea2baf131b8f9712267d503a5a2153ec5c9616d8e8bdd002e4797c70b9a90",
+  "partial_export_domestic_leg": true,
+  "post_iss_integrated": true,
+  "employee_below_market": true,
+  "post_iss_federal_withholdings": true
+}

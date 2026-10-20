@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_EVIDENCE_MISSING:bookkeeping_evidence_id"
+  ],
+  "missing_facts": [
+    "rtc.institutional_immunity_proof"
+  ],
+  "decision_hash": "d8620383132c19ac784880e3d49fa211f162384c32a026996eaf0dd42aa16cb2"
+}

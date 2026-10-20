@@ -11,5 +11,6 @@ final readonly class RuleRelation
         public string $subordinateRuleId,
         public RuleRelationType $type,
         public string $sourceId,
+        public string $sourceVersion = '',
     ) {}
 }

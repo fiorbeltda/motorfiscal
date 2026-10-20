@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_IMPORT_TAXPAYER_DESTINATION_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "1ffa35f790a2257fcd92db18840c109e5bc2828a7e90c986fc9d8c7a1fb8fb61"
+}

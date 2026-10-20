@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PLATFORM_UNREGISTERED_SUPPLIER_NOTICE_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.supplier_taxpayer_authority_notice_id"
+  ],
+  "decision_hash": "24cabc3ca9d8c25cf8d584f25da377bc61f9d23c9e665209648b5e7538c71e5a"
+}

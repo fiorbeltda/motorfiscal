@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_UNPROVEN:resources_applied_in_brazil"
+  ],
+  "missing_facts": [
+    "rtc.institutional_immunity_proof"
+  ],
+  "decision_hash": "534a72a53d8c47e7144a2c4397b0abc7a37356ad2ea51511ce4666490f3c26f9"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_LEGAL_FACTS_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.donation_counterbenefit_evidence_id"
+  ],
+  "decision_hash": "6e6904ff5aaf08b4be8b65604a80c2b98cc4ddb22ed1a8118638ea0824b1689b"
+}

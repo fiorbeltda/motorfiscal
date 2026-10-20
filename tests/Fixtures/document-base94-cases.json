@@ -1,0 +1,1636 @@
+[
+  {
+    "name": "ordinary2026",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "970.75",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "not-net-price1000",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "1000.00"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_RTC_DOCUMENT_BASE_MISMATCH",
+    "independent_decimal_base": "970.75",
+    "independent_decimal_difference": "29.25"
+  },
+  {
+    "name": "explicit-real-zeros",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "0.00",
+      "vPIS": "0.00",
+      "vCOFINS": "0.00",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "1000.00"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "1000.00",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "discount-and-third-party",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "50.00",
+      "vCalcAjusteBCIBSCBS": "100.00",
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "820.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "820.75",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "alternative-real-estate-memory",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": "100.00",
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "870.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "870.75",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "both-adjustments",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": "0.00",
+      "vCalcAjusteBCLocImoveis": "0.00",
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_ALTERNATIVE_BASE_ADJUSTMENTS_CONFLICT"
+  },
+  {
+    "name": "year2027-retains-only-iss",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2027-01-01",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "980.00"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2027-01-01T12:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "980.00",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "year2032-end",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2032-12-31",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "980.00"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2033-01-01T12:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "980.00",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "year2033-no-guess",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2033-01-01",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2033-01-01T12:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_FORMULA_PERIOD_NOT_COVERED"
+  },
+  {
+    "name": "year2025-no-retroactive-guess",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2025-12-31",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_FORMULA_PERIOD_NOT_COVERED"
+  },
+  {
+    "name": "invalid-calendar",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-02-30",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXACT_COMPETENCE_DATE_REQUIRED"
+  },
+  {
+    "name": "datetime-not-civil-date",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16T00:00:00Z",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXACT_COMPETENCE_DATE_REQUIRED"
+  },
+  {
+    "name": "future-document",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-17",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_DOCUMENT_AFTER_KNOWLEDGE"
+  },
+  {
+    "name": "before-observation",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T13:52:59+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_NOT_YET_OBSERVED"
+  },
+  {
+    "name": "bad-policy-contract",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "wrong",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_CONTRACT_NOT_BOUND"
+  },
+  {
+    "name": "bad-policy-annex_sha256",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "wrong",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_CONTRACT_NOT_BOUND"
+  },
+  {
+    "name": "bad-policy-nt_sha256",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "wrong",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_CONTRACT_NOT_BOUND"
+  },
+  {
+    "name": "bad-policy-observed_at",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "wrong"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_SOURCE_CONTRACT_NOT_BOUND"
+  },
+  {
+    "name": "missing-document_id",
+    "document": {
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-operation_id",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-evidence_id",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-competence_date",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-tpEmit",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-tribISSQN",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vServ",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-descIncond",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vCalcAjusteBCIBSCBS",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vCalcAjusteBCLocImoveis",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vISSQN",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vPIS",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vCOFINS",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-vAjusteBCIBSCBSComExt",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "missing-expected_rtc_base_brl",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_EXPLICIT_DOCUMENT_MEMORY_REQUIRED"
+  },
+  {
+    "name": "blank-document_id",
+    "document": {
+      "document_id": " ",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_DOCUMENT_OPERATION_EVIDENCE_IDS_REQUIRED"
+  },
+  {
+    "name": "blank-operation_id",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": " ",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_DOCUMENT_OPERATION_EVIDENCE_IDS_REQUIRED"
+  },
+  {
+    "name": "blank-evidence_id",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": " ",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_DOCUMENT_OPERATION_EVIDENCE_IDS_REQUIRED"
+  },
+  {
+    "name": "numeric-issuer",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": 1,
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_ISS_DOCUMENT_DOMAINS_NOT_BOUND"
+  },
+  {
+    "name": "unknown-iss-domain",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "5",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_ISS_DOCUMENT_DOMAINS_NOT_BOUND"
+  },
+  {
+    "name": "comext-even-zero-forbidden",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "0.00",
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_COMEXT_ADJUSTMENT_PRESENCE_FORBIDDEN_BY_D601"
+  },
+  {
+    "name": "comext-positive-domestic-forbidden",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "100.00",
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_COMEXT_ADJUSTMENT_PRESENCE_FORBIDDEN_BY_D601"
+  },
+  {
+    "name": "positive-export-adjustment-memory",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "3",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "0.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "100.00",
+      "expected_rtc_base_brl": "1090.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "1090.75",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "negative-export-adjustment-memory",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "3",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "0.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "-100.00",
+      "expected_rtc_base_brl": "890.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "890.75",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "zero-export-adjustment-present",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "3",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "0.00",
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "970.75",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "money-float",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": 1000.0,
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "money-null",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": null,
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "money-exponent",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1e3",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "money-space",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": " 1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "money-scale",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.001",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "money-leading-zero",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "01000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "money-negative",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "-1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "negative-zero",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "-0.00",
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_CANONICAL_DECIMAL_MEMORY_REQUIRED"
+  },
+  {
+    "name": "negative-base-not-clamped",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "1001.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_RESULTING_BASE_OUTSIDE_SOURCE_MONEY_DOMAIN"
+  },
+  {
+    "name": "overflow-not-truncated",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "3",
+      "vServ": "999999999999999.99",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": "100.00",
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_RESULTING_BASE_OUTSIDE_SOURCE_MONEY_DOMAIN"
+  },
+  {
+    "name": "unknown-financial-field",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75",
+      "financial_margin": "10.00"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "ACTION_REQUIRED",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_ADDITIONAL_DOCUMENT_MEMORY_NOT_MAPPED"
+  },
+  {
+    "name": "one-cent",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-10-16",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "0.01",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "0.00",
+      "vPIS": "0.00",
+      "vCOFINS": "0.00",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "0.01"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2026-10-16T14:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "0.01",
+    "independent_decimal_difference": "0.00"
+  },
+  {
+    "name": "last2026-day",
+    "document": {
+      "document_id": "SYNTHETIC-DPS-94",
+      "operation_id": "OP-94",
+      "evidence_id": "DECLARED-MEMORY-94",
+      "competence_date": "2026-12-31",
+      "tpEmit": "1",
+      "tribISSQN": "1",
+      "vServ": "1000.00",
+      "descIncond": "0.00",
+      "vCalcAjusteBCIBSCBS": null,
+      "vCalcAjusteBCLocImoveis": null,
+      "vISSQN": "20.00",
+      "vPIS": "1.65",
+      "vCOFINS": "7.60",
+      "vAjusteBCIBSCBSComExt": null,
+      "expected_rtc_base_brl": "970.75"
+    },
+    "policy": {
+      "contract": "NT009-LOCAL-DOCUMENT-BASE-2026.10.16-94",
+      "annex_sha256": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+      "nt_sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+      "observed_at": "2026-10-16T13:53:00.084517+00:00"
+    },
+    "known_at": "2027-01-01T12:00:00+00:00",
+    "expected_status": "LOCAL_DOCUMENT_BASE_MATCH",
+    "expected_reason": "RTC_DOCUMENT_BASE_94_MEMORY_RECONCILED",
+    "independent_decimal_base": "970.75",
+    "independent_decimal_difference": "0.00"
+  }
+]

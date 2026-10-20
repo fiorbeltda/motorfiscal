@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_FINANCIAL_CREDIT_SCOPE_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "efcaeee6529f65ac65b71b2645f08b89fe101a8757f619ee4a662271ef314a95"
+}

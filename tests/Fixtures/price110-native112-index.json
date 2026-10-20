@@ -1,0 +1,805 @@
+{
+  "cases": [
+    {
+      "name": "inherit107-inherit106-inherit105-coincident-material-dates",
+      "path": "tests/Fixtures/price110-native112/000-inherit107-inherit106-inherit105-coincident-material-dates.json",
+      "sha256": "763f50cc3eb79a968f3e03ee91b0ce2b0e34dad783c5fd0f344142e60696ba98"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-iss-both-before-rtc",
+      "path": "tests/Fixtures/price110-native112/001-inherit107-inherit106-inherit105-iss-both-before-rtc.json",
+      "sha256": "8cd61dc679a5ad07ea7464269e3f93dcdaf69f882ad3bc4402634f37e459401a"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-iss-both-after-rtc",
+      "path": "tests/Fixtures/price110-native112/002-inherit107-inherit106-inherit105-iss-both-after-rtc.json",
+      "sha256": "801e729d238bfc7ed109fcb005e20f5a29a5a7c3a3af48aaea64503b452d3a6a"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-iss-distinct-by-role",
+      "path": "tests/Fixtures/price110-native112/003-inherit107-inherit106-inherit105-iss-distinct-by-role.json",
+      "sha256": "efc32d7225f8bf4f6a94c4368dbe10046e0065c6b2aaa906cb95e9e568887f78"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-currency-independent-BRL",
+      "path": "tests/Fixtures/price110-native112/004-inherit107-inherit106-inherit105-currency-independent-brl.json",
+      "sha256": "9050fb618823533d653359ed3fcd9d7fd7c184337fc08ec9d0eb545f727905b0"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-currency-independent-USD",
+      "path": "tests/Fixtures/price110-native112/005-inherit107-inherit106-inherit105-currency-independent-usd.json",
+      "sha256": "eae60d1adcf48f99b6c51c85e2c60fe18df611707f4b10325bcbb9918fa392fe"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-payment-independent-2026-09-01",
+      "path": "tests/Fixtures/price110-native112/006-inherit107-inherit106-inherit105-payment-independent-2026-09-01.json",
+      "sha256": "f60b363e06c4f0513a21d90ce7cdf1e1c2dd01cec38fcaf7dd987078b58d2376"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-payment-independent-2026-10-01",
+      "path": "tests/Fixtures/price110-native112/007-inherit107-inherit106-inherit105-payment-independent-2026-10-01.json",
+      "sha256": "7fc9ed6ac71c875058c07f8b74769aec28dcebc2190cab75d2579cd959f4191e"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+      "path": "tests/Fixtures/price110-native112/008-inherit107-inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery.json",
+      "sha256": "b04b164fa16d51e1a1e1a6fcd3238e5a410c858d4ccc0cad16df2d597b6a5e3b"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-same-unit-equivalent-offsets",
+      "path": "tests/Fixtures/price110-native112/009-inherit107-inherit106-inherit105-same-unit-equivalent-offsets.json",
+      "sha256": "22208248ee348b6a5bec3f7b47b29275e7706f8e61b07cc18e8be3102d7e07a8"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-civil-date-not-utc-date",
+      "path": "tests/Fixtures/price110-native112/010-inherit107-inherit106-inherit105-civil-date-not-utc-date.json",
+      "sha256": "525f83e6823c1d87a6fd0adb2a4de4f1fbcd241f318132e591a3a63a5faee14e"
+    },
+    {
+      "name": "inherit107-inherit106-inherit105-record-order-independent",
+      "path": "tests/Fixtures/price110-native112/011-inherit107-inherit106-inherit105-record-order-independent.json",
+      "sha256": "f8d82c7ecd478b74e4b062d9322a78dccef811d730db34f7d4e09d721accbf56"
+    },
+    {
+      "name": "currency-BRL",
+      "path": "tests/Fixtures/price110-native112/012-currency-brl.json",
+      "sha256": "2baeee416c9c64004749fe1aa6465902a4060bbcb798416e935710be5da2f581"
+    },
+    {
+      "name": "currency-USD",
+      "path": "tests/Fixtures/price110-native112/013-currency-usd.json",
+      "sha256": "f68c660549ea655099a6d927751ad67b934d178b620c6c8b0a2214b66b5dea99"
+    },
+    {
+      "name": "currency-EUR",
+      "path": "tests/Fixtures/price110-native112/014-currency-eur.json",
+      "sha256": "fd23277d0ac1c0517b800a8d111c8b48d2bdebd961ccc43316ced6207679e5e8"
+    },
+    {
+      "name": "currency-AUD",
+      "path": "tests/Fixtures/price110-native112/015-currency-aud.json",
+      "sha256": "3168436e850063f56e215fa0ec032a02ec23aebcdc48156805f6ee9f533346b8"
+    },
+    {
+      "name": "exact-independent-price-0",
+      "path": "tests/Fixtures/price110-native112/016-exact-independent-price-0.json",
+      "sha256": "cfa0342e69ee5269e10a1f9ba808f97dc8d4622bd2cdfc6f084d39d6fd7891a1"
+    },
+    {
+      "name": "exact-independent-price-1",
+      "path": "tests/Fixtures/price110-native112/017-exact-independent-price-1.json",
+      "sha256": "b536fc0c48780655d9c09add79492a178753106741f7f7e6a795950b43ff30b2"
+    },
+    {
+      "name": "exact-independent-price-2",
+      "path": "tests/Fixtures/price110-native112/018-exact-independent-price-2.json",
+      "sha256": "a6d83b5c96f37a79e537b248972ae74ac98fe9b077cfe643d9257c81739b56f1"
+    },
+    {
+      "name": "exact-independent-price-3",
+      "path": "tests/Fixtures/price110-native112/019-exact-independent-price-3.json",
+      "sha256": "9db68db6add48d8b4da65be39ab9119bcde0a530187cac12368f8ebf9ffa6502"
+    },
+    {
+      "name": "exact-independent-price-4",
+      "path": "tests/Fixtures/price110-native112/020-exact-independent-price-4.json",
+      "sha256": "d5dc3bee2fb34d4444e3b2547143ec05bac842f91aaf63becd090ebb364de8a8"
+    },
+    {
+      "name": "record-order-independent",
+      "path": "tests/Fixtures/price110-native112/021-record-order-independent.json",
+      "sha256": "82105805f5992fcabaa3cfd330ef53b7048ed4cd2e40bb5e2d1aad5b8c0d6707"
+    },
+    {
+      "name": "future-revocation-not-yet-effective",
+      "path": "tests/Fixtures/price110-native112/022-future-revocation-not-yet-effective.json",
+      "sha256": "b8675044adacb6aaacfd6af6f77673b77818d9736558b489f14bc871722684ae"
+    },
+    {
+      "name": "equivalent-price-observation-offset",
+      "path": "tests/Fixtures/price110-native112/023-equivalent-price-observation-offset.json",
+      "sha256": "22d2707f0a34758b491f8641b67109dd956469c89007d4a73573b521ddee2f85"
+    },
+    {
+      "name": "price-type-0-0",
+      "path": "tests/Fixtures/price110-native112/024-price-type-0-0.json",
+      "sha256": "8dfbb297e7a445b502a41f7c19b6e339e5b9e33eaf250a20e5b8ff9c3bc2b069"
+    },
+    {
+      "name": "price-type-1-0",
+      "path": "tests/Fixtures/price110-native112/025-price-type-1-0.json",
+      "sha256": "4a2d3bdaed91dccbea7643e76fcdf39e0aa16349fe7adb236d392d54f6dba344"
+    },
+    {
+      "name": "price-type-0-1",
+      "path": "tests/Fixtures/price110-native112/026-price-type-0-1.json",
+      "sha256": "f4a6bee5ff900e5f476a55c0567a39a8035eaf4eb608040d982f0bb5d7aa6a0c"
+    },
+    {
+      "name": "price-type-1-1",
+      "path": "tests/Fixtures/price110-native112/027-price-type-1-1.json",
+      "sha256": "e5f6816282230f0af63a45e7f992e01fc30d4a1558c0094e19322d5209e3c739"
+    },
+    {
+      "name": "price-type-0-2",
+      "path": "tests/Fixtures/price110-native112/028-price-type-0-2.json",
+      "sha256": "afc3f96e460a2522732388b4beffd2be51cf4c3514cd5ffd6ee8be6691c079f6"
+    },
+    {
+      "name": "price-type-1-2",
+      "path": "tests/Fixtures/price110-native112/029-price-type-1-2.json",
+      "sha256": "e9792f1db220eb927b19df903e1dfbfcbfbd4d37c9f3ea1e0824a6ad541ea4f2"
+    },
+    {
+      "name": "price-type-0-3",
+      "path": "tests/Fixtures/price110-native112/030-price-type-0-3.json",
+      "sha256": "862dca343780184965a911a629bd411fe36ea8966659a6c26a0f5c49581b7642"
+    },
+    {
+      "name": "price-type-1-3",
+      "path": "tests/Fixtures/price110-native112/031-price-type-1-3.json",
+      "sha256": "7634e9cef67f068a2e7529393d02d6717d4eaafaf627e770cc636a95706e0afe"
+    },
+    {
+      "name": "price-type-0-4",
+      "path": "tests/Fixtures/price110-native112/032-price-type-0-4.json",
+      "sha256": "d302e672fa783e3d6c52acd07dceda2a4c232850f223c06ff965f7f7e3dc5669"
+    },
+    {
+      "name": "price-type-1-4",
+      "path": "tests/Fixtures/price110-native112/033-price-type-1-4.json",
+      "sha256": "b18559bb6c7560206c5f2f74d91fb2df456a7e9da92d2a8ea1c14213e69e61b2"
+    },
+    {
+      "name": "price-type-0-5",
+      "path": "tests/Fixtures/price110-native112/034-price-type-0-5.json",
+      "sha256": "b56041ef3662d081ef2eb5eb3bdf3a9a7144691feb14da9c36b92a419686903f"
+    },
+    {
+      "name": "price-type-1-5",
+      "path": "tests/Fixtures/price110-native112/035-price-type-1-5.json",
+      "sha256": "885861405f4ddb7d2412be80ad7f7e032f9159166ee16a778869c66b72040862"
+    },
+    {
+      "name": "price-type-0-6",
+      "path": "tests/Fixtures/price110-native112/036-price-type-0-6.json",
+      "sha256": "48f2bb35d3e052d073c2b8383ec46a5d45e77ef9554bf416e3fb7f0ecc75c954"
+    },
+    {
+      "name": "price-type-1-6",
+      "path": "tests/Fixtures/price110-native112/037-price-type-1-6.json",
+      "sha256": "b6981e6058302167698b1f4b0972c2946fb8d84b11369bef869d30a8692b9a38"
+    },
+    {
+      "name": "price-type-0-7",
+      "path": "tests/Fixtures/price110-native112/038-price-type-0-7.json",
+      "sha256": "97101482a441c1bb9c92769c86d5a0c0c0fd5a19f2eaaa2b2a60e7f53d2feb2f"
+    },
+    {
+      "name": "price-type-1-7",
+      "path": "tests/Fixtures/price110-native112/039-price-type-1-7.json",
+      "sha256": "79ccc44492a3bd0d1fc99abe1147c9b7d79e170c1eb104e680b3f06ee2627d76"
+    },
+    {
+      "name": "price-type-0-8",
+      "path": "tests/Fixtures/price110-native112/040-price-type-0-8.json",
+      "sha256": "01bc6f6794a28750703c2c82c0cdd7a820eda6711fc24c0f337a6ee1fb090b1c"
+    },
+    {
+      "name": "price-type-1-8",
+      "path": "tests/Fixtures/price110-native112/041-price-type-1-8.json",
+      "sha256": "0f4312eacaf2e6b756ff8a9d67d9ce488c38fccc312e1f860aa166c880628eba"
+    },
+    {
+      "name": "price-type-0-9",
+      "path": "tests/Fixtures/price110-native112/042-price-type-0-9.json",
+      "sha256": "9f799928650b3d11200681a4c1bf849df412b936dc267289d610b0ed5825aebf"
+    },
+    {
+      "name": "price-type-1-9",
+      "path": "tests/Fixtures/price110-native112/043-price-type-1-9.json",
+      "sha256": "d436fc0cf4e8a02eed26e278a3325333b9b131cbc7108b7237c28dec054dfb37"
+    },
+    {
+      "name": "price-type-0-10",
+      "path": "tests/Fixtures/price110-native112/044-price-type-0-10.json",
+      "sha256": "9efaabacb1bc90a26380f11e40424b148e89b79c89571971b832dd2bf9d79e22"
+    },
+    {
+      "name": "price-type-1-10",
+      "path": "tests/Fixtures/price110-native112/045-price-type-1-10.json",
+      "sha256": "c2dd515e9769485e7b6b9a9aac9771480eed0b61ea1b1a7705577159148e339a"
+    },
+    {
+      "name": "price-type-0-11",
+      "path": "tests/Fixtures/price110-native112/046-price-type-0-11.json",
+      "sha256": "48892dbee710e6d3d93236b3b40ef3c6c7bcecf8b044cfeab808322eb82019a9"
+    },
+    {
+      "name": "price-type-1-11",
+      "path": "tests/Fixtures/price110-native112/047-price-type-1-11.json",
+      "sha256": "b38427defde2aa88d204d58ec2b09362fa70e73048b054e80ee874cafc368140"
+    },
+    {
+      "name": "price-type-0-12",
+      "path": "tests/Fixtures/price110-native112/048-price-type-0-12.json",
+      "sha256": "4b110962a7ab2b4b0e6bff17ed09f2a45de6b1827e1cf19829d71ac085c80f89"
+    },
+    {
+      "name": "price-type-1-12",
+      "path": "tests/Fixtures/price110-native112/049-price-type-1-12.json",
+      "sha256": "f77b9171cd1a596b519e24d16cb2e0e0e89bb90cdde5da9482285248b3db5f5c"
+    },
+    {
+      "name": "price-type-0-13",
+      "path": "tests/Fixtures/price110-native112/050-price-type-0-13.json",
+      "sha256": "91bc5773c3c75c86ad8cdcc19daefbdd5992f9a63716dc18bbee3f9e3fb8efaf"
+    },
+    {
+      "name": "price-type-1-13",
+      "path": "tests/Fixtures/price110-native112/051-price-type-1-13.json",
+      "sha256": "b48e2e561d233ac00c1fc88a9180b24b1238e3db285094de75c42d6d8b87a31c"
+    },
+    {
+      "name": "price-type-0-14",
+      "path": "tests/Fixtures/price110-native112/052-price-type-0-14.json",
+      "sha256": "c166e3195943ae5f429cd7313e73a64c19f452cb324dd0d6dee315faaf5131f7"
+    },
+    {
+      "name": "price-type-1-14",
+      "path": "tests/Fixtures/price110-native112/053-price-type-1-14.json",
+      "sha256": "33b528126a56b2dfcec850fb455a11207699c3666f2ef7b67b518c8ec5e83ebd"
+    },
+    {
+      "name": "price-type-0-15",
+      "path": "tests/Fixtures/price110-native112/054-price-type-0-15.json",
+      "sha256": "4da01cb8ab741dfbcba924633b65e40fdaade866febc8d02287a41916748b963"
+    },
+    {
+      "name": "price-type-1-15",
+      "path": "tests/Fixtures/price110-native112/055-price-type-1-15.json",
+      "sha256": "21acc78a0db262d838469a6f226e68259fe6507d5768bcb689e4854c848c9592"
+    },
+    {
+      "name": "price-type-0-16",
+      "path": "tests/Fixtures/price110-native112/056-price-type-0-16.json",
+      "sha256": "58306406ca25cba575153a8a5ddd63f6413c348cbe2ec381f90c8879a9bc4e22"
+    },
+    {
+      "name": "price-type-1-16",
+      "path": "tests/Fixtures/price110-native112/057-price-type-1-16.json",
+      "sha256": "11429e012923be538c89359c7bc67c5a7ca0cc7c544d1366978dadc92a48d53e"
+    },
+    {
+      "name": "price-type-0-17",
+      "path": "tests/Fixtures/price110-native112/058-price-type-0-17.json",
+      "sha256": "9c8c9c53b885eebbcc94ac5a601584d739fb2c0f9312baff56cffd0cdcc930b4"
+    },
+    {
+      "name": "price-type-1-17",
+      "path": "tests/Fixtures/price110-native112/059-price-type-1-17.json",
+      "sha256": "c9c20b85fbf83cba00b76f45d8d867ceaccc37838875b5057ff4618c6901a9f2"
+    },
+    {
+      "name": "price-type-0-18",
+      "path": "tests/Fixtures/price110-native112/060-price-type-0-18.json",
+      "sha256": "fb6667fbe5618d974e3cb05bf164622c8a70e8c3723b38c93a754e1c5c5c4d72"
+    },
+    {
+      "name": "price-type-1-18",
+      "path": "tests/Fixtures/price110-native112/061-price-type-1-18.json",
+      "sha256": "ffb2a705d3c43756de503c45ce101dc108eeb3f3604e81b4a1a08175e43f55a0"
+    },
+    {
+      "name": "price-type-0-19",
+      "path": "tests/Fixtures/price110-native112/062-price-type-0-19.json",
+      "sha256": "560b0e673979bfd8ee5b725dad228de1bfdfba2992286369eb39616991a70acc"
+    },
+    {
+      "name": "price-type-1-19",
+      "path": "tests/Fixtures/price110-native112/063-price-type-1-19.json",
+      "sha256": "873b4734e314a93c6d6217a08f5eda56dc32063b9c519bec5b0036026597f24b"
+    },
+    {
+      "name": "context-0-document_reference",
+      "path": "tests/Fixtures/price110-native112/064-context-0-document-reference.json",
+      "sha256": "eed979634f5b7778c4309239c3762ba2e82a4c04c67ecbb94f4ced4a235a87ee"
+    },
+    {
+      "name": "context-1-document_reference",
+      "path": "tests/Fixtures/price110-native112/065-context-1-document-reference.json",
+      "sha256": "10ae560930c6ed64dc4b7c48ee0beb281c816833c306f56bf21bdfdeeefed8ac"
+    },
+    {
+      "name": "context-0-contract_reference",
+      "path": "tests/Fixtures/price110-native112/066-context-0-contract-reference.json",
+      "sha256": "abf7b4011dbe77d5d537e17ed445de61a52c32ed6edaacab6487427fb873c3c4"
+    },
+    {
+      "name": "context-1-contract_reference",
+      "path": "tests/Fixtures/price110-native112/067-context-1-contract-reference.json",
+      "sha256": "c0c245264381e84ac56e7e2be311e1d8f89f69c2badb1f479de7c312d989267c"
+    },
+    {
+      "name": "context-0-unit_reference",
+      "path": "tests/Fixtures/price110-native112/068-context-0-unit-reference.json",
+      "sha256": "c63c73326efc9be8db02856188cebada2b97c6e3e7c4f0d27e95f099b61ad3db"
+    },
+    {
+      "name": "context-1-unit_reference",
+      "path": "tests/Fixtures/price110-native112/069-context-1-unit-reference.json",
+      "sha256": "81042899923f21e23dcadf2dd37376af056057a1b22491fc284ef8560808b757"
+    },
+    {
+      "name": "context-0-price_semantics",
+      "path": "tests/Fixtures/price110-native112/070-context-0-price-semantics.json",
+      "sha256": "08482810fe4aa0bb675786f6a4bfe8048bbcdbc02e66ffea5af40f430b277f32"
+    },
+    {
+      "name": "context-1-price_semantics",
+      "path": "tests/Fixtures/price110-native112/071-context-1-price-semantics.json",
+      "sha256": "2c46a8c5d9bf1d47602fe40db94a82a8f0498d22f98ca7904273c001a1efaa40"
+    },
+    {
+      "name": "currency-unmapped-0",
+      "path": "tests/Fixtures/price110-native112/072-currency-unmapped-0.json",
+      "sha256": "1d2d1636a10e5b61fdaedca58a3760c77e0237ce20d3bb69f9840c55ca98d1f1"
+    },
+    {
+      "name": "currency-unmapped-1",
+      "path": "tests/Fixtures/price110-native112/073-currency-unmapped-1.json",
+      "sha256": "e6fd51f4dc93f28b655de29c55f02e772e84499b45e569f235fa2bc83569d727"
+    },
+    {
+      "name": "currency-unmapped-2",
+      "path": "tests/Fixtures/price110-native112/074-currency-unmapped-2.json",
+      "sha256": "071a14e2a1ddadc2e6f5bbf67afca18222029474306dd7e88c855b0a359be19d"
+    },
+    {
+      "name": "currency-unmapped-3",
+      "path": "tests/Fixtures/price110-native112/075-currency-unmapped-3.json",
+      "sha256": "6f3af0ef20a171f8fc806c5e3d9f8602035077bedefbb2fbd4b202db302bdd09"
+    },
+    {
+      "name": "currency-unmapped-4",
+      "path": "tests/Fixtures/price110-native112/076-currency-unmapped-4.json",
+      "sha256": "bbb4db790681d9f9ca5152d139bcec1ed22593313384b1e7c6f98eb0115501c8"
+    },
+    {
+      "name": "currency-unmapped-5",
+      "path": "tests/Fixtures/price110-native112/077-currency-unmapped-5.json",
+      "sha256": "7e70c40477f26fcdb37405941b41a44ef4a0280d965e0313268151cf0fedff45"
+    },
+    {
+      "name": "currency-unmapped-6",
+      "path": "tests/Fixtures/price110-native112/078-currency-unmapped-6.json",
+      "sha256": "db0f4866212c5b4caa6645f0d97ef32ca4806dc4d0db5709446b8a46a0a31402"
+    },
+    {
+      "name": "currency-unmapped-7",
+      "path": "tests/Fixtures/price110-native112/079-currency-unmapped-7.json",
+      "sha256": "7afbe2ca8ae92ff8655f7001aae4b4cc5941b542b8af3ba442d0c03dcf5d8f21"
+    },
+    {
+      "name": "missing-price-field-role",
+      "path": "tests/Fixtures/price110-native112/080-missing-price-field-role.json",
+      "sha256": "745a1b87648ae06534bdb61f018d58f6bad0889b067afb8ceadd5078d4a94c2c"
+    },
+    {
+      "name": "missing-price-field-document_reference",
+      "path": "tests/Fixtures/price110-native112/081-missing-price-field-document-reference.json",
+      "sha256": "2f28ce97c957957e0b2ab608422ef9c21d0b39e4f62e600004cd937cba3eb7e1"
+    },
+    {
+      "name": "missing-price-field-contract_reference",
+      "path": "tests/Fixtures/price110-native112/082-missing-price-field-contract-reference.json",
+      "sha256": "09e79f1132235b3f65e9a6950544f1c6de5d66a1763782137865a615775d63e1"
+    },
+    {
+      "name": "missing-price-field-unit_reference",
+      "path": "tests/Fixtures/price110-native112/083-missing-price-field-unit-reference.json",
+      "sha256": "8de694cfbc3f2604a59db91faec953f0362017e7234abb78b19520c7d2d21fa4"
+    },
+    {
+      "name": "missing-price-field-line_reference",
+      "path": "tests/Fixtures/price110-native112/084-missing-price-field-line-reference.json",
+      "sha256": "c9bf5e8f8b566c5b0e55afcc91f016f50adc9931bb46a1487e3ff6fe34d27369"
+    },
+    {
+      "name": "missing-price-field-price_currency",
+      "path": "tests/Fixtures/price110-native112/085-missing-price-field-price-currency.json",
+      "sha256": "50007ae02254f3e5562846e251f6a569aac245d762b84df0052c9a9b3f6daea7"
+    },
+    {
+      "name": "missing-price-field-service_price",
+      "path": "tests/Fixtures/price110-native112/086-missing-price-field-service-price.json",
+      "sha256": "11aaeb271eb43f7bc2e478de070413263c03b5de893fb32138cda840133c665e"
+    },
+    {
+      "name": "missing-price-field-price_semantics",
+      "path": "tests/Fixtures/price110-native112/087-missing-price-field-price-semantics.json",
+      "sha256": "29834737c784b52f3eb09d0a110a73ada8cad705b83ce968e9ad68323066ae10"
+    },
+    {
+      "name": "rehash-wrong-proof-operation_reference",
+      "path": "tests/Fixtures/price110-native112/088-rehash-wrong-proof-operation-reference.json",
+      "sha256": "32491ee6a14550cc77c606dc4d74948e711845a4476e4aaa2fd69753c804fd6a"
+    },
+    {
+      "name": "rehash-wrong-proof-transaction_evidence_id",
+      "path": "tests/Fixtures/price110-native112/089-rehash-wrong-proof-transaction-evidence-id.json",
+      "sha256": "da069d9d42b8a938b229931ba95796fca4267918d88a7b363ab6cf9a1f763754"
+    },
+    {
+      "name": "rehash-wrong-proof-supplier_id",
+      "path": "tests/Fixtures/price110-native112/090-rehash-wrong-proof-supplier-id.json",
+      "sha256": "ba12f4cb8dae15317bcd17fb9dd1c87c1cb94332a04fd2da5d39dcf2a438118d"
+    },
+    {
+      "name": "rehash-wrong-proof-acquirer_id",
+      "path": "tests/Fixtures/price110-native112/091-rehash-wrong-proof-acquirer-id.json",
+      "sha256": "cf170045e532e28b86a837628891770dfe640e72aa6fe8437de81566d779f06c"
+    },
+    {
+      "name": "rehash-wrong-proof-supplier_municipality",
+      "path": "tests/Fixtures/price110-native112/092-rehash-wrong-proof-supplier-municipality.json",
+      "sha256": "d2f893acb09877ca8ca2817a04cb30f71894651a756a80ebb241af731647fecf"
+    },
+    {
+      "name": "rehash-wrong-proof-dated_identity_binding_hash",
+      "path": "tests/Fixtures/price110-native112/093-rehash-wrong-proof-dated-identity-binding-hash.json",
+      "sha256": "62847bcc32d44dc2916b52938b72436d56fae1c70bdf69229c6c07966be044c2"
+    },
+    {
+      "name": "rehash-wrong-proof-contract_price_currency",
+      "path": "tests/Fixtures/price110-native112/094-rehash-wrong-proof-contract-price-currency.json",
+      "sha256": "1aa349df0b7a7a287e821a417008e0fd51f4e551b4e027650a4cec55620b48b9"
+    },
+    {
+      "name": "rehash-wrong-proof-contract_service_price_total",
+      "path": "tests/Fixtures/price110-native112/095-rehash-wrong-proof-contract-service-price-total.json",
+      "sha256": "804a59f48b6788ba34a24872534ce07807155e50ee709cee5162b93248456926"
+    },
+    {
+      "name": "rehash-wrong-proof-rtc_price_relationship",
+      "path": "tests/Fixtures/price110-native112/096-rehash-wrong-proof-rtc-price-relationship.json",
+      "sha256": "7c28f3cc7af80f0bd353e697a176821cbd6271ba906a6173feec2f8770de4541"
+    },
+    {
+      "name": "rehash-wrong-proof-document-role",
+      "path": "tests/Fixtures/price110-native112/097-rehash-wrong-proof-document-role.json",
+      "sha256": "ab8868ef468383b2587d1281b98509db118e1c013f0a87f474b4599ace093f72"
+    },
+    {
+      "name": "rehash-wrong-proof-document-document_reference",
+      "path": "tests/Fixtures/price110-native112/098-rehash-wrong-proof-document-document-reference.json",
+      "sha256": "e3d92989920140c940d8bb93d3490676841a2dab8715576f69bac5d40ee7f3eb"
+    },
+    {
+      "name": "rehash-wrong-proof-document-contract_reference",
+      "path": "tests/Fixtures/price110-native112/099-rehash-wrong-proof-document-contract-reference.json",
+      "sha256": "66af854736bd47ec2758828e8d90aed820e7fcc351f3ec73a970415a1e590705"
+    },
+    {
+      "name": "rehash-wrong-proof-document-unit_reference",
+      "path": "tests/Fixtures/price110-native112/100-rehash-wrong-proof-document-unit-reference.json",
+      "sha256": "90ed159ce29e758705aecab4b30f198437703de3916dda16ac4d129d1ac5080e"
+    },
+    {
+      "name": "rehash-wrong-proof-document-line_reference",
+      "path": "tests/Fixtures/price110-native112/101-rehash-wrong-proof-document-line-reference.json",
+      "sha256": "a4b052edea24ef827d9e032bbf80b9e7d7ea3f84994fc501b99d28c7ad5a3845"
+    },
+    {
+      "name": "rehash-wrong-proof-document-price_currency",
+      "path": "tests/Fixtures/price110-native112/102-rehash-wrong-proof-document-price-currency.json",
+      "sha256": "e8a62510ecb4b76902eeaed7824908b6ad9925ae7e719245926c80698b0a6ec8"
+    },
+    {
+      "name": "rehash-wrong-proof-document-service_price",
+      "path": "tests/Fixtures/price110-native112/103-rehash-wrong-proof-document-service-price.json",
+      "sha256": "bfc4306e2db9d17bf2e4cca77fb61d44daaf976bb0b622f147cd93f28c82d257"
+    },
+    {
+      "name": "rehash-wrong-proof-document-price_semantics",
+      "path": "tests/Fixtures/price110-native112/104-rehash-wrong-proof-document-price-semantics.json",
+      "sha256": "c98abe3fbaaa259b6342cb4c2a41525333aefee7fa94fa220fb0d220bcc0d7a2"
+    },
+    {
+      "name": "rehash-wrong-proof-document-iss_supply_on",
+      "path": "tests/Fixtures/price110-native112/105-rehash-wrong-proof-document-iss-supply-on.json",
+      "sha256": "f906ab2838d8d85a6e83216cfdd4b596c7990f690ddfbb0bb9f6059d45fac40f"
+    },
+    {
+      "name": "rehash-wrong-proof-document-dps_id",
+      "path": "tests/Fixtures/price110-native112/106-rehash-wrong-proof-document-dps-id.json",
+      "sha256": "19290246a91fba358c14ad953ce115bdd706e484045302ebe86347f7e3c38451"
+    },
+    {
+      "name": "rehash-wrong-proof-document-identity_hash",
+      "path": "tests/Fixtures/price110-native112/107-rehash-wrong-proof-document-identity-hash.json",
+      "sha256": "32f5c631e79609136a0f3bbe073cc2e888671f7ec2de64a23d5f76394c4788a8"
+    },
+    {
+      "name": "rehash-wrong-proof-document-dated_document_hash",
+      "path": "tests/Fixtures/price110-native112/108-rehash-wrong-proof-document-dated-document-hash.json",
+      "sha256": "3175bad7f4a63fa9216eee21bf9a7d499a354fba136a7aeb07001aff772808cd"
+    },
+    {
+      "name": "prices-missing",
+      "path": "tests/Fixtures/price110-native112/109-prices-missing.json",
+      "sha256": "89c246911742f1d06cc4d7a7eba5c260252633343ee0f2264670c74fa79333f1"
+    },
+    {
+      "name": "prices-object",
+      "path": "tests/Fixtures/price110-native112/110-prices-object.json",
+      "sha256": "fff65b356b08fcd08c97103c15fe8d7f908ae320b79e5acee1259d45851c13df"
+    },
+    {
+      "name": "duplicate-role",
+      "path": "tests/Fixtures/price110-native112/111-duplicate-role.json",
+      "sha256": "867f4c4ec22689d6433ff4d38ad6cfcc779fb9fd6c5edac10eb7796b789002c4"
+    },
+    {
+      "name": "duplicate-line",
+      "path": "tests/Fixtures/price110-native112/112-duplicate-line.json",
+      "sha256": "ad2aaf26e4cb9c86b63c006634680c01e7116c7288c486fa6fc9b212f31df4f5"
+    },
+    {
+      "name": "empty-line",
+      "path": "tests/Fixtures/price110-native112/113-empty-line.json",
+      "sha256": "1e68e8da1db2372cdd23d059e65dbf0f0238d909901461a64992b111ecbedac9"
+    },
+    {
+      "name": "mixed-currencies",
+      "path": "tests/Fixtures/price110-native112/114-mixed-currencies.json",
+      "sha256": "89dae079248cec47c773d0404817a59c24c794fe48e2bf48ca60d96cc8ae6463"
+    },
+    {
+      "name": "extra-price-field",
+      "path": "tests/Fixtures/price110-native112/115-extra-price-field.json",
+      "sha256": "5e89173de64b2cecf686f80791247d75042e3437bbe2f8f6e78c4af064cab6be"
+    },
+    {
+      "name": "record-not-object",
+      "path": "tests/Fixtures/price110-native112/116-record-not-object.json",
+      "sha256": "58c82063bdd850f1ac7fc32f98ff00aa7e44dcc53179bfbc683ae9643b5efc3d"
+    },
+    {
+      "name": "total-overflow",
+      "path": "tests/Fixtures/price110-native112/117-total-overflow.json",
+      "sha256": "512b5ac92a5899051c561891d40e192986994fe3c243ae439cfc6206396ef266"
+    },
+    {
+      "name": "proof-missing",
+      "path": "tests/Fixtures/price110-native112/118-proof-missing.json",
+      "sha256": "aef3e81f937c0ebf641242bb5e0c8ebf780e637f4bfd37c3268ee4dcfa2fbf98"
+    },
+    {
+      "name": "proof-old-contract",
+      "path": "tests/Fixtures/price110-native112/119-proof-old-contract.json",
+      "sha256": "45675a8ac1322a63bd22084efa7618305c3bfb891eb3af13645475725cea6dca"
+    },
+    {
+      "name": "proof-extra-field",
+      "path": "tests/Fixtures/price110-native112/120-proof-extra-field.json",
+      "sha256": "cd389bdde116be0f82290776bd4254c81d14e2ca6441d7bbcff332ec74989a35"
+    },
+    {
+      "name": "proof-shared-evidence",
+      "path": "tests/Fixtures/price110-native112/121-proof-shared-evidence.json",
+      "sha256": "f6570f0580c963d302b16b0e592813222d3069f149395f29d58cf73998df40f5"
+    },
+    {
+      "name": "proof-hash",
+      "path": "tests/Fixtures/price110-native112/122-proof-hash.json",
+      "sha256": "1834fc6da95b484d81e9f715c92171d85e5d683683578889962727b6f40d2c06"
+    },
+    {
+      "name": "origin-content",
+      "path": "tests/Fixtures/price110-native112/123-origin-content.json",
+      "sha256": "984e1377d15f6352eadcc84eb7eef63239accabc9af06c51c08c03afdc583a0b"
+    },
+    {
+      "name": "origin-hash",
+      "path": "tests/Fixtures/price110-native112/124-origin-hash.json",
+      "sha256": "576f6b0813fce05e6bd5ce1a97f89cad0ab55482bd3072df5386e7ce671896e1"
+    },
+    {
+      "name": "origin-reference",
+      "path": "tests/Fixtures/price110-native112/125-origin-reference.json",
+      "sha256": "db237315f5df99d6b1311b35841b1924d1ab5a08601de04dbc5db219c7482ff4"
+    },
+    {
+      "name": "origin-type",
+      "path": "tests/Fixtures/price110-native112/126-origin-type.json",
+      "sha256": "a3ffceb9e7babfcdcd7568c9f5bb25f571033589dc9e6681f3a7d55944a2fd33"
+    },
+    {
+      "name": "price-changed-stale-proof",
+      "path": "tests/Fixtures/price110-native112/127-price-changed-stale-proof.json",
+      "sha256": "0f3b65d6142be44ad16fdceedccbe7a1efb4a7889a29c8c5e078c08740f112f6"
+    },
+    {
+      "name": "revoked-now",
+      "path": "tests/Fixtures/price110-native112/128-revoked-now.json",
+      "sha256": "077e71b0079f46b1092301108a54904b7d5b906c49e816d935c8524a8f68e010"
+    },
+    {
+      "name": "superseded-before-known",
+      "path": "tests/Fixtures/price110-native112/129-superseded-before-known.json",
+      "sha256": "fe0b3e9ac899b9fc76f00c7a81e9ced5776d6415be8b62f1828d720ea9a4d995"
+    },
+    {
+      "name": "invalid-lifecycle",
+      "path": "tests/Fixtures/price110-native112/130-invalid-lifecycle.json",
+      "sha256": "69d1e1be51599f711bb05cbba685706f4ee71b000cce5c45d933a9a0ae111834"
+    },
+    {
+      "name": "coverage-inverted",
+      "path": "tests/Fixtures/price110-native112/131-coverage-inverted.json",
+      "sha256": "c074ea5f23a8411d1d9d67c9549a00de5a383364f23b1e75bb854ea7448541a6"
+    },
+    {
+      "name": "coverage-invalid-date",
+      "path": "tests/Fixtures/price110-native112/132-coverage-invalid-date.json",
+      "sha256": "903aeb7e3c8dc2af738543378e0a790275056850aa967de1396bb24d9ada37b5"
+    },
+    {
+      "name": "coverage-not-own-event",
+      "path": "tests/Fixtures/price110-native112/133-coverage-not-own-event.json",
+      "sha256": "808a5ec5a0133d0d5841fd35732915341f359917bd4741fe470856cc34b63761"
+    },
+    {
+      "name": "proof-after-known",
+      "path": "tests/Fixtures/price110-native112/134-proof-after-known.json",
+      "sha256": "f3d74e9ed3038909da793c63657fa6add99a0a380f9d3223b0af8fd4468def1c"
+    },
+    {
+      "name": "proof-before-component",
+      "path": "tests/Fixtures/price110-native112/135-proof-before-component.json",
+      "sha256": "38e3478755770aa9b6acea707685f04a8ab578cc4a908b35dc1e03a7b2d7f77e"
+    },
+    {
+      "name": "proof-before-identity",
+      "path": "tests/Fixtures/price110-native112/136-proof-before-identity.json",
+      "sha256": "13586b4f96974f07b32dce0ec7384cfab7e3974f42bfe7aae2bff6dba9952c10"
+    },
+    {
+      "name": "policy-production-escalation",
+      "path": "tests/Fixtures/price110-native112/137-policy-production-escalation.json",
+      "sha256": "dfeca318e213d8a00ecebe44dfdf3467725467ff81df0354a84e690053ca5c70"
+    },
+    {
+      "name": "material-missing",
+      "path": "tests/Fixtures/price110-native112/138-material-missing.json",
+      "sha256": "b540cf792aceb0be488dc6db6a7b87967f9719dfd45abd7fe05e49e4908a8faa"
+    },
+    {
+      "name": "identity-stale",
+      "path": "tests/Fixtures/price110-native112/139-identity-stale.json",
+      "sha256": "80e8b57b124656eff7a23a85255883a7dcf12c9c77e894d7de9ddc65cec4896b"
+    },
+    {
+      "name": "new-fact-stale-binding",
+      "path": "tests/Fixtures/price110-native112/140-new-fact-stale-binding.json",
+      "sha256": "41d877a5dced6c369a5b67ca8fa2ca06574e430d174f0aba107d05c8dbc18c70"
+    },
+    {
+      "name": "known-before-component",
+      "path": "tests/Fixtures/price110-native112/141-known-before-component.json",
+      "sha256": "470215808f916cfeb6bca73b9048df06fe39bf2ba3b29ecbfa266984d5ed5ab0"
+    },
+    {
+      "name": "known-invalid-0",
+      "path": "tests/Fixtures/price110-native112/142-known-invalid-0.json",
+      "sha256": "776d05eaab1c91b3b1c4de058ccc99933b5e4de57bb38b2da02a886ff58efb88"
+    },
+    {
+      "name": "observed-invalid-0",
+      "path": "tests/Fixtures/price110-native112/143-observed-invalid-0.json",
+      "sha256": "a8d7d8376f813d1fdcf95275a90ea062d0df4865ed52f95276240909e1266621"
+    },
+    {
+      "name": "known-invalid-1",
+      "path": "tests/Fixtures/price110-native112/144-known-invalid-1.json",
+      "sha256": "4e38b49d13c966ba6d2fd7ebcf605a8a26112b0a1ef6bdd1465caab3d789c924"
+    },
+    {
+      "name": "observed-invalid-1",
+      "path": "tests/Fixtures/price110-native112/145-observed-invalid-1.json",
+      "sha256": "1d00948774157e5818f3bf42f385b2b30931295653d0f227fffd37c886073ad9"
+    },
+    {
+      "name": "known-invalid-2",
+      "path": "tests/Fixtures/price110-native112/146-known-invalid-2.json",
+      "sha256": "dfd2f7400cda51ec5d30f6188313962fbb233af53e1df7a25d0c49e437fbf494"
+    },
+    {
+      "name": "observed-invalid-2",
+      "path": "tests/Fixtures/price110-native112/147-observed-invalid-2.json",
+      "sha256": "9dc7eaa184af5768e9bb47184f3bcbab715b0e896a99aa4e073b005f5108e504"
+    },
+    {
+      "name": "known-invalid-3",
+      "path": "tests/Fixtures/price110-native112/148-known-invalid-3.json",
+      "sha256": "e106deb182c1fd7c433140663696c6c376806dd5ce7efac72966db39af97e206"
+    },
+    {
+      "name": "observed-invalid-3",
+      "path": "tests/Fixtures/price110-native112/149-observed-invalid-3.json",
+      "sha256": "bd97318cd4f49fd91ccc14582d742abaabbbe054d6803da6f9bb8d88770e9882"
+    },
+    {
+      "name": "known-invalid-4",
+      "path": "tests/Fixtures/price110-native112/150-known-invalid-4.json",
+      "sha256": "8a578d28e95ccd44ef4b418ce90f6ea107e4f9b70ac18289a6122f21a5936352"
+    },
+    {
+      "name": "observed-invalid-4",
+      "path": "tests/Fixtures/price110-native112/151-observed-invalid-4.json",
+      "sha256": "e04f20e7fa03804eea552665aaa9349adac844b34962d2a60f1e84bf908a9574"
+    },
+    {
+      "name": "known-invalid-5",
+      "path": "tests/Fixtures/price110-native112/152-known-invalid-5.json",
+      "sha256": "0c81a4985fac659e3f7ee0516f05359ff4d580ac1ab7cf737e5ddaee31d1d4d1"
+    },
+    {
+      "name": "observed-invalid-5",
+      "path": "tests/Fixtures/price110-native112/153-observed-invalid-5.json",
+      "sha256": "c9562c6c2dfd37260f07fb108e76d3a57b1798a3f0ce28dd1979bbf29126e781"
+    },
+    {
+      "name": "unqualified-onerosity-0",
+      "path": "tests/Fixtures/price110-native112/154-unqualified-onerosity-0.json",
+      "sha256": "4d6e1888afc97744e8368dd24268c44c4451f69ea49a90289eda73e66c2c0e53"
+    },
+    {
+      "name": "unqualified-onerosity-1",
+      "path": "tests/Fixtures/price110-native112/155-unqualified-onerosity-1.json",
+      "sha256": "b303072c3a927afe79fcbe95a571f95fda50b1457bcbf4e3fbf39aad6ea6ff3d"
+    },
+    {
+      "name": "unqualified-onerosity-2",
+      "path": "tests/Fixtures/price110-native112/156-unqualified-onerosity-2.json",
+      "sha256": "f663ba6298d091de4dabe4db9cb5e3d4962441b322e0b82c88532c44043ef3fb"
+    },
+    {
+      "name": "unqualified-onerosity-3",
+      "path": "tests/Fixtures/price110-native112/157-unqualified-onerosity-3.json",
+      "sha256": "d9e96fec11f060ffba9cb37a580f933a5c035a24d054139f7c42978058a19f62"
+    },
+    {
+      "name": "unqualified-onerosity-4",
+      "path": "tests/Fixtures/price110-native112/158-unqualified-onerosity-4.json",
+      "sha256": "e8ecec7f8392211534df4339cfa777a9b6175be9fa400eb222bb48d1bb56a77b"
+    },
+    {
+      "name": "unqualified-onerosity-5",
+      "path": "tests/Fixtures/price110-native112/159-unqualified-onerosity-5.json",
+      "sha256": "accd6ddb56ff75cbe598132c90cefb172debf010c0ef6031bb5dc8ece25dea28"
+    }
+  ],
+  "source_is_synthetic": true
+}

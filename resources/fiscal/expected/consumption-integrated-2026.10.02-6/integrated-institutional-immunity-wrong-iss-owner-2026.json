@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "ISS_INSTITUTIONAL_IMMUNITY_SUPPLIER_OR_DOCUMENT_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "4b5b11095057d5ce7ae4b4e8d3f01b18486bc75c1f2f93529f1916bd8c51bc79"
+}

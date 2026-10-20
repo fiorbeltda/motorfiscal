@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_CARRYFORWARD_DISPOSITIONS_EXCEED_BALANCE"
+  ],
+  "missing_facts": [],
+  "decision_hash": "cb2dcf735db86120529b5587d817f313c0e0e874ddbd256f1d7d3bf2f36f2bf7"
+}

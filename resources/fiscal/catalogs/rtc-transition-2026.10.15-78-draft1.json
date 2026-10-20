@@ -1,0 +1,179 @@
+{
+  "version": "2026.10.15-78-draft1",
+  "status": "SANDBOX_CANDIDATE",
+  "source_id": "LC214-CONSOLIDATED-CAMARA-2026",
+  "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+  "simples_option_windows": [
+    {
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-06-30",
+      "filing_from": "2026-09-01",
+      "filing_to": "2026-10-30",
+      "cancellation_through": "2026-12-20",
+      "published_at": "2026-09-28T00:00:00-03:00",
+      "status": "ACTIVE",
+      "source_id": "CGSN194_NATIVE_VIGENTE_OBSERVED_20261015",
+      "source_hash": "038e3259963c9cf492e3dec1f4ddbff50cbf83ccabd3a94ea191b0f56fe82ef7",
+      "cancellation_from": "2026-11-03",
+      "available_at": "2026-10-15T11:40:27.560996+00:00",
+      "qualification_policy": {
+        "contract_version": "SIMPLES-REGULAR-ELECTION-CGSN194-2026.10.15-78",
+        "classification": "ENGINE_DECISION_RULE_FROM_OFFICIAL_NORMATIVE_SOURCE",
+        "source_hashes": {
+          "CGSN194": "038e3259963c9cf492e3dec1f4ddbff50cbf83ccabd3a94ea191b0f56fe82ef7",
+          "CGSN186_VIGENTE": "31dc79137f5e4d3f67289bd0cd05f7ef72992037bf28dde216fd1085f8453f1d"
+        },
+        "available_at": "2026-10-15T11:40:27.560996+00:00",
+        "effective_from": "2027-01-01",
+        "effective_through": "2027-06-30",
+        "filing_from": "2026-09-01",
+        "filing_through": "2026-10-30",
+        "cancellation_from": "2026-11-03",
+        "cancellation_through": "2026-12-20",
+        "registration_exception_from": "2026-10-31",
+        "registration_exception_through": "2026-12-31",
+        "source_articles": [
+          "CGSN186 art.2 as amended by CGSN194 art.1",
+          "CGSN186 art.3 caput II and sole paragraph II",
+          "CGSN186 art.4"
+        ],
+        "source_validation_sha256": "91558054cf9f78ff4a088755e12e5501df2751d394f8a98683237b86d3557f2a",
+        "production_ready": false
+      }
+    },
+    {
+      "valid_from": "2027-07-01",
+      "valid_to": "2027-12-31",
+      "filing_from": "2027-03-01",
+      "filing_to": "2027-03-31",
+      "cancellation_through": "2027-05-31",
+      "published_at": "2026-08-12T09:41:00-03:00",
+      "status": "ACTIVE",
+      "source_id": "CGSN-SIMPLES-OPTIONS-2027-GOVBR-2026",
+      "source_hash": "26a26fc6d16f7515464c404390fb31fd7c025e3b1057d6e17510f162814d9a8a"
+    }
+  ],
+  "rows": [
+    {
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "TEST",
+      "iss_factor": "1.00",
+      "icms_factor": "1.00",
+      "pis_cofins_status": "COEXISTS",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 arts. 343, 346"
+    },
+    {
+      "valid_from": "2027-01-01",
+      "valid_to": "2028-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "INITIAL",
+      "iss_factor": "1.00",
+      "icms_factor": "1.00",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 arts. 344-347"
+    },
+    {
+      "valid_from": "2029-01-01",
+      "valid_to": "2029-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.90",
+      "icms_factor": "0.90",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2030-01-01",
+      "valid_to": "2030-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.80",
+      "icms_factor": "0.80",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2031-01-01",
+      "valid_to": "2031-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.70",
+      "icms_factor": "0.70",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2032-01-01",
+      "valid_to": "2032-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "GRADUAL",
+      "iss_factor": "0.60",
+      "icms_factor": "0.60",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "COEXISTS",
+      "source_article": "LC214 art. 508; LC116 art. 8-B"
+    },
+    {
+      "valid_from": "2033-01-01",
+      "valid_to": "2033-12-31",
+      "published_at": "2025-01-16T00:00:00-03:00",
+      "status": "ACTIVE",
+      "phase": "FINAL",
+      "iss_factor": "0.00",
+      "icms_factor": "0.00",
+      "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+      "iss_status": "EXTINCT",
+      "source_article": "LC214 transition provisions"
+    }
+  ],
+  "collection_qualification": true,
+  "split_deployments": [],
+  "platform_responsibility_qualification": true,
+  "iss_frozen_transition": true,
+  "iss_frozen_law_source_id": "LC116-CAMARA-20260928",
+  "iss_frozen_law_source_hash": "9f3ea2baf131b8f9712267d503a5a2153ec5c9616d8e8bdd002e4797c70b9a90",
+  "partial_export_domestic_leg": true,
+  "post_iss_integrated": true,
+  "employee_below_market": true,
+  "post_iss_federal_withholdings": true,
+  "personal_use_recipients": true,
+  "government_purchase_qualification": true,
+  "personal_use_supply_origin": true,
+  "acquired_personal_use": true,
+  "import_credit_qualification": true,
+  "donation_qualification": true,
+  "donation_nominal_calculation": true,
+  "simples_option_supersession_notices": [
+    {
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-06-30",
+      "observed_at": "2026-10-01T16:57:14+00:00",
+      "source_id": "MF-CGSN194-NOTICE-OBSERVED-20261001",
+      "source_hash": "bd0b7a81f841fcdcdda3ed9dcd4401144a7750e6b8dc11da0d3141434e4d7c1c",
+      "full_act_verified": true,
+      "act_url": "https://www.in.gov.br/web/dou/-/resolucao-cgsn-n-194-de-25-de-setembro-de-2026-735097948",
+      "announced_filing_from": "2026-09-01",
+      "announced_filing_to": "2026-10-30",
+      "announced_cancellation_from": "2026-11-03",
+      "announced_cancellation_to": "2026-12-20",
+      "note": "Withdraw stale positive first-semester qualification after observation. Do not activate replacement without full normative act.",
+      "full_act_verified_at": "2026-10-15T11:40:27.560996+00:00",
+      "full_act_source_id": "CGSN194_NATIVE_VIGENTE_OBSERVED_20261015",
+      "full_act_source_sha256": "038e3259963c9cf492e3dec1f4ddbff50cbf83ccabd3a94ea191b0f56fe82ef7",
+      "resolution_scope": "CGSN194_FULL_NATIVE_SOURCE_REVIEWED_H1_POLICY_ONLY"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "status":  "ACTION_REQUIRED",
+    "reason_codes":  [
+                         "RTC_UNCONDITIONAL_DISCOUNT_PROOF_MISSING"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "afb4cba5094718c3a6a993c6b5673e657e7ec320af06be386c814e68ecac3a05"
+}

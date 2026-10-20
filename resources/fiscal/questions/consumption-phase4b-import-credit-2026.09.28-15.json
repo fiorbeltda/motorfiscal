@@ -1,0 +1,14 @@
+[
+  {
+    "fact_key": "rtc.import_credit_fiscal_document_id",
+    "prompt": "Qual documento fiscal eletrônico idôneo comprova IBS e CBS na importação?",
+    "rank": 164,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_credit_extinction_evidence_id",
+    "prompt": "Qual prova identifica a extinção dos débitos de IBS e CBS dessa importação?",
+    "rank": 165,
+    "answer_type": "STRING"
+  }
+]

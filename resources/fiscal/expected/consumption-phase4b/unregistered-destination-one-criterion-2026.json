@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DESTINATION_CORROBORATION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.destination_evidence_sources"
+  ],
+  "decision_hash": "514bdc64f63875370df3d849339b9bfdd222be798910d8526142b82d625df442"
+}

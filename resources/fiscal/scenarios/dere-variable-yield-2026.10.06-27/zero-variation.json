@@ -1,0 +1,803 @@
+{
+  "evidence_scope": "SYNTHETIC_QUALIFIED_VARIABLE_MEMORY_OFFER_ISSUER_AND_BOOK_OFFICIAL_DAILY_RATES_REAL",
+  "identity": {
+    "generated_at": "2026-10-06T08:00:00.000-03:00",
+    "event_sequence": 1
+  },
+  "book": {
+    "supplier_id": "11111111000191",
+    "document_id": "dps-1",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-06",
+    "analytical_book_complete": true,
+    "pgcc_complete": true,
+    "pgcc_account_mapping_qualified": true,
+    "opening_balances_qualified": true,
+    "book_source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "pgcc_source_hash": "ef58231808550fdb141375dcfc545688fe667ec7bff5378b57702a27e16a8e82",
+    "book_evidence_id": "FIXTURE.BOOK",
+    "pgcc_evidence_id": "FIXTURE.PGCC",
+    "first_reporting_period": false,
+    "closing_frequency": "M",
+    "accounts": [
+      {
+        "cCta": "interest000",
+        "natSaldoInic": "C",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "0.00",
+        "vMovCred": "1000.00",
+        "natSaldoFinal": "C",
+        "vSaldoFinal": "1000.00",
+        "natVApur": "C",
+        "vApur": "1000.00",
+        "financial_entry_ids": [
+          "interest",
+          "yield1"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "C",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        },
+        "vAjusteCred": "0.00",
+        "vAjusteDebt": "0.00"
+      },
+      {
+        "cCta": "principal000",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "10000.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "10000.00",
+        "natVApur": "D",
+        "vApur": "10000.00",
+        "financial_entry_ids": [
+          "principal"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "funding000",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "200.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "200.00",
+        "natVApur": "D",
+        "vApur": "200.00",
+        "financial_entry_ids": [
+          "funding"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "correspondent000",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "100.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "100.00",
+        "natVApur": "D",
+        "vApur": "100.00",
+        "financial_entry_ids": [
+          "correspondent"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "debt000",
+        "natSaldoInic": "D",
+        "vSaldoInic": "10000.00",
+        "vMovDebt": "0.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "10000.00",
+        "natVApur": "D",
+        "vApur": "0.00",
+        "financial_entry_ids": [],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "10000.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        },
+        "vAjusteDebt": "0.00",
+        "vAjusteCred": "0.00"
+      },
+      {
+        "cCta": "debtfund000",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "0.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "0.00",
+        "natVApur": "D",
+        "vApur": "0.00",
+        "financial_entry_ids": [],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        },
+        "vAjusteDebt": "0.00",
+        "vAjusteCred": "0.00"
+      }
+    ],
+    "pgcc_accounts": [
+      {
+        "cCta": "interest000",
+        "indCta": "A",
+        "codNat": "4",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "principal000",
+        "indCta": "A",
+        "codNat": "1",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "funding000",
+        "indCta": "A",
+        "codNat": "5",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "correspondent000",
+        "indCta": "A",
+        "codNat": "5",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "debt000",
+        "indCta": "A",
+        "codNat": "1",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "debtfund000",
+        "indCta": "A",
+        "codNat": "1",
+        "valid_from": "2026-01-01"
+      }
+    ]
+  },
+  "deductions": {
+    "supplier_id": "11111111000191",
+    "document_id": "dps-1",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-05",
+    "documents_qualified": true,
+    "deduction_allocation_complete": true,
+    "monthly_period_closed_previously": false,
+    "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "documents": [
+      {
+        "tpDFe": "03",
+        "chDFe": "11111111111111111111111111111111111111111111",
+        "dtEmi": "2026-09-20",
+        "tpAtiv": "01",
+        "vOper": "100.00",
+        "vDedTotal": "100.00",
+        "vDed": "100.00",
+        "document_validity_qualified": true,
+        "document_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "evidence_id": "FIXTURE.DFE",
+        "financial_entry_ids": [
+          "correspondent"
+        ],
+        "items": [],
+        "pgcc_account_codes": [
+          "correspondent000"
+        ],
+        "account_binding_evidence": {
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "evidence_id": "FIXTURE.D1121.DOCUMENT.ACCOUNT",
+          "observed_on": "2026-10-05",
+          "valid_from": "2026-09-01",
+          "valid_to": "2026-09-30",
+          "scope": "SYNTHETIC_DOCUMENT_ACCOUNT_BINDING_NO_REMOTE_VERIFICATION",
+          "value": {
+            "chDFe": "11111111111111111111111111111111111111111111",
+            "tpDFe": "03",
+            "dtEmi": "2026-09-20",
+            "tpAtiv": "01",
+            "vDed": "100.00",
+            "financial_entry_ids": [
+              "correspondent"
+            ],
+            "pgcc_account_codes": [
+              "correspondent000"
+            ],
+            "period_end": "2026-09-30"
+          },
+          "source_hash": "af3a0c67d150de182b5abea6072ca87c69e04bf9dfe4c4715880f26e52190f54"
+        }
+      }
+    ]
+  },
+  "prerequisites": {
+    "supplier_id": "11111111000191",
+    "period_end": "2026-09-30",
+    "pgcc_source_hash": "ef58231808550fdb141375dcfc545688fe667ec7bff5378b57702a27e16a8e82",
+    "contributor_registration_qualified": true,
+    "auxiliary_obligations_qualified": true,
+    "contributor_source_hash": "e266a42eb0e03177ca5f09a90c7314a7f9ad99fd0ff1d4c0eeabad988430fa07",
+    "obligations_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04",
+    "existing_closing": false,
+    "negative_base_use_requested": false,
+    "D1106_required": false,
+    "D2101_required": true,
+    "D1121_required": true
+  },
+  "contributor": {
+    "complete": true,
+    "supplier_id": "11111111000191",
+    "registered_supplier_id": "11111111000191",
+    "registration_status": "ACTIVE",
+    "registration_qualified": true,
+    "regimes_qualified": true,
+    "tax_nature_qualified": true,
+    "dere_start_qualified": true,
+    "valid_from": "2026-01-01",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-05",
+    "registration_validity": {
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31"
+    },
+    "dere_start_on": "2026-01-01",
+    "regTribPrinc": "1",
+    "regTribSecund": [],
+    "indNatTrib": "0",
+    "servFinanc": {
+      "tpAtividades": [
+        "01A",
+        "03A"
+      ]
+    },
+    "evidence_scope": "SYNTHETIC_CONTRIBUTOR_AND_START_CALENDAR",
+    "evidence": {
+      "registration": {
+        "evidence_id": "FIXTURE.D1001.REGISTRATION",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": "ACTIVE",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "866344d22e6353447363ca3916827da30c8a3339763e2526718e2a65932f55e9"
+      },
+      "regimes": {
+        "evidence_id": "FIXTURE.D1001.REGIMES",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": {
+          "principal": "1",
+          "secondary": []
+        },
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "23a28d1e5c67eaa10efb9047cadd0a2e93681c3fed975d1d2762e3f34a11a276"
+      },
+      "tax_nature": {
+        "evidence_id": "FIXTURE.D1001.TAX_NATURE",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": "0",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "3e965f1abc828a6e5b342e0a711f66b14799501bd2aa19c217af573b27c5a722"
+      },
+      "dere_start": {
+        "evidence_id": "FIXTURE.D1001.DERE_START",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": "2026-01-01",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a"
+      },
+      "activities": {
+        "evidence_id": "FIXTURE.D1001.ACTIVITIES",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": [
+          "01A",
+          "03A"
+        ],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "799e48c6846d081359106940373c3291738da0fdd21c46c3822c9ecd7f0fbf7b"
+      }
+    },
+    "registration_source_hash": "866344d22e6353447363ca3916827da30c8a3339763e2526718e2a65932f55e9",
+    "regimes_source_hash": "23a28d1e5c67eaa10efb9047cadd0a2e93681c3fed975d1d2762e3f34a11a276",
+    "tax_nature_source_hash": "3e965f1abc828a6e5b342e0a711f66b14799501bd2aa19c217af573b27c5a722",
+    "dere_start_source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a",
+    "activities_source_hash": "799e48c6846d081359106940373c3291738da0fdd21c46c3822c9ecd7f0fbf7b",
+    "source_hash": "e266a42eb0e03177ca5f09a90c7314a7f9ad99fd0ff1d4c0eeabad988430fa07"
+  },
+  "contributor_identity": {
+    "generated_at": "2026-10-05T08:00:00.000-03:00",
+    "event_sequence": 1
+  },
+  "pgcc": {
+    "complete": true,
+    "supplier_id": "11111111000191",
+    "planoCtaRef": "1",
+    "freqEncerr": "M",
+    "period_end": "2026-09-30",
+    "valid_from": "2026-01-01",
+    "observed_on": "2026-10-05",
+    "institution_type": "COMMERCIAL_BANK",
+    "institution_evidence": {
+      "evidence_id": "FIXTURE.PGCC.INSTITUTION",
+      "qualified": true,
+      "supplier_id": "11111111000191",
+      "value": "COMMERCIAL_BANK",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "observed_on": "2026-10-05",
+      "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+      "source_hash": "9cfe086c0de921d109d7ed95437235560079ad66a6ab80e904871924b9539fa1"
+    },
+    "accounts": [
+      {
+        "cCtaInterna": "ASSET",
+        "cDbrMista": "000",
+        "cCta": "ASSET000",
+        "nomeCta": "OPERAÇÕES DE CRÉDITO",
+        "indCta": "S",
+        "nivelCta": 1,
+        "natCta": "D",
+        "codNat": "1",
+        "cCtaRef": "1600000007",
+        "valid_from": "2026-01-01",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.ASSET",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "ASSET000",
+              "cCtaRef": "1600000007",
+              "natCta": "D",
+              "codNat": "1"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "bea767152b8128307ebb1f14308ce6935cf50a6f8e5d559a12f31887c3625c25"
+        }
+      },
+      {
+        "cCtaInterna": "REVENUE",
+        "cDbrMista": "000",
+        "cCta": "REVENUE000",
+        "nomeCta": "RECEITAS OPERACIONAIS",
+        "indCta": "S",
+        "nivelCta": 1,
+        "natCta": "C",
+        "codNat": "4",
+        "cCtaRef": "7100000006",
+        "valid_from": "2026-01-01",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.REVENUE",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "REVENUE000",
+              "cCtaRef": "7100000006",
+              "natCta": "C",
+              "codNat": "4"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "df18d276558a59dd5a92934ecf09c03ab7be1d044e927c944e7a3ebb6ef543d1"
+        }
+      },
+      {
+        "cCtaInterna": "EXPENSE",
+        "cDbrMista": "000",
+        "cCta": "EXPENSE000",
+        "nomeCta": "(-) DESPESAS OPERACIONAIS",
+        "indCta": "S",
+        "nivelCta": 1,
+        "natCta": "D",
+        "codNat": "5",
+        "cCtaRef": "8100000005",
+        "valid_from": "2026-01-01",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.EXPENSE",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "EXPENSE000",
+              "cCtaRef": "8100000005",
+              "natCta": "D",
+              "codNat": "5"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "9df08974426d8047ad26fbdd906657e1daf14170940b4fa9fa50c7e1418fa22c"
+        }
+      },
+      {
+        "cCtaInterna": "interest",
+        "cDbrMista": "000",
+        "cCta": "interest000",
+        "nomeCta": "Rendas - Outros Empréstimos",
+        "indCta": "A",
+        "nivelCta": 2,
+        "natCta": "C",
+        "codNat": "4",
+        "cCtaRef": "7110599002",
+        "valid_from": "2026-01-01",
+        "cCtaSup": "REVENUE000",
+        "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+        "codTrib": "311011101",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.interest",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "interest000",
+              "cCtaRef": "7110599002",
+              "codTrib": "311011101",
+              "natCta": "C",
+              "codNat": "4"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "8ab45ea8efdf941b6aad97ccfacfce98150f56637ab988ccf7c4edc9915cf8f7"
+        }
+      },
+      {
+        "cCtaInterna": "principal",
+        "cDbrMista": "000",
+        "cCta": "principal000",
+        "nomeCta": "Saldo Contratual",
+        "indCta": "A",
+        "nivelCta": 2,
+        "natCta": "D",
+        "codNat": "1",
+        "cCtaRef": "1612001104",
+        "valid_from": "2026-01-01",
+        "cCtaSup": "ASSET000",
+        "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+        "codTrib": "110112001",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.principal",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "principal000",
+              "cCtaRef": "1612001104",
+              "codTrib": "110112001",
+              "natCta": "D",
+              "codNat": "1"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "d0fe872f0028bd30f838a0b434864a5efaa55704667d6362867b5171aa7f82b9"
+        }
+      },
+      {
+        "cCtaInterna": "funding",
+        "cDbrMista": "000",
+        "cCta": "funding000",
+        "nomeCta": "(-) DESPESAS DE DEPÓSITOS A PRAZO",
+        "indCta": "A",
+        "nivelCta": 2,
+        "natCta": "D",
+        "codNat": "5",
+        "cCtaRef": "8113000009",
+        "valid_from": "2026-01-01",
+        "cCtaSup": "EXPENSE000",
+        "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+        "codTrib": "411011201",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.funding",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "funding000",
+              "cCtaRef": "8113000009",
+              "codTrib": "411011201",
+              "natCta": "D",
+              "codNat": "5"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "2c3d68d1c6fef650ef94c74d6b64f4a87b1306f98f8aca62cc828f3824d478ea"
+        }
+      },
+      {
+        "cCtaInterna": "correspondent",
+        "cDbrMista": "000",
+        "cCta": "correspondent000",
+        "nomeCta": "Despesa de correspondente bancario",
+        "indCta": "A",
+        "nivelCta": 2,
+        "natCta": "D",
+        "codNat": "5",
+        "cCtaRef": "8199900006",
+        "valid_from": "2026-01-01",
+        "cCtaSup": "EXPENSE000",
+        "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+        "codTrib": "411011105",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.CORRESPONDENT",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "correspondent000",
+              "cCtaRef": "8199900006",
+              "codTrib": "411011105",
+              "natCta": "D",
+              "codNat": "5"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "e39b6f1b584ae8bba2901905e61c231bd371121bb8c21145c5059af265667cef"
+        }
+      },
+      {
+        "cCtaInterna": "TVM",
+        "cDbrMista": "000",
+        "cCta": "TVM000",
+        "nomeCta": "Titulos e valores mobiliarios",
+        "indCta": "S",
+        "nivelCta": 1,
+        "natCta": "D",
+        "codNat": "1",
+        "cCtaRef": "1300000008",
+        "valid_from": "2026-01-01",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.TVM000",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "TVM000",
+              "cCtaRef": "1300000008",
+              "natCta": "D",
+              "codNat": "1"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "39e1e7b8f47b2bba1063a98eba5295be9ba017ed2df645ed1f90a8d9be4685f1"
+        }
+      },
+      {
+        "cCtaInterna": "debt",
+        "cDbrMista": "000",
+        "cCta": "debt000",
+        "nomeCta": "Titulos com oferta publica",
+        "indCta": "A",
+        "nivelCta": 2,
+        "natCta": "D",
+        "codNat": "1",
+        "cCtaRef": "1311033105",
+        "valid_from": "2026-01-01",
+        "cCtaSup": "TVM000",
+        "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+        "codTrib": "110113001",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.debt000",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "debt000",
+              "cCtaRef": "1311033105",
+              "codTrib": "110113001",
+              "natCta": "D",
+              "codNat": "1"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "3a8a316736aa29b86c078df33373da5863e5eba0a8be0193d78899db290cf04c"
+        }
+      },
+      {
+        "cCtaInterna": "debtfund",
+        "cDbrMista": "000",
+        "cCta": "debtfund000",
+        "nomeCta": "Fundo exclusivo de titulos com oferta publica",
+        "indCta": "A",
+        "nivelCta": 2,
+        "natCta": "D",
+        "codNat": "1",
+        "cCtaRef": "1311500009",
+        "valid_from": "2026-01-01",
+        "cCtaSup": "TVM000",
+        "descCta": "Mapeamento sintético para prova do contrato local; aplicação normativa não atestada.",
+        "codTrib": "110113002",
+        "mapping_evidence": {
+          "evidence_id": "FIXTURE.PGCC.debtfund000",
+          "qualified": true,
+          "supplier_id": "11111111000191",
+          "value": {
+            "institution_type": "COMMERCIAL_BANK",
+            "mapping": {
+              "cCta": "debtfund000",
+              "cCtaRef": "1311500009",
+              "codTrib": "110113002",
+              "natCta": "D",
+              "codNat": "1"
+            }
+          },
+          "valid_from": "2026-01-01",
+          "valid_to": "2026-12-31",
+          "observed_on": "2026-10-05",
+          "scope": "SYNTHETIC_APPLICABILITY_AND_CLASSIFICATION_NOT_OFFICIAL_CONTRIBUTOR_APPROVAL",
+          "source_hash": "61b027f85c65508d966aa3d1cb9ffbbd92d8e589464b888636909a038385693c"
+        }
+      }
+    ],
+    "source_hash": "ef58231808550fdb141375dcfc545688fe667ec7bff5378b57702a27e16a8e82"
+  },
+  "pgcc_identity": {
+    "generated_at": "2026-10-05T08:00:00.000-03:00",
+    "event_sequence": 1,
+    "contributor_supplier_id": "11111111000191",
+    "contributor_qualified": true,
+    "dere_start_qualified": true,
+    "contributor_source_hash": "e266a42eb0e03177ca5f09a90c7314a7f9ad99fd0ff1d4c0eeabad988430fa07",
+    "dere_start_source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a",
+    "contributor_valid_from": "2026-01-01",
+    "dere_start_on": "2026-01-01",
+    "observed_on": "2026-10-05"
+  },
+  "corpus_expectation": {
+    "status": "PROJECTED",
+    "base": "700.00",
+    "auxiliary_base": "0.00"
+  },
+  "financial_scenario": "zero-variation-financial.json",
+  "debt_yield": {
+    "supplier_id": "11111111000191",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-06",
+    "financial_entry_ids": [
+      "yield1"
+    ],
+    "previous_title_balances": {
+      "yield1": {
+        "qualified": true,
+        "evidence_id": "FIXTURE.VARIABLE.TITLE.PRIOR",
+        "supplier_id": "11111111000191",
+        "valid_from": "2026-08-01",
+        "valid_to": "2026-08-31",
+        "observed_on": "2026-10-06",
+        "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+        "value": {
+          "supplier_id": "11111111000191",
+          "period": "2026-08",
+          "idTitulo": "BRFIXTDEB019",
+          "cCta": "debt000",
+          "vSaldoContFin": "10000.00"
+        },
+        "source_hash": "952f9062ff30607a534177ac550a535464c26959beb3da63097adc8a37a43444"
+      }
+    },
+    "evidence": {
+      "qualified": true,
+      "evidence_id": "FIXTURE.VARIABLE.MONTH",
+      "supplier_id": "11111111000191",
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-09-30",
+      "observed_on": "2026-10-06",
+      "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+      "value": {
+        "supplier_id": "11111111000191",
+        "period_end": "2026-09-30",
+        "detail": {
+          "supplier_id": "11111111000191",
+          "period_end": "2026-09-30",
+          "observed_on": "2026-10-06",
+          "financial_entry_ids": [
+            "yield1"
+          ],
+          "previous_title_balances": {
+            "yield1": {
+              "qualified": true,
+              "evidence_id": "FIXTURE.VARIABLE.TITLE.PRIOR",
+              "supplier_id": "11111111000191",
+              "valid_from": "2026-08-01",
+              "valid_to": "2026-08-31",
+              "observed_on": "2026-10-06",
+              "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+              "value": {
+                "supplier_id": "11111111000191",
+                "period": "2026-08",
+                "idTitulo": "BRFIXTDEB019",
+                "cCta": "debt000",
+                "vSaldoContFin": "10000.00"
+              },
+              "source_hash": "952f9062ff30607a534177ac550a535464c26959beb3da63097adc8a37a43444"
+            }
+          }
+        },
+        "operation_hash": "44300d65f25156222ecb6f28560345b318ee2c14b913b23afaf29bf602bf5dbe",
+        "book_input_hash": "29c31eaa488002fadf6227e643c973f8eae7a85107701d9e8909cdb8b71ab1c4",
+        "pgcc_source_hash": "ef58231808550fdb141375dcfc545688fe667ec7bff5378b57702a27e16a8e82"
+      },
+      "source_hash": "ccfa630831fa351e783a2548fc4a45c28ff0e79821c2255234834dafe2cff121"
+    }
+  }
+}

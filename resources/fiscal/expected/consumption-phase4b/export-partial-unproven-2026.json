@@ -1,0 +1,11 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PARTIAL_EXPORT_ALLOCATION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.export_allocation_method",
+    "rtc.export_allocation_evidence_id"
+  ],
+  "decision_hash": "f7c28a680a2ad3f5559e4ad62706b53be4a52a366514083fe608efce2cc329ea"
+}

@@ -27,6 +27,7 @@ final readonly class RulesValidatorService
         $compiler = new RuleCompiler($this->factLoader->load($factDefinitionsPath));
         $results = [];
         $allValid = true;
+        $compiledRules = [];
 
         foreach ($files as $file) {
             $schema = $this->schemas->validateFile($file, $schemaPath);
@@ -51,6 +52,7 @@ final readonly class RulesValidatorService
                 $entry['semantic_errors'] = [];
                 $entry['rule_id'] = $compiled->id;
                 $entry['version'] = $compiled->version;
+                $compiledRules[] = ['result_index' => count($results), 'rule' => $compiled];
             } catch (JsonException|RuleCompilationException|RuntimeException $exception) {
                 $entry['semantic_valid'] = false;
                 $entry['semantic_errors'] = $exception instanceof RuleCompilationException ? $exception->errors : [$exception->getMessage()];
@@ -58,6 +60,32 @@ final readonly class RulesValidatorService
             }
 
             $results[] = $entry;
+        }
+
+        $ruleIndexes = [];
+        foreach ($compiledRules as $compiled) {
+            $ruleIndexes[$compiled['rule']->id][] = $compiled['result_index'];
+        }
+        foreach ($ruleIndexes as $ruleId => $indexes) {
+            if (count($indexes) <= 1) {
+                continue;
+            }
+            $allValid = false;
+            foreach ($indexes as $index) {
+                $results[$index]['semantic_valid'] = false;
+                $results[$index]['semantic_errors'][] = "Bundle selects more than one version of rule {$ruleId}.";
+            }
+        }
+        foreach ($compiledRules as $compiled) {
+            foreach ($compiled['rule']->relations as $relation) {
+                if (isset($ruleIndexes[$relation->subordinateRuleId])) {
+                    continue;
+                }
+                $allValid = false;
+                $index = $compiled['result_index'];
+                $results[$index]['semantic_valid'] = false;
+                $results[$index]['semantic_errors'][] = "Precedence target is not present in the bundle: {$relation->subordinateRuleId}.";
+            }
         }
 
         return new RulesValidationReport($allValid && $files !== [], $results);

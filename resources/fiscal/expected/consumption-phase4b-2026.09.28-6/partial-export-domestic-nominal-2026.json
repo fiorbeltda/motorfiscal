@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "d9343222b3dbb93521c79d4b9cee46ec8c4c1a4f6d9a98875d226c840b8e5fa7"
+}

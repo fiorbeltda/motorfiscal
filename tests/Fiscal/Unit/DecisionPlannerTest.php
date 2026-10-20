@@ -30,3 +30,26 @@ it('rejects unknown dependencies', function (): void {
         new DecisionNodeDefinition('a', ['missing']),
     ]);
 })->throws(DecisionPlanningException::class, 'depends on unknown node');
+
+it('enforces incremental execution in the topological order', function (): void {
+    $cursor = (new DecisionPlanner)->plan([
+        new DecisionNodeDefinition('classify'),
+        new DecisionNodeDefinition('calculate', ['classify']),
+    ])->cursor();
+
+    $cursor->start('classify');
+    $cursor->complete('classify');
+    $cursor->start('calculate');
+    $cursor->complete('calculate');
+
+    expect($cursor->isComplete())->toBeTrue();
+});
+
+it('rejects execution outside the planned order', function (): void {
+    $cursor = (new DecisionPlanner)->plan([
+        new DecisionNodeDefinition('classify'),
+        new DecisionNodeDefinition('calculate', ['classify']),
+    ])->cursor();
+
+    $cursor->start('calculate');
+})->throws(DecisionPlanningException::class, 'expected classify');

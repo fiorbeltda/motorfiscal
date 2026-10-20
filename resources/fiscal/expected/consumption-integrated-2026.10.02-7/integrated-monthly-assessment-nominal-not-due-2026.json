@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_DEBIT_DUE_STATUS_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "82a7adce10c989dac1a4fbfccff042992f37fe37f73deb9a20a912ba070715b3"
+}

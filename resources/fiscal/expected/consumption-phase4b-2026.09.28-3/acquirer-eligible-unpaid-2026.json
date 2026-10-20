@@ -1,0 +1,8 @@
+{
+  "status": "VALID",
+  "reason_codes": [
+    "RTC_STANDARD_TAXATION"
+  ],
+  "missing_facts": [],
+  "decision_hash": "b4183f04c15dae41c68a2cacbe18b3fcae5d2c8b0d4854659ad51f35ecd72086"
+}

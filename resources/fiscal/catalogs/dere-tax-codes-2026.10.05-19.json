@@ -1,0 +1,4608 @@
+{
+  "version": "2026.10.05-19",
+  "qualified": true,
+  "table": "11",
+  "membership_basis": "OFFICIAL_UNDATED_TABLE_AS_OF_KNOWLEDGE",
+  "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT",
+  "published_on": "2026-10-03",
+  "observed_on": "2026-10-05",
+  "source_hash": "7296b225e15fb4b395a41a9413ada1190cc2229d64334bf78d7b69f0fb8019f9",
+  "source_file": "dere-observed-20261005-annex-i.pdf",
+  "auxiliary_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04",
+  "auxiliary_source_file": "dere-observed-20261005-validation.pdf",
+  "auxiliary_pdf_page": 12,
+  "auxiliary_lists_complete": true,
+  "auxiliary_codes": {
+    "D1106": [
+      "120130001",
+      "120230001",
+      "120330001",
+      "111112701"
+    ],
+    "D1121": [
+      "110211611",
+      "110324611",
+      "110324801",
+      "111111622",
+      "111112612",
+      "111112614",
+      "111126103",
+      "111270002",
+      "111290001",
+      "111361003",
+      "411011105",
+      "411012101",
+      "411021111",
+      "411021211",
+      "411031211",
+      "411031281",
+      "411031411",
+      "411032411",
+      "411051101",
+      "120161002",
+      "120161006",
+      "120161007",
+      "120261002",
+      "120261005",
+      "120261006",
+      "120261099",
+      "120361002",
+      "120361005",
+      "120361006",
+      "120361099",
+      "120420001",
+      "220420002",
+      "230161002",
+      "431300002"
+    ],
+    "D2101": [
+      "110113001",
+      "110113002"
+    ]
+  },
+  "cross_catalog_unresolved": [
+    "111270002",
+    "111290001",
+    "411031281"
+  ],
+  "qualification_scope": "TABLE11_LEAF_MEMBERSHIP_AND_COMPLETE_RN_LISTS_NOT_AUTOMATIC_ACCOUNT_CLASSIFICATION",
+  "codes": {
+    "110111001": {
+      "code": "110111001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110112001": {
+      "code": "110112001",
+      "source_title_line": "Valores recebidos em operações de crédito, relativos",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110112002": {
+      "code": "110112002",
+      "source_title_line": "Valores recebidos em operações de crédito, relativos",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110112003": {
+      "code": "110112003",
+      "source_title_line": "Valores recebidos em operações de TVM, relativos a",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110112004": {
+      "code": "110112004",
+      "source_title_line": "Valores recebidos em operações de TVM, relativos a",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110112005": {
+      "code": "110112005",
+      "source_title_line": "Valores recebidos em operações de crédito, com",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110113001": {
+      "code": "110113001",
+      "source_title_line": "Títulos de dívida objeto de oferta pública Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110113002": {
+      "code": "110113002",
+      "source_title_line": "Títulos de dívida objeto de oferta pública - Fundo de",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110121001": {
+      "code": "110121001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 3,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110211101": {
+      "code": "110211101",
+      "source_title_line": "Taxas de administração fiduciária Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110211401": {
+      "code": "110211401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110211402": {
+      "code": "110211402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110211501": {
+      "code": "110211501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110211611": {
+      "code": "110211611",
+      "source_title_line": "Despesas de securitização Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110211612": {
+      "code": "110211612",
+      "source_title_line": "Despesas de securitização pagas a pessoas",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221101": {
+      "code": "110221101",
+      "source_title_line": "Faturização - Desconto aplicado - Contratos em",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221102": {
+      "code": "110221102",
+      "source_title_line": "Faturização - Desconto aplicado - Contratos em",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221103": {
+      "code": "110221103",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221401": {
+      "code": "110221401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221402": {
+      "code": "110221402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 4,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221501": {
+      "code": "110221501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110221611": {
+      "code": "110221611",
+      "source_title_line": "Perdas incorridas nos recebimentos de créditos e na",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110222101": {
+      "code": "110222101",
+      "source_title_line": "Tarifas e comissões Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110222401": {
+      "code": "110222401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110222402": {
+      "code": "110222402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110222501": {
+      "code": "110222501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110311101": {
+      "code": "110311101",
+      "source_title_line": "Valores da parcela recebida, incluindo tarifas e outros",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110311401": {
+      "code": "110311401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110311402": {
+      "code": "110311402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110312101": {
+      "code": "110312101",
+      "source_title_line": "Valores da parcela recebida, incluindo tarifas e outros",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110312401": {
+      "code": "110312401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110312402": {
+      "code": "110312402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 5,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110312501": {
+      "code": "110312501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110313101": {
+      "code": "110313101",
+      "source_title_line": "Valores da parcela recebida, incluindo tarifas e outros",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110313411": {
+      "code": "110313411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110313412": {
+      "code": "110313412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110313421": {
+      "code": "110313421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110313422": {
+      "code": "110313422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110314101": {
+      "code": "110314101",
+      "source_title_line": "Valores da parcela recebida, incluindo tarifas e outros",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110314421": {
+      "code": "110314421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110314422": {
+      "code": "110314422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110314501": {
+      "code": "110314501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110321101": {
+      "code": "110321101",
+      "source_title_line": "Valor recebido pela alienação do bem, incluindo",
+      "pdf_page": 6,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110321401": {
+      "code": "110321401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110321402": {
+      "code": "110321402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110322101": {
+      "code": "110322101",
+      "source_title_line": "Valor recebido pela alienação do bem, incluindo",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110322401": {
+      "code": "110322401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110322402": {
+      "code": "110322402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110322501": {
+      "code": "110322501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110323101": {
+      "code": "110323101",
+      "source_title_line": "Valor recebido pela alienação do bem, incluindo",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110323411": {
+      "code": "110323411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110323412": {
+      "code": "110323412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110323421": {
+      "code": "110323421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110323422": {
+      "code": "110323422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110323801": {
+      "code": "110323801",
+      "source_title_line": "Despesas de arrendamento em operações realizadas",
+      "pdf_page": 7,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324101": {
+      "code": "110324101",
+      "source_title_line": "Valor recebido pela alienação do bem, incluindo",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324411": {
+      "code": "110324411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324412": {
+      "code": "110324412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324421": {
+      "code": "110324421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324422": {
+      "code": "110324422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324501": {
+      "code": "110324501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324611": {
+      "code": "110324611",
+      "source_title_line": "Despesas de arrendamento comprovadas com",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324612": {
+      "code": "110324612",
+      "source_title_line": "Despesas de arrendamento comprovadas com",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324613": {
+      "code": "110324613",
+      "source_title_line": "Despesas de arrendamento pagas a pessoas",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324801": {
+      "code": "110324801",
+      "source_title_line": "Valor dos bens móveis adquiridos para fins de",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110324901": {
+      "code": "110324901",
+      "source_title_line": "Valor dos bens imóveis adquiridos para fins de",
+      "pdf_page": 8,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411101": {
+      "code": "110411101",
+      "source_title_line": "Valor da parcela recebida, inclusive tarifas e outros",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411411": {
+      "code": "110411411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411412": {
+      "code": "110411412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411421": {
+      "code": "110411421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411422": {
+      "code": "110411422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411501": {
+      "code": "110411501",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110411801": {
+      "code": "110411801",
+      "source_title_line": "Despesa de captação de recursos Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412101": {
+      "code": "110412101",
+      "source_title_line": "Valor da parcela recebida, inclusive tarifas e outros",
+      "pdf_page": 9,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412411": {
+      "code": "110412411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412412": {
+      "code": "110412412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412421": {
+      "code": "110412421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412422": {
+      "code": "110412422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412501": {
+      "code": "110412501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110412502": {
+      "code": "110412502",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421101": {
+      "code": "110421101",
+      "source_title_line": "Valor residual recebido, relativo a bens imóveis Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421102": {
+      "code": "110421102",
+      "source_title_line": "Valor do bem cobrado junto com a parcela Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421411": {
+      "code": "110421411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421412": {
+      "code": "110421412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421421": {
+      "code": "110421421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421422": {
+      "code": "110421422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 10,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421501": {
+      "code": "110421501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110421502": {
+      "code": "110421502",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422101": {
+      "code": "110422101",
+      "source_title_line": "Valor residual recebido, relativo a bens móveis Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422102": {
+      "code": "110422102",
+      "source_title_line": "Valor do bem cobrado junto com a parcela Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422411": {
+      "code": "110422411",
+      "source_title_line": "Valores recebidos pela alienação até o limite do valor",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422412": {
+      "code": "110422412",
+      "source_title_line": "Valores recebidos pela alienação que exceder o valor",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422421": {
+      "code": "110422421",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422422": {
+      "code": "110422422",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422501": {
+      "code": "110422501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110422502": {
+      "code": "110422502",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110510001": {
+      "code": "110510001",
+      "source_title_line": "Valores recebidos em função da administração de",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110540001": {
+      "code": "110540001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 11,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110540002": {
+      "code": "110540002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110550001": {
+      "code": "110550001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110611001": {
+      "code": "110611001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110621001": {
+      "code": "110621001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110711001": {
+      "code": "110711001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110721001": {
+      "code": "110721001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811111": {
+      "code": "110811111",
+      "source_title_line": "Taxa de desconto nas transações (MDR) recebida Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811112": {
+      "code": "110811112",
+      "source_title_line": "Demais bens e serviços fornecidos ao credenciado ou",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811113": {
+      "code": "110811113",
+      "source_title_line": "Recebimento por locação de terminais eletrônicos e",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811114": {
+      "code": "110811114",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811141": {
+      "code": "110811141",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 12,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811142": {
+      "code": "110811142",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811151": {
+      "code": "110811151",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811152": {
+      "code": "110811152",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811211": {
+      "code": "110811211",
+      "source_title_line": "Taxa de desconto nas transações (MDR) recebida Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811219": {
+      "code": "110811219",
+      "source_title_line": "Outros valores recebidos relacionados a arranjos de",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811241": {
+      "code": "110811241",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811242": {
+      "code": "110811242",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811251": {
+      "code": "110811251",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811252": {
+      "code": "110811252",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811311": {
+      "code": "110811311",
+      "source_title_line": "Tarifas de PIX Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811312": {
+      "code": "110811312",
+      "source_title_line": "Tarifas de TED Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811313": {
+      "code": "110811313",
+      "source_title_line": "Tarifas relativas a boletos bancários Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811314": {
+      "code": "110811314",
+      "source_title_line": "Tarifa de compensação de cheque Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811319": {
+      "code": "110811319",
+      "source_title_line": "Outros valores recebidos Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 13,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811341": {
+      "code": "110811341",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811342": {
+      "code": "110811342",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811351": {
+      "code": "110811351",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110811352": {
+      "code": "110811352",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812111": {
+      "code": "110812111",
+      "source_title_line": "Tarifa de intercâmbio recebida Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812112": {
+      "code": "110812112",
+      "source_title_line": "Taxa de royalties ou outros valores recebidos pelo",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812113": {
+      "code": "110812113",
+      "source_title_line": "Bens e serviços fornecidos pelos instituidores aos",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812114": {
+      "code": "110812114",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812115": {
+      "code": "110812115",
+      "source_title_line": "Tarifas, comissões e repasses de MDR entre",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812141": {
+      "code": "110812141",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812142": {
+      "code": "110812142",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812151": {
+      "code": "110812151",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812152": {
+      "code": "110812152",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 14,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812211": {
+      "code": "110812211",
+      "source_title_line": "Taxa de intercâmbio - Emissão de cartão/uso portal",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812212": {
+      "code": "110812212",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812219": {
+      "code": "110812219",
+      "source_title_line": "Outros valores recebidos relacionados a arranjos de",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812241": {
+      "code": "110812241",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812242": {
+      "code": "110812242",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812251": {
+      "code": "110812251",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812252": {
+      "code": "110812252",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812311": {
+      "code": "110812311",
+      "source_title_line": "Valores recebidos de outros participantes de arranjos",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812341": {
+      "code": "110812341",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812342": {
+      "code": "110812342",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812351": {
+      "code": "110812351",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110812352": {
+      "code": "110812352",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821101": {
+      "code": "110821101",
+      "source_title_line": "Valor da taxa de desconto recebida na operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 15,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821401": {
+      "code": "110821401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821402": {
+      "code": "110821402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821501": {
+      "code": "110821501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821502": {
+      "code": "110821502",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821611": {
+      "code": "110821611",
+      "source_title_line": "Curva de juros futuros da taxa DI - Mercado interno Classificar nesse código o valor total das taxas DI aplicadas às",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110821612": {
+      "code": "110821612",
+      "source_title_line": "Perdas incorridas no recebimento de créditos,",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110822101": {
+      "code": "110822101",
+      "source_title_line": "Rendimentos auferidos nas contas de pagamento Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110822401": {
+      "code": "110822401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110822402": {
+      "code": "110822402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110822501": {
+      "code": "110822501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110822502": {
+      "code": "110822502",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110822621": {
+      "code": "110822621",
+      "source_title_line": "Valores pagos como remuneração das contas de",
+      "pdf_page": 16,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "110910001": {
+      "code": "110910001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111010001": {
+      "code": "111010001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111101": {
+      "code": "111111101",
+      "source_title_line": "Prêmios de seguros, cosseguros, resseguros e",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111102": {
+      "code": "111111102",
+      "source_title_line": "Reversão de provisões ou reserva técnica retida pela",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111103": {
+      "code": "111111103",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111401": {
+      "code": "111111401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111402": {
+      "code": "111111402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111501": {
+      "code": "111111501",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111621": {
+      "code": "111111621",
+      "source_title_line": "Valor pago referente a restituições de prêmios Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111622": {
+      "code": "111111622",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111623": {
+      "code": "111111623",
+      "source_title_line": "Valor pago referente ao prêmio nas operações de",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111624": {
+      "code": "111111624",
+      "source_title_line": "Parcela dos prêmios usada para provisões ou",
+      "pdf_page": 17,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111625": {
+      "code": "111111625",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111801": {
+      "code": "111111801",
+      "source_title_line": "Despesas com indenizações pagas a segurados",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111111802": {
+      "code": "111111802",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112101": {
+      "code": "111112101",
+      "source_title_line": "Prêmios de seguros, cosseguros, resseguros e",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112102": {
+      "code": "111112102",
+      "source_title_line": "Valores de salvados recebidos Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112103": {
+      "code": "111112103",
+      "source_title_line": "Valores de ressarcimentos recebidos Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112104": {
+      "code": "111112104",
+      "source_title_line": "Reversão de provisões ou reserva técnica retida pela",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112105": {
+      "code": "111112105",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112401": {
+      "code": "111112401",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112402": {
+      "code": "111112402",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112501": {
+      "code": "111112501",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112502": {
+      "code": "111112502",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112611": {
+      "code": "111112611",
+      "source_title_line": "Indenizações pagas diretamente a segurados não",
+      "pdf_page": 18,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112612": {
+      "code": "111112612",
+      "source_title_line": "Indenizações pagas por meio do pagamento de bens",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112613": {
+      "code": "111112613",
+      "source_title_line": "Valor pago referente a restituições de prêmios Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112614": {
+      "code": "111112614",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112615": {
+      "code": "111112615",
+      "source_title_line": "Valor pago referente ao prêmio nas operações de",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112616": {
+      "code": "111112616",
+      "source_title_line": "Parcela dos prêmios usada para provisões ou",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112617": {
+      "code": "111112617",
+      "source_title_line": "Indenizações de bens ou serviços a segurados não",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112618": {
+      "code": "111112618",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111112701": {
+      "code": "111112701",
+      "source_title_line": "Ativos garantidores vinculados a provisões técnicas Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111121001": {
+      "code": "111121001",
+      "source_title_line": "Prêmios recebidos de seguros de pessoas com",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111121002": {
+      "code": "111121002",
+      "source_title_line": "Encargo do fundo decorrente de estruturação e",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111121003": {
+      "code": "111121003",
+      "source_title_line": "Reversão de provisões ou reserva técnica retida pela",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111121004": {
+      "code": "111121004",
+      "source_title_line": "Receitas financeiras sobre o excedente de ativos",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111121005": {
+      "code": "111121005",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 19,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111124001": {
+      "code": "111124001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111124002": {
+      "code": "111124002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111125001": {
+      "code": "111125001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111125002": {
+      "code": "111125002",
+      "source_title_line": "Valores recebidos por atos cooperativos com opção",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111125003": {
+      "code": "111125003",
+      "source_title_line": "Demais rendimentos de aplicações financeiras Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111126101": {
+      "code": "111126101",
+      "source_title_line": "Parcela dos prêmios para constituição de provisões",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111126102": {
+      "code": "111126102",
+      "source_title_line": "Valor pago referente a restituições de prêmios Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111126103": {
+      "code": "111126103",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111126104": {
+      "code": "111126104",
+      "source_title_line": "Valores de indenizações pagas por coberturas de",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111126105": {
+      "code": "111126105",
+      "source_title_line": "Valor pago relativo a serviços de intermediação de",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111127001": {
+      "code": "111127001",
+      "source_title_line": "Valores de indenizações pagas por coberturas de",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111127099": {
+      "code": "111127099",
+      "source_title_line": "Outros valores não dedutíveis Classificar nesse código outros valores não dedutíveis.",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111310001": {
+      "code": "111310001",
+      "source_title_line": "Arrecadação com os títulos de capitalização com",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111310002": {
+      "code": "111310002",
+      "source_title_line": "Arrecadação com os títulos de capitalização sem",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111310003": {
+      "code": "111310003",
+      "source_title_line": "Receitas com prescrição e penalidades Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 20,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111310004": {
+      "code": "111310004",
+      "source_title_line": "Reversão de provisões ou reserva técnica retida pela",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111310005": {
+      "code": "111310005",
+      "source_title_line": "Receitas financeiras sobre o excedente de ativos",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111310006": {
+      "code": "111310006",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111340001": {
+      "code": "111340001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111340002": {
+      "code": "111340002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111350001": {
+      "code": "111350001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111350004": {
+      "code": "111350004",
+      "source_title_line": "Demais rendimentos de aplicações financeiras Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111361001": {
+      "code": "111361001",
+      "source_title_line": "Parcela das contribuições para constituição de",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111361002": {
+      "code": "111361002",
+      "source_title_line": "Valores pagos por cancelamento e restituições de",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111361003": {
+      "code": "111361003",
+      "source_title_line": "Valores pagos relativos a serviços de intermediação",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111361004": {
+      "code": "111361004",
+      "source_title_line": "Valores pagos relativos a serviços de intermediação",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111411001": {
+      "code": "111411001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111421001": {
+      "code": "111421001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 21,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111431001": {
+      "code": "111431001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111441001": {
+      "code": "111441001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111510001": {
+      "code": "111510001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "111610001": {
+      "code": "111610001",
+      "source_title_line": "Valores recebidos da administração pública",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "112011001": {
+      "code": "112011001",
+      "source_title_line": "Tarifas recebidas da administração pública tributadas",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "118915001": {
+      "code": "118915001",
+      "source_title_line": "Base de cálculo negativa do IBS/CBS Classificar nesse código as rubricas contábeis que registrarem a base",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "118915099": {
+      "code": "118915099",
+      "source_title_line": "Outras contas do ativo circulante Classificar nesse código as demais rubricas contábeis do Ativo",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "118925099": {
+      "code": "118925099",
+      "source_title_line": "Outras contas do ativo não circulante Classificar nesse código outras contas do ativo não circulante.",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "119000001": {
+      "code": "119000001",
+      "source_title_line": "Contas de compensação ativas Classificar nesse código as contas de compensação ativas.",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "218910099": {
+      "code": "218910099",
+      "source_title_line": "Outras contas do passivo circulante Classificar nesse código as rubricas contábeis do Passivo Circulante.",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "218920099": {
+      "code": "218920099",
+      "source_title_line": "Outras contas do passivo não circulante Classificar nesse código as rubricas contábeis do Passivo Não",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "218930099": {
+      "code": "218930099",
+      "source_title_line": "Outras contas do patrimônio líquido Classificar nesse código as rubricas contábeis pertencentes ao grupo",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "219000001": {
+      "code": "219000001",
+      "source_title_line": "Contas de compensação passivas Classificar nesse código as contas de compensação passivas.",
+      "pdf_page": 22,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011101": {
+      "code": "311011101",
+      "source_title_line": "Operações de crédito Classificar nesse código as  rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011102": {
+      "code": "311011102",
+      "source_title_line": "Operações de câmbio Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011103": {
+      "code": "311011103",
+      "source_title_line": "Operações com aquisição, negociação e liquidação",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011104": {
+      "code": "311011104",
+      "source_title_line": "Receitas com títulos de dívida - Sem oferta pública Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011105": {
+      "code": "311011105",
+      "source_title_line": "Recuperação de crédito baixado como prejuízo Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011106": {
+      "code": "311011106",
+      "source_title_line": "Estorno de encargos financeiros registrados no",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011107": {
+      "code": "311011107",
+      "source_title_line": "Excesso de rendimento em função de avaliação a",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011108": {
+      "code": "311011108",
+      "source_title_line": "Desconto condicional concedido Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011109": {
+      "code": "311011109",
+      "source_title_line": "Receita oriunda do exterior (não considerada",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011110": {
+      "code": "311011110",
+      "source_title_line": "Ajuste para recomposição da receita (custos e",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011111": {
+      "code": "311011111",
+      "source_title_line": "Receitas com derivativos contratados Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011112": {
+      "code": "311011112",
+      "source_title_line": "Tarifas e comissões acessórias Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011201": {
+      "code": "311011201",
+      "source_title_line": "Títulos de dívida objeto de oferta pública Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 23,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011202": {
+      "code": "311011202",
+      "source_title_line": "Títulos de dívida objeto de oferta pública - Fundo de",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011601": {
+      "code": "311011601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011602": {
+      "code": "311011602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011701": {
+      "code": "311011701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011702": {
+      "code": "311011702",
+      "source_title_line": "Variação positiva a valor justo em TVM Classificar nesse código as receitas com variações positivas de Títulos",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011801": {
+      "code": "311011801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011802": {
+      "code": "311011802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011803": {
+      "code": "311011803",
+      "source_title_line": "Reversão de provisão Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011804": {
+      "code": "311011804",
+      "source_title_line": "Recuperação de crédito baixado como prejuízo Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311011805": {
+      "code": "311011805",
+      "source_title_line": "Desconto incondicional Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012101": {
+      "code": "311012101",
+      "source_title_line": "Serviços de custódia, corretagem, distribuição e",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012102": {
+      "code": "311012102",
+      "source_title_line": "Demais tarifas e comissões não acessórias Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012601": {
+      "code": "311012601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012602": {
+      "code": "311012602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 24,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012701": {
+      "code": "311012701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012801": {
+      "code": "311012801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311012802": {
+      "code": "311012802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021111": {
+      "code": "311021111",
+      "source_title_line": "Securitização - Patrimônio Separado - Desconto",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021112": {
+      "code": "311021112",
+      "source_title_line": "Securitização - Patrimônio Separado - Desconto",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021113": {
+      "code": "311021113",
+      "source_title_line": "Securitização - Patrimônio Separado - Excedente de",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021114": {
+      "code": "311021114",
+      "source_title_line": "Valor recebido do exterior (não considerado",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021161": {
+      "code": "311021161",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021162": {
+      "code": "311021162",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311021181": {
+      "code": "311021181",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311022701": {
+      "code": "311022701",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311037001": {
+      "code": "311037001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 25,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311047001": {
+      "code": "311047001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311057001": {
+      "code": "311057001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311061101": {
+      "code": "311061101",
+      "source_title_line": "Taxa de administração e gestão - Serviços prestados",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311061601": {
+      "code": "311061601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311061602": {
+      "code": "311061602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311061701": {
+      "code": "311061701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311061801": {
+      "code": "311061801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311061802": {
+      "code": "311061802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311062101": {
+      "code": "311062101",
+      "source_title_line": "Taxa de administração e gestão - Serviços prestados",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311062601": {
+      "code": "311062601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311062602": {
+      "code": "311062602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311062701": {
+      "code": "311062701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 26,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311062801": {
+      "code": "311062801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311062802": {
+      "code": "311062802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311071101": {
+      "code": "311071101",
+      "source_title_line": "Tarifas e comissões cobradas por serviços prestados",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311071102": {
+      "code": "311071102",
+      "source_title_line": "Serviços de administração ou gestão de fundos Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311071601": {
+      "code": "311071601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311071602": {
+      "code": "311071602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311071801": {
+      "code": "311071801",
+      "source_title_line": "Serviços prestados como agente operador do FGTS -",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311071802": {
+      "code": "311071802",
+      "source_title_line": "Serviços de administração e operacionalização",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072101": {
+      "code": "311072101",
+      "source_title_line": "Operações de crédito Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072102": {
+      "code": "311072102",
+      "source_title_line": "Recuperação de crédito baixado como prejuízo Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072103": {
+      "code": "311072103",
+      "source_title_line": "Estorno de encargos financeiros registrados no",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072104": {
+      "code": "311072104",
+      "source_title_line": "Excesso de rendimento em função de avaliação a",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072105": {
+      "code": "311072105",
+      "source_title_line": "Receitas com derivativos contratados Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 27,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072106": {
+      "code": "311072106",
+      "source_title_line": "Desconto condicional concedido Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072107": {
+      "code": "311072107",
+      "source_title_line": "Ajuste para recomposição da receita (custos e",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072108": {
+      "code": "311072108",
+      "source_title_line": "Tarifas e comissões acessórias Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072601": {
+      "code": "311072601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072602": {
+      "code": "311072602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072801": {
+      "code": "311072801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311072802": {
+      "code": "311072802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311073801": {
+      "code": "311073801",
+      "source_title_line": "Serviços prestados por Fundos Garantidores e",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311087001": {
+      "code": "311087001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311091001": {
+      "code": "311091001",
+      "source_title_line": "Valor dos pontos emitidos Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311096001": {
+      "code": "311096001",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311096002": {
+      "code": "311096002",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 28,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311097001": {
+      "code": "311097001",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311098001": {
+      "code": "311098001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311098002": {
+      "code": "311098002",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311098003": {
+      "code": "311098003",
+      "source_title_line": "Receita reconhecida para fins contábeis Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311101001": {
+      "code": "311101001",
+      "source_title_line": "Serviços prestados por administradoras de mercados",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311106001": {
+      "code": "311106001",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311106002": {
+      "code": "311106002",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311107001": {
+      "code": "311107001",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311108001": {
+      "code": "311108001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311117001": {
+      "code": "311117001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311127001": {
+      "code": "311127001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311137001": {
+      "code": "311137001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 29,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311141101": {
+      "code": "311141101",
+      "source_title_line": "Comissões auferidas com a intermediação Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311141601": {
+      "code": "311141601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311141602": {
+      "code": "311141602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311141701": {
+      "code": "311141701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311141801": {
+      "code": "311141801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311141802": {
+      "code": "311141802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311142101": {
+      "code": "311142101",
+      "source_title_line": "Comissões auferidas com a intermediação Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311142601": {
+      "code": "311142601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311142602": {
+      "code": "311142602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311142701": {
+      "code": "311142701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311142801": {
+      "code": "311142801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 30,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311142802": {
+      "code": "311142802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311143101": {
+      "code": "311143101",
+      "source_title_line": "Comissões auferidas com a intermediação Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311143601": {
+      "code": "311143601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311143602": {
+      "code": "311143602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311143701": {
+      "code": "311143701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311143801": {
+      "code": "311143801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311143802": {
+      "code": "311143802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311144101": {
+      "code": "311144101",
+      "source_title_line": "Comissões auferidas com a intermediação Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311144601": {
+      "code": "311144601",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311144602": {
+      "code": "311144602",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311144701": {
+      "code": "311144701",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311144801": {
+      "code": "311144801",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 31,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311144802": {
+      "code": "311144802",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311151001": {
+      "code": "311151001",
+      "source_title_line": "Receita com serviços remunerados por tarifa ou",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311151002": {
+      "code": "311151002",
+      "source_title_line": "Receita oriunda do exterior (não considerada",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311156001": {
+      "code": "311156001",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311156002": {
+      "code": "311156002",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311157001": {
+      "code": "311157001",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311158001": {
+      "code": "311158001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311158002": {
+      "code": "311158002",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311161001": {
+      "code": "311161001",
+      "source_title_line": "Receitas com operações de proteção patrimonial",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311166001": {
+      "code": "311166001",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311166002": {
+      "code": "311166002",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311167001": {
+      "code": "311167001",
+      "source_title_line": "Serviços prestados à administração pública",
+      "pdf_page": 32,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311168001": {
+      "code": "311168001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311168002": {
+      "code": "311168002",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "311988099": {
+      "code": "311988099",
+      "source_title_line": "Outras receitas não tributáveis Classificar nesse código as rubricas contábeis representativas de outras",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312110001": {
+      "code": "312110001",
+      "source_title_line": "Tarifas cobradas em operações tipicamente bancárias Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312110002": {
+      "code": "312110002",
+      "source_title_line": "Tarifas cobradas pelos emissores de cartões Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312110003": {
+      "code": "312110003",
+      "source_title_line": "Tarifa cobrada pela administração do benefício de",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312160001": {
+      "code": "312160001",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312160002": {
+      "code": "312160002",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312180001": {
+      "code": "312180001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas receitas",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312180002": {
+      "code": "312180002",
+      "source_title_line": "Receitas com operações sujeitas a alíquota zero do",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "312200099": {
+      "code": "312200099",
+      "source_title_line": "Outras receitas amparadas por outros documentos",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "319100001": {
+      "code": "319100001",
+      "source_title_line": "Receitas com alienação de bens imóveis que tenham",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "319100002": {
+      "code": "319100002",
+      "source_title_line": "Receitas com alienação de outros bens imóveis Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 33,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "319100099": {
+      "code": "319100099",
+      "source_title_line": "Outras receitas amparadas por documentos fiscais Classificar nesse código outros valores tributáveis. LC 214/2025",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011101": {
+      "code": "411011101",
+      "source_title_line": "Despesas de câmbio Classificar nesse código as despesas com operações de câmbio. LC 214/2025",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011102": {
+      "code": "411011102",
+      "source_title_line": "Despesas financeiras resultantes de perdas em",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011103": {
+      "code": "411011103",
+      "source_title_line": "Encargos financeiros ainda que registrados no",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011104": {
+      "code": "411011104",
+      "source_title_line": "Perdas incorridas nas operações de crédito Classificar nesse código as despesas com perdas no recebimento de",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011105": {
+      "code": "411011105",
+      "source_title_line": "Despesa com correspondente bancário vinculada aos",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011106": {
+      "code": "411011106",
+      "source_title_line": "Despesas com derivativos contratados Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011107": {
+      "code": "411011107",
+      "source_title_line": "Despesa com correspondente bancário vinculada aos",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011201": {
+      "code": "411011201",
+      "source_title_line": "Despesa de captação de recursos Classificar nesse código as despesas com captação de recursos. No",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011601": {
+      "code": "411011601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011602": {
+      "code": "411011602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011701": {
+      "code": "411011701",
+      "source_title_line": "Variação negativa a valor justo em TVM Classificar nesse código as despesas com variações negativas de Títulos",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411011899": {
+      "code": "411011899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411012101": {
+      "code": "411012101",
+      "source_title_line": "Despesas com assessor de investimento e consultor",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411012601": {
+      "code": "411012601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 34,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411012602": {
+      "code": "411012602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411012899": {
+      "code": "411012899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021111": {
+      "code": "411021111",
+      "source_title_line": "Despesas de securitização Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021112": {
+      "code": "411021112",
+      "source_title_line": "Perdas incorridas nos recebimentos de créditos e na",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021121": {
+      "code": "411021121",
+      "source_title_line": "Despesa de captação de recursos Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021161": {
+      "code": "411021161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021189": {
+      "code": "411021189",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021211": {
+      "code": "411021211",
+      "source_title_line": "Despesas de securitização Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021261": {
+      "code": "411021261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411021289": {
+      "code": "411021289",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 35,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411022161": {
+      "code": "411022161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411022171": {
+      "code": "411022171",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411022189": {
+      "code": "411022189",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411022261": {
+      "code": "411022261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411022271": {
+      "code": "411022271",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411022289": {
+      "code": "411022289",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031161": {
+      "code": "411031161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031162": {
+      "code": "411031162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031211": {
+      "code": "411031211",
+      "source_title_line": "Despesas de arrendamento relativa a aquisição de",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031212": {
+      "code": "411031212",
+      "source_title_line": "Despesas de arrendamento comprovadas com",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031213": {
+      "code": "411031213",
+      "source_title_line": "Despesas de arrendamento relativa a aquisição de",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031261": {
+      "code": "411031261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031262": {
+      "code": "411031262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 36,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031361": {
+      "code": "411031361",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031362": {
+      "code": "411031362",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031411": {
+      "code": "411031411",
+      "source_title_line": "Despesas de arrendamento relativa a aquisição de",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031412": {
+      "code": "411031412",
+      "source_title_line": "Despesas de arrendamento comprovadas com",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031413": {
+      "code": "411031413",
+      "source_title_line": "Despesas de arrendamento relativa a aquisição de",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031461": {
+      "code": "411031461",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411031462": {
+      "code": "411031462",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032161": {
+      "code": "411032161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032162": {
+      "code": "411032162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032181": {
+      "code": "411032181",
+      "source_title_line": "Despesas de arrendamento em operações realizadas",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032261": {
+      "code": "411032261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032262": {
+      "code": "411032262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032289": {
+      "code": "411032289",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032361": {
+      "code": "411032361",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 37,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032362": {
+      "code": "411032362",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032411": {
+      "code": "411032411",
+      "source_title_line": "Despesas de arrendamento relativa a aquisição de",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032412": {
+      "code": "411032412",
+      "source_title_line": "Despesas de arrendamento comprovadas com",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032413": {
+      "code": "411032413",
+      "source_title_line": "Despesas de arrendamento relativa a aquisição de",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032461": {
+      "code": "411032461",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411032462": {
+      "code": "411032462",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411037001": {
+      "code": "411037001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411038099": {
+      "code": "411038099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411041161": {
+      "code": "411041161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411041162": {
+      "code": "411041162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411041211": {
+      "code": "411041211",
+      "source_title_line": "Despesa de captação de recursos Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 38,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411041261": {
+      "code": "411041261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411041262": {
+      "code": "411041262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411042161": {
+      "code": "411042161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411042162": {
+      "code": "411042162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411042261": {
+      "code": "411042261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411042262": {
+      "code": "411042262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411047001": {
+      "code": "411047001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411048099": {
+      "code": "411048099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411051101": {
+      "code": "411051101",
+      "source_title_line": "Despesas com intermediação de consórcio,",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411056001": {
+      "code": "411056001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411056002": {
+      "code": "411056002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411057001": {
+      "code": "411057001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411058001": {
+      "code": "411058001",
+      "source_title_line": "Valor pago relativo a serviços de intermediação não",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411058099": {
+      "code": "411058099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411061601": {
+      "code": "411061601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 39,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411061602": {
+      "code": "411061602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411061899": {
+      "code": "411061899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411062601": {
+      "code": "411062601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411062602": {
+      "code": "411062602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411062899": {
+      "code": "411062899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411071601": {
+      "code": "411071601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411071602": {
+      "code": "411071602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411071899": {
+      "code": "411071899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072101": {
+      "code": "411072101",
+      "source_title_line": "Encargos financeiros ainda que registrados no",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072102": {
+      "code": "411072102",
+      "source_title_line": "Perdas incorridas nas operações de crédito Classificar nesse código as despesas com perdas no recebimento de",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072103": {
+      "code": "411072103",
+      "source_title_line": "Despesas com derivativos contratados Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072201": {
+      "code": "411072201",
+      "source_title_line": "Despesa de captação de recursos Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072601": {
+      "code": "411072601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072602": {
+      "code": "411072602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411072899": {
+      "code": "411072899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411073899": {
+      "code": "411073899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 40,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081161": {
+      "code": "411081161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081162": {
+      "code": "411081162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081171": {
+      "code": "411081171",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081189": {
+      "code": "411081189",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081261": {
+      "code": "411081261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081262": {
+      "code": "411081262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081271": {
+      "code": "411081271",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081289": {
+      "code": "411081289",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081361": {
+      "code": "411081361",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081362": {
+      "code": "411081362",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081371": {
+      "code": "411081371",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411081389": {
+      "code": "411081389",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082161": {
+      "code": "411082161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082162": {
+      "code": "411082162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082171": {
+      "code": "411082171",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 41,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082189": {
+      "code": "411082189",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082261": {
+      "code": "411082261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082262": {
+      "code": "411082262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082271": {
+      "code": "411082271",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082289": {
+      "code": "411082289",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082361": {
+      "code": "411082361",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082362": {
+      "code": "411082362",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082371": {
+      "code": "411082371",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411082389": {
+      "code": "411082389",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083161": {
+      "code": "411083161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083162": {
+      "code": "411083162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083171": {
+      "code": "411083171",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083189": {
+      "code": "411083189",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083261": {
+      "code": "411083261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083262": {
+      "code": "411083262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083271": {
+      "code": "411083271",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 42,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411083289": {
+      "code": "411083289",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411091001": {
+      "code": "411091001",
+      "source_title_line": "Valor dos pontos pagos no resgate Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411091002": {
+      "code": "411091002",
+      "source_title_line": "Valor ressarcido por pontos não utilizados,",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411096001": {
+      "code": "411096001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411096002": {
+      "code": "411096002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411098099": {
+      "code": "411098099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411106001": {
+      "code": "411106001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411106002": {
+      "code": "411106002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411108099": {
+      "code": "411108099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411111161": {
+      "code": "411111161",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411111162": {
+      "code": "411111162",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411111261": {
+      "code": "411111261",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411111262": {
+      "code": "411111262",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411112601": {
+      "code": "411112601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411112602": {
+      "code": "411112602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 43,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411113701": {
+      "code": "411113701",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411113899": {
+      "code": "411113899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411121601": {
+      "code": "411121601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411121602": {
+      "code": "411121602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411121701": {
+      "code": "411121701",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411121899": {
+      "code": "411121899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411122899": {
+      "code": "411122899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411136001": {
+      "code": "411136001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411136002": {
+      "code": "411136002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411137001": {
+      "code": "411137001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411138099": {
+      "code": "411138099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411141601": {
+      "code": "411141601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411141602": {
+      "code": "411141602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411141899": {
+      "code": "411141899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411142601": {
+      "code": "411142601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 44,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411142602": {
+      "code": "411142602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411142899": {
+      "code": "411142899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411143601": {
+      "code": "411143601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411143602": {
+      "code": "411143602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411143899": {
+      "code": "411143899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411144601": {
+      "code": "411144601",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411144602": {
+      "code": "411144602",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411144899": {
+      "code": "411144899",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411156001": {
+      "code": "411156001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411156002": {
+      "code": "411156002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411158099": {
+      "code": "411158099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411166001": {
+      "code": "411166001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411166002": {
+      "code": "411166002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411168099": {
+      "code": "411168099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998001": {
+      "code": "411998001",
+      "source_title_line": "Despesa de captação de cooperativas com recursos",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998002": {
+      "code": "411998002",
+      "source_title_line": "Provisão para perdas Classificar nesse código as despesas com provisão para perdas. LC 214/2025",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998003": {
+      "code": "411998003",
+      "source_title_line": "Crédito baixado como prejuízo Classificar nesse código as despesas com créditos baixados como",
+      "pdf_page": 45,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998004": {
+      "code": "411998004",
+      "source_title_line": "Despesas administrativas Classificar nesse código as despesas administrativas. LC 214/2025",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998005": {
+      "code": "411998005",
+      "source_title_line": "Despesa já deduzida anteriormente Classificar nesse código as despesas já deduzidas anteriormente. LC 214/2025",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998006": {
+      "code": "411998006",
+      "source_title_line": "Despesa com correspondente bancário não vinculada",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "411998099": {
+      "code": "411998099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "412160001": {
+      "code": "412160001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "412160002": {
+      "code": "412160002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "412180099": {
+      "code": "412180099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "419800099": {
+      "code": "419800099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110001": {
+      "code": "120110001",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110002": {
+      "code": "120110002",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110003": {
+      "code": "120110003",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110004": {
+      "code": "120110004",
+      "source_title_line": "Prêmios ou contraprestações recebidas -",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110005": {
+      "code": "120110005",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Contratos",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110006": {
+      "code": "120110006",
+      "source_title_line": "Taxas de administração recebidas Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120110007": {
+      "code": "120110007",
+      "source_title_line": "Valores recebidos de outras entidades do setor Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 46,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120130001": {
+      "code": "120130001",
+      "source_title_line": "Aplicações financeiras sobre reservas técnicas Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120140001": {
+      "code": "120140001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120140002": {
+      "code": "120140002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120150001": {
+      "code": "120150001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161001": {
+      "code": "120161001",
+      "source_title_line": "Indenizações pagas ao beneficiário do plano ou",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161002": {
+      "code": "120161002",
+      "source_title_line": "Indenizações pagas a terceiros correspondentes a",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161003": {
+      "code": "120161003",
+      "source_title_line": "Indenizações pagas a terceiros correspondentes a",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161004": {
+      "code": "120161004",
+      "source_title_line": "Indenizações pagas ao SUS por assistência aos seus",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161005": {
+      "code": "120161005",
+      "source_title_line": "Valores pagos por corresponsabilidade cedida Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 47,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161006": {
+      "code": "120161006",
+      "source_title_line": "Restituições de prêmios ou contraprestações Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161007": {
+      "code": "120161007",
+      "source_title_line": "Valores pagos pela intermediação de seguros ou",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161008": {
+      "code": "120161008",
+      "source_title_line": "Taxa de administração paga às administradoras de",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120161099": {
+      "code": "120161099",
+      "source_title_line": "Outros valores pagos às demais entidades do setor Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120180001": {
+      "code": "120180001",
+      "source_title_line": "Valores pagos vinculados a contratos de exportação Classificar nesse código as demais rubricas contábeis relativas a",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120180002": {
+      "code": "120180002",
+      "source_title_line": "Valores pagos por atos cooperativos com opção à",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210001": {
+      "code": "120210001",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210002": {
+      "code": "120210002",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210003": {
+      "code": "120210003",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210004": {
+      "code": "120210004",
+      "source_title_line": "Prêmios ou contraprestações recebidas -",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210005": {
+      "code": "120210005",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Contratos",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210006": {
+      "code": "120210006",
+      "source_title_line": "Taxas de administração recebidas Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120210007": {
+      "code": "120210007",
+      "source_title_line": "Valores recebidos de outras entidades do setor Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 48,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120230001": {
+      "code": "120230001",
+      "source_title_line": "Aplicações financeiras sobre reservas técnicas Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120240001": {
+      "code": "120240001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120240002": {
+      "code": "120240002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120250001": {
+      "code": "120250001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261001": {
+      "code": "120261001",
+      "source_title_line": "Indenizações pagas ao beneficiário do plano ou",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261002": {
+      "code": "120261002",
+      "source_title_line": "Indenizações pagas a terceiros correspondentes a",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261003": {
+      "code": "120261003",
+      "source_title_line": "Indenizações pagas a terceiros correspondentes a",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261004": {
+      "code": "120261004",
+      "source_title_line": "Valores pagos por corresponsabilidade cedida Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261005": {
+      "code": "120261005",
+      "source_title_line": "Restituições de prêmios ou contraprestações Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 49,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261006": {
+      "code": "120261006",
+      "source_title_line": "Valores pagos pela intermediação de seguros ou",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261007": {
+      "code": "120261007",
+      "source_title_line": "Taxa de administração paga às administradoras de",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120261099": {
+      "code": "120261099",
+      "source_title_line": "Outros valores pagos às demais entidades Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120280001": {
+      "code": "120280001",
+      "source_title_line": "Valores pagos vinculados a contratos de exportação Classificar nesse código as demais rubricas contábeis relativas a",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120280002": {
+      "code": "120280002",
+      "source_title_line": "Valores pagos por atos cooperativos com opção à",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310001": {
+      "code": "120310001",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310002": {
+      "code": "120310002",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310003": {
+      "code": "120310003",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Seguros ou",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310004": {
+      "code": "120310004",
+      "source_title_line": "Prêmios ou contraprestações recebidas -",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310005": {
+      "code": "120310005",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Contratos",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310006": {
+      "code": "120310006",
+      "source_title_line": "Taxas de administração recebidas Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120310007": {
+      "code": "120310007",
+      "source_title_line": "Valores recebidos de outras entidades do setor Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120330001": {
+      "code": "120330001",
+      "source_title_line": "Aplicações financeiras sobre reservas técnicas Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 50,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120340001": {
+      "code": "120340001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120340002": {
+      "code": "120340002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120350001": {
+      "code": "120350001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361001": {
+      "code": "120361001",
+      "source_title_line": "Indenizações pagas ao beneficiário do plano ou",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361002": {
+      "code": "120361002",
+      "source_title_line": "Indenizações pagas a terceiros correspondentes a",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361003": {
+      "code": "120361003",
+      "source_title_line": "Indenizações pagas a terceiros correspondentes a",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361004": {
+      "code": "120361004",
+      "source_title_line": "Valores pagos por corresponsabilidade cedida Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361005": {
+      "code": "120361005",
+      "source_title_line": "Restituições de prêmios ou contraprestações Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361006": {
+      "code": "120361006",
+      "source_title_line": "Valores pagos pela intermediação de seguros ou",
+      "pdf_page": 51,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361007": {
+      "code": "120361007",
+      "source_title_line": "Taxa de administração paga às administradoras de",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120361099": {
+      "code": "120361099",
+      "source_title_line": "Outros valores pagos às demais entidades Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120380001": {
+      "code": "120380001",
+      "source_title_line": "Valores pagos vinculados a contratos de exportação Classificar nesse código as demais rubricas contábeis relativas a",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120380002": {
+      "code": "120380002",
+      "source_title_line": "Valores pagos por atos cooperativos com opção à",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120410001": {
+      "code": "120410001",
+      "source_title_line": "Prêmios ou contraprestações recebidas - Contratos",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120410099": {
+      "code": "120410099",
+      "source_title_line": "Outros valores recebidos Classificar nesse código as rubricas contábeis relativas a outros valores",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120420001": {
+      "code": "120420001",
+      "source_title_line": "Aquisições de bens e serviços Classificar nesse código as rubricas contábeis relativas a aquisições de",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120510001": {
+      "code": "120510001",
+      "source_title_line": "Comissões recebidas pela administração dos Planos",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120540001": {
+      "code": "120540001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120540002": {
+      "code": "120540002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "120550001": {
+      "code": "120550001",
+      "source_title_line": "Exportação de serviços Classificar nesse código as rubricas contábeis representativas valores",
+      "pdf_page": 52,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "128915001": {
+      "code": "128915001",
+      "source_title_line": "Base de cálculo negativa do IBS/CBS Classificar nesse código as rubricas contábeis que registrarem a base",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "128915099": {
+      "code": "128915099",
+      "source_title_line": "Outras contas do ativo circulante Classificar nesse código outras contas do ativo circulante.",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "128925099": {
+      "code": "128925099",
+      "source_title_line": "Outras contas do ativo não circulante Classificar nesse código outras contas do ativo não circulante.",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "129000001": {
+      "code": "129000001",
+      "source_title_line": "Contas de compensação ativas Classificar nesse código as contas de compensação ativas.",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220110001": {
+      "code": "220110001",
+      "source_title_line": "Provisões técnicas lastreadas em ativo garantidor Classificar nesse código as rubricas contábeis que representam as",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220110002": {
+      "code": "220110002",
+      "source_title_line": "Provisões técnicas não lastreadas em ativo garantidor Classificar nesse código as rubricas contábeis que representam as",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220210001": {
+      "code": "220210001",
+      "source_title_line": "Provisões técnicas lastreadas em ativo garantidor Classificar nesse código as rubricas contábeis que representam as",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220210002": {
+      "code": "220210002",
+      "source_title_line": "Provisões técnicas não lastreadas em ativo garantidor Classificar nesse código as rubricas contábeis que representam as",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220310001": {
+      "code": "220310001",
+      "source_title_line": "Provisões técnicas lastreadas em ativo garantidor Classificar nesse código as rubricas contábeis que representam as",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220310002": {
+      "code": "220310002",
+      "source_title_line": "Provisões técnicas não lastreadas em ativo garantidor Classificar nesse código as rubricas contábeis que representam as",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220410001": {
+      "code": "220410001",
+      "source_title_line": "Contraprestações recebidas relativas a planos de",
+      "pdf_page": 53,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220420001": {
+      "code": "220420001",
+      "source_title_line": "Desembolsos com planos de saúde de autogestão,",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "220420002": {
+      "code": "220420002",
+      "source_title_line": "Desembolsos com planos de saúde de autogestão,",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "228910099": {
+      "code": "228910099",
+      "source_title_line": "Outras contas do passivo circulante Classificar nesse código outras contas do passivo circulante.",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "228920099": {
+      "code": "228920099",
+      "source_title_line": "Outras contas do passivo não circulante Classificar nesse código outras contas do passivo não circulante.",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "228930099": {
+      "code": "228930099",
+      "source_title_line": "Outras contas do patrimônio líquido Classificar nesse código as demais rubricas contábeis do Patrimônio",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "229000001": {
+      "code": "229000001",
+      "source_title_line": "Contas de compensação passivas Classificar nesse código as contas de compensação passivas.",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "321017001": {
+      "code": "321017001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "321027001": {
+      "code": "321027001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "321037001": {
+      "code": "321037001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "321047001": {
+      "code": "321047001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "321057001": {
+      "code": "321057001",
+      "source_title_line": "Receitas reconhecidas por competência e tributadas",
+      "pdf_page": 54,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "321090009": {
+      "code": "321090009",
+      "source_title_line": "Outras receitas não tributáveis Classificar nesse código as rubricas contábeis representativas de outras",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "322100099": {
+      "code": "322100099",
+      "source_title_line": "Outras receitas amparadas por documentos fiscais Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "329100099": {
+      "code": "329100099",
+      "source_title_line": "Outras receitas amparadas por documentos fiscais Classificar nesse código as rubricas contábeis representativas das",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421016001": {
+      "code": "421016001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421016002": {
+      "code": "421016002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421017001": {
+      "code": "421017001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421018001": {
+      "code": "421018001",
+      "source_title_line": "Despesas gerais Classificar nesse código outras despesas não dedutíveis.",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421026001": {
+      "code": "421026001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421026002": {
+      "code": "421026002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421027001": {
+      "code": "421027001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421028001": {
+      "code": "421028001",
+      "source_title_line": "Despesas gerais Classificar nesse código outras despesas não dedutíveis.",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421036001": {
+      "code": "421036001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421036002": {
+      "code": "421036002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421037001": {
+      "code": "421037001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 55,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421038001": {
+      "code": "421038001",
+      "source_title_line": "Despesas gerais Classificar nesse código outras despesas não dedutíveis.",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421048001": {
+      "code": "421048001",
+      "source_title_line": "Despesas gerais Classificar nesse código as demais rubricas contábeis relativas a",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421056001": {
+      "code": "421056001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421056002": {
+      "code": "421056002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421057001": {
+      "code": "421057001",
+      "source_title_line": "Despesas reconhecidas por competência e dedutíveis",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "421058001": {
+      "code": "421058001",
+      "source_title_line": "Despesas gerais Classificar nesse código outras despesas não dedutíveis.",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "422180099": {
+      "code": "422180099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "429800099": {
+      "code": "429800099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110001": {
+      "code": "130110001",
+      "source_title_line": "Valores de apostas esportivas Classificar nesse código os valores das apostas esportivas efetuadas",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110002": {
+      "code": "130110002",
+      "source_title_line": "Valores de apostas de turfe Classificar nesse código os valores das apostas de turfe efetuadas",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110003": {
+      "code": "130110003",
+      "source_title_line": "Valores relativos a modalidades lotéricas Classificar nesse código os valores das apostas efetuadas relativos a",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110004": {
+      "code": "130110004",
+      "source_title_line": "Valores relativos a jogos online (iGaming) Classificar nesse código os valores das apostas efetuadas relativos a",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110005": {
+      "code": "130110005",
+      "source_title_line": "Valores relativos a fantasy sport Classificar nesse código os valores relativos a fantasy sport",
+      "pdf_page": 56,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110006": {
+      "code": "130110006",
+      "source_title_line": "Valores relativos a sweepstakes Classificar nesse código os valores das apostas de sweepstakes",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110007": {
+      "code": "130110007",
+      "source_title_line": "Valores relativos a outras modalidades de apostas Classificar nesse código os valores relativos a outras modalidades de",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110008": {
+      "code": "130110008",
+      "source_title_line": "Valores relativos a apostas decorrentes de",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130110099": {
+      "code": "130110099",
+      "source_title_line": "Outros valores decorrentes da atividade de",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130140001": {
+      "code": "130140001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130140002": {
+      "code": "130140002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130150001": {
+      "code": "130150001",
+      "source_title_line": "Valores recebidos decorrentes de operações de",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130150099": {
+      "code": "130150099",
+      "source_title_line": "Outros valores não tributáveis Classificar nesse código outros valores não tributáveis. LC 214/2025",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161001": {
+      "code": "130161001",
+      "source_title_line": "Premiações pagas em apostas esportivas Classificar nesse código as premiações pagas decorrentes de apostas",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161002": {
+      "code": "130161002",
+      "source_title_line": "Premiações pagas em apostas de turfe Classificar nesse código as premiações pagas decorrentes de apostas",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161003": {
+      "code": "130161003",
+      "source_title_line": "Premiações pagas em modalidades lotéricas Classificar nesse código as premiações pagas decorrentes de",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161004": {
+      "code": "130161004",
+      "source_title_line": "Premiações pagas em jogos online (iGaming) Classificar nesse código as premiações pagas decorrentes de jogos",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161005": {
+      "code": "130161005",
+      "source_title_line": "Premiações pagas em fantasy sport Classificar nesse código as premiações pagas decorrentes de fantasy",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161006": {
+      "code": "130161006",
+      "source_title_line": "Premiações pagas em sweepstakes Classificar nesse código as premiações pagas decorrentes de",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161007": {
+      "code": "130161007",
+      "source_title_line": "Premiações pagas em outras modalidades de apostas Classificar nesse código as premiações pagas decorrentes de outras",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161008": {
+      "code": "130161008",
+      "source_title_line": "Premiações devidas aos proprietários, criadores e",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130161099": {
+      "code": "130161099",
+      "source_title_line": "Outras premiações pagas Classificar nesse código outras premiações pagas. LC 214/2025",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "130180099": {
+      "code": "130180099",
+      "source_title_line": "Outros valores não dedutíveis Classificar nesse código outros valores não dedutíveis. LC 214/2025",
+      "pdf_page": 57,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "138915001": {
+      "code": "138915001",
+      "source_title_line": "Base de cálculo negativa do IBS/CBS Classificar nesse código as rubricas contábeis que registrarem a base",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "138915099": {
+      "code": "138915099",
+      "source_title_line": "Outras contas do ativo circulante Classificar nesse código outras contas do ativo circulante.",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "138925099": {
+      "code": "138925099",
+      "source_title_line": "Outras contas do ativo não circulante Classificar nesse código outras contas do ativo não circulante.",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "139000001": {
+      "code": "139000001",
+      "source_title_line": "Contas de compensação ativas Classificar nesse código as contas de compensação ativas.",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110001": {
+      "code": "230110001",
+      "source_title_line": "Valores de apostas esportivas Classificar nesse código os valores das apostas esportivas efetuadas",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110002": {
+      "code": "230110002",
+      "source_title_line": "Valores de apostas de turfe Classificar nesse código os valores das apostas de turfe efetuadas",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110003": {
+      "code": "230110003",
+      "source_title_line": "Valores relativos a modalidades lotéricas Classificar nesse código os valores das apostas efetuadas relativos a",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110004": {
+      "code": "230110004",
+      "source_title_line": "Valores relativos a jogos online (iGaming) Classificar nesse código os valores das apostas efetuadas relativos a",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110005": {
+      "code": "230110005",
+      "source_title_line": "Valores relativos a fantasy sport Classificar nesse código os valores relativos a fantasy sport",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110006": {
+      "code": "230110006",
+      "source_title_line": "Valores relativos a sweepstakes Classificar nesse código os valores das apostas de sweepstakes",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110007": {
+      "code": "230110007",
+      "source_title_line": "Valores relativos a outras modalidades de apostas Classificar nesse código os valores relativos a outras modalidades de",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110008": {
+      "code": "230110008",
+      "source_title_line": "Valores relativos a apostas decorrentes de",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230110099": {
+      "code": "230110099",
+      "source_title_line": "Outros valores decorrentes da atividade de",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230140001": {
+      "code": "230140001",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230140002": {
+      "code": "230140002",
+      "source_title_line": "Valores tributados pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230150001": {
+      "code": "230150001",
+      "source_title_line": "Valores decorrentes de operações de exportação Classificar nesse código valores recebidos e outras receitas próprias da",
+      "pdf_page": 58,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230150002": {
+      "code": "230150002",
+      "source_title_line": "Valores de recompensas ou vantagens não",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230150003": {
+      "code": "230150003",
+      "source_title_line": "Valores recebidos e não convertidos em produto da",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230150099": {
+      "code": "230150099",
+      "source_title_line": "Outros valores não tributáveis Classificar nesse código outros valores não tributáveis. LC 214/2025",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230161001": {
+      "code": "230161001",
+      "source_title_line": "Destinações obrigatórias por lei a órgão ou fundo",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "230161002": {
+      "code": "230161002",
+      "source_title_line": "Destinações obrigatórias por lei a órgão ou fundo",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "238910099": {
+      "code": "238910099",
+      "source_title_line": "Outras contas do passivo circulante Classificar nesse código outras contas do passivo circulante.",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "238920099": {
+      "code": "238920099",
+      "source_title_line": "Outras contas do passivo não circulante Classificar nesse código outras contas do passivo não circulante.",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "238930099": {
+      "code": "238930099",
+      "source_title_line": "Outras contas do patrimônio líquido Classificar nesse código outras contas do patrimônio líquido.",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "239000001": {
+      "code": "239000001",
+      "source_title_line": "Contas de compensação passivas Classificar nesse código as contas de compensação passivas.",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100001": {
+      "code": "331100001",
+      "source_title_line": "Receitas de apostas esportivas Classificar nesse código os valores das apostas esportivas efetuadas",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100002": {
+      "code": "331100002",
+      "source_title_line": "Receitas de apostas de turfe Classificar nesse código os valores das apostas de turfe efetuadas",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100003": {
+      "code": "331100003",
+      "source_title_line": "Receitas relativas a modalidades lotéricas Classificar nesse código os valores das apostas efetuadas relativos a",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100004": {
+      "code": "331100004",
+      "source_title_line": "Receitas relativas a jogos online (iGaming) Classificar nesse código os valores das apostas efetuadas relativos a",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100005": {
+      "code": "331100005",
+      "source_title_line": "Receitas relativas a fantasy sport Classificar nesse código os valores relativos a fantasy sport",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100006": {
+      "code": "331100006",
+      "source_title_line": "Receitas relativas a sweepstakes Classificar nesse código os valores das apostas de sweepstakes",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100007": {
+      "code": "331100007",
+      "source_title_line": "Receitas relativas a outras modalidades de apostas Classificar nesse código os valores relativos a outras modalidades de",
+      "pdf_page": 59,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100008": {
+      "code": "331100008",
+      "source_title_line": "Receitas decorrentes de recompensas ou vantagens",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331100099": {
+      "code": "331100099",
+      "source_title_line": "Outras receitas decorrentes da atividade de",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331200001": {
+      "code": "331200001",
+      "source_title_line": "Receita tributada no momento da realização da",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331200002": {
+      "code": "331200002",
+      "source_title_line": "Receita tributada no momento da realização da",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331600001": {
+      "code": "331600001",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331600002": {
+      "code": "331600002",
+      "source_title_line": "Receitas tributáveis pelo PIS/Cofins - Não tributáveis",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331800001": {
+      "code": "331800001",
+      "source_title_line": "Receitas decorrentes de operações de exportação Classificar nesse código valores recebidos e outras receitas próprias da",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "331800099": {
+      "code": "331800099",
+      "source_title_line": "Outras receitas não tributáveis Classificar nesse código outros valores de operações imunes, isentas,",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "332100099": {
+      "code": "332100099",
+      "source_title_line": "Outras receitas amparadas por documentos fiscais Classificar nesse código valores tributáveis pelo regime regular e não",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "339100001": {
+      "code": "339100001",
+      "source_title_line": "Receitas decorrentes de operações de exportação Classificar nesse código valores não decorrentes da atividade de",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "339100002": {
+      "code": "339100002",
+      "source_title_line": "Receitas decorrentes da conta de reserva técnica Classificar nesse código valores decorrentes da conta de reserva",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "339100099": {
+      "code": "339100099",
+      "source_title_line": "Outras receitas amparadas por documentos fiscais Classificar nesse código outros valores tributáveis. LC 214/2025",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431300001": {
+      "code": "431300001",
+      "source_title_line": "Destinações obrigatórias por lei a órgão ou fundo",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431300002": {
+      "code": "431300002",
+      "source_title_line": "Destinações obrigatórias por lei a órgão ou fundo",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431600001": {
+      "code": "431600001",
+      "source_title_line": "PIS/Cofins incidente sobre a operação Classificar nesse código as rubricas contábeis representativas dos",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431600002": {
+      "code": "431600002",
+      "source_title_line": "ISSQN incidente sobre a operação Classificar nesse código as despesas com ISSQN incidentes sobre as",
+      "pdf_page": 60,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710001": {
+      "code": "431710001",
+      "source_title_line": "Despesas com premiações pagas em apostas",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710002": {
+      "code": "431710002",
+      "source_title_line": "Despesas com premiações pagas em apostas de turfe Classificar nesse código as despesas com premiações pagas em",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710003": {
+      "code": "431710003",
+      "source_title_line": "Despesas com premiações pagas em modalidades",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710004": {
+      "code": "431710004",
+      "source_title_line": "Despesas com premiações pagas em jogos online",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710005": {
+      "code": "431710005",
+      "source_title_line": "Despesas com premiações pagas em fantasy sport Classificar nesse código as despesas com premiações pagas em fantasy",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710006": {
+      "code": "431710006",
+      "source_title_line": "Despesas com premiações pagas em sweepstakes Classificar nesse código as despesas com premiações pagas em",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710007": {
+      "code": "431710007",
+      "source_title_line": "Despesas com premiações pagas em outras",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710008": {
+      "code": "431710008",
+      "source_title_line": "Despesas com premiações devidas aos proprietários,",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710009": {
+      "code": "431710009",
+      "source_title_line": "Despesas com premiações pagas em decorrência de",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431710099": {
+      "code": "431710099",
+      "source_title_line": "Despesas com outras premiações pagas Classificar nesse código as despesas com outras premiações pagas.",
+      "pdf_page": 61,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431800001": {
+      "code": "431800001",
+      "source_title_line": "Despesas com premiações incorridas e não pagas Classificar nesse código as despesas com premiação incorrida e não",
+      "pdf_page": 62,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "431800099": {
+      "code": "431800099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código as rubricas contábeis relativas a outras",
+      "pdf_page": 62,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "432180099": {
+      "code": "432180099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código outras despesas não dedutíveis.",
+      "pdf_page": 62,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "439180099": {
+      "code": "439180099",
+      "source_title_line": "Outras despesas não dedutíveis Classificar nesse código outras despesas não dedutíveis.",
+      "pdf_page": 62,
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    }
+  },
+  "production_ready": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "VALID_WITH_WARNINGS",
+  "reason_codes": [
+    "ISS_IMMUNE_DECISION_VALID",
+    "RULE_BUNDLE_NOT_PRODUCTION_APPROVED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "8effedecd60249c9d6b7d5bd887e84147d1ad0a1b72b43b79b6cdf4d42de3dae"
+}

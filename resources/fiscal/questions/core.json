@@ -1,5 +1,24 @@
 [
   {
+    "fact_key": "customer.person_type",
+    "prompt": "O tomador é pessoa física, pessoa jurídica ou estrangeiro?",
+    "rank": 15,
+    "answer_type": "ENUM",
+    "options": ["PF", "PJ", "FOREIGN"]
+  },
+  {
+    "fact_key": "operation.amount",
+    "prompt": "Qual é o valor bruto da operação?",
+    "rank": 40,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "service.canonical_id",
+    "prompt": "Qual serviço canônico representa a operação?",
+    "rank": 5,
+    "answer_type": "CODE"
+  },
+  {
     "fact_key": "provider.municipality_ibge",
     "prompt": "Qual é o município do estabelecimento prestador?",
     "rank": 10,
@@ -12,6 +31,12 @@
     "answer_type": "CODE"
   },
   {
+    "fact_key": "operation.event_activity_confirmed",
+    "prompt": "A operação corresponde efetivamente à realização de feira, exposição ou congresso?",
+    "rank": 21,
+    "answer_type": "BOOLEAN"
+  },
+  {
     "fact_key": "operation.construction_municipality_ibge",
     "prompt": "Em qual município a obra está localizada?",
     "rank": 20,
@@ -22,6 +47,62 @@
     "prompt": "Qual é o identificador da obra?",
     "rank": 30,
     "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.construction_object_type",
+    "prompt": "O objeto é uma obra ou um serviço isolado de construção?",
+    "rank": 31,
+    "answer_type": "ENUM",
+    "options": ["WORK", "SERVICE"]
+  },
+  {
+    "fact_key": "operation.construction_contract_type",
+    "prompt": "Qual é a modalidade contratual da construção?",
+    "rank": 32,
+    "answer_type": "ENUM",
+    "options": ["DIRECT_ADMINISTRATION", "TOTAL_CONTRACT", "PARTIAL_CONTRACT", "SUBCONTRACT", "ISOLATED_SERVICE"]
+  },
+  {
+    "fact_key": "operation.materials_amount",
+    "prompt": "Qual valor de materiais está documentalmente vinculado à dedução?",
+    "rank": 41,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "operation.deduction_evidence_id",
+    "prompt": "Qual documento fundamenta a dedução da base?",
+    "rank": 42,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.deduction_municipal_rule_id",
+    "prompt": "Qual norma municipal vigente fundamenta a dedução?",
+    "rank": 43,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.materials_produced_offsite",
+    "prompt": "Os materiais deduzidos foram produzidos fora do local da obra?",
+    "rank": 44,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.materials_separate_sale",
+    "prompt": "Os materiais foram comercializados separadamente do serviço?",
+    "rank": 45,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.materials_icms_document_id",
+    "prompt": "Qual documento fiscal comprova a operação sujeita ao ICMS dos materiais?",
+    "rank": 46,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.deduction_validation_status",
+    "prompt": "Qual foi o resultado da validação documental e jurídica da dedução?",
+    "rank": 47,
+    "answer_type": "ENUM",
+    "options": ["APPROVED", "REJECTED", "REVIEW_REQUIRED"]
   }
 ]
-

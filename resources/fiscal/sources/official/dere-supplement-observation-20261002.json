@@ -1,0 +1,76 @@
+{
+  "artifacts": [
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/03-leiautes-da-dere-anexo-i-tabelas-v-1-2-0-2.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/03-leiautes-da-dere-anexo-i-tabelas-v-1-2-0-2.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-03-leiautes-da-dere-anexo-i-tabelas-v-1-2-0-2.pdf",
+      "sha256": "97a5ebb246742c38f823316c4beb13f0fd1f4fe3e160ecbb452fa424e678905b",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/04-leiautes-da-dere-anexo-ii-regras-de-validacao-v-1-2-0-2.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/04-leiautes-da-dere-anexo-ii-regras-de-validacao-v-1-2-0-2.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-04-leiautes-da-dere-anexo-ii-regras-de-validacao-v-1-2-0-2.pdf",
+      "sha256": "b52cb2cf96b176d303d64aeea0bab16e7d35bcc739478f6fc8a26b0512415feb",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/05-leiautes-da-dere-historico-de-versoes-v-1-2-0.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/05-leiautes-da-dere-historico-de-versoes-v-1-2-0.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-05-leiautes-da-dere-historico-de-versoes-v-1-2-0.pdf",
+      "sha256": "22498cbc4dd00eb0fd34ea4f74b5817e2d334451e8d88c770b7071f16d3c6bb9",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/07-manual-do-desenvolvedor-v-1-0-2.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/07-manual-do-desenvolvedor-v-1-0-2.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-07-manual-do-desenvolvedor-v-1-0-2.pdf",
+      "sha256": "89b5c13ad99b24cc17f402cce7532fb95c177f4d77b19c2399977b2eff95e169",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-3",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-3/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-ato-conjunto-3.pdf",
+      "sha256": "7390981608c9d51051ce5165dd9696dde6ac93f9ad8b017c9fc88e69d30792b2",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-rfb_cgibs-no-4-de-30-de-julho-de-2026.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-rfb_cgibs-no-4-de-30-de-julho-de-2026.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-ato-conjunto-rfb_cgibs-no-4-de-30-de-julho-de-2026.pdf",
+      "sha256": "67576256ea863adef5905896d6e7068682d993f3e36641ff16529ab66e4fc79e",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-rfb_cgibs-no-5-de-12-de-agosto-dee-2026.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-rfb_cgibs-no-5-de-12-de-agosto-dee-2026.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-ato-conjunto-rfb_cgibs-no-5-de-12-de-agosto-dee-2026.pdf",
+      "sha256": "d17aceb731547f2d3b7eb7cd1cc48713f49daa57f8b73da6fb6952a37b637ea5",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-tecnico-conjunto-rfb_sufis_cgibs_diretoria-executiva-no-3-02102026.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-tecnico-conjunto-rfb_sufis_cgibs_diretoria-executiva-no-3-02102026.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-supplement-observed-20261002-ato-tecnico-conjunto-rfb_sufis_cgibs_diretoria-executiva-no-3-02102026.pdf",
+      "sha256": "1c562ef4438e3683715cb6b6146cc2660ff918b06cf7537547ab8fb08feb0426",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd",
+      "path": "resources/fiscal/sources/official/w3c-xmldsig-core-schema-observed-20261002.xsd",
+      "sha256": "d102ad3df7664c307e0c2c776ba4a90513b1969974d8a940bae1a77f9f21e15d",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    }
+  ],
+  "notice": "Publication, vigency and dependencies not yet activated."
+}

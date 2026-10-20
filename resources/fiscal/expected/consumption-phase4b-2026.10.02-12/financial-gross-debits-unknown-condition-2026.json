@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_TAX_2026_COLLECTION_CONDITION_UNKNOWN"
+  ],
+  "missing_facts": [
+    "rtc.accessory_obligations_fulfilled"
+  ],
+  "decision_hash": "abe609ceb2124c32c68ee328ad78dd19bd25bf3eecd29bac8f64dbefa69faae5"
+}

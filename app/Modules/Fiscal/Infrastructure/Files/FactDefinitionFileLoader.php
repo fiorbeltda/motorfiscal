@@ -24,7 +24,17 @@ final class FactDefinitionFileLoader
             throw new RuntimeException("Invalid fact definition JSON: {$exception->getMessage()}", previous: $exception);
         }
 
-        if (! is_array($decoded) || ! array_is_list($decoded)) {
+        if (! is_array($decoded)) {
+            throw new RuntimeException('Fact definition document must be a JSON list.');
+        }
+
+        return $this->fromArray($decoded);
+    }
+
+    /** @param array<int|string, mixed> $decoded */
+    public function fromArray(array $decoded): FactDefinitionRegistry
+    {
+        if (! array_is_list($decoded)) {
             throw new RuntimeException('Fact definition document must be a JSON list.');
         }
 
@@ -44,6 +54,8 @@ final class FactDefinitionFileLoader
                 type: FactValueType::from((string) $item['type']),
                 material: (bool) $item['material'],
                 allowedValues: $allowed,
+                pattern: isset($item['pattern']) ? (string) $item['pattern'] : null,
+                minLength: isset($item['min_length']) ? (int) $item['min_length'] : null,
             ));
         }
 

@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_CONDITION_NOT_MET:option_registered_and_effective"
+  ],
+  "missing_facts": [],
+  "decision_hash": "8bb5125c62c7103c3a1c87aa9c659ff9ecee007d36b050300633d0a314bde667"
+}

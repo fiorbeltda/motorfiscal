@@ -26,6 +26,21 @@ final readonly class DecimalValue
         return new self($this->value->multipliedBy($other->value));
     }
 
+    public function minus(self $other): self
+    {
+        return new self($this->value->minus($other->value));
+    }
+
+    public function plus(self $other): self
+    {
+        return new self($this->value->plus($other->value));
+    }
+
+    public function isNegative(): bool
+    {
+        return $this->value->isNegative();
+    }
+
     public function dividedBy(self $other, int $scale = 10): self
     {
         if ($scale < 0) {

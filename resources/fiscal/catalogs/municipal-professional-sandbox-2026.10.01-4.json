@@ -1,0 +1,48 @@
+{
+  "catalog_id": "MUNICIPAL_PROFESSIONAL_SANDBOX_FIXTURE",
+  "version": "2026.10.01-4",
+  "source_type": "FIXTURE",
+  "notice": "Synthetic professional service rates for integrated regression only; no municipal act or production approval.",
+  "parameters": [
+    {
+      "municipality_ibge": "3550308",
+      "ctribnac_code": "010101",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "rate": "2.00",
+      "responsibility": "PROVIDER"
+    },
+    {
+      "municipality_ibge": "3509502",
+      "ctribnac_code": "120801",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "rate": "3.00",
+      "responsibility": "PROVIDER"
+    },
+    {
+      "municipality_ibge": "3552205",
+      "ctribnac_code": "070202",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "rate": "5.00",
+      "responsibility": "CUSTOMER"
+    },
+    {
+      "municipality_ibge": "3550308",
+      "ctribnac_code": "171401",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "rate": "5.00",
+      "responsibility": "PROVIDER"
+    },
+    {
+      "municipality_ibge": "3550308",
+      "ctribnac_code": "171901",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "rate": "5.00",
+      "responsibility": "PROVIDER"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": ["RTC_NON_ONEROUS_DOCUMENT_NOT_MATERIALIZED"],
+  "missing_facts": [],
+  "decision_hash": "3005ce968da3c64e6da30428dedeb543c9f4748b2a0dc206458ac38334fc8165"
+}

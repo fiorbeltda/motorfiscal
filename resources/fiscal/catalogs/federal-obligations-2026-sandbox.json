@@ -1,0 +1,17 @@
+{
+  "catalog_id": "FEDERAL.OBLIGATIONS.2026",
+  "version": "2026-sandbox-1",
+  "status": "SANDBOX_CANDIDATE",
+  "effective_from": "2026-01-01",
+  "effective_to": "2026-12-31",
+  "sources": [
+    {"source_id": "SOURCE.RFB.EFD_REINF.FAQ.2026", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-reinf/efdr/", "locator": "Prazo de envio dos eventos, exceto R-3010"},
+    {"source_id": "SOURCE.RFB.DCTFWEB.MANUAL.2025", "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/manual-dctfweb/manual-dctfweb-atualizacao-janeiro2025_versao_final.pdf/@@download/file", "locator": "DCTFWeb mensal, prazo de apresentação"}
+  ],
+  "due_rules": {
+    "EFD_REINF": "DAY_15_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "DCTFWEB": "LAST_BUSINESS_DAY_NEXT_MONTH",
+    "INSS_PAYMENT": "DAY_20_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "FEDERAL_WITHHOLDING_PAYMENT": "TAX_SPECIFIC_DUE_RULE_REQUIRED"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_SCOPE_PROOF_OUTSIDE_PERIOD"
+  ],
+  "missing_facts": [],
+  "decision_hash": "f95ed3e72c76b3c32375618a114ce88047ceba64eb487c328b564c4d8250766b"
+}

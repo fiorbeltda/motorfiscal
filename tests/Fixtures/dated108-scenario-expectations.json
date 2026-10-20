@@ -1,0 +1,360 @@
+{
+    "cases": [
+        {
+            "name": "inherit106-inherit105-coincident-material-dates",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-coincident-material-dates.json",
+            "scenario_sha256": "e84602b3079d8736b1532f35a5ac34a6eb93b72ee39e73ad659d216954fbaa68",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-coincident-material-dates",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-inherit105-iss-both-before-rtc",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-iss-both-before-rtc.json",
+            "scenario_sha256": "7f2743b258c2840a4a86f0954d09c46cb42ae488f2a446dac364f5a24c340fd1",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-24",
+                "2026-09-24"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-iss-both-before-rtc",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-inherit105-iss-both-after-rtc",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-iss-both-after-rtc.json",
+            "scenario_sha256": "dd441f91cfd7aae348f12a9e50fb3c62f7af498a228340faaa862d6667dca4f9",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-26",
+                "2026-09-26"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-iss-both-after-rtc",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-inherit105-iss-distinct-by-role",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-iss-distinct-by-role.json",
+            "scenario_sha256": "855ecf1c8096ae1dfe45c02b61f7ba4e496143c7a9bf89e6c84b6dabd17178a5",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-24",
+                "2026-09-26"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-iss-distinct-by-role",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery.json",
+            "scenario_sha256": "1747850ae46d9b9ccf9e2f873eda9a8664b84e44c6f41653d0b2e8641cd54798",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-inherit105-same-unit-equivalent-offsets",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-same-unit-equivalent-offsets.json",
+            "scenario_sha256": "97ccbd63a04327e0f556473f1d944487797b495ced2217592e3ce6aa0725218d",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-same-unit-equivalent-offsets",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-inherit105-civil-date-not-utc-date",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-inherit105-civil-date-not-utc-date.json",
+            "scenario_sha256": "c820eaf38a0fad699e77b38dc4872209b6f656b931c4d41c76535f20602c227c",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-civil-date-not-utc-date",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "inherit106-foreign-result-with-br-software-link-remains-exception",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/inherit106-foreign-result-with-br-software-link-remains-exception.json",
+            "scenario_sha256": "a8421404d7b1912a1293aedc1243832396b18db7574db6c00f0ba89c49dfc69f",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-foreign-result-with-br-software-link-remains-exception",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "emission-at-material-event",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/emission-at-material-event.json",
+            "scenario_sha256": "aa8e108d470614903deaef98b7d0af15a24ef170e93512042a12341bb4dc9e09",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-10-17",
+                "2026-10-17"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "emission-at-material-event",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "series-valid-49999",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/series-valid-49999.json",
+            "scenario_sha256": "fd94ab7f6767f7c1530c0b0dc754862e0ff1b88c1447569c0475d1f567656b40",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "series-valid-49999",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "number-valid-maximum",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/number-valid-maximum.json",
+            "scenario_sha256": "2654d29463390cc95598d38008cfb2f85471c106b26747b2efd6720746827d9d",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "dated_status": "LOCAL_DATED_DPS_IDENTITY_PAIR_BOUND",
+            "dated_reason": "DPS107_DATED_COMPOSITION_AND_MAPPING_NOT_ISSUANCE_APPROVAL",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "number-valid-maximum",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "series-0",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/series-0.json",
+            "scenario_sha256": "434b8634384d4bbac5fa43f4ca5cd9237126df2bf1421a723df00736d3dce584",
+            "status": "INVALID",
+            "reason": "DPS107_SERIES_OUTSIDE_OWN_APPLICATION_RANGE",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_SERIES_OUTSIDE_OWN_APPLICATION_RANGE",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "series-0",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "competence-not-material",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/competence-not-material.json",
+            "scenario_sha256": "ca5496af054d9cc22004a917b0623a4e3196f39699c0ef7cff79e070ddf4a050",
+            "status": "INVALID",
+            "reason": "DPS107_PER_DOCUMENT_ISS_COMPETENCE_CONFLICT",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_PER_DOCUMENT_ISS_COMPETENCE_CONFLICT",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "competence-not-material",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "mapping-resigned-wrong-dated_pair_binding_hash",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/mapping-resigned-wrong-dated-pair-binding-hash.json",
+            "scenario_sha256": "029d52394cbe65636375430bca1dd64c114f31a8911c687aac23e5072edd4776",
+            "status": "INVALID",
+            "reason": "DPS107_MAPPING_PROOF_BINDING_CONFLICT",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_MAPPING_PROOF_BINDING_CONFLICT",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "mapping-resigned-wrong-dated_pair_binding_hash",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "mapping-hash-tamper",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/mapping-hash-tamper.json",
+            "scenario_sha256": "b1cf433816806cc2ab80fc843155874693422629ce4546fc52f8ec668a574e3a",
+            "status": "INVALID",
+            "reason": "DPS107_MAPPING_PROOF_HASH_CONFLICT",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_MAPPING_PROOF_HASH_CONFLICT",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "mapping-hash-tamper",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "emission-before-same-day-material-event",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/emission-before-same-day-material-event.json",
+            "scenario_sha256": "77f1e50727bc6a37849da8254101dbef619661e8e7006c830cd04777d2ed1774",
+            "status": "INVALID",
+            "reason": "DPS107_ISSUANCE_PRECEDES_MATERIAL_EVENT",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_ISSUANCE_PRECEDES_MATERIAL_EVENT",
+            "expected_iss_dates": [
+                "2026-10-17",
+                "2026-10-17"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "emission-before-same-day-material-event",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "civil-date-is-not-issuer-offset-date",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/civil-date-is-not-issuer-offset-date.json",
+            "scenario_sha256": "33b81b7d3e7b0cb8ef7d96efa587d4fcc846bb845cb17e1b78c4c8668813dc4f",
+            "status": "INVALID",
+            "reason": "DPS107_PER_DOCUMENT_ISS_COMPETENCE_CONFLICT",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_PER_DOCUMENT_ISS_COMPETENCE_CONFLICT",
+            "expected_iss_dates": [
+                "2026-10-18",
+                "2026-10-18"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "civil-date-is-not-issuer-offset-date",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "mapping-before-national-source-observation",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/mapping-before-national-source-observation.json",
+            "scenario_sha256": "dfebfc2331615616103ef802b26c8b34b49586348bbb4e3d89b779a5cd65f14e",
+            "status": "ACTION_REQUIRED",
+            "reason": "DPS107_MAPPING_PRECEDES_DATED_SOURCE_OBSERVATION",
+            "dated_status": "ACTION_REQUIRED",
+            "dated_reason": "DPS107_MAPPING_PRECEDES_DATED_SOURCE_OBSERVATION",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "mapping-before-national-source-observation",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "same-canonical-dps-id",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/same-canonical-dps-id.json",
+            "scenario_sha256": "73e37621710675a26a5395ee1f350525ff37be4c4e6f9e52c8ece62568fa818b",
+            "status": "INVALID",
+            "reason": "DPS107_DISTINCT_CANONICAL_DPS_IDS_REQUIRED",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_DISTINCT_CANONICAL_DPS_IDS_REQUIRED",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "same-canonical-dps-id",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "duplicate-role",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/duplicate-role.json",
+            "scenario_sha256": "793d06dd7457c989ce380595858224d0adbd1c33d2f8313fd1baa9d5b7988c7c",
+            "status": "INVALID",
+            "reason": "DPS107_DUPLICATE_ROLE",
+            "dated_status": "INVALID",
+            "dated_reason": "DPS107_DUPLICATE_ROLE",
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "duplicate-role",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "legacy-context-conflict",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/legacy-context-conflict.json",
+            "scenario_sha256": "aa6afb8c66f9ae5541394c3e4f3639920de107f72b26a14b4b59345cc87e5b3f",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_DATED108_SEPARATE_LEGACY_CONTEXT_REQUIRED",
+            "dated_status": null,
+            "dated_reason": null,
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-coincident-material-dates",
+            "original_business_facts_preserved": true
+        },
+        {
+            "name": "temporal-context-conflict",
+            "path": "resources\/fiscal\/scenarios\/dated-documents-2026.10.19-108-draft3\/temporal-context-conflict.json",
+            "scenario_sha256": "2645112c546952a04fca1b95b7a500d692ae979be545d156b99d6911d3bdc6eb",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_DATED108_SEPARATE_TEMPORAL_CONTEXT_REQUIRED",
+            "dated_status": null,
+            "dated_reason": null,
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "rtc_operation_date": "2026-09-25",
+            "source_prepared107_case": "inherit106-inherit105-coincident-material-dates",
+            "original_business_facts_preserved": true
+        }
+    ],
+    "bundle": "bundles\/consumption-phase4b-2026.10.19-108-draft3.json",
+    "source_seed_sha256": "9b57b1763a75ae580221edcb1cdc0c8734f5f351702845ff8bdb48562956e0ed",
+    "full_upstream_corpus_complete": false,
+    "production_ready": false
+}

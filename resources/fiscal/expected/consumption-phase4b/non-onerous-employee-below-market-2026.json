@@ -1,0 +1,10 @@
+{
+    "status":  "ACTION_REQUIRED",
+    "reason_codes":  [
+                         "RTC_BELOW_MARKET_STRATEGY_NOT_MATERIALIZED"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "e2bceedc24f4336b996ebd8a3bea341d1ff7f1dd9a392d5ca5efa59fe3dc5003"
+}

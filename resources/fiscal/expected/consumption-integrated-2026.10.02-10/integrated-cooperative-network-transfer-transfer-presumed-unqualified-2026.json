@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_PRESUMED_CREDIT_NOT_QUALIFIED"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_credit_transfer"
+  ],
+  "decision_hash": "3652018f2126dff7b570328f45c9c93a28a3fa34c122f60b0f70376a0c871d0b"
+}

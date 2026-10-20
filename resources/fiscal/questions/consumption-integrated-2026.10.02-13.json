@@ -1,0 +1,2336 @@
+[
+  {
+    "fact_key": "service.ctribnac_code",
+    "prompt": "Qual é o código cTribNac do serviço?",
+    "rank": 5,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.service_origin",
+    "prompt": "O serviço é nacional ou importado do exterior?",
+    "rank": 6,
+    "answer_type": "ENUM",
+    "options": [
+      "DOMESTIC",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "operation.issuer_role",
+    "prompt": "Na importação, a DPS é emitida pelo tomador ou pelo intermediário?",
+    "rank": 7,
+    "answer_type": "ENUM",
+    "options": [
+      "CUSTOMER",
+      "INTERMEDIARY"
+    ]
+  },
+  {
+    "fact_key": "provider.municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento prestador?",
+    "rank": 10,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "customer.municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento tomador?",
+    "rank": 11,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.intermediary_municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento intermediário?",
+    "rank": 12,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "provider.tax_regime",
+    "prompt": "Qual é o regime tributário do prestador?",
+    "rank": 13,
+    "answer_type": "ENUM",
+    "options": [
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "LUCRO_PRESUMIDO",
+      "LUCRO_REAL"
+    ]
+  },
+  {
+    "fact_key": "provider.activity_start_date",
+    "prompt": "Qual é a data de início das atividades do prestador no Simples Nacional?",
+    "rank": 14,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "provider.simples_iss_fixed_monthly",
+    "prompt": "O prestador recolhe ISS por valor fixo mensal no Simples Nacional?",
+    "rank": 14,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "customer.person_type",
+    "prompt": "Qual é a natureza do tomador?",
+    "rank": 15,
+    "answer_type": "ENUM",
+    "options": [
+      "PF",
+      "PJ",
+      "PJ_IMMUNE",
+      "PJ_EXEMPT",
+      "PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "intermediary.person_type",
+    "prompt": "Qual é a natureza do intermediário responsável?",
+    "rank": 16,
+    "answer_type": "ENUM",
+    "options": [
+      "PF",
+      "PJ",
+      "PJ_IMMUNE",
+      "PJ_EXEMPT",
+      "PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "operation.responsible_role",
+    "prompt": "A responsabilidade nacional recai sobre o tomador ou o intermediário?",
+    "rank": 17,
+    "answer_type": "ENUM",
+    "options": [
+      "CUSTOMER",
+      "INTERMEDIARY"
+    ]
+  },
+  {
+    "fact_key": "operation.card_arrangement_operation",
+    "prompt": "O serviço do subitem 15.01 integra uma operação de arranjo de cartões?",
+    "rank": 18,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.illegal_below_minimum_tax_burden",
+    "prompt": "A operação está enquadrada na hipótese comprovada de benefício ilegal abaixo da carga mínima?",
+    "rank": 18,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.execution_municipality_ibge",
+    "prompt": "Em qual município o serviço foi executado? Informe 0000000 apenas para hipótese marítima admitida.",
+    "rank": 19,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.construction_municipality_ibge",
+    "prompt": "Em qual município a obra está localizada?",
+    "rank": 20,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.event_municipality_ibge",
+    "prompt": "Em qual município o evento foi realizado?",
+    "rank": 20,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.event_activity_confirmed",
+    "prompt": "A operação corresponde efetivamente à atividade de evento indicada pelo serviço?",
+    "rank": 21,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.construction_work_id",
+    "prompt": "Qual é o identificador da obra?",
+    "rank": 30,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.construction_object_type",
+    "prompt": "O objeto é uma obra ou um serviço isolado de construção?",
+    "rank": 31,
+    "answer_type": "ENUM",
+    "options": [
+      "WORK",
+      "SERVICE"
+    ]
+  },
+  {
+    "fact_key": "operation.construction_contract_type",
+    "prompt": "Qual é a modalidade contratual da construção?",
+    "rank": 32,
+    "answer_type": "ENUM",
+    "options": [
+      "DIRECT_ADMINISTRATION",
+      "TOTAL_CONTRACT",
+      "PARTIAL_CONTRACT",
+      "SUBCONTRACT",
+      "ISOLATED_SERVICE"
+    ]
+  },
+  {
+    "fact_key": "operation.amount",
+    "prompt": "Qual é o valor bruto da operação?",
+    "rank": 40,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "operation.materials_amount",
+    "prompt": "Qual valor de materiais está documentalmente vinculado à dedução?",
+    "rank": 41,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "operation.deduction_evidence_id",
+    "prompt": "Qual documento fundamenta a dedução da base?",
+    "rank": 42,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.deduction_municipal_rule_id",
+    "prompt": "Qual norma municipal vigente fundamenta a dedução?",
+    "rank": 43,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.materials_produced_offsite",
+    "prompt": "Os materiais deduzidos foram produzidos fora do local da obra?",
+    "rank": 44,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.materials_separate_sale",
+    "prompt": "Os materiais foram comercializados separadamente do serviço?",
+    "rank": 45,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.materials_icms_document_id",
+    "prompt": "Qual documento fiscal comprova a operação sujeita ao ICMS dos materiais?",
+    "rank": 46,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.deduction_validation_status",
+    "prompt": "Qual foi o resultado da validação documental e jurídica da dedução?",
+    "rank": 47,
+    "answer_type": "ENUM",
+    "options": [
+      "APPROVED",
+      "REJECTED",
+      "REVIEW_REQUIRED"
+    ]
+  },
+  {
+    "fact_key": "provider.simples_rate_informed",
+    "prompt": "A alíquota efetiva de ISS do Simples foi informada no documento fiscal?",
+    "rank": 48,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_effective_iss_rate",
+    "prompt": "Qual é a alíquota efetiva de ISS aplicável à retenção do Simples Nacional?",
+    "rank": 49,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.evaluate_withholdings",
+    "prompt": "As retenções federais desta operação devem ser avaliadas?",
+    "rank": 50,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "payer.person_type",
+    "prompt": "Qual é a natureza jurídica da fonte pagadora?",
+    "rank": 51,
+    "answer_type": "ENUM",
+    "options": [
+      "PRIVATE_LEGAL_ENTITY",
+      "COOPERATIVE",
+      "INDIVIDUAL",
+      "FEDERAL_PUBLIC_ADMINISTRATION",
+      "STATE_PUBLIC_ADMINISTRATION",
+      "DISTRICT_PUBLIC_ADMINISTRATION",
+      "MUNICIPAL_PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "payer.tax_regime",
+    "prompt": "Qual é o regime tributário da fonte pagadora?",
+    "rank": 52,
+    "answer_type": "ENUM",
+    "options": [
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "LUCRO_PRESUMIDO",
+      "LUCRO_REAL",
+      "PUBLIC_ENTITY",
+      "NOT_APPLICABLE"
+    ]
+  },
+  {
+    "fact_key": "provider.person_type",
+    "prompt": "Qual é a natureza jurídica do prestador beneficiário?",
+    "rank": 53,
+    "answer_type": "ENUM",
+    "options": [
+      "PRIVATE_LEGAL_ENTITY",
+      "INDIVIDUAL",
+      "FOREIGN_LEGAL_ENTITY",
+      "COOPERATIVE"
+    ]
+  },
+  {
+    "fact_key": "federal.service_category",
+    "prompt": "Qual é a categoria federal material do serviço efetivamente prestado?",
+    "rank": 54,
+    "answer_type": "ENUM",
+    "options": [
+      "CLEANING",
+      "CONSERVATION",
+      "MAINTENANCE",
+      "SECURITY",
+      "SURVEILLANCE",
+      "VALUE_TRANSPORT",
+      "LABOR_LEASING",
+      "CREDIT_ADVISORY",
+      "MARKET_ADVISORY",
+      "CREDIT_MANAGEMENT",
+      "RISK_SELECTION",
+      "ACCOUNTS_PAYABLE_MANAGEMENT",
+      "ACCOUNTS_RECEIVABLE_MANAGEMENT",
+      "PROFESSIONAL_SERVICE",
+      "COMMISSION",
+      "BROKERAGE",
+      "ADVERTISING",
+      "COOPERATIVE_PERSONAL_SERVICE",
+      "SOFTWARE_PROGRAMMING",
+      "SOFTWARE_LICENSE_ONLY",
+      "OTHER",
+      "MIXED",
+      "UNKNOWN"
+    ]
+  },
+  {
+    "fact_key": "payment.occurred",
+    "prompt": "O pagamento ou adiantamento já ocorreu?",
+    "rank": 55,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "payment.date",
+    "prompt": "Qual é a data do pagamento ou adiantamento?",
+    "rank": 56,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payment.accounting_credit_date",
+    "prompt": "Em que data ocorreu o crédito contábil incondicional ao prestador?",
+    "rank": 57,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payment.gross_amount",
+    "prompt": "Qual é o valor bruto efetivamente pago neste evento?",
+    "rank": 58,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "invoice.issue_date",
+    "prompt": "Qual é a data de emissão da nota fiscal ou fatura?",
+    "rank": 59,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payer.siafi_electronic_collection",
+    "prompt": "O órgão ou entidade integra o Siafi federal?",
+    "rank": 59,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.expenditure_liquidation_date",
+    "prompt": "Qual é a data de liquidação do empenho da nota fiscal ou fatura?",
+    "rank": 59,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "provider.revenue_is_own",
+    "prompt": "A receita pertence ao próprio prestador optante pelo Simples/MEI?",
+    "rank": 60,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_declaration_received",
+    "prompt": "A declaração válida de optante pelo Simples foi recebida para este evento?",
+    "rank": 61,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.pis_status",
+    "prompt": "Qual é o tratamento do PIS retido neste pagamento?",
+    "rank": 62,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.cofins_status",
+    "prompt": "Qual é o tratamento da Cofins retida neste pagamento?",
+    "rank": 63,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.csll_status",
+    "prompt": "Qual é o tratamento da CSLL retida neste pagamento?",
+    "rank": 64,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.pis_exception_legal_basis",
+    "prompt": "Qual é o fundamento da exceção, alíquota zero ou suspensão do PIS?",
+    "rank": 65,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.cofins_exception_legal_basis",
+    "prompt": "Qual é o fundamento da exceção, alíquota zero ou suspensão da Cofins?",
+    "rank": 66,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.csll_exception_legal_basis",
+    "prompt": "Qual é o fundamento da exceção, alíquota zero ou suspensão da CSLL?",
+    "rank": 67,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.irrf_taxable_base",
+    "prompt": "Qual é a base específica do IRRF após segregar repasses e parcelas não próprias?",
+    "rank": 68,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.irrf_collection_mode",
+    "prompt": "O IRRF é retido pelo pagador ou autorretido pelo beneficiário nesta hipótese especial?",
+    "rank": 69,
+    "answer_type": "ENUM",
+    "options": [
+      "PAYER_WITHHOLDS",
+      "BENEFICIARY_SELF_WITHHOLDS"
+    ]
+  },
+  {
+    "fact_key": "inss.service_group",
+    "prompt": "O serviço pertence ao art. 111, ao art. 112 ou está fora da lista exaustiva do INSS?",
+    "rank": 70,
+    "answer_type": "ENUM",
+    "options": [
+      "ARTICLE_111",
+      "ARTICLE_112",
+      "OUTSIDE_EXHAUSTIVE_LIST"
+    ]
+  },
+  {
+    "fact_key": "inss.service_category",
+    "prompt": "Qual é a categoria previdenciária real do serviço?",
+    "rank": 71,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "inss.execution_mode",
+    "prompt": "Qual é a forma real de execução para fins previdenciários?",
+    "rank": 72,
+    "answer_type": "ENUM",
+    "options": [
+      "LABOR_ASSIGNMENT",
+      "CONTRACT_FOR_RESULT",
+      "TOTAL_CONSTRUCTION",
+      "PARTIAL_CONSTRUCTION",
+      "SUBCONTRACT"
+    ]
+  },
+  {
+    "fact_key": "labor.work_location",
+    "prompt": "Onde a equipe executa o serviço?",
+    "rank": 73,
+    "answer_type": "ENUM",
+    "options": [
+      "CONTRACTING_PARTY_PREMISES",
+      "THIRD_PARTY_PREMISES_INDICATED_BY_CONTRACTOR",
+      "PROVIDER_PREMISES",
+      "REMOTE",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "labor.continuous_need",
+    "prompt": "O serviço atende necessidade contínua ou permanente do contratante, ainda que periodicamente?",
+    "rank": 74,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "labor.workers_at_disposal",
+    "prompt": "Os trabalhadores permanecem colocados à disposição do contratante?",
+    "rank": 75,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_annex",
+    "prompt": "Em qual anexo do Simples esta receita de serviço está enquadrada?",
+    "rank": 76,
+    "answer_type": "ENUM",
+    "options": [
+      "ANNEX_I",
+      "ANNEX_II",
+      "ANNEX_III",
+      "ANNEX_IV",
+      "ANNEX_V",
+      "SIMEI"
+    ]
+  },
+  {
+    "fact_key": "provider.cprb_applicable",
+    "prompt": "A opção válida pela CPRB alcança este estabelecimento, serviço e período?",
+    "rank": 77,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.allowed_base_deductions",
+    "prompt": "Qual é o total de deduções previdenciárias documentalmente admitidas da base?",
+    "rank": 78,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.deduction_evidence_confirmed",
+    "prompt": "Contrato, nota e comprovantes sustentam as deduções da base do INSS?",
+    "rank": 79,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.special_retirement_additional_rate",
+    "prompt": "Qual adicional previdenciário se aplica pela exposição para aposentadoria especial: 0, 2, 3 ou 4 pontos percentuais?",
+    "rank": 80,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.subcontractor_withholding_offset",
+    "prompt": "Qual retenção comprovada de subcontratada pode ser abatida do valor a reter?",
+    "rank": 81,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.subcontractor_offset_evidence_confirmed",
+    "prompt": "O abatimento da subcontratada está comprovado para a mesma competência e serviço?",
+    "rank": 82,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "invoice.gross_amount",
+    "prompt": "Qual é o valor bruto da nota fiscal ou fatura para a retenção previdenciária?",
+    "rank": 83,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "provider.social_security_immunity_qualified",
+    "prompt": "O prestador é entidade beneficente com imunidade previdenciária válida e comprovada no período?",
+    "rank": 84,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.material_equipment_profile",
+    "prompt": "Como materiais e equipamentos estão previstos e discriminados no contrato e na nota?",
+    "rank": 85,
+    "answer_type": "ENUM",
+    "options": [
+      "NONE",
+      "VALUES_IN_CONTRACT_AND_INVOICE",
+      "CONTRACT_WITHOUT_VALUES",
+      "INHERENT_EQUIPMENT_WITHOUT_VALUES",
+      "NOT_DISCRIMINATED_IN_INVOICE",
+      "NO_CONTRACT_PROVISION_NOT_INHERENT"
+    ]
+  },
+  {
+    "fact_key": "inss.material_equipment_amount",
+    "prompt": "Qual é o valor comprovado de materiais e equipamentos informado para exclusão da base?",
+    "rank": 86,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.material_equipment_evidence_confirmed",
+    "prompt": "Contrato, nota e documentos comprovam materiais e equipamentos e seus valores?",
+    "rank": 87,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.minimum_base_category",
+    "prompt": "Qual categoria de base mínima se aplica quando contrato ou equipamento não discrimina valores?",
+    "rank": 88,
+    "answer_type": "ENUM",
+    "options": [
+      "PASSENGER_TRANSPORT",
+      "HOSPITAL_CLEANING",
+      "OTHER_CLEANING",
+      "OTHER",
+      "GENERAL_WITH_INHERENT_EQUIPMENT",
+      "CONSTRUCTION_ASPHALT_PAVING",
+      "CONSTRUCTION_EARTHWORK_LANDFILL_DREDGING",
+      "CONSTRUCTION_BRIDGES_VIADUCTS",
+      "CONSTRUCTION_DRAINAGE",
+      "CONSTRUCTION_OTHER_NON_MANUAL_EQUIPMENT"
+    ]
+  },
+  {
+    "fact_key": "inss.total_construction_optional_withholding",
+    "prompt": "Na empreitada total, foi escolhida a retenção facultativa para elidir a responsabilidade solidária?",
+    "rank": 89,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.statutory_dispense_claimed",
+    "prompt": "O prestador reivindica uma dispensa legal específica da retenção previdenciária?",
+    "rank": 90,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.statutory_dispense_type",
+    "prompt": "Qual hipótese legal de dispensa previdenciária foi reivindicada?",
+    "rank": 91,
+    "answer_type": "ENUM",
+    "options": [
+      "NO_EMPLOYEES_OWNER_PERSONAL_SERVICE",
+      "REGULATED_PROFESSION_OR_TRAINING"
+    ]
+  },
+  {
+    "fact_key": "inss.dispense_declaration_received",
+    "prompt": "A declaração ou indicação documental exigida para a dispensa foi recebida?",
+    "rank": 92,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.has_employees",
+    "prompt": "O prestador possui empregados?",
+    "rank": 93,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.service_performed_personally_by_owner_or_partner",
+    "prompt": "O serviço foi executado pessoalmente pelo titular ou sócios?",
+    "rank": 94,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.previous_month_gross_revenue",
+    "prompt": "Qual foi a receita bruta do prestador no mês anterior?",
+    "rank": 95,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.max_social_security_contribution_salary",
+    "prompt": "Qual era o salário de contribuição máximo vigente usado no limite da dispensa?",
+    "rank": 96,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.regulated_profession_or_training_service",
+    "prompt": "O objeto é profissão regulamentada ou treinamento/ensino abrangido pela dispensa?",
+    "rank": 97,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.employees_in_execution",
+    "prompt": "Houve empregados do prestador executando este serviço?",
+    "rank": 98,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.execution_has_other_individual_contributors",
+    "prompt": "Houve outros contribuintes individuais além dos sócios na execução?",
+    "rank": 99,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.pf_monthly_taxable_income",
+    "prompt": "Qual é o total mensal de rendimentos tributáveis da pessoa física sujeito à incidência mensal?",
+    "rank": 100,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.pf_monthly_taxable_base",
+    "prompt": "Qual é a base mensal da pessoa física após as deduções legalmente admitidas?",
+    "rank": 101,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.pf_service_relationship",
+    "prompt": "O pagamento à pessoa física decorre de relação de trabalho informada no eSocial ou de hipótese sem relação de trabalho?",
+    "rank": 102,
+    "answer_type": "ENUM",
+    "options": [
+      "EMPLOYMENT_OR_WORK_RELATIONSHIP",
+      "NO_WORK_RELATIONSHIP"
+    ]
+  },
+  {
+    "fact_key": "payment.remittance_date",
+    "prompt": "Em que data ocorreu a remessa ao beneficiário no exterior?",
+    "rank": 103,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payment.delivery_or_employment_date",
+    "prompt": "Em que data ocorreu entrega ou emprego do valor em favor do beneficiário no exterior?",
+    "rank": 104,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "federal.foreign_income_category",
+    "prompt": "Qual é a natureza do rendimento pago ao exterior?",
+    "rank": 105,
+    "answer_type": "ENUM",
+    "options": [
+      "GENERAL_SERVICE",
+      "TECHNICAL_OR_ADMINISTRATIVE_ASSISTANCE",
+      "SOFTWARE_CUSTOM_DEVELOPMENT",
+      "SOFTWARE_LICENSE_ROYALTY"
+    ]
+  },
+  {
+    "fact_key": "federal.foreign_taxable_base",
+    "prompt": "Qual é a base tributável da remessa ao exterior após a qualificação jurídica do rendimento?",
+    "rank": 106,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "provider.favored_tax_jurisdiction",
+    "prompt": "O beneficiário está em país ou dependência com tributação favorecida para esta regra?",
+    "rank": 107,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.foreign_revenue_code",
+    "prompt": "Qual código de receita federal vigente foi validado para esta remessa?",
+    "rank": 108,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "provider.foreign_tax_id",
+    "prompt": "Qual identificador fiscal estrangeiro foi comprovado para o beneficiário da remessa?",
+    "rank": 108,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_applicable",
+    "prompt": "Existe tratado aplicável à natureza deste rendimento e ao país do beneficiário?",
+    "rank": 109,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_validated",
+    "prompt": "Tratado, protocolo, beneficiário efetivo e estabelecimento permanente foram juridicamente validados?",
+    "rank": 110,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_rate",
+    "prompt": "Qual alíquota de IRRF resultou da validação do tratado?",
+    "rank": 111,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_legal_basis",
+    "prompt": "Qual dispositivo do tratado e protocolo fundamenta a alíquota aplicada?",
+    "rank": 112,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "payer.public_entity_type",
+    "prompt": "Qual é a natureza jurídica do órgão ou entidade pública pagadora?",
+    "rank": 113,
+    "answer_type": "ENUM",
+    "options": [
+      "DIRECT",
+      "AUTARCHY",
+      "PUBLIC_FOUNDATION",
+      "PUBLIC_COMPANY",
+      "MIXED_CAPITAL_COMPANY",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "public.foundation_autarchic_nature",
+    "prompt": "A fundação pública subnacional tem natureza autárquica comprovada?",
+    "rank": 113,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.foundation_maintainer_public_revenue_share",
+    "prompt": "Qual percentual comprovado da receita da fundação provém do poder público mantenedor?",
+    "rank": 113,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "public.foundation_qualification_source_id",
+    "prompt": "Qual ato ou documento comprova a qualificação da fundação?",
+    "rank": 113,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.annex_category",
+    "prompt": "Qual linha do Anexo I da IN RFB 1.234/2012 corresponde à natureza deste pagamento?",
+    "rank": 114,
+    "answer_type": "ENUM",
+    "options": [
+      "GOODS_MATERIALS_HOSPITAL_CARGO",
+      "FUEL_PRODUCER_IMPORTER",
+      "FUEL_DISTRIBUTOR_RETAIL",
+      "INTERNATIONAL_CARGO_AND_ZERO_CONTRIBUTIONS",
+      "PASSENGER_TRANSPORT",
+      "INTERNATIONAL_PASSENGER_TRANSPORT",
+      "PROFESSIONAL_ASSOCIATION_COOPERATIVE",
+      "FINANCIAL_AND_HEALTH_INSURANCE",
+      "GENERAL_SERVICES",
+      "MIXED",
+      "UNKNOWN"
+    ]
+  },
+  {
+    "fact_key": "public.annex_basis_type",
+    "prompt": "Qual hipótese específica da linha 6147 fundamenta o enquadramento?",
+    "rank": 115,
+    "answer_type": "ENUM",
+    "options": [
+      "GOODS",
+      "QUALIFIED_MATERIAL_SERVICE",
+      "HOSPITAL",
+      "DIAGNOSTIC",
+      "CARGO",
+      "FOOD",
+      "ENERGY"
+    ]
+  },
+  {
+    "fact_key": "public.materials_contract_qualified",
+    "prompt": "O contrato comprova os requisitos de serviço com materiais?",
+    "rank": 116,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.materials_invoice_qualified",
+    "prompt": "A nota comprova os materiais e sua incorporação ou fornecimento exigido?",
+    "rank": 117,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.glosa_without_new_invoice",
+    "prompt": "Houve glosa sem emissão de nova nota?",
+    "rank": 118,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.glosa_amount",
+    "prompt": "Qual foi o valor comprovado da glosa?",
+    "rank": 119,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "public.article33_convention_exists",
+    "prompt": "Existe convênio vigente do art. 33 para este ente e pagamento?",
+    "rank": 120,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.article33_convention_source_id",
+    "prompt": "Qual é a identificação do ato de convênio?",
+    "rank": 121,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.article33_convention_valid_from",
+    "prompt": "Quando iniciou a vigência comprovada do convênio?",
+    "rank": 122,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "public.article33_convention_valid_to",
+    "prompt": "Quando termina a vigência comprovada do convênio?",
+    "rank": 123,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "cooperative.act_legal_basis",
+    "prompt": "Qual fundamento e documento comprovam a qualificação do ato cooperativo?",
+    "rank": 124,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "cooperative.act_type",
+    "prompt": "A operação da cooperativa é ato cooperativo, não cooperativo ou misto?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "COOPERATIVE_ACT",
+      "NONCOOPERATIVE_ACT",
+      "MIXED"
+    ]
+  },
+  {
+    "fact_key": "cooperative.health_plan_price_model",
+    "prompt": "O plano médico é preestabelecido, pós-estabelecido, misto ou inexistente?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "NONE",
+      "PREESTABLISHED",
+      "POSTESTABLISHED",
+      "MIXED"
+    ]
+  },
+  {
+    "fact_key": "cooperative.invoice_components",
+    "prompt": "Quais componentes, valores e beneficiários efetivos constam da fatura segregada da cooperativa?",
+    "rank": 124,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "cooperative.invoice_components_evidence_confirmed",
+    "prompt": "A fatura e seus documentos comprovam integralmente a segregação dos componentes?",
+    "rank": 124,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "cooperative.medical_role",
+    "prompt": "A cooperativa médica atua como operadora do plano ou intermediária singular?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "PLAN_OPERATOR",
+      "SINGULAR_INTERMEDIARY"
+    ]
+  },
+  {
+    "fact_key": "cooperative.provider_type",
+    "prompt": "Qual é o tipo jurídico e operacional da cooperativa prestadora?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "WORK",
+      "PRODUCTION",
+      "MEDICAL",
+      "TRANSPORT",
+      "CREDIT",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "cooperative.transport_invoice_split_confirmed",
+    "prompt": "A fatura discrimina parcelas tributáveis e não tributáveis do transporte?",
+    "rank": 124,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "cooperative.transport_kind",
+    "prompt": "O serviço da cooperativa de transporte é de cargas ou passageiros?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "CARGO",
+      "PASSENGER"
+    ]
+  },
+  {
+    "fact_key": "cooperative.transport_service_amount",
+    "prompt": "Qual parcela documentada corresponde ao transporte tributável pelo IRRF 3280?",
+    "rank": 124,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "construction.previdenciary_object_type",
+    "prompt": "Para fins previdenciários e de CNO, é obra ou serviço isolado?",
+    "rank": 125,
+    "answer_type": "ENUM",
+    "options": [
+      "WORK",
+      "ISOLATED_SERVICE"
+    ]
+  },
+  {
+    "fact_key": "construction.cno_required",
+    "prompt": "A obra exige inscrição no CNO neste período?",
+    "rank": 126,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.cno",
+    "prompt": "Qual é a inscrição CNO comprovada da obra?",
+    "rank": 127,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "construction.cno_holder",
+    "prompt": "Quem é o responsável pelo CNO da obra?",
+    "rank": 128,
+    "answer_type": "ENUM",
+    "options": [
+      "PROVIDER",
+      "CONTRACTING_PARTY"
+    ]
+  },
+  {
+    "fact_key": "construction.cno_exemption_legal_basis",
+    "prompt": "Qual fundamento legal vigente dispensa a inscrição no CNO?",
+    "rank": 129,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "construction.parent_contract_reference",
+    "prompt": "Qual contrato principal comprova a subempreitada?",
+    "rank": 129,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "construction.parent_work_reference",
+    "prompt": "Qual obra principal está vinculada à subempreitada?",
+    "rank": 129,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "construction.total_contract_qualified",
+    "prompt": "A prestadora da empreitada total é empresa construtora qualificada?",
+    "rank": 129,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.total_scope_confirmed",
+    "prompt": "O contrato comprova a execução integral dos serviços necessários da obra?",
+    "rank": 129,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.work_responsible_party",
+    "prompt": "Quem é o responsável contratual e legal pela obra e pelo CNO?",
+    "rank": 129,
+    "answer_type": "ENUM",
+    "options": [
+      "PROVIDER",
+      "CONTRACTING_PARTY"
+    ]
+  },
+  {
+    "fact_key": "cooperative.pcc_taxable_base",
+    "prompt": "Qual é a base de PIS/Cofins após segregação documentada de repasses e componentes da fatura da cooperativa?",
+    "rank": 130,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "cooperative.pcc_basis_evidence_confirmed",
+    "prompt": "Contrato, nota e repasses comprovam a base segregada da cooperativa?",
+    "rank": 131,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "payer.head_office_tax_id",
+    "prompt": "Qual é o CNPJ da matriz responsável pela centralização da EFD-Reinf e DCTFWeb?",
+    "rank": 132,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "federal.income_nature_code",
+    "prompt": "Qual natureza de rendimento vigente da série R-4000 foi validada para este pagamento?",
+    "rank": 133,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "public.payment_lines",
+    "prompt": "Quais são as parcelas individualizadas do pagamento, cada uma com categoria do Anexo I, valor e documento de suporte?",
+    "rank": 134,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "federal.irrf_exception_legal_basis",
+    "prompt": "Qual dispositivo legal e documento comprovam a exceção individual de IR?",
+    "rank": 135,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.irrf_status",
+    "prompt": "O IR deste beneficiário público é aplicável, isento, imune, com alíquota zero ou suspenso?",
+    "rank": 135,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "IMMUNE",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "public.beneficiary_treatment",
+    "prompt": "Qual tratamento jurídico do beneficiário foi comprovado neste pagamento público?",
+    "rank": 135,
+    "answer_type": "ENUM",
+    "options": [
+      "STANDARD",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED",
+      "IMMUNE",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "public.local_ir_collection_rule_id",
+    "prompt": "Qual ato local vigente disciplina a arrecadação do IR retido?",
+    "rank": 136,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.local_ir_collection_code",
+    "prompt": "Qual código local de arrecadação do IR foi validado?",
+    "rank": 137,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.local_ir_due_rule",
+    "prompt": "Qual regra local de vencimento do IR foi validada?",
+    "rank": 138,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.local_ir_valid_from",
+    "prompt": "Quando iniciou a vigência do ato local de arrecadação?",
+    "rank": 139,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "public.local_ir_valid_to",
+    "prompt": "Quando termina a vigência do ato local de arrecadação?",
+    "rank": 140,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "public.has_late_additions",
+    "prompt": "O pagamento público inclui juros ou multas por atraso?",
+    "rank": 141,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.late_interest",
+    "prompt": "Qual o valor comprovado dos juros por atraso incluídos no pagamento?",
+    "rank": 142,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "public.late_penalties",
+    "prompt": "Qual o valor comprovado das multas por atraso incluídas no pagamento?",
+    "rank": 143,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "provider.head_office_tax_id",
+    "prompt": "Qual é o CNPJ da matriz beneficiária responsável por autorretenção e DCTFWeb?",
+    "rank": 144,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "public.exception_disclosed_on_invoice",
+    "prompt": "A condição de isenção, alíquota zero ou suspensão e seu fundamento constam do documento fiscal?",
+    "rank": 145,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.evaluate",
+    "prompt": "Informe ou comprove rtc.evaluate para a apuração IBS/CBS.",
+    "rank": 150,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.operation_date",
+    "prompt": "Informe ou comprove rtc.operation_date para a apuração IBS/CBS.",
+    "rank": 151,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "rtc.operation_kind",
+    "prompt": "Informe ou comprove rtc.operation_kind para a apuração IBS/CBS.",
+    "rank": 152,
+    "answer_type": "ENUM",
+    "options": [
+      "SERVICE",
+      "GOODS",
+      "DIGITAL",
+      "FINANCIAL",
+      "REAL_ESTATE",
+      "SPECIFIC_REGIME"
+    ]
+  },
+  {
+    "fact_key": "rtc.buyer_relation",
+    "prompt": "Informe ou comprove rtc.buyer_relation para a apuração IBS/CBS.",
+    "rank": 153,
+    "answer_type": "ENUM",
+    "options": [
+      "B2B",
+      "B2C"
+    ]
+  },
+  {
+    "fact_key": "rtc.delivery_mode",
+    "prompt": "Informe ou comprove rtc.delivery_mode para a apuração IBS/CBS.",
+    "rank": 154,
+    "answer_type": "ENUM",
+    "options": [
+      "PRESENTIAL",
+      "REMOTE",
+      "DIGITAL"
+    ]
+  },
+  {
+    "fact_key": "rtc.consideration",
+    "prompt": "Informe ou comprove rtc.consideration para a apuração IBS/CBS.",
+    "rank": 155,
+    "answer_type": "ENUM",
+    "options": [
+      "ONEROUS",
+      "NON_ONEROUS"
+    ]
+  },
+  {
+    "fact_key": "rtc.non_onerous_legal_basis",
+    "prompt": "Informe ou comprove rtc.non_onerous_legal_basis para a apuração IBS/CBS.",
+    "rank": 156,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.recipient_relationship",
+    "prompt": "Qual é a relação comprovada do destinatário pessoa física com o fornecedor?",
+    "rank": 157,
+    "answer_type": "ENUM",
+    "options": [
+      "PARTNER",
+      "SHAREHOLDER",
+      "ADMINISTRATOR",
+      "BOARD_OR_COMMITTEE_MEMBER",
+      "EMPLOYEE",
+      "SPOUSE_OR_PARTNER",
+      "RELATIVE_FIRST_DEGREE",
+      "RELATIVE_SECOND_DEGREE",
+      "RELATIVE_THIRD_DEGREE",
+      "OTHER",
+      "SELF"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_anchor_role",
+    "prompt": "Qual é o papel da pessoa física à qual o familiar está vinculado?",
+    "rank": 158,
+    "answer_type": "ENUM",
+    "options": [
+      "PARTNER",
+      "SHAREHOLDER",
+      "ADMINISTRATOR",
+      "BOARD_OR_COMMITTEE_MEMBER",
+      "EMPLOYEE",
+      "SELF"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_relationship_evidence_id",
+    "prompt": "Informe ou comprove rtc.recipient_relationship_evidence_id para a apuração IBS/CBS.",
+    "rank": 158,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.business_use_predominant",
+    "prompt": "Informe ou comprove rtc.business_use_predominant para a apuração IBS/CBS.",
+    "rank": 159,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.recipient_anchor_evidence_id",
+    "prompt": "Informe o documento que comprova o papel da pessoa vinculada ao familiar.",
+    "rank": 159,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.business_use_evidence_id",
+    "prompt": "Informe ou comprove rtc.business_use_evidence_id para a apuração IBS/CBS.",
+    "rank": 160,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.personal_use_supply_origin",
+    "prompt": "O bem ou serviço para uso pessoal foi produzido ou prestado pelo próprio contribuinte, ou adquirido de terceiro?",
+    "rank": 160,
+    "answer_type": "ENUM",
+    "options": [
+      "SELF_PRODUCED_OR_PROVIDED",
+      "ACQUIRED_FROM_THIRD_PARTY"
+    ]
+  },
+  {
+    "fact_key": "rtc.market_value_brl",
+    "prompt": "Informe ou comprove rtc.market_value_brl para a apuração IBS/CBS.",
+    "rank": 161,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.personal_use_origin_evidence_id",
+    "prompt": "Informe o documento que comprova a origem do bem ou serviço fornecido para uso pessoal.",
+    "rank": 161,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.market_value_evidence_id",
+    "prompt": "Informe ou comprove rtc.market_value_evidence_id para a apuração IBS/CBS.",
+    "rank": 162,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.personal_use_input_credit_eligible",
+    "prompt": "A aquisição do bem ou serviço permitiu crédito de IBS e CBS, conforme documento e regra aplicável?",
+    "rank": 162,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.market",
+    "prompt": "Informe ou comprove rtc.market para a apuração IBS/CBS.",
+    "rank": 163,
+    "answer_type": "ENUM",
+    "options": [
+      "DOMESTIC",
+      "IMPORT",
+      "EXPORT"
+    ]
+  },
+  {
+    "fact_key": "rtc.personal_use_input_credit_evidence_id",
+    "prompt": "Informe o documento de aquisição e a evidência da elegibilidade do crédito de IBS e CBS.",
+    "rank": 163,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_credit_fiscal_document_id",
+    "prompt": "Qual documento fiscal eletrônico idôneo comprova IBS e CBS na importação?",
+    "rank": 164,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_regime",
+    "prompt": "Informe ou comprove rtc.supplier_regime para a apuração IBS/CBS.",
+    "rank": 164,
+    "answer_type": "ENUM",
+    "options": [
+      "REGULAR",
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "SPECIAL",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "rtc.import_credit_extinction_evidence_id",
+    "prompt": "Qual prova identifica a extinção dos débitos de IBS e CBS dessa importação?",
+    "rank": 165,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.simples_collection_option",
+    "prompt": "Informe ou comprove rtc.simples_collection_option para a apuração IBS/CBS.",
+    "rank": 165,
+    "answer_type": "ENUM",
+    "options": [
+      "INTERNAL",
+      "REGULAR"
+    ]
+  },
+  {
+    "fact_key": "rtc.donation_no_counterbenefit",
+    "prompt": "A doação não proporciona contraprestação em benefício do doador?",
+    "rank": 166,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.simples_option_filed_on",
+    "prompt": "Informe ou comprove rtc.simples_option_filed_on para a apuração IBS/CBS.",
+    "rank": 166,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "rtc.donation_counterbenefit_evidence_id",
+    "prompt": "Qual documento comprova a ausência de contraprestação?",
+    "rank": 167,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.simples_option_receipt_id",
+    "prompt": "Informe ou comprove rtc.simples_option_receipt_id para a apuração IBS/CBS.",
+    "rank": 167,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.donation_input_credit_eligible",
+    "prompt": "O bem ou serviço doado permitiu apropriação de crédito IBS/CBS, inclusive na produção?",
+    "rank": 168,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.simples_option_status",
+    "prompt": "Informe ou comprove rtc.simples_option_status para a apuração IBS/CBS.",
+    "rank": 168,
+    "answer_type": "ENUM",
+    "options": [
+      "CONFIRMED",
+      "PENDING",
+      "CANCELLED"
+    ]
+  },
+  {
+    "fact_key": "rtc.donation_input_credit_evidence_id",
+    "prompt": "Qual documento comprova a elegibilidade ou ausência de crédito na aquisição ou produção?",
+    "rank": 169,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.simples_option_status_evidence_id",
+    "prompt": "Informe ou comprove rtc.simples_option_status_evidence_id para a apuração IBS/CBS.",
+    "rank": 169,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.donation_credit_option",
+    "prompt": "Se houve crédito elegível, a opção é tributar pelo valor de mercado ou anular créditos?",
+    "rank": 170,
+    "answer_type": "ENUM"
+  },
+  {
+    "fact_key": "rtc.supplier_id",
+    "prompt": "Informe ou comprove rtc.supplier_id para a apuração IBS/CBS.",
+    "rank": 170,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.donation_credit_annulment_evidence_id",
+    "prompt": "Qual prova identifica a anulação dos créditos da doação?",
+    "rank": 171,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_country",
+    "prompt": "Informe ou comprove rtc.supplier_country para a apuração IBS/CBS.",
+    "rank": 171,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.acquirer_id",
+    "prompt": "Informe ou comprove rtc.acquirer_id para a apuração IBS/CBS.",
+    "rank": 172,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.recipient_id",
+    "prompt": "Informe ou comprove rtc.recipient_id para a apuração IBS/CBS.",
+    "rank": 173,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.importer_id",
+    "prompt": "Informe ou comprove rtc.importer_id para a apuração IBS/CBS.",
+    "rank": 174,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.taxpayer_id",
+    "prompt": "Informe ou comprove rtc.taxpayer_id para a apuração IBS/CBS.",
+    "rank": 175,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_id",
+    "prompt": "Informe ou comprove rtc.platform_id para a apuração IBS/CBS.",
+    "rank": 176,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.acquirer_country",
+    "prompt": "Informe ou comprove rtc.acquirer_country para a apuração IBS/CBS.",
+    "rank": 177,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.recipient_country",
+    "prompt": "Informe ou comprove rtc.recipient_country para a apuração IBS/CBS.",
+    "rank": 178,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.destination_basis",
+    "prompt": "Informe ou comprove rtc.destination_basis para a apuração IBS/CBS.",
+    "rank": 179,
+    "answer_type": "ENUM",
+    "options": [
+      "ACQUIRER_DOMICILE",
+      "RECIPIENT_DOMICILE",
+      "PROPERTY",
+      "PERSON_PRESENCE",
+      "EVENT",
+      "GOODS_DELIVERY",
+      "PASSENGER_ORIGIN",
+      "CARGO_DELIVERY",
+      "DOCUMENTED_SPECIAL"
+    ]
+  },
+  {
+    "fact_key": "rtc.destination_state",
+    "prompt": "Informe ou comprove rtc.destination_state para a apuração IBS/CBS.",
+    "rank": 180,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.government_entity_evidence_id",
+    "prompt": "Informe o ato que comprova a natureza do ente adquirente.",
+    "rank": 180,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.destination_municipality_ibge",
+    "prompt": "Informe ou comprove rtc.destination_municipality_ibge para a apuração IBS/CBS.",
+    "rank": 181,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.government_public_law_person",
+    "prompt": "O adquirente é pessoa jurídica de direito público interno?",
+    "rank": 181,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.destination_evidence_id",
+    "prompt": "Informe ou comprove rtc.destination_evidence_id para a apuração IBS/CBS.",
+    "rank": 182,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_in_person",
+    "prompt": "A aquisição foi realizada presencialmente?",
+    "rank": 182,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.destination_registration_status",
+    "prompt": "Informe ou comprove rtc.destination_registration_status para a apuração IBS/CBS.",
+    "rank": 183,
+    "answer_type": "ENUM",
+    "options": [
+      "REGISTERED",
+      "UNREGISTERED"
+    ]
+  },
+  {
+    "fact_key": "rtc.government_licitation_waived",
+    "prompt": "A aquisição foi dispensada de licitação conforme ato documentado?",
+    "rank": 183,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.destination_evidence_sources",
+    "prompt": "Informe ou comprove rtc.destination_evidence_sources para a apuração IBS/CBS.",
+    "rank": 184,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.government_national_uniform_rate",
+    "prompt": "A operação está sujeita a alíquota nacionalmente uniforme enumerada no art. 472?",
+    "rank": 184,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.government_procurement_evidence_id",
+    "prompt": "Informe o ato que prova a compra presencial dispensada de licitação.",
+    "rank": 184,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_uniform_rate_rule_id",
+    "prompt": "Informe o dispositivo de alíquota nacionalmente uniforme aplicável.",
+    "rank": 184,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.foreign_consumption_proven",
+    "prompt": "Informe ou comprove rtc.foreign_consumption_proven para a apuração IBS/CBS.",
+    "rank": 185,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.government_federation",
+    "prompt": "Qual ente federativo contratou a aquisição?",
+    "rank": 185,
+    "answer_type": "ENUM",
+    "options": [
+      "UNION",
+      "STATE",
+      "MUNICIPALITY",
+      "DISTRICT"
+    ]
+  },
+  {
+    "fact_key": "rtc.export_evidence_id",
+    "prompt": "Informe ou comprove rtc.export_evidence_id para a apuração IBS/CBS.",
+    "rank": 186,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_payment_date",
+    "prompt": "Em que data o ente público realizou o pagamento?",
+    "rank": 186,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "rtc.export_share_percent",
+    "prompt": "Informe ou comprove rtc.export_share_percent para a apuração IBS/CBS.",
+    "rank": 187,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.government_payment_evidence_id",
+    "prompt": "Informe o comprovante do pagamento público.",
+    "rank": 187,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.export_allocation_method",
+    "prompt": "Informe ou comprove rtc.export_allocation_method para a apuração IBS/CBS.",
+    "rank": 188,
+    "answer_type": "ENUM",
+    "options": [
+      "CONTRACTUAL",
+      "METERED_USAGE"
+    ]
+  },
+  {
+    "fact_key": "rtc.export_allocation_evidence_id",
+    "prompt": "Informe ou comprove rtc.export_allocation_evidence_id para a apuração IBS/CBS.",
+    "rank": 189,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.domestic_consumption_evidence_id",
+    "prompt": "Informe ou comprove rtc.domestic_consumption_evidence_id para a apuração IBS/CBS.",
+    "rank": 190,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_document_id",
+    "prompt": "Informe ou comprove rtc.import_document_id para a apuração IBS/CBS.",
+    "rank": 191,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_foreign_nif",
+    "prompt": "Informe ou comprove rtc.supplier_foreign_nif para a apuração IBS/CBS.",
+    "rank": 192,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_transaction_evidence_id",
+    "prompt": "Informe ou comprove rtc.import_transaction_evidence_id para a apuração IBS/CBS.",
+    "rank": 193,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_fx_contract_applicable",
+    "prompt": "Informe ou comprove rtc.import_fx_contract_applicable para a apuração IBS/CBS.",
+    "rank": 194,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.import_fx_contract_id",
+    "prompt": "Informe ou comprove rtc.import_fx_contract_id para a apuração IBS/CBS.",
+    "rank": 195,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_brazil_share_percent",
+    "prompt": "Informe ou comprove rtc.import_brazil_share_percent para a apuração IBS/CBS.",
+    "rank": 196,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.import_allocation_method",
+    "prompt": "Informe ou comprove rtc.import_allocation_method para a apuração IBS/CBS.",
+    "rank": 197,
+    "answer_type": "ENUM",
+    "options": [
+      "CONTRACTUAL",
+      "METERED_USAGE"
+    ]
+  },
+  {
+    "fact_key": "rtc.import_allocation_evidence_id",
+    "prompt": "Informe ou comprove rtc.import_allocation_evidence_id para a apuração IBS/CBS.",
+    "rank": 198,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.gross_currency",
+    "prompt": "Informe ou comprove rtc.gross_currency para a apuração IBS/CBS.",
+    "rank": 199,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.specific_regime_rule_id",
+    "prompt": "Informe ou comprove rtc.specific_regime_rule_id para a apuração IBS/CBS.",
+    "rank": 200,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_entity_type",
+    "prompt": "Informe ou comprove rtc.government_entity_type para a apuração IBS/CBS.",
+    "rank": 201,
+    "answer_type": "ENUM",
+    "options": [
+      "DIRECT",
+      "AUTARCHY",
+      "PUBLIC_FOUNDATION",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "rtc.document_id",
+    "prompt": "Informe ou comprove rtc.document_id para a apuração IBS/CBS.",
+    "rank": 202,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.gross_amount",
+    "prompt": "Informe ou comprove rtc.gross_amount para a apuração IBS/CBS.",
+    "rank": 203,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.legacy_tax_inclusion",
+    "prompt": "Informe ou comprove rtc.legacy_tax_inclusion para a apuração IBS/CBS.",
+    "rank": 204,
+    "answer_type": "ENUM",
+    "options": [
+      "INCLUDED",
+      "EXCLUDED"
+    ]
+  },
+  {
+    "fact_key": "rtc.legacy_tax_evidence_id",
+    "prompt": "Informe ou comprove rtc.legacy_tax_evidence_id para a apuração IBS/CBS.",
+    "rank": 205,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.operation_amount_reconciliation_id",
+    "prompt": "Informe ou comprove rtc.operation_amount_reconciliation_id para a apuração IBS/CBS.",
+    "rank": 206,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.base_adjustments",
+    "prompt": "Informe ou comprove rtc.base_adjustments para a apuração IBS/CBS.",
+    "rank": 207,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.tax_treatment",
+    "prompt": "Informe ou comprove rtc.tax_treatment para a apuração IBS/CBS.",
+    "rank": 208,
+    "answer_type": "ENUM",
+    "options": [
+      "STANDARD",
+      "REDUCED_30",
+      "REDUCED_60",
+      "ZERO_RATE",
+      "EXEMPT",
+      "IMMUNE",
+      "SUSPENDED",
+      "DEFERRAL",
+      "SPECIFIC_REGIME"
+    ]
+  },
+  {
+    "fact_key": "rtc.treatment_rule_id",
+    "prompt": "Informe ou comprove rtc.treatment_rule_id para a apuração IBS/CBS.",
+    "rank": 209,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.treatment_evidence_id",
+    "prompt": "Informe ou comprove rtc.treatment_evidence_id para a apuração IBS/CBS.",
+    "rank": 210,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.cindop",
+    "prompt": "Informe ou comprove rtc.cindop para a apuração IBS/CBS.",
+    "rank": 211,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.cclasstrib",
+    "prompt": "Informe ou comprove rtc.cclasstrib para a apuração IBS/CBS.",
+    "rank": 212,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.classification_rule_id",
+    "prompt": "Informe ou comprove rtc.classification_rule_id para a apuração IBS/CBS.",
+    "rank": 213,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.collection_method",
+    "prompt": "Informe ou comprove rtc.collection_method para a apuração IBS/CBS.",
+    "rank": 214,
+    "answer_type": "ENUM",
+    "options": [
+      "SUPPLIER",
+      "ACQUIRER",
+      "RECIPIENT",
+      "SPLIT_PAYMENT",
+      "PLATFORM",
+      "PUBLIC_ENTITY"
+    ]
+  },
+  {
+    "fact_key": "rtc.collection_legal_basis",
+    "prompt": "Informe ou comprove rtc.collection_legal_basis para a apuração IBS/CBS.",
+    "rank": 215,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.accessory_obligations_fulfilled",
+    "prompt": "Informe ou comprove rtc.accessory_obligations_fulfilled para a apuração IBS/CBS.",
+    "rank": 216,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.credit_context",
+    "prompt": "Informe ou comprove rtc.credit_context para a apuração IBS/CBS.",
+    "rank": 217,
+    "answer_type": "ENUM",
+    "options": [
+      "OUTPUT",
+      "INPUT",
+      "PERSONAL_USE"
+    ]
+  },
+  {
+    "fact_key": "rtc.acquirer_regime",
+    "prompt": "Informe ou comprove rtc.acquirer_regime para a apuração IBS/CBS.",
+    "rank": 218,
+    "answer_type": "ENUM",
+    "options": [
+      "REGULAR",
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "NON_TAXPAYER"
+    ]
+  },
+  {
+    "fact_key": "rtc.input_document_id",
+    "prompt": "Informe ou comprove rtc.input_document_id para a apuração IBS/CBS.",
+    "rank": 219,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.input_document_valid",
+    "prompt": "Informe ou comprove rtc.input_document_valid para a apuração IBS/CBS.",
+    "rank": 220,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.prior_tax_extinguished",
+    "prompt": "Informe ou comprove rtc.prior_tax_extinguished para a apuração IBS/CBS.",
+    "rank": 221,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.input_ibs_amount",
+    "prompt": "Informe ou comprove rtc.input_ibs_amount para a apuração IBS/CBS.",
+    "rank": 222,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.input_cbs_amount",
+    "prompt": "Informe ou comprove rtc.input_cbs_amount para a apuração IBS/CBS.",
+    "rank": 223,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.credit_adjustments",
+    "prompt": "Informe ou comprove rtc.credit_adjustments para a apuração IBS/CBS.",
+    "rank": 224,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.export_domestic_recipient_id",
+    "prompt": "Informe e comprove rtc.export_domestic_recipient_id para a parcela consumida no Brasil.",
+    "rank": 240,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.export_domestic_recipient_country",
+    "prompt": "Informe e comprove rtc.export_domestic_recipient_country para a parcela consumida no Brasil.",
+    "rank": 241,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.export_domestic_document_id",
+    "prompt": "Informe e comprove rtc.export_domestic_document_id para a parcela consumida no Brasil.",
+    "rank": 242,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.legacy_event_spans_transition",
+    "prompt": "A mesma operação tem elemento temporal de ISS/ICMS iniciado até 31/12/2032 e IBS em ano posterior?",
+    "rank": 243,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.payment_instrument_split_capable",
+    "prompt": "Informe a evidência de rtc.payment_instrument_split_capable para qualificar o recolhimento IBS/CBS.",
+    "rank": 340,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.payment_instrument_evidence_id",
+    "prompt": "Informe a evidência de rtc.payment_instrument_evidence_id para qualificar o recolhimento IBS/CBS.",
+    "rank": 341,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.payment_transaction_id",
+    "prompt": "Informe a evidência de rtc.payment_transaction_id para qualificar o recolhimento IBS/CBS.",
+    "rank": 342,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.split_deployment_evidence_id",
+    "prompt": "Informe a evidência de rtc.split_deployment_evidence_id para qualificar o recolhimento IBS/CBS.",
+    "rank": 343,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_remote_intermediation",
+    "prompt": "Informe ou comprove rtc.platform_remote_intermediation para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 350,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.platform_controlled_elements",
+    "prompt": "Informe ou comprove rtc.platform_controlled_elements para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 351,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.platform_activity_exclusion",
+    "prompt": "Informe ou comprove rtc.platform_activity_exclusion para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 352,
+    "answer_type": "ENUM",
+    "options": [
+      "NONE",
+      "INTERNET_ACCESS_ONLY",
+      "AUTHORIZED_PAYMENT_ONLY",
+      "ADVERTISING_ONLY",
+      "SEARCH_COMPARISON_ONLY"
+    ]
+  },
+  {
+    "fact_key": "rtc.platform_qualification_evidence_id",
+    "prompt": "Informe ou comprove rtc.platform_qualification_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 353,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_reported_operation",
+    "prompt": "Informe ou comprove rtc.platform_reported_operation para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 354,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.platform_report_evidence_id",
+    "prompt": "Informe ou comprove rtc.platform_report_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 355,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_document_full_value",
+    "prompt": "Informe ou comprove rtc.supplier_document_full_value para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 356,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.supplier_document_evidence_id",
+    "prompt": "Informe ou comprove rtc.supplier_document_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 357,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_document_registered",
+    "prompt": "Informe ou comprove rtc.platform_document_registered para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 358,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.platform_document_evidence_id",
+    "prompt": "Informe ou comprove rtc.platform_document_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 359,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_is_taxpayer",
+    "prompt": "Informe ou comprove rtc.supplier_is_taxpayer para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 360,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.supplier_taxpayer_evidence_id",
+    "prompt": "Informe ou comprove rtc.supplier_taxpayer_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 361,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_registered",
+    "prompt": "Informe ou comprove rtc.supplier_registered para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 362,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.supplier_taxpayer_authority_notice_id",
+    "prompt": "Informe ou comprove rtc.supplier_taxpayer_authority_notice_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 363,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.professional_category",
+    "prompt": "Qual a profissão fiscalizada pelo conselho?",
+    "rank": 210,
+    "answer_type": "ENUM",
+    "options": [
+      "ADMINISTRATOR",
+      "LAWYER",
+      "ARCHITECT_URBANIST",
+      "SOCIAL_WORKER",
+      "LIBRARIAN",
+      "BIOLOGIST",
+      "ACCOUNTANT",
+      "ECONOMIST",
+      "HOME_ECONOMIST",
+      "PHYSICAL_EDUCATION",
+      "ENGINEER_AGRONOMIST",
+      "STATISTICIAN",
+      "VETERINARIAN_ZOOTECHNICIAN",
+      "MUSEOLOGIST",
+      "CHEMIST",
+      "PUBLIC_RELATIONS",
+      "INDUSTRIAL_TECHNICIAN",
+      "AGRICULTURAL_TECHNICIAN"
+    ]
+  },
+  {
+    "fact_key": "rtc.professional_council_supervised",
+    "prompt": "O prestador está sujeito à fiscalização do conselho profissional?",
+    "rank": 211,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_service_linked_habilitation",
+    "prompt": "O serviço da pessoa física está vinculado à sua habilitação?",
+    "rank": 212,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_partners_qualified_and_supervised",
+    "prompt": "Todos os sócios têm habilitação relacionada ao objeto e fiscalização profissional?",
+    "rank": 213,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_has_legal_entity_partner",
+    "prompt": "Há pessoa jurídica entre os sócios?",
+    "rank": 214,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_holds_legal_entity_participation",
+    "prompt": "A sociedade participa de outra pessoa jurídica?",
+    "rank": 215,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_has_unrelated_activities",
+    "prompt": "A sociedade exerce atividade alheia à habilitação dos sócios?",
+    "rank": 216,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_services_direct_by_partners",
+    "prompt": "Os serviços da atividade-fim são prestados diretamente pelos sócios?",
+    "rank": 217,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.professional_council_evidence_id",
+    "prompt": "Qual a prova da fiscalização pelo conselho?",
+    "rank": 218,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.professional_structure_evidence_id",
+    "prompt": "Qual a prova da habilitação e estrutura societária aplicável?",
+    "rank": 219,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.annex_service_category",
+    "prompt": "Categoria do serviço no anexo legal",
+    "rank": 230,
+    "answer_type": "ENUM",
+    "options": [
+      "EDUCATION",
+      "HEALTH"
+    ]
+  },
+  {
+    "fact_key": "rtc.annex_service_item",
+    "prompt": "Item do anexo legal",
+    "rank": 231,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.service_nbs_code",
+    "prompt": "NBS completo do serviço",
+    "rank": 232,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.health_medical_audit_glosa_amount",
+    "prompt": "Valor glosado pela auditoria médica",
+    "rank": 233,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.special_education_target_group",
+    "prompt": "Público elegível da educação especial",
+    "rank": 234,
+    "answer_type": "ENUM",
+    "options": [
+      "DISABILITY",
+      "GLOBAL_DEVELOPMENT",
+      "HIGH_ABILITIES"
+    ]
+  },
+  {
+    "fact_key": "rtc.annex_service_description_confirmed",
+    "prompt": "Descrição corresponde ao item do anexo?",
+    "rank": 235,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.annex_service_only_consideration",
+    "prompt": "O valor corresponde somente à contraprestação do serviço identificado?",
+    "rank": 236,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.health_glosa_paid",
+    "prompt": "A glosa médica foi paga?",
+    "rank": 237,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.service_on_person_or_enjoyed_in_person",
+    "prompt": "Serviço prestado fisicamente sobre pessoa ou integralmente fruído presencialmente?",
+    "rank": 238,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.presence_at_supplier_establishment",
+    "prompt": "Prestação no estabelecimento do fornecedor?",
+    "rank": 239,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.service_nbs_evidence_id",
+    "prompt": "Prova da classificação NBS",
+    "rank": 240,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.annex_service_scope_evidence_id",
+    "prompt": "Prova do escopo da contraprestação",
+    "rank": 241,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.special_education_evidence_id",
+    "prompt": "Prova do público da educação especial",
+    "rank": 242,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.health_medical_audit_glosa_evidence_id",
+    "prompt": "Prova da auditoria médica",
+    "rank": 243,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.health_glosa_nonpayment_evidence_id",
+    "prompt": "Prova de não pagamento da glosa",
+    "rank": 244,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.service_presence_evidence_id",
+    "prompt": "Prova da prestação presencial",
+    "rank": 245,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.performance_municipality_ibge",
+    "prompt": "Município da prestação presencial",
+    "rank": 246,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.performance_state",
+    "prompt": "UF da prestação presencial",
+    "rank": 247,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.supplier_establishment_state",
+    "prompt": "UF do estabelecimento fornecedor",
+    "rank": 248,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.input_tax_treatments",
+    "answer_type": "ARRAY",
+    "rank": 364,
+    "prompt": "Informe o tratamento de IBS e CBS da aquisição, documento e evidência de classificação; em suspensão exigida, segregue principal extinto e acréscimos legais com suas provas."
+  },
+  {
+    "fact_key": "rtc.presumed_credit_requested",
+    "answer_type": "BOOLEAN",
+    "rank": 365,
+    "prompt": "Há pedido de crédito presumido específico nesta aquisição?"
+  },
+  {
+    "fact_key": "rtc.assess_supplier_credit_period",
+    "answer_type": "BOOLEAN",
+    "rank": 366,
+    "prompt": "Deseja avaliar anulação e manutenção dos créditos anteriores do fornecedor em um mês encerrado?"
+  },
+  {
+    "fact_key": "rtc.supplier_credit_period",
+    "answer_type": "ARRAY",
+    "rank": 367,
+    "prompt": "Informe o livro completo do mês, tratamentos documentados das saídas por IBS/CBS e conjunto de créditos anteriores com apropriação, extinção e ajustes comprovados."
+  },
+  {
+    "fact_key": "rtc.institutional_immunity_proof",
+    "answer_type": "ARRAY",
+    "rank": 368,
+    "prompt": "Informe uma prova da instituição fornecedora vinculada ao documento e ao período, natureza jurídica, categoria, requisitos legais e referências documentais; a condição do cliente não torna a aquisição imune."
+  },
+  {
+    "fact_key": "iss.evaluate_institutional_immunity",
+    "answer_type": "BOOLEAN",
+    "rank": 369,
+    "prompt": "Deseja qualificar a imunidade institucional de ISS, com prova específica das finalidades essenciais?"
+  },
+  {
+    "fact_key": "iss.institutional_immunity_proof",
+    "answer_type": "ARRAY",
+    "rank": 370,
+    "prompt": "Informe uma prova de ISS vinculada ao fornecedor, documento e período, finalidades essenciais e referências da qualificação; a classificação RTC não comprova sozinha a imunidade de ISS."
+  },
+  {
+    "fact_key": "rtc.assess_monthly_period",
+    "answer_type": "BOOLEAN",
+    "rank": 371,
+    "prompt": "Deseja calcular localmente os saldos de IBS/CBS de um mês encerrado, sem entrega ou recolhimento?"
+  },
+  {
+    "fact_key": "rtc.monthly_assessment",
+    "answer_type": "ARRAY",
+    "rank": 372,
+    "prompt": "Informe o livro mensal completo de todos os estabelecimentos, débitos exigíveis, créditos já apropriados e líquidos de anulações, saldos anteriores reconciliados, ajustes e extinções comprovados e qualificados por tributo."
+  },
+  {
+    "fact_key": "rtc.cooperative_zero_proof",
+    "answer_type": "ARRAY",
+    "rank": 373,
+    "prompt": "Informe a prova vinculada às partes e ao documento: cooperativa, associado, vínculo, opção registrada/eficaz, datas de exercício/efeitos, validação regulamentar e natureza não financeira do serviço."
+  },
+  {
+    "fact_key": "rtc.assess_cooperative_credit_transfer",
+    "answer_type": "BOOLEAN",
+    "rank": 374,
+    "prompt": "Deseja avaliar localmente os créditos transferíveis do associado à cooperativa pelo art272, sem efetuar a transferência?"
+  },
+  {
+    "fact_key": "rtc.cooperative_credit_transfer",
+    "answer_type": "ARRAY",
+    "rank": 375,
+    "prompt": "Informe o conjunto completo de créditos apropriados, originais e disponíveis, vínculo com a produção deste fornecimento, provas de apropriação/extinção ou presumido qualificado e validação regulamentar da transferência."
+  },
+  {
+    "fact_key": "rtc.financial_provider",
+    "answer_type": "BOOLEAN",
+    "rank": 376,
+    "prompt": "O fornecedor se enquadra no art183 da LC214? Informe prova independente do serviço executado."
+  },
+  {
+    "fact_key": "rtc.financial_scope_proof",
+    "answer_type": "ARRAY",
+    "rank": 377,
+    "prompt": "Informe prova de fornecedor, documento, categoria, supervisão/autorização, serviço182 ou exceção184, vigência e observação."
+  },
+  {
+    "fact_key": "rtc.financial_ledger",
+    "answer_type": "ARRAY",
+    "rank": 378,
+    "prompt": "Para regime específico, informe o livro mensal completo192/193, vinculado ao fornecedor/documento, reconhecimento temporal, receitas, exclusões e deduções qualificadas."
+  },
+  {
+    "fact_key": "rtc.financial_service_subject_to_iss",
+    "answer_type": "BOOLEAN",
+    "rank": 379,
+    "prompt": "O serviço financeiro tem incidência de ISS qualificada independentemente? Esse fato condiciona a soma de alíquotas do art233, sem substituir a decisão de ISS."
+  },
+  {
+    "fact_key": "rtc.financial_credit_proof",
+    "answer_type": "ARRAY",
+    "rank": 380,
+    "prompt": "Informe a prova financeira vinculada ao tomador, operação, pagamento, relatório do fornecedor e referência Selic ou DI qualificada, por componente IBS/CBS."
+  }
+]

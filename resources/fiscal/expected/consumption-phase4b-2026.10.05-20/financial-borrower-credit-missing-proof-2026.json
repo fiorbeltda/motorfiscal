@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_CREDIT_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.financial_credit_proof"
+  ],
+  "decision_hash": "c1b549679e59b060a76b96e9998d9ca46bfca389117b3cf1c77ac4d675b24334"
+}

@@ -1,0 +1,15 @@
+# Continuidade de posições públicas — desenvolvimento em 08/10/2026
+
+Preparação do próximo recorte do escopo28; não representa aceitação integral nem ativação em bundle. Candidato27 e evidências dos drafts17/18 permanecem preservados.
+
+O qualificador histórico acrescenta a política opcional `REPLAYED_CONSECUTIVE_PUBLIC_YIELD_POSITION_CHAIN`, dependente da política de perdas públicas não compensadas. Cada fonte precisa ser rendimento público efetivamente reproduzido, integralmente retido e único na competência. A sequência começa em primeira aquisição com compras, prossegue sem movimentos intermediários e exige competências consecutivas. Quantidade, custo unitário, custo de aquisição e saldo contábil de abertura devem corresponder ao fechamento anterior. A posição e a memória finais devem coincidir integralmente com a fonte fiscal reproduzida, incluindo provas e cálculo.
+
+Não há nova compensação, dedução ou flexibilização das verificações dos componentes fiscais líquidos. Para cobrir combinações positivas/negativas ainda faltam snapshots reais de julho/agosto, alocação independente de cada componente, integração da realização atual, novo bundle/controles e regressões documentais. Movimentos intermediários demandam política de alocação própria.
+
+Quatro novos testes cobrem uma fonte válida, fechamento independente divergente com mesmo saldo contábil, retenção parcial e ausência da política de perda necessária. Os38 testes dirigidos de cadeia/histórico/perda pública passaram com409 asserções; PHPStan sem erros, Pint nos arquivos alterados aprovados e diff sem erros. A suíte ampla concluiu1.313 testes/10.653 asserções em251,57s. Dois testes de julho adicionados após o início da suíte passaram separadamente com576 asserções, comparando todos os campos diários do oráculo independente. Auditoria:4.448 artefatos históricos sem mudança de hash.
+
+A série diária oficial BCB SGS11 de julho2026 foi obtida em CSV, após falha transitória no endpoint JSON. São23 datas únicas entre01/07 e31/07, com unidade percentual diária, preservadas sem transformação em `resources/fiscal/sources/official/bcb-sgs11-observed-20261008-202607.csv`. SHA256: `3503209c607a75b0b206caeb808f2805d673d1945a5b2a47b368b09f1889d22e`. Fonte: [API oficial BCB SGS11 — julho2026](https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=csv&dataInicial=01/07/2026&dataFinal=31/07/2026). A inclusão em novo manifesto continua pendente; nenhum manifesto histórico foi alterado.
+
+O script `scripts/build_phase4b_public_chain_july_policy.py` deriva a política preliminar de julho e dois cenários de primeira aquisição positivos/negativos. Sua repetição verifica igualdade dos artefatos existentes. O oráculo independente e o cálculo nativo concordaram no teto121,52 para custo10.000, rendimento positivo100/base100 e perda150/basezero. Catálogo `tvm-public-chain-july-policy-draft-20261008.json`; cenários `tvm-public-chain-preparation-20261008`. São memórias preparatórias sintéticas, ainda sem decisão fiscal capturada ou XML novo.
+
+Produção bloqueada; Fase4B e escopo28 continuam parciais.

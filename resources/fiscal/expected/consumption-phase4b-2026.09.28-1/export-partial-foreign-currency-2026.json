@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PARTIAL_EXPORT_CURRENCY_CONVERSION_NOT_MATERIALIZED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "a85db2f167951317cdebd8842bfea084013a1f4c60a4c278c341768a8e989397"
+}

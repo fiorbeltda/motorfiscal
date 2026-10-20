@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "ISS_INSTITUTIONAL_ESSENTIAL_PURPOSE_UNPROVEN"
+  ],
+  "missing_facts": [
+    "iss.institutional_immunity_proof"
+  ],
+  "decision_hash": "d844cf05db197841f64d4c014b49406c5641b4c303124f25d1e9d0521dcb4458"
+}

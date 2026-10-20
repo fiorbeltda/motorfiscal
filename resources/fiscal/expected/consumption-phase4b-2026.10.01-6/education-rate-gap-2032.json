@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+  ],
+  "missing_facts": [],
+  "decision_hash": "43135a3bf6d3f3d6a77e059edb7de8193c56da5f06e93011104a48123c236d09"
+}

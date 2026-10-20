@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_PERIOD_ADJUSTMENT_EXCEEDS_ENTRY"
+  ],
+  "missing_facts": [],
+  "decision_hash": "5c84c31b4d3fa8294f8477b6bfd35831d0f4c2e7bce82c750f57efb864157c17"
+}

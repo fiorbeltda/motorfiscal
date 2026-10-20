@@ -1,0 +1,12 @@
+{
+  "rule_id": "ISS.TREATMENT.MVP.STANDARD",
+  "version": "1.0.0",
+  "kind": "TREATMENT",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.canonical_id", "operator": "IN", "value": ["SOFTWARE_DEVELOPMENT", "TRADE_FAIR_EVENT", "CONSTRUCTION_CONTRACT"]},
+  "effects": [{"type": "SET_DECISION_VALUE", "path": "iss.treatment", "value": "STANDARD"}],
+  "source_id": "SOURCE.MVP.TREATMENT.DEFAULT",
+  "source_version": "1.0.0",
+  "reason_codes": ["ISS_STANDARD_TREATMENT_SELECTED"]
+}

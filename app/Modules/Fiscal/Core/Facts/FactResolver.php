@@ -10,5 +10,8 @@ interface FactResolver
 {
     public function supports(string $factKey): bool;
 
+    /** @return list<string> */
+    public function dependencies(string $factKey): array;
+
     public function resolve(string $factKey, FiscalDecisionContext $context): FactResolutionResult;
 }

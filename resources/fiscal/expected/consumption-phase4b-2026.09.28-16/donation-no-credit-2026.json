@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_DOCUMENT_OBLIGATION_NOT_MATERIALIZED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "3ba054c7b3b5756f5f605ad38ba2967a3cfeacbaf843dac900f6b59bd98b9e09"
+}

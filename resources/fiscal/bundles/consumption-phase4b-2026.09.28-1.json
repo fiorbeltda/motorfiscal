@@ -1,0 +1,298 @@
+{
+  "bundle_id": "CONSUMPTION-PHASE4B-2026.09.28-1",
+  "bundle_key": "CONSUMPTION-PHASE4B",
+  "version": "2026.09.28-1",
+  "engine_version": "1.3.0-phase4b",
+  "status": "SANDBOX_CANDIDATE",
+  "knowledge_available_at": "2026-09-28T10:45:00-03:00",
+  "catalog_versions": {
+    "services": "2026.09.17-1",
+    "municipal_parameters": "2026.09.16-1",
+    "public_annex_i": "rfb-41766-sandbox-1",
+    "federal_obligations": "2026-sandbox-3",
+    "federal_banking_calendar": "2026-national-febraban-1",
+    "rtc_rates": "2026.09.25-1",
+    "rtc_codes": "2026.09.25-1",
+    "rtc_transition": "2026.09.25-1"
+  },
+  "resource_paths": {
+    "fact_definitions": "facts/consumption-phase4b.json",
+    "questions": "questions/iss-phase3.json",
+    "service_catalog": "catalogs/iss-services-2026.09.17-1.json",
+    "municipal_parameters": "catalogs/municipal-parameters-mvp.json",
+    "invariants": "invariants/consumption-phase4b.json",
+    "scenario_schema": "schemas/scenario-phase4a-public-v2.schema.json",
+    "rules": "rules/iss-phase3",
+    "public_annex_catalog": "catalogs/public-annex-i-rfb-41766.json",
+    "federal_obligation_catalog": "catalogs/federal-obligations-2026-sandbox-v3.json",
+    "federal_banking_calendar": "catalogs/federal-banking-calendar-2026-national.json",
+    "rtc_rate_catalog": "catalogs/rtc-rates-2026.09.25-1.json",
+    "rtc_code_catalog": "catalogs/rtc-codes-2026.09.25-1.json",
+    "rtc_transition_catalog": "catalogs/rtc-transition-2026.09.25-1.json"
+  },
+  "question_overlays": [
+    "questions/federal-phase4a-public-v4.json",
+    "questions/consumption-phase4b.json"
+  ],
+  "research_sources": [
+    {
+      "source_id": "SOURCE.RESEARCH.17.IRRF",
+      "file": "Pesquisa 17 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 40847,
+      "sha256": "aacd536f80651a3ef242696793787e62e06933ba4da421ef1d21512ad84b636e"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.18.PIS",
+      "file": "Pesquisa 18 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 40805,
+      "sha256": "9bc422a1a1f114da42528fe37b25c140c05787b9319b622fe55e08d6767db5cc"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.19.COFINS",
+      "file": "Pesquisa 19 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 72799,
+      "sha256": "43b620c7f617b6750802ec0985bef2019495cd8f8007ef058c1e8fb35e4e17f6"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.20.CSLL",
+      "file": "Pesquisa 20 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 99394,
+      "sha256": "e165c781d7eb6643473eb37a2be32161cecbbe5712679967a8409b7bd4afb8ef"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.21.PCC",
+      "file": "Pesquisa 21 - Respostas  - OK.txt",
+      "size_bytes": 32938,
+      "sha256": "6334f021ccc8cc4c28277082aacd3c4c22327c79ca6962785da84c900c82634b"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.22.INSS",
+      "file": "Pesquisa 22 - Respostas - OK.txt",
+      "size_bytes": 66802,
+      "sha256": "294fa960c0c28b8c502fc970d8300ca9b51f5de29c1cfb11c4c2276cbe419e03"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.23.LABOR_ASSIGNMENT",
+      "file": "Pesquisa 23 - Repostas - OK.txt",
+      "size_bytes": 41542,
+      "sha256": "a61240b1f99a668fb3d58babe3e0b955189e1d1030da88424bbe0ef975eab42d"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.24.CONSTRUCTION",
+      "file": "Pesquisa 24 - Respostas - OK.txt",
+      "size_bytes": 66358,
+      "sha256": "3c2e89d69faff0dc1f0ffad77cabff1bc7e8b991ac329053ae47dc4f927532bf"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.25.PUBLIC_ADMINISTRATION",
+      "file": "Pesquisa 25 - Respostas - OK.txt",
+      "size_bytes": 59135,
+      "sha256": "fcf0bff40bb532231c520c0180644664cc214d6048f51fab548e16df04db20a9"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.26.COOPERATIVES",
+      "file": "Pesquisa 26 - Respostas - OK.txt",
+      "size_bytes": 102441,
+      "sha256": "8cc0654cb4c336ba4e5096dbefb1e0a70918a07a6c5491d21d7884712fdca5fd"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.01",
+      "file": "Pesquisa 01 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 40619,
+      "sha256": "6dd5ed878f7dca2f6cdafd6a6025d78cfc52482125a96b552fa5baaa72cf464d"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.06",
+      "file": "Pesquisa 06 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 63937,
+      "sha256": "534b513352672240399ac0cab8788c5d5a5ba45d42de1393a5e64c175b4ccdb1"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.07",
+      "file": "Pesquisa 07 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 25366,
+      "sha256": "5a1c0ccc8fb153fa3aa046414cc24e2f1f4b91c73887899b68b56997acb07f8f"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.10",
+      "file": "Pesquisa 10 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 76983,
+      "sha256": "225a98b604710d007dd1f433c38111c42d675af1bf544439320fbe27aaf95102"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.27",
+      "file": "Pesquisa 27 - Respostas - OK.txt",
+      "size_bytes": 81667,
+      "sha256": "9e6acf0bed1fc9302877ab85c9c79274983cc292e578b468e7b85802a4767a5f"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.28",
+      "file": "Pesquisa 28 - Respostas - OK.txt",
+      "size_bytes": 77943,
+      "sha256": "fbfb55920a8e10e5b86763ba34fde93b0739584e29ae8067a8c37e68f46ca903"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.30",
+      "file": "Pesquisa 30 - Respostas - OK.txt",
+      "size_bytes": 118234,
+      "sha256": "77dd1f5cfa110b1506ebb4bf371eebcea485e9aa4e89710f7778fdef56de705b"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.31",
+      "file": "Pesquisa 31 - Respotas - OK.txt",
+      "size_bytes": 59691,
+      "sha256": "50994a78c0d2d595095e41642db5733b2f52990d1b3fc6e02d19c089528aaef8"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.32",
+      "file": "Pesquisa 32 - Respostas - OK.txt",
+      "size_bytes": 59341,
+      "sha256": "b51ffd55812766ad0ddc83c85d58b18d9fc4cfeaa01c3682a2609fc77623d9c3"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.33",
+      "file": "Pesquisa 33 - Respostas - OK.txt",
+      "size_bytes": 54901,
+      "sha256": "e924f67dce69d5c7b06c9c02caebf4d39faf92eeaa29b69d0feec2fb8ce85a7f"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.36",
+      "file": "Pesquisa 36 - Respostas - OK.txt",
+      "size_bytes": 115789,
+      "sha256": "a5a6094584ce78663719c916770a368c89219c338a195db897d19f912d576530"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.38",
+      "file": "Pesquisa 38 - Respostas - OK.txt",
+      "size_bytes": 34078,
+      "sha256": "1e4363815c1d8acd1845949fce5f67a12487b7a2398f87e531d58612a3aa8293"
+    }
+  ],
+  "content_hashes": {
+    "fact_definitions": "930c4ce70d6bf0089d5cc7395b818235beb4a338e9c749ee55830be8236694ab",
+    "questions": "c0c08e23accde510a4a24e7170c5691f387fcd5108d6f3ce0472fac5bd35feb4",
+    "service_catalog": "02f2912dfb560144d69c9cf32923c48d24c42e8ee663b2b57f960cbdaae4396d",
+    "municipal_parameters": "ac3fef68ea9ec14727c8e54307435ca596f321c1282b794db7d8bbc6114ab655",
+    "invariants": "27582fae67dba2cc586548323364795f30d4bdf2cc8421b5e3fc7ff2429778cd",
+    "scenario_schema": "7d4fd2f0b1efff45d9f46b4090ed91497971aaae3eb576a1c838aab09bf7739e",
+    "rules": "10d464e4d6dedab9628e7240c95e82acf226a61a6f2a6a3273a3a15ff34f7a8d",
+    "public_annex_catalog": "17edb3c03b9a9618cdcf82b60a0bdd05901b9d563dd55d112844b09cb08b8de6",
+    "federal_obligation_catalog": "9f22ed18e536c18eee00b47140171ab26fe8c44e0f71275207c6b451845afc95",
+    "federal_banking_calendar": "99129cd8b5ba034698cdaefc8cb6241672d83864e1cb8ace80feb926c842bb56",
+    "rtc_rate_catalog": "b5895278d257a2e6b967681570c9a6bfcb792d3afd949c5618419bccd552250c",
+    "rtc_code_catalog": "8b631855cd896c368124cf33f8905bdc70ab36f1d1926b10f9e692a95f0ee8a2",
+    "rtc_transition_catalog": "0bfb78d1874ded7ededc9b86deadf643959762a8dd46db5d27fa2844b864c541"
+  },
+  "notice": "RTC candidate pending integrated production controls, legal sign-off, future rates, special treatments, municipal sources and document deployment proof.",
+  "official_sources": [
+    {
+      "id": "LC214-CONSOLIDATED-CAMARA-2026",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.pdf",
+      "file": "lc214-consolidada-lc227-camara-2026.pdf",
+      "sha256": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+      "version": "consolidated with LC227/2026",
+      "proven_effective_scope": "LC214 arts. 343-346 and transition provisions; individual later amendments require review",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-NT004-LAYOUT",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/anexovi-leiautesrn_rtc_ibscbs-v1-01-03-nt004.xlsx",
+      "file": "anexovi-leiautesrn_rtc_ibscbs-v1-01-03-nt004.xlsx",
+      "sha256": "c32c30a2aac3aaf8eb71a8baf512954aac70867d883343d202d1c1e9b4453651",
+      "version": "1.01.03",
+      "proven_effective_scope": "production baseline from 2026-01-05 per RTC portal, with NT007 tpRetPisCofins",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-NT009-LAYOUT",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-04-00-2013-nt009.xlsx",
+      "file": "anexovi-leiautesrn_rtc_ibscbs-v1-04-00-2013-nt009.xlsx",
+      "sha256": "ba8f9823fbbc454df4dfecb6ac64a75183f080feefba1ebc64b6afac50d6f24a",
+      "version": "1.04.00",
+      "proven_effective_scope": null,
+      "status": "PUBLISHED_NOT_DEPLOYED",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-CINDOP",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovii-indop_ibscbs_v1-02-00.xlsx",
+      "file": "anexovii-indop_ibscbs_v1-02-00.xlsx",
+      "sha256": "b75305109d26f106216a8372d5f9ef589dda78804da5128b34c7712d72740675",
+      "version": "1.02.00",
+      "proven_effective_scope": "official code list, item validity requires version review",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-NBS-ANEXO-B",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/anexo_b-nbs2-lista_servico_nacional-snnfse-v1-01-20260122.xlsx/@@download/file",
+      "file": "anexo-b-servicos-nacionais-v1.01-20260122.xlsx",
+      "sha256": "e74b0be8ad204e458932efb1716225a3fb5703a84e5475ce5c4c6789d1c61b1a",
+      "version": "v1.01-20260122",
+      "proven_effective_scope": null,
+      "status": "CANDIDATE",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-CORRELATION",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+      "file": "anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+      "sha256": "a21be0e86b7ae2c0c1cfec4ef0d398b96520345790b50f79e4c5b7d1dfe32fb3",
+      "version": "1.01.00",
+      "proven_effective_scope": null,
+      "status": "PROVISIONAL_NO_DECISION_AUTHORITY",
+      "superseded_by": null
+    },
+    {
+      "id": "NFE-CCLASSTRIB",
+      "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=D5b4Ov84WDg=",
+      "file": "nfe-cclasstrib-it2025.002-v1.60-20260623.xlsx",
+      "sha256": "1448cb63a41bdb67ea30b4e11f4dc200d9568542c6b9335b6cff87a4fd664654",
+      "version": "IT 2025.002 v1.60",
+      "published_on": "2026-06-23",
+      "proven_effective_scope": "per-row dIniVig/dFimVig; NFS-e applicability per indNFSe",
+      "superseded_by": null
+    },
+    {
+      "id": "NFE-CBS-RATES",
+      "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=LRksVAMl7nQ=",
+      "file": "nfe-cbs-rates-20260512.xlsx",
+      "sha256": "33f17aa3322de841c7cb7bd469a2785d34cea34fadd0571e18bd8f7c88872f3b",
+      "version": "2026-05-12",
+      "proven_effective_scope": "2026 only; 2027 explicitly awaits legislation",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-RTC-XSD",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/nfse-esquemas_xsd-rtc-v1-00-20251210.zip",
+      "file": "nfse-esquemas_xsd-rtc-v1-00-20251210.zip",
+      "sha256": "04662996e290add36f118c4457d8efed17848eb65d64e8b7ab56c6983c2429ad",
+      "version": "2025-12-10",
+      "proven_effective_scope": "NT004 pilot schema; production applicability subject to portal schedule",
+      "superseded_by": null
+    },
+    {
+      "id": "DECREE-12955-CAMARA-2026",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+      "file": "decreto-12955-camara-2026.html",
+      "sha256": "0bee9333c55e702273f6536737d68506ff58d6dc6be1e39c95aa55e92fc1c01e",
+      "version": "consolidated through 2026-09-25 retrieval",
+      "proven_effective_scope": "arts. 65-74; art. 74 conditions a specific import service tax document on a joint act",
+      "superseded_by": null
+    },
+    {
+      "id": "RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918",
+      "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual%20op%C3%A7%C3%A3o%20regime%20regular%20IBS%20e%20CBS%20no%20Simples%20Nacional.pdf",
+      "file": "manual-opcao-regime-regular-ibs-cbs-simples-20260918.pdf",
+      "sha256": "b19d49de35ce6bf2a9d446f2c7c204e39f91899e7525e6842d7c982bcc7776cb",
+      "version": "2026-09-18",
+      "retrieved_on": "2026-09-28",
+      "proven_effective_scope": "option procedure for 2027 regular IBS/CBS within Simples; not a source of tax rates",
+      "superseded_by": null
+    }
+  ],
+  "predecessor_bundle_id": "CONSUMPTION-PHASE4B-2026.09.25-1",
+  "production_controls": {
+    "path": "production/phase4b-controls-2026.09.28-1.json",
+    "sha256": "52b338f59317c1e874fa347d460f156b5b87e52a9517e23f4c361e2f29b1881d"
+  }
+}

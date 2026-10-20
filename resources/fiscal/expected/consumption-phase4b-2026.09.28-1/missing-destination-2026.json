@@ -1,0 +1,12 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DESTINATION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.destination_state",
+    "rtc.destination_municipality_ibge",
+    "rtc.destination_evidence_id"
+  ],
+  "decision_hash": "d0a4aed249c4d562c7c8e8afb5616ec43ca1fafd6642ae089cc923af3188ec55"
+}

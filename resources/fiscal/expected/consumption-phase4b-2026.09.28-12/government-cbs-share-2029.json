@@ -1,0 +1,6 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": ["RTC_GOVERNMENT_REDUCTOR_NOT_PROVEN"],
+  "missing_facts": [],
+  "decision_hash": "4dacf3b65c66e897101c71fe95b4d35b17bfa391181af963cc4259ddd03eedb9"
+}

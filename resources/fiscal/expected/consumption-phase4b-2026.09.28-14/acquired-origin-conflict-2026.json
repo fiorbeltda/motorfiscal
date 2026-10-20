@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_PERSONAL_USE_LEGAL_BASIS_ORIGIN_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "6d46a5a7d477266ec3bbfbe08248c53f5124bb3217824758d8b64ced90ea48bb"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SIMPLES_INTERNAL_APPORTIONMENT_NOT_MATERIALIZED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "0e86688a48cdd3e15113ac81545ffcf61d1d61c951965e06997a41557a5a132d"
+}

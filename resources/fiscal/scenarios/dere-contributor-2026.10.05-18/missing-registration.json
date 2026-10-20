@@ -1,0 +1,247 @@
+{
+  "evidence_scope": "OFFICIAL_TABLE21_DOMAIN_WITH_SYNTHETIC_REGISTRATION_REGIMES_NATURE_ACTIVITIES_AND_START_PROOFS",
+  "identity": {
+    "generated_at": "2026-10-01T12:00:00.000-03:00",
+    "event_sequence": 1
+  },
+  "book": {
+    "supplier_id": "11111111000191",
+    "document_id": "dps-1",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-01",
+    "analytical_book_complete": true,
+    "pgcc_complete": true,
+    "pgcc_account_mapping_qualified": true,
+    "opening_balances_qualified": true,
+    "book_source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "pgcc_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "book_evidence_id": "FIXTURE.BOOK",
+    "pgcc_evidence_id": "FIXTURE.PGCC",
+    "first_reporting_period": false,
+    "closing_frequency": "M",
+    "accounts": [
+      {
+        "cCta": "interest",
+        "natSaldoInic": "C",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "0.00",
+        "vMovCred": "1000.00",
+        "natSaldoFinal": "C",
+        "vSaldoFinal": "1000.00",
+        "natVApur": "C",
+        "vApur": "1000.00",
+        "financial_entry_ids": [
+          "interest"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "C",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "principal",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "10000.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "10000.00",
+        "natVApur": "D",
+        "vApur": "10000.00",
+        "financial_entry_ids": [
+          "principal"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "funding",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "200.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "200.00",
+        "natVApur": "D",
+        "vApur": "200.00",
+        "financial_entry_ids": [
+          "funding"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      }
+    ],
+    "pgcc_accounts": [
+      {
+        "cCta": "interest",
+        "indCta": "A",
+        "codNat": "5",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "principal",
+        "indCta": "A",
+        "codNat": "1",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "funding",
+        "indCta": "A",
+        "codNat": "4",
+        "valid_from": "2026-01-01"
+      }
+    ]
+  },
+  "deductions": {
+    "supplier_id": "11111111000191",
+    "document_id": "dps-1",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-01",
+    "documents_qualified": true,
+    "deduction_allocation_complete": true,
+    "monthly_period_closed_previously": false,
+    "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "documents": [
+      {
+        "tpDFe": "03",
+        "chDFe": "11111111111111111111111111111111111111111111",
+        "dtEmi": "2026-09-20",
+        "tpAtiv": "01",
+        "vOper": "1000.00",
+        "vDedTotal": "800.00",
+        "vDed": "200.00",
+        "document_validity_qualified": true,
+        "document_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "evidence_id": "FIXTURE.DFE",
+        "financial_entry_ids": [
+          "funding"
+        ],
+        "items": [
+          {
+            "nItem": "1",
+            "vItem": "1000.00",
+            "vItemDedTotal": "800.00",
+            "vItemDed": "200.00",
+            "source_item_qualified": true
+          }
+        ]
+      }
+    ]
+  },
+  "prerequisites": {
+    "supplier_id": "11111111000191",
+    "period_end": "2026-09-30",
+    "pgcc_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "contributor_registration_qualified": true,
+    "auxiliary_obligations_qualified": true,
+    "contributor_source_hash": "9bfa5d70baff00c4fe8661353473d0ab7df048cc47940c545cb0174026dcbf08",
+    "obligations_source_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "existing_closing": false,
+    "negative_base_use_requested": false,
+    "D1106_required": false,
+    "D2101_required": false,
+    "D1121_required": true
+  },
+  "contributor": {
+    "complete": true,
+    "supplier_id": "11111111000191",
+    "registered_supplier_id": "11111111000191",
+    "registration_status": "ACTIVE",
+    "registration_qualified": true,
+    "regimes_qualified": true,
+    "tax_nature_qualified": true,
+    "dere_start_qualified": true,
+    "valid_from": "2026-01-01",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-05",
+    "registration_validity": {
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31"
+    },
+    "dere_start_on": "2026-01-01",
+    "regTribPrinc": "1",
+    "regTribSecund": [],
+    "indNatTrib": "0",
+    "servFinanc": {
+      "tpAtividades": [
+        "01A"
+      ]
+    },
+    "evidence_scope": "SYNTHETIC_CONTRIBUTOR_AND_START_CALENDAR",
+    "evidence": {
+      "regimes": {
+        "evidence_id": "FIXTURE.D1001.REGIMES",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": {
+          "principal": "1",
+          "secondary": []
+        },
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "23a28d1e5c67eaa10efb9047cadd0a2e93681c3fed975d1d2762e3f34a11a276"
+      },
+      "tax_nature": {
+        "evidence_id": "FIXTURE.D1001.TAX_NATURE",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": "0",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "3e965f1abc828a6e5b342e0a711f66b14799501bd2aa19c217af573b27c5a722"
+      },
+      "dere_start": {
+        "evidence_id": "FIXTURE.D1001.DERE_START",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": "2026-01-01",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a"
+      },
+      "activities": {
+        "evidence_id": "FIXTURE.D1001.ACTIVITIES",
+        "supplier_id": "11111111000191",
+        "qualified": true,
+        "value": [
+          "01A"
+        ],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "observed_on": "2026-10-05",
+        "scope": "SYNTHETIC_EXTERNAL_QUALIFICATION_NOT_OFFICIAL_REGISTRATION",
+        "source_hash": "d06d8f2f97a9e4cd85e3637501d3ffbeea9df2f218c6e0817a84982ba6e5e132"
+      }
+    },
+    "registration_source_hash": "866344d22e6353447363ca3916827da30c8a3339763e2526718e2a65932f55e9",
+    "regimes_source_hash": "23a28d1e5c67eaa10efb9047cadd0a2e93681c3fed975d1d2762e3f34a11a276",
+    "tax_nature_source_hash": "3e965f1abc828a6e5b342e0a711f66b14799501bd2aa19c217af573b27c5a722",
+    "dere_start_source_hash": "a44a907592f3610d3a5155ce0f3213744de7d4548a6a4f6c4faebf563301f01a",
+    "activities_source_hash": "d06d8f2f97a9e4cd85e3637501d3ffbeea9df2f218c6e0817a84982ba6e5e132",
+    "source_hash": "9bfa5d70baff00c4fe8661353473d0ab7df048cc47940c545cb0174026dcbf08"
+  },
+  "contributor_identity": {
+    "generated_at": "2026-10-05T08:00:00.000-03:00",
+    "event_sequence": 1
+  },
+  "corpus_expectation": {
+    "status": "ACTION_REQUIRED",
+    "reason": "RTC_DERE_CONTRIBUTOR_REGISTRATION_EVIDENCE_UNPROVEN"
+  }
+}

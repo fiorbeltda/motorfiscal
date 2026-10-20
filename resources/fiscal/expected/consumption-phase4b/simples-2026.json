@@ -1,0 +1,8 @@
+{
+  "status": "VALID",
+  "reason_codes": [
+    "RTC_SIMPLES_2026_TEST_NOT_APPLICABLE"
+  ],
+  "missing_facts": [],
+  "decision_hash": "28cc8426c9d4f11ec3ab64ed29856b15a8f5dc5ca8db0e3d4eb40ce3dff0eac9"
+}

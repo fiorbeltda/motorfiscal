@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_EVIDENCE_MISSING:option_regulatory_validation_evidence_id"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_zero_proof"
+  ],
+  "decision_hash": "5917b9ae5381cd1bc688cca1eeb881fdd2c2054206706d8e9256d546e0889e42"
+}

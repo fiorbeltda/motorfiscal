@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_CREDIT_NOT_RELATED_TO_SUPPLY"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ac6dd5fb5a701b7b760b89cb36e67ffb63ff723637e5c0dc08aa1f7e419b87fc"
+}

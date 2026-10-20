@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_MEMBER_REGULAR_REGIME_REQUIRED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "d2ad0a20f1b2dcba7007567c4a1a3133b803c0e8ea5f2a7f2d359e39485146a9"
+}

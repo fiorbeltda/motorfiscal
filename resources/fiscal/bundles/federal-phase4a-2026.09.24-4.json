@@ -1,0 +1,105 @@
+{
+  "bundle_id": "FEDERAL-PHASE4A-2026.09.24-4",
+  "bundle_key": "FEDERAL-PHASE4A",
+  "version": "2026.09.24-4",
+  "engine_version": "1.2.3-phase4a-cooperatives",
+  "status": "SANDBOX_CANDIDATE",
+  "knowledge_available_at": "2026-09-24T15:59:28-03:00",
+  "catalog_versions": {
+    "services": "2026.09.17-1",
+    "municipal_parameters": "2026.09.16-1",
+    "public_annex_i": "rfb-41766-sandbox-1",
+    "federal_obligations": "2026-sandbox-3",
+    "federal_banking_calendar": "2026-national-febraban-1"
+  },
+  "resource_paths": {
+    "fact_definitions": "facts/federal-phase4a-public-v4.json",
+    "questions": "questions/iss-phase3.json",
+    "service_catalog": "catalogs/iss-services-2026.09.17-1.json",
+    "municipal_parameters": "catalogs/municipal-parameters-mvp.json",
+    "invariants": "invariants/federal-phase4a.json",
+    "scenario_schema": "schemas/scenario-phase4a-public-v2.schema.json",
+    "rules": "rules/iss-phase3",
+    "public_annex_catalog": "catalogs/public-annex-i-rfb-41766.json",
+    "federal_obligation_catalog": "catalogs/federal-obligations-2026-sandbox-v3.json",
+    "federal_banking_calendar": "catalogs/federal-banking-calendar-2026-national.json"
+  },
+  "question_overlays": [
+    "questions/federal-phase4a-public-v4.json"
+  ],
+  "research_sources": [
+    {
+      "source_id": "SOURCE.RESEARCH.17.IRRF",
+      "file": "Pesquisa 17 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 40847,
+      "sha256": "aacd536f80651a3ef242696793787e62e06933ba4da421ef1d21512ad84b636e"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.18.PIS",
+      "file": "Pesquisa 18 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 40805,
+      "sha256": "9bc422a1a1f114da42528fe37b25c140c05787b9319b622fe55e08d6767db5cc"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.19.COFINS",
+      "file": "Pesquisa 19 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 72799,
+      "sha256": "43b620c7f617b6750802ec0985bef2019495cd8f8007ef058c1e8fb35e4e17f6"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.20.CSLL",
+      "file": "Pesquisa 20 - Respostas - DEFINITIVA.txt",
+      "size_bytes": 99394,
+      "sha256": "e165c781d7eb6643473eb37a2be32161cecbbe5712679967a8409b7bd4afb8ef"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.21.PCC",
+      "file": "Pesquisa 21 - Respostas  - OK.txt",
+      "size_bytes": 32938,
+      "sha256": "6334f021ccc8cc4c28277082aacd3c4c22327c79ca6962785da84c900c82634b"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.22.INSS",
+      "file": "Pesquisa 22 - Respostas - OK.txt",
+      "size_bytes": 66802,
+      "sha256": "294fa960c0c28b8c502fc970d8300ca9b51f5de29c1cfb11c4c2276cbe419e03"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.23.LABOR_ASSIGNMENT",
+      "file": "Pesquisa 23 - Repostas - OK.txt",
+      "size_bytes": 41542,
+      "sha256": "a61240b1f99a668fb3d58babe3e0b955189e1d1030da88424bbe0ef975eab42d"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.24.CONSTRUCTION",
+      "file": "Pesquisa 24 - Respostas - OK.txt",
+      "size_bytes": 66358,
+      "sha256": "3c2e89d69faff0dc1f0ffad77cabff1bc7e8b991ac329053ae47dc4f927532bf"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.25.PUBLIC_ADMINISTRATION",
+      "file": "Pesquisa 25 - Respostas - OK.txt",
+      "size_bytes": 59135,
+      "sha256": "fcf0bff40bb532231c520c0180644664cc214d6048f51fab548e16df04db20a9"
+    },
+    {
+      "source_id": "SOURCE.RESEARCH.26.COOPERATIVES",
+      "file": "Pesquisa 26 - Respostas - OK.txt",
+      "size_bytes": 102441,
+      "sha256": "8cc0654cb4c336ba4e5096dbefb1e0a70918a07a6c5491d21d7884712fdca5fd"
+    }
+  ],
+  "content_hashes": {
+    "fact_definitions": "24ee3a951e4d113c75dcd336b38926cac9fef3a84dc73fa2640433dbf68ae1ef",
+    "questions": "7ed8d42be29614fc4067ddee50421a936beab27d752693026c3d3db653c7343a",
+    "service_catalog": "02f2912dfb560144d69c9cf32923c48d24c42e8ee663b2b57f960cbdaae4396d",
+    "municipal_parameters": "ac3fef68ea9ec14727c8e54307435ca596f321c1282b794db7d8bbc6114ab655",
+    "invariants": "dfcde8ed77fd005b98ee793012c9db2826f20f6df71c0007d75f3e73a894208f",
+    "scenario_schema": "7d4fd2f0b1efff45d9f46b4090ed91497971aaae3eb576a1c838aab09bf7739e",
+    "rules": "10d464e4d6dedab9628e7240c95e82acf226a61a6f2a6a3273a3a15ff34f7a8d",
+    "public_annex_catalog": "17edb3c03b9a9618cdcf82b60a0bdd05901b9d563dd55d112844b09cb08b8de6",
+    "federal_obligation_catalog": "9f22ed18e536c18eee00b47140171ab26fe8c44e0f71275207c6b451845afc95",
+    "federal_banking_calendar": "99129cd8b5ba034698cdaefc8cb6241672d83864e1cb8ace80feb926c842bb56"
+  },
+  "notice": "Fase 4A candidata para Sandbox: perfis de cooperativas e construcao ampliados. Publicacao em producao depende da comprovacao temporal do Anexo I e dos atos locais aplicaveis."
+}

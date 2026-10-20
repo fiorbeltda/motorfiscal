@@ -1,0 +1,351 @@
+{
+  "contract": "TVM-RECOGNITION-HISTORY-REPLAY-2026.10.06-1",
+  "status": "ACTIVE",
+  "published_at": "2026-10-08T14:25:36+00:00",
+  "source_hash": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+  "permitted_bundle_manifest_hashes": [
+    "5b6ee2b83c1a924fa0725daf67e58e66a904fea14b7375e6f080a6709132efe9",
+    "b12ef36b8564ff770c9a475ff3ee3508e9ac4affe94bace36b8d670e1a718f35",
+    "ea8475481087b61bc012c7daa5290c5b19217a1ab5f3cb0d3c0abff63810f6bf",
+    "8c95f7ab858a66074c3b9d45002f4e80d4bae1ae2cf98a52b501a90e3bd82816",
+    "812a10c1c13385832bd56ba30de6c01c5191015284acbfb0315b4429a8619a98",
+    "23c332c6e97af680f0928b6d3f1dc317f4c8269eea50b78606140dfb08e96867",
+    "705130c4ca0a408f827bb5d5243710217f6cb5a6ca782742ca04334676ddf14b",
+    "a9f2558629d1c262a57dd9760ee5da8f4cb2f249b8494a6eec53bf29fc4a36df"
+  ],
+  "daily_memory_policies": {
+    "2026-08": {
+      "contract": "DERE-D2101-DAILY-MEMORY-LOCAL-2026.10.06-1",
+      "status": "ACTIVE",
+      "published_at": "2026-10-06T16:33:47+00:00",
+      "source_hash": "b7756c7b0cec5cff46d77e1b1ea5d657a4e2476fa6033f8192561c17dd70ab2d",
+      "official_data_file": "bcb-sgs11-observed-20261006-202608.json",
+      "official_data_sha256": "f368e090a3dc3f468a0dcddc4f758d36a7b94ce2bc963c7c95af5fdfdddd4286",
+      "series_hash": "17b1a61536eaada44e5e2bc212c9f7f0c55b4cbc8b3f98e7f4753d7c62279102",
+      "series": {
+        "series_code": 11,
+        "unit": "PERCENT_PER_BUSINESS_DAY",
+        "period": "2026-08",
+        "observed_at": "2026-10-06T16:33:47+00:00",
+        "official_data_sha256": "f368e090a3dc3f468a0dcddc4f758d36a7b94ce2bc963c7c95af5fdfdddd4286",
+        "rows": [
+          {
+            "date": "2026-08-03",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-08-04",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-08-05",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-08-06",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-07",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-10",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-11",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-12",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-13",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-14",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-17",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-18",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-19",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-20",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-21",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-24",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-25",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-26",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-27",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-28",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-08-31",
+            "daily_percent": "0.051660"
+          }
+        ],
+        "source_hash": "17b1a61536eaada44e5e2bc212c9f7f0c55b4cbc8b3f98e7f4753d7c62279102"
+      },
+      "scope": "LOCAL_EXPLICIT_METHOD_DAILY_MEMORY_NO_TAX_OR_XML_ACTIVATION",
+      "rounding_contract": "DERE_HALF_EVEN_8_2",
+      "rounding_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04"
+    },
+    "2026-09": {
+      "contract": "DERE-D2101-DAILY-MEMORY-LOCAL-2026.10.06-1",
+      "status": "ACTIVE",
+      "published_at": "2026-10-08T13:34:32+00:00",
+      "source_hash": "b7756c7b0cec5cff46d77e1b1ea5d657a4e2476fa6033f8192561c17dd70ab2d",
+      "official_data_file": "bcb-sgs11-observed-20261006-202609.json",
+      "official_data_sha256": "43cffec8577702c1afd462ea51c0d27fd60ed77e3864cc543082ad377761be6a",
+      "series_hash": "12ad2d87c6d6a16e367dcd5b59031c0c24b8641d1050f7c4af98d5767941a7b1",
+      "series": {
+        "series_code": 11,
+        "unit": "PERCENT_PER_BUSINESS_DAY",
+        "period": "2026-09",
+        "observed_at": "2026-10-06T14:31:18+00:00",
+        "official_data_sha256": "43cffec8577702c1afd462ea51c0d27fd60ed77e3864cc543082ad377761be6a",
+        "rows": [
+          {
+            "date": "2026-09-01",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-02",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-03",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-04",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-08",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-09",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-10",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-11",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-14",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-15",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-16",
+            "daily_percent": "0.051660"
+          },
+          {
+            "date": "2026-09-17",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-18",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-21",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-22",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-23",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-24",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-25",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-28",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-29",
+            "daily_percent": "0.050788"
+          },
+          {
+            "date": "2026-09-30",
+            "daily_percent": "0.050788"
+          }
+        ],
+        "source_hash": "12ad2d87c6d6a16e367dcd5b59031c0c24b8641d1050f7c4af98d5767941a7b1"
+      },
+      "scope": "LOCAL_EXPLICIT_METHOD_DAILY_MEMORY_NO_TAX_OR_XML_ACTIVATION",
+      "rounding_contract": "DERE_HALF_EVEN_8_2",
+      "rounding_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04",
+      "appropriation_sequence_policy": "INDEPENDENT_PRODUCED_YIELD_BEFORE_SALE"
+    },
+    "2026-07": {
+      "contract": "DERE-D2101-DAILY-MEMORY-LOCAL-2026.10.06-1",
+      "status": "ACTIVE",
+      "published_at": "2026-10-08T14:07:48+00:00",
+      "source_hash": "b7756c7b0cec5cff46d77e1b1ea5d657a4e2476fa6033f8192561c17dd70ab2d",
+      "official_data_file": "bcb-sgs11-observed-20261008-202607.csv",
+      "official_data_sha256": "3503209c607a75b0b206caeb808f2805d673d1945a5b2a47b368b09f1889d22e",
+      "series_hash": "5c9201cab586bf9eed7656a2ca9f05e78533d491b0f5b91df8c5ec1f430b2ce8",
+      "series": {
+        "series_code": 11,
+        "unit": "PERCENT_PER_BUSINESS_DAY",
+        "period": "2026-07",
+        "observed_at": "2026-10-08T14:07:48+00:00",
+        "official_data_sha256": "3503209c607a75b0b206caeb808f2805d673d1945a5b2a47b368b09f1889d22e",
+        "rows": [
+          {
+            "date": "2026-07-01",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-02",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-03",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-06",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-07",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-08",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-09",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-10",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-13",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-14",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-15",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-16",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-17",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-20",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-21",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-22",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-23",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-24",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-27",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-28",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-29",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-30",
+            "daily_percent": "0.052531"
+          },
+          {
+            "date": "2026-07-31",
+            "daily_percent": "0.052531"
+          }
+        ],
+        "source_hash": "5c9201cab586bf9eed7656a2ca9f05e78533d491b0f5b91df8c5ec1f430b2ce8"
+      },
+      "scope": "LOCAL_EXPLICIT_METHOD_DAILY_MEMORY_NO_TAX_OR_XML_ACTIVATION",
+      "rounding_contract": "DERE_HALF_EVEN_8_2",
+      "rounding_source_hash": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04"
+    }
+  },
+  "acceptance_status": "DRAFT_NOT_BOUND_TO_ACCEPTED_REALIZATION_BUNDLE",
+  "production_ready": false,
+  "signed_private_deferral_policy": "REPLAYED_INDEPENDENT_SIGNED_SUBACCOUNT_RECOGNITION",
+  "public_deferral_policy": "REPLAYED_FIRST_ACQUISITION_YIELD_AND_SIGNED_FAIR_VALUE_DAILY_BRIDGE",
+  "public_negative_yield_policy": "REPLAYED_UNOFFSET_TITLE_LOSS_NO_CURRENT_DEDUCTION",
+  "public_realized_closing_policy": "REPLAYED_PUBLIC_REALIZATION_CLOSING_AND_RETAINED_CURRENT_CURVE"
+}

@@ -1,0 +1,141 @@
+{
+  "version": "2026.10.06-28-draft2",
+  "qualified": true,
+  "planoCtaRef": "1",
+  "membership_basis": "OFFICIAL_UNDATED_TABLE_AS_OF_KNOWLEDGE",
+  "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT",
+  "observed_on": "2026-10-02",
+  "source_hash": "9bd7f7bd7483e14e9a23ca2b8805c3ad80bbd199fa8cff1a7d167573bd994dd1",
+  "source_file": "cosif-bcb-completo-observed-20261002.pdf",
+  "source_url": "https://www3.bcb.gov.br/aplica/cosif/completo",
+  "qualification_scope": "FOURTEEN_SELECTED_COSIF_MEMBERS_NO_HISTORICAL_OR_INSTITUTION_APPROVAL",
+  "accounts": {
+    "1600000007": {
+      "code": "1600000007",
+      "formatted_code": "1.6.0.00.00.00-7",
+      "title": "OPERAÇÕES DE CRÉDITO",
+      "pdf_page": 226,
+      "estban": "-",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "1612001104": {
+      "code": "1612001104",
+      "formatted_code": "1.6.1.20.01.10-4",
+      "title": "Saldo Contratual",
+      "pdf_page": 226,
+      "estban": "-",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "7100000006": {
+      "code": "7100000006",
+      "formatted_code": "7.1.0.00.00.00-6",
+      "title": "RECEITAS OPERACIONAIS",
+      "pdf_page": 505,
+      "estban": "-",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "7110599002": {
+      "code": "7110599002",
+      "formatted_code": "7.1.1.05.99.00-2",
+      "title": "Rendas - Outros Empréstimos",
+      "pdf_page": 505,
+      "estban": "-",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "8100000005": {
+      "code": "8100000005",
+      "formatted_code": "8.1.0.00.00.00-5",
+      "title": "(-) DESPESAS OPERACIONAIS",
+      "pdf_page": 545,
+      "estban": "-",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "8113000009": {
+      "code": "8113000009",
+      "formatted_code": "8.1.1.30.00.00-9",
+      "title": "(-) DESPESAS DE DEPÓSITOS A PRAZO",
+      "pdf_page": 545,
+      "estban": "712",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "8199900006": {
+      "code": "8199900006",
+      "formatted_code": "8.1.9.99.00.00-6",
+      "title": "(-) OUTRAS DESPESAS OPERACIONAIS",
+      "pdf_page": 551,
+      "estban": "712",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "1300000008": {
+      "code": "1300000008",
+      "formatted_code": "1.3.0.00.00.00-8",
+      "title": "TÍTULOS E VALORES MOBILIÁRIOS E INSTRUMENTOS FINANCEIROS DERIVATIVOS",
+      "estban": "-",
+      "pdf_page": 190,
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "1311033105": {
+      "code": "1311033105",
+      "formatted_code": "1.3.1.10.33.10-5",
+      "title": "Saldo Contábil Bruto",
+      "estban": "-",
+      "pdf_page": 190,
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "1311500009": {
+      "code": "1311500009",
+      "formatted_code": "1.3.1.15.00.00-9",
+      "title": "COTAS DE FUNDOS DE INVESTIMENTO",
+      "estban": "130",
+      "pdf_page": 190,
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "1100000002": {
+      "code": "1100000002",
+      "formatted_code": "1.1.0.00.00.00-2",
+      "title": "DISPONIBILIDADES",
+      "pdf_page": 181,
+      "estban": "-",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "1111000008": {
+      "code": "1111000008",
+      "formatted_code": "1.1.1.10.00.00-8",
+      "title": "CAIXA",
+      "pdf_page": 181,
+      "estban": "111",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "7157500009": {
+      "code": "7157500009",
+      "formatted_code": "7.1.5.75.00.00-9",
+      "title": "LUCROS COM TÍTULOS DE RENDA FIXA",
+      "pdf_page": 506,
+      "estban": "711",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    },
+    "8152000008": {
+      "code": "8152000008",
+      "formatted_code": "8.1.5.20.00.00-8",
+      "title": "(-) PREJUÍZOS COM TÍTULOS DE RENDA FIXA",
+      "pdf_page": 546,
+      "estban": "712",
+      "institution_attributes": "NOT_PROVEN",
+      "fiscal_validity": "NOT_PROVEN_BY_OBSERVED_DOCUMENT"
+    }
+  },
+  "production_ready": false
+}

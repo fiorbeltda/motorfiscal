@@ -1,0 +1,48 @@
+{
+  "position": {
+    "supplier_id": "11111111000191",
+    "period": "2026-09",
+    "idTitulo": "BRFIXTDEB019",
+    "cCta": "debt000",
+    "held_entire_period": true,
+    "constant_average_cost": true,
+    "cost_basis_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+    "vEntradas": "0.00",
+    "vSaidas": "0.00",
+    "quantity": "1000",
+    "weighted_average_unit_cost": "10.00",
+    "cost_basis": "9999.00",
+    "vVarMensal": "150.00",
+    "vPisCofins": "10.00",
+    "position_evidence": {
+      "qualified": true,
+      "evidence_id": "FIXTURE.CONSTANT.COST.POSITION",
+      "supplier_id": "11111111000191",
+      "observed_on": "2026-10-06",
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-09-30",
+      "scope": "SYNTHETIC_QUALIFIED_POSITION_ONLY_OFFICIAL_RATES_REAL",
+      "value": {
+        "supplier_id": "11111111000191",
+        "period": "2026-09",
+        "idTitulo": "BRFIXTDEB019",
+        "cCta": "debt000",
+        "held_entire_period": true,
+        "constant_average_cost": true,
+        "cost_basis_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+        "vEntradas": "0.00",
+        "vSaidas": "0.00",
+        "quantity": "1000",
+        "weighted_average_unit_cost": "10.00",
+        "cost_basis": "9999.00",
+        "vVarMensal": "150.00",
+        "vPisCofins": "10.00"
+      },
+      "source_hash": "001d6c5c05f772914b1efd1b914d6f9b5f39400e01d596f452e069b8a93ed6d0"
+    }
+  },
+  "expectation": {
+    "status": "ACTION_REQUIRED",
+    "reason": "RTC_DERE_D2101_QUANTITY_COST_BASIS_CONFLICT"
+  }
+}

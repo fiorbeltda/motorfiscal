@@ -1,0 +1,19 @@
+{
+  "version": "2026.09.28-1",
+  "scope": "INTEGRATED_ISS_4A_4B",
+  "status": "IN_PROGRESS",
+  "controls": [
+    {"id": "4B.1.TEMPORALITY", "state": "PARTIAL", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026"], "gap": "CBS de 2027 em diante, IBS por destino a partir de 2029 e alíquota de ISS congelada em 31/12/2028 ainda sem apuração integrada."},
+    {"id": "4B.2.INCIDENCE_AND_DESTINATION", "state": "PARTIAL", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026", "NFSE-CINDOP"], "gap": "Operações não onerosas além do empregado, locais especiais, plataformas e domicílio inferido ainda sem decisão completa."},
+    {"id": "4B.2.EXPORT_IMPORT", "state": "PARTIAL", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026", "DECREE-12955-CAMARA-2026"], "gap": "Parcela doméstica da exportação e documento definitivo da importação permanecem em ACTION_REQUIRED."},
+    {"id": "4B.3.SUBJECTS_AND_COLLECTION", "state": "OPEN", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026"], "gap": "Split payment, recolhimento pelo adquirente, plataforma e aquisição pública ainda não têm decisão positiva completa."},
+    {"id": "4B.3.SIMPLES_MEI", "state": "PARTIAL", "source_ids": ["RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918"], "gap": "Apuração interna, segundo semestre de 2027, início de atividade e anos seguintes ainda não estão materializados."},
+    {"id": "4B.4.BASE_AND_SPECIAL_REGIMES", "state": "PARTIAL", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026"], "gap": "Regimes financeiro, imobiliário, construção, cooperativas e tratamentos diferenciados exigem cálculo e prova de elegibilidade."},
+    {"id": "4B.5.CREDITS", "state": "PARTIAL", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026"], "gap": "Crédito de importação, preservação ou anulação em benefícios e apropriação por tratamento ainda incompletos."},
+    {"id": "4B.6.CLASSIFICATION", "state": "PARTIAL", "source_ids": ["NFSE-CINDOP", "NFE-CCLASSTRIB", "NFSE-NBS-ANEXO-B", "NFSE-CORRELATION"], "gap": "Regras decisórias além do SaaS e revisão jurídica das correlações interpretativas ainda pendentes."},
+    {"id": "4B.7.DOCUMENT", "state": "PARTIAL", "source_ids": ["NFSE-NT004-LAYOUT", "NFSE-NT009-LAYOUT", "NFSE-RTC-XSD"], "gap": "Implantação e vigência de NT009 não comprovadas; projeção local ainda parcial e sem validação integral contra XSD aplicável."},
+    {"id": "4B.8.CORPUS", "state": "PARTIAL", "source_ids": ["LC214-CONSOLIDATED-CAMARA-2026"], "gap": "O corpus atual não demonstra decisão positiva e homologada para todas as famílias, períodos e tratamentos."},
+    {"id": "INTEGRATED.ISS_MUNICIPAL", "state": "OPEN", "source_ids": [], "gap": "O bundle integrado usa parâmetros municipais sintéticos; fontes e vigências locais reais devem substituí-los."},
+    {"id": "INTEGRATED.4A", "state": "PARTIAL", "source_ids": [], "gap": "O bundle 4A depende de revisão temporal e de atos locais antes da produção integrada."}
+  ]
+}

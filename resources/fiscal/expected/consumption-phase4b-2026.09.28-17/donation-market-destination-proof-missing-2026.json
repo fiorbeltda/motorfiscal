@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_DESTINATION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.destination_evidence_id"
+  ],
+  "decision_hash": "b0c33af4e9b83466567e1cb7894ded0214f3952598bfc6814d2f785f2c41902b"
+}

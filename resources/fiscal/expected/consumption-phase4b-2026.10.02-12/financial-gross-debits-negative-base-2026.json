@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_TAX_NEGATIVE_PERIOD_BASE_RULE_REQUIRED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "091bca69a3184e87bd3f5112c9b1d09bda70889f1107ea800001363fcca5d366"
+}

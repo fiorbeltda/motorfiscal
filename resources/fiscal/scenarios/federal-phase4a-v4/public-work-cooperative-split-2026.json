@@ -1,0 +1,69 @@
+{
+  "scenario_id": "federal-public-work-cooperative-split-2026",
+  "competence_date": "2026-09-24",
+  "knowledge_at": "2026-09-24T15:59:28-03:00",
+  "rule_bundle_id": "FEDERAL-PHASE4A-2026.09.24-4",
+  "catalog_versions": {
+    "services": "2026.09.17-1",
+    "municipal_parameters": "2026.09.16-1",
+    "public_annex_i": "rfb-41766-sandbox-1",
+    "federal_obligations": "2026-sandbox-3",
+    "federal_banking_calendar": "2026-national-febraban-1"
+  },
+  "facts": {
+    "service.canonical_id": "SOFTWARE_DEVELOPMENT",
+    "provider.municipality_ibge": "3550308",
+    "customer.municipality_ibge": "3509502",
+    "customer.person_type": "PUBLIC_ADMINISTRATION",
+    "operation.service_origin": "DOMESTIC",
+    "operation.amount": "3000.00",
+    "federal.evaluate_withholdings": true,
+    "payment.occurred": true,
+    "payment.date": "2026-09-24",
+    "payment.gross_amount": "3000.00",
+    "payer.person_type": "FEDERAL_PUBLIC_ADMINISTRATION",
+    "payer.public_entity_type": "DIRECT",
+    "payer.tax_regime": "PUBLIC_ENTITY",
+    "payer.head_office_tax_id": "12345678000199",
+    "provider.person_type": "COOPERATIVE",
+    "provider.tax_regime": "LUCRO_REAL",
+    "public.annex_category": "GENERAL_SERVICES",
+    "public.glosa_without_new_invoice": false,
+    "public.has_late_additions": false,
+    "public.beneficiary_treatment": "STANDARD",
+    "federal.pis_status": "APPLICABLE",
+    "federal.cofins_status": "APPLICABLE",
+    "federal.csll_status": "APPLICABLE",
+    "federal.income_nature_code": "17001",
+    "inss.service_group": "OUTSIDE_EXHAUSTIVE_LIST",
+    "inss.service_category": "SOFTWARE_DEVELOPMENT",
+    "inss.execution_mode": "CONTRACT_FOR_RESULT",
+    "invoice.issue_date": "2026-09-24",
+    "invoice.gross_amount": "3000.00",
+    "provider.head_office_tax_id": "11111111000191",
+    "cooperative.provider_type": "WORK",
+    "cooperative.invoice_components_evidence_confirmed": true,
+    "cooperative.invoice_components": [
+      {
+        "line_id": "pf",
+        "document_id": "nf-10",
+        "type": "MEMBER_PF_SERVICE",
+        "amount": "1000.00"
+      },
+      {
+        "line_id": "pj",
+        "document_id": "nf-11",
+        "type": "THIRD_PARTY_PJ_MATERIAL_SERVICE",
+        "amount": "1500.00",
+        "beneficiary_tax_id": "22222222000191",
+        "qualified_material_or_hospital_service_confirmed": true
+      },
+      {
+        "line_id": "fee",
+        "document_id": "nf-12",
+        "type": "ADMINISTRATION_FEE",
+        "amount": "500.00"
+      }
+    ]
+  }
+}

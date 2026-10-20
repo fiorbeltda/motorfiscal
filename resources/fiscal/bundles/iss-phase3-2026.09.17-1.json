@@ -1,0 +1,31 @@
+{
+  "bundle_id": "ISS-PHASE3-2026.09.17-1",
+  "bundle_key": "ISS-PHASE3",
+  "version": "2026.09.17-1",
+  "engine_version": "1.1.0-phase3",
+  "status": "SANDBOX_CANDIDATE",
+  "knowledge_available_at": "2026-09-17T08:00:00-03:00",
+  "catalog_versions": {
+    "services": "2026.09.17-1",
+    "municipal_parameters": "2026.09.16-1"
+  },
+  "resource_paths": {
+    "fact_definitions": "facts/iss-phase3.json",
+    "questions": "questions/iss-phase3.json",
+    "service_catalog": "catalogs/iss-services-2026.09.17-1.json",
+    "municipal_parameters": "catalogs/municipal-parameters-mvp.json",
+    "invariants": "invariants/iss-phase3.json",
+    "scenario_schema": "schemas/scenario.schema.json",
+    "rules": "rules/iss-phase3"
+  },
+  "content_hashes": {
+    "fact_definitions": "e099599a2c6bcba4534a7e83075a559eb943b17199368acd4312fe9146cb38b3",
+    "questions": "37f9e83b80a03da81fb56bf57d169da04e2f5bf0c942228c68667651074da38a",
+    "service_catalog": "02f2912dfb560144d69c9cf32923c48d24c42e8ee663b2b57f960cbdaae4396d",
+    "municipal_parameters": "ac3fef68ea9ec14727c8e54307435ca596f321c1282b794db7d8bbc6114ab655",
+    "invariants": "75065ebdbff6aaf7536faed9b8be3c29ac32902cdae71aa438f38f58ca519914",
+    "scenario_schema": "579d1c85896cd603ab802ae2de60f80ee9cd8191944e5c369ebd573003bfeddd",
+    "rules": "10d464e4d6dedab9628e7240c95e82acf226a61a6f2a6a3273a3a15ff34f7a8d"
+  },
+  "notice": "Fase 3 do motor ISS: catálogo nacional completo, competência territorial, responsabilidade nacional e retenção determinística quando houver base suficiente. Regras municipais ausentes exigem ação; não são presumidas."
+}

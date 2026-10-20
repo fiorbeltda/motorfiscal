@@ -1,0 +1,1 @@
+{"status":"ACTION_REQUIRED","reason_codes":["SERVICE_FAMILY_FACTS_MISSING"],"missing_facts":["operation.event_activity_confirmed"],"decision_hash":"0350fb1efc7350151c947ed8db6b434c634aee9c7ecfb03edeceec2beaf88daa"}

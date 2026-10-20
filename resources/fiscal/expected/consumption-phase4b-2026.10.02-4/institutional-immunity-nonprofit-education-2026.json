@@ -1,0 +1,8 @@
+{
+  "status": "VALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY"
+  ],
+  "missing_facts": [],
+  "decision_hash": "cddb76778632bfc8bb5c52a8c92f1f07e6e7989a0bca81439c16f3b8c25a1372"
+}

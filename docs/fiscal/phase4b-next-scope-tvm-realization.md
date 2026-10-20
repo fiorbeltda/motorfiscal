@@ -1,0 +1,13 @@
+# Próximo objetivo — alienação TVM e realização sem dupla tributação
+
+Em execução como desenvolvimento28, ainda sem aceitação do escopo integral. [Progresso da conciliação e pendências de integração](phase4b-tvm-realization-progress.md).
+
+Partida: candidatos26/27 aceitos localmente. A memória distingue aquisição, valor contábil, preço recebido e ganho contábil. A integração27 recusa qualquer diferença de venda contábil ou de preço frente ao custo de aquisição, inclusive diferenças por operação que se anulem no mês. Essa recusa é uma pendência a resolver, não conclusão da família financeira.
+
+Objetivo: reconstruir separadamente resultado contábil, diferença preço/custo de aquisição, rendimentos já apropriados, componente de avaliação a valor justo em subconta e valor a realizar, com prova por título/conta/operação e vínculo ao histórico fiscal. Determinar, a partir das fontes oficiais, a origem fiscal de cada parcela entre D1101/D2101 e auxiliares cabíveis; integrar os caminhos qualificados com movimentos mensais reconciliados e sem tributar duas vezes o mesmo rendimento.
+
+A fonte consolidada oficial, novamente capturada em06/10 com hash igual à preservada, define receita de alienação por preço menos custo de aquisição no art.192, §1º, II; perdas no incisoIII do caput; e realização do excedente de avaliação a valor justo em subconta no §6º. O art.195 prevê exclusão de rendimentos acima da Selic na oferta pública. O encaixe entre essas parcelas exige prova e pesquisa do MOD, tabelas e validações; não presumir que o ganho contábil seja a base fiscal completa ou que toda diferença de venda use o teto de rendimentos automaticamente.
+
+Condições de aceitação: venda parcial e total, compra e venda no mesmo mês, custo distinto do valor contábil, rendimento de períodos anteriores, ganho/perda contábil e fiscal distintos, avaliação a valor justo em subconta, ganhos e perdas que se anulem, fundos e múltiplos títulos. Cada parcela exige tratamento expresso e cobertura histórica. Receitas, principal, perdas dedutíveis e componentes diferidos devem manter origens diferentes quando a norma assim determinar; parcelas sem prova continuam bloqueadas com motivo específico.
+
+Produzir contrato de realização, bundle/controles, corpus positivo/negativo, testes com oráculo independente, snapshots/replays e XML quando aplicável, auditoria e regressões27/26/25. Resolver também a conciliação explícita de resíduos de arredondamento dos movimentos brutos quando houver evidência suficiente. Não fabricar histórico fiscal, recibo PGCC ou retorno D9121, nem declarar homologação de convenções locais. Continuar pelos demais escopos4B viáveis após a aceitação.

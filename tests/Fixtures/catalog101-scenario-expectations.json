@@ -1,0 +1,558 @@
+{
+  "created_at": "2026-10-16T17:31:12.534882+00:00",
+  "bundle": "bundles/consumption-phase4b-2026.10.16-101-draft1.json",
+  "cases": [
+    {
+      "name": "export-usd-direct",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-usd-direct.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-direct.json",
+      "original_sha256": "77294317ae630f0fa874e2fc7e74e1f8a4732b0550e97b24f3e180c29a461959",
+      "original_facts_sha256": "aaa3759f94ac8b75342bac1cca856c77b8f2d33a1c41ac4a5495a0a29c72d4ed"
+    },
+    {
+      "name": "export-usd-weekend",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-usd-weekend.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-weekend.json",
+      "original_sha256": "feaa0e816e98eb5279a637c9e7a9b22778d5c22a11a6e716c57c7ad96e02aed3",
+      "original_facts_sha256": "44fe97ced339d17a64c8c3797f0929ec0dc2ac497cffafbb6968a03a3aad3ae5"
+    },
+    {
+      "name": "export-usd-quarter",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-usd-quarter.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-quarter.json",
+      "original_sha256": "ab3dc1df60b3676b410ec72995e2809db3edd4dbb9b6b2db43e6759a95436576",
+      "original_facts_sha256": "8eddef46152fe22b501c94564e9626d2db4c7238e9ca10a7a6cad584a0c5b44d"
+    },
+    {
+      "name": "export-usd-mostly-foreign",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-usd-mostly-foreign.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-mostly-foreign.json",
+      "original_sha256": "8ba059f203f189229186b1cd0e77362258a9134f2b6fed15662b039f335aec80",
+      "original_facts_sha256": "41b7ddd75f523f991c6b59ea4e01ba50ac274f7a3b150fb28310de5feb6466c7"
+    },
+    {
+      "name": "export-usd-mostly-domestic",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-usd-mostly-domestic.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-mostly-domestic.json",
+      "original_sha256": "2ccfe9d67ee51b0d9be98e18d0fb987fefdf07fac40e5df80b841393b851d015",
+      "original_facts_sha256": "cbc55992fe5b6d400f65374eb98e34be4ec50a9a0175ec9d718bb26458c2eba1"
+    },
+    {
+      "name": "export-brl-control",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-brl-control.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/brl-control.json",
+      "original_sha256": "1ce5ff431b81d294a04ab7015d327649938cc729b8996dbf877742a880d1486b",
+      "original_facts_sha256": "cdf793aaca1ae1315503e28fed77fb318b70045fc75172b4b0a69e646c46553e"
+    },
+    {
+      "name": "export-foreign-subject-software-br-linked",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-foreign-subject-software-br-linked.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-subject-software-br-linked.json",
+      "original_sha256": "fc5c6b4ac8fe66a5294d4efb268c2f15807d7ca0216f91df274913a655d50a7d",
+      "original_facts_sha256": "0a6f1d402f6f8f977fd3ed66b9ea94bba27e5da88c24cf047a798ff4c35044b8"
+    },
+    {
+      "name": "export-foreign-rtc-result-br",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-foreign-rtc-result-br.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-rtc-result-br.json",
+      "original_sha256": "4c667ba8a26181c4476343fc93e0c09e7005e67570696ee103e8d48e51762d0b",
+      "original_facts_sha256": "094cc7f54d40f1bcf4e73956cdd295273621a5adb09e65d6270d08036d1c1a44"
+    },
+    {
+      "name": "export-domestic-rtc-result-abroad",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-domestic-rtc-result-abroad.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-rtc-result-abroad.json",
+      "original_sha256": "c78a14bb4e025f631e8ca7a60956f38e83664de2b3cfb533da898f532afe0d13",
+      "original_facts_sha256": "7b64d3afad4ee82d9bb98baae155b34a9c82c938d99d6ecbfb80f715ea51ad49"
+    },
+    {
+      "name": "export-continuing-monthly-stages",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-continuing-monthly-stages.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/continuing-monthly-stages.json",
+      "original_sha256": "de6bd9dbe2192e9cc3f796e5c0170c27e7dfeca330ea1257eedbdbfea3e52ca3",
+      "original_facts_sha256": "f07f127f5bd45bc856079a82ba46562401dfe7b3b2540277ae400e60a2a42138"
+    },
+    {
+      "name": "export-proof-order-reversed",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-proof-order-reversed.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/proof-order-reversed.json",
+      "original_sha256": "40f53793f3c5ce2ce91018c37fbc153bb7282156c5e34824f07385a51bbc9dfd",
+      "original_facts_sha256": "1fc4cc2a95f9f84306f2a3a0348d1ded0b442b2e0afa6f4d1d5bfa6c2f4ee21f"
+    },
+    {
+      "name": "export-foreign-link-unproven",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-foreign-link-unproven.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-link-unproven.json",
+      "original_sha256": "79a0051069607b14141c824444ef4892a083d519badb3ba435a676853cc0f4bb",
+      "original_facts_sha256": "c8e1753f39e043f7d660d1f290d926016410de2559945848ba3af56246b32cf6"
+    },
+    {
+      "name": "export-foreign-mixed-result",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-foreign-mixed-result.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-mixed-result.json",
+      "original_sha256": "4b46262e5a60a130db5b3716345bbdcd475dcd74accc625c0fd34d6f1294fa41",
+      "original_facts_sha256": "79c4da1631c92636ff9bff4edf66e9f20025616142237414eb573d8a58895710"
+    },
+    {
+      "name": "export-foreign-wrong-municipality",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-foreign-wrong-municipality.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-wrong-municipality.json",
+      "original_sha256": "5d0fd473bb80d7ada8954a3eb09d1a0c7119902ef46aae3955a6b66c7d2018dd",
+      "original_facts_sha256": "27562a8bee6919c452ab6d621060c5c962a08114c3cb17dcd593fc9f59d507fd"
+    },
+    {
+      "name": "export-foreign-wrong-national-proof",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-foreign-wrong-national-proof.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-wrong-national-proof.json",
+      "original_sha256": "b90b92347beedc5df623d1adb172ab9c94d11b61e6baec47f6e132fcfeb11f30",
+      "original_facts_sha256": "5c785452f00dbbce411dfa7aabb69c9041817c662a350b97af3461b1c774d564"
+    },
+    {
+      "name": "export-domestic-link-unproven",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-domestic-link-unproven.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-link-unproven.json",
+      "original_sha256": "351c3027dcdd1b836dd1512ff538b0f1f8c9c8d9df0a8356fcbd60ed640af9e2",
+      "original_facts_sha256": "cbc5c48b552fbd2f86196c39f361100649000991a0dbfe167f659a036a6bbc09"
+    },
+    {
+      "name": "export-domestic-mixed-result",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-domestic-mixed-result.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-mixed-result.json",
+      "original_sha256": "8d05f4621c38937ccd87bf5e0bc4330b906fc6dc20c4d6e2b5a390e7ba27b6e3",
+      "original_facts_sha256": "b52385b9aa4dc99cb62da67676ea7d9f2364b0eebb448ae908cdb615c15fd627"
+    },
+    {
+      "name": "export-domestic-wrong-municipality",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-domestic-wrong-municipality.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-wrong-municipality.json",
+      "original_sha256": "2e2ebcc9446b85a3b6e30e0a2e9cd6ea47ff36070c11564a3d5386edb3e81acb",
+      "original_facts_sha256": "b4d6bfa204964a6b649b5e42af4d92aafe1eca5e954b50c7320ac200be937af7"
+    },
+    {
+      "name": "export-domestic-wrong-national-proof",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-domestic-wrong-national-proof.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-wrong-national-proof.json",
+      "original_sha256": "2d7e6f9b00e0ffb7a888fb3a27e61976119c9fa7589654213307f6cf50fdb886",
+      "original_facts_sha256": "1b5e085196b0bf3c4842654b57811a53c0486c943f67b93fdd2a094f70658eef"
+    },
+    {
+      "name": "export-missing-proofs",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-missing-proofs.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_TWO_MUNICIPAL_PROOFS_REQUIRED",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/missing-proofs.json",
+      "original_sha256": "ceeb00978eed849b737e63900ebc211630ef174be6e8b69efecca868a1d1a7cb",
+      "original_facts_sha256": "65ef4e69cea877c6359284b545d45bc4def51c3e848e0a2548b0f12fc21f6f02"
+    },
+    {
+      "name": "export-duplicate-role",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-duplicate-role.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_DUPLICATE_MUNICIPAL_ROLE",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/duplicate-role.json",
+      "original_sha256": "33b9b18fd5a9e38dcdde5045f692e62a5fc9b1cf5201607be18891be4e0b8ecd",
+      "original_facts_sha256": "9181b49af33dd40bd12a5ec772feb45d38dd0a02314e247b4973cf4b495af367"
+    },
+    {
+      "name": "export-swapped-sibling-proof",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-swapped-sibling-proof.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/swapped-sibling-proof.json",
+      "original_sha256": "62d9adb7e346b95de8f953807ea67343fc576420c7784ca7afd2e096e49d01f6",
+      "original_facts_sha256": "84d57c6b643a1fca0ce980a745a2cc65bc907d1f43a235e0bfe331371a1c6a9b"
+    },
+    {
+      "name": "export-proof-tampered",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-proof-tampered.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/proof-tampered.json",
+      "original_sha256": "bc4e34b56c0067fa04e104227d4f7be2fe22033cc50337d2f683c9a11a5cd065",
+      "original_facts_sha256": "a0c942f010fce20025e3efc0519e53bef309a1a855a4fe485fa9e14cab49a6d7"
+    },
+    {
+      "name": "export-payment-not-municipal-result",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-payment-not-municipal-result.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/payment-not-municipal-result.json",
+      "original_sha256": "e91afda467d7526c5cff7b4c018b7376b9badf4eb8513a65c1727b51a06290b6",
+      "original_facts_sha256": "cfc5f04cc9f3f5c9e3d70d2b739f54eea6b01c1d08957777182eab9ffff591fc"
+    },
+    {
+      "name": "export-unfinished-monthly-stage",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-unfinished-monthly-stage.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/unfinished-monthly-stage.json",
+      "original_sha256": "ce290da06589acaabb2e0183b4b659895951ac1ab901db80b6b3cd35075bff06",
+      "original_facts_sha256": "c9ad59a0f47a376f9a72f12d10a7887831ed09dd608bcaa41c833bd8e3f2b2a4"
+    },
+    {
+      "name": "export-national-assessment-disabled",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-national-assessment-disabled.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_SP98_NATIONAL_RESULT_ASSESSMENT_REQUIRED",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/national-assessment-disabled.json",
+      "original_sha256": "c662c129b50e60faf3df959b7a4d37a58c93b375b2e15bdda1f6e2949410b425",
+      "original_facts_sha256": "5be7afea1d312484b27584727eb7c3cc72551d32e2a0aaa42bd652218c273eb4"
+    },
+    {
+      "name": "export-disabled-malformed-proofs",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-disabled-malformed-proofs.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/disabled-malformed-proofs.json",
+      "original_sha256": "fe7ec2777049966fb4fdfa3cd2f41155d61b89a33ebbc1cc0f534b2843da2ada",
+      "original_facts_sha256": "44b9d1a1fdc325295af45cd9a4ed2398e84a78c22d790c7c62ca0ff0cdef6325"
+    },
+    {
+      "name": "export-national-proof-fails-first",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-national-proof-fails-first.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_ISS96_INDEPENDENT_ISS_RESULT_NOT_BOUND",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/national-proof-fails-first.json",
+      "original_sha256": "b80619740c97be0f6f7a6a5b62f044e3a299885b73093eba88a66ff52792f5e1",
+      "original_facts_sha256": "010d3dcc5211e11ee3d0f87e91f79da44e980457671c636290d6e14c4dcc43c8"
+    },
+    {
+      "name": "export-wrong-route",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-wrong-route.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_ISS96_PARTIAL_EXPORT_ROUTE_REQUIRED",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/wrong-route.json",
+      "original_sha256": "a2497f5b2a86b70be84bdf77cb5ed08ffcc2f1dd6c8ac54a27bb15f78fce8c2f",
+      "original_facts_sha256": "7abefe8c53d8b4e736f352a5340a69d5e9fbbe72812d9f66e3da5b194afb7e88"
+    },
+    {
+      "name": "export-temporal-combination",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/export-temporal-combination.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_EXPORT_ISS96_SEPARATE_TEMPORAL_CONTEXT_REQUIRED",
+      "original_path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/temporal-combination.json",
+      "original_sha256": "3ed66edab24fb919862d394b7e78c2e0e87a8ba0d2cfc3b5302cb333ecbb0534",
+      "original_facts_sha256": "09ed4dce97ae7c6c473128a1813b2d3cf07f8263256f961d65982b4d020df00b"
+    },
+    {
+      "name": "advance-recorded-single",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-recorded-single.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/recorded-single.json",
+      "original_sha256": "f23e6d1aa5085325a4f5c2d2e25b69bf70296d23c05561b7f59c46eed266b2e3",
+      "original_facts_sha256": "3edfa1d08b4a0ac2e531e908d91fb571d563c9dd26cd0ae39cf287a274d69878"
+    },
+    {
+      "name": "advance-text-id-0",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-text-id-0.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/text-id-0.json",
+      "original_sha256": "095883251b0ff3c032dc415777d5b39c39ac89daba4cf7da1488df45e581bcf1",
+      "original_facts_sha256": "f7f2262c1c56dd91222281c17270f1891efd07f82109e336e06b57350748bfbb"
+    },
+    {
+      "name": "advance-text-id-01",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-text-id-01.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/text-id-01.json",
+      "original_sha256": "5064785ccf91295bbc626d9a43cf32e1e406c7da46fb1a2e4bcdac321e895605",
+      "original_facts_sha256": "f207d72ddb8a89d6effdf509b50a755fe52b71ca95353ca6cbbc91810eebd848"
+    },
+    {
+      "name": "advance-text-id-0001",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-text-id-0001.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/text-id-0001.json",
+      "original_sha256": "4c3062f9d37f36182729194b816a463828280ddd7498e520b6965fc87e19137c",
+      "original_facts_sha256": "fa6dc02e5d1cb591e3b7f5812bb4dab9fb20b5d476ce6468a4053124b7de3ed5"
+    },
+    {
+      "name": "advance-recorded-multiple",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-recorded-multiple.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/recorded-multiple.json",
+      "original_sha256": "f26507b55d6836b4b48b333618b8364eda51aa950fd5e6c26a301a466b3b2b9a",
+      "original_facts_sha256": "42fc99a6744389cdfd31f879364a0ef370007ed8b5a290b232e05493c76ce32c"
+    },
+    {
+      "name": "advance-recorded-multiple-permuted",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-recorded-multiple-permuted.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/recorded-multiple-permuted.json",
+      "original_sha256": "e032f218f6b84451c1322c2fb5e2cf669d498f848cc3305e0bbac135b6e4c4bc",
+      "original_facts_sha256": "cd78432eddcc7c387c75494ed8b631146c15e8c52f7188858964df6c12831368"
+    },
+    {
+      "name": "advance-opt-in-absent",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-opt-in-absent.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_TEMPORAL_PRIOR_ADVANCE_DEBITS_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/opt-in-absent.json",
+      "original_sha256": "c9a11001e0c1a1a6575b148b5f251b31b23c54e8237e3201cadfe2dd3031f119",
+      "original_facts_sha256": "c81e8a554b087c153e884417eec507f3d755136a6e15eff71a3fc7b6a0d8575e"
+    },
+    {
+      "name": "advance-temporal-opt-in-absent",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-temporal-opt-in-absent.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_FINAL_CONTEXT_REQUIRED",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/temporal-opt-in-absent.json",
+      "original_sha256": "f653add77e61ed42263f2a514cab1aedde0df1096f37ca1c1878b716f61e45b3",
+      "original_facts_sha256": "4ca1c93681d09a08b2f96b2b974865e0ba99cbe25389fd26d2060a1fffd508d6"
+    },
+    {
+      "name": "advance-missing-final",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-missing-final.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_SINGLE_FINAL_BOOK_AND_CAPTURE_SET_REQUIRED",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/missing-final.json",
+      "original_sha256": "f043f8bfe2d6bdfc588ab798464567e107422dda5dd4341a6450b37fbdc79ad6",
+      "original_facts_sha256": "fe1273bd967189a6789b2975d5f55a6838d72cb14e67c5841d18c5e6ac5c1282"
+    },
+    {
+      "name": "advance-missing-book",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-missing-book.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_SINGLE_FINAL_BOOK_AND_CAPTURE_SET_REQUIRED",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/missing-book.json",
+      "original_sha256": "c2f68e5350c70783aa53dbced45c035405582380cdd518561d8d2f0dd063bbb2",
+      "original_facts_sha256": "a9f5ea40e1053efe70e098eeae464b8eb7aaa465a76978e289e073b1873f3c59"
+    },
+    {
+      "name": "advance-missing-captures",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-missing-captures.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_SINGLE_FINAL_BOOK_AND_CAPTURE_SET_REQUIRED",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/missing-captures.json",
+      "original_sha256": "d954f1a559414ee6296cd634f6b638476ffbc241af06df930f57fa75f80c07ed",
+      "original_facts_sha256": "71affb32323a0ce1e14593c6ba24c15dcea928e285e213760e370e07f7695a02"
+    },
+    {
+      "name": "advance-wrong-final-gross",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-final-gross.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_FINAL_FACT_BINDING_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-final-gross.json",
+      "original_sha256": "d43919388e3d2860f610f4c915857390cb889011293a2fd17031c2ea40adb55b",
+      "original_facts_sha256": "bbe2ae7416c6bae584cc206cea9f4bcfc426fa4eabc9a27cb015064fe2903f3c"
+    },
+    {
+      "name": "advance-wrong-final-supplier",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-final-supplier.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_FINAL_FACT_BINDING_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-final-supplier.json",
+      "original_sha256": "22b34d0da0afe4698efb8d8761b490c318a845b6c3bcc1532b6a257be59dac69",
+      "original_facts_sha256": "699e37fa77896d73c7cca94b2f62be9fa6947d1501be6e870377587442673f4b"
+    },
+    {
+      "name": "advance-wrong-final-destination",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-final-destination.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_FINAL_FACT_BINDING_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-final-destination.json",
+      "original_sha256": "75e06cf95302b672fd8aa6ae704dda1d18335dc211d5ce8747bdcf823db71385",
+      "original_facts_sha256": "0189bc9bd19164c86ad96160e8db31ab63c13698b8ff0c098fd28a35168f461e"
+    },
+    {
+      "name": "advance-wrong-qualified-supply",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-qualified-supply.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_QUALIFIED_SUPPLY_BINDING_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-qualified-supply.json",
+      "original_sha256": "51e1c848a4955badaf5fb82bf114811ca034812a35e4625c9870f8f5a5444628",
+      "original_facts_sha256": "6b719311a07fddf690c24ddbc2fe1d3de8b55ea4bfd33588af915dd13cec9150"
+    },
+    {
+      "name": "advance-wrong-declared-set",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-declared-set.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_EVENT_SET_BINDING_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-declared-set.json",
+      "original_sha256": "d5ae24dfe9a2f8a44497814e581e60270098f4843ff423097ea172e16131a28d",
+      "original_facts_sha256": "7b3f3cff7b46e9933f40bd7a1a45894ad9290cc8ff68533566b1c77651762813"
+    },
+    {
+      "name": "advance-wrong-record-date",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-record-date.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PLAN_VALUE_OR_DATE_CONFLICT",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-record-date.json",
+      "original_sha256": "01d4d7158450ecf9dc98962014f2ea64bc8ef4a00a28d7a209c5b4fc6e249460",
+      "original_facts_sha256": "a03be345ffeab08919262633c04a24b530b38a22f3da42ce19dece6932f32d50"
+    },
+    {
+      "name": "advance-wrong-record-proof",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-record-proof.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PLAN_EVIDENCE_CONFLICT",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-record-proof.json",
+      "original_sha256": "8a833896795d43c2f6cba38e55b47b52727186e27660e0dfd7b0124162f102ef",
+      "original_facts_sha256": "4e9dcdfe4e3cc1aa32594dc057196d8de2665ac79429118b43ae112e6970798d"
+    },
+    {
+      "name": "advance-wrong-book-owner",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-book-owner.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_BOOK_OWNER_OPERATION_BINDING_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-book-owner.json",
+      "original_sha256": "a7d97cb86a00a8c8ae0f4ed18d38439cead4f05aaa37680efa3fc62ec958c105",
+      "original_facts_sha256": "f036fdfe031a16ed3ee015e31072b36d98dcfcd923e39c8d06f17fc5de843188"
+    },
+    {
+      "name": "advance-record-consumed",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-record-consumed.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_PRIOR_RECORD_LIFECYCLE_NOT_OPEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/record-consumed.json",
+      "original_sha256": "c900637c12aa6e7fbff6a4023f1809ef0cbf3ae7e3823cab28a0ba3638b09c26",
+      "original_facts_sha256": "4810262fc5e48fc8644c6dadc76e0e9234fd559a9aeca3c0afce1266c23dd39d"
+    },
+    {
+      "name": "advance-bad-snapshot-hash",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-bad-snapshot-hash.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_SNAPSHOT_HASH_OR_UNIQUENESS_INVALID",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/bad-snapshot-hash.json",
+      "original_sha256": "118112059b8d5e9a0d9fdc174e1b6f78218107f21d2bb4862070c2c8e16454ca",
+      "original_facts_sha256": "bcad2af1dd1d23e14feb7d172e9bde0ee31f1b3d39bfadfac94da5311024dcfa"
+    },
+    {
+      "name": "advance-tampered-body",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-tampered-body.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_SNAPSHOT_RESULT_BODY_HASH_MISMATCH",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/tampered-body.json",
+      "original_sha256": "0e1731200cc328b0ba444f7c87bbece93d5eeabae2039a3aa11cce54814b58a2",
+      "original_facts_sha256": "60dbea58be80312ed02cbcb75a04e46aa30c36460f919915fba0eb269e3aca24"
+    },
+    {
+      "name": "advance-duplicate-capture",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-duplicate-capture.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_COMPLETE_RECORD_AND_SNAPSHOT_SET_REQUIRED",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/duplicate-capture.json",
+      "original_sha256": "4a009daefb06ee0f617d675effeda339a0a51996b968a0c9b2d67831bc868776",
+      "original_facts_sha256": "9fef8da9fac572306393a638fd9ba5471e76a018046e7ba4267b77153c9ac6e0"
+    },
+    {
+      "name": "advance-final-already-registered",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-final-already-registered.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_FINAL_SUPPLY_CONTEXT_UNPROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/final-already-registered.json",
+      "original_sha256": "bdbe30c8f1d994ab884ec1de9ca4e17e026188db9de5db4da92dc6b2e1f731a0",
+      "original_facts_sha256": "10301421b186a89014b829a9c33f1b04d5d9e33fa889e2e9bb18cf69fbf6cbb1"
+    },
+    {
+      "name": "advance-wrong-period",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-wrong-period.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_PRIOR_PRIOR_RECORD_DATE_OR_PERIOD_UNPROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/wrong-period.json",
+      "original_sha256": "5db370e5129796c3cd101a84a556ca10e5fb43ae2963723e080e47ccfb5c1c0a",
+      "original_facts_sha256": "61cd863bf90995d3d3cd62acad912022be89d8943af3c9e841aa97acad500a82"
+    },
+    {
+      "name": "advance-base-transformation",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-base-transformation.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_TAX_POINT_EVENT_BASE_OR_RATE_TRANSFORMATION_UNPROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/base-transformation.json",
+      "original_sha256": "b947568f876d960317f0ddf112601d0e4c2777e97c38fc1930053d1dd4f023c9",
+      "original_facts_sha256": "9949f33303fb4ce26044ac04b3534402bd158eec1c2482d4abc32b0e43b557ef"
+    },
+    {
+      "name": "advance-public-context",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-public-context.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_TAX_POINT_PUBLIC_OR_CANCELLED_CONTEXT_REQUIRES_SEPARATE_TREATMENT",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/public-context.json",
+      "original_sha256": "adc4dee8b8c3fb85f6c28c38c71e70e18b87ecb87714fc16a1caa81a46ba933c",
+      "original_facts_sha256": "c5bbc2d720f740b512e94b06eab8c6a56f99c0df9fdef1145e33dda6eb417258"
+    },
+    {
+      "name": "advance-future-cbs-unavailable",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-future-cbs-unavailable.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_RTC_RATE_NOT_PROVEN:CBS",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios/future-cbs-unavailable.json",
+      "original_sha256": "ad79f25a3266bab02d677c2e76f3084a4e66d6afd6ef3061ba6ba9ccffd69c0d",
+      "original_facts_sha256": "209b285bec37e2614abd4aca5f7f30693fb4729da2295f131078236d84a0fe96"
+    },
+    {
+      "name": "advance-document-issue-presumption",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-document-issue-presumption.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios-v2/document-issue-presumption.json",
+      "original_sha256": "30f63829746f81727462baab983ba6c7e7918fa5e91efd64b70c53dfd3b58a1e",
+      "original_facts_sha256": "a766b751139dd2d241e7ea34fe7d48098330d77cea71f4d80954f29a12a01293"
+    },
+    {
+      "name": "advance-document-expected-date-presumption",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/advance-document-expected-date-presumption.json",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_RECORDED_ADVANCE_DOCUMENT_AND_POSTING_NOT_PROVEN",
+      "original_path": "storage/app/phase4b-advance91-integration-20261015/scenarios-v2/document-expected-date-presumption.json",
+      "original_sha256": "65cca282542cfa87b638c122a71d572a40f7affc8c48a1dc9ee4c6c6172879b2",
+      "original_facts_sha256": "e92679d74c3b192a9b982f3df42f2f94f0ccd8c06ea954d0ae9f276135520c87"
+    },
+    {
+      "name": "regular-saas-positive",
+      "path": "resources/fiscal/scenarios/catalog-reference-2026.10.16-101-draft1/regular-saas-positive.json",
+      "status": "VALID",
+      "reason": null,
+      "original_path": "resources/fiscal/scenarios/consumption-phase4b/regular-saas-2026.json",
+      "original_sha256": "04a9b2f7782a55621a9fcbdfa0fb15e7d8f5bc2797c6c80336c378b881e01019",
+      "original_facts_sha256": "b9d3f778f2b73950dbf7003a129e2dd228dc004e2c897f16c987268f0eb4933f"
+    }
+  ],
+  "new_business_facts": false,
+  "full_suite_complete": false,
+  "production_ready": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_SUSPENDED_INPUT_EXTINCTION_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "1156c7e8fe199b205cdc89e4310e478de0bdab69258bc88b26120d88180e6ee7"
+}

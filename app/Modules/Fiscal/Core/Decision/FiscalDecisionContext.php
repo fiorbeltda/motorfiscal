@@ -17,5 +17,7 @@ final readonly class FiscalDecisionContext
         public DateTimeImmutable $knowledgeAt,
         public string $ruleBundleId,
         public array $catalogVersions = [],
-    ) {}
+    ) {
+        $this->facts->seal();
+    }
 }

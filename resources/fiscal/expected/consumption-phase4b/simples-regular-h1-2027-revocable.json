@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SIMPLES_OPTION_REVOCATION_WINDOW_OPEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "f25bca255aac1e680645ac2df7a74bc066ad30a0b2a50a86f56be4eed93c4186"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_IMPORT_CREDIT_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.import_credit_fiscal_document_id"
+  ],
+  "decision_hash": "8efed9f30b4b3baf569b2b17e2fefa96933fd54e9a5988742cc7284d9bad3b44"
+}

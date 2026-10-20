@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:benefit_not_suspended"
+  ],
+  "missing_facts": [],
+  "decision_hash": "dd5d48c1653599a0d15b2d13ee79be25a92c1a6c8b7e74464e5f97a5faf9ed67"
+}

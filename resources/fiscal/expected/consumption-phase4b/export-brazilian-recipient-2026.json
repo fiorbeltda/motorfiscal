@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_EXPORT_FOREIGN_ROLES_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "647e07036f19d1dafd9a02bf2d843a64067176bd4aa71151fe9c8ca8fc164e79"
+}

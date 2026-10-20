@@ -1,0 +1,25 @@
+{
+  "scenario_id": "construction-valid",
+  "competence_date": "2026-09-15",
+  "knowledge_at": "2026-09-16T12:00:00-03:00",
+  "rule_bundle_id": "MVP-ISS-2026.09.16-1",
+  "catalog_versions": {"services": "2026.09.16-1", "municipal_parameters": "2026.09.16-1"},
+  "facts": {
+    "service.canonical_id": "CONSTRUCTION_CONTRACT",
+    "provider.municipality_ibge": "3550308",
+    "customer.person_type": "PJ",
+    "operation.construction_municipality_ibge": "3552205",
+    "operation.construction_work_id": "CNO-TEST-0001",
+    "operation.construction_object_type": "WORK",
+    "operation.construction_contract_type": "PARTIAL_CONTRACT",
+    "operation.amount": "10000.00",
+    "operation.allowed_deduction": "1250.25",
+    "operation.materials_amount": "1250.25",
+    "operation.deduction_evidence_id": "EVIDENCE-TEST-0001",
+    "operation.deduction_municipal_rule_id": "MUNICIPAL-RULE-FIXTURE-0001",
+    "operation.materials_produced_offsite": true,
+    "operation.materials_separate_sale": true,
+    "operation.materials_icms_document_id": "NF-ICMS-TEST-0001",
+    "operation.deduction_validation_status": "APPROVED"
+  }
+}

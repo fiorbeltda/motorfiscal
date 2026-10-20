@@ -1,0 +1,11 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_EXPORT_CONSUMPTION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.foreign_consumption_proven",
+    "rtc.export_evidence_id"
+  ],
+  "decision_hash": "69072860fd06cb0e3cab29a66a87ecb144a1792830bd573382ea930e4f049382"
+}

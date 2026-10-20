@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_IMPORT_DOCUMENT_OBLIGATION_NOT_PROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "c048fdfa6bf3a449b2b849ef3f9bf652ee6c6cf4aa9890e283d56aad76a50320"
+}

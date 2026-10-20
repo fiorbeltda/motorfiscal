@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_PERIOD_LEDGER_INCOMPLETE"
+  ],
+  "missing_facts": [
+    "rtc.supplier_credit_period"
+  ],
+  "decision_hash": "8e811403d51074a973d5e18097ec86d80dbbc856e9c0d59bee1f638dc7aa80c3"
+}

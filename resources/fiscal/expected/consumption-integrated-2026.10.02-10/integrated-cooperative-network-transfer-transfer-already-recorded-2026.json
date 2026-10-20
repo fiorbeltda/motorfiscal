@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_TRANSFER_ALREADY_RECORDED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "0e2319d5ef21d5a7279a6a974a265dd74d5d2290a7d655c82dc2ef1e93026fd7"
+}

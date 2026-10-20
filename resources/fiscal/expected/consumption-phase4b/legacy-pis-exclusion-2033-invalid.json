@@ -1,0 +1,10 @@
+{
+    "status":  "INVALID",
+    "reason_codes":  [
+                         "RTC_LEGACY_TAX_EXCLUSION_INVALID"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "6a693cfb135f97e254a128b763141909aacbf3f9d36eec0df92626b9d000fcdb"
+}

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Modules\Fiscal\Core\Rules;
 
+use App\Modules\Fiscal\Core\Precedence\RuleRelation;
 use App\Modules\Fiscal\Core\Shared\LocalDate;
 
 final readonly class CompiledRule
@@ -13,6 +14,7 @@ final readonly class CompiledRule
      * @param  list<RuleEffect>  $effects
      * @param  list<string>  $requiredFacts
      * @param  list<string>  $reasonCodes
+     * @param  list<RuleRelation>  $relations
      */
     public function __construct(
         public string $id,
@@ -24,7 +26,9 @@ final readonly class CompiledRule
         public array $effects,
         public array $requiredFacts,
         public string $sourceId,
+        public string $sourceVersion,
         public array $reasonCodes,
+        public array $relations = [],
     ) {}
 
     public function isEffectiveOn(LocalDate $date): bool

@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_CROSS_YEAR_LEGACY_TAX_RULE_NOT_MATERIALIZED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "b79217344fac13fbdd5b0827f5488d13f41bf6f57be74c92c5b34520d7578c68"
+}

@@ -1,0 +1,207 @@
+{
+  "created_at": "2026-10-19T11:45:40.454815+00:00",
+  "bundle": "bundles/consumption-phase4b-2026.10.19-104-draft1.json",
+  "fixture_sha256": "cbb185efc0cac2eecdfb636c46e8f859721a0b69dbbe715ed1f06c0272169a4a",
+  "synthetic_local_mappings_only": true,
+  "cases": [
+    {
+      "name": "local-pair",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/local-pair.json",
+      "sha256": "e53785018f80a1c8717379c8df49759580a4c7df2aeb28a4dfbff86d588685f2",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "identity_status": "LOCAL_DPS_IDENTITY_PAIR_BOUND",
+      "identity_reason": "DPS103_COMPOSITION_AND_LOCAL_MAPPING_ONLY",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": [
+        "DPS355030821111111100019100001000000000000001",
+        "DPS355030821111111100019100001000000000000002"
+      ]
+    },
+    {
+      "name": "reversed-roles",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/reversed-roles.json",
+      "sha256": "9a33667672de50d9ddab6c6427c78ca9bc4a516714c5fd3895ab5d25e614df1e",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "identity_status": "LOCAL_DPS_IDENTITY_PAIR_BOUND",
+      "identity_reason": "DPS103_COMPOSITION_AND_LOCAL_MAPPING_ONLY",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": [
+        "DPS355030821111111100019100001000000000000001",
+        "DPS355030821111111100019100001000000000000002"
+      ]
+    },
+    {
+      "name": "good-series-1",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/good-series-1.json",
+      "sha256": "2f80c85d49d52f30bd12ff31a44e104c62db184c4eb6d2da9e9a74561deac63b",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "identity_status": "LOCAL_DPS_IDENTITY_PAIR_BOUND",
+      "identity_reason": "DPS103_COMPOSITION_AND_LOCAL_MAPPING_ONLY",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": [
+        "DPS355030821111111100019100001000000000000001",
+        "DPS355030821111111100019100001000000000000002"
+      ]
+    },
+    {
+      "name": "good-series-00001",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/good-series-00001.json",
+      "sha256": "a20859b0bbc83b62c9af9f4285755b525ea0b18d74b260ea634c7477604bc94e",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "identity_status": "LOCAL_DPS_IDENTITY_PAIR_BOUND",
+      "identity_reason": "DPS103_COMPOSITION_AND_LOCAL_MAPPING_ONLY",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": [
+        "DPS355030821111111100019100001000000000000001",
+        "DPS355030821111111100019100001000000000000002"
+      ]
+    },
+    {
+      "name": "good-series-49999",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/good-series-49999.json",
+      "sha256": "dc11571a68e2525c17ff543573ff21cbc919c146df286484aec2c15cbbbd5421",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "identity_status": "LOCAL_DPS_IDENTITY_PAIR_BOUND",
+      "identity_reason": "DPS103_COMPOSITION_AND_LOCAL_MAPPING_ONLY",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": [
+        "DPS355030821111111100019149999000000000000001",
+        "DPS355030821111111100019100001000000000000002"
+      ]
+    },
+    {
+      "name": "good-number-999999999999999",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/good-number-999999999999999.json",
+      "sha256": "f7bb92f9c49b9e6934f8d159be2328c4778fc89a7cc9b22558ddbdf81156f6ce",
+      "status": "ACTION_REQUIRED",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "identity_status": "LOCAL_DPS_IDENTITY_PAIR_BOUND",
+      "identity_reason": "DPS103_COMPOSITION_AND_LOCAL_MAPPING_ONLY",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": [
+        "DPS355030821111111100019100001999999999999999",
+        "DPS355030821111111100019100001000000000000002"
+      ]
+    },
+    {
+      "name": "missing-record",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/missing-record.json",
+      "sha256": "7f007bcffb0735a01dd07d7f35c27a1ca28c344103ab705f7908acdd7da87804",
+      "status": "ACTION_REQUIRED",
+      "reason": "DPS103_TWO_IDENTITY_RECORDS_REQUIRED",
+      "identity_status": "ACTION_REQUIRED",
+      "identity_reason": "DPS103_TWO_IDENTITY_RECORDS_REQUIRED",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "duplicate-role",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/duplicate-role.json",
+      "sha256": "8d5f7718fe360856095fea712660287568fd8d379d3a9a384b006214eab093e1",
+      "status": "INVALID",
+      "reason": "DPS103_DUPLICATE_ROLE",
+      "identity_status": "INVALID",
+      "identity_reason": "DPS103_DUPLICATE_ROLE",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "reference-sibling-swapped",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/reference-sibling-swapped.json",
+      "sha256": "85363183b3484e91d0b85acfd661e14435e213360a497c339d7b4f6b60a90411",
+      "status": "INVALID",
+      "reason": "DPS103_ORIGINAL_DOCUMENT_REFERENCE_CONFLICT",
+      "identity_status": "INVALID",
+      "identity_reason": "DPS103_ORIGINAL_DOCUMENT_REFERENCE_CONFLICT",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "identity-scope-environment",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/identity-scope-environment.json",
+      "sha256": "e3645ed3dcfa20ffd71c9b183441c0d3ccb8dc1928c97815fe93a2b0ad0f0908",
+      "status": "ACTION_REQUIRED",
+      "reason": "DPS103_EXPLICIT_LOCAL_EMITTER_CHANNEL_ENVIRONMENT_REQUIRED",
+      "identity_status": "ACTION_REQUIRED",
+      "identity_reason": "DPS103_EXPLICIT_LOCAL_EMITTER_CHANNEL_ENVIRONMENT_REQUIRED",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "identity-scope-emission_channel",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/identity-scope-emission_channel.json",
+      "sha256": "260ca66b2084e59eb6c0f9f60172f6fe521ad6ba7f4b5d8c7eee6181d57b6e13",
+      "status": "ACTION_REQUIRED",
+      "reason": "DPS103_EXPLICIT_LOCAL_EMITTER_CHANNEL_ENVIRONMENT_REQUIRED",
+      "identity_status": "ACTION_REQUIRED",
+      "identity_reason": "DPS103_EXPLICIT_LOCAL_EMITTER_CHANNEL_ENVIRONMENT_REQUIRED",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "tampered-id",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/tampered-id.json",
+      "sha256": "9a52852677c6a535c5ce5d020f7c755afa52a4fb0709bb7013052ce87c29b4cb",
+      "status": "INVALID",
+      "reason": "DPS103_ID_COMPONENTS_CONFLICT",
+      "identity_status": "INVALID",
+      "identity_reason": "DPS103_ID_COMPONENTS_CONFLICT",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "proof-source-hash",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/proof-source-hash.json",
+      "sha256": "829e01d0085b3f31aa982c556e9cfe903bafbb96a3a570fe512368afa45408a3",
+      "status": "INVALID",
+      "reason": "DPS103_MAPPING_PROOF_HASH_CONFLICT",
+      "identity_status": "INVALID",
+      "identity_reason": "DPS103_MAPPING_PROOF_HASH_CONFLICT",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "wrong-proof-operation_reference",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/wrong-proof-operation_reference.json",
+      "sha256": "0e6e0b1274523ee9427fbc4a32af8e1511f8291a1820d6a6c107146c06906f40",
+      "status": "INVALID",
+      "reason": "DPS103_MAPPING_PROOF_BINDING_CONFLICT",
+      "identity_status": "INVALID",
+      "identity_reason": "DPS103_MAPPING_PROOF_BINDING_CONFLICT",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    },
+    {
+      "name": "same-canonical-id-despite-series-padding",
+      "path": "resources/fiscal/scenarios/dps-identity-2026.10.19-104-draft1/same-canonical-id-despite-series-padding.json",
+      "sha256": "fdf4f46e7a300bcf50b86df57444bdd958aa1400cd8fba4efc65c39ed7b69261",
+      "status": "INVALID",
+      "reason": "DPS103_DISTINCT_CANONICAL_DPS_IDS_REQUIRED",
+      "identity_status": "INVALID",
+      "identity_reason": "DPS103_DISTINCT_CANONICAL_DPS_IDS_REQUIRED",
+      "original_knowledge_at": "2026-10-16T19:00:00+00:00",
+      "knowledge_at": "2026-10-19T11:45:40.108562+00:00",
+      "expected_ids": null
+    }
+  ],
+  "notes": "Original103 facts/references and identity/proof timestamps unchanged;only opt-in/mapping facts added. As-of never reduced. No fiscal document authorization or XML."
+}

@@ -1,0 +1,1118 @@
+{
+  "position": {
+    "supplier_id": "11111111000191",
+    "period": "2026-09",
+    "idTitulo": "BRFIXTDEB019",
+    "cCta": "debt000",
+    "first_acquisition": false,
+    "opening": {
+      "quantity": "1000",
+      "unit_cost": "10.00",
+      "acquisition_cost": "10000.00",
+      "book_balance": "10100.00"
+    },
+    "method": {
+      "cost_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+      "event_timing": "BEFORE_DAILY_RATE",
+      "benchmark_method": "REMAINING_POSITION_COMPOUND_WITH_REALIZED_INTEREST_RETAINED",
+      "coupon_effect": "ACCOUNTING_ONLY_NO_ACQUISITION_COST_OR_BENCHMARK_REDUCTION",
+      "normative_homologation_claimed": false
+    },
+    "operations": [],
+    "vPisCofins": "10.00",
+    "method_evidence": {
+      "qualified": true,
+      "evidence_id": "FIXTURE.DAILY.METHOD",
+      "supplier_id": "11111111000191",
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-09-30",
+      "observed_on": "2026-10-06",
+      "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+      "value": {
+        "contract": "DERE-D2101-DAILY-MEMORY-LOCAL-2026.10.06-1",
+        "method": {
+          "cost_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+          "event_timing": "BEFORE_DAILY_RATE",
+          "benchmark_method": "REMAINING_POSITION_COMPOUND_WITH_REALIZED_INTEREST_RETAINED",
+          "coupon_effect": "ACCOUNTING_ONLY_NO_ACQUISITION_COST_OR_BENCHMARK_REDUCTION",
+          "normative_homologation_claimed": false
+        }
+      },
+      "source_hash": "a4f2b0fb93ace49f6788815596bd623a757d64f0656a136c31ba48884dcfef9c"
+    },
+    "previous_position_evidence": {
+      "qualified": true,
+      "evidence_id": "FIXTURE.DAILY.PREVIOUS",
+      "supplier_id": "11111111000191",
+      "valid_from": "2026-08-31",
+      "valid_to": "2026-08-31",
+      "observed_on": "2026-10-06",
+      "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+      "value": {
+        "supplier_id": "11111111000191",
+        "idTitulo": "BRFIXTDEB019",
+        "cCta": "debt000",
+        "period": "2026-08",
+        "closing": {
+          "quantity": "1000",
+          "unit_cost": "10.00",
+          "acquisition_cost": "10000.00",
+          "book_balance": "10100.00"
+        }
+      },
+      "source_hash": "5db5249fc94bc6c292184ad8167cd65286aa71847d94ea4b9e920d4b7b326009"
+    },
+    "contract_curve": [
+      {
+        "date": "2026-09-01",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-01",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10000.00000000"
+      },
+      {
+        "date": "2026-09-02",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-02",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10005.16600000"
+      },
+      {
+        "date": "2026-09-03",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-03",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10010.33466876"
+      },
+      {
+        "date": "2026-09-04",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-04",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10015.50600765"
+      },
+      {
+        "date": "2026-09-05",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-05",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10020.68001805"
+      },
+      {
+        "date": "2026-09-06",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-06",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10020.68001805"
+      },
+      {
+        "date": "2026-09-07",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-07",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10020.68001805"
+      },
+      {
+        "date": "2026-09-08",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-08",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10020.68001805"
+      },
+      {
+        "date": "2026-09-09",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-09",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10025.85670135"
+      },
+      {
+        "date": "2026-09-10",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-10",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10031.03605892"
+      },
+      {
+        "date": "2026-09-11",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-11",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10036.21809215"
+      },
+      {
+        "date": "2026-09-12",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-12",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10041.40280242"
+      },
+      {
+        "date": "2026-09-13",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-13",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10041.40280242"
+      },
+      {
+        "date": "2026-09-14",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-14",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10041.40280242"
+      },
+      {
+        "date": "2026-09-15",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-15",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10046.59019111"
+      },
+      {
+        "date": "2026-09-16",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-16",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10051.78025960"
+      },
+      {
+        "date": "2026-09-17",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-17",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10056.97300928"
+      },
+      {
+        "date": "2026-09-18",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-18",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10062.08074473"
+      },
+      {
+        "date": "2026-09-19",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-19",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10067.19107430"
+      },
+      {
+        "date": "2026-09-20",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-20",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10067.19107430"
+      },
+      {
+        "date": "2026-09-21",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-21",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10067.19107430"
+      },
+      {
+        "date": "2026-09-22",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-22",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10072.30399930"
+      },
+      {
+        "date": "2026-09-23",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-23",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10077.41952106"
+      },
+      {
+        "date": "2026-09-24",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-24",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10082.53764089"
+      },
+      {
+        "date": "2026-09-25",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-25",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10087.65836011"
+      },
+      {
+        "date": "2026-09-26",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-26",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10092.78168004"
+      },
+      {
+        "date": "2026-09-27",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-27",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10092.78168004"
+      },
+      {
+        "date": "2026-09-28",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-28",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10092.78168004"
+      },
+      {
+        "date": "2026-09-29",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-29",
+        "appropriation": "0.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10100.00000000",
+        "claimed_selic_basis": "10097.90760200"
+      },
+      {
+        "date": "2026-09-30",
+        "contract_curve_id": "FIXTURE.CURVE.2026-09-30",
+        "appropriation": "150.00000000",
+        "claimed_quantity": "1000.00000000",
+        "claimed_acquisition_cost": "10000.00000000",
+        "claimed_unit_cost": "10.00000000",
+        "claimed_book_balance": "10250.00000000",
+        "claimed_selic_basis": "10103.03612731"
+      }
+    ],
+    "declared_monthly": {
+      "vSaldoContIni": "10100.00",
+      "vEntradas": "0.00",
+      "vSaidas": "0.00",
+      "vJurosRec": "0.00",
+      "vVarMensal": "150.00",
+      "vSaldoContFin": "10250.00",
+      "vSelic": "108.17",
+      "vPisCofins": "10.00",
+      "vApur": "98.17"
+    },
+    "memory_evidence": {
+      "qualified": true,
+      "evidence_id": "FIXTURE.DAILY.COMPLETE",
+      "supplier_id": "11111111000191",
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-09-30",
+      "observed_on": "2026-10-06",
+      "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+      "value": {
+        "supplier_id": "11111111000191",
+        "period": "2026-09",
+        "idTitulo": "BRFIXTDEB019",
+        "cCta": "debt000",
+        "first_acquisition": false,
+        "opening": {
+          "quantity": "1000",
+          "unit_cost": "10.00",
+          "acquisition_cost": "10000.00",
+          "book_balance": "10100.00"
+        },
+        "method": {
+          "cost_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+          "event_timing": "BEFORE_DAILY_RATE",
+          "benchmark_method": "REMAINING_POSITION_COMPOUND_WITH_REALIZED_INTEREST_RETAINED",
+          "coupon_effect": "ACCOUNTING_ONLY_NO_ACQUISITION_COST_OR_BENCHMARK_REDUCTION",
+          "normative_homologation_claimed": false
+        },
+        "operations": [],
+        "vPisCofins": "10.00",
+        "method_evidence": {
+          "qualified": true,
+          "evidence_id": "FIXTURE.DAILY.METHOD",
+          "supplier_id": "11111111000191",
+          "valid_from": "2026-09-01",
+          "valid_to": "2026-09-30",
+          "observed_on": "2026-10-06",
+          "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+          "value": {
+            "contract": "DERE-D2101-DAILY-MEMORY-LOCAL-2026.10.06-1",
+            "method": {
+              "cost_method": "WEIGHTED_AVERAGE_ACQUISITION_COST",
+              "event_timing": "BEFORE_DAILY_RATE",
+              "benchmark_method": "REMAINING_POSITION_COMPOUND_WITH_REALIZED_INTEREST_RETAINED",
+              "coupon_effect": "ACCOUNTING_ONLY_NO_ACQUISITION_COST_OR_BENCHMARK_REDUCTION",
+              "normative_homologation_claimed": false
+            }
+          },
+          "source_hash": "a4f2b0fb93ace49f6788815596bd623a757d64f0656a136c31ba48884dcfef9c"
+        },
+        "previous_position_evidence": {
+          "qualified": true,
+          "evidence_id": "FIXTURE.DAILY.PREVIOUS",
+          "supplier_id": "11111111000191",
+          "valid_from": "2026-08-31",
+          "valid_to": "2026-08-31",
+          "observed_on": "2026-10-06",
+          "scope": "SYNTHETIC_INDEPENDENT_DAILY_POSITION_CURVE_AND_METHOD",
+          "value": {
+            "supplier_id": "11111111000191",
+            "idTitulo": "BRFIXTDEB019",
+            "cCta": "debt000",
+            "period": "2026-08",
+            "closing": {
+              "quantity": "1000",
+              "unit_cost": "10.00",
+              "acquisition_cost": "10000.00",
+              "book_balance": "10100.00"
+            }
+          },
+          "source_hash": "5db5249fc94bc6c292184ad8167cd65286aa71847d94ea4b9e920d4b7b326009"
+        },
+        "contract_curve": [
+          {
+            "date": "2026-09-01",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-01",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10000.00000000"
+          },
+          {
+            "date": "2026-09-02",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-02",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10005.16600000"
+          },
+          {
+            "date": "2026-09-03",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-03",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10010.33466876"
+          },
+          {
+            "date": "2026-09-04",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-04",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10015.50600765"
+          },
+          {
+            "date": "2026-09-05",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-05",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10020.68001805"
+          },
+          {
+            "date": "2026-09-06",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-06",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10020.68001805"
+          },
+          {
+            "date": "2026-09-07",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-07",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10020.68001805"
+          },
+          {
+            "date": "2026-09-08",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-08",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10020.68001805"
+          },
+          {
+            "date": "2026-09-09",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-09",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10025.85670135"
+          },
+          {
+            "date": "2026-09-10",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-10",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10031.03605892"
+          },
+          {
+            "date": "2026-09-11",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-11",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10036.21809215"
+          },
+          {
+            "date": "2026-09-12",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-12",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10041.40280242"
+          },
+          {
+            "date": "2026-09-13",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-13",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10041.40280242"
+          },
+          {
+            "date": "2026-09-14",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-14",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10041.40280242"
+          },
+          {
+            "date": "2026-09-15",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-15",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10046.59019111"
+          },
+          {
+            "date": "2026-09-16",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-16",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10051.78025960"
+          },
+          {
+            "date": "2026-09-17",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-17",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10056.97300928"
+          },
+          {
+            "date": "2026-09-18",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-18",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10062.08074473"
+          },
+          {
+            "date": "2026-09-19",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-19",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10067.19107430"
+          },
+          {
+            "date": "2026-09-20",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-20",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10067.19107430"
+          },
+          {
+            "date": "2026-09-21",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-21",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10067.19107430"
+          },
+          {
+            "date": "2026-09-22",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-22",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10072.30399930"
+          },
+          {
+            "date": "2026-09-23",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-23",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10077.41952106"
+          },
+          {
+            "date": "2026-09-24",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-24",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10082.53764089"
+          },
+          {
+            "date": "2026-09-25",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-25",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10087.65836011"
+          },
+          {
+            "date": "2026-09-26",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-26",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10092.78168004"
+          },
+          {
+            "date": "2026-09-27",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-27",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10092.78168004"
+          },
+          {
+            "date": "2026-09-28",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-28",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10092.78168004"
+          },
+          {
+            "date": "2026-09-29",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-29",
+            "appropriation": "0.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10100.00000000",
+            "claimed_selic_basis": "10097.90760200"
+          },
+          {
+            "date": "2026-09-30",
+            "contract_curve_id": "FIXTURE.CURVE.2026-09-30",
+            "appropriation": "150.00000000",
+            "claimed_quantity": "1000.00000000",
+            "claimed_acquisition_cost": "10000.00000000",
+            "claimed_unit_cost": "10.00000000",
+            "claimed_book_balance": "10250.00000000",
+            "claimed_selic_basis": "10103.03612731"
+          }
+        ],
+        "declared_monthly": {
+          "vSaldoContIni": "10100.00",
+          "vEntradas": "0.00",
+          "vSaidas": "0.00",
+          "vJurosRec": "0.00",
+          "vVarMensal": "150.00",
+          "vSaldoContFin": "10250.00",
+          "vSelic": "108.17",
+          "vPisCofins": "10.00",
+          "vApur": "98.17"
+        }
+      },
+      "source_hash": "bcabdf9d271344e4bccfa036ddce4e48a5546e75c139dab139910ec6c7e5fb0d"
+    }
+  },
+  "expectation": {
+    "status": "RESOLVED",
+    "oracle": {
+      "daily_memory": [
+        {
+          "date": "2026-09-01",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10000.00000000",
+          "daily_selic_interest": "5.16600000",
+          "accumulated_selic_interest": "5.16600000",
+          "remaining_benchmark_balance": "10005.16600000"
+        },
+        {
+          "date": "2026-09-02",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10005.16600000",
+          "daily_selic_interest": "5.16866876",
+          "accumulated_selic_interest": "10.33466876",
+          "remaining_benchmark_balance": "10010.33466876"
+        },
+        {
+          "date": "2026-09-03",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10010.33466876",
+          "daily_selic_interest": "5.17133889",
+          "accumulated_selic_interest": "15.50600765",
+          "remaining_benchmark_balance": "10015.50600765"
+        },
+        {
+          "date": "2026-09-04",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10015.50600765",
+          "daily_selic_interest": "5.17401040",
+          "accumulated_selic_interest": "20.68001805",
+          "remaining_benchmark_balance": "10020.68001805"
+        },
+        {
+          "date": "2026-09-05",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10020.68001805",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "20.68001805",
+          "remaining_benchmark_balance": "10020.68001805"
+        },
+        {
+          "date": "2026-09-06",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10020.68001805",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "20.68001805",
+          "remaining_benchmark_balance": "10020.68001805"
+        },
+        {
+          "date": "2026-09-07",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10020.68001805",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "20.68001805",
+          "remaining_benchmark_balance": "10020.68001805"
+        },
+        {
+          "date": "2026-09-08",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10020.68001805",
+          "daily_selic_interest": "5.17668330",
+          "accumulated_selic_interest": "25.85670135",
+          "remaining_benchmark_balance": "10025.85670135"
+        },
+        {
+          "date": "2026-09-09",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10025.85670135",
+          "daily_selic_interest": "5.17935757",
+          "accumulated_selic_interest": "31.03605892",
+          "remaining_benchmark_balance": "10031.03605892"
+        },
+        {
+          "date": "2026-09-10",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10031.03605892",
+          "daily_selic_interest": "5.18203323",
+          "accumulated_selic_interest": "36.21809215",
+          "remaining_benchmark_balance": "10036.21809215"
+        },
+        {
+          "date": "2026-09-11",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10036.21809215",
+          "daily_selic_interest": "5.18471027",
+          "accumulated_selic_interest": "41.40280242",
+          "remaining_benchmark_balance": "10041.40280242"
+        },
+        {
+          "date": "2026-09-12",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10041.40280242",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "41.40280242",
+          "remaining_benchmark_balance": "10041.40280242"
+        },
+        {
+          "date": "2026-09-13",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10041.40280242",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "41.40280242",
+          "remaining_benchmark_balance": "10041.40280242"
+        },
+        {
+          "date": "2026-09-14",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10041.40280242",
+          "daily_selic_interest": "5.18738869",
+          "accumulated_selic_interest": "46.59019111",
+          "remaining_benchmark_balance": "10046.59019111"
+        },
+        {
+          "date": "2026-09-15",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10046.59019111",
+          "daily_selic_interest": "5.19006849",
+          "accumulated_selic_interest": "51.78025960",
+          "remaining_benchmark_balance": "10051.78025960"
+        },
+        {
+          "date": "2026-09-16",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10051.78025960",
+          "daily_selic_interest": "5.19274968",
+          "accumulated_selic_interest": "56.97300928",
+          "remaining_benchmark_balance": "10056.97300928"
+        },
+        {
+          "date": "2026-09-17",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10056.97300928",
+          "daily_selic_interest": "5.10773545",
+          "accumulated_selic_interest": "62.08074473",
+          "remaining_benchmark_balance": "10062.08074473"
+        },
+        {
+          "date": "2026-09-18",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10062.08074473",
+          "daily_selic_interest": "5.11032957",
+          "accumulated_selic_interest": "67.19107430",
+          "remaining_benchmark_balance": "10067.19107430"
+        },
+        {
+          "date": "2026-09-19",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10067.19107430",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "67.19107430",
+          "remaining_benchmark_balance": "10067.19107430"
+        },
+        {
+          "date": "2026-09-20",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10067.19107430",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "67.19107430",
+          "remaining_benchmark_balance": "10067.19107430"
+        },
+        {
+          "date": "2026-09-21",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10067.19107430",
+          "daily_selic_interest": "5.11292500",
+          "accumulated_selic_interest": "72.30399930",
+          "remaining_benchmark_balance": "10072.30399930"
+        },
+        {
+          "date": "2026-09-22",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10072.30399930",
+          "daily_selic_interest": "5.11552176",
+          "accumulated_selic_interest": "77.41952106",
+          "remaining_benchmark_balance": "10077.41952106"
+        },
+        {
+          "date": "2026-09-23",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10077.41952106",
+          "daily_selic_interest": "5.11811983",
+          "accumulated_selic_interest": "82.53764089",
+          "remaining_benchmark_balance": "10082.53764089"
+        },
+        {
+          "date": "2026-09-24",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10082.53764089",
+          "daily_selic_interest": "5.12071922",
+          "accumulated_selic_interest": "87.65836011",
+          "remaining_benchmark_balance": "10087.65836011"
+        },
+        {
+          "date": "2026-09-25",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10087.65836011",
+          "daily_selic_interest": "5.12331993",
+          "accumulated_selic_interest": "92.78168004",
+          "remaining_benchmark_balance": "10092.78168004"
+        },
+        {
+          "date": "2026-09-26",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10092.78168004",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "92.78168004",
+          "remaining_benchmark_balance": "10092.78168004"
+        },
+        {
+          "date": "2026-09-27",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10092.78168004",
+          "daily_selic_interest": "0.00000000",
+          "accumulated_selic_interest": "92.78168004",
+          "remaining_benchmark_balance": "10092.78168004"
+        },
+        {
+          "date": "2026-09-28",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10092.78168004",
+          "daily_selic_interest": "5.12592196",
+          "accumulated_selic_interest": "97.90760200",
+          "remaining_benchmark_balance": "10097.90760200"
+        },
+        {
+          "date": "2026-09-29",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10100.00000000",
+          "selic_basis": "10097.90760200",
+          "daily_selic_interest": "5.12852531",
+          "accumulated_selic_interest": "103.03612731",
+          "remaining_benchmark_balance": "10103.03612731"
+        },
+        {
+          "date": "2026-09-30",
+          "quantity": "1000.00000000",
+          "acquisition_cost": "10000.00000000",
+          "unit_cost": "10.00000000",
+          "book_balance": "10250.00000000",
+          "selic_basis": "10103.03612731",
+          "daily_selic_interest": "5.13112999",
+          "accumulated_selic_interest": "108.16725730",
+          "remaining_benchmark_balance": "10108.16725730"
+        }
+      ],
+      "closing_quantity": "1000.00000000",
+      "closing_acquisition_cost": "10000.00000000",
+      "closing_unit_cost": "10.00000000",
+      "realized_sale_gain": "0.00",
+      "monthly": {
+        "vSaldoContIni": "10100.00",
+        "vEntradas": "0.00",
+        "vSaidas": "0.00",
+        "vJurosRec": "0.00",
+        "vVarMensal": "150.00",
+        "vSaldoContFin": "10250.00",
+        "vSelic": "108.17",
+        "vPisCofins": "10.00",
+        "vApur": "98.17"
+      }
+    }
+  }
+}

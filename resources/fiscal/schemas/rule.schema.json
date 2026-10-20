@@ -4,7 +4,7 @@
   "title": "Fiscal Rule",
   "type": "object",
   "additionalProperties": false,
-  "required": ["rule_id", "version", "kind", "effective_from", "when", "effects", "source_id", "reason_codes"],
+  "required": ["rule_id", "version", "kind", "effective_from", "when", "effects", "source_id", "source_version", "reason_codes"],
   "properties": {
     "rule_id": {"type": "string", "pattern": "^[A-Z0-9_.-]+$"},
     "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
@@ -19,11 +19,26 @@
         "type": "object",
         "required": ["type"],
         "properties": {
-          "type": {"enum": ["SELECT_STRATEGY", "SET_DECISION_VALUE", "ADD_CANDIDATE", "EXCLUDE_CANDIDATE", "APPLY_TREATMENT", "SET_RESPONSIBLE_PARTY", "SET_TEMPORAL_ANCHOR", "REQUIRE_DETAIL_GROUP", "ADD_OBLIGATION_IMPACT", "ADD_WARNING", "REQUEST_MANUAL_REVIEW", "SELECT_FORMULA"]}
+          "type": {"enum": ["SELECT_STRATEGY", "SET_DECISION_VALUE", "REQUIRE_DETAIL_GROUP", "ADD_WARNING", "REQUEST_MANUAL_REVIEW", "SELECT_FORMULA"]}
         }
       }
     },
     "source_id": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "precedence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "subordinate_rule_id", "source_id", "source_version"],
+        "properties": {
+          "type": {"enum": ["OVERRIDES", "EXCEPTION_OF", "SUPERSEDES"]},
+          "subordinate_rule_id": {"type": "string", "minLength": 1},
+          "source_id": {"type": "string", "minLength": 1},
+          "source_version": {"type": "string", "minLength": 1}
+        }
+      }
+    },
     "reason_codes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
   },
   "$defs": {
@@ -49,4 +64,3 @@
     }
   }
 }
-

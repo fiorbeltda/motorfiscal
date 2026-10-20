@@ -18,4 +18,16 @@ enum EffectType: string
     case ADD_WARNING = 'ADD_WARNING';
     case REQUEST_MANUAL_REVIEW = 'REQUEST_MANUAL_REVIEW';
     case SELECT_FORMULA = 'SELECT_FORMULA';
+
+    public function isSupportedByDecisionEngine(): bool
+    {
+        return in_array($this, [
+            self::SELECT_STRATEGY,
+            self::SET_DECISION_VALUE,
+            self::REQUIRE_DETAIL_GROUP,
+            self::ADD_WARNING,
+            self::REQUEST_MANUAL_REVIEW,
+            self::SELECT_FORMULA,
+        ], true);
+    }
 }

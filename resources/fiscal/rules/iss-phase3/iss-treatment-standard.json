@@ -1,0 +1,12 @@
+{
+  "rule_id": "ISS.TREATMENT.PHASE3.STANDARD",
+  "version": "2.0.0",
+  "kind": "TREATMENT",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.ctribnac_code", "operator": "IN_CATALOG", "catalog": "ISS_SERVICES.CTRIBNAC"},
+  "effects": [{"type": "SET_DECISION_VALUE", "path": "iss.treatment", "value": "STANDARD"}],
+  "source_id": "SOURCE.MVP.TREATMENT.DEFAULT",
+  "source_version": "1.0.0",
+  "reason_codes": ["ISS_STANDARD_TREATMENT_SELECTED"]
+}

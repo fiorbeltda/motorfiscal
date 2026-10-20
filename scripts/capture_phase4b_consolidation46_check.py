@@ -1,0 +1,3 @@
+from pathlib import Path
+import subprocess,json,hashlib,sys
+r=Path('.');e=r/'storage/app/phase4b-realization-consolidated-successor46-draft-20261009-28';name=sys.argv[1];cmd=['docker','compose','exec','-T','app','php','-d','memory_limit=512M']+sys.argv[2:];p=e/(name+'.log');assert not p.exists();result=subprocess.run(cmd,capture_output=True,encoding='utf-8');p.write_text(result.stdout+result.stderr,encoding='utf-8');(e/(name+'.json')).write_text(json.dumps({'command':cmd,'exit_code':result.returncode,'log_sha256':hashlib.sha256(p.read_bytes()).hexdigest()},indent=2)+'\n',encoding='utf-8');print(result.stdout+result.stderr);sys.exit(result.returncode)

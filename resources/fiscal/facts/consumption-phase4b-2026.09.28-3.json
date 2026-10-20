@@ -1,0 +1,1624 @@
+[
+  {
+    "key": "provider.tax_regime",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "LUCRO_PRESUMIDO",
+      "LUCRO_REAL"
+    ]
+  },
+  {
+    "key": "provider.person_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PRIVATE_LEGAL_ENTITY",
+      "INDIVIDUAL",
+      "FOREIGN_LEGAL_ENTITY",
+      "COOPERATIVE"
+    ]
+  },
+  {
+    "key": "provider.activity_start_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "provider.simples_iss_fixed_monthly",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.simples_rate_informed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.simples_effective_iss_rate",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "provider.simples_annex",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "ANNEX_I",
+      "ANNEX_II",
+      "ANNEX_III",
+      "ANNEX_IV",
+      "ANNEX_V",
+      "SIMEI"
+    ]
+  },
+  {
+    "key": "provider.revenue_is_own",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.simples_declaration_received",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.cprb_applicable",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.social_security_immunity_qualified",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.has_employees",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.previous_month_gross_revenue",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "provider.favored_tax_jurisdiction",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "provider.foreign_tax_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "provider.municipality_ibge",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "customer.municipality_ibge",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "customer.person_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PF",
+      "PJ",
+      "PJ_IMMUNE",
+      "PJ_EXEMPT",
+      "PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "key": "intermediary.person_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PF",
+      "PJ",
+      "PJ_IMMUNE",
+      "PJ_EXEMPT",
+      "PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "key": "payer.person_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PRIVATE_LEGAL_ENTITY",
+      "COOPERATIVE",
+      "INDIVIDUAL",
+      "FEDERAL_PUBLIC_ADMINISTRATION",
+      "STATE_PUBLIC_ADMINISTRATION",
+      "DISTRICT_PUBLIC_ADMINISTRATION",
+      "MUNICIPAL_PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "key": "payer.tax_regime",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "LUCRO_PRESUMIDO",
+      "LUCRO_REAL",
+      "PUBLIC_ENTITY",
+      "NOT_APPLICABLE"
+    ]
+  },
+  {
+    "key": "payer.siafi_electronic_collection",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.expenditure_liquidation_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "service.canonical_id",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^[A-Z0-9_]+$/"
+  },
+  {
+    "key": "service.lc116_code",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{2}\\.\\d{2}$/"
+  },
+  {
+    "key": "service.ctribnac_code",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{6}$/"
+  },
+  {
+    "key": "operation.service_origin",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "DOMESTIC",
+      "FOREIGN"
+    ]
+  },
+  {
+    "key": "operation.issuer_role",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PROVIDER",
+      "CUSTOMER",
+      "INTERMEDIARY"
+    ]
+  },
+  {
+    "key": "operation.responsible_role",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CUSTOMER",
+      "INTERMEDIARY"
+    ]
+  },
+  {
+    "key": "operation.illegal_below_minimum_tax_burden",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "operation.card_arrangement_operation",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "operation.intermediary_municipality_ibge",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "operation.amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "operation.execution_municipality_ibge",
+    "type": "CODE",
+    "material": false,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "operation.event_municipality_ibge",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "operation.event_activity_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "operation.construction_municipality_ibge",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "operation.construction_work_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "operation.construction_object_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "WORK",
+      "SERVICE"
+    ]
+  },
+  {
+    "key": "operation.construction_contract_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "DIRECT_ADMINISTRATION",
+      "TOTAL_CONTRACT",
+      "PARTIAL_CONTRACT",
+      "SUBCONTRACT",
+      "ISOLATED_SERVICE"
+    ]
+  },
+  {
+    "key": "operation.materials_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "operation.deduction_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "operation.deduction_municipal_rule_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "operation.materials_produced_offsite",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "operation.materials_separate_sale",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "operation.materials_icms_document_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "operation.deduction_validation_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "APPROVED",
+      "REJECTED",
+      "REVIEW_REQUIRED"
+    ]
+  },
+  {
+    "key": "operation.allowed_deduction",
+    "type": "DECIMAL",
+    "material": false
+  },
+  {
+    "key": "operation.withholding_performed",
+    "type": "BOOLEAN",
+    "material": false
+  },
+  {
+    "key": "resolved.iss.location_strategy",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PROVIDER_ESTABLISHMENT",
+      "SERVICE_EXECUTION_LOCATION",
+      "EVENT_LOCATION",
+      "CONSTRUCTION_WORK_LOCATION",
+      "CUSTOMER_ESTABLISHMENT",
+      "INTERMEDIARY_ESTABLISHMENT",
+      "IMPORT_CUSTOMER_LOCATION"
+    ]
+  },
+  {
+    "key": "federal.evaluate_withholdings",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "federal.service_category",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CLEANING",
+      "CONSERVATION",
+      "MAINTENANCE",
+      "SECURITY",
+      "SURVEILLANCE",
+      "VALUE_TRANSPORT",
+      "LABOR_LEASING",
+      "CREDIT_ADVISORY",
+      "MARKET_ADVISORY",
+      "CREDIT_MANAGEMENT",
+      "RISK_SELECTION",
+      "ACCOUNTS_PAYABLE_MANAGEMENT",
+      "ACCOUNTS_RECEIVABLE_MANAGEMENT",
+      "PROFESSIONAL_SERVICE",
+      "COMMISSION",
+      "BROKERAGE",
+      "ADVERTISING",
+      "COOPERATIVE_PERSONAL_SERVICE",
+      "SOFTWARE_PROGRAMMING",
+      "SOFTWARE_LICENSE_ONLY",
+      "OTHER",
+      "MIXED",
+      "UNKNOWN"
+    ]
+  },
+  {
+    "key": "federal.irrf_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "APPLICABLE",
+      "EXEMPT",
+      "IMMUNE",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "key": "federal.irrf_exception_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "federal.pis_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "key": "federal.cofins_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "key": "federal.csll_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "key": "federal.pis_exception_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "federal.cofins_exception_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "federal.csll_exception_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "federal.irrf_taxable_base",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "federal.irrf_collection_mode",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PAYER_WITHHOLDS",
+      "BENEFICIARY_SELF_WITHHOLDS"
+    ]
+  },
+  {
+    "key": "federal.pf_monthly_taxable_income",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "federal.pf_monthly_taxable_base",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "federal.pf_service_relationship",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "EMPLOYMENT_OR_WORK_RELATIONSHIP",
+      "NO_WORK_RELATIONSHIP"
+    ]
+  },
+  {
+    "key": "federal.foreign_income_category",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "GENERAL_SERVICE",
+      "TECHNICAL_OR_ADMINISTRATIVE_ASSISTANCE",
+      "SOFTWARE_CUSTOM_DEVELOPMENT",
+      "SOFTWARE_LICENSE_ROYALTY"
+    ]
+  },
+  {
+    "key": "federal.foreign_taxable_base",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "federal.foreign_revenue_code",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{4}(?:-\\d{2})?$/"
+  },
+  {
+    "key": "federal.foreign_treaty_applicable",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "federal.foreign_treaty_validated",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "federal.foreign_treaty_rate",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "federal.foreign_treaty_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "payment.occurred",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "payment.date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "payment.accounting_credit_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "payment.remittance_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "payment.delivery_or_employment_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "payment.gross_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "invoice.issue_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "invoice.gross_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "inss.service_group",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "ARTICLE_111",
+      "ARTICLE_112",
+      "OUTSIDE_EXHAUSTIVE_LIST"
+    ]
+  },
+  {
+    "key": "inss.service_category",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^[A-Z0-9_]+$/"
+  },
+  {
+    "key": "inss.execution_mode",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "LABOR_ASSIGNMENT",
+      "CONTRACT_FOR_RESULT",
+      "TOTAL_CONSTRUCTION",
+      "PARTIAL_CONSTRUCTION",
+      "SUBCONTRACT"
+    ]
+  },
+  {
+    "key": "labor.work_location",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CONTRACTING_PARTY_PREMISES",
+      "THIRD_PARTY_PREMISES_INDICATED_BY_CONTRACTOR",
+      "PROVIDER_PREMISES",
+      "REMOTE",
+      "OTHER"
+    ]
+  },
+  {
+    "key": "labor.continuous_need",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "labor.workers_at_disposal",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.material_equipment_profile",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "NONE",
+      "VALUES_IN_CONTRACT_AND_INVOICE",
+      "CONTRACT_WITHOUT_VALUES",
+      "INHERENT_EQUIPMENT_WITHOUT_VALUES",
+      "NOT_DISCRIMINATED_IN_INVOICE",
+      "NO_CONTRACT_PROVISION_NOT_INHERENT"
+    ]
+  },
+  {
+    "key": "inss.material_equipment_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "inss.material_equipment_evidence_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.minimum_base_category",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PASSENGER_TRANSPORT",
+      "HOSPITAL_CLEANING",
+      "OTHER_CLEANING",
+      "OTHER",
+      "GENERAL_WITH_INHERENT_EQUIPMENT",
+      "CONSTRUCTION_ASPHALT_PAVING",
+      "CONSTRUCTION_EARTHWORK_LANDFILL_DREDGING",
+      "CONSTRUCTION_BRIDGES_VIADUCTS",
+      "CONSTRUCTION_DRAINAGE",
+      "CONSTRUCTION_OTHER_NON_MANUAL_EQUIPMENT"
+    ]
+  },
+  {
+    "key": "inss.total_construction_optional_withholding",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.statutory_dispense_claimed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.statutory_dispense_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "NO_EMPLOYEES_OWNER_PERSONAL_SERVICE",
+      "REGULATED_PROFESSION_OR_TRAINING"
+    ]
+  },
+  {
+    "key": "inss.dispense_declaration_received",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.service_performed_personally_by_owner_or_partner",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.max_social_security_contribution_salary",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "inss.regulated_profession_or_training_service",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.employees_in_execution",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.execution_has_other_individual_contributors",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.allowed_base_deductions",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "inss.deduction_evidence_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "inss.special_retirement_additional_rate",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "inss.subcontractor_withholding_offset",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "inss.subcontractor_offset_evidence_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "payer.public_entity_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "DIRECT",
+      "AUTARCHY",
+      "PUBLIC_FOUNDATION",
+      "PUBLIC_COMPANY",
+      "MIXED_CAPITAL_COMPANY",
+      "OTHER"
+    ]
+  },
+  {
+    "key": "public.foundation_autarchic_nature",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.foundation_maintainer_public_revenue_share",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "public.foundation_qualification_source_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "public.annex_category",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "GOODS_MATERIALS_HOSPITAL_CARGO",
+      "FUEL_PRODUCER_IMPORTER",
+      "FUEL_DISTRIBUTOR_RETAIL",
+      "INTERNATIONAL_CARGO_AND_ZERO_CONTRIBUTIONS",
+      "PASSENGER_TRANSPORT",
+      "INTERNATIONAL_PASSENGER_TRANSPORT",
+      "PROFESSIONAL_ASSOCIATION_COOPERATIVE",
+      "FINANCIAL_AND_HEALTH_INSURANCE",
+      "GENERAL_SERVICES",
+      "MIXED",
+      "UNKNOWN"
+    ]
+  },
+  {
+    "key": "public.annex_basis_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "GOODS",
+      "QUALIFIED_MATERIAL_SERVICE",
+      "HOSPITAL",
+      "DIAGNOSTIC",
+      "CARGO",
+      "FOOD",
+      "ENERGY"
+    ]
+  },
+  {
+    "key": "public.materials_contract_qualified",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.materials_invoice_qualified",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.glosa_without_new_invoice",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.glosa_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "public.article33_convention_exists",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.article33_convention_source_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "public.article33_convention_valid_from",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "public.article33_convention_valid_to",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "cooperative.provider_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "WORK",
+      "PRODUCTION",
+      "MEDICAL",
+      "TRANSPORT",
+      "CREDIT",
+      "OTHER"
+    ]
+  },
+  {
+    "key": "cooperative.act_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "COOPERATIVE_ACT",
+      "NONCOOPERATIVE_ACT",
+      "MIXED"
+    ]
+  },
+  {
+    "key": "cooperative.act_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "cooperative.transport_kind",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CARGO",
+      "PASSENGER"
+    ]
+  },
+  {
+    "key": "cooperative.transport_service_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "cooperative.transport_invoice_split_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "cooperative.invoice_components",
+    "type": "ARRAY",
+    "material": true
+  },
+  {
+    "key": "cooperative.invoice_components_evidence_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "cooperative.health_plan_price_model",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "NONE",
+      "PREESTABLISHED",
+      "POSTESTABLISHED",
+      "MIXED"
+    ]
+  },
+  {
+    "key": "cooperative.medical_role",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PLAN_OPERATOR",
+      "SINGULAR_INTERMEDIARY"
+    ]
+  },
+  {
+    "key": "construction.previdenciary_object_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "WORK",
+      "ISOLATED_SERVICE"
+    ]
+  },
+  {
+    "key": "construction.cno_required",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "construction.cno",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{12}$/"
+  },
+  {
+    "key": "construction.cno_holder",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PROVIDER",
+      "CONTRACTING_PARTY"
+    ]
+  },
+  {
+    "key": "construction.work_responsible_party",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PROVIDER",
+      "CONTRACTING_PARTY"
+    ]
+  },
+  {
+    "key": "construction.total_contract_qualified",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "construction.total_scope_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "construction.parent_contract_reference",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "construction.parent_work_reference",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "construction.cno_exemption_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "cooperative.pcc_taxable_base",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "cooperative.pcc_basis_evidence_confirmed",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "payer.head_office_tax_id",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{14}$/"
+  },
+  {
+    "key": "federal.income_nature_code",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{5}$/"
+  },
+  {
+    "key": "public.payment_lines",
+    "type": "ARRAY",
+    "material": true
+  },
+  {
+    "key": "public.beneficiary_treatment",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "STANDARD",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED",
+      "IMMUNE",
+      "OTHER"
+    ]
+  },
+  {
+    "key": "public.local_ir_collection_rule_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "public.local_ir_collection_code",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "public.local_ir_due_rule",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "public.local_ir_valid_from",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "public.local_ir_valid_to",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "public.has_late_additions",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "public.late_interest",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "public.late_penalties",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "provider.head_office_tax_id",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{14}$/"
+  },
+  {
+    "key": "public.exception_disclosed_on_invoice",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.evaluate",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.operation_date",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "rtc.operation_kind",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "SERVICE",
+      "GOODS",
+      "DIGITAL",
+      "FINANCIAL",
+      "REAL_ESTATE",
+      "SPECIFIC_REGIME"
+    ]
+  },
+  {
+    "key": "rtc.buyer_relation",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "B2B",
+      "B2C"
+    ]
+  },
+  {
+    "key": "rtc.delivery_mode",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "PRESENTIAL",
+      "REMOTE",
+      "DIGITAL"
+    ]
+  },
+  {
+    "key": "rtc.consideration",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "ONEROUS",
+      "NON_ONEROUS"
+    ]
+  },
+  {
+    "key": "rtc.non_onerous_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.recipient_relationship",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "EMPLOYEE",
+      "OTHER"
+    ]
+  },
+  {
+    "key": "rtc.recipient_relationship_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.business_use_predominant",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.business_use_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.market_value_brl",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "rtc.market_value_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.market",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "DOMESTIC",
+      "IMPORT",
+      "EXPORT"
+    ]
+  },
+  {
+    "key": "rtc.supplier_regime",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "REGULAR",
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "SPECIAL",
+      "FOREIGN"
+    ]
+  },
+  {
+    "key": "rtc.simples_collection_option",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "INTERNAL",
+      "REGULAR"
+    ]
+  },
+  {
+    "key": "rtc.simples_option_filed_on",
+    "type": "DATE",
+    "material": true
+  },
+  {
+    "key": "rtc.simples_option_receipt_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.simples_option_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CONFIRMED",
+      "PENDING",
+      "CANCELLED"
+    ]
+  },
+  {
+    "key": "rtc.simples_option_status_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.supplier_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.supplier_country",
+    "type": "CODE",
+    "material": true
+  },
+  {
+    "key": "rtc.acquirer_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.recipient_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.importer_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.taxpayer_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.platform_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.acquirer_country",
+    "type": "CODE",
+    "material": true
+  },
+  {
+    "key": "rtc.recipient_country",
+    "type": "CODE",
+    "material": true
+  },
+  {
+    "key": "rtc.destination_basis",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "ACQUIRER_DOMICILE",
+      "RECIPIENT_DOMICILE",
+      "PROPERTY",
+      "PERSON_PRESENCE",
+      "EVENT",
+      "GOODS_DELIVERY",
+      "PASSENGER_ORIGIN",
+      "CARGO_DELIVERY",
+      "DOCUMENTED_SPECIAL"
+    ]
+  },
+  {
+    "key": "rtc.destination_state",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^[A-Z]{2}$/"
+  },
+  {
+    "key": "rtc.destination_municipality_ibge",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{7}$/"
+  },
+  {
+    "key": "rtc.destination_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.destination_registration_status",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "REGISTERED",
+      "UNREGISTERED"
+    ]
+  },
+  {
+    "key": "rtc.destination_evidence_sources",
+    "type": "ARRAY",
+    "material": true
+  },
+  {
+    "key": "rtc.foreign_consumption_proven",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.export_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.export_share_percent",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "rtc.export_allocation_method",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CONTRACTUAL",
+      "METERED_USAGE"
+    ]
+  },
+  {
+    "key": "rtc.export_allocation_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.domestic_consumption_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.import_document_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.supplier_foreign_nif",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.import_transaction_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.import_fx_contract_applicable",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.import_fx_contract_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.import_brazil_share_percent",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "rtc.import_allocation_method",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "CONTRACTUAL",
+      "METERED_USAGE"
+    ]
+  },
+  {
+    "key": "rtc.import_allocation_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.gross_currency",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^[A-Z]{3}$/"
+  },
+  {
+    "key": "rtc.specific_regime_rule_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.government_entity_type",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "DIRECT",
+      "AUTARCHY",
+      "PUBLIC_FOUNDATION",
+      "OTHER"
+    ]
+  },
+  {
+    "key": "rtc.document_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.gross_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "rtc.legacy_tax_inclusion",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "INCLUDED",
+      "EXCLUDED"
+    ]
+  },
+  {
+    "key": "rtc.legacy_tax_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.operation_amount_reconciliation_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.base_adjustments",
+    "type": "ARRAY",
+    "material": true
+  },
+  {
+    "key": "rtc.tax_treatment",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "STANDARD",
+      "REDUCED_30",
+      "REDUCED_60",
+      "ZERO_RATE",
+      "EXEMPT",
+      "IMMUNE",
+      "SUSPENDED",
+      "DEFERRAL",
+      "SPECIFIC_REGIME"
+    ]
+  },
+  {
+    "key": "rtc.treatment_rule_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.treatment_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.cindop",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{6}$/"
+  },
+  {
+    "key": "rtc.cclasstrib",
+    "type": "CODE",
+    "material": true,
+    "pattern": "/^\\d{6}$/"
+  },
+  {
+    "key": "rtc.classification_rule_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.collection_method",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "SUPPLIER",
+      "ACQUIRER",
+      "RECIPIENT",
+      "SPLIT_PAYMENT",
+      "PLATFORM",
+      "PUBLIC_ENTITY"
+    ]
+  },
+  {
+    "key": "rtc.collection_legal_basis",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.accessory_obligations_fulfilled",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.credit_context",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "OUTPUT",
+      "INPUT",
+      "PERSONAL_USE"
+    ]
+  },
+  {
+    "key": "rtc.acquirer_regime",
+    "type": "ENUM",
+    "material": true,
+    "allowed_values": [
+      "REGULAR",
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "NON_TAXPAYER"
+    ]
+  },
+  {
+    "key": "rtc.input_document_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.input_document_valid",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.prior_tax_extinguished",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.input_ibs_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "rtc.input_cbs_amount",
+    "type": "DECIMAL",
+    "material": true
+  },
+  {
+    "key": "rtc.credit_adjustments",
+    "type": "ARRAY",
+    "material": true
+  },
+  {
+    "key": "rtc.payment_instrument_split_capable",
+    "type": "BOOLEAN",
+    "material": true
+  },
+  {
+    "key": "rtc.payment_instrument_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.payment_transaction_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  },
+  {
+    "key": "rtc.split_deployment_evidence_id",
+    "type": "STRING",
+    "material": true,
+    "min_length": 1
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "environment": "2",
+  "issued_at": "2026-10-15T11:16:16+00:00",
+  "application_version": "FISCAL-SANDBOX-1",
+  "series": "1",
+  "number": "1",
+  "competence_date": "2026-09-25",
+  "issuer_municipality": "3550308",
+  "supplier_cnpj": "11111111000191",
+  "simples_option": "1",
+  "special_regime": "0",
+  "total_tax_indicator": "0",
+  "service_municipality": "3509502",
+  "acquirer_name": "Foreign & Company",
+  "identity_evidence_id": "FIXTURE.DPS.IDENTITY",
+  "service_location_evidence_id": "FIXTURE.SERVICE.LOCATION",
+  "regime_evidence_id": "FIXTURE.SUPPLIER.REGIME",
+  "total_tax_evidence_id": "FIXTURE.TOTAL.TAX",
+  "recipient_name": "Destinatário sintético da prestação presencial",
+  "foreign_acquirer_id": "US-CUSTOMER-1",
+  "foreign_document_id": "dps-1",
+  "foreign_trade_evidence_id": "SYNTHETIC.COMEXT.76",
+  "foreign_acquirer": {
+    "country": "US",
+    "name": "Foreign & Company",
+    "nif": "NIF-76",
+    "address": {
+      "postal_code": "10001",
+      "city": "New York",
+      "province": "NY",
+      "street": "Main & Second",
+      "number": "10",
+      "district": "Manhattan"
+    },
+    "party_evidence_id": "SYNTHETIC.PARTY.76",
+    "identification_evidence_id": "SYNTHETIC.ID.76",
+    "address_evidence_id": "SYNTHETIC.ADDRESS.76"
+  },
+  "foreign_trade": {
+    "mdPrestacao": "2",
+    "vincPrest": "0",
+    "tpMoeda": "790",
+    "vServMoeda": "1000.00",
+    "mecAFComexP": "01",
+    "mecAFComexT": "01",
+    "movTempBens": "1",
+    "mdic": "0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "VALID_WITH_WARNINGS",
+  "reason_codes": [
+    "ISS_DECISION_VALID",
+    "RULE_BUNDLE_NOT_PRODUCTION_APPROVED",
+    "MUNICIPAL_PARAMETERS_ARE_FIXTURES"
+  ],
+  "missing_facts": [],
+  "decision_hash": "740f7b6e0153c0e50aa4e1a1c2b31244e5777158c54cc6f8c40ecfa1b7860721"
+}

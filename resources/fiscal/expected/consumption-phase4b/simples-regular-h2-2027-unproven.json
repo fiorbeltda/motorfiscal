@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SIMPLES_OPTION_WINDOW_NOT_PROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "82f1b277054485d5e3a89fe78e547887a1760a406a9f0e35f3a8cc6744b8b3f5"
+}

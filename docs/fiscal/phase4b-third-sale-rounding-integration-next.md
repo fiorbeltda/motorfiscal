@@ -1,0 +1,22 @@
+# Próximo objetivo28 — integrar a terceira venda com três origens de arredondamento
+
+Partida: quatro fontes35 de julho capturadas, dez decisões36 de agosto capturadas e seis aberturas37 de setembro efetivamente reproduzidas. Os12 casos finais, parcial/total de cada fechamento parcial de agosto, estão preparados com memória diária de setembro comparada ao oráculo. Preparação37 não é aceitação da realização financeira ou mensal final.
+
+Implementar política optativa própria para a nova venda. Os contratos existentes de primeira aquisição e da segunda baixa histórica devem continuar intactos. Vincular prova à fonte37 qualificada, à posição/memória atual e à operação nativa. Exigir uma venda, sem operações adicionais, valor justo, nova produção de rendimento não apropriado ou ganho contábil, neste corpus inicial.
+
+Reconstruir média contábil em oito casas e baixa efetivamente fornecida em centavos. Separar consumo do arredondamento antigo com cobertura fiscal, consumo do resíduo criado anteriormente sem cobertura fiscal e diferença criada na baixa atual. Conservar cada origem de abertura, consumo e fechamento. Uma igualdade do total não autoriza trocar as parcelas ou inventar cobertura fiscal.
+
+A história37 possui `fiscal_covered_rounding` e `uncovered_created_rounding`. A soma fiscal consumida deve corresponder à curva anterior consumida mais somente o arredondamento coberto. A soma econômica da baixa inclui as três parcelas. O fechamento fiscal precisa permanecer limitado às disponibilidades de apurado, exclusão art195, PIS removido e perda anterior da decisão fonte; o resíduo econômico sem cobertura não amplia nenhuma rubrica.
+
+O analisador atual só reconhece a cobertura de arredondamento na política de fechamento explícito da primeira aquisição. Ampliar o processamento exige novo contrato, não ativar artificialmente o flag antigo em uma fonte com histórico próprio. Conferir a abertura fiscal usando curva anterior mais parcela coberta, enquanto o fechamento contábil usa também o resíduo descoberto. O binder público precisa aceitar somente a análise/prova qualificada do novo método e continuar sem criar receita ou dedução a partir dos resíduos.
+
+Fixtures37: `resources/fiscal/scenarios/tvm-third-sale-rounding-2026.10.08-28-draft37`. Preparação reproduzível por `scripts/build_phase4b_tvm_third_sale_rounding_draft.py` e `scripts/prepare_phase4b_tvm_third_sale_fixtures.py`. Os verificadores `check_phase4b_third_sale_openings.php` e `check_phase4b_third_sale_memory.php` conferem abertura e cálculo nativo; não executam a decisão de alienação aceita. Bundle37 documenta essa preparação; a política de integração final deve ter bundle próprio antes da captura.
+
+Uma referência inicial da chave de fonte usou setembro em vez de agosto durante a preparação. O builder e os seis inputs iniciais foram preservados em `storage/app/phase4b-realization-third-sale-rounding-draft-20261008-28/initial-source-period-preservation.json`, sem aceitação. O builder corrigido deriva a competência da posição fonte; as seis aberturas regeneradas passaram pelo motor.
+
+Aceitação:12 positivos, guardas contra prova ausente, troca de origens, saldo excessivo, referência temporal incorreta, alocação fiscal inexistente, retenção duplicada e fonte alterada; decisão financeira, qualificação D2101, fechamento D1101, IBS/CBS separados e seis XMLs em setembro. Conferir corpus completo dos três períodos, replays, memória diária, fechamento fiscal/econômico por origem, fontes/históricos, suíte/PHPStan/Pint e regressões36/35/34/33/32/30 e demais escopos relevantes. Não encerrar a cadeia, o escopo28 ou a Fase4B com uma abertura ou cálculo preparatório isolado; produção permanece bloqueada.
+
+## Integração38 validada
+
+Atualização08/10 — draft38 integrou as12 vendas de setembro, com12 replays e72 XMLs. A cadeia sintética julho/agosto/setembro foi validada com26 decisões e156 XMLs, sem misturar arredondamento coberto, resíduo anterior e diferença nova. Suíte1.499/16.312,18 testes específicos/450 asserções,11 verificações adicionais de provas, PHPStan/Pint e regressões aprovadas. Auditoria5.871 históricos preservados e49 fontes oficiais. O recorte de três períodos foi aceito localmente; escopo28 integral/Fase4B continuam abertos e produção bloqueada. [Contrato, evidências e limites](phase4b-third-sale-integrated-development.md). [Próximo objetivo](phase4b-next-scope-historical-multiple-titles.md).
+

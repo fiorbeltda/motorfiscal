@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_MARKET_CALCULATION_AND_DOCUMENT_NOT_MATERIALIZED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "1313a04b71a22357dc7e4e5c9df84d40c01ddb03c3599aa860cc7935373b7f5f"
+}

@@ -1,0 +1,927 @@
+{
+  "input": {
+    "name": "inherit107-inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+    "facts": {
+      "service.canonical_id": "SOFTWARE_DEVELOPMENT",
+      "provider.municipality_ibge": "3550308",
+      "customer.municipality_ibge": "3509502",
+      "customer.person_type": "PJ",
+      "operation.service_origin": "DOMESTIC",
+      "provider.tax_regime": "LUCRO_REAL",
+      "provider.person_type": "PRIVATE_LEGAL_ENTITY",
+      "operation.amount": "1000.00",
+      "federal.evaluate_withholdings": false,
+      "rtc.evaluate": true,
+      "rtc.operation_date": "2026-09-25",
+      "rtc.operation_kind": "DIGITAL",
+      "rtc.buyer_relation": "B2B",
+      "rtc.delivery_mode": "DIGITAL",
+      "rtc.consideration": "ONEROUS",
+      "rtc.market": "EXPORT",
+      "rtc.supplier_regime": "REGULAR",
+      "rtc.supplier_id": "11111111000191",
+      "rtc.supplier_country": "BR",
+      "rtc.acquirer_id": "22222222000191",
+      "rtc.recipient_id": "22222222000191",
+      "rtc.acquirer_country": "US",
+      "rtc.recipient_country": "US",
+      "rtc.destination_basis": "RECIPIENT_DOMICILE",
+      "rtc.destination_state": "SP",
+      "rtc.destination_municipality_ibge": "3509502",
+      "rtc.destination_evidence_id": "contract-establishment-1",
+      "rtc.document_id": "dps-1",
+      "rtc.gross_amount": "1000.00",
+      "rtc.gross_currency": "BRL",
+      "rtc.legacy_tax_inclusion": "EXCLUDED",
+      "rtc.legacy_tax_evidence_id": "net-price-contract-line-1",
+      "rtc.base_adjustments": [],
+      "rtc.tax_treatment": "STANDARD",
+      "rtc.collection_method": "SUPPLIER",
+      "rtc.accessory_obligations_fulfilled": true,
+      "rtc.credit_context": "OUTPUT",
+      "rtc.foreign_consumption_proven": true,
+      "rtc.export_evidence_id": "foreign-consumption-contract-1",
+      "rtc.export_share_percent": "40",
+      "rtc.domestic_consumption_evidence_id": "brazil-usage-report-1",
+      "rtc.export_allocation_method": "METERED_USAGE",
+      "rtc.export_allocation_evidence_id": "usage-meter-sep-2026",
+      "rtc.export_domestic_recipient_id": "33333333000191",
+      "rtc.export_domestic_recipient_country": "BR",
+      "rtc.export_domestic_document_id": "dps-domestic-1",
+      "rtc.export_foreign_document_id": "SYNTHETIC-FOREIGN-BRL-96",
+      "rtc.export_transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+      "rtc.acquirer_foreign_nif": "SYNTHETIC-NIF-BRL-96",
+      "rtc.assess_export_iss_results": true,
+      "rtc.export_operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+      "rtc.export_iss_result_contexts": [
+        {
+          "role": "RTC_FOREIGN",
+          "iss_context": {
+            "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_id": "SYNTHETIC-FOREIGN-BRL-96",
+            "supplier_id": "11111111000191",
+            "acquirer_id": "22222222000191",
+            "recipient_id": "22222222000191",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "service_kind": "SOFTWARE_SERVICE",
+            "supplier_country": "BR",
+            "performed_in": "BR",
+            "supply_on": "2026-09-25",
+            "special_context": false,
+            "result_proof": {
+              "kind": "SERVICE_RESULT_MATERIAL_EVIDENCE",
+              "evidence_id": "SYNTHETIC-ISS96-RESULT-brl-control-RTC_FOREIGN",
+              "valid_from": "2026-09-01",
+              "valid_to": "2026-09-30",
+              "observed_at": "2026-10-16T14:00:00+00:00",
+              "revoked_at": null,
+              "superseded_at": null,
+              "value": {
+                "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+                "document_id": "SYNTHETIC-FOREIGN-BRL-96",
+                "supplier_id": "11111111000191",
+                "acquirer_id": "22222222000191",
+                "recipient_id": "22222222000191",
+                "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+                "service_kind": "SOFTWARE_SERVICE",
+                "performed_in": "BR",
+                "supply_on": "2026-09-25",
+                "result_scope": "ABROAD",
+                "result_description": "SYNTHETIC independent material result for RTC_FOREIGN",
+                "result_evidence_reference": "SYNTHETIC-RESULT-RECORD-usd-direct-RTC_FOREIGN"
+              },
+              "source_hash": "114917bbceae42d141671a34966c4d9dbc065633bee1604e7ca94101fe671f2b"
+            }
+          }
+        },
+        {
+          "role": "RTC_DOMESTIC",
+          "iss_context": {
+            "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_id": "dps-domestic-1",
+            "supplier_id": "11111111000191",
+            "acquirer_id": "22222222000191",
+            "recipient_id": "33333333000191",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "service_kind": "SOFTWARE_SERVICE",
+            "supplier_country": "BR",
+            "performed_in": "BR",
+            "supply_on": "2026-09-25",
+            "special_context": false,
+            "result_proof": {
+              "kind": "SERVICE_RESULT_MATERIAL_EVIDENCE",
+              "evidence_id": "SYNTHETIC-ISS96-RESULT-brl-control-RTC_DOMESTIC",
+              "valid_from": "2026-09-01",
+              "valid_to": "2026-09-30",
+              "observed_at": "2026-10-16T14:00:00+00:00",
+              "revoked_at": null,
+              "superseded_at": null,
+              "value": {
+                "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+                "document_id": "dps-domestic-1",
+                "supplier_id": "11111111000191",
+                "acquirer_id": "22222222000191",
+                "recipient_id": "33333333000191",
+                "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+                "service_kind": "SOFTWARE_SERVICE",
+                "performed_in": "BR",
+                "supply_on": "2026-09-25",
+                "result_scope": "BR",
+                "result_description": "SYNTHETIC independent material result for RTC_DOMESTIC",
+                "result_evidence_reference": "SYNTHETIC-RESULT-RECORD-usd-direct-RTC_DOMESTIC"
+              },
+              "source_hash": "5f4ebbc4f924cacda1464b27c5251facc6c6f437b93b121c23a4696a60381a7e"
+            }
+          }
+        }
+      ],
+      "rtc.assess_export_sp_results": true,
+      "rtc.export_sp_result_proofs": [
+        {
+          "role": "RTC_FOREIGN",
+          "municipal_proof": {
+            "kind": "SP_SOFTWARE_RESULT_MATERIAL_EVIDENCE",
+            "evidence_id": "SYNTHETIC-MUNICIPAL-SP98-brl-control-RTC_FOREIGN",
+            "valid_from": "2026-09-01",
+            "valid_to": "2026-09-30",
+            "observed_at": "2026-10-16T16:40:11.062731+00:00",
+            "revoked_at": null,
+            "superseded_at": null,
+            "value": {
+              "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+              "document_id": "SYNTHETIC-FOREIGN-BRL-96",
+              "supplier_id": "11111111000191",
+              "acquirer_id": "22222222000191",
+              "recipient_id": "22222222000191",
+              "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+              "supply_on": "2026-09-25",
+              "national_result_proof_hash": "114917bbceae42d141671a34966c4d9dbc065633bee1604e7ca94101fe671f2b",
+              "supplier_establishment_municipality": "3550308",
+              "supplier_establishment_evidence_reference": "SYNTHETIC-SP-ESTABLISHMENT-97",
+              "service_list_item": "1",
+              "result_subject_kind": "INTANGIBLE_ELEMENT",
+              "result_subject_id": "SYNTHETIC-RESULT-SUBJECT-RTC_FOREIGN",
+              "result_subject_scope": "ABROAD",
+              "result_subject_location_reference": "SYNTHETIC-FOREIGN-SUBJECT-LOCATION-97",
+              "software_asset_kind": "PROGRAM",
+              "software_asset_id": "SYNTHETIC-ASSET-RTC_FOREIGN",
+              "br_person_link": "NO_BR_LINK",
+              "br_person_link_evidence_reference": "SYNTHETIC-SOFTWARE-BR-LINK-ASSESSMENT-97",
+              "service_execution": "SINGLE",
+              "monthly_stage": null
+            },
+            "source_hash": "00c30aff68e18fbacf6e89d4faf8d45f634e63fde0586ffcfbdb03885f6a52c7"
+          }
+        },
+        {
+          "role": "RTC_DOMESTIC",
+          "municipal_proof": {
+            "kind": "SP_SOFTWARE_RESULT_MATERIAL_EVIDENCE",
+            "evidence_id": "SYNTHETIC-MUNICIPAL-SP98-brl-control-RTC_DOMESTIC",
+            "valid_from": "2026-09-01",
+            "valid_to": "2026-09-30",
+            "observed_at": "2026-10-16T16:40:11.062731+00:00",
+            "revoked_at": null,
+            "superseded_at": null,
+            "value": {
+              "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+              "document_id": "dps-domestic-1",
+              "supplier_id": "11111111000191",
+              "acquirer_id": "22222222000191",
+              "recipient_id": "33333333000191",
+              "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+              "supply_on": "2026-09-25",
+              "national_result_proof_hash": "5f4ebbc4f924cacda1464b27c5251facc6c6f437b93b121c23a4696a60381a7e",
+              "supplier_establishment_municipality": "3550308",
+              "supplier_establishment_evidence_reference": "SYNTHETIC-SP-ESTABLISHMENT-97",
+              "service_list_item": "1",
+              "result_subject_kind": "INTANGIBLE_ELEMENT",
+              "result_subject_id": "SYNTHETIC-RESULT-SUBJECT-RTC_DOMESTIC",
+              "result_subject_scope": "BR",
+              "result_subject_location_reference": "SYNTHETIC-FOREIGN-SUBJECT-LOCATION-97",
+              "software_asset_kind": "PROGRAM",
+              "software_asset_id": "SYNTHETIC-ASSET-RTC_DOMESTIC",
+              "br_person_link": "HAS_BR_LINK",
+              "br_person_link_evidence_reference": "SYNTHETIC-SOFTWARE-BR-LINK-ASSESSMENT-97",
+              "service_execution": "SINGLE",
+              "monthly_stage": null
+            },
+            "source_hash": "618c262115c10f3000fdedf29a08f4e12c6a020fa72bfb9634f653eddef96ec7"
+          }
+        }
+      ],
+      "rtc.assess_export_dps_identity": true,
+      "rtc.export_dps_identity_records": [
+        {
+          "role": "RTC_FOREIGN",
+          "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+          "identity": {
+            "model": "DPS",
+            "environment": "2",
+            "emission_channel": "OWN_APPLICATION",
+            "emitter_type": "1",
+            "registration_type": "2",
+            "supplier_id": "11111111000191",
+            "issuer_municipality": "3550308",
+            "series": "1",
+            "number": "1",
+            "issued_at": "2026-10-16T18:55:42.879759+00:00",
+            "competence_date": "2026-09-25",
+            "id": "DPS355030821111111100019100001000000000000001"
+          },
+          "proof": {
+            "contract": "DPS-PARTIAL-EXPORT-LOCAL-IDENTITY-2026.10.16-103",
+            "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+            "role": "RTC_FOREIGN",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "supplier_id": "11111111000191",
+            "issuer_municipality": "3550308",
+            "observed_at": "2026-10-16T18:55:42.879759+00:00",
+            "evidence_id": "SYNTHETIC.LOCAL.MAPPING103.RTC_FOREIGN",
+            "identity_hash": "8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3",
+            "source_hash": "2b5eacffb33621f7c5a833d9c755411e421fd552c975d5ce122b1798ea8d7fd7"
+          }
+        },
+        {
+          "role": "RTC_DOMESTIC",
+          "document_reference": "dps-domestic-1",
+          "identity": {
+            "model": "DPS",
+            "environment": "2",
+            "emission_channel": "OWN_APPLICATION",
+            "emitter_type": "1",
+            "registration_type": "2",
+            "supplier_id": "11111111000191",
+            "issuer_municipality": "3550308",
+            "series": "1",
+            "number": "2",
+            "issued_at": "2026-10-16T18:55:42.879759+00:00",
+            "competence_date": "2026-09-25",
+            "id": "DPS355030821111111100019100001000000000000002"
+          },
+          "proof": {
+            "contract": "DPS-PARTIAL-EXPORT-LOCAL-IDENTITY-2026.10.16-103",
+            "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_reference": "dps-domestic-1",
+            "role": "RTC_DOMESTIC",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "supplier_id": "11111111000191",
+            "issuer_municipality": "3550308",
+            "observed_at": "2026-10-16T18:55:42.879759+00:00",
+            "evidence_id": "SYNTHETIC.LOCAL.MAPPING103.RTC_DOMESTIC",
+            "identity_hash": "a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53",
+            "source_hash": "93dba365b5a7d8084cec1fd52bf58fb9aa496ee782d03d05a63b9035d139e03b"
+          }
+        }
+      ],
+      "provider.iss_regime": "GENERAL_AD_VALOREM",
+      "provider.iss_regime_proof": {
+        "contract": "ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105",
+        "kind": "ISS_SUPPLIER_REGIME_MATERIAL_EVIDENCE",
+        "evidence_id": "REGIME-105",
+        "valid_from": "2026-01-01",
+        "valid_to": "2032-12-31",
+        "observed_at": "2026-10-19T12:41:32.000000+00:00",
+        "revoked_at": null,
+        "superseded_at": null,
+        "value": {
+          "supplier_id": "11111111000191",
+          "supplier_municipality": "3550308",
+          "service_kind": "SOFTWARE_SERVICE",
+          "regime": "GENERAL_AD_VALOREM",
+          "special_regime": false,
+          "supplier_immunity": false,
+          "supplier_flat_tax": false,
+          "simples_option": false
+        },
+        "origin": {
+          "reference": "synthetic://date105/REGIME-105",
+          "media_type": "application/json",
+          "content": "{\"contract\":\"ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105\",\"evidence_id\":\"REGIME-105\",\"kind\":\"ISS_SUPPLIER_REGIME_MATERIAL_EVIDENCE\",\"observed_at\":\"2026-10-19T12:41:32.000000+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"regime\":\"GENERAL_AD_VALOREM\",\"service_kind\":\"SOFTWARE_SERVICE\",\"simples_option\":false,\"special_regime\":false,\"supplier_flat_tax\":false,\"supplier_id\":\"11111111000191\",\"supplier_immunity\":false,\"supplier_municipality\":\"3550308\"}}",
+          "content_sha256": "1659318dbadf46f29e2fc3f37a8652fd4e8daf5f7c13ea314e1533b30adb7b91"
+        },
+        "source_hash": "a72724e412a97ec01cf21835e8c880607b5e1e1e4fa869ca102e1ae34f6de118"
+      }
+    },
+    "material_records": [
+      {
+        "role": "RTC_FOREIGN",
+        "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+        "performance": {
+          "contract_reference": "SYNTHETIC-CONTRACT-105",
+          "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+          "mode": "FULFILLED_MONTHLY_STAGE",
+          "performed_from": "2026-09-01",
+          "performed_to": "2026-09-25",
+          "performed_at": "2026-09-25T18:00:00.123456-03:00",
+          "iss_supply_on": "2026-09-25",
+          "unit_completed": true,
+          "final_delivery": false,
+          "document_state": "ORIGINAL_ACTIVE"
+        },
+        "proof": {
+          "contract": "ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105",
+          "kind": "ISS_SERVICE_PERFORMANCE_MATERIAL_EVIDENCE",
+          "evidence_id": "MATERIAL-105-RTC_FOREIGN",
+          "valid_from": "2026-01-01",
+          "valid_to": "2032-12-31",
+          "observed_at": "2026-10-19T12:41:32.000000+00:00",
+          "revoked_at": null,
+          "superseded_at": null,
+          "value": {
+            "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+            "role": "RTC_FOREIGN",
+            "supplier_id": "11111111000191",
+            "acquirer_id": "22222222000191",
+            "recipient_id": "22222222000191",
+            "supplier_municipality": "3550308",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "rtc_operation_date": "2026-09-25",
+            "service_kind": "SOFTWARE_SERVICE",
+            "event_kind": "MONTHLY_STAGE_FULFILLED",
+            "performance": {
+              "contract_reference": "SYNTHETIC-CONTRACT-105",
+              "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+              "mode": "FULFILLED_MONTHLY_STAGE",
+              "performed_from": "2026-09-01",
+              "performed_to": "2026-09-25",
+              "performed_at": "2026-09-25T18:00:00.123456-03:00",
+              "iss_supply_on": "2026-09-25",
+              "unit_completed": true,
+              "final_delivery": false,
+              "document_state": "ORIGINAL_ACTIVE"
+            }
+          },
+          "origin": {
+            "reference": "synthetic://date105/MATERIAL-105-RTC_FOREIGN",
+            "media_type": "application/json",
+            "content": "{\"contract\":\"ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105\",\"evidence_id\":\"MATERIAL-105-RTC_FOREIGN\",\"kind\":\"ISS_SERVICE_PERFORMANCE_MATERIAL_EVIDENCE\",\"observed_at\":\"2026-10-19T12:41:32.000000+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"acquirer_id\":\"22222222000191\",\"document_reference\":\"SYNTHETIC-FOREIGN-BRL-96\",\"event_kind\":\"MONTHLY_STAGE_FULFILLED\",\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"performance\":{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"document_state\":\"ORIGINAL_ACTIVE\",\"final_delivery\":false,\"iss_supply_on\":\"2026-09-25\",\"mode\":\"FULFILLED_MONTHLY_STAGE\",\"performed_at\":\"2026-09-25T18:00:00.123456-03:00\",\"performed_from\":\"2026-09-01\",\"performed_to\":\"2026-09-25\",\"unit_completed\":true,\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},\"recipient_id\":\"22222222000191\",\"role\":\"RTC_FOREIGN\",\"rtc_operation_date\":\"2026-09-25\",\"service_kind\":\"SOFTWARE_SERVICE\",\"supplier_id\":\"11111111000191\",\"supplier_municipality\":\"3550308\",\"transaction_evidence_id\":\"SYNTHETIC-TRANSACTION-BRL-96\"}}",
+            "content_sha256": "21c10563b861b6619674f5091cbf03618f8009a7898338263d7b3b90418af68b"
+          },
+          "source_hash": "ca1f30294e86f08fa07c54ada9b648a9bd825d495755f3b01441d4883cb01902"
+        }
+      },
+      {
+        "role": "RTC_DOMESTIC",
+        "document_reference": "dps-domestic-1",
+        "performance": {
+          "contract_reference": "SYNTHETIC-CONTRACT-105",
+          "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+          "mode": "FULFILLED_MONTHLY_STAGE",
+          "performed_from": "2026-09-01",
+          "performed_to": "2026-09-25",
+          "performed_at": "2026-09-25T18:00:00.123456-03:00",
+          "iss_supply_on": "2026-09-25",
+          "unit_completed": true,
+          "final_delivery": false,
+          "document_state": "ORIGINAL_ACTIVE"
+        },
+        "proof": {
+          "contract": "ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105",
+          "kind": "ISS_SERVICE_PERFORMANCE_MATERIAL_EVIDENCE",
+          "evidence_id": "MATERIAL-105-RTC_DOMESTIC",
+          "valid_from": "2026-01-01",
+          "valid_to": "2032-12-31",
+          "observed_at": "2026-10-19T12:41:32.000000+00:00",
+          "revoked_at": null,
+          "superseded_at": null,
+          "value": {
+            "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_reference": "dps-domestic-1",
+            "role": "RTC_DOMESTIC",
+            "supplier_id": "11111111000191",
+            "acquirer_id": "22222222000191",
+            "recipient_id": "33333333000191",
+            "supplier_municipality": "3550308",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "rtc_operation_date": "2026-09-25",
+            "service_kind": "SOFTWARE_SERVICE",
+            "event_kind": "MONTHLY_STAGE_FULFILLED",
+            "performance": {
+              "contract_reference": "SYNTHETIC-CONTRACT-105",
+              "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+              "mode": "FULFILLED_MONTHLY_STAGE",
+              "performed_from": "2026-09-01",
+              "performed_to": "2026-09-25",
+              "performed_at": "2026-09-25T18:00:00.123456-03:00",
+              "iss_supply_on": "2026-09-25",
+              "unit_completed": true,
+              "final_delivery": false,
+              "document_state": "ORIGINAL_ACTIVE"
+            }
+          },
+          "origin": {
+            "reference": "synthetic://date105/MATERIAL-105-RTC_DOMESTIC",
+            "media_type": "application/json",
+            "content": "{\"contract\":\"ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105\",\"evidence_id\":\"MATERIAL-105-RTC_DOMESTIC\",\"kind\":\"ISS_SERVICE_PERFORMANCE_MATERIAL_EVIDENCE\",\"observed_at\":\"2026-10-19T12:41:32.000000+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"acquirer_id\":\"22222222000191\",\"document_reference\":\"dps-domestic-1\",\"event_kind\":\"MONTHLY_STAGE_FULFILLED\",\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"performance\":{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"document_state\":\"ORIGINAL_ACTIVE\",\"final_delivery\":false,\"iss_supply_on\":\"2026-09-25\",\"mode\":\"FULFILLED_MONTHLY_STAGE\",\"performed_at\":\"2026-09-25T18:00:00.123456-03:00\",\"performed_from\":\"2026-09-01\",\"performed_to\":\"2026-09-25\",\"unit_completed\":true,\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},\"recipient_id\":\"33333333000191\",\"role\":\"RTC_DOMESTIC\",\"rtc_operation_date\":\"2026-09-25\",\"service_kind\":\"SOFTWARE_SERVICE\",\"supplier_id\":\"11111111000191\",\"supplier_municipality\":\"3550308\",\"transaction_evidence_id\":\"SYNTHETIC-TRANSACTION-BRL-96\"}}",
+            "content_sha256": "e3c214fce89f608ee02f7d38d2ca8765575842b63963cd1586abf7a0be346d89"
+          },
+          "source_hash": "c4874ecc8a949887449d9168a1f717405294b353d11f469f3772206e8badc3c7"
+        }
+      }
+    ],
+    "result_records": [
+      {
+        "role": "RTC_FOREIGN",
+        "iss_context": {
+          "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+          "document_id": "SYNTHETIC-FOREIGN-BRL-96",
+          "supplier_id": "11111111000191",
+          "acquirer_id": "22222222000191",
+          "recipient_id": "22222222000191",
+          "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+          "service_kind": "SOFTWARE_SERVICE",
+          "supplier_country": "BR",
+          "performed_in": "BR",
+          "supply_on": "2026-09-25",
+          "special_context": false,
+          "result_proof": {
+            "kind": "SERVICE_RESULT_MATERIAL_EVIDENCE",
+            "evidence_id": "SYNTHETIC-106-NATIONAL-RTC_FOREIGN",
+            "valid_from": "2026-09-25",
+            "valid_to": "2026-09-25",
+            "observed_at": "2026-10-19T16:23:07.892881+00:00",
+            "revoked_at": null,
+            "superseded_at": null,
+            "value": {
+              "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+              "document_id": "SYNTHETIC-FOREIGN-BRL-96",
+              "supplier_id": "11111111000191",
+              "acquirer_id": "22222222000191",
+              "recipient_id": "22222222000191",
+              "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+              "service_kind": "SOFTWARE_SERVICE",
+              "performed_in": "BR",
+              "supply_on": "2026-09-25",
+              "result_scope": "ABROAD",
+              "result_description": "SYNTHETIC independent material result for RTC_FOREIGN",
+              "result_evidence_reference": "SYNTHETIC-RESULT-RECORD-usd-direct-RTC_FOREIGN"
+            },
+            "source_hash": "4f36e5c4f2067d0b241307dada47fb519ebcc91e6540e112a00ab580d46730d8"
+          }
+        },
+        "municipal_proof": {
+          "kind": "SP_SOFTWARE_RESULT_MATERIAL_EVIDENCE",
+          "evidence_id": "SYNTHETIC-106-MUNICIPAL-RTC_FOREIGN",
+          "valid_from": "2026-09-25",
+          "valid_to": "2026-09-25",
+          "observed_at": "2026-10-19T16:23:07.892881+00:00",
+          "revoked_at": null,
+          "superseded_at": null,
+          "value": {
+            "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_id": "SYNTHETIC-FOREIGN-BRL-96",
+            "supplier_id": "11111111000191",
+            "acquirer_id": "22222222000191",
+            "recipient_id": "22222222000191",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "supply_on": "2026-09-25",
+            "national_result_proof_hash": "4f36e5c4f2067d0b241307dada47fb519ebcc91e6540e112a00ab580d46730d8",
+            "supplier_establishment_municipality": "3550308",
+            "supplier_establishment_evidence_reference": "SYNTHETIC-SP-ESTABLISHMENT-97",
+            "service_list_item": "1",
+            "result_subject_kind": "INTANGIBLE_ELEMENT",
+            "result_subject_id": "SYNTHETIC-RESULT-SUBJECT-RTC_FOREIGN",
+            "result_subject_scope": "ABROAD",
+            "result_subject_location_reference": "SYNTHETIC-FOREIGN-SUBJECT-LOCATION-97",
+            "software_asset_kind": "PROGRAM",
+            "software_asset_id": "SYNTHETIC-ASSET-RTC_FOREIGN",
+            "br_person_link": "NO_BR_LINK",
+            "br_person_link_evidence_reference": "SYNTHETIC-SOFTWARE-BR-LINK-ASSESSMENT-97",
+            "service_execution": "CONTINUING_MONTHLY",
+            "monthly_stage": {
+              "period": "2026-09",
+              "stage_id": "SYNTHETIC-SPLIT-UNIT-105",
+              "completed_on": "2026-09-25",
+              "completion_evidence_reference": "synthetic://106/monthly/RTC_FOREIGN"
+            }
+          },
+          "source_hash": "272660a64dbe97899d46dae94546bbee6ea5caec9310620246ed5d0bb14ba61c"
+        },
+        "event_binding": {
+          "contract": "ISS-PARTIAL-EXPORT-DATED-RESULT-COMPOSITION-2026.10.19-106",
+          "kind": "MATERIAL_RESULT_SAME_EVENT_BINDING",
+          "evidence_id": "SYNTHETIC-106-LINK-RTC_FOREIGN",
+          "value": {
+            "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "role": "RTC_FOREIGN",
+            "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+            "supplier_id": "11111111000191",
+            "recipient_reference": "22222222000191",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "rtc_operation_date": "2026-09-25",
+            "iss_supply_on": "2026-09-25",
+            "contract_reference": "SYNTHETIC-CONTRACT-105",
+            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+            "performed_at": "2026-09-25T18:00:00.123456-03:00",
+            "performance_hash": "1b5878f32a3579773530a0c8b9a23bceb1a96979c9b63ec5e5a7fc15188d8940",
+            "material_proof_hash": "ca1f30294e86f08fa07c54ada9b648a9bd825d495755f3b01441d4883cb01902",
+            "material_origin_hash": "21c10563b861b6619674f5091cbf03618f8009a7898338263d7b3b90418af68b",
+            "national_context_hash": "208ae61d693fcfd7153b808c25fe67f645001075a475bfc1f025917ba3f62b33",
+            "national_result_proof_hash": "4f36e5c4f2067d0b241307dada47fb519ebcc91e6540e112a00ab580d46730d8",
+            "municipal_proof_hash": "272660a64dbe97899d46dae94546bbee6ea5caec9310620246ed5d0bb14ba61c"
+          },
+          "origin_content": "{\"contract\":\"ISS-PARTIAL-EXPORT-DATED-RESULT-COMPOSITION-2026.10.19-106\",\"evidence_id\":\"SYNTHETIC-106-LINK-RTC_FOREIGN\",\"kind\":\"MATERIAL_RESULT_SAME_EVENT_BINDING\",\"value\":{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"document_reference\":\"SYNTHETIC-FOREIGN-BRL-96\",\"iss_supply_on\":\"2026-09-25\",\"material_origin_hash\":\"21c10563b861b6619674f5091cbf03618f8009a7898338263d7b3b90418af68b\",\"material_proof_hash\":\"ca1f30294e86f08fa07c54ada9b648a9bd825d495755f3b01441d4883cb01902\",\"municipal_proof_hash\":\"272660a64dbe97899d46dae94546bbee6ea5caec9310620246ed5d0bb14ba61c\",\"national_context_hash\":\"208ae61d693fcfd7153b808c25fe67f645001075a475bfc1f025917ba3f62b33\",\"national_result_proof_hash\":\"4f36e5c4f2067d0b241307dada47fb519ebcc91e6540e112a00ab580d46730d8\",\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"performance_hash\":\"1b5878f32a3579773530a0c8b9a23bceb1a96979c9b63ec5e5a7fc15188d8940\",\"performed_at\":\"2026-09-25T18:00:00.123456-03:00\",\"recipient_reference\":\"22222222000191\",\"role\":\"RTC_FOREIGN\",\"rtc_operation_date\":\"2026-09-25\",\"supplier_id\":\"11111111000191\",\"transaction_evidence_id\":\"SYNTHETIC-TRANSACTION-BRL-96\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"}}",
+          "origin_sha256": "056a238fa44f6c6efb933dac2a57bd878bdc33d167332a2061515200a2af7118",
+          "source_hash": "bc23afc3182a9a328c4facea5c2f13d7f6b303610ea0712f80d3a22b53d117f7"
+        }
+      },
+      {
+        "role": "RTC_DOMESTIC",
+        "iss_context": {
+          "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+          "document_id": "dps-domestic-1",
+          "supplier_id": "11111111000191",
+          "acquirer_id": "22222222000191",
+          "recipient_id": "33333333000191",
+          "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+          "service_kind": "SOFTWARE_SERVICE",
+          "supplier_country": "BR",
+          "performed_in": "BR",
+          "supply_on": "2026-09-25",
+          "special_context": false,
+          "result_proof": {
+            "kind": "SERVICE_RESULT_MATERIAL_EVIDENCE",
+            "evidence_id": "SYNTHETIC-106-NATIONAL-RTC_DOMESTIC",
+            "valid_from": "2026-09-25",
+            "valid_to": "2026-09-25",
+            "observed_at": "2026-10-19T16:23:07.892881+00:00",
+            "revoked_at": null,
+            "superseded_at": null,
+            "value": {
+              "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+              "document_id": "dps-domestic-1",
+              "supplier_id": "11111111000191",
+              "acquirer_id": "22222222000191",
+              "recipient_id": "33333333000191",
+              "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+              "service_kind": "SOFTWARE_SERVICE",
+              "performed_in": "BR",
+              "supply_on": "2026-09-25",
+              "result_scope": "BR",
+              "result_description": "SYNTHETIC independent material result for RTC_DOMESTIC",
+              "result_evidence_reference": "SYNTHETIC-RESULT-RECORD-usd-direct-RTC_DOMESTIC"
+            },
+            "source_hash": "07cd8a3d4cb33e712d891cae69cd3fca4b4db516beef9d5c4a5acd5182f01aa1"
+          }
+        },
+        "municipal_proof": {
+          "kind": "SP_SOFTWARE_RESULT_MATERIAL_EVIDENCE",
+          "evidence_id": "SYNTHETIC-106-MUNICIPAL-RTC_DOMESTIC",
+          "valid_from": "2026-09-25",
+          "valid_to": "2026-09-25",
+          "observed_at": "2026-10-19T16:23:07.892881+00:00",
+          "revoked_at": null,
+          "superseded_at": null,
+          "value": {
+            "operation_id": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "document_id": "dps-domestic-1",
+            "supplier_id": "11111111000191",
+            "acquirer_id": "22222222000191",
+            "recipient_id": "33333333000191",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "supply_on": "2026-09-25",
+            "national_result_proof_hash": "07cd8a3d4cb33e712d891cae69cd3fca4b4db516beef9d5c4a5acd5182f01aa1",
+            "supplier_establishment_municipality": "3550308",
+            "supplier_establishment_evidence_reference": "SYNTHETIC-SP-ESTABLISHMENT-97",
+            "service_list_item": "1",
+            "result_subject_kind": "INTANGIBLE_ELEMENT",
+            "result_subject_id": "SYNTHETIC-RESULT-SUBJECT-RTC_DOMESTIC",
+            "result_subject_scope": "BR",
+            "result_subject_location_reference": "SYNTHETIC-FOREIGN-SUBJECT-LOCATION-97",
+            "software_asset_kind": "PROGRAM",
+            "software_asset_id": "SYNTHETIC-ASSET-RTC_DOMESTIC",
+            "br_person_link": "HAS_BR_LINK",
+            "br_person_link_evidence_reference": "SYNTHETIC-SOFTWARE-BR-LINK-ASSESSMENT-97",
+            "service_execution": "CONTINUING_MONTHLY",
+            "monthly_stage": {
+              "period": "2026-09",
+              "stage_id": "SYNTHETIC-SPLIT-UNIT-105",
+              "completed_on": "2026-09-25",
+              "completion_evidence_reference": "synthetic://106/monthly/RTC_DOMESTIC"
+            }
+          },
+          "source_hash": "6303696f11ec9da2520e152de90146e813ca8302cfe72c2570a29d7c2da0fc52"
+        },
+        "event_binding": {
+          "contract": "ISS-PARTIAL-EXPORT-DATED-RESULT-COMPOSITION-2026.10.19-106",
+          "kind": "MATERIAL_RESULT_SAME_EVENT_BINDING",
+          "evidence_id": "SYNTHETIC-106-LINK-RTC_DOMESTIC",
+          "value": {
+            "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+            "role": "RTC_DOMESTIC",
+            "document_reference": "dps-domestic-1",
+            "supplier_id": "11111111000191",
+            "recipient_reference": "33333333000191",
+            "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+            "rtc_operation_date": "2026-09-25",
+            "iss_supply_on": "2026-09-25",
+            "contract_reference": "SYNTHETIC-CONTRACT-105",
+            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+            "performed_at": "2026-09-25T18:00:00.123456-03:00",
+            "performance_hash": "1b5878f32a3579773530a0c8b9a23bceb1a96979c9b63ec5e5a7fc15188d8940",
+            "material_proof_hash": "c4874ecc8a949887449d9168a1f717405294b353d11f469f3772206e8badc3c7",
+            "material_origin_hash": "e3c214fce89f608ee02f7d38d2ca8765575842b63963cd1586abf7a0be346d89",
+            "national_context_hash": "241f658404797b76acc05ce4e92ca69f2c611063ab74db6540f82ee040712def",
+            "national_result_proof_hash": "07cd8a3d4cb33e712d891cae69cd3fca4b4db516beef9d5c4a5acd5182f01aa1",
+            "municipal_proof_hash": "6303696f11ec9da2520e152de90146e813ca8302cfe72c2570a29d7c2da0fc52"
+          },
+          "origin_content": "{\"contract\":\"ISS-PARTIAL-EXPORT-DATED-RESULT-COMPOSITION-2026.10.19-106\",\"evidence_id\":\"SYNTHETIC-106-LINK-RTC_DOMESTIC\",\"kind\":\"MATERIAL_RESULT_SAME_EVENT_BINDING\",\"value\":{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"document_reference\":\"dps-domestic-1\",\"iss_supply_on\":\"2026-09-25\",\"material_origin_hash\":\"e3c214fce89f608ee02f7d38d2ca8765575842b63963cd1586abf7a0be346d89\",\"material_proof_hash\":\"c4874ecc8a949887449d9168a1f717405294b353d11f469f3772206e8badc3c7\",\"municipal_proof_hash\":\"6303696f11ec9da2520e152de90146e813ca8302cfe72c2570a29d7c2da0fc52\",\"national_context_hash\":\"241f658404797b76acc05ce4e92ca69f2c611063ab74db6540f82ee040712def\",\"national_result_proof_hash\":\"07cd8a3d4cb33e712d891cae69cd3fca4b4db516beef9d5c4a5acd5182f01aa1\",\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"performance_hash\":\"1b5878f32a3579773530a0c8b9a23bceb1a96979c9b63ec5e5a7fc15188d8940\",\"performed_at\":\"2026-09-25T18:00:00.123456-03:00\",\"recipient_reference\":\"33333333000191\",\"role\":\"RTC_DOMESTIC\",\"rtc_operation_date\":\"2026-09-25\",\"supplier_id\":\"11111111000191\",\"transaction_evidence_id\":\"SYNTHETIC-TRANSACTION-BRL-96\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"}}",
+          "origin_sha256": "6602b0dfa0ea5e40edb4eb0333b1d529a354d5c2d60c2dc19f50a0576fbc7661",
+          "source_hash": "ab6ff8ce98fb5966ce866a8daf43e6c5e29f0a186ecd332c5dc77c61a02d580b"
+        }
+      }
+    ],
+    "identity_records": [
+      {
+        "role": "RTC_FOREIGN",
+        "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+        "identity": {
+          "model": "DPS",
+          "environment": "2",
+          "emission_channel": "OWN_APPLICATION",
+          "emitter_type": "1",
+          "registration_type": "2",
+          "supplier_id": "11111111000191",
+          "issuer_municipality": "3550308",
+          "series": "1",
+          "number": "1",
+          "issued_at": "2026-10-16T18:55:42.879759+00:00",
+          "competence_date": "2026-09-25",
+          "id": "DPS355030821111111100019100001000000000000001"
+        },
+        "proof": {
+          "contract": "DPS-PARTIAL-EXPORT-DATED-IDENTITY-2026.10.19-107",
+          "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+          "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+          "role": "RTC_FOREIGN",
+          "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+          "supplier_id": "11111111000191",
+          "issuer_municipality": "3550308",
+          "identity_hash": "8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3",
+          "dated_pair_binding_hash": "915697a549f1651622f024f09c1f1cff62571eee3aaf9069af45009c97109b19",
+          "dated_document_hash": "6b1f6e104fff7d7ebc68bda919168911a4d61138e48942c461fc1e86ce679bda",
+          "observed_at": "2026-10-19T18:00:00.123456+00:00",
+          "evidence_id": "SYNTHETIC-107-MAPPING-RTC_FOREIGN",
+          "source_hash": "16badb5c27ca24278ea1139abea63bffb7e23a9134478b5e7ef6ab9660cd699a"
+        }
+      },
+      {
+        "role": "RTC_DOMESTIC",
+        "document_reference": "dps-domestic-1",
+        "identity": {
+          "model": "DPS",
+          "environment": "2",
+          "emission_channel": "OWN_APPLICATION",
+          "emitter_type": "1",
+          "registration_type": "2",
+          "supplier_id": "11111111000191",
+          "issuer_municipality": "3550308",
+          "series": "1",
+          "number": "2",
+          "issued_at": "2026-10-16T18:55:42.879759+00:00",
+          "competence_date": "2026-09-25",
+          "id": "DPS355030821111111100019100001000000000000002"
+        },
+        "proof": {
+          "contract": "DPS-PARTIAL-EXPORT-DATED-IDENTITY-2026.10.19-107",
+          "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+          "document_reference": "dps-domestic-1",
+          "role": "RTC_DOMESTIC",
+          "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+          "supplier_id": "11111111000191",
+          "issuer_municipality": "3550308",
+          "identity_hash": "a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53",
+          "dated_pair_binding_hash": "915697a549f1651622f024f09c1f1cff62571eee3aaf9069af45009c97109b19",
+          "dated_document_hash": "e47d7210a546a5c78d802a2e4c88aa2de89719e59b9421a3d3057c83d9ada9b8",
+          "observed_at": "2026-10-19T18:00:00.123456+00:00",
+          "evidence_id": "SYNTHETIC-107-MAPPING-RTC_DOMESTIC",
+          "source_hash": "60ecde54734ca42c4c5aaf83427ba8c3a0ea61c54e9b3c4226e90f625b610c13"
+        }
+      }
+    ],
+    "price_records": [
+      {
+        "role": "RTC_FOREIGN",
+        "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+        "contract_reference": "SYNTHETIC-CONTRACT-105",
+        "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+        "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+        "price_currency": "BRL",
+        "service_price": "350.00",
+        "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE"
+      },
+      {
+        "role": "RTC_DOMESTIC",
+        "document_reference": "dps-domestic-1",
+        "contract_reference": "SYNTHETIC-CONTRACT-105",
+        "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+        "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+        "price_currency": "BRL",
+        "service_price": "650.00",
+        "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE"
+      }
+    ],
+    "proof": {
+      "contract": "LOCAL-PARTIAL-EXPORT-CONTRACT-PRICES-2026.10.19-110",
+      "kind": "CAPTURED_CONTRACT_PRICE_PAIR",
+      "evidence_id": "SYNTHETIC-CONTRACT-PRICE110-inherit107-inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+      "observed_at": "2026-10-19T18:00:00.123456+00:00",
+      "valid_from": "2026-01-01",
+      "valid_to": "2032-12-31",
+      "revoked_at": null,
+      "superseded_at": null,
+      "value": {
+        "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+        "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+        "supplier_id": "11111111000191",
+        "acquirer_id": "22222222000191",
+        "supplier_municipality": "3550308",
+        "dated_identity_binding_hash": "8dd1d7052a98d4465bb32855cc10bf461cd0822e01852bee4af1cfd0c5ad0bc3",
+        "contract_price_currency": "BRL",
+        "contract_service_price_total": "1000.00",
+        "rtc_price_relationship": "SEPARATE_PRICE_BASIS_UNRECONCILED_WITH_RTC",
+        "documents": [
+          {
+            "role": "RTC_FOREIGN",
+            "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+            "contract_reference": "SYNTHETIC-CONTRACT-105",
+            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+            "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+            "price_currency": "BRL",
+            "service_price": "350.00",
+            "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+            "iss_supply_on": "2026-09-25",
+            "dps_id": "DPS355030821111111100019100001000000000000001",
+            "identity_hash": "8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3",
+            "dated_document_hash": "6b1f6e104fff7d7ebc68bda919168911a4d61138e48942c461fc1e86ce679bda"
+          },
+          {
+            "role": "RTC_DOMESTIC",
+            "document_reference": "dps-domestic-1",
+            "contract_reference": "SYNTHETIC-CONTRACT-105",
+            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+            "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+            "price_currency": "BRL",
+            "service_price": "650.00",
+            "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+            "iss_supply_on": "2026-09-25",
+            "dps_id": "DPS355030821111111100019100001000000000000002",
+            "identity_hash": "a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53",
+            "dated_document_hash": "e47d7210a546a5c78d802a2e4c88aa2de89719e59b9421a3d3057c83d9ada9b8"
+          }
+        ]
+      },
+      "origin": {
+        "reference": "synthetic://contract-price110/SYNTHETIC-CONTRACT-PRICE110-inherit107-inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+        "media_type": "application/json",
+        "content": "{\"contract\":\"LOCAL-PARTIAL-EXPORT-CONTRACT-PRICES-2026.10.19-110\",\"evidence_id\":\"SYNTHETIC-CONTRACT-PRICE110-inherit107-inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery\",\"kind\":\"CAPTURED_CONTRACT_PRICE_PAIR\",\"observed_at\":\"2026-10-19T18:00:00.123456+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"acquirer_id\":\"22222222000191\",\"contract_price_currency\":\"BRL\",\"contract_service_price_total\":\"1000.00\",\"dated_identity_binding_hash\":\"8dd1d7052a98d4465bb32855cc10bf461cd0822e01852bee4af1cfd0c5ad0bc3\",\"documents\":[{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"dated_document_hash\":\"6b1f6e104fff7d7ebc68bda919168911a4d61138e48942c461fc1e86ce679bda\",\"document_reference\":\"SYNTHETIC-FOREIGN-BRL-96\",\"dps_id\":\"DPS355030821111111100019100001000000000000001\",\"identity_hash\":\"8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3\",\"iss_supply_on\":\"2026-09-25\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN\",\"price_currency\":\"BRL\",\"price_semantics\":\"CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE\",\"role\":\"RTC_FOREIGN\",\"service_price\":\"350.00\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"dated_document_hash\":\"e47d7210a546a5c78d802a2e4c88aa2de89719e59b9421a3d3057c83d9ada9b8\",\"document_reference\":\"dps-domestic-1\",\"dps_id\":\"DPS355030821111111100019100001000000000000002\",\"identity_hash\":\"a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53\",\"iss_supply_on\":\"2026-09-25\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC\",\"price_currency\":\"BRL\",\"price_semantics\":\"CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE\",\"role\":\"RTC_DOMESTIC\",\"service_price\":\"650.00\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"}],\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"rtc_price_relationship\":\"SEPARATE_PRICE_BASIS_UNRECONCILED_WITH_RTC\",\"supplier_id\":\"11111111000191\",\"supplier_municipality\":\"3550308\",\"transaction_evidence_id\":\"SYNTHETIC-TRANSACTION-BRL-96\"}}",
+        "content_sha256": "ee892e3d8b23b5380e970ff54a567fd82a9cf0cae6b1dd98373fb74d67d0abfd"
+      },
+      "source_hash": "24adb223949fe79433117f142bf447adca4d30afbb085f7b403ec43db23f416e"
+    },
+    "known_at": "2026-10-19T18:00:00.123456+00:00",
+    "policy": {
+      "contract": "LOCAL-PARTIAL-EXPORT-CONTRACT-PRICES-2026.10.19-110",
+      "available_at": "2026-10-19T17:23:46+00:00",
+      "dated_identity_policy": {
+        "contract": "DPS-PARTIAL-EXPORT-DATED-IDENTITY-2026.10.19-107",
+        "available_at": "2026-10-19T16:28:51.340690+00:00",
+        "identity_source_policy": {
+          "contract": "DPS-PARTIAL-EXPORT-LOCAL-IDENTITY-2026.10.16-103",
+          "available_at": "2026-10-16T18:55:42.879759+00:00",
+          "scope": "LOCAL_NUMERIC_CNPJ_SUPPLIER_OWN_APP_RESTRICTED_PAIR_ONLY",
+          "sources": {
+            "municipal_manual": "3b5e982be9298ecc72ee254e26eb6824dc13d2e05704a83f01aa7a8fd321916e",
+            "contributor_manual": "ac2f36e34ff565cc36d67c5d67415c33cc09f27b2dea006e8da9bcd2ddce5581",
+            "restricted_annex": "2ae2ac9f91efa9b64f0c9ed97acaf18bb7513b090fae39ba5bda59187e64d9e9",
+            "production_annex_comparison_only": "de5bc492959eadc8bfa7540e16939995924f2188f743648eaf84d3b31e9eeb7c",
+            "restricted_xsd": "6c7e0510d3ecff4454f291f4e10b742d27a4818f23aab181494f96d0ea79f3dc"
+          },
+          "remote_deployment_proven": false,
+          "source_effective_date_proven": false
+        },
+        "dated_results_policy": {
+          "contract": "ISS-PARTIAL-EXPORT-DATED-RESULT-COMPOSITION-2026.10.19-106",
+          "available_at": "2026-10-19T16:23:41.850035+00:00",
+          "material_policy": {
+            "contract": "ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105",
+            "available_at": "2026-10-19T12:41:31.841178+00:00",
+            "scope": "LOCAL_SP_SOFTWARE_ORIGINAL_PAIR_MATERIAL_EVIDENCE_NOT_LEGAL_APPROVAL",
+            "civil_timezone": "America/Sao_Paulo",
+            "sources": {
+              "ctn": "4536a6c7d566d184e188fe6c8fb7afd49ae5d4d48e3b2cd11a6c42b5a8c1bcaf",
+              "lc116": "23e06fe7a1dd75e06df80f1e761794e6aa0186ea53a2609ca2b1adc0545a8785",
+              "law13701": "9966f679d5859fb868d5639bb17e85188198444063b3fb613495e6e5111d4c89",
+              "decree53151": "6ac4319ca9b906af26ff917e02349d8d09725273d6c11990d37d95482d1d67ea",
+              "pn4": "066427dc1da3c25fddd1628bc3c168d1805665e113b2d7c5bbb894825e20a274",
+              "metadata_review": "5e9ce335f2dcd7df6e7bfe340293865a8aac8d20308313510614edb060a33b7c"
+            },
+            "source_effective_date_proven": false,
+            "legal_applicability_approved": false
+          },
+          "national_policy": {
+            "contract": "ISS-SOFTWARE-EXPORT-RESULT-LOCAL-2026.10.16-95",
+            "source_sha256": "3ae4d3fc894ced12874364e366867b736c81369352cbaf97c70d57e534cdf86c",
+            "source_observed_at": "2026-10-16T14:16:16.333043+00:00",
+            "scope": "LOCAL_SOFTWARE_RESULT_EVIDENCE_NOT_LEGAL_ACCEPTANCE"
+          },
+          "municipal_policy": {
+            "contract": "SP-SOFTWARE-EXPORT-RESULT-LOCAL-2026.10.16-97",
+            "source_sha256": "066427dc1da3c25fddd1628bc3c168d1805665e113b2d7c5bbb894825e20a274",
+            "source_observed_at": "2026-10-16T16:28:22.913454+00:00",
+            "scope": "LOCAL_SP_ITEM1_RESULT_NOT_LEGAL_ACCEPTANCE"
+          },
+          "scope": "FRESH_MATERIAL_AND_RESULT_BINDING_PER_ROLE_NOT_DPS_OR_TAX_APPROVAL",
+          "legal_applicability_approved": false,
+          "production_ready": false
+        },
+        "scope": "FRESH_DATED_MATERIAL_RESULTS_AND_IDENTITY_PAIR_NOT_LEGAL_ISSUANCE",
+        "remote_deployment_proven": false,
+        "source_effective_date_proven": false
+      },
+      "research_receipt_sha256": "289d7f5b174ec8f49791f7a1e21e709f507ede7be9e89c38d1b12e5625c960ca",
+      "scope": "DECLARED_CONTRACT_PRICE_PAIR_NOT_LEGAL_ISS_BASE_OR_CURRENCY_CONVERSION",
+      "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+      "local_currency_input_scope": [
+        "BRL",
+        "USD",
+        "EUR",
+        "AUD"
+      ],
+      "source_effective_date_proven": false,
+      "legal_applicability_approved": false
+    },
+    "source107_name": "inherit106-inherit105-fulfilled-monthly-stage-without-final-delivery",
+    "source107_case_hash": "45b47aac5e0baacfa88d4c5bdc4fa0596970871b1ca6b855eb2f0c23b9f16276",
+    "expected_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+    "expected_reason": "PRICE110_CAPTURED_CONTRACT_PRICES_NOT_LEGAL_ISS_BASE_OR_CONVERSION",
+    "expected_total": "1000.00",
+    "expected_prices": [
+      "350.00",
+      "650.00"
+    ],
+    "expected_currency": "BRL"
+  },
+  "expected_result": {
+    "status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+    "reason": "PRICE110_CAPTURED_CONTRACT_PRICES_NOT_LEGAL_ISS_BASE_OR_CONVERSION",
+    "contract_price_evidence_locally_bound": true,
+    "documents": [
+      {
+        "role": "RTC_FOREIGN",
+        "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+        "contract_reference": "SYNTHETIC-CONTRACT-105",
+        "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+        "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+        "price_currency": "BRL",
+        "service_price": "350.00",
+        "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+        "iss_supply_on": "2026-09-25",
+        "dps_id": "DPS355030821111111100019100001000000000000001",
+        "identity_hash": "8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3",
+        "dated_document_hash": "6b1f6e104fff7d7ebc68bda919168911a4d61138e48942c461fc1e86ce679bda"
+      },
+      {
+        "role": "RTC_DOMESTIC",
+        "document_reference": "dps-domestic-1",
+        "contract_reference": "SYNTHETIC-CONTRACT-105",
+        "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+        "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+        "price_currency": "BRL",
+        "service_price": "650.00",
+        "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+        "iss_supply_on": "2026-09-25",
+        "dps_id": "DPS355030821111111100019100001000000000000002",
+        "identity_hash": "a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53",
+        "dated_document_hash": "e47d7210a546a5c78d802a2e4c88aa2de89719e59b9421a3d3057c83d9ada9b8"
+      }
+    ],
+    "contract_price_currency": "BRL",
+    "contract_service_price_total": "1000.00",
+    "dated_identity_binding_hash": "8dd1d7052a98d4465bb32855cc10bf461cd0822e01852bee4af1cfd0c5ad0bc3",
+    "price_proof_hash": "24adb223949fe79433117f142bf447adca4d30afbb085f7b403ec43db23f416e",
+    "origin_content_sha256": "ee892e3d8b23b5380e970ff54a567fd82a9cf0cae6b1dd98373fb74d67d0abfd",
+    "rtc_operation_date": "2026-09-25",
+    "current_facts_hash": "1ea1c18f49560745a2207527e0239d26b8345ba2ffabf17a783d664a960f01b2",
+    "raw_price_records_hash": "5f76e5a0e223fd80d4012807ef3787c547390c6447b64fa3b859b017fedd11de",
+    "binding_hash": "59894b3c909d94f13ebd3225f9267f48152711f1bcc3aee91d50cb762ab76489",
+    "rtc_facts_rewritten": false,
+    "rtc_allocation_used_as_iss_price_rule": false,
+    "rtc_price_reconciled": false,
+    "iss_legal_price_qualified": false,
+    "iss_base_calculated": false,
+    "currency_code_materially_qualified": false,
+    "documentary_currency_conversion_qualified": false,
+    "per_document_tax_amount_calculated": false,
+    "government_evidence_authenticated": false,
+    "source_effective_date_proven": false,
+    "legal_applicability_approved": false,
+    "document_obligation_complete": false,
+    "xml_generated": false,
+    "posting_authorized": false,
+    "production_ready": false
+  }
+}

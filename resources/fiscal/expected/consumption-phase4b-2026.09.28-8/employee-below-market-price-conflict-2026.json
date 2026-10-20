@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_EMPLOYEE_PRICE_NOT_BELOW_MARKET"
+  ],
+  "missing_facts": [],
+  "decision_hash": "aa4149c7746ef0066b6c8ed53f01a20f07ed010d85e0ccb930200a66efde499c"
+}

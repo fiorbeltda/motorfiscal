@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "ISS_INSTITUTIONAL_ESSENTIAL_PURPOSE_NOT_MET"
+  ],
+  "missing_facts": [],
+  "decision_hash": "cbf0a65905e96ef1d395c1a5df8a72a23c8ac0011da505be824f4200f83aa189"
+}

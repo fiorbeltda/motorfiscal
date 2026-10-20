@@ -1,0 +1,6 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": ["RTC_GOVERNMENT_PAYMENT_EVIDENCE_MISSING"],
+  "missing_facts": ["rtc.government_payment_date", "rtc.government_payment_evidence_id"],
+  "decision_hash": "1aa28342c5a4587c6f6a1469317ba868368102a06607c2e78eb7d3e978949c10"
+}

@@ -1,0 +1,10 @@
+{
+    "status":  "ACTION_REQUIRED",
+    "reason_codes":  [
+                         "RTC_NON_ONEROUS_BUSINESS_USE_EXCEPTION"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "ed15756042ac44ed4cc3ac71b0db3d124534574cd0d94e3556955ba5bde45d61"
+}

@@ -1,0 +1,175 @@
+{
+  "version": "DERE-TABLE21-1.3.0-OBSERVED-2026.10.05",
+  "table": "21",
+  "qualified": true,
+  "qualification_scope": "OFFICIAL_DOMAIN_MEMBERSHIP_ONLY_NO_CONTRIBUTOR_OR_CALENDAR_APPROVAL",
+  "membership_basis": "OFFICIAL_UNDATED_TABLE_AS_OF_KNOWLEDGE",
+  "published_on": "2026-10-03",
+  "document_edition_on": "2026-10-02",
+  "observed_on": "2026-10-05",
+  "fiscal_validity": "NOT_SPECIFIED_BY_TABLE",
+  "source_hash": "7296b225e15fb4b395a41a9413ada1190cc2229d64334bf78d7b69f0fb8019f9",
+  "source_file": "dere-observed-20261005-annex-i.pdf",
+  "source_url": "https://www.cgibs.gov.br/upload/arquivos/202610/03141315-03-leiautes-da-dere-anexo-i-tabelas-v-1-3-0.pdf",
+  "pdf_page": 105,
+  "printed_page": 104,
+  "production_ready": false,
+  "codes": {
+    "01A": {
+      "code": "01A",
+      "description": "Operações de crédito, incluídas as operações de captação e repasse, adiantamento, empréstimo, financiamento, desconto de títulos, recuperação de créditos e prestação de garantias, com exceção da securitização, faturização e liquidação antecipada de recebíveis de arranjos de pagamento, de que tratam, respectivamente, os incisos IV, V e IX do caput do art. 182 da Lei Complementar nº 214/2025",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "02A": {
+      "code": "02A",
+      "description": "Operações de câmbio, inclusive quando cobrado por tarifa ou comissão",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "03A": {
+      "code": "03A",
+      "description": "Operações com títulos e valores mobiliários, incluídas a aquisição, negociação, liquidação, custódia, corretagem, distribuição e outras formas de intermediação, bem como a atividade de assessor de investimento e de consultor de valores mobiliários",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "04A": {
+      "code": "04A",
+      "description": "Operações de securitização",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "05A": {
+      "code": "05A",
+      "description": "Operações de faturização (factoring)",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "06A": {
+      "code": "06A",
+      "description": "Arrendamento mercantil (leasing) operacional, de quaisquer bens, incluídos a cessão de direitos e obrigações, substituição de garantia, alteração, cancelamento e registro de contrato e demais serviços relacionados ao arrendamento mercantil",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "06B": {
+      "code": "06B",
+      "description": "Arrendamento mercantil (leasing) financeiro, de quaisquer bens, incluídos a cessão de direitos e obrigações, substituição de garantia, alteração, cancelamento e registro de contrato e demais serviços relacionados ao arrendamento mercantil",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "07A": {
+      "code": "07A",
+      "description": "Administração de consórcio",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "08A": {
+      "code": "08A",
+      "description": "Gestão e administração de recursos, inclusive de fundos de investimento",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09A": {
+      "code": "09A",
+      "description": "Arranjos de pagamento - credenciadora ou subcredenciadora",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09B": {
+      "code": "09B",
+      "description": "Arranjos de pagamento - instituidor do arranjo (bandeiras)",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09C": {
+      "code": "09C",
+      "description": "Arranjos de pagamento - emissor de cartões",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09D": {
+      "code": "09D",
+      "description": "Arranjos de pagamento - administração de programas de fidelização",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09E": {
+      "code": "09E",
+      "description": "Arranjos de pagamento - programa de fidelidade próprio",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09F": {
+      "code": "09F",
+      "description": "Arranjos de pagamento - vale refeição, vale alimentação ou vale transporte",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "09Z": {
+      "code": "09Z",
+      "description": "Arranjos de pagamento - outros tipos de arranjo",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "10A": {
+      "code": "10A",
+      "description": "Atividades de entidades administradoras de mercados organizados, infraestruturas de mercado e depositárias centrais",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "11A": {
+      "code": "11A",
+      "description": "Operações de seguros de ramos elementares e seguros de pessoas sem cobertura por sobrevivência, com exceção dos seguros de saúde de que trata o Capítulo III do Título V da Lei Complementar nº 214/2025",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "11B": {
+      "code": "11B",
+      "description": "Operações de seguros de pessoas com cobertura por sobrevivência, com exceção dos seguros de saúde de que trata o Capítulo III do Título V da Lei Complementar nº 214/2025",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "12A": {
+      "code": "12A",
+      "description": "Operações de resseguros",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "13A": {
+      "code": "13A",
+      "description": "Previdência privada, composta de operações de administração e gestão da previdência complementar aberta",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "13B": {
+      "code": "13B",
+      "description": "Previdência privada, composta de operações de administração e gestão da previdência complementar fechada",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "14A": {
+      "code": "14A",
+      "description": "Operações de capitalização",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "15A": {
+      "code": "15A",
+      "description": "Intermediação de consórcios, seguros, resseguros, previdência complementar e capitalização",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "16A": {
+      "code": "16A",
+      "description": "Serviços de ativos virtuais",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    },
+    "17A": {
+      "code": "17A",
+      "description": "Operações de proteção patrimonial mutualista",
+      "regime": "1",
+      "fiscal_validity": "NOT_SPECIFIED_BY_TABLE"
+    }
+  }
+}

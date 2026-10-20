@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PRESUMED_CREDIT_RULE_NOT_PROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "c20cb2d6650aba763024ff024a3d3c00b4c378151445522efdfdf05ecf68d96a"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PROFESSIONAL_REDUCTION_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.professional_council_evidence_id"
+  ],
+  "decision_hash": "b8e219c9cb3261bc41b3a1e17a8482ee0bd9869ee4114272857a6fbb48bc8031"
+}

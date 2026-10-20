@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Modules\Fiscal\Core\Rules;
 
 use App\Modules\Fiscal\Core\Facts\FactBag;
+use App\Modules\Fiscal\Core\Facts\FactValueType;
 use App\Modules\Fiscal\Core\Shared\DecimalValue;
 use App\Modules\Fiscal\Core\Shared\LocalDate;
 use Throwable;
@@ -84,11 +85,12 @@ final readonly class ConditionEvaluator
         $left = $facts->value($factKey);
         $right = $rightFact !== null ? $facts->value($rightFact) : ($predicate['value'] ?? null);
 
+        $decimal = $facts->definition($factKey)->type === FactValueType::DECIMAL;
         $matched = match ($operator) {
-            ComparisonOperator::EQ => $left === $right,
-            ComparisonOperator::NEQ => $left !== $right,
-            ComparisonOperator::IN => is_array($right) && in_array($left, $right, true),
-            ComparisonOperator::NOT_IN => is_array($right) && ! in_array($left, $right, true),
+            ComparisonOperator::EQ => $this->equals($left, $right, $decimal),
+            ComparisonOperator::NEQ => ! $this->equals($left, $right, $decimal),
+            ComparisonOperator::IN => is_array($right) && $this->inList($left, $right, $decimal),
+            ComparisonOperator::NOT_IN => is_array($right) && ! $this->inList($left, $right, $decimal),
             ComparisonOperator::GT => $this->compareNumeric($left, $right) > 0,
             ComparisonOperator::GTE => $this->compareNumeric($left, $right) >= 0,
             ComparisonOperator::LT => $this->compareNumeric($left, $right) < 0,
@@ -109,6 +111,23 @@ final readonly class ConditionEvaluator
     private function compareNumeric(mixed $left, mixed $right): int
     {
         return DecimalValue::fromString((string) $left)->compareTo(DecimalValue::fromString((string) $right));
+    }
+
+    private function equals(mixed $left, mixed $right, bool $decimal): bool
+    {
+        return $decimal ? $this->compareNumeric($left, $right) === 0 : $left === $right;
+    }
+
+    /** @param array<int|string, mixed> $values */
+    private function inList(mixed $left, array $values, bool $decimal): bool
+    {
+        foreach ($values as $value) {
+            if ($this->equals($left, $value, $decimal)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private function between(mixed $left, mixed $right): bool

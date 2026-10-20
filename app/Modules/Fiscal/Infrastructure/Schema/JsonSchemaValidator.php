@@ -38,4 +38,29 @@ final readonly class JsonSchemaValidator
             $error === null ? ['$' => ['Unknown schema validation error.']] : (new ErrorFormatter)->format($error),
         );
     }
+
+    /**
+     * @param  array<string|int, mixed>  $document
+     * @param  array<string|int, mixed>  $schema
+     */
+    public function validateArray(array $document, array $schema): JsonSchemaValidationResult
+    {
+        try {
+            $documentObject = json_decode(json_encode($document, JSON_THROW_ON_ERROR), false, 512, JSON_THROW_ON_ERROR);
+            $schemaObject = json_decode(json_encode($schema, JSON_THROW_ON_ERROR), false, 512, JSON_THROW_ON_ERROR);
+        } catch (JsonException $exception) {
+            return new JsonSchemaValidationResult(false, ['$' => [$exception->getMessage()]]);
+        }
+
+        $result = $this->validator->validate($documentObject, $schemaObject);
+        if ($result->isValid()) {
+            return new JsonSchemaValidationResult(true);
+        }
+        $error = $result->error();
+
+        return new JsonSchemaValidationResult(
+            false,
+            $error === null ? ['$' => ['Unknown schema validation error.']] : (new ErrorFormatter)->format($error),
+        );
+    }
 }

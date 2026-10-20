@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_CREDIT_ENTRY_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ebaf4e638a0b7c50d5f49bbcb36d94bba78f8ed9a06de75f91e4520164a1caeb"
+}

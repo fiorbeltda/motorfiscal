@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:formal_accurate_bookkeeping"
+  ],
+  "missing_facts": [],
+  "decision_hash": "052fb07eae511daa472ade15d4b73424a879a3b5477054eda5fb9703e3ed4210"
+}

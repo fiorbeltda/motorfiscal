@@ -1,0 +1,926 @@
+[
+  {
+    "fact_key": "federal.evaluate_withholdings",
+    "prompt": "As retenções federais desta operação devem ser avaliadas?",
+    "rank": 50,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "payer.person_type",
+    "prompt": "Qual é a natureza jurídica da fonte pagadora?",
+    "rank": 51,
+    "answer_type": "ENUM",
+    "options": [
+      "PRIVATE_LEGAL_ENTITY",
+      "COOPERATIVE",
+      "INDIVIDUAL",
+      "FEDERAL_PUBLIC_ADMINISTRATION",
+      "STATE_PUBLIC_ADMINISTRATION",
+      "DISTRICT_PUBLIC_ADMINISTRATION",
+      "MUNICIPAL_PUBLIC_ADMINISTRATION",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "payer.tax_regime",
+    "prompt": "Qual é o regime tributário da fonte pagadora?",
+    "rank": 52,
+    "answer_type": "ENUM",
+    "options": [
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "LUCRO_PRESUMIDO",
+      "LUCRO_REAL",
+      "PUBLIC_ENTITY",
+      "NOT_APPLICABLE"
+    ]
+  },
+  {
+    "fact_key": "provider.person_type",
+    "prompt": "Qual é a natureza jurídica do prestador beneficiário?",
+    "rank": 53,
+    "answer_type": "ENUM",
+    "options": [
+      "PRIVATE_LEGAL_ENTITY",
+      "INDIVIDUAL",
+      "FOREIGN_LEGAL_ENTITY",
+      "COOPERATIVE"
+    ]
+  },
+  {
+    "fact_key": "federal.service_category",
+    "prompt": "Qual é a categoria federal material do serviço efetivamente prestado?",
+    "rank": 54,
+    "answer_type": "ENUM",
+    "options": [
+      "CLEANING",
+      "CONSERVATION",
+      "MAINTENANCE",
+      "SECURITY",
+      "SURVEILLANCE",
+      "VALUE_TRANSPORT",
+      "LABOR_LEASING",
+      "CREDIT_ADVISORY",
+      "MARKET_ADVISORY",
+      "CREDIT_MANAGEMENT",
+      "RISK_SELECTION",
+      "ACCOUNTS_PAYABLE_MANAGEMENT",
+      "ACCOUNTS_RECEIVABLE_MANAGEMENT",
+      "PROFESSIONAL_SERVICE",
+      "COMMISSION",
+      "BROKERAGE",
+      "ADVERTISING",
+      "COOPERATIVE_PERSONAL_SERVICE",
+      "SOFTWARE_PROGRAMMING",
+      "SOFTWARE_LICENSE_ONLY",
+      "OTHER",
+      "MIXED",
+      "UNKNOWN"
+    ]
+  },
+  {
+    "fact_key": "payment.occurred",
+    "prompt": "O pagamento ou adiantamento já ocorreu?",
+    "rank": 55,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "payment.date",
+    "prompt": "Qual é a data do pagamento ou adiantamento?",
+    "rank": 56,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payment.accounting_credit_date",
+    "prompt": "Em que data ocorreu o crédito contábil incondicional ao prestador?",
+    "rank": 57,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payment.gross_amount",
+    "prompt": "Qual é o valor bruto efetivamente pago neste evento?",
+    "rank": 58,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "invoice.issue_date",
+    "prompt": "Qual é a data de emissão da nota fiscal ou fatura?",
+    "rank": 59,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payer.siafi_electronic_collection",
+    "prompt": "O órgão ou entidade integra o Siafi federal?",
+    "rank": 59,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.expenditure_liquidation_date",
+    "prompt": "Qual é a data de liquidação do empenho da nota fiscal ou fatura?",
+    "rank": 59,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "provider.revenue_is_own",
+    "prompt": "A receita pertence ao próprio prestador optante pelo Simples/MEI?",
+    "rank": 60,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_declaration_received",
+    "prompt": "A declaração válida de optante pelo Simples foi recebida para este evento?",
+    "rank": 61,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.pis_status",
+    "prompt": "Qual é o tratamento do PIS retido neste pagamento?",
+    "rank": 62,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.cofins_status",
+    "prompt": "Qual é o tratamento da Cofins retida neste pagamento?",
+    "rank": 63,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.csll_status",
+    "prompt": "Qual é o tratamento da CSLL retida neste pagamento?",
+    "rank": 64,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.pis_exception_legal_basis",
+    "prompt": "Qual é o fundamento da exceção, alíquota zero ou suspensão do PIS?",
+    "rank": 65,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.cofins_exception_legal_basis",
+    "prompt": "Qual é o fundamento da exceção, alíquota zero ou suspensão da Cofins?",
+    "rank": 66,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.csll_exception_legal_basis",
+    "prompt": "Qual é o fundamento da exceção, alíquota zero ou suspensão da CSLL?",
+    "rank": 67,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.irrf_taxable_base",
+    "prompt": "Qual é a base específica do IRRF após segregar repasses e parcelas não próprias?",
+    "rank": 68,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.irrf_collection_mode",
+    "prompt": "O IRRF é retido pelo pagador ou autorretido pelo beneficiário nesta hipótese especial?",
+    "rank": 69,
+    "answer_type": "ENUM",
+    "options": [
+      "PAYER_WITHHOLDS",
+      "BENEFICIARY_SELF_WITHHOLDS"
+    ]
+  },
+  {
+    "fact_key": "inss.service_group",
+    "prompt": "O serviço pertence ao art. 111, ao art. 112 ou está fora da lista exaustiva do INSS?",
+    "rank": 70,
+    "answer_type": "ENUM",
+    "options": [
+      "ARTICLE_111",
+      "ARTICLE_112",
+      "OUTSIDE_EXHAUSTIVE_LIST"
+    ]
+  },
+  {
+    "fact_key": "inss.service_category",
+    "prompt": "Qual é a categoria previdenciária real do serviço?",
+    "rank": 71,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "inss.execution_mode",
+    "prompt": "Qual é a forma real de execução para fins previdenciários?",
+    "rank": 72,
+    "answer_type": "ENUM",
+    "options": [
+      "LABOR_ASSIGNMENT",
+      "CONTRACT_FOR_RESULT",
+      "TOTAL_CONSTRUCTION",
+      "PARTIAL_CONSTRUCTION",
+      "SUBCONTRACT"
+    ]
+  },
+  {
+    "fact_key": "labor.work_location",
+    "prompt": "Onde a equipe executa o serviço?",
+    "rank": 73,
+    "answer_type": "ENUM",
+    "options": [
+      "CONTRACTING_PARTY_PREMISES",
+      "THIRD_PARTY_PREMISES_INDICATED_BY_CONTRACTOR",
+      "PROVIDER_PREMISES",
+      "REMOTE",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "labor.continuous_need",
+    "prompt": "O serviço atende necessidade contínua ou permanente do contratante, ainda que periodicamente?",
+    "rank": 74,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "labor.workers_at_disposal",
+    "prompt": "Os trabalhadores permanecem colocados à disposição do contratante?",
+    "rank": 75,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_annex",
+    "prompt": "Em qual anexo do Simples esta receita de serviço está enquadrada?",
+    "rank": 76,
+    "answer_type": "ENUM",
+    "options": [
+      "ANNEX_I",
+      "ANNEX_II",
+      "ANNEX_III",
+      "ANNEX_IV",
+      "ANNEX_V",
+      "SIMEI"
+    ]
+  },
+  {
+    "fact_key": "provider.cprb_applicable",
+    "prompt": "A opção válida pela CPRB alcança este estabelecimento, serviço e período?",
+    "rank": 77,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.allowed_base_deductions",
+    "prompt": "Qual é o total de deduções previdenciárias documentalmente admitidas da base?",
+    "rank": 78,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.deduction_evidence_confirmed",
+    "prompt": "Contrato, nota e comprovantes sustentam as deduções da base do INSS?",
+    "rank": 79,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.special_retirement_additional_rate",
+    "prompt": "Qual adicional previdenciário se aplica pela exposição para aposentadoria especial: 0, 2, 3 ou 4 pontos percentuais?",
+    "rank": 80,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.subcontractor_withholding_offset",
+    "prompt": "Qual retenção comprovada de subcontratada pode ser abatida do valor a reter?",
+    "rank": 81,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.subcontractor_offset_evidence_confirmed",
+    "prompt": "O abatimento da subcontratada está comprovado para a mesma competência e serviço?",
+    "rank": 82,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "invoice.gross_amount",
+    "prompt": "Qual é o valor bruto da nota fiscal ou fatura para a retenção previdenciária?",
+    "rank": 83,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "provider.social_security_immunity_qualified",
+    "prompt": "O prestador é entidade beneficente com imunidade previdenciária válida e comprovada no período?",
+    "rank": 84,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.material_equipment_profile",
+    "prompt": "Como materiais e equipamentos estão previstos e discriminados no contrato e na nota?",
+    "rank": 85,
+    "answer_type": "ENUM",
+    "options": [
+      "NONE",
+      "VALUES_IN_CONTRACT_AND_INVOICE",
+      "CONTRACT_WITHOUT_VALUES",
+      "INHERENT_EQUIPMENT_WITHOUT_VALUES",
+      "NOT_DISCRIMINATED_IN_INVOICE",
+      "NO_CONTRACT_PROVISION_NOT_INHERENT"
+    ]
+  },
+  {
+    "fact_key": "inss.material_equipment_amount",
+    "prompt": "Qual é o valor comprovado de materiais e equipamentos informado para exclusão da base?",
+    "rank": 86,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.material_equipment_evidence_confirmed",
+    "prompt": "Contrato, nota e documentos comprovam materiais e equipamentos e seus valores?",
+    "rank": 87,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.minimum_base_category",
+    "prompt": "Qual categoria de base mínima se aplica quando contrato ou equipamento não discrimina valores?",
+    "rank": 88,
+    "answer_type": "ENUM",
+    "options": [
+      "PASSENGER_TRANSPORT",
+      "HOSPITAL_CLEANING",
+      "OTHER_CLEANING",
+      "OTHER",
+      "GENERAL_WITH_INHERENT_EQUIPMENT",
+      "CONSTRUCTION_ASPHALT_PAVING",
+      "CONSTRUCTION_EARTHWORK_LANDFILL_DREDGING",
+      "CONSTRUCTION_BRIDGES_VIADUCTS",
+      "CONSTRUCTION_DRAINAGE",
+      "CONSTRUCTION_OTHER_NON_MANUAL_EQUIPMENT"
+    ]
+  },
+  {
+    "fact_key": "inss.total_construction_optional_withholding",
+    "prompt": "Na empreitada total, foi escolhida a retenção facultativa para elidir a responsabilidade solidária?",
+    "rank": 89,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.statutory_dispense_claimed",
+    "prompt": "O prestador reivindica uma dispensa legal específica da retenção previdenciária?",
+    "rank": 90,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.statutory_dispense_type",
+    "prompt": "Qual hipótese legal de dispensa previdenciária foi reivindicada?",
+    "rank": 91,
+    "answer_type": "ENUM",
+    "options": [
+      "NO_EMPLOYEES_OWNER_PERSONAL_SERVICE",
+      "REGULATED_PROFESSION_OR_TRAINING"
+    ]
+  },
+  {
+    "fact_key": "inss.dispense_declaration_received",
+    "prompt": "A declaração ou indicação documental exigida para a dispensa foi recebida?",
+    "rank": 92,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.has_employees",
+    "prompt": "O prestador possui empregados?",
+    "rank": 93,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.service_performed_personally_by_owner_or_partner",
+    "prompt": "O serviço foi executado pessoalmente pelo titular ou sócios?",
+    "rank": 94,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.previous_month_gross_revenue",
+    "prompt": "Qual foi a receita bruta do prestador no mês anterior?",
+    "rank": 95,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.max_social_security_contribution_salary",
+    "prompt": "Qual era o salário de contribuição máximo vigente usado no limite da dispensa?",
+    "rank": 96,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "inss.regulated_profession_or_training_service",
+    "prompt": "O objeto é profissão regulamentada ou treinamento/ensino abrangido pela dispensa?",
+    "rank": 97,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.employees_in_execution",
+    "prompt": "Houve empregados do prestador executando este serviço?",
+    "rank": 98,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "inss.execution_has_other_individual_contributors",
+    "prompt": "Houve outros contribuintes individuais além dos sócios na execução?",
+    "rank": 99,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.pf_monthly_taxable_income",
+    "prompt": "Qual é o total mensal de rendimentos tributáveis da pessoa física sujeito à incidência mensal?",
+    "rank": 100,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.pf_monthly_taxable_base",
+    "prompt": "Qual é a base mensal da pessoa física após as deduções legalmente admitidas?",
+    "rank": 101,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.pf_service_relationship",
+    "prompt": "O pagamento à pessoa física decorre de relação de trabalho informada no eSocial ou de hipótese sem relação de trabalho?",
+    "rank": 102,
+    "answer_type": "ENUM",
+    "options": [
+      "EMPLOYMENT_OR_WORK_RELATIONSHIP",
+      "NO_WORK_RELATIONSHIP"
+    ]
+  },
+  {
+    "fact_key": "payment.remittance_date",
+    "prompt": "Em que data ocorreu a remessa ao beneficiário no exterior?",
+    "rank": 103,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "payment.delivery_or_employment_date",
+    "prompt": "Em que data ocorreu entrega ou emprego do valor em favor do beneficiário no exterior?",
+    "rank": 104,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "federal.foreign_income_category",
+    "prompt": "Qual é a natureza do rendimento pago ao exterior?",
+    "rank": 105,
+    "answer_type": "ENUM",
+    "options": [
+      "GENERAL_SERVICE",
+      "TECHNICAL_OR_ADMINISTRATIVE_ASSISTANCE",
+      "SOFTWARE_CUSTOM_DEVELOPMENT",
+      "SOFTWARE_LICENSE_ROYALTY"
+    ]
+  },
+  {
+    "fact_key": "federal.foreign_taxable_base",
+    "prompt": "Qual é a base tributável da remessa ao exterior após a qualificação jurídica do rendimento?",
+    "rank": 106,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "provider.favored_tax_jurisdiction",
+    "prompt": "O beneficiário está em país ou dependência com tributação favorecida para esta regra?",
+    "rank": 107,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.foreign_revenue_code",
+    "prompt": "Qual código de receita federal vigente foi validado para esta remessa?",
+    "rank": 108,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_applicable",
+    "prompt": "Existe tratado aplicável à natureza deste rendimento e ao país do beneficiário?",
+    "rank": 109,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_validated",
+    "prompt": "Tratado, protocolo, beneficiário efetivo e estabelecimento permanente foram juridicamente validados?",
+    "rank": 110,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_rate",
+    "prompt": "Qual alíquota de IRRF resultou da validação do tratado?",
+    "rank": 111,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "federal.foreign_treaty_legal_basis",
+    "prompt": "Qual dispositivo do tratado e protocolo fundamenta a alíquota aplicada?",
+    "rank": 112,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "payer.public_entity_type",
+    "prompt": "Qual é a natureza jurídica do órgão ou entidade pública pagadora?",
+    "rank": 113,
+    "answer_type": "ENUM",
+    "options": [
+      "DIRECT",
+      "AUTARCHY",
+      "PUBLIC_FOUNDATION",
+      "PUBLIC_COMPANY",
+      "MIXED_CAPITAL_COMPANY",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "public.foundation_autarchic_nature",
+    "prompt": "A fundação pública subnacional tem natureza autárquica comprovada?",
+    "rank": 113,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.foundation_maintainer_public_revenue_share",
+    "prompt": "Qual percentual comprovado da receita da fundação provém do poder público mantenedor?",
+    "rank": 113,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "public.foundation_qualification_source_id",
+    "prompt": "Qual ato ou documento comprova a qualificação da fundação?",
+    "rank": 113,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.annex_category",
+    "prompt": "Qual linha do Anexo I da IN RFB 1.234/2012 corresponde à natureza deste pagamento?",
+    "rank": 114,
+    "answer_type": "ENUM",
+    "options": [
+      "GOODS_MATERIALS_HOSPITAL_CARGO",
+      "FUEL_PRODUCER_IMPORTER",
+      "FUEL_DISTRIBUTOR_RETAIL",
+      "INTERNATIONAL_CARGO_AND_ZERO_CONTRIBUTIONS",
+      "PASSENGER_TRANSPORT",
+      "INTERNATIONAL_PASSENGER_TRANSPORT",
+      "PROFESSIONAL_ASSOCIATION_COOPERATIVE",
+      "FINANCIAL_AND_HEALTH_INSURANCE",
+      "GENERAL_SERVICES",
+      "MIXED",
+      "UNKNOWN"
+    ]
+  },
+  {
+    "fact_key": "public.annex_basis_type",
+    "prompt": "Qual hipótese específica da linha 6147 fundamenta o enquadramento?",
+    "rank": 115,
+    "answer_type": "ENUM",
+    "options": [
+      "GOODS",
+      "QUALIFIED_MATERIAL_SERVICE",
+      "HOSPITAL",
+      "DIAGNOSTIC",
+      "CARGO",
+      "FOOD",
+      "ENERGY"
+    ]
+  },
+  {
+    "fact_key": "public.materials_contract_qualified",
+    "prompt": "O contrato comprova os requisitos de serviço com materiais?",
+    "rank": 116,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.materials_invoice_qualified",
+    "prompt": "A nota comprova os materiais e sua incorporação ou fornecimento exigido?",
+    "rank": 117,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.glosa_without_new_invoice",
+    "prompt": "Houve glosa sem emissão de nova nota?",
+    "rank": 118,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.glosa_amount",
+    "prompt": "Qual foi o valor comprovado da glosa?",
+    "rank": 119,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "public.article33_convention_exists",
+    "prompt": "Existe convênio vigente do art. 33 para este ente e pagamento?",
+    "rank": 120,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.article33_convention_source_id",
+    "prompt": "Qual é a identificação do ato de convênio?",
+    "rank": 121,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.article33_convention_valid_from",
+    "prompt": "Quando iniciou a vigência comprovada do convênio?",
+    "rank": 122,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "public.article33_convention_valid_to",
+    "prompt": "Quando termina a vigência comprovada do convênio?",
+    "rank": 123,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "cooperative.provider_type",
+    "prompt": "Qual é o tipo jurídico e operacional da cooperativa prestadora?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "WORK",
+      "PRODUCTION",
+      "MEDICAL",
+      "TRANSPORT",
+      "CREDIT",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "cooperative.transport_kind",
+    "prompt": "O serviço da cooperativa de transporte é de cargas ou passageiros?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "CARGO",
+      "PASSENGER"
+    ]
+  },
+  {
+    "fact_key": "cooperative.transport_service_amount",
+    "prompt": "Qual parcela documentada corresponde ao transporte tributável pelo IRRF 3280?",
+    "rank": 124,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "cooperative.transport_invoice_split_confirmed",
+    "prompt": "A fatura discrimina parcelas tributáveis e não tributáveis do transporte?",
+    "rank": 124,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "cooperative.invoice_components",
+    "prompt": "Quais componentes, valores e beneficiários efetivos constam da fatura segregada da cooperativa?",
+    "rank": 124,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "cooperative.invoice_components_evidence_confirmed",
+    "prompt": "A fatura e seus documentos comprovam integralmente a segregação dos componentes?",
+    "rank": 124,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "cooperative.health_plan_price_model",
+    "prompt": "O plano médico é preestabelecido, pós-estabelecido, misto ou inexistente?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "NONE",
+      "PREESTABLISHED",
+      "POSTESTABLISHED",
+      "MIXED"
+    ]
+  },
+  {
+    "fact_key": "cooperative.medical_role",
+    "prompt": "A cooperativa médica atua como operadora do plano ou intermediária singular?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "PLAN_OPERATOR",
+      "SINGULAR_INTERMEDIARY"
+    ]
+  },
+  {
+    "fact_key": "construction.previdenciary_object_type",
+    "prompt": "Para fins previdenciários e de CNO, é obra ou serviço isolado?",
+    "rank": 125,
+    "answer_type": "ENUM",
+    "options": [
+      "WORK",
+      "ISOLATED_SERVICE"
+    ]
+  },
+  {
+    "fact_key": "construction.cno_required",
+    "prompt": "A obra exige inscrição no CNO neste período?",
+    "rank": 126,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.cno",
+    "prompt": "Qual é a inscrição CNO comprovada da obra?",
+    "rank": 127,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "construction.cno_holder",
+    "prompt": "Quem é o responsável pelo CNO da obra?",
+    "rank": 128,
+    "answer_type": "ENUM",
+    "options": [
+      "PROVIDER",
+      "CONTRACTING_PARTY"
+    ]
+  },
+  {
+    "fact_key": "construction.cno_exemption_legal_basis",
+    "prompt": "Qual fundamento legal vigente dispensa a inscrição no CNO?",
+    "rank": 129,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "cooperative.pcc_taxable_base",
+    "prompt": "Qual é a base de PIS/Cofins após segregação documentada de repasses e componentes da fatura da cooperativa?",
+    "rank": 130,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "cooperative.pcc_basis_evidence_confirmed",
+    "prompt": "Contrato, nota e repasses comprovam a base segregada da cooperativa?",
+    "rank": 131,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "payer.head_office_tax_id",
+    "prompt": "Qual é o CNPJ da matriz responsável pela centralização da EFD-Reinf e DCTFWeb?",
+    "rank": 132,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "federal.income_nature_code",
+    "prompt": "Qual natureza de rendimento vigente da série R-4000 foi validada para este pagamento?",
+    "rank": 133,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "public.payment_lines",
+    "prompt": "Quais são as parcelas individualizadas do pagamento, cada uma com categoria do Anexo I, valor e documento de suporte?",
+    "rank": 134,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "public.beneficiary_treatment",
+    "prompt": "Qual tratamento jurídico do beneficiário foi comprovado neste pagamento público?",
+    "rank": 135,
+    "answer_type": "ENUM",
+    "options": [
+      "STANDARD",
+      "EXEMPT",
+      "ZERO_RATE",
+      "SUSPENDED",
+      "IMMUNE",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "public.local_ir_collection_rule_id",
+    "prompt": "Qual ato local vigente disciplina a arrecadação do IR retido?",
+    "rank": 136,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.local_ir_collection_code",
+    "prompt": "Qual código local de arrecadação do IR foi validado?",
+    "rank": 137,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.local_ir_due_rule",
+    "prompt": "Qual regra local de vencimento do IR foi validada?",
+    "rank": 138,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "public.local_ir_valid_from",
+    "prompt": "Quando iniciou a vigência do ato local de arrecadação?",
+    "rank": 139,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "public.local_ir_valid_to",
+    "prompt": "Quando termina a vigência do ato local de arrecadação?",
+    "rank": 140,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "public.has_late_additions",
+    "prompt": "O pagamento público inclui juros ou multas por atraso?",
+    "rank": 141,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "public.late_interest",
+    "prompt": "Qual o valor comprovado dos juros por atraso incluídos no pagamento?",
+    "rank": 142,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "public.late_penalties",
+    "prompt": "Qual o valor comprovado das multas por atraso incluídas no pagamento?",
+    "rank": 143,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "provider.head_office_tax_id",
+    "prompt": "Qual é o CNPJ da matriz beneficiária responsável por autorretenção e DCTFWeb?",
+    "rank": 144,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "public.exception_disclosed_on_invoice",
+    "prompt": "A condição de isenção, alíquota zero ou suspensão e seu fundamento constam do documento fiscal?",
+    "rank": 145,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.work_responsible_party",
+    "prompt": "Quem é o responsável contratual e legal pela obra e pelo CNO?",
+    "rank": 129,
+    "answer_type": "ENUM",
+    "options": [
+      "PROVIDER",
+      "CONTRACTING_PARTY"
+    ]
+  },
+  {
+    "fact_key": "construction.total_contract_qualified",
+    "prompt": "A prestadora da empreitada total é empresa construtora qualificada?",
+    "rank": 129,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.total_scope_confirmed",
+    "prompt": "O contrato comprova a execução integral dos serviços necessários da obra?",
+    "rank": 129,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "construction.parent_contract_reference",
+    "prompt": "Qual contrato principal comprova a subempreitada?",
+    "rank": 129,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "construction.parent_work_reference",
+    "prompt": "Qual obra principal está vinculada à subempreitada?",
+    "rank": 129,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "cooperative.act_type",
+    "prompt": "A operação da cooperativa é ato cooperativo, não cooperativo ou misto?",
+    "rank": 124,
+    "answer_type": "ENUM",
+    "options": [
+      "COOPERATIVE_ACT",
+      "NONCOOPERATIVE_ACT",
+      "MIXED"
+    ]
+  },
+  {
+    "fact_key": "cooperative.act_legal_basis",
+    "prompt": "Qual fundamento e documento comprovam a qualificação do ato cooperativo?",
+    "rank": 124,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "federal.irrf_status",
+    "prompt": "O IR deste beneficiário público é aplicável, isento, imune, com alíquota zero ou suspenso?",
+    "rank": 135,
+    "answer_type": "ENUM",
+    "options": [
+      "APPLICABLE",
+      "EXEMPT",
+      "IMMUNE",
+      "ZERO_RATE",
+      "SUSPENDED"
+    ]
+  },
+  {
+    "fact_key": "federal.irrf_exception_legal_basis",
+    "prompt": "Qual dispositivo legal e documento comprovam a exceção individual de IR?",
+    "rank": 135,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "provider.foreign_tax_id",
+    "prompt": "Qual identificador fiscal estrangeiro foi comprovado para o beneficiário da remessa?",
+    "rank": 108,
+    "answer_type": "STRING"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_EXTINCTION_NOT_ART27_III_V"
+  ],
+  "missing_facts": [],
+  "decision_hash": "f96eb834dd21fd910c490af39e75902418fe026b93a8a0adc0463563f123e6f5"
+}

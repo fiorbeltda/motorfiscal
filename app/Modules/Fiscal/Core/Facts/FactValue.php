@@ -20,9 +20,16 @@ final readonly class FactValue
         public DateTimeImmutable $recordedAt,
         public ?EvidenceReference $evidence = null,
         public string $confidence = 'HIGH',
+        public ?DateTimeImmutable $invalidatedAt = null,
     ) {
         if ($effectiveTo !== null && $effectiveTo->isBefore($effectiveFrom)) {
             throw new InvalidArgumentException('Fact effective_to cannot be before effective_from.');
+        }
+        if (! in_array($confidence, ['LOW', 'MEDIUM', 'HIGH'], true)) {
+            throw new InvalidArgumentException('Fact confidence must be LOW, MEDIUM or HIGH.');
+        }
+        if ($invalidatedAt !== null && $invalidatedAt < $recordedAt) {
+            throw new InvalidArgumentException('Fact cannot be invalidated before being recorded.');
         }
     }
 
@@ -33,6 +40,13 @@ final readonly class FactValue
         }
 
         return $this->effectiveTo === null || ! $date->isAfter($this->effectiveTo);
+    }
+
+    public function wasAvailableAt(LocalDate $date, DateTimeImmutable $knownAt): bool
+    {
+        return $this->isEffectiveOn($date)
+            && $this->recordedAt <= $knownAt
+            && ($this->invalidatedAt === null || $this->invalidatedAt > $knownAt);
     }
 
     /** @return array<string, mixed> */
@@ -47,6 +61,7 @@ final readonly class FactValue
             'recorded_at' => $this->recordedAt->format(DATE_ATOM),
             'evidence' => $this->evidence?->toArray(),
             'confidence' => $this->confidence,
+            'invalidated_at' => $this->invalidatedAt?->format(DATE_ATOM),
         ];
     }
 }

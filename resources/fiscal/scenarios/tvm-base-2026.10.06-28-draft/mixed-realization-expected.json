@@ -1,0 +1,14 @@
+{
+  "net_base": "1010.00",
+  "component_revenue": "310.00",
+  "component_deductions": "0.00",
+  "IBS": "1.01",
+  "CBS": "9.09",
+  "component_amounts": {
+    "CURRENT_PRODUCED_RETURN": "150.00",
+    "DISPOSAL_NEW_PRODUCED_RETURN": "30.00",
+    "DEFERRED_FAIR_VALUE_REALIZED": "80.00",
+    "NEW_FAIR_VALUE_REALIZED": "50.00"
+  },
+  "scope28_completed": false
+}

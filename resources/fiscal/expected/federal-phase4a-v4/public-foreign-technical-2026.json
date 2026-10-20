@@ -1,0 +1,38 @@
+{
+  "status": "VALID_WITH_WARNINGS",
+  "reason_codes": [
+    "ISS_DECISION_VALID",
+    "RULE_BUNDLE_NOT_PRODUCTION_APPROVED",
+    "MUNICIPAL_PARAMETERS_ARE_FIXTURES"
+  ],
+  "decision": {
+    "iss": {
+      "calculation": {
+        "taxable_base": "1000.00",
+        "tax_amount": "20.00"
+      }
+    },
+    "federal_withholdings": {
+      "status": "RESOLVED",
+      "gross_payment": "1000.00",
+      "total_withholding": "150.00",
+      "net_payment": "850.00",
+      "irrf": {
+        "status": "WITHHOLD",
+        "amount": "150.00",
+        "revenue_code": "0422"
+      },
+      "pcc": {
+        "status": "NOT_APPLICABLE"
+      },
+      "inss": {
+        "status": "NOT_APPLICABLE"
+      },
+      "obligations": {
+        "status": "PROJECTED",
+        "transmission_performed": false
+      }
+    }
+  },
+  "decision_hash": "eae923580805094476276368f3b2d178d740b26335ceafaf64a86ed02a4f9209"
+}

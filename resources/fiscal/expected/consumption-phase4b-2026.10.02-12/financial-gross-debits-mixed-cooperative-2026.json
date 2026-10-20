@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_TAX_COOPERATIVE_MIXED_RATE_ALLOCATION_REQUIRED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "f40b77b36855c6ec88e2d5d4a06a2917b0e713e29c014b1c5aadc1e063b9e525"
+}

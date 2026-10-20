@@ -1,0 +1,105 @@
+{
+  "evidence_scope": "SYNTHETIC_FIXTURE_NOT_REAL_BOOK_OR_PGCC_APPROVAL",
+  "identity": {
+    "generated_at": "2026-10-01T12:00:00.000-03:00",
+    "event_sequence": 1
+  },
+  "book": {
+    "supplier_id": "11111111000191",
+    "document_id": "dps-1",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-01",
+    "analytical_book_complete": true,
+    "pgcc_complete": true,
+    "pgcc_account_mapping_qualified": true,
+    "opening_balances_qualified": true,
+    "book_source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "pgcc_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "book_evidence_id": "FIXTURE.BOOK",
+    "pgcc_evidence_id": "FIXTURE.PGCC",
+    "first_reporting_period": false,
+    "closing_frequency": "M",
+    "accounts": [
+      {
+        "cCta": "interest",
+        "natSaldoInic": "C",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "0.00",
+        "vMovCred": "1000.00",
+        "natSaldoFinal": "C",
+        "vSaldoFinal": "1000.00",
+        "natVApur": "C",
+        "vApur": "1000.00",
+        "financial_entry_ids": [
+          "interest"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "C",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "principal",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "10000.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "10000.00",
+        "natVApur": "D",
+        "vApur": "10000.00",
+        "financial_entry_ids": [
+          "principal"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      },
+      {
+        "cCta": "funding",
+        "natSaldoInic": "D",
+        "vSaldoInic": "0.00",
+        "vMovDebt": "200.00",
+        "vMovCred": "0.00",
+        "natSaldoFinal": "D",
+        "vSaldoFinal": "200.00",
+        "natVApur": "D",
+        "vApur": "200.00",
+        "financial_entry_ids": [
+          "funding"
+        ],
+        "previous_balance": {
+          "period": "2026-08",
+          "amount": "0.00",
+          "nature": "D",
+          "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      }
+    ],
+    "pgcc_accounts": [
+      {
+        "cCta": "interest",
+        "indCta": "A",
+        "codNat": "5",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "principal",
+        "indCta": "A",
+        "codNat": "1",
+        "valid_from": "2026-01-01"
+      },
+      {
+        "cCta": "funding",
+        "indCta": "A",
+        "codNat": "4",
+        "valid_from": "2026-01-01"
+      }
+    ]
+  }
+}

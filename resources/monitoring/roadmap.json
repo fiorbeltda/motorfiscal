@@ -1,0 +1,232 @@
+{
+  "reviewed_at": "2026-10-20T13:31:02.575Z",
+  "scope_note": "Desenvolvimento pausado por solicitação do usuário para versionamento. Fases3 e4A encerradas em Sandbox;4B permanece em andamento,com execução pausada;5–7 planejadas. Produção bloqueada;119 não instalada.",
+  "phases": [
+    {
+      "id": "base",
+      "label": "Fundação",
+      "title": "Kernel e infraestrutura",
+      "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+      "source": "docs/adr/README.md",
+      "state": "IMPLEMENTED",
+      "objectives": []
+    },
+    {
+      "id": "3",
+      "label": "Fase 3",
+      "title": "ISS",
+      "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+      "source": "docs/fiscal/phase3-closure.md",
+      "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+      "objectives": [
+        "Encerramento funcional do escopo ISS documentado"
+      ]
+    },
+    {
+      "id": "4A",
+      "label": "Fase 4A",
+      "title": "Retenções federais",
+      "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+      "source": "docs/fiscal/phase4a-status.md",
+      "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+      "objectives": [
+        "Encerramento funcional das retenções federais em Sandbox documentado"
+      ]
+    },
+    {
+      "id": "4B",
+      "label": "Fase 4B",
+      "title": "IBS / CBS e reforma do consumo",
+      "summary": "IBS/CBS em integração,com oito grupos parciais.112 último aceite;116 corpus intermediário auditado e correções119 a implementar.",
+      "source": "docs/fiscal/phase4b-status.md",
+      "objectives": [
+        {
+          "id": "4B.1",
+          "title": "Temporalidade"
+        },
+        {
+          "id": "4B.2",
+          "title": "Incidência e local"
+        },
+        {
+          "id": "4B.3",
+          "title": "Sujeitos e responsabilidade"
+        },
+        {
+          "id": "4B.4",
+          "title": "Base e cálculo"
+        },
+        {
+          "id": "4B.5",
+          "title": "Créditos"
+        },
+        {
+          "id": "4B.6",
+          "title": "Catálogos oficiais"
+        },
+        {
+          "id": "4B.7",
+          "title": "NFS-e / DPS RTC"
+        },
+        {
+          "id": "4B.8",
+          "title": "Aceitação, corpus e invariantes"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "label": "Fase 5",
+      "title": "Submotores verticais",
+      "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+      "state": "PLANNED",
+      "source": null,
+      "objectives": []
+    },
+    {
+      "id": "6",
+      "label": "Fase 6",
+      "title": "Governança fiscal",
+      "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+      "state": "PLANNED",
+      "source": null,
+      "objectives": []
+    },
+    {
+      "id": "7",
+      "label": "Fase 7",
+      "title": "Validação cruzada e gates finais",
+      "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+      "state": "PLANNED",
+      "source": null,
+      "objectives": []
+    }
+  ],
+  "history_reviews": [
+    {
+      "field": "storage1437_review",
+      "summary": "Manutenção100% de3/3 marcos:1.793 caches/539.818.347 bytes lógicos removidos,cópias recuperáveis SHA256;livre626.905.088 bytes. DumpWindows preservado por acesso negado. Não é avanço fiscal:3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas,produção bloqueada.110 isolado verificado,não integrado;108 regressão viva sem novo aceite."
+    },
+    {
+      "field": "price110_review",
+      "summary": "110 preparação isolada4/4 marcos,100% desse corte:160 casos/3.296 checks,24 vínculos locais/101INVALID/35ACTION_REQUIRED,72 oráculos decimais,PHPStan/Pint3 e auditoria.83 hashes108 intactos.108 segue5/7 marcos,71%,regressão única viva com13.395 entradas congeladas;sem novo aceite. Oito grupos4B parciais,3/4A encerradas em Sandbox,5–7 planejadas,produção bloqueada. Sem percentual funcional global ou nova regra fiscal ativada."
+    },
+    {
+      "field": "regression108_live_review",
+      "summary": "1085/7 marcos,71% da entrega:preflight aprovado e regressão única viva desde14:20:12,13.395 arquivos/83 hashes congelados.7200 testes são esperados,sem resultado terminal ou novo aceite. Oito grupos4B parciais,3/4A encerradas em Sandbox,5–7 planejadas e produção bloqueada. Pesquisa109 não altera essas fases."
+    },
+    {
+      "field": "current108_review",
+      "summary": "Integração1085/7 marcos,71% da entrega delimitada:corpus116 decisões/replays próprios e427 históricos terminal,92 nominais104 iguais/72 checks decimais,904/12.595 dirigidos,PHPStan/Pint572 e auditoria ampliada. Conferência prévia da regressão8064 viva;regressão/aceite108 não aprovados. Pesquisa10911 capturas/oito páginas PDF,sem política instalada. Fases3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas.104 último aceite;produção bloqueada,sem percentual funcional global. Revisões abaixo são históricas."
+    },
+    {
+      "field": "cleanup_afternoon_review",
+      "summary": "Limpeza adicional encerrada3/3 marcos,100% da manutenção:1.060 arquivos/117.199.472 bytes lógicos,cópias SHA256 no D:,38 indisponíveis preservados;livre após3.397.189.632 bytes. Fases3/4A continuam encerradas em Sandbox,4B em andamento com oito grupos parciais,5–7 planejadas. Nenhum novo encerramento fiscal ou liberação de produção. Capacidade do C: ainda limitada;registros abaixo preservam seus cortes anteriores."
+    },
+    {
+      "field": "dated108_upstream_review",
+      "summary": "36 cenários adicionais preparados e directed-v4/PHPStan-v3/Pint-v4 terminais exit0. CLI/replays sem relatório terminal observado nesta manutenção;regressão completa e aceite108 pendentes.104 permanece último aceite integrado. Sem percentual funcional global ou alteração de fases por esta manutenção."
+    },
+    {
+      "field": "dated108_review",
+      "summary": "108 instalado4/7 marcos,57% da integração delimitada:832/11.355 dirigidos,599 testes novos,22 cenários/44 avaliações,PHPStan/Pint570 e auditoria.11.131 entradas104 intactas,2 mudanças autorizadas arquivadas e83 hashes atuais;76 fontes/124 bloqueios. CorpusCLI ampliado,replays,regressão e aceite108 pendentes.104 é aceite anterior.3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "date107_review",
+      "summary": "107 protótipo isolado4/4 marcos,100% dessa entrega delimitada:255 casos novos+128 controles103,5.708 verificações,26 pares locais/106ACTION_REQUIRED/123INVALID,PHPStan/Pint e auditoria.Competência por dataISS própria sem reescreverRTC;11.133 entradas/79 hashes104 intactos. Sem integração107 ou aprovação legal.3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "date106_review",
+      "summary": "106 protótipo isolado verificado4/4 marcos,100% dessa entrega delimitada:174 casos/3.586 verificações,18 composições locais,84ACTION_REQUIRED/72INVALID,PHPStan/Pint e auditoria.11.133 entradas/79 hashes104 intactos;sem instalação106,competênciaDPS ou aprovação legal nova.104 último aceite integrado. Fases3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "date105_review",
+      "summary": "105 isolado:115 casos/2.007 verificações,13 vínculos locais,58ACTION_REQUIRED/44INVALID,PHPStan/Pint e auditoria aprovados.13 capturas/seis páginas PDF preservadas.79 hashes104 intactos;sem integração105 ou data material legalmente qualificada.104 aceito7/7 marcos,100% da entrega delimitada. Fases3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas,produção bloqueada."
+    },
+    {
+      "field": "cleanup_review",
+      "summary": "Limpeza delimitada concluída100% (3/3 marcos):1.517 arquivos/508.760.135 bytes lógicos,cópias recuperáveis e SHA256 reconferidos. Não é avanço funcional do motor. Medição posterior13:14:3.345.203.200 bytes livres;espaço oscila com paginação gerida pelo Windows,não atribuir toda variação à limpeza. Fases3/4A encerradas em Sandbox,4B parcial,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "review_note",
+      "summary": "108 instalado:832/11.355 dirigidos,599 testes novos,PHPStan/Pint570,auditoria e22 cenários/44 avaliações;76 fontes/124 bloqueios.11.131 entradas104 intactas,2 mudanças autorizadas arquivadas,83 hashes atuais.104 permanece aceite histórico6.529/98.175,não valida runtime108. CorpusCLI ampliado/replays,regressão e aceite108 pendentes. Oito grupos4B parciais;3/4A encerradas em Sandbox,4B em andamento,5–7 planejadas. Sem percentual funcional global;0/8 encerramentos formais e produção bloqueada."
+    },
+    {
+      "field": "pre_acceptance108_review",
+      "summary": "Regressão108 passou7.200/107.350,13.395 entradas inalteradas,qualidade final concluída;auditoria independente ainda em execução.104 último aceite publicado. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas,produção bloqueada.110 isolado não integrado."
+    },
+    {
+      "field": "previous_current_review",
+      "summary": "108 aceito localmente:7.200 testes/107.350 verificações,13.395 entradas inalteradas,83 hashes,qualidade final e auditoria independente aprovadas. Console reorganizado/validado28+17 checks. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas.110 isolado,111 diagnóstico sem regra nova,80 requisitos pendentes de auditoria.Produção bloqueada."
+    },
+    {
+      "field": "previous_current_review",
+      "summary": "111 preparação isolada verificada:107 casos/2.239 checks,50 composições locais/42INVALID/15ACTION_REQUIRED;400 oráculos Decimal,160 controles110 completos iguais,PHPStan/Pint e auditoria1.793 checks aprovados.18 capturas/192 checks de fontes/runtime;cadeia18270/IN15 com publicação08/12/2025 qualificada no escopo construção,não dedução de software.83 hashes108 intactos;nenhuma integração111,base/imposto/FX/XML ou produção aprovada. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas. Auditoria80 requisitos continua pendente."
+    },
+    {
+      "field": "before112_upstream_expansion",
+      "summary": "112 instalado em draft2:quatro classes e7 fatos/perguntas,94 fontes,438 testes novos.1.342 testes/19.170 checks dirigidos com predecessores,PHPStan/Pint580 e auditoria inicial17.238 checks aprovados.13.393 entradas108 protegidas intactas,duas mudanças previstas arquivadas;87 hashes atuais. Ainda faltam50 cenários108 no novo transporte,incluindo sucessoRTC/USD,CLI/543históricos,regressão completa e aceite112.108 último aceite;produção bloqueada. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas. Nenhum novo encerramento formal."
+    },
+    {
+      "field": "before112_terminal_auditor_preparation",
+      "summary": "Expansão112 verificada:124 cenários,58 fontes108 transportadas,11 sucessos RTC/USD.1.442 testes/21.844 verificações,PHPStan/Pint581 e auditoria1.092 checks aprovados;87 hashes runtime intactos desde a instalação112. CorpusCLI em execução;regressão completa e aceite112 pendentes.108 último aceite;produção bloqueada. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas.0/8 novos encerramentos formais;80 requisitos ainda exigem auditoria."
+    },
+    {
+      "field": "before112_terminal_corpus_review",
+      "summary": "Expansão112 verificada:124 cenários,58 fontes108 transportadas,11 sucessos RTC/USD.1.442 testes/21.844 verificações,PHPStan/Pint581 e auditoria1.092 checks aprovados;87 hashes runtime intactos desde a instalação112. CorpusCLI em execução;regressão completa e aceite112 pendentes.108 último aceite;produção bloqueada. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas.0/8 novos encerramentos formais;80 requisitos ainda exigem auditoria. Verificadores de fechamento preparados e conferidos quanto à sintaxe;corpus continua ativo,sem regressão completa ou aceite112."
+    },
+    {
+      "field": "before112_live_regression",
+      "summary": "Corpus112 validado: 124 cenários, 248 decisões/replays próprios e 543 históricos exatos. Auditoria independente: 27.116 conferências e 584 verificações decimais. Preparação da regressão completa em execução; ainda sem resultado da suíte ou aceite112. Último aceite:108. Produção bloqueada. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas. Nenhum novo encerramento formal;80 requisitos ainda exigem auditoria."
+    },
+    {
+      "field": "before113_legacy_source_review",
+      "summary": "Regressão112 em execução desde07:47,com17.418 entradas congeladas. Corpus validado:248 decisões/replays próprios,543 históricos e auditoria27.116 conferências. Ainda sem resultado terminal da suíte,qualidade final ou aceite112.108 último aceite;produção bloqueada. Oito grupos4B revistos e parciais;3/4A encerradas em Sandbox,5–7 planejadas. Pesquisa113 parcial com180 checks,não altera base/aliquota. Sem novo encerramento formal."
+    },
+    {
+      "field": "before113_price_base_boundary_review",
+      "summary": "Regressão112 viva,17.418 entradas congeladas,sem resultado terminal ou aceite112. Corpus e auditoria aprovados;108 último aceite. Pesquisa113 parcial:13 capturas,180+141 conferências de fontes;XLS histórico inspecionado sem alteração,nenhuma regra nova. Oito grupos4B parciais;3/4A encerradas em Sandbox,5–7 planejadas. Sem novo encerramento formal;produção bloqueada."
+    },
+    {
+      "field": "before113_later_code_history_and_cleanup",
+      "summary": "Regressão112 viva,17.418 entradas congeladas;sem resultado terminal ou aceite112.108 último aceite integrado. Estudo113:124 capturas/1.842 conferências e87 hashes de execução intactos;classificação municipal granular ainda não comprovada,contrato proposto sem implementação. Oito grupos4B parciais;3/4A encerradas em Sandbox,5–7 planejadas. Produção bloqueada;80 requisitos exigem auditoria individual."
+    },
+    {
+      "field": "before112_regression_terminal_and114_audit",
+      "summary": "Regressão112 viva no mesmo processo,17.418 entradas congeladas e sem resultado terminal;108 último aceite. Pesquisa113:23 capturas,196 novas conferências,22 páginas PDF adicionais extraídas e quatro vistas;sem base/alíquota/regra instalada. Limpeza concluída:1.136 arquivos/103.524.939 bytes lógicos,cópias recuperáveis noD: reconferidas. C: segue com pouca margem. Oito grupos4B parciais;3/4A encerradas em Sandbox,5–7 planejadas;produção bloqueada e80 requisitos exigem auditoria."
+    },
+    {
+      "field": "before112_independent_acceptance_publication",
+      "summary": "Suíte112 aprovada7.738/116.599,17.418 entradas intactas e qualidade final aprovada;auditoria independente em execução,108 último aceite publicado. Auditoria114 examina8 requisitos originais;quatro divergências de ciclo split reproduzidas,proposta isolada33 observações e16 testes aprovada,sem instalação. Demais72 itens não revisados neste corte;nenhum encerramento formal. Oito grupos4B parciais;3/4A encerradas em Sandbox,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "before114_targeted_fix_completion",
+      "summary": "112 aceito localmente:7.738/116.599,17.418 entradas intactas,87 hashes e qualidade final/auditoria independente aprovadas. Corpus248/543,94 fontes e125 bloqueios;produção bloqueada.114 preparação isolada:33 observações/16 testes,Pint/PHPStan aprovados;duas guardas ainda não instaladas. Primeiros8 requisitos examinados,72 não revistos neste corte;nenhum encerramento formal adicional. Oito grupos4B parciais;3/4A encerradas em Sandbox,5–7 planejadas."
+    },
+    {
+      "field": "before115_incidence_and_geography_preparation",
+      "summary": "114 instalado após112:duas guardas de revogação/supersessão e16 testes permanentes;59/220 dirigidos,PHPStan/Pint582 finais aprovados.86 hashes e3.869 recursos fiscais intactos;uma classe alterada e predecessor arquivado.94 fontes/125 bloqueios,sem ativar split oficial. Último aceite/suíte integral112,anterior à correção114;nenhuma nova regressão integral declarada.8 requisitos examinados,72 não revistos neste corte;0 grupos novos encerrados.3/4A encerradas em Sandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "before116_directed_integration",
+      "reviewed_at": "2026-10-20T12:00:57Z",
+      "summary": "115:12 itens4B.2 examinados;31 casos/60 avaliações euma recusa tipada. Três contraexemplos geográficos nos dois executores. Referência observada27UFs/5.571 registros e componente isolado47 casos/423 limites,Pint/PHPStan aprovados;sem integração ou regra fiscal nova.114 permanece instalada e dirigida59/220 validada.112 último aceite integral,anterior a114;uma classe mudou depois.20 IDs revisados nos cortes114/115,60 ainda não revistos aqui,zero encerramentos formais adicionais. Oito grupos4B parciais,3/4A encerradas emSandbox,5–7 planejadas eprodução bloqueada."
+    },
+    {
+      "field": "before116_price_expansion",
+      "reviewed_at": "2026-10-20T12:27:24Z",
+      "summary": "116 integrada nos quatro caminhos de destino:80 testes permanentes novos;96 testes/416 verificações dirigidas, PHPStan e Pint584 aprovados. Corpus final:32 decisões e32 replays exatos;97 fontes válidas,126 bloqueios de produção. Último aceite integral112; regressão completa e expansão de corpus posteriores a114/116 pendentes. Auditoria114/115 examinou20 IDs,60 não revistos nesses cortes e zero encerramentos formais. Oito grupos4B parciais; fases3/4A encerradas em Sandbox e5–7 planejadas."
+    },
+    {
+      "field": "before117_subjects_review",
+      "reviewed_at": "2026-10-20T12:45:26Z",
+      "summary": "Expansão116 preparada:124 cenários,249 testes novos de transporte;593 testes/14.934 verificações dirigidas, PHPStan/Pint587 e auditoria3.657 checks aprovados. Fatos monetários e eventos originais preservados; duas provas passam a recusar corretamente por revogação/supersessão conhecida.71 composições positivas,11 fontesUSD. CorpusCLI ampliado em execução para248 decisões/replays próprios e791 históricos;essas contagens ainda não são resultado terminal.88 hashes de runtime116 intactos.112 último aceite integral; regressão e aceite116 pendentes. Oito grupos4B parciais;3/4A encerradas emSandbox,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "before118_base_review_and116_intermediate",
+      "reviewed_at": "2026-10-20T13:01:23Z",
+      "summary": "117:dez requisitos originais de sujeitos revistos;40 cenários,78 avaliações nativas euma recusa tipada;186 conferências e88 hashes116 intactos. Três bases materiais inconsistentes aceitas no recolhimento pelo adquirente; lacuna reproduzida,sem correção instalada. Três fontes primárias capturadas,nenhuma ativada. Agora30 IDs distintos examinados nos cortes114/115/117 e50 não revistos;zero encerramentos formais.116 mantém593/14.934 dirigidos e auditoria3.657;corpus ampliado em execução,sem resultado terminal integral.112 último aceite.3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    }
+  ],
+  "current_review": "116 terminal intermediário:248 decisões/replays próprios e791 históricos,35.072 conferências independentes/568 Decimal/232 comparações108,97 fontes/126 bloqueios;sem suíte completa116 ou aceite.117/118 examinaram24 itens novos:44 IDs distintos revisados e36 não revistos,nenhum encerrado formalmente.118:34 cenários,68 chamadas,66 decisões e duas exceções;417 conferências/180 Decimal,contratos aninhados falham com booleanos,evidências vazias e duplicidade sem desambiguação.88 hashes intactos;91 arquivos arquivados antes119. Próximo aceite integral deverá incorporar correções119,ainda não instaladas.112 último aceite;3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+}

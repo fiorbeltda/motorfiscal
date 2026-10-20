@@ -1,0 +1,11 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PERSONAL_USE_SUPPLY_ORIGIN_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.personal_use_supply_origin",
+    "rtc.personal_use_origin_evidence_id"
+  ],
+  "decision_hash": "8d88bd0c42c2f35c0c85e6262d8c0b5006ceeb253f390b6531615339c79e7e29"
+}

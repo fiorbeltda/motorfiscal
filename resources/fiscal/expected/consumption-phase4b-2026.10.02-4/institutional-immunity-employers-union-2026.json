@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CATEGORY_NOT_ELIGIBLE"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ac3aa17d3d20fdc16d41861e6c3572b726fe084f76486a0c024a4c6f10771aff"
+}

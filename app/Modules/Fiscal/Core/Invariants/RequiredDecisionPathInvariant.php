@@ -12,6 +12,10 @@ final readonly class RequiredDecisionPathInvariant implements FiscalInvariant
         private string $invariantId,
         private string $path,
         private InvariantSeverity $severity = InvariantSeverity::BLOCKING,
+        private ?string $effectiveFrom = null,
+        private ?string $effectiveTo = null,
+        private ?string $exemptWhenPath = null,
+        private ?string $exemptWhenValue = null,
     ) {}
 
     public function id(): string
@@ -21,7 +25,25 @@ final readonly class RequiredDecisionPathInvariant implements FiscalInvariant
 
     public function validate(array $decision, FiscalDecisionContext $context): InvariantResult
     {
+        $date = $context->competenceDate->value();
+        if (($this->effectiveFrom !== null && $date < $this->effectiveFrom)
+            || ($this->effectiveTo !== null && $date > $this->effectiveTo)) {
+            return new InvariantResult($this->id(), true, InvariantSeverity::INFO, 'Invariant is outside its effective period.');
+        }
         $cursor = $decision;
+        if ($this->exemptWhenPath !== null && $this->exemptWhenValue !== null) {
+            $condition = $decision;
+            foreach (explode('.', $this->exemptWhenPath) as $segment) {
+                if (! is_array($condition) || ! array_key_exists($segment, $condition)) {
+                    $condition = null;
+                    break;
+                }
+                $condition = $condition[$segment];
+            }
+            if ($condition === $this->exemptWhenValue) {
+                return new InvariantResult($this->id(), true, InvariantSeverity::INFO, 'Decision path is inapplicable to the evidenced treatment.');
+            }
+        }
 
         foreach (explode('.', $this->path) as $segment) {
             if (! array_key_exists($segment, $cursor)) {

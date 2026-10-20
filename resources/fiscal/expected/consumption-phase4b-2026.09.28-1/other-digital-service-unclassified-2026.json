@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_ENGINE_DECISION_RULE_NOT_PROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "529b51e2339096983658b07f5dd21cc50e7b034b0bff94cbe3025939e3a19581"
+}

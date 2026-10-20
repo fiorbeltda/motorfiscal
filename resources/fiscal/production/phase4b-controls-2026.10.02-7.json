@@ -1,0 +1,119 @@
+{
+  "version": "2026.10.02-7",
+  "scope": "INTEGRATED_ISS_4A_4B",
+  "status": "IN_PROGRESS",
+  "controls": [
+    {
+      "id": "4B.1.TEMPORALITY",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "2033 sem ISS encaminhado ao IBS/CBS com prova de evento não transicional; operações cruzando 2032/2033 ainda exigem regra específica. CBS 2027+ e IBS por destino 2029+ sem alíquotas comprovadas."
+    },
+    {
+      "id": "4B.2.INCIDENCE_AND_DESTINATION",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026",
+        "NFSE-CINDOP"
+      ],
+      "gap": "Doação com opção de tributação pelo valor de mercado recebe cálculo nominal segregado quando destino e alíquotas estão comprovados; documento, anulação quantitativa de créditos, outras operações não onerosas e locais especiais ainda pendentes. Destino presencial sobre pessoa com prova de local e estabelecimento implementado; demais locais especiais pendentes."
+    },
+    {
+      "id": "4B.2.EXPORT_IMPORT",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026",
+        "DECREE-12955-CAMARA-2026"
+      ],
+      "gap": "Exportação parcial digital: papéis, destino e valores nominais da parcela brasileira qualificados; obrigação documental e revisão da classificação ainda pendentes. Importação: documento definitivo pendente."
+    },
+    {
+      "id": "4B.3.SUBJECTS_AND_COLLECTION",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "Compras públicas qualificadas pelos arts. 372, 472 e 473, com exceções e parcelas temporais; redutor não publicado, cálculo de destinação, consórcios, recolhimento e cadastro ainda pendentes."
+    },
+    {
+      "id": "4B.3.SIMPLES_MEI",
+      "state": "PARTIAL",
+      "source_ids": [
+        "RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918",
+        "MF-CGSN194-NOTICE-OBSERVED-20261001"
+      ],
+      "gap": "Aviso oficial de supersessão dos prazos do primeiro semestre de 2027 detectado: janela histórica deixa de qualificar após observação; íntegra da CGSN 194 pendente. Apuração interna, início de atividade, MEI e períodos seguintes ainda pendentes."
+    },
+    {
+      "id": "4B.4.BASE_AND_SPECIAL_REGIMES",
+      "state": "PARTIAL",
+      "source_ids": [
+        "CF1988-CONSOLIDATED-CAMARA-OBSERVED-20261002",
+        "CTN-CONSOLIDATED-CAMARA-OBSERVED-20261002",
+        "LC214-CONSOLIDATED-CAMARA-2026",
+        "LC214-CONSOLIDATED-CAMARA-OBSERVED-20261001"
+      ],
+      "gap": "Redução de 30% profissional e de 60% em educação/saúde com anexos II/III e glosa médica não paga materializadas; demais benefícios/regimes e operações combinadas ainda pendentes. Imunidade institucional de ISS com prova das finalidades essenciais, nominal zero e campos DPS1.01; demais perfis e atos municipais tributáveis continuam pendentes."
+    },
+    {
+      "id": "4B.5.CREDITS",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026",
+        "LC214-CONSOLIDATED-CAMARA-OBSERVED-20261001"
+      ],
+      "gap": "Crédito de entrada arts49/50; anulação/manutenção51/52 e cálculo mensal consolidado42-45/53 sobre livro previamente qualificado, sem entrega. Qualificação dos regimes específicos/presumidos e integração contábil ainda pendentes."
+    },
+    {
+      "id": "4B.6.CLASSIFICATION",
+      "state": "PARTIAL",
+      "source_ids": [
+        "CTN-CONSOLIDATED-CAMARA-OBSERVED-20261002",
+        "LC214-CONSOLIDATED-CAMARA-OBSERVED-20261001",
+        "NFE-CCLASSTRIB",
+        "NFSE-CINDOP",
+        "NFSE-CORRELATION",
+        "NFSE-NBS-ANEXO-B"
+      ],
+      "gap": "96 regras interpretativas candidatas de SaaS, profissionais, educação/saúde e imunidade institucional. Outros serviços/destinos e aprovação formal pendentes."
+    },
+    {
+      "id": "4B.7.DOCUMENT",
+      "state": "PARTIAL",
+      "source_ids": [
+        "NFSE-NT004-LAYOUT",
+        "NFSE-NT009-LAYOUT",
+        "NFSE-RTC-XSD",
+        "NFSE-CONTRIBUTOR-API-MANUAL-OBSERVED-20261001",
+        "RFB-RTC-DOCUMENT-SCHEDULE-OBSERVED-20261001",
+        "NFSE-PRODUCTION-XSD-20260209"
+      ],
+      "gap": "DPS XML local de serviço doméstico tributável com tomador/destinatário e retenções 4A, replay e hashes implementados. Faceta serie do XSD oficial conflita com série operacional; perfis especiais, prova municipal e implantação NT009 ainda pendentes. Cronograma RTC explícito e independente de implantação, com revisão do ato completo pendente. Glosa médica altera base RTC com trace, mas exige grupo documental antes de XML; conflito oficial de série permanece."
+    },
+    {
+      "id": "4B.8.CORPUS",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "O corpus atual não demonstra decisão positiva e homologada para todas as famílias, períodos e tratamentos."
+    },
+    {
+      "id": "INTEGRATED.ISS_MUNICIPAL",
+      "state": "OPEN",
+      "source_ids": [
+        "CF1988-CONSOLIDATED-CAMARA-OBSERVED-20261002",
+        "CTN-CONSOLIDATED-CAMARA-OBSERVED-20261002"
+      ],
+      "gap": "O bundle usa parâmetros municipais sintéticos; a transição exige fonte municipal oficial para 31/12/2028 e parâmetros atuais de responsabilidade. Imunidade institucional de ISS com prova das finalidades essenciais, nominal zero e campos DPS1.01; demais perfis e atos municipais tributáveis continuam pendentes."
+    },
+    {
+      "id": "INTEGRATED.4A",
+      "state": "PARTIAL",
+      "source_ids": [],
+      "gap": "Avaliação federal após 2032 encaminhada à 4A com prova de data e veto a PIS/Cofins legados; perfis públicos/cooperativos, obrigações temporais e atos locais ainda exigem revisão."
+    }
+  ]
+}

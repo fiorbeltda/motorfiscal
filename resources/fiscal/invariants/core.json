@@ -1,0 +1,13 @@
+[
+  {"id": "ISS_LOCATION_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.location.municipality_ibge", "severity": "BLOCKING"},
+  {"id": "ISS_INCIDENCE_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.incidence.value", "severity": "BLOCKING"},
+  {"id": "ISS_RESPONSIBILITY_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.responsibility.responsible_party", "severity": "BLOCKING"},
+  {"id": "ISS_TREATMENT_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.treatment.value", "severity": "BLOCKING"},
+  {"id": "ISS_RATE_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.municipal_parameters.rate", "severity": "BLOCKING"},
+  {"id": "ISS_BASE_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.calculation.taxable_base", "severity": "BLOCKING"},
+  {"id": "ISS_AMOUNT_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "iss.calculation.tax_amount", "severity": "BLOCKING"},
+  {"id": "DPS_CTRIBNAC_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "dps_projection.service.cTribNac", "severity": "BLOCKING"},
+  {"id": "DPS_DESCRIPTION_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "dps_projection.service.xDescServ", "severity": "BLOCKING"},
+  {"id": "DPS_SERVICE_AMOUNT_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "dps_projection.values.vServ", "severity": "BLOCKING"},
+  {"id": "DPS_RETENTION_TYPE_REQUIRED", "type": "REQUIRED_DECISION_PATH", "path": "dps_projection.iss.tpRetISSQN", "severity": "BLOCKING"}
+]

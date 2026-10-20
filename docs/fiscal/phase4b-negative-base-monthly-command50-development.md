@@ -1,0 +1,15 @@
+# Bases negativas50 — integração da declaração ao comando mensal
+
+O comando `fiscal:dere:project-monthly-closing` recebe a opção explícita `--negative-base-request=` sob o bundle `2026.10.09-28-draft50`. O pedido é aplicado à projeção mensal efetivamente reconstruída pelo motor a partir do snapshot e do conhecimento capturado. A entrega sucede o protótipo [de declaração50](phase4b-negative-base-closing50-development.md), cujo relatório permanece preservado com os limites existentes no momento da captura.
+
+O pedido vincula os hashes canônicos do snapshot, da entrada mensal e da projeção original completa. O comando recusa alteração de qualquer vínculo e bundle sem política BCN. A qualificação existente de bases, livro, deduções e componentes permanece como pré-requisito; a declaração separada não autoriza ignorar os bloqueios anteriores. O relatório conserva o pedido e seu hash para reprodução.
+
+A captura nativa usa `command-financial-input.json`, snapshot próprio50, entrada mensal preservada de48 e cadeia anterior explicitamente sintética. O replay financeiro e o replay mensal reproduziram os resultados capturados. D1101, D1121, D1011 e D1001 conservaram os bytes originais de48. A comparação estrutural do D1199 demonstra que apenas as opções BCN foram acrescentadas. Os cinco candidatos passaram na conferência estrutural pelo XSD oficial; continuam sem assinatura.
+
+Os testes dirigidos passaram em12 casos/56 asserções: pedido válido, adulteração do vínculo de snapshot, adulteração da entrada mensal, adulteração da projeção original, bundle sem política e execução sem pedido, além das regressões existentes do comando mensal. PHPStan e Pint dirigidos passaram. A suíte completa, a qualidade geral e as regressões dos candidatos27/26/25 são exigidas pelo auditor `scripts/audit_phase4b_negative_base50_monthly_command.py`; os totais e resultados terminais ficam registrados em `command-development-validation.json`, criado somente depois da aprovação dessas verificações.
+
+As evidências ficam em `storage/app/phase4b-negative-base50-closing-draft-20261009`. A fonte anterior do comando foi arquivada antes da alteração e vinculada por SHA256 em `monthly-command-source-evolution.json`. O auditor verifica o protótipo50 preservado, os relatórios anteriores48/49, os respectivos hashes de implementação e as51 fontes oficiais do bundle.
+
+Esta entrega integra a declaração de opção ao fluxo mensal. Ainda falta aplicar o consumo de estoque à apuração IBS/CBS com bases correntes por natureza comprovadas, qualificar calendário e fronteira de cinco anos, comprovar autenticidade do retorno e reprocessar competências dependentes. Os débitos brutos continuam sem recálculo por BCN. O próximo escopo deve vincular bases correntes comprovadas ao planejador de consumo e expor a proposta de apuração local com conservação por raiz, antes de ativar qualquer efeito tributário. Essa proposta precisa preservar o cálculo bruto original e declarar separadamente a base deduzida e a apuração resultante.
+
+O candidato integral aceito permanece27. Escopo28, escopo49 e Fase4B continuam abertos; produção permanece bloqueada.

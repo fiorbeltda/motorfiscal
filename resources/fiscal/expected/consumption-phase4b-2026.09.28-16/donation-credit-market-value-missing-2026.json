@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_MARKET_VALUE_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.market_value_brl"
+  ],
+  "decision_hash": "b5dfa24c62dc6cf0301d1c628e2c9ff22a969832319e380d34fdc04a5c883933"
+}

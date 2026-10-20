@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_ROUTE_PARTIES_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ea5a351d4c2100868c54cb836635917a8c2bf78b3b391f837e7aa1baf3af3430"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "INVALID",
+  "reason_codes": ["RTC_GOVERNMENT_UNIFORM_RATE_CLASSIFICATION_CONFLICT"],
+  "missing_facts": [],
+  "decision_hash": "d7c32a35d0ed5b2886d4e2cb5c6bb706db87c5336bcb23ab905d95f3a365923b"
+}

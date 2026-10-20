@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_ADJUSTMENT_RULE_NOT_QUALIFIED"
+  ],
+  "missing_facts": [
+    "rtc.monthly_assessment"
+  ],
+  "decision_hash": "1f73ae1a7aeedd787e8a5a9c1d5c0b3c5cc9bff8555778a8ab3b6e47456f2104"
+}

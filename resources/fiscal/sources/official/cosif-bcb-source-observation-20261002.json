@@ -1,0 +1,16 @@
+{
+  "observed_on": "2026-10-02",
+  "url": "https://www3.bcb.gov.br/aplica/cosif/completo",
+  "file": "cosif-bcb-completo-observed-20261002.pdf",
+  "sha256": "9bd7f7bd7483e14e9a23ca2b8805c3ad80bbd199fa8cff1a7d167573bd994dd1",
+  "size_bytes": 10805510,
+  "pages": 817,
+  "source_kind": "OFFICIAL_OBSERVED_PDF",
+  "publication_verified": false,
+  "historical_effectiveness_verified": false,
+  "production_approved": false,
+  "catalog_activation": "PENDING_DATED_REFERENCE_ACCOUNT_QUALIFICATION",
+  "visual_inspection_pages": [
+    181
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_EXTINCTION_LINK_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "527c554c65750cd135d5e84e8ab2724be87109df9b89fc5e8557f58095a1f837"
+}

@@ -1,0 +1,43 @@
+{
+  "evidence_scope": "SYNTHETIC_FIXTURE_NOT_REAL_DOCUMENT_VALIDATION",
+  "identity": {
+    "generated_at": "2026-10-01T12:00:00.000-03:00",
+    "event_sequence": 1
+  },
+  "deductions": {
+    "supplier_id": "11111111000191",
+    "document_id": "dps-1",
+    "period_end": "2026-09-30",
+    "observed_on": "2026-10-01",
+    "documents_qualified": true,
+    "deduction_allocation_complete": true,
+    "monthly_period_closed_previously": false,
+    "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "documents": [
+      {
+        "tpDFe": "03",
+        "chDFe": "11111111111111111111111111111111111111111111",
+        "dtEmi": "2026-09-20",
+        "tpAtiv": "01",
+        "vOper": "1000.00",
+        "vDedTotal": "800.00",
+        "vDed": "200.00",
+        "document_validity_qualified": true,
+        "document_source_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "evidence_id": "FIXTURE.DFE",
+        "financial_entry_ids": [
+          "funding"
+        ],
+        "items": [
+          {
+            "nItem": "1",
+            "vItem": "1000.00",
+            "vItemDedTotal": "800.00",
+            "vItemDed": "200.00",
+            "source_item_qualified": true
+          }
+        ]
+      }
+    ]
+  }
+}

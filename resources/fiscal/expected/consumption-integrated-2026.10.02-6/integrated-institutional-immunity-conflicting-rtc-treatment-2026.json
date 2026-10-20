@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "ISS_RTC_INSTITUTIONAL_TREATMENT_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "8af33dc076891db05e34c12b2cad42b8060686e11fae041cfcfd4f0d5e28ee47"
+}

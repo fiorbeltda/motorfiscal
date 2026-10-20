@@ -13,6 +13,6 @@
     {"type": "SET_DECISION_VALUE", "path": "test.provider_simples", "value": true}
   ],
   "source_id": "SOURCE.SYNTHETIC.TEST",
+  "source_version": "SYNTHETIC-1",
   "reason_codes": ["TEST_PROVIDER_SIMPLES_MATCHED"]
 }
-

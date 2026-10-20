@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_CREDIT_CLAIMANT_REGIME_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.acquirer_regime"
+  ],
+  "decision_hash": "2b97fe704cc65f6d8e426ab4ecda1836ea40db2c1573b0ba28d59cc978b43924"
+}

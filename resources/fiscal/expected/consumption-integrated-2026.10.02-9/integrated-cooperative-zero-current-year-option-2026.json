@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_PRIOR_YEAR_OPTION_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "c7fc02d34dc749800497303bcfd3805010123229eaf074f4a97e34274b7cec58"
+}

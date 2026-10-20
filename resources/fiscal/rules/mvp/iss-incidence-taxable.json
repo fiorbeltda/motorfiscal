@@ -1,0 +1,12 @@
+{
+  "rule_id": "ISS.INCIDENCE.MVP.TAXABLE",
+  "version": "1.0.0",
+  "kind": "INCIDENCE",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.canonical_id", "operator": "IN", "value": ["SOFTWARE_DEVELOPMENT", "TRADE_FAIR_EVENT", "CONSTRUCTION_CONTRACT"]},
+  "effects": [{"type": "SET_DECISION_VALUE", "path": "iss.incidence", "value": "TAXABLE"}],
+  "source_id": "SOURCE.LC116.MVP.INCIDENCE",
+  "source_version": "CONSOLIDATED-2026-09-15",
+  "reason_codes": ["ISS_MVP_OPERATION_TAXABLE"]
+}

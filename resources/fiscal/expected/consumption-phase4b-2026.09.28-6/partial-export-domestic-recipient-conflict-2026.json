@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_PARTIAL_EXPORT_DOMESTIC_RECIPIENT_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "29e7b62de9c6a459124520a70251140a6d23290b7a06337c4bc35b4de052a5d6"
+}

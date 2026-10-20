@@ -1,0 +1,20 @@
+{
+  "version": "2026.09.25-1",
+  "status": "SANDBOX_CANDIDATE",
+  "source": {
+    "source_id": "LC214-CONSOLIDATED-CAMARA-2026",
+    "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.pdf",
+    "file": "lc214-consolidada-lc227-camara-2026.pdf",
+    "sha256": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+    "retrieved_on": "2026-09-25",
+    "review_status": "SANDBOX_REVIEW_REQUIRED"
+  },
+  "rates": [
+    {"tax":"IBS_STATE","jurisdiction":"BR","percent":"0.10","valid_from":"2026-01-01","valid_to":"2026-12-31","published_at":"2025-01-16T00:00:00-03:00","status":"ACTIVE","source_id":"LC214-ART343","source_hash":"0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"},
+    {"tax":"IBS_MUNICIPAL","jurisdiction":"BR","percent":"0.00","valid_from":"2026-01-01","valid_to":"2026-12-31","published_at":"2025-01-16T00:00:00-03:00","status":"ACTIVE","source_id":"LC214-ART343","source_hash":"0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"},
+    {"tax":"CBS","jurisdiction":"BR","percent":"0.90","valid_from":"2026-01-01","valid_to":"2026-12-31","published_at":"2025-01-16T00:00:00-03:00","status":"ACTIVE","source_id":"LC214-ART346","source_hash":"0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"},
+    {"tax":"IBS_STATE","jurisdiction":"BR","percent":"0.05","valid_from":"2027-01-01","valid_to":"2028-12-31","published_at":"2025-01-16T00:00:00-03:00","status":"ACTIVE","source_id":"LC214-ART344","source_hash":"0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"},
+    {"tax":"IBS_MUNICIPAL","jurisdiction":"BR","percent":"0.05","valid_from":"2027-01-01","valid_to":"2028-12-31","published_at":"2025-01-16T00:00:00-03:00","status":"ACTIVE","source_id":"LC214-ART344","source_hash":"0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"}
+  ],
+  "missing_rate_notice": "CBS 2027 onward and jurisdictional IBS 2029 onward require published effective rate artifacts. No estimated default is permitted."
+}

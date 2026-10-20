@@ -1,0 +1,15 @@
+{
+  "rule_id": "ISS.EVENT.LOCATION.EVENT",
+  "version": "1.0.0",
+  "kind": "LOCATION",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.canonical_id", "operator": "EQ", "value": "TRADE_FAIR_EVENT"},
+  "effects": [
+    {"type": "SELECT_STRATEGY", "strategy": "EVENT_LOCATION"},
+    {"type": "REQUIRE_DETAIL_GROUP", "group": "atvEvento"}
+  ],
+  "source_id": "SOURCE.LC116.ART3.XVIII",
+  "source_version": "CONSOLIDATED-2026-09-15",
+  "reason_codes": ["ISS_LOCATION_EVENT", "DPS_EVENT_DETAIL_REQUIRED"]
+}

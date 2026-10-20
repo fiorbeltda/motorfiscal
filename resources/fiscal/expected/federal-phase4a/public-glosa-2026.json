@@ -1,0 +1,15 @@
+{
+  "status": "VALID_WITH_WARNINGS",
+  "reason_codes": ["ISS_DECISION_VALID", "RULE_BUNDLE_NOT_PRODUCTION_APPROVED", "MUNICIPAL_PARAMETERS_ARE_FIXTURES"],
+  "decision": {
+    "federal_withholdings": {
+      "status": "RESOLVED",
+      "gross_payment": "900.00",
+      "total_withholding": "94.50",
+      "net_payment": "805.50",
+      "irrf": {"status": "WITHHOLD", "basis": "1000.00", "amount": "48.00"},
+      "pcc": {"status": "WITHHOLD", "gross_payment": "900.00", "total_withholding": "46.50", "net_payment": "853.50"}
+    }
+  },
+  "decision_hash": "e6fb7b12db2dd697ad89f92e104092a91f9546517a39a414d64c27be66481326"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_SCOPE_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.financial_scope_proof"
+  ],
+  "decision_hash": "38464c854b062f3cfdf3a038ab6fa7f0428e6d40eac93ee015bc1b968c1ccc48"
+}

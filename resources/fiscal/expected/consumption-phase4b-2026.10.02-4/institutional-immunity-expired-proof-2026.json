@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_PROOF_OUTSIDE_PERIOD"
+  ],
+  "missing_facts": [
+    "rtc.institutional_immunity_proof"
+  ],
+  "decision_hash": "8fba4044e8076f87c9063391d21ce07a1b4ba615afa2ec44ef2652724702eab9"
+}

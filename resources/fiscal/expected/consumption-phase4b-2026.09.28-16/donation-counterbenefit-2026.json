@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_DONATION_COUNTERBENEFIT_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "1db66f5c925717ca13e78b98b08cfa6902fde1be192c6d7702e8f4b8defb0945"
+}

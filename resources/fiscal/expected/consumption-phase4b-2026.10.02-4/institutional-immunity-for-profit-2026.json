@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:nonprofit"
+  ],
+  "missing_facts": [],
+  "decision_hash": "7065ec70f515f514045105ef6c9d1ae10300d1df71163ab04ef049fc70579f1a"
+}

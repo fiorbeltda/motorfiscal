@@ -1,0 +1,26 @@
+[
+  {
+    "fact_key": "rtc.payment_instrument_split_capable",
+    "prompt": "Informe a evidência de rtc.payment_instrument_split_capable para qualificar o recolhimento IBS/CBS.",
+    "rank": 340,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.payment_instrument_evidence_id",
+    "prompt": "Informe a evidência de rtc.payment_instrument_evidence_id para qualificar o recolhimento IBS/CBS.",
+    "rank": 341,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.payment_transaction_id",
+    "prompt": "Informe a evidência de rtc.payment_transaction_id para qualificar o recolhimento IBS/CBS.",
+    "rank": 342,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.split_deployment_evidence_id",
+    "prompt": "Informe a evidência de rtc.split_deployment_evidence_id para qualificar o recolhimento IBS/CBS.",
+    "rank": 343,
+    "answer_type": "STRING"
+  }
+]

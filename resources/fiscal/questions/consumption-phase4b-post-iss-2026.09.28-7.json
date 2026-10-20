@@ -1,0 +1,8 @@
+[
+  {
+    "fact_key": "rtc.legacy_event_spans_transition",
+    "prompt": "A mesma operação tem elemento temporal de ISS/ICMS iniciado até 31/12/2032 e IBS em ano posterior?",
+    "rank": 243,
+    "answer_type": "BOOLEAN"
+  }
+]

@@ -40,6 +40,7 @@ final class MunicipalIssRateImporter
         $municipalities = [];
         $serviceCodes = [];
         $issues = [];
+        $logicalHash = hash_init('sha256');
 
         try {
             for ($index = 0; $index < $zip->numFiles; $index++) {
@@ -93,6 +94,7 @@ final class MunicipalIssRateImporter
 
                         $municipalities[$row->municipalityIbge] = true;
                         $serviceCodes[$row->serviceCode] = true;
+                        hash_update($logicalHash, $row->logicalHash()."\n");
                         $sink->accept($row);
                         $acceptedRows++;
                     }
@@ -112,6 +114,7 @@ final class MunicipalIssRateImporter
             blankRates: $blankRates,
             municipalities: count($municipalities),
             serviceCodes: count($serviceCodes),
+            logicalHash: hash_final($logicalHash),
             sink: $sink->finish(),
             issues: $issues,
         );
@@ -138,7 +141,7 @@ final class MunicipalIssRateImporter
         $rawFrom = trim((string) $columns[6]);
         $rawTo = trim((string) $columns[7]);
 
-        if (preg_match('/^\d{7}$/', $municipalityIbge) !== 1 || preg_match('/^[A-Z]{2}$/', $uf) !== 1 || $serviceCode === '') {
+        if (preg_match('/^\d{7}$/', $municipalityIbge) !== 1 || preg_match('/^[A-Z]{2}$/', $uf) !== 1 || preg_match('/^\d{2}\.\d{2}\.\d{2}\.\d{3}$/', $serviceCode) !== 1) {
             $this->addIssue($issues, new ImportIssue('INVALID_KEY_FIELDS', 'Municipality IBGE, UF or service code is invalid.', $entry, $line));
 
             return null;
@@ -166,11 +169,15 @@ final class MunicipalIssRateImporter
             return null;
         }
 
+        $serviceSegments = explode('.', $serviceCode);
+
         return new MunicipalIssRateRow(
             municipalityIbge: $municipalityIbge,
             uf: $uf,
             municipalityName: $municipalityName,
             serviceCode: $serviceCode,
+            ctribnacCode: $serviceSegments[0].$serviceSegments[1].$serviceSegments[2],
+            municipalServiceCode: $serviceSegments[3],
             incidenceRaw: $incidence === '' ? null : $incidence,
             rate: $rate,
             effectiveFrom: $effectiveFrom,

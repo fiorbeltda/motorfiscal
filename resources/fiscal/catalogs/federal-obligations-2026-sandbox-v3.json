@@ -1,0 +1,29 @@
+{
+  "catalog_id": "FEDERAL.OBLIGATIONS.2026",
+  "version": "2026-sandbox-3",
+  "status": "SANDBOX_CANDIDATE",
+  "effective_from": "2026-01-01",
+  "effective_to": "2026-12-31",
+  "sources": [
+    {"source_id": "SOURCE.RFB.EFD_REINF.FAQ.2026", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-reinf/efdr/", "locator": "Prazo de envio dos eventos, exceto R-3010"},
+    {"source_id": "SOURCE.RFB.DCTFWEB.MANUAL.2025", "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/manual-dctfweb/manual-dctfweb-atualizacao-janeiro2025_versao_final.pdf/@@download/file", "locator": "DCTFWeb mensal, prazo de apresentação"},
+    {"source_id": "SOURCE.RFB.IN1234.ART7", "url": "https://www.gov.br/transportes/pt-br/servicos/gestao-de-pessoas/manuais-e-normativos/8.INSTRUONORMATIVARFBN1234DE11DEJANEIRODE2012.pdf", "locator": "Art. 7º, prazo de recolhimento ao Tesouro Nacional"},
+    {"source_id": "SOURCE.RFB.IN1234.ART26", "url": "https://www.gov.br/transportes/pt-br/servicos/gestao-de-pessoas/manuais-e-normativos/8.INSTRUONORMATIVARFBN1234DE11DEJANEIRODE2012.pdf", "locator": "Art. 26, IRRF 3280 até último dia do primeiro decêndio do mês seguinte"},
+    {"source_id": "SOURCE.RFB.COSIT171.2026", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-reinf/efdr/", "locator": "Solução de Consulta Cosit 171/2026, Siafi e liquidação do empenho"},
+    {"source_id": "SOURCE.RFB.IN2110.2022", "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=126687", "locator": "Retenção previdenciária, prazo de recolhimento"},
+    {"source_id": "SOURCE.RFB.MAFON.2025", "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/irrf/mafon-2025.pdf", "locator": "Códigos de receita 1708, 3280 e 5952: prazo e base de retenção"},
+    {"source_id": "SOURCE.ESOCIAL.MANUAL.WEB.GERAL", "url": "https://www.gov.br/esocial/pt-br/empresas/manual-web-geral", "locator": "S-1210, dia 15 do mês subsequente; prorrogação se não útil"},
+    {"source_id": "SOURCE.RFB.AGENDA.2026.DAILY", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/junho/diario", "locator": "Código 0422, incidência diária sobre o fato gerador do mesmo dia"}
+  ],
+  "due_rules": {
+    "EFD_REINF": "DAY_15_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "DCTFWEB": "LAST_BUSINESS_DAY_NEXT_MONTH",
+    "ESOCIAL_S1210": "DAY_15_NEXT_MONTH_NEXT_BANKING_DAY",
+    "INSS_PAYMENT": "DAY_20_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "PUBLIC_FEDERAL_IN_1234_PAYMENT": "DAY_20_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "PRIVATE_DOMESTIC_IRRF_PAYMENT": "DAY_20_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "PRIVATE_DOMESTIC_PCC_PAYMENT": "DAY_20_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "PUBLIC_COOPERATIVE_3280_PAYMENT": "DAY_10_NEXT_MONTH_PREVIOUS_BANKING_DAY",
+    "FEDERAL_WITHHOLDING_PAYMENT": "TAX_SPECIFIC_DUE_RULE_REQUIRED"
+  }
+}

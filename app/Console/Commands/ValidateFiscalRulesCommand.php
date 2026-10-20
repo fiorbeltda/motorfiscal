@@ -7,6 +7,7 @@ namespace App\Console\Commands;
 use App\Modules\Fiscal\Infrastructure\Files\FactDefinitionFileLoader;
 use App\Modules\Fiscal\Infrastructure\Files\RulesValidatorService;
 use App\Modules\Fiscal\Infrastructure\Schema\JsonSchemaValidator;
+use Throwable;
 
 final class ValidateFiscalRulesCommand extends FiscalJsonCommand
 {
@@ -19,17 +20,23 @@ final class ValidateFiscalRulesCommand extends FiscalJsonCommand
 
     public function handle(): int
     {
-        $path = (string) ($this->argument('path') ?: resource_path('fiscal/rules'));
-        $schema = (string) ($this->option('schema') ?: resource_path('fiscal/schemas/rule.schema.json'));
-        $facts = (string) ($this->option('facts') ?: resource_path('fiscal/facts/core.json'));
+        try {
+            $path = (string) ($this->argument('path') ?: resource_path('fiscal/rules'));
+            $schema = (string) ($this->option('schema') ?: resource_path('fiscal/schemas/rule.schema.json'));
+            $facts = (string) ($this->option('facts') ?: resource_path('fiscal/facts/core.json'));
 
-        $report = (new RulesValidatorService(
-            new JsonSchemaValidator,
-            new FactDefinitionFileLoader,
-        ))->validate($path, $schema, $facts);
+            $report = (new RulesValidatorService(
+                new JsonSchemaValidator,
+                new FactDefinitionFileLoader,
+            ))->validate($path, $schema, $facts);
 
-        $this->outputJson($report->toArray());
+            $this->outputJson($report->toArray());
 
-        return $report->valid ? self::SUCCESS : self::FAILURE;
+            return $report->valid ? self::SUCCESS : self::FAILURE;
+        } catch (Throwable $exception) {
+            $this->outputJson(['status' => 'ERROR', 'error' => $exception->getMessage()]);
+
+            return self::FAILURE;
+        }
     }
 }

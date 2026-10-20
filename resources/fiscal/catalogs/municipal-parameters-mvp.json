@@ -1,0 +1,11 @@
+{
+  "catalog_id": "MUNICIPAL_PARAMETERS_MVP_FIXTURE",
+  "version": "2026.09.16-1",
+  "source_type": "FIXTURE",
+  "notice": "Dados sintéticos para testes; não representam parâmetros oficiais.",
+  "parameters": [
+    {"municipality_ibge": "3550308", "ctribnac_code": "010101", "effective_from": "2026-01-01", "effective_to": null, "rate": "2.00", "responsibility": "PROVIDER"},
+    {"municipality_ibge": "3509502", "ctribnac_code": "120801", "effective_from": "2026-01-01", "effective_to": null, "rate": "3.00", "responsibility": "PROVIDER"},
+    {"municipality_ibge": "3552205", "ctribnac_code": "070202", "effective_from": "2026-01-01", "effective_to": null, "rate": "5.00", "responsibility": "CUSTOMER"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiscal-engine.local/schemas/questions.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["fact_key", "prompt", "rank", "answer_type"],
+    "properties": {
+      "fact_key": {"type": "string", "minLength": 1},
+      "prompt": {"type": "string", "minLength": 1},
+      "rank": {"type": "integer", "minimum": 0},
+      "answer_type": {"enum": ["BOOLEAN", "STRING", "CODE", "INTEGER", "DECIMAL", "DATE", "ENUM", "ARRAY"]},
+      "options": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+    }
+  }
+}

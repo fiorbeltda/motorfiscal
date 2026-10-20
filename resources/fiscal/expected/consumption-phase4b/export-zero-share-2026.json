@@ -1,0 +1,10 @@
+{
+    "status":  "INVALID",
+    "reason_codes":  [
+                         "RTC_EXPORT_SHARE_ZERO"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "0c47c12851c926b14e2b1fcb95a4b30e8f839f114e70d679e551396885d69b04"
+}

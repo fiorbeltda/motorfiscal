@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SIMPLES_SUPERSEDING_ACT_REVIEW_REQUIRED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "1686de4200c94f9a4552fd69f242be374c3b37f4a1f409931da58d258ac0f7ff"
+}

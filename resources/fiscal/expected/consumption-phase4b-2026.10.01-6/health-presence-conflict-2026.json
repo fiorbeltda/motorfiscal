@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_PERSON_PRESENCE_DESTINATION_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "c423514efdafb4f2950b56e51e868401ea3654674287dc92fe8f8c07f98e41d4"
+}

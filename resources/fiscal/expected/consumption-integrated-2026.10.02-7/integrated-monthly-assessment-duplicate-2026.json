@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_ENTRY_INVALID:credits"
+  ],
+  "missing_facts": [],
+  "decision_hash": "78877b9d9fb5127ee8b3c6d38e741e4e0eaf1c45cd15a0580530d74b831129af"
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "fact_key": "rtc.platform_remote_intermediation",
+    "prompt": "Informe ou comprove rtc.platform_remote_intermediation para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 350,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.platform_controlled_elements",
+    "prompt": "Informe ou comprove rtc.platform_controlled_elements para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 351,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.platform_activity_exclusion",
+    "prompt": "Informe ou comprove rtc.platform_activity_exclusion para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 352,
+    "answer_type": "ENUM",
+    "options": [
+      "NONE",
+      "INTERNET_ACCESS_ONLY",
+      "AUTHORIZED_PAYMENT_ONLY",
+      "ADVERTISING_ONLY",
+      "SEARCH_COMPARISON_ONLY"
+    ]
+  },
+  {
+    "fact_key": "rtc.platform_qualification_evidence_id",
+    "prompt": "Informe ou comprove rtc.platform_qualification_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 353,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_reported_operation",
+    "prompt": "Informe ou comprove rtc.platform_reported_operation para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 354,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.platform_report_evidence_id",
+    "prompt": "Informe ou comprove rtc.platform_report_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 355,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_document_full_value",
+    "prompt": "Informe ou comprove rtc.supplier_document_full_value para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 356,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.supplier_document_evidence_id",
+    "prompt": "Informe ou comprove rtc.supplier_document_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 357,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_document_registered",
+    "prompt": "Informe ou comprove rtc.platform_document_registered para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 358,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.platform_document_evidence_id",
+    "prompt": "Informe ou comprove rtc.platform_document_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 359,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_is_taxpayer",
+    "prompt": "Informe ou comprove rtc.supplier_is_taxpayer para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 360,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.supplier_taxpayer_evidence_id",
+    "prompt": "Informe ou comprove rtc.supplier_taxpayer_evidence_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 361,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_registered",
+    "prompt": "Informe ou comprove rtc.supplier_registered para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 362,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.supplier_taxpayer_authority_notice_id",
+    "prompt": "Informe ou comprove rtc.supplier_taxpayer_authority_notice_id para a responsabilidade da plataforma IBS/CBS.",
+    "rank": 363,
+    "answer_type": "STRING"
+  }
+]

@@ -1,0 +1,1964 @@
+{
+    "cases": [
+        {
+            "name": "no-adjustments-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/000-no-adjustments-gross-before-all-discounts.json",
+            "scenario_sha256": "72f0dd9e937d8f1411c4e67fbae6187d7de1eb62b2c9db53826c04c27a6f4b31",
+            "expected_iss_prices": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_payment_candidates": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "no-adjustments-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "145eb4d7fc09ad44fdb184124955197c5cded542284e5dc2eed9a70d978ccb09",
+            "qualification_facts_hash": "d69959d36ccd22e95d5ee1d92deb0df6eaf7a76bb48588ea1d8f1627eba1b6d0",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/000-no-adjustments-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c64843a8ddc255faca6cbb17a52625b858de3859e93a4c46343ea9d643f5fd60",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "no-adjustments-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/001-no-adjustments-net-after-unconditional-only.json",
+            "scenario_sha256": "601a3a91e1acd59c62d4de5d242a77f4f088562ac4c5e35818587372e9e8de2b",
+            "expected_iss_prices": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_payment_candidates": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "no-adjustments-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "83baf494d66e950ef993862f750491f4c7329ab61f9816812e98b5a21d2a454a",
+            "qualification_facts_hash": "51c9be5ca82a92d668fff0b55da13ff10560111de78a1966aecccdaa08915a39",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/001-no-adjustments-net-after-unconditional-only.json",
+            "source_fixture_sha256": "a8ac3ff99617332ad13a5462f3cc1523025f779fecaea961547565c70f7a2d6b",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "no-adjustments-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/002-no-adjustments-net-after-all-discounts.json",
+            "scenario_sha256": "697f56e53e2336c8d44d872e92b572780944f8336d4ec55173740612cd377f29",
+            "expected_iss_prices": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_payment_candidates": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "no-adjustments-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "e60463031e3df07667d24f0b465f6ed4410fc034c682d8edc9eb1534c0ffa7dc",
+            "qualification_facts_hash": "88d012ce028cefe01426aa0cbbd50c324d8be6480f0276d0c4a1c241ffd7c6e3",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/002-no-adjustments-net-after-all-discounts.json",
+            "source_fixture_sha256": "3bd875c3562885dc81d417843e892017404578c2a911d25daeb6abd0f4861a13",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "unconditional-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/003-unconditional-gross-before-all-discounts.json",
+            "scenario_sha256": "520732c42109ec888cb21ef029865e560462b9521aa7d8e2f5e19998b9ac2c2f",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "unconditional-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "76d219f4443db61616fd2bb5c85f2f27aec2819b858ca7978e0d52f81aaa0c9d",
+            "qualification_facts_hash": "6b98d391ba21ca4f51aa10b19bfdf645b83bfa530007327a5f257f72fa3d07ea",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/003-unconditional-gross-before-all-discounts.json",
+            "source_fixture_sha256": "d9d1e69410548964254ea704e6dd63dcf423fa186ad7c3398adba3d57ff5076c",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "unconditional-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/004-unconditional-net-after-unconditional-only.json",
+            "scenario_sha256": "b3e07a1e4cf3f6780b13cd56306da6ea0229ec89d98281781841d706eb882398",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "unconditional-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "8005f5a47e84ea58a92d2acacdf9df6208be81846c59a39f29bfb0942b0500b4",
+            "qualification_facts_hash": "5c6822e61b724678fd1e652de986d55fe24fc9df3a507fb843c38113a9a1087d",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/004-unconditional-net-after-unconditional-only.json",
+            "source_fixture_sha256": "566af5ec0ce919de2a591767481ea56be33b88b61c69c1197bdd049633a614a9",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "unconditional-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/005-unconditional-net-after-all-discounts.json",
+            "scenario_sha256": "b1dc15778e79abcded4328bbcd60aa27eb12f404a1f26c64aededee0e7cca05e",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "unconditional-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "9300ca892189c1c5b2a2665286340fe1b00077376e747cad4ff43d190a78f388",
+            "qualification_facts_hash": "ef7ad1a1ca4078d7f3b56db94735c9967bfd123c0c099f404881a98bb4528ecc",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/005-unconditional-net-after-all-discounts.json",
+            "source_fixture_sha256": "aef3a437e2889159d8e3b0f3fd535393eb8f8f3da9db34837a18f56786205860",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "conditional-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/006-conditional-gross-before-all-discounts.json",
+            "scenario_sha256": "b1eff2dadb7b0133379396e9b62ef9f4e228f831de37d870fdae95d0442d4895",
+            "expected_iss_prices": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_payment_candidates": [
+                "950.00",
+                "950.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "conditional-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "fb8e91f712e721621e07427aa5ab034e6a183d716ce0e18bc19c22753a18db68",
+            "qualification_facts_hash": "fe8b977062d4635c29fb47445acc48849dc7b49291ac2d72b8ef42cabf844e72",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/006-conditional-gross-before-all-discounts.json",
+            "source_fixture_sha256": "21e46083f79fb84a5ccc12f90521a6fad12b8afcf0fd3f36e4d1a124e5d9ecee",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "conditional-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/007-conditional-net-after-unconditional-only.json",
+            "scenario_sha256": "bc3a88b0f0c9a770fa514bf951dd9e10f1eac75041e03646aea52da61e4584df",
+            "expected_iss_prices": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_payment_candidates": [
+                "950.00",
+                "950.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "conditional-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "cd36e26285fab168b1ddd8b034656bd785fde91982395655d338da34e961047a",
+            "qualification_facts_hash": "5f868edbdea0ffa8cc75ed9148f151634a6a7862702f03881bcecd50aaa5d509",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/007-conditional-net-after-unconditional-only.json",
+            "source_fixture_sha256": "a53d6510785bea8c26f66619fd8e6419fb3c985620f0ff215a2955dddba89bcd",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "conditional-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/008-conditional-net-after-all-discounts.json",
+            "scenario_sha256": "3cbe0de68fb404530e6daac472871ae430a3c2e7fa3ea6bc79a6f9f0e842a850",
+            "expected_iss_prices": [
+                "1000.00",
+                "1000.00"
+            ],
+            "expected_payment_candidates": [
+                "950.00",
+                "950.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "conditional-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "e8bfcc0b4eaf7927e850c65f3cfce91fa5e282ebe158e31a2f57a721e82d0d10",
+            "qualification_facts_hash": "c3b90e4b283f8203a5a1d2be27ba22df322e7af8e6a43c5af0d4b0cf61a2fe0a",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/008-conditional-net-after-all-discounts.json",
+            "source_fixture_sha256": "19fef6e6977e1d03e4e21d0d9ac3bd76daf89e33abffbaeb3ccad346df373a3f",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "both-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/009-both-gross-before-all-discounts.json",
+            "scenario_sha256": "6b67e5dde703cef6ead0f4d6cd11112d3695079cdeb3dd988f7fb07dfdf42d08",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "both-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "both-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/010-both-net-after-unconditional-only.json",
+            "scenario_sha256": "c7e889d2d06480c2838611ede8fd195b8bf6059f73010d1727557a005c414878",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "both-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "e8d6e7ccd2061d4f59609ba467562c1ced16242a834c98c17a07ad6ecbaeac9d",
+            "qualification_facts_hash": "eff7e0abfa69441baf6d9c1031a1c1403f82f3adc2cefe68c840b1f237c406a2",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/010-both-net-after-unconditional-only.json",
+            "source_fixture_sha256": "404dc1c2fc5141d903897036478df355d527f3f2e609ecc6a175cc1ca506fffc",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "both-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/011-both-net-after-all-discounts.json",
+            "scenario_sha256": "f0ce86bfb958e449d0928e153caf00810eb042e274cd60503a86c39ade6b9563",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "both-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "b7698c9f52e45f60bdc5b881fbf453c42784215e21a87f4547a70e1d5a02078d",
+            "qualification_facts_hash": "db0b9d24781964a8325e49bad7ca199b9fa34e3e036c8899221e0b6f5e22d2f9",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/011-both-net-after-all-discounts.json",
+            "source_fixture_sha256": "e9e046656afb3ce0b7e01f2a8529abff493b0e22312a4c6adbc7fbcd6d70c71c",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "service-addition-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/012-service-addition-gross-before-all-discounts.json",
+            "scenario_sha256": "1269802f331b862124c7a3ed884805e8a683d1de0ed32f7413e4ed8a8611db16",
+            "expected_iss_prices": [
+                "925.00",
+                "925.00"
+            ],
+            "expected_payment_candidates": [
+                "875.00",
+                "875.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "service-addition-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "068cd5aaeac181685840a5ae90d6be37527b941f15457d9a6a76982f3ebd1986",
+            "qualification_facts_hash": "c4808f8986ff6369d886f968bbcc1cf7172d0e2ec423d982f001dcee2f0ed35d",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/012-service-addition-gross-before-all-discounts.json",
+            "source_fixture_sha256": "cb281e39d0e0c9034b2e60ea9830dfae18e7d8b9196484d44b99eb79b88f50cb",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "service-addition-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/013-service-addition-net-after-unconditional-only.json",
+            "scenario_sha256": "b2c7821af4019d1c029f12f9103712b322ef503a9beb38d69cf827fdff9705d3",
+            "expected_iss_prices": [
+                "925.00",
+                "925.00"
+            ],
+            "expected_payment_candidates": [
+                "875.00",
+                "875.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "service-addition-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "db31db4abed0d5fef25215492637c79b69496977ebcbee12b1e4f63dc524972f",
+            "qualification_facts_hash": "0b16152829fbc1f8734b129e4358180e23222e9dfa9d81b579e9e7802e7c2493",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/013-service-addition-net-after-unconditional-only.json",
+            "source_fixture_sha256": "0d7c3ebe7cb801980b53d5691a1f92a1eeb13e96986b5969921ba91199e36bbc",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "service-addition-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/014-service-addition-net-after-all-discounts.json",
+            "scenario_sha256": "34fb6b4c7ede1df6ebc381122acc3cfed9ee817b1514377737d4bf96248afbbc",
+            "expected_iss_prices": [
+                "925.00",
+                "925.00"
+            ],
+            "expected_payment_candidates": [
+                "875.00",
+                "875.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "service-addition-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "fe40329b65a84ea505dcb0901ee2241c02cad0787bfbb876c319310c9553a8ea",
+            "qualification_facts_hash": "78b3f0b4fb38e8a528bf85ad4e2021270ce4807857cc4e2283a20e5b28b76bda",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/014-service-addition-net-after-all-discounts.json",
+            "source_fixture_sha256": "298c29c127bda4e485c34d3b0dc57209b703a984f13b33099eb2ce9b2233ce99",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "above-float-safe-integer-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/015-above-float-safe-integer-gross-before-all-discounts.json",
+            "scenario_sha256": "c1dcfd1170faeb165bd510baa6faf209c692456d6c3c560ce2cc433d027d5ea4",
+            "expected_iss_prices": [
+                "90071992547409.99",
+                "90071992547409.99"
+            ],
+            "expected_payment_candidates": [
+                "90071992547409.98",
+                "90071992547409.98"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "above-float-safe-integer-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "8d891be3d80888b91cb2dbb074ab80984ccd819153437a7bc99e9fc8bc83d2d2",
+            "qualification_facts_hash": "f80399857c2c9e6253c6f5c17b9d570a7088b9e9cf7e833eb9d9511e84a7a049",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/015-above-float-safe-integer-gross-before-all-discounts.json",
+            "source_fixture_sha256": "926cdd635d4c0ad9c04d970f8484906ea6517a5160b72de25bce4f99232a777a",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "above-float-safe-integer-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/016-above-float-safe-integer-net-after-unconditional-only.json",
+            "scenario_sha256": "f575dd8eb7d7420400a421c68ce40ff22766fac69106a42a1a5c4e79e114bdb1",
+            "expected_iss_prices": [
+                "90071992547409.99",
+                "90071992547409.99"
+            ],
+            "expected_payment_candidates": [
+                "90071992547409.98",
+                "90071992547409.98"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "above-float-safe-integer-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "810662dd0fde4d8c1938db7d6a3cbb8cd62a043939d07cf363b38bedac0db44e",
+            "qualification_facts_hash": "d0ea24ad5d2c7c35030016dbbce09a4fa9d149962e0293c42383ed7925591982",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/016-above-float-safe-integer-net-after-unconditional-only.json",
+            "source_fixture_sha256": "c3a61c3c543c083fda4af6b8c7781eef0bbad01c8036be9d2ee11ad5ff69472c",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "above-float-safe-integer-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/017-above-float-safe-integer-net-after-all-discounts.json",
+            "scenario_sha256": "9a0f34dd9c1ec5146b49901f3426dcc638bb717a7df56a86a09bc4603966da27",
+            "expected_iss_prices": [
+                "90071992547409.99",
+                "90071992547409.99"
+            ],
+            "expected_payment_candidates": [
+                "90071992547409.98",
+                "90071992547409.98"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "above-float-safe-integer-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "ccc623fe23e4f246cc2b2c8c94b585d73e62f18ab6b0949eb2039b59067788ee",
+            "qualification_facts_hash": "c7beafc1a80212409f4d13ee4e8b9c554d7ab2ff5cf8204c029eec94ec61f7c7",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/017-above-float-safe-integer-net-after-all-discounts.json",
+            "source_fixture_sha256": "971f1561e524c7dd8bc9067f497d3692451e0e9117ad61ca91ddc289f2f69a87",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "smallest-unit-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/018-smallest-unit-gross-before-all-discounts.json",
+            "scenario_sha256": "9895b42873de6755f7e9cc224cbca16a632912bc930c1da95b79bc47f9cde74f",
+            "expected_iss_prices": [
+                "0.01",
+                "0.01"
+            ],
+            "expected_payment_candidates": [
+                "0.01",
+                "0.01"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "smallest-unit-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "0233beb9ec24ed2dc6a903dd4d59b7bee728fc3759a4232f73e819d8074d2180",
+            "qualification_facts_hash": "a1918fba9b5a7eb307e87615fca8d06c5c3898526dbb8d74cf7101b1a2d9b2d6",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/018-smallest-unit-gross-before-all-discounts.json",
+            "source_fixture_sha256": "5de5e3996ebe828297945242e400e4581e8a56c9b9be1048381141aa8cb14158",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "smallest-unit-net-after-unconditional-only",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/019-smallest-unit-net-after-unconditional-only.json",
+            "scenario_sha256": "43389d10088070d9b61c3aa54f44a99eab94075e026bb75c3e0af46e3f358b7c",
+            "expected_iss_prices": [
+                "0.01",
+                "0.01"
+            ],
+            "expected_payment_candidates": [
+                "0.01",
+                "0.01"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "smallest-unit-NET_AFTER_UNCONDITIONAL_ONLY",
+            "source_fixture_canonical_sha256": "8c5c40accca898f5711f13f33da6b867968c1c0b9abf8eed956feed7b9cad71f",
+            "qualification_facts_hash": "9b9ae8722ccbb9e69516eef956b03f9462a5b2f6d293bca2a65598b8e9535a0a",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/019-smallest-unit-net-after-unconditional-only.json",
+            "source_fixture_sha256": "2734d23954f43facf71cd0bf8d9d881c90b5f32b0272beaf4f8b60f798a22f27",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "smallest-unit-net-after-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/020-smallest-unit-net-after-all-discounts.json",
+            "scenario_sha256": "69bf4fdc297d51ee3004c9ee4e5de5f2b5c0c10b220774431ddeac39753dc375",
+            "expected_iss_prices": [
+                "0.01",
+                "0.01"
+            ],
+            "expected_payment_candidates": [
+                "0.01",
+                "0.01"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "smallest-unit-NET_AFTER_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "1bb3f9461f5c9eb7430ec97568edaa126de8de679bc49615231af28a7fd9841e",
+            "qualification_facts_hash": "c74b2e83e07a7115ee0aadb210a96fdcd11ccde11341ef193c9f355d8323f171",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/020-smallest-unit-net-after-all-discounts.json",
+            "source_fixture_sha256": "639477ec893262930b6da8951d7d62416829ad3d982789a37149e6927ddfe13d",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "zero-iss-price-gross-before-all-discounts",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/021-zero-iss-price-gross-before-all-discounts.json",
+            "scenario_sha256": "757afb58595df5e27f30849622cb7a62aefa65e85cd32b40c616d3d259a28e1d",
+            "expected_iss_prices": [
+                "0.00",
+                "0.00"
+            ],
+            "expected_payment_candidates": [
+                "0.00",
+                "0.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "zero-iss-price-GROSS_BEFORE_ALL_DISCOUNTS",
+            "source_fixture_canonical_sha256": "b1eb0db3ccbff2a888845339c880b7adb31ae9171084e9a68dffe889dce23067",
+            "qualification_facts_hash": "2ea077b524eac43b9f3722dc02c329b2ccee076c0f8865266bfc10d8b9a86e63",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/021-zero-iss-price-gross-before-all-discounts.json",
+            "source_fixture_sha256": "6840fa7f4ccb567b38878fdec79ad84875aa75a9f120c2ae569e4e6167f4c098",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-0",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/022-dated-variation-0.json",
+            "scenario_sha256": "a2677923b5acabaa88a25b825860414522af54def98393c7e40fbab5616a2802",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-24",
+                "2026-09-24"
+            ],
+            "source_case_name": "dated-variation-0",
+            "source_fixture_canonical_sha256": "2bf51e30b6cbfcd197be25a487aed20809053c48ddcbffd6804b86895042234f",
+            "qualification_facts_hash": "00f2383ccc1166e131f11073195346158e047248e857ecd7540119e7cde05fde",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/024-dated-variation-0.json",
+            "source_fixture_sha256": "8d8580d09c065c9cdf049794451c7eabc6d90a5ec3cba090d43b3b9f5e221c21",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-1",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/023-dated-variation-1.json",
+            "scenario_sha256": "8d52fbbadb2dacbce05637733dd341ca12f42e310fd3eb6effb68f10cdb45ddd",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-26",
+                "2026-09-26"
+            ],
+            "source_case_name": "dated-variation-1",
+            "source_fixture_canonical_sha256": "5ead354451522cf639d1f72852a877f0854eac65b39b6c4cbea45d6687550d2a",
+            "qualification_facts_hash": "aa2b22fc22226df0fc2bd6eb8bc17147ebcce674065e390b4f45b23ba0dd67ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/025-dated-variation-1.json",
+            "source_fixture_sha256": "20a9463a3336d2e4231cf7c3a124d07df44e97007aab5331f9481293de239ee8",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-2",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/024-dated-variation-2.json",
+            "scenario_sha256": "e2e4b1f2ae820170c3bec89f971ea5c4dba0b1a4dda549d839ca333ea7c07438",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-24",
+                "2026-09-26"
+            ],
+            "source_case_name": "dated-variation-2",
+            "source_fixture_canonical_sha256": "b99859c51be4c5470a4b4a9a47fd0cde1b14fd19815aed37e3890b7e8d5eb2f5",
+            "qualification_facts_hash": "d73e7495c9c2a5788ed4bb8f72cd065d404c95746e8e97a5aed925e738173757",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/026-dated-variation-2.json",
+            "source_fixture_sha256": "8b32941c5d496f2a63e0959f8d3506dfc5508ee8b30f9be804b2dd8b6ae6830b",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-3",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/025-dated-variation-3.json",
+            "scenario_sha256": "44b838a1e18ba632fa327e75f570ac88e3979765256206b2d3a5e4ec289c1cd5",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-3",
+            "source_fixture_canonical_sha256": "d64cf87df2d52412194809afdaef4c31ab35f69776a1c3a0b7d45a8a54227a44",
+            "qualification_facts_hash": "27669c83b7e448b0b228d865395f0f3ee6ce28bb44022a61a00d4c4edde302b2",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/027-dated-variation-3.json",
+            "source_fixture_sha256": "cc1aeb0fd1f701845744e53c1cbdf87d15d7ca4b05e1d9e004cb14b287dd8184",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-4",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/026-dated-variation-4.json",
+            "scenario_sha256": "5a20fd7c3bdbec4ef2bdc7b620d472e6f83ecf5edc9af707c1bb98dfc370bcdd",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-4",
+            "source_fixture_canonical_sha256": "bcad72e1391a9b5bd9a348f223ca4a63196d57e34740d201ee7fa90eddaea549",
+            "qualification_facts_hash": "3e95939a077bcd8b078dcbe3f838d69c2f4c8d8c1cf33408ef1a84315b773a7b",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/028-dated-variation-4.json",
+            "source_fixture_sha256": "46eb40dad7904f509ab0d6b5ffbf32ac35272d066d3637eba0619e73d7ae29c6",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-5",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/027-dated-variation-5.json",
+            "scenario_sha256": "2c3bbb04d8191152f54ec7858f76e1e072a5375ce9d59fbb63b87b77ea18a690",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-5",
+            "source_fixture_canonical_sha256": "e16f28e6a75e2bb6b78c68c24a96c2ffa81bc545f692a81186c33946b0a43b5e",
+            "qualification_facts_hash": "38592db1ad784080884fbe64b91d1844c196432314fba093923b46fbdcfa426c",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/029-dated-variation-5.json",
+            "source_fixture_sha256": "238f7907aa17cd7ec87aefa4c7160d91a0b68059073ea23bcf65a9783f8ffa86",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-6",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/028-dated-variation-6.json",
+            "scenario_sha256": "7417511e91384800cbc1de1ba91896d598629eb7d35fe5dfc73830bd746e661c",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-6",
+            "source_fixture_canonical_sha256": "387af21478a14a0a825d7f4703908768266d65685df970b0abcd27d5595c211b",
+            "qualification_facts_hash": "f7d4e4415352d3c8086c6ceacc2133c1b3fa4f049857e8e4c38c7887c87f8aca",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/030-dated-variation-6.json",
+            "source_fixture_sha256": "ace5740a500ceec422d9be35e442b163deac9f1e7d220f2f0bd0e401ce4fbb7c",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-7",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/029-dated-variation-7.json",
+            "scenario_sha256": "1dfeb5fc5ee9a78b97cecfa97ab51adcc10081bd51e234e1be5c0121a7e88c9c",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-7",
+            "source_fixture_canonical_sha256": "6dba9a1a28060c0a3e58ccbb0e54e51cf11cef604e2775b953c2698bfbc3bbe7",
+            "qualification_facts_hash": "c5608ec331a0b4b47cd0c62ed340d99fa4537530a1b438dc33513658ac597de7",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/031-dated-variation-7.json",
+            "source_fixture_sha256": "f14898d8439cd112142aafa8e948d496c1109c240a07e745027b984c03f44427",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-8",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/030-dated-variation-8.json",
+            "scenario_sha256": "753bfa30ad42764e313c67322b74beb3b2ec126ec863a7635249fc527183b525",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-8",
+            "source_fixture_canonical_sha256": "956ee4f74ab47fc6e82b2613dd7241479db12228fa9ecc118b1c94b81ec09fe6",
+            "qualification_facts_hash": "e642c46d44b3ab4d4f26a56f9a5e7a7f6150f41c1b371adfe287ed8e30b06a89",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/032-dated-variation-8.json",
+            "source_fixture_sha256": "c606695d21bc3d5c31f1b94d4fc1a398ad72e96bfd98ba1c6a61a4e195b6f379",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-9",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/031-dated-variation-9.json",
+            "scenario_sha256": "b8db0a3b7b52748f9447ed0cc83ae0ed3fddb8c202f45f4c8457551fd1b25bfa",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-9",
+            "source_fixture_canonical_sha256": "3ca793e9878a36326423813b20fc547478b31340d02ed21578d78289d82a8c61",
+            "qualification_facts_hash": "5e4adb719c40d25b184deb4e1e45f40e5a6ba1dc0ccd4a5c01a3093f8d08ef29",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/033-dated-variation-9.json",
+            "source_fixture_sha256": "502d1b68272527d470df59fa1c5e750d9369f6a34cacdbbf2526678323ab637e",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-10",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/032-dated-variation-10.json",
+            "scenario_sha256": "a518b111fc41f1cb21a5d8e88cdc55f7ba3e8bc81545a9e45f3a307b63751665",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-10",
+            "source_fixture_canonical_sha256": "03bddfcc48aef641013c7a38e15d02e11f0fd25bcd12d28e831be61aa0ad1c14",
+            "qualification_facts_hash": "09909aedbe278b87b2d0dbcf0ee12f0a1349a0c8118f3f7d2b76b817b6c2b285",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/034-dated-variation-10.json",
+            "source_fixture_sha256": "b6971cba2460b052edd85a0a90e42ee4ab3916f576bc4766c595f793848d8505",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-11",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/033-dated-variation-11.json",
+            "scenario_sha256": "f5bab0efa84aa2f17d9a48150c7f2d725bd822105f74699ce1fadc9c236b16a3",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-11",
+            "source_fixture_canonical_sha256": "cca9b2d3732f7ed352f772b5c03b8762179a71af0cb92ccd08aecbe3226e72ea",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/035-dated-variation-11.json",
+            "source_fixture_sha256": "440b111a2f3948d1ad9f94e73ac691bc6043250db1b708340e879a64a03d1075",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-12",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/034-dated-variation-12.json",
+            "scenario_sha256": "57750a9d246588514bcc3da09b72de5c844aedf87a7a56da11f270d7ad76d432",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-12",
+            "source_fixture_canonical_sha256": "eebf6a052141b680f8d16946eecd0ee662a13112b8422e4d9808e488f96b03a2",
+            "qualification_facts_hash": "ec4f5c3ba485019338d793937668c5731ebcb42cc70cd73cdcfa293db9e9c29f",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/036-dated-variation-12.json",
+            "source_fixture_sha256": "f7c08d4fdf5d402b0fe5ad6e158222a27508acb9d41377bd2db42beda229d829",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-13",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/035-dated-variation-13.json",
+            "scenario_sha256": "d0a4b4b61e20a09dbb9ad10e48b9243174bb4c28a9727d92c2ed8089cd0748f7",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-13",
+            "source_fixture_canonical_sha256": "f6d3299b15fc963e42e3bd5de921744db68be22ac8ae9b46ae9c9d1336bfec2c",
+            "qualification_facts_hash": "8ec086dbfd1dd037f1184fa6a1a7211240552db0aa7330095704ebd3c3657ecd",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/037-dated-variation-13.json",
+            "source_fixture_sha256": "5d926f4e5de132cb9a8e6a1668ec2f265637bd0547abd30dba5c925d9c00d0ff",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-14",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/036-dated-variation-14.json",
+            "scenario_sha256": "3286894423f140503c0efdf661d32cc01f6c81912ed99a89479e066b36c35ae0",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-14",
+            "source_fixture_canonical_sha256": "f70d2fba01534aad706404ebacbca98e86b98c91ec92f95dec5283d241aecb4e",
+            "qualification_facts_hash": "f68a3413af3a990aae6b7bae48a73626fb06047c55d797f902b1a9e494e48d88",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/038-dated-variation-14.json",
+            "source_fixture_sha256": "4a1f00bf85be38f3a435f60962b01e11f1ab43265f366aa7fda4cdd265261627",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-15",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/037-dated-variation-15.json",
+            "scenario_sha256": "1670008881d6d940f1d18a00ea6f08c4dd2a977004c78d05e5f4187728e1c391",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-15",
+            "source_fixture_canonical_sha256": "af0bd8b5a86f980cfa29a9e8396bd2395bab68640f5ae03e6886eecec791d44a",
+            "qualification_facts_hash": "ec4f5c3ba485019338d793937668c5731ebcb42cc70cd73cdcfa293db9e9c29f",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/039-dated-variation-15.json",
+            "source_fixture_sha256": "85c8602a2c688fe08228c4e7bae446f5da1333688b18202e699214a3f5bffdac",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-16",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/038-dated-variation-16.json",
+            "scenario_sha256": "d6bad808e876ac7494495bb6d05fdc18661d699c962a5c1050f8ac33c3b120b4",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-16",
+            "source_fixture_canonical_sha256": "fecaa33897548d39aededf8813bde9d7dcf1365137e9788de9bb46b106ff7cd9",
+            "qualification_facts_hash": "ec4f5c3ba485019338d793937668c5731ebcb42cc70cd73cdcfa293db9e9c29f",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/040-dated-variation-16.json",
+            "source_fixture_sha256": "3ee86ef34b03f4831191e81a1bd90da330f90e2fbde9c1cfb3b556ff5ddc3aaf",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-17",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/039-dated-variation-17.json",
+            "scenario_sha256": "3f694ee9f63ecfe1b1d1e4b7f28e340cb5bc61963d96b2380890deeb1bc245a0",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-17",
+            "source_fixture_canonical_sha256": "4445f98dbdb072807077149e08aaea3e08f8c587c03884d46bc6f5836bcce118",
+            "qualification_facts_hash": "ec4f5c3ba485019338d793937668c5731ebcb42cc70cd73cdcfa293db9e9c29f",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/041-dated-variation-17.json",
+            "source_fixture_sha256": "085b2c2cfd591c798d2608d131f01d06570ae2ead31185e20d201828334c152a",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-18",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/040-dated-variation-18.json",
+            "scenario_sha256": "5a2bda8f3b59566c42bfe44cf0a1fee6cadc5bc449d029b87ce3f736d32e0f91",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-18",
+            "source_fixture_canonical_sha256": "097808ee033e8390e25de2eda3dae05c1df15f45bba6e4a724ceb3240e29d983",
+            "qualification_facts_hash": "ec4f5c3ba485019338d793937668c5731ebcb42cc70cd73cdcfa293db9e9c29f",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/042-dated-variation-18.json",
+            "source_fixture_sha256": "711ba2a1228ca54ecf069b9e8276f7572bdca3c71e0066661e6a14be39724a2e",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-19",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/041-dated-variation-19.json",
+            "scenario_sha256": "370d67e7c934bb51475b8ffc4f6151602f0cb7e8c41347101f82f2bd79f75218",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-19",
+            "source_fixture_canonical_sha256": "d12bd900571b20fe21f2f3782ab2191b8c40ac3450b97def66431b0ce2709dab",
+            "qualification_facts_hash": "ec4f5c3ba485019338d793937668c5731ebcb42cc70cd73cdcfa293db9e9c29f",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/043-dated-variation-19.json",
+            "source_fixture_sha256": "5f9b6b251fdf4f202c0648c79e89b14d8f365c01494687e3495fac9e84290537",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-20",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/042-dated-variation-20.json",
+            "scenario_sha256": "59b969669801a9870f27ea5a42215b4a9a9333829d6b8c1fc219fea8c26be973",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-20",
+            "source_fixture_canonical_sha256": "d8b45b5d518598c41823f2e96aa5f4a147d9aa32067c500f14fecf5bac7d466d",
+            "qualification_facts_hash": "cbe138f9653ee9cc45dd9f0a9a0b9db587edad3891f62a25f14f6116d82f5af6",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/044-dated-variation-20.json",
+            "source_fixture_sha256": "e37e81ed11fdd96daeecd6be7cab0aaaa1ba753d3a8a19d54d38ceb5e327a232",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "dated-variation-22",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/043-dated-variation-22.json",
+            "scenario_sha256": "e08e344cfb8aed003b9e66cb3f7444e6076e1dfe37478166f0ee8094431e1832",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "dated-variation-22",
+            "source_fixture_canonical_sha256": "5bc4b2e24a3ca42797082db70be14adf5dbc0362a13c68da65cde772ad89eaea",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/046-dated-variation-22.json",
+            "source_fixture_sha256": "fdcf8fd060d5ed8d788793f927a1277aa17eb8ec734060a04d05df6a054397dd",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "future-revoked-at",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/044-future-revoked-at.json",
+            "scenario_sha256": "1d625fab0b777270c361108c784cb570d127aec901b26a3e1a5dc6e3ad45c858",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "future-revoked_at",
+            "source_fixture_canonical_sha256": "fbe7f725a6244de3e5f51c0a9d13d0bc2c63e3ce0b9278ec38d9523e5af0a220",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/101-future-revoked-at.json",
+            "source_fixture_sha256": "c366e07dff7bc042c4c4e4a559561896aac361ffbd357d018944303809c8911e",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "future-superseded-at",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/045-future-superseded-at.json",
+            "scenario_sha256": "b8cdd0f9028f2bdf482fbd9febd0d9a14f3ce4a52936553b575170cf658f0ef6",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "future-superseded_at",
+            "source_fixture_canonical_sha256": "f61fac9610893f20504e30a8535029a5f63441f249f3ee4b1188f6cb4fb4b26d",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/102-future-superseded-at.json",
+            "source_fixture_sha256": "3b7c9e1c09519a1f5918d840358bfad8045a65025d42fb0bfdcb05ce173f7f1b",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "record-order-not-business-data",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/046-record-order-not-business-data.json",
+            "scenario_sha256": "bb46727e31436c4c75d2dd4de67e9e42ed9ef324e8027f19df8b52734888787c",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "record-order-not-business-data",
+            "source_fixture_canonical_sha256": "4167b4c424b8657f5a134734376c64fcdcf9070bae704782089ccbbb6d677099",
+            "qualification_facts_hash": "57906c03c35e0b9cbaacc1b1216504bb18c654750424ea70ef2b00752eb76183",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/103-record-order-not-business-data.json",
+            "source_fixture_sha256": "076f10f91e8045b89d031915d8f093eaf208d268ec8063b23332cdd132197986",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "different-adjustments-per-role-0",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/047-different-adjustments-per-role-0.json",
+            "scenario_sha256": "45648c76f0fb994f61dac426d04ae0d6eb2ef239af4115ee2ccd3d1bf30a998d",
+            "expected_iss_prices": [
+                "300.00",
+                "640.00"
+            ],
+            "expected_payment_candidates": [
+                "275.00",
+                "590.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "different-adjustments-per-role-0",
+            "source_fixture_canonical_sha256": "37884e1918e806005e809fe74f3e1b450151ef65cdb50eafdd7b61ca759320cc",
+            "qualification_facts_hash": "e6a869a7c436ad5b5f6a97502db61ed64ba14893f4813852f28fde71b52a6a63",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/104-different-adjustments-per-role-0.json",
+            "source_fixture_sha256": "3b67a3cb25240a14d2cb9fb8794df813f8205e69f935c0113383a4af109cea54",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "different-adjustments-per-role-1",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/048-different-adjustments-per-role-1.json",
+            "scenario_sha256": "0e940d14b24a519ef2d6fb7e31628bad8081038db2f5b0fe2441175ffdd1a464",
+            "expected_iss_prices": [
+                "300.00",
+                "640.00"
+            ],
+            "expected_payment_candidates": [
+                "275.00",
+                "590.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "different-adjustments-per-role-1",
+            "source_fixture_canonical_sha256": "e4242c0c35665b3eaced90d0e83a77c9ca605f176a74f0524fad58e47007d73b",
+            "qualification_facts_hash": "7c352914704c290294151e0708ecd2729de2cb36faf0d2670665a65e7a8f8371",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/105-different-adjustments-per-role-1.json",
+            "source_fixture_sha256": "59d3134115ee1f06d7f7bccd58cce5678545ab7f9b1e9aedf11d542d0e14a0af",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "different-adjustments-per-role-2",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/049-different-adjustments-per-role-2.json",
+            "scenario_sha256": "a56dc657ed0dac698a8b35b227fced7e6bbb25bbb6a5737735515a2e5c4e1352",
+            "expected_iss_prices": [
+                "300.00",
+                "640.00"
+            ],
+            "expected_payment_candidates": [
+                "275.00",
+                "590.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "different-adjustments-per-role-2",
+            "source_fixture_canonical_sha256": "23be3d4808b650f32d61da86970d4f467fb2c1f13e4ae33d9f6f72c9fbed42f0",
+            "qualification_facts_hash": "2021a8dcae32c8c22ac9d07e0ce4757234351a8662c00251e145c55411bdbcf7",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/106-different-adjustments-per-role-2.json",
+            "source_fixture_sha256": "65231e14e630345df8095ef96fdeaf8bea7ad5d28fbf6dfe0c132af20f2f9330",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "LOCAL_ISS_DOCUMENT_PRICES_COMPOSED"
+        },
+        {
+            "name": "transport-missing-price-records",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/050-transport-missing-price-records.json",
+            "scenario_sha256": "c2136075fc9ef2cd755fb37247515c8da3ea81182fd8210b1852b920d4a92598",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-missing-price-records",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_PRICE112_MATERIAL_RESULT_IDENTITY_AND_PRICE_RECORDS_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "missing-price-records"
+        },
+        {
+            "name": "transport-missing-composition-proof",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/051-transport-missing-composition-proof.json",
+            "scenario_sha256": "3edd44cbce8c891c0d0f27ecec2649fe17ca8ed625ddd2c361b62d72c0783a98",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-missing-composition-proof",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_PRICE112_MATERIAL_RESULT_IDENTITY_AND_PRICE_RECORDS_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "missing-composition-proof"
+        },
+        {
+            "name": "transport-price-proof-hash",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/052-transport-price-proof-hash.json",
+            "scenario_sha256": "513d483df8b9bd7062729bb2cfae908322d765db48a6d1a39ee917a90ccdf5aa",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-price-proof-hash",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "INVALID",
+            "reason": "PRICE110_PRICE_PROOF_ENVELOPE_HASH_CONFLICT",
+            "price_status": "INVALID",
+            "composition_status": null,
+            "negative_mutation": "price-proof-hash"
+        },
+        {
+            "name": "transport-composition-proof-hash",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/053-transport-composition-proof-hash.json",
+            "scenario_sha256": "2000ae0e7391472f0dea9160cd799746e9f5b04ea173d1559061aab46fcc3ba2",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-composition-proof-hash",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "INVALID",
+            "reason": "PRICE111_COMPOSITION_ENVELOPE_HASH_CONFLICT",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "INVALID",
+            "negative_mutation": "composition-proof-hash"
+        },
+        {
+            "name": "transport-composition-binding",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/054-transport-composition-binding.json",
+            "scenario_sha256": "8b9f4f462a2f8d3d69995d2494ba741d7ae863f2511404186256dc988afc0c9b",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-composition-binding",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "INVALID",
+            "reason": "PRICE111_CURRENT_COMPOSITION_CONTEXT_CONFLICT",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "INVALID",
+            "negative_mutation": "composition-binding"
+        },
+        {
+            "name": "transport-composition-observation",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/055-transport-composition-observation.json",
+            "scenario_sha256": "3dcce1c2acea47336cd22cd77582d45cbaa05eae9d682ab97b154df8b81638ab",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-composition-observation",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "PRICE111_COMPOSITION_OBSERVATION_OUTSIDE_DEPENDENCIES_OR_KNOWLEDGE",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "ACTION_REQUIRED",
+            "negative_mutation": "composition-observation"
+        },
+        {
+            "name": "transport-composition-reuse",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/056-transport-composition-reuse.json",
+            "scenario_sha256": "b86a0f2f51cb5d491250404bbdf6b93ce763ec640a85b31d2f6bf2e713f52683",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-composition-reuse",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "INVALID",
+            "reason": "PRICE111_INDEPENDENT_ADJUSTMENT_EVIDENCE_REQUIRED",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "INVALID",
+            "negative_mutation": "composition-reuse"
+        },
+        {
+            "name": "transport-composition-coverage",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/057-transport-composition-coverage.json",
+            "scenario_sha256": "f49bb65688a21a9bbb3560ecb0a20a2f60954403b9dcffaa9c176636df42b0ea",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-composition-coverage",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "PRICE111_COMPOSITION_DOES_NOT_COVER_OWN_ISS_DATES",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "ACTION_REQUIRED",
+            "negative_mutation": "composition-coverage"
+        },
+        {
+            "name": "transport-composition-revoked",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/058-transport-composition-revoked.json",
+            "scenario_sha256": "da38edf12c825593dd5d693f522c332d3041269c064bcc57e46c9966f3807294",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-composition-revoked",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "PRICE111_COMPOSITION_EVIDENCE_REVOKED_OR_SUPERSEDED",
+            "price_status": "LOCAL_CONTRACT_PRICE_PAIR_EVIDENCE_BOUND",
+            "composition_status": "ACTION_REQUIRED",
+            "negative_mutation": "composition-revoked"
+        },
+        {
+            "name": "transport-mutated-monetary-principal",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/059-transport-mutated-monetary-principal.json",
+            "scenario_sha256": "fbf85597006d2d187f6e11cac025de83668bbe17ad65e53ad304fe5fd9ae5bc1",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-mutated-monetary-principal",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "INVALID",
+            "reason": "PRICE110_FRESH_DATED_IDENTITY_PAIR_REQUIRED",
+            "price_status": "INVALID",
+            "composition_status": null,
+            "negative_mutation": "mutated-monetary-principal"
+        },
+        {
+            "name": "transport-mutated-contract-price",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/060-transport-mutated-contract-price.json",
+            "scenario_sha256": "7df5358c598b2414decc7f4b9a2c4f00265988f0004d7897724db26213c16c82",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-mutated-contract-price",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "INVALID",
+            "reason": "PRICE110_FRESH_DATED_IDENTITY_PAIR_REQUIRED",
+            "price_status": "INVALID",
+            "composition_status": null,
+            "negative_mutation": "mutated-contract-price"
+        },
+        {
+            "name": "transport-mixed-dated108-optin",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/061-transport-mixed-dated108-optin.json",
+            "scenario_sha256": "868929ded1252548a4e08fdfd1b2ba5115800122962b5de1cd8bf58f8b4d330c",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-mixed-dated108-optin",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_PRICE112_SEPARATE_LEGACY_CONTEXT_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "mixed-dated108-optin"
+        },
+        {
+            "name": "transport-mixed-legacy-optin",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/062-transport-mixed-legacy-optin.json",
+            "scenario_sha256": "5abf5758c1e7c6f3f530f652eebc9862272e17fc25c6ac5b322b5abffed989ef",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-mixed-legacy-optin",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_PRICE112_SEPARATE_LEGACY_CONTEXT_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "mixed-legacy-optin"
+        },
+        {
+            "name": "transport-mixed-temporal-optin",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/063-transport-mixed-temporal-optin.json",
+            "scenario_sha256": "05401f2f497d0b24f994cd281843047306ce9a3b8e601f3cdc7315e611194b1b",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-mixed-temporal-optin",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_PRICE112_SEPARATE_TEMPORAL_CONTEXT_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "mixed-temporal-optin"
+        },
+        {
+            "name": "transport-nonpartial-route",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/064-transport-nonpartial-route.json",
+            "scenario_sha256": "999cc1b1ad1b3b1c3e4d11bafc971d6256594244dd9fcadfcbb2371432d58fef",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-nonpartial-route",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_PRICE112_PARTIAL_EXPORT_ROUTE_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "nonpartial-route"
+        },
+        {
+            "name": "transport-disabled-optin",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/065-transport-disabled-optin.json",
+            "scenario_sha256": "856238dc5d29c15590993e678683341c4808db060b2e061b5cf63b164744f006",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "transport-disabled-optin",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+            "price_status": null,
+            "composition_status": null,
+            "negative_mutation": "disabled-optin"
+        },
+        {
+            "name": "upstream108-upstream-export-wrong-route",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/066-upstream108-upstream-export-wrong-route.json",
+            "scenario_sha256": "9178bc0f40c43f73bc0b81f1e007369b275f9eaa3b7b323cbbd6693a9e528309",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-upstream-export-wrong-route",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_DATED108_PARTIAL_EXPORT_ROUTE_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/upstream-export-wrong-route.json",
+            "upstream108_sha256": "a9eb7cf58a636dc1e706d154f0498e77206d0dc1e1cc42a005ad7436078b9564"
+        },
+        {
+            "name": "upstream108-upstream-export-temporal-combination",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/067-upstream108-upstream-export-temporal-combination.json",
+            "scenario_sha256": "97c2a4f238dd048f0b87504f80525cb63a28ea4cc20c26a6436ec5dd211340d1",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-upstream-export-temporal-combination",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_EXPORT_DATED108_SEPARATE_TEMPORAL_CONTEXT_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/upstream-export-temporal-combination.json",
+            "upstream108_sha256": "e118a1c729943a1922c52ae973a40fb60e689090dde9f57bffe30067b5021487"
+        },
+        {
+            "name": "upstream108-fx-refusal-proof-hash",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/068-upstream108-fx-refusal-proof-hash.json",
+            "scenario_sha256": "786b707bcf301eeb0b2c9d1bb0481992d8beafeaa786425fa98c84f4bebbb4c5",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-fx-refusal-proof-hash",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_FX_TRANSACTION_PROOF_HASH_CONFLICT",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/fx-refusal-proof-hash.json",
+            "upstream108_sha256": "cd736e1c46d8fd9286f7e3e7bc215d64e0a090b9f31d3c6f147571d912d4fad2"
+        },
+        {
+            "name": "upstream108-fx-refusal-proof-missing",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/069-upstream108-fx-refusal-proof-missing.json",
+            "scenario_sha256": "764bd2bb7c8343e03f81f5928f005fea4533961205e51a9d19418aa97a87c7ab",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-fx-refusal-proof-missing",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_FX_SINGLE_TRANSACTION_PROOF_REQUIRED",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/fx-refusal-proof-missing.json",
+            "upstream108_sha256": "1cfdb52359a08b35005f37d9a0d03b64bdf2702197d8371b1cdc98b59b3b9636"
+        },
+        {
+            "name": "upstream108-fx-refusal-wrong-document-proof",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/070-upstream108-fx-refusal-wrong-document-proof.json",
+            "scenario_sha256": "939bb82a997bb3d54c01c9ba6726bf48eca854d150efe5980dd78509ca04338b",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-fx-refusal-wrong-document-proof",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_FX_TRANSACTION_OPERATION_OR_DOCUMENT_BINDING_CONFLICT",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/fx-refusal-wrong-document-proof.json",
+            "upstream108_sha256": "92a898aad98ec85991f94492c3b4d41e8803a479d3edfc21201e40e7ced9a6cc"
+        },
+        {
+            "name": "upstream108-fx-refusal-eur-unqualified",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/071-upstream108-fx-refusal-eur-unqualified.json",
+            "scenario_sha256": "b906a6d98c662f22d5dd14483a96974c3a1cf00de25671268b73fa86c2cab740",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-fx-refusal-eur-unqualified",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_FX_MATERIAL_QUOTE_ORIGIN_UNQUALIFIED",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/fx-refusal-eur-unqualified.json",
+            "upstream108_sha256": "e25e92c9aa182cff874ce62cad1e6494e4ca91a3cd1751f5f5739479f1f5cced"
+        },
+        {
+            "name": "upstream108-fx-refusal-wrong-operation",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/072-upstream108-fx-refusal-wrong-operation.json",
+            "scenario_sha256": "23fdc7306eb0cf67e484363c45a6ac69b3c9bb4790edfaa06405d8a7c4732b88",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-fx-refusal-wrong-operation",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_FX_TRANSACTION_OPERATION_OR_DOCUMENT_BINDING_CONFLICT",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/fx-refusal-wrong-operation.json",
+            "upstream108_sha256": "e2aade11440d8a1a5e5b7be9879dcf25b20ea3f9a5facc337a73df2cda4880dc"
+        },
+        {
+            "name": "upstream108-fx-refusal-unknown-source",
+            "path": "resources\/fiscal\/scenarios\/document-prices-2026.10.19-112-draft2\/073-upstream108-fx-refusal-unknown-source.json",
+            "scenario_sha256": "b8a86b2a8b24d9ff273ecbd7fd4b33fe4d57b38fcca3b0b0b3350d1c1a829e28",
+            "expected_iss_prices": [
+                "900.00",
+                "900.00"
+            ],
+            "expected_payment_candidates": [
+                "850.00",
+                "850.00"
+            ],
+            "expected_iss_dates": [
+                "2026-09-25",
+                "2026-09-25"
+            ],
+            "source_case_name": "upstream108-fx-refusal-unknown-source",
+            "source_fixture_canonical_sha256": "da7217caaa894adaa3d81e79894c31f559475db80c6314f69729527a0176b3cc",
+            "qualification_facts_hash": "2945706ab6db3911edab2f20bd7c5312327425a718c2d894780c1f8d17f340ad",
+            "source_fixture_path": "tests\/Fixtures\/price111-native112\/009-both-gross-before-all-discounts.json",
+            "source_fixture_sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19",
+            "status": "ACTION_REQUIRED",
+            "reason": "RTC_PARTIAL_EXPORT_FX_MATERIAL_QUOTE_ORIGIN_UNQUALIFIED",
+            "price_status": null,
+            "composition_status": null,
+            "upstream108_path": "resources\/fiscal\/scenarios\/dated-upstream-2026.10.19-108-draft3\/fx-refusal-unknown-source.json",
+            "upstream108_sha256": "f0a792da8569b29dd8e27f2e7b975f385d620973298fdb266c3aff719dd4ddcc"
+        }
+    ],
+    "bundle": "bundles\/consumption-phase4b-2026.10.19-112-draft2.json",
+    "synthetic_fixture_knowledge": "2026-10-19T19:00:00.123456+00:00",
+    "upstream108_expansion_pending": true,
+    "production_ready": false
+}

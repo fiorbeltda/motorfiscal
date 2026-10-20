@@ -1,0 +1,561 @@
+[
+  {
+    "fact_key": "rtc.evaluate",
+    "prompt": "Informe ou comprove rtc.evaluate para a apuração IBS/CBS.",
+    "rank": 150,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.operation_date",
+    "prompt": "Informe ou comprove rtc.operation_date para a apuração IBS/CBS.",
+    "rank": 151,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "rtc.operation_kind",
+    "prompt": "Informe ou comprove rtc.operation_kind para a apuração IBS/CBS.",
+    "rank": 152,
+    "answer_type": "ENUM",
+    "options": [
+      "SERVICE",
+      "GOODS",
+      "DIGITAL",
+      "FINANCIAL",
+      "REAL_ESTATE",
+      "SPECIFIC_REGIME"
+    ]
+  },
+  {
+    "fact_key": "rtc.buyer_relation",
+    "prompt": "Informe ou comprove rtc.buyer_relation para a apuração IBS/CBS.",
+    "rank": 153,
+    "answer_type": "ENUM",
+    "options": [
+      "B2B",
+      "B2C"
+    ]
+  },
+  {
+    "fact_key": "rtc.delivery_mode",
+    "prompt": "Informe ou comprove rtc.delivery_mode para a apuração IBS/CBS.",
+    "rank": 154,
+    "answer_type": "ENUM",
+    "options": [
+      "PRESENTIAL",
+      "REMOTE",
+      "DIGITAL"
+    ]
+  },
+  {
+    "fact_key": "rtc.consideration",
+    "prompt": "Informe ou comprove rtc.consideration para a apuração IBS/CBS.",
+    "rank": 155,
+    "answer_type": "ENUM",
+    "options": [
+      "ONEROUS",
+      "NON_ONEROUS"
+    ]
+  },
+  {
+    "fact_key": "rtc.non_onerous_legal_basis",
+    "prompt": "Informe ou comprove rtc.non_onerous_legal_basis para a apuração IBS/CBS.",
+    "rank": 156,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.recipient_relationship",
+    "prompt": "Informe ou comprove rtc.recipient_relationship para a apuração IBS/CBS.",
+    "rank": 157,
+    "answer_type": "ENUM",
+    "options": [
+      "EMPLOYEE",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_relationship_evidence_id",
+    "prompt": "Informe ou comprove rtc.recipient_relationship_evidence_id para a apuração IBS/CBS.",
+    "rank": 158,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.business_use_predominant",
+    "prompt": "Informe ou comprove rtc.business_use_predominant para a apuração IBS/CBS.",
+    "rank": 159,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.business_use_evidence_id",
+    "prompt": "Informe ou comprove rtc.business_use_evidence_id para a apuração IBS/CBS.",
+    "rank": 160,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.market_value_brl",
+    "prompt": "Informe ou comprove rtc.market_value_brl para a apuração IBS/CBS.",
+    "rank": 161,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.market_value_evidence_id",
+    "prompt": "Informe ou comprove rtc.market_value_evidence_id para a apuração IBS/CBS.",
+    "rank": 162,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.market",
+    "prompt": "Informe ou comprove rtc.market para a apuração IBS/CBS.",
+    "rank": 163,
+    "answer_type": "ENUM",
+    "options": [
+      "DOMESTIC",
+      "IMPORT",
+      "EXPORT"
+    ]
+  },
+  {
+    "fact_key": "rtc.supplier_regime",
+    "prompt": "Informe ou comprove rtc.supplier_regime para a apuração IBS/CBS.",
+    "rank": 164,
+    "answer_type": "ENUM",
+    "options": [
+      "REGULAR",
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "SPECIAL",
+      "FOREIGN"
+    ]
+  },
+  {
+    "fact_key": "rtc.simples_collection_option",
+    "prompt": "Informe ou comprove rtc.simples_collection_option para a apuração IBS/CBS.",
+    "rank": 165,
+    "answer_type": "ENUM",
+    "options": [
+      "INTERNAL",
+      "REGULAR"
+    ]
+  },
+  {
+    "fact_key": "rtc.simples_option_filed_on",
+    "prompt": "Informe ou comprove rtc.simples_option_filed_on para a apuração IBS/CBS.",
+    "rank": 166,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "rtc.simples_option_receipt_id",
+    "prompt": "Informe ou comprove rtc.simples_option_receipt_id para a apuração IBS/CBS.",
+    "rank": 167,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.simples_option_status",
+    "prompt": "Informe ou comprove rtc.simples_option_status para a apuração IBS/CBS.",
+    "rank": 168,
+    "answer_type": "ENUM",
+    "options": [
+      "CONFIRMED",
+      "PENDING",
+      "CANCELLED"
+    ]
+  },
+  {
+    "fact_key": "rtc.simples_option_status_evidence_id",
+    "prompt": "Informe ou comprove rtc.simples_option_status_evidence_id para a apuração IBS/CBS.",
+    "rank": 169,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_id",
+    "prompt": "Informe ou comprove rtc.supplier_id para a apuração IBS/CBS.",
+    "rank": 170,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_country",
+    "prompt": "Informe ou comprove rtc.supplier_country para a apuração IBS/CBS.",
+    "rank": 171,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.acquirer_id",
+    "prompt": "Informe ou comprove rtc.acquirer_id para a apuração IBS/CBS.",
+    "rank": 172,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.recipient_id",
+    "prompt": "Informe ou comprove rtc.recipient_id para a apuração IBS/CBS.",
+    "rank": 173,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.importer_id",
+    "prompt": "Informe ou comprove rtc.importer_id para a apuração IBS/CBS.",
+    "rank": 174,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.taxpayer_id",
+    "prompt": "Informe ou comprove rtc.taxpayer_id para a apuração IBS/CBS.",
+    "rank": 175,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.platform_id",
+    "prompt": "Informe ou comprove rtc.platform_id para a apuração IBS/CBS.",
+    "rank": 176,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.acquirer_country",
+    "prompt": "Informe ou comprove rtc.acquirer_country para a apuração IBS/CBS.",
+    "rank": 177,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.recipient_country",
+    "prompt": "Informe ou comprove rtc.recipient_country para a apuração IBS/CBS.",
+    "rank": 178,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.destination_basis",
+    "prompt": "Informe ou comprove rtc.destination_basis para a apuração IBS/CBS.",
+    "rank": 179,
+    "answer_type": "ENUM",
+    "options": [
+      "ACQUIRER_DOMICILE",
+      "RECIPIENT_DOMICILE",
+      "PROPERTY",
+      "PERSON_PRESENCE",
+      "EVENT",
+      "GOODS_DELIVERY",
+      "PASSENGER_ORIGIN",
+      "CARGO_DELIVERY",
+      "DOCUMENTED_SPECIAL"
+    ]
+  },
+  {
+    "fact_key": "rtc.destination_state",
+    "prompt": "Informe ou comprove rtc.destination_state para a apuração IBS/CBS.",
+    "rank": 180,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.destination_municipality_ibge",
+    "prompt": "Informe ou comprove rtc.destination_municipality_ibge para a apuração IBS/CBS.",
+    "rank": 181,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.destination_evidence_id",
+    "prompt": "Informe ou comprove rtc.destination_evidence_id para a apuração IBS/CBS.",
+    "rank": 182,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.destination_registration_status",
+    "prompt": "Informe ou comprove rtc.destination_registration_status para a apuração IBS/CBS.",
+    "rank": 183,
+    "answer_type": "ENUM",
+    "options": [
+      "REGISTERED",
+      "UNREGISTERED"
+    ]
+  },
+  {
+    "fact_key": "rtc.destination_evidence_sources",
+    "prompt": "Informe ou comprove rtc.destination_evidence_sources para a apuração IBS/CBS.",
+    "rank": 184,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.foreign_consumption_proven",
+    "prompt": "Informe ou comprove rtc.foreign_consumption_proven para a apuração IBS/CBS.",
+    "rank": 185,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.export_evidence_id",
+    "prompt": "Informe ou comprove rtc.export_evidence_id para a apuração IBS/CBS.",
+    "rank": 186,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.export_share_percent",
+    "prompt": "Informe ou comprove rtc.export_share_percent para a apuração IBS/CBS.",
+    "rank": 187,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.export_allocation_method",
+    "prompt": "Informe ou comprove rtc.export_allocation_method para a apuração IBS/CBS.",
+    "rank": 188,
+    "answer_type": "ENUM",
+    "options": [
+      "CONTRACTUAL",
+      "METERED_USAGE"
+    ]
+  },
+  {
+    "fact_key": "rtc.export_allocation_evidence_id",
+    "prompt": "Informe ou comprove rtc.export_allocation_evidence_id para a apuração IBS/CBS.",
+    "rank": 189,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.domestic_consumption_evidence_id",
+    "prompt": "Informe ou comprove rtc.domestic_consumption_evidence_id para a apuração IBS/CBS.",
+    "rank": 190,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_document_id",
+    "prompt": "Informe ou comprove rtc.import_document_id para a apuração IBS/CBS.",
+    "rank": 191,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.supplier_foreign_nif",
+    "prompt": "Informe ou comprove rtc.supplier_foreign_nif para a apuração IBS/CBS.",
+    "rank": 192,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_transaction_evidence_id",
+    "prompt": "Informe ou comprove rtc.import_transaction_evidence_id para a apuração IBS/CBS.",
+    "rank": 193,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_fx_contract_applicable",
+    "prompt": "Informe ou comprove rtc.import_fx_contract_applicable para a apuração IBS/CBS.",
+    "rank": 194,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.import_fx_contract_id",
+    "prompt": "Informe ou comprove rtc.import_fx_contract_id para a apuração IBS/CBS.",
+    "rank": 195,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.import_brazil_share_percent",
+    "prompt": "Informe ou comprove rtc.import_brazil_share_percent para a apuração IBS/CBS.",
+    "rank": 196,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.import_allocation_method",
+    "prompt": "Informe ou comprove rtc.import_allocation_method para a apuração IBS/CBS.",
+    "rank": 197,
+    "answer_type": "ENUM",
+    "options": [
+      "CONTRACTUAL",
+      "METERED_USAGE"
+    ]
+  },
+  {
+    "fact_key": "rtc.import_allocation_evidence_id",
+    "prompt": "Informe ou comprove rtc.import_allocation_evidence_id para a apuração IBS/CBS.",
+    "rank": 198,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.gross_currency",
+    "prompt": "Informe ou comprove rtc.gross_currency para a apuração IBS/CBS.",
+    "rank": 199,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.specific_regime_rule_id",
+    "prompt": "Informe ou comprove rtc.specific_regime_rule_id para a apuração IBS/CBS.",
+    "rank": 200,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_entity_type",
+    "prompt": "Informe ou comprove rtc.government_entity_type para a apuração IBS/CBS.",
+    "rank": 201,
+    "answer_type": "ENUM",
+    "options": [
+      "DIRECT",
+      "AUTARCHY",
+      "PUBLIC_FOUNDATION",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "rtc.document_id",
+    "prompt": "Informe ou comprove rtc.document_id para a apuração IBS/CBS.",
+    "rank": 202,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.gross_amount",
+    "prompt": "Informe ou comprove rtc.gross_amount para a apuração IBS/CBS.",
+    "rank": 203,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.legacy_tax_inclusion",
+    "prompt": "Informe ou comprove rtc.legacy_tax_inclusion para a apuração IBS/CBS.",
+    "rank": 204,
+    "answer_type": "ENUM",
+    "options": [
+      "INCLUDED",
+      "EXCLUDED"
+    ]
+  },
+  {
+    "fact_key": "rtc.legacy_tax_evidence_id",
+    "prompt": "Informe ou comprove rtc.legacy_tax_evidence_id para a apuração IBS/CBS.",
+    "rank": 205,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.operation_amount_reconciliation_id",
+    "prompt": "Informe ou comprove rtc.operation_amount_reconciliation_id para a apuração IBS/CBS.",
+    "rank": 206,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.base_adjustments",
+    "prompt": "Informe ou comprove rtc.base_adjustments para a apuração IBS/CBS.",
+    "rank": 207,
+    "answer_type": "ARRAY"
+  },
+  {
+    "fact_key": "rtc.tax_treatment",
+    "prompt": "Informe ou comprove rtc.tax_treatment para a apuração IBS/CBS.",
+    "rank": 208,
+    "answer_type": "ENUM",
+    "options": [
+      "STANDARD",
+      "REDUCED_30",
+      "REDUCED_60",
+      "ZERO_RATE",
+      "EXEMPT",
+      "IMMUNE",
+      "SUSPENDED",
+      "DEFERRAL",
+      "SPECIFIC_REGIME"
+    ]
+  },
+  {
+    "fact_key": "rtc.treatment_rule_id",
+    "prompt": "Informe ou comprove rtc.treatment_rule_id para a apuração IBS/CBS.",
+    "rank": 209,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.treatment_evidence_id",
+    "prompt": "Informe ou comprove rtc.treatment_evidence_id para a apuração IBS/CBS.",
+    "rank": 210,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.cindop",
+    "prompt": "Informe ou comprove rtc.cindop para a apuração IBS/CBS.",
+    "rank": 211,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.cclasstrib",
+    "prompt": "Informe ou comprove rtc.cclasstrib para a apuração IBS/CBS.",
+    "rank": 212,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "rtc.classification_rule_id",
+    "prompt": "Informe ou comprove rtc.classification_rule_id para a apuração IBS/CBS.",
+    "rank": 213,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.collection_method",
+    "prompt": "Informe ou comprove rtc.collection_method para a apuração IBS/CBS.",
+    "rank": 214,
+    "answer_type": "ENUM",
+    "options": [
+      "SUPPLIER",
+      "ACQUIRER",
+      "RECIPIENT",
+      "SPLIT_PAYMENT",
+      "PLATFORM",
+      "PUBLIC_ENTITY"
+    ]
+  },
+  {
+    "fact_key": "rtc.collection_legal_basis",
+    "prompt": "Informe ou comprove rtc.collection_legal_basis para a apuração IBS/CBS.",
+    "rank": 215,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.accessory_obligations_fulfilled",
+    "prompt": "Informe ou comprove rtc.accessory_obligations_fulfilled para a apuração IBS/CBS.",
+    "rank": 216,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.credit_context",
+    "prompt": "Informe ou comprove rtc.credit_context para a apuração IBS/CBS.",
+    "rank": 217,
+    "answer_type": "ENUM",
+    "options": [
+      "OUTPUT",
+      "INPUT",
+      "PERSONAL_USE"
+    ]
+  },
+  {
+    "fact_key": "rtc.acquirer_regime",
+    "prompt": "Informe ou comprove rtc.acquirer_regime para a apuração IBS/CBS.",
+    "rank": 218,
+    "answer_type": "ENUM",
+    "options": [
+      "REGULAR",
+      "SIMPLES_NACIONAL",
+      "MEI",
+      "NON_TAXPAYER"
+    ]
+  },
+  {
+    "fact_key": "rtc.input_document_id",
+    "prompt": "Informe ou comprove rtc.input_document_id para a apuração IBS/CBS.",
+    "rank": 219,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.input_document_valid",
+    "prompt": "Informe ou comprove rtc.input_document_valid para a apuração IBS/CBS.",
+    "rank": 220,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.prior_tax_extinguished",
+    "prompt": "Informe ou comprove rtc.prior_tax_extinguished para a apuração IBS/CBS.",
+    "rank": 221,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.input_ibs_amount",
+    "prompt": "Informe ou comprove rtc.input_ibs_amount para a apuração IBS/CBS.",
+    "rank": 222,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.input_cbs_amount",
+    "prompt": "Informe ou comprove rtc.input_cbs_amount para a apuração IBS/CBS.",
+    "rank": 223,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "rtc.credit_adjustments",
+    "prompt": "Informe ou comprove rtc.credit_adjustments para a apuração IBS/CBS.",
+    "rank": 224,
+    "answer_type": "ARRAY"
+  }
+]

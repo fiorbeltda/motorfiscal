@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_NON_ONEROUS_EVIDENCE_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.market_value_evidence_id"
+  ],
+  "decision_hash": "e70edaa53f60a68ff6ac3a8d47c0f6c946625853420c6375ca5d7b4d017b5061"
+}

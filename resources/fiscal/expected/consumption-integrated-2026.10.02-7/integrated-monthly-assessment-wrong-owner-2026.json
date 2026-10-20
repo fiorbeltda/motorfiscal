@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_OWNER_OR_CURRENCY_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "fadfa34427f310dd748a297c5376233e7e8e1a190c9bfd0a2323061a1d414e74"
+}

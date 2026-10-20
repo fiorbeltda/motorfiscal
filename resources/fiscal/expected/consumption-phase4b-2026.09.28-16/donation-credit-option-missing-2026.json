@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_CREDIT_OPTION_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.donation_credit_option"
+  ],
+  "decision_hash": "a988360c9a22eb01d3aa3aa6816b36a714a09c6627e089d002325fd611f7d7de"
+}

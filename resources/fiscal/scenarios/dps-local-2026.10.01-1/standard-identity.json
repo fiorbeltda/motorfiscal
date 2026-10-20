@@ -1,0 +1,19 @@
+{
+  "environment": "2",
+  "issued_at": "2026-10-01T13:30:00-03:00",
+  "application_version": "FISCAL-SANDBOX-1",
+  "series": "1",
+  "number": "1",
+  "competence_date": "2026-10-01",
+  "issuer_municipality": "3550308",
+  "supplier_cnpj": "11111111000191",
+  "simples_option": "1",
+  "special_regime": "0",
+  "total_tax_indicator": "0",
+  "service_municipality": "3509502",
+  "acquirer_name": "Tomador sintético de homologação local",
+  "identity_evidence_id": "FIXTURE.DPS.IDENTITY",
+  "service_location_evidence_id": "FIXTURE.SERVICE.LOCATION",
+  "regime_evidence_id": "FIXTURE.SUPPLIER.REGIME",
+  "total_tax_evidence_id": "FIXTURE.TOTAL.TAX"
+}

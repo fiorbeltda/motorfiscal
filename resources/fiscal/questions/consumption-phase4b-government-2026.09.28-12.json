@@ -1,0 +1,68 @@
+[
+  {
+    "fact_key": "rtc.government_entity_evidence_id",
+    "prompt": "Informe o ato que comprova a natureza do ente adquirente.",
+    "rank": 180,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_public_law_person",
+    "prompt": "O adquirente é pessoa jurídica de direito público interno?",
+    "rank": 181,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.government_in_person",
+    "prompt": "A aquisição foi realizada presencialmente?",
+    "rank": 182,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.government_licitation_waived",
+    "prompt": "A aquisição foi dispensada de licitação conforme ato documentado?",
+    "rank": 183,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.government_national_uniform_rate",
+    "prompt": "A operação está sujeita a alíquota nacionalmente uniforme enumerada no art. 472?",
+    "rank": 184,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.government_procurement_evidence_id",
+    "prompt": "Informe o ato que prova a compra presencial dispensada de licitação.",
+    "rank": 184,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_uniform_rate_rule_id",
+    "prompt": "Informe o dispositivo de alíquota nacionalmente uniforme aplicável.",
+    "rank": 184,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.government_federation",
+    "prompt": "Qual ente federativo contratou a aquisição?",
+    "rank": 185,
+    "answer_type": "ENUM",
+    "options": [
+      "UNION",
+      "STATE",
+      "MUNICIPALITY",
+      "DISTRICT"
+    ]
+  },
+  {
+    "fact_key": "rtc.government_payment_date",
+    "prompt": "Em que data o ente público realizou o pagamento?",
+    "rank": 186,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "rtc.government_payment_evidence_id",
+    "prompt": "Informe o comprovante do pagamento público.",
+    "rank": 187,
+    "answer_type": "STRING"
+  }
+]

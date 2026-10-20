@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_APPROPRIATION_DATE_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ecc26c6839580abb5190df36bb4ae44a2670baf97b49bea5a7f8486482daf230"
+}

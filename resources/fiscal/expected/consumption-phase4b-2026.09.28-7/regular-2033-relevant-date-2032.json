@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_RELEVANT_DATE_PRE_2033_LEGACY_REVIEW_REQUIRED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "2715f751007889bc50bbdae6115e463830ef4652ef15209d7ced1a1bc1bb4398"
+}

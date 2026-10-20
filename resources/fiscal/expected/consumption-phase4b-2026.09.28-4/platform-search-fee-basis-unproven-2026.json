@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PLATFORM_SEARCH_FEE_BASIS_UNPROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ef1b318d027271bc0af612072a62fa2168410bb9b2f0a060a1fc5258bc013b7d"
+}

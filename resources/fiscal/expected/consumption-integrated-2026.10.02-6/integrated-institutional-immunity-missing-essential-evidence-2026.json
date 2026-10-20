@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "ISS_INSTITUTIONAL_IMMUNITY_EVIDENCE_MISSING:essential_scope_evidence_id"
+  ],
+  "missing_facts": [
+    "iss.institutional_immunity_proof"
+  ],
+  "decision_hash": "cc18a15784c415e0d7d47aff009f4b443a7be72afcc8d723ca1836175a4a9570"
+}

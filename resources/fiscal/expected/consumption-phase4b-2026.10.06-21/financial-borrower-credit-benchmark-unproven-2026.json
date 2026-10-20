@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_CREDIT_BENCHMARK_CALCULATION_UNPROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "a50b6d631bfa746caac9c3fdec2d28a6b104717db2318a467d68a737cf5d0965"
+}

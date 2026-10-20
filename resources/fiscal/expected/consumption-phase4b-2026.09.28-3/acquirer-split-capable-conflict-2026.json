@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_ACQUIRER_COLLECTION_CONDITIONS_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ac676853b5d6cf144bf64c395121bd0d170fbe64453da486a812bb2389b77fbf"
+}

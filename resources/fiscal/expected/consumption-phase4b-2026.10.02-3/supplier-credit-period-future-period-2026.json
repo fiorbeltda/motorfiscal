@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_PERIOD_NOT_CLOSED"
+  ],
+  "missing_facts": [
+    "rtc.supplier_credit_period"
+  ],
+  "decision_hash": "7a84edacf44411da6e45d31956c847ba5a340e0c3395a1ebd8c53539d3d9d0e9"
+}

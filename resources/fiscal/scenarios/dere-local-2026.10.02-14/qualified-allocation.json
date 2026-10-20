@@ -1,0 +1,40 @@
+{
+  "supplier_id": "11111111000191",
+  "document_id": "dps-1",
+  "period_end": "2026-09-30",
+  "generated_at": "2026-10-01T12:00:00.000-03:00",
+  "observed_on": "2026-10-01",
+  "event_sequence": 1,
+  "allocation_complete": true,
+  "allocation_qualified": true,
+  "net_bases_qualified": true,
+  "iss_incidence_qualified": true,
+  "parties_qualified": true,
+  "iss_incident": false,
+  "allocation_source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "allocation_evidence_id": "FIXTURE.ALLOCATION",
+  "iss_incidence_evidence_id": "FIXTURE.ISS",
+  "parties_evidence_id": "FIXTURE.PARTIES",
+  "groups": [
+    {
+      "registration_type": "1",
+      "acquirer_id": "22222222000191",
+      "municipality": "3550308",
+      "series": 1,
+      "operations": [
+        {
+          "transaction_id": "transaction1",
+          "occurred_at": "2026-09-20T12:00:00.000-03:00",
+          "net_base": "500.00",
+          "foreign_currency_referenced": false
+        },
+        {
+          "transaction_id": "transaction2",
+          "occurred_at": "2026-09-21T12:00:00.000-03:00",
+          "net_base": "300.00",
+          "foreign_currency_referenced": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Bases negativas49 — leitura e reconciliação local do retorno
+
+Entrega: leitura do XML D9199 com o schema oficial1.3.0 e reconciliação de saldos por raiz, tributo e origem. `DereNegativeBaseReturnXmlReader` conserva o SHA dos bytes, verifica fornecedor pela raiz cadastral oficial de oito posições, período, status declarado, recibo declarado, tipoD1199, hash declarado do evento processado e sequência da origem corrente. A sequência não é gerada pelo motor.
+
+O schema exige `qtdOrigens`, que conta períodos distintos. As informações de IBS e CBS permanecem em grupos separados. A leitura confere vínculo com a base formadora, dedução do período, base positiva após dedução e sequência da origem atual. `DereNegativeBaseReturnReconciler` verifica saldo anterior, utilização, saldo final e geração corrente; rejeita origem de outro tributo/período, estoque acima do valor original, detalhes duplicados, cobertura incompleta, consumo acima da base positiva e aproveitamento da geração do próprio mês.
+
+O resultado é `LOCAL_RETURN_RECONCILED`. Isso comprova somente estrutura e conservação local: assinatura, recepção governamental, originalidade dos recibos, calendário, expiração e elegibilidade para consumo continuam sem aprovação. O modo sintético sem assinatura exige escolha explícita; o modo ordinário rejeita os mesmos bytes sem assinatura. Um XML com estrutura assinada também continua sem verificação criptográfica de assinatura nesta entrega.
+
+Evidências em `storage/app/phase4b-negative-base49-preparation-20261009`: captura `synthetic-return.xml`, resultado `synthetic-return-reader.json`, reprodução nativa e relatório `return-development-validation.json`. Identificadores, recibos e datas desse XML são dados de teste declarados sintéticos. Nenhuma transmissão foi realizada.
+
+Validação conjunta:50 testes/168 asserções nos três componentes49 (parâmetros, reconciliação e leitura), PHPStan dos dois novos componentes e Pint dos quatro arquivos desta entrega. A primeira execução do teste XML falhou por raiz cadastral com14 posições, descrição de status fora da enumeração e ausência de `qtdOrigens`; log e fonte anterior foram preservados. Uma falha posterior de tipagem DOM no PHPStan também foi preservada e corrigida com guarda explícita de elemento. O schema oficial permaneceu inalterado.
+
+As50 verificações dirigidas não representam nova execução da suíte completa. Os hashes das implementações48 e da primeira entrega49 permanecem iguais. A rota mensal ainda não utiliza esses componentes; o candidato integral aceito permanece27, o corpus comum local48 mantém102 cenários/102 replays/595 XMLs e produção continua bloqueada.
+
+Próximo trabalho do [escopo49](phase4b-next-scope-negative-bases49.md): qualificar o encadeamento dos retornos e reaberturas, calendário/prazo de cinco anos, selecionar estoque anterior válido e calcular PEPS/manual com limites e alertas. Em seguida integrar conhecimento próprio e projeção D1199, com oráculos, snapshots/replays/XMLs e regressão. A classificação da parcela pública nova produzida apenas na alienação e os demais requisitos do escopo28/Fase4B.8 continuam pendentes.

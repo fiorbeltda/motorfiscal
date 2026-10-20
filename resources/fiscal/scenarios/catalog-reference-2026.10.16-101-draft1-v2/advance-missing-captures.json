@@ -1,0 +1,227 @@
+{
+  "scenario_id": "CATALOG101-advance-missing-captures",
+  "competence_date": "2026-10-12",
+  "knowledge_at": "2026-10-21T23:00:00+00:00",
+  "rule_bundle_id": "CONSUMPTION-PHASE4B-2026.10.16-101-draft1",
+  "catalog_versions": {
+    "services": "2026.09.17-1",
+    "municipal_parameters": "2026.10.01-5",
+    "public_annex_i": "rfb-41766-sandbox-1",
+    "federal_obligations": "2026-sandbox-3",
+    "federal_banking_calendar": "2026-national-febraban-1",
+    "rtc_rates": "2026.09.25-1",
+    "rtc_codes": "2026.10.16-101-draft1",
+    "rtc_transition": "2026.10.15-91-draft1"
+  },
+  "facts": {
+    "service.canonical_id": "SOFTWARE_DEVELOPMENT",
+    "provider.municipality_ibge": "3550308",
+    "customer.municipality_ibge": "3509502",
+    "customer.person_type": "PJ",
+    "operation.service_origin": "DOMESTIC",
+    "provider.tax_regime": "LUCRO_REAL",
+    "provider.person_type": "PRIVATE_LEGAL_ENTITY",
+    "operation.amount": "1000.00",
+    "federal.evaluate_withholdings": false,
+    "rtc.evaluate": true,
+    "rtc.operation_date": "2026-10-20",
+    "rtc.operation_kind": "DIGITAL",
+    "rtc.buyer_relation": "B2B",
+    "rtc.delivery_mode": "DIGITAL",
+    "rtc.consideration": "ONEROUS",
+    "rtc.market": "DOMESTIC",
+    "rtc.supplier_regime": "REGULAR",
+    "rtc.supplier_id": "11111111000191",
+    "rtc.supplier_country": "BR",
+    "rtc.acquirer_id": "22222222000191",
+    "rtc.recipient_id": "22222222000191",
+    "rtc.acquirer_country": "BR",
+    "rtc.recipient_country": "BR",
+    "rtc.destination_basis": "ACQUIRER_DOMICILE",
+    "rtc.destination_state": "SP",
+    "rtc.destination_municipality_ibge": "3509502",
+    "rtc.destination_evidence_id": "contract-establishment-1",
+    "rtc.document_id": "SYNTHETIC.FINAL91",
+    "rtc.gross_amount": "1000.00",
+    "rtc.gross_currency": "BRL",
+    "rtc.legacy_tax_inclusion": "EXCLUDED",
+    "rtc.legacy_tax_evidence_id": "net-price-contract-line-1",
+    "rtc.base_adjustments": [],
+    "rtc.tax_treatment": "STANDARD",
+    "rtc.collection_method": "SUPPLIER",
+    "rtc.accessory_obligations_fulfilled": true,
+    "rtc.credit_context": "OUTPUT",
+    "service.ctribnac_code": "010101",
+    "rtc.tax_point_operation_id": "OP87",
+    "rtc.assess_tax_point_events": true,
+    "rtc.reconcile_recorded_advances": true,
+    "rtc.tax_point_contexts": [
+      {
+        "id": "OP87",
+        "document_id": "SYNTHETIC.FINAL91",
+        "mode": "ORDINARY",
+        "supply_kind": "INTANGIBLE_AVAILABILITY",
+        "public_purchase": false,
+        "cancelled": false,
+        "total_amount": "1000.00",
+        "actual_supply": {
+          "operation_id": "OP87",
+          "agreement_id": "AG87",
+          "supplier_id": "11111111000191",
+          "document_id": "SYNTHETIC.FINAL91",
+          "kind": "INTANGIBLE_AVAILABILITY",
+          "currency": "BRL",
+          "date": "2026-10-20",
+          "observed_on": "2026-10-21",
+          "total_base": "1000.00",
+          "evidence_id": "SYNTHETIC.SUPPLY91"
+        },
+        "fiscal_document": null,
+        "installments": [
+          {
+            "id": "1",
+            "amount": "300.00",
+            "payment": {
+              "operation_id": "OP87",
+              "agreement_id": "AG87",
+              "supplier_id": "11111111000191",
+              "kind": "PAYMENT",
+              "date": "2026-10-08",
+              "observed_on": "2026-10-08",
+              "evidence_id": "PROOF-PAYMENT",
+              "installment_id": "1",
+              "amount": "300.00",
+              "payment_reference_id": "BANK.P1"
+            },
+            "payment_document": {
+              "operation_id": "OP87",
+              "agreement_id": "AG87",
+              "supplier_id": "11111111000191",
+              "kind": "FISCAL_DOCUMENT_ISSUED",
+              "date": "2026-10-07",
+              "observed_on": "2026-10-07",
+              "evidence_id": "PROOF-FISCAL_DOCUMENT_ISSUED",
+              "installment_id": "1",
+              "payment_reference_amount": "300.00",
+              "document_id": "ADV-DOC1",
+              "payment_link_id": "DOC.PAY.LINK1"
+            }
+          }
+        ]
+      }
+    ],
+    "rtc.prior_advance_books": [
+      {
+        "contract": "LOCAL-PRIOR-ADVANCE-BOOK-89",
+        "book_id": "SYNTHETIC.BOOK91",
+        "operation_id": "OP87",
+        "agreement_id": "AG87",
+        "supplier_id": "11111111000191",
+        "currency": "BRL",
+        "state": "ACTIVE",
+        "qualification_id": "SYNTHETIC.QUALIFICATION91",
+        "evidence_id": "SYNTHETIC.BOOK.EVIDENCE91",
+        "source_hash": "9b277e511235d5bece8ebd074408298bce5413f9fea848a9eef161949f2287f3",
+        "qualified_on": "2026-10-19",
+        "complete_advance_installment_ids": [
+          "1"
+        ],
+        "entries": [
+          {
+            "installment_id": "1",
+            "snapshot_hash": "cc2e49823e7241477f3c75e582fb479dbc2329b890ff52f319c23442e2c58566",
+            "decision_hash": "e8beb6c49d747a76fd1aaaeec880be2ed053d4d85dfd7ecdb692f9687074fd0f",
+            "kind": "BOOKED_ADVANCE_DEBIT_MEMORY",
+            "state": "ACTIVE",
+            "registration_id": "SYNTHETIC.REG91.0",
+            "entry_evidence_id": "SYNTHETIC.JOURNAL91.0",
+            "registered_at": "2026-10-16T12:00:00+00:00",
+            "assessment_period": "2026-10",
+            "revoked_at": null,
+            "replaced_by": null,
+            "consumed_by_final_id": null,
+            "event": {
+              "operation_id": "OP87",
+              "agreement_id": "AG87",
+              "supplier_id": "11111111000191",
+              "installment_id": "1",
+              "currency": "BRL",
+              "event_date": "2026-10-08",
+              "rate_date": "2026-10-07",
+              "base_amount": "300.00",
+              "payment_reference_id": "BANK.P1",
+              "payment_evidence_id": "PROOF-PAYMENT",
+              "payment_document_id": "ADV-DOC1",
+              "payment_document_evidence_id": "PROOF-FISCAL_DOCUMENT_ISSUED",
+              "supply_state_evidence_id": "PROOF-NOT_YET_SUPPLIED_AS_OF",
+              "supply_not_yet_occurred_as_of": "2026-10-15"
+            },
+            "taxes": {
+              "IBS_STATE": {
+                "base_amount": "300.00",
+                "percent": "0.10",
+                "nominal_amount": "0.30",
+                "source_id": "LC214-ART343",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+                "jurisdiction": "BR",
+                "cash_due": null,
+                "cash_relief_qualified": false
+              },
+              "IBS_MUNICIPAL": {
+                "base_amount": "300.00",
+                "percent": "0.00",
+                "nominal_amount": "0.00",
+                "source_id": "LC214-ART343",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+                "jurisdiction": "BR",
+                "cash_due": null,
+                "cash_relief_qualified": false
+              },
+              "CBS": {
+                "base_amount": "300.00",
+                "percent": "0.90",
+                "nominal_amount": "2.70",
+                "source_id": "LC214-ART346",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+                "jurisdiction": "BR",
+                "cash_due": null,
+                "cash_relief_qualified": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "rtc.prior_advance_captures": [],
+    "rtc.recorded_advance_final_contexts": [
+      {
+        "operation_id": "OP87",
+        "agreement_id": "AG87",
+        "supplier_id": "11111111000191",
+        "book_id": "SYNTHETIC.BOOK91",
+        "book_hash": "1e8bdd67dbd1af02c631fa8ecfb481575c705d912c8635d8beb3d937e1011f90",
+        "destination_state": "SP",
+        "destination_municipality": "3509502",
+        "supply_date": "2026-10-20",
+        "total_base": "1000.00",
+        "currency": "BRL",
+        "final_registered": false,
+        "final_document_id": "SYNTHETIC.FINAL91",
+        "final_decision_id": "SYNTHETIC.FINAL.DECISION91",
+        "supply_kind": "INTANGIBLE_AVAILABILITY",
+        "supply_evidence": {
+          "operation_id": "OP87",
+          "agreement_id": "AG87",
+          "supplier_id": "11111111000191",
+          "document_id": "SYNTHETIC.FINAL91",
+          "kind": "INTANGIBLE_AVAILABILITY",
+          "currency": "BRL",
+          "date": "2026-10-20",
+          "observed_on": "2026-10-21",
+          "total_base": "1000.00",
+          "evidence_id": "SYNTHETIC.SUPPLY91"
+        }
+      }
+    ]
+  }
+}

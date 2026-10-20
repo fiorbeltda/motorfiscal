@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiscal-engine.local/schemas/scenario-dated108-v2.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scenario_id",
+    "competence_date",
+    "knowledge_at",
+    "rule_bundle_id",
+    "catalog_versions",
+    "facts"
+  ],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "competence_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "knowledge_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "rule_bundle_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog_versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": [
+              "string",
+              "integer",
+              "boolean",
+              "array"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "value"
+            ],
+            "properties": {
+              "value": {
+                "type": [
+                  "string",
+                  "integer",
+                  "boolean",
+                  "array"
+                ]
+              },
+              "source_type": {
+                "enum": [
+                  "USER",
+                  "DERIVED",
+                  "CATALOG",
+                  "OFFICIAL_FILE",
+                  "OFFICIAL_API",
+                  "DOCUMENT",
+                  "FIXTURE"
+                ]
+              },
+              "effective_from": {
+                "type": "string",
+                "format": "date"
+              },
+              "effective_to": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "recorded_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "invalidated_at": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              },
+              "confidence": {
+                "enum": [
+                  "LOW",
+                  "MEDIUM",
+                  "HIGH"
+                ]
+              },
+              "evidence": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "source_id",
+                  "locator"
+                ],
+                "properties": {
+                  "source_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "locator": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "content_hash": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "properties": {
+        "provider.iss_regime_proof_records": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "VALID",
+  "reason_codes": [
+    "RTC_EXPORT_FOREIGN_CONSUMPTION"
+  ],
+  "missing_facts": [],
+  "decision_hash": "783d6a7e5d2c830fc372198eace0f5f86ec886f09d0841a6c87fae7674a338d7"
+}

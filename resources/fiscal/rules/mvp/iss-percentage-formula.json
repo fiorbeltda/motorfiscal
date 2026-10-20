@@ -1,0 +1,12 @@
+{
+  "rule_id": "ISS.CALCULATION.PERCENTAGE",
+  "version": "1.0.0",
+  "kind": "CALCULATION",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.canonical_id", "operator": "IN", "value": ["SOFTWARE_DEVELOPMENT", "TRADE_FAIR_EVENT", "CONSTRUCTION_CONTRACT"]},
+  "effects": [{"type": "SELECT_FORMULA", "formula": "PERCENTAGE_OF_BASE", "arguments": {"base": "iss.taxable_base", "rate": "municipal.rate"}}],
+  "source_id": "SOURCE.MVP.FORMULA.REGISTRY",
+  "source_version": "1.0.0",
+  "reason_codes": ["ISS_PERCENTAGE_FORMULA_SELECTED"]
+}

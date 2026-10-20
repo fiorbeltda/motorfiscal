@@ -1,0 +1,378 @@
+{
+    "scenario_id": "PRICE112-upstream108-fx-refusal-proof-missing",
+    "competence_date": "2026-09-25",
+    "knowledge_at": "2026-10-19T19:00:00.123456+00:00",
+    "rule_bundle_id": "CONSUMPTION-PHASE4B-2026.10.19-112-draft2",
+    "catalog_versions": {
+        "services": "2026.09.17-1",
+        "municipal_parameters": "2026.10.01-5",
+        "public_annex_i": "rfb-41766-sandbox-1",
+        "federal_obligations": "2026-sandbox-3",
+        "federal_banking_calendar": "2026-national-febraban-1",
+        "rtc_rates": "2026.09.25-1",
+        "rtc_codes": "2026.10.19-112-draft2",
+        "rtc_transition": "2026.10.15-91-draft1"
+    },
+    "facts": {
+        "service.canonical_id": "SOFTWARE_DEVELOPMENT",
+        "provider.municipality_ibge": "3550308",
+        "customer.municipality_ibge": "3509502",
+        "customer.person_type": "PJ",
+        "operation.service_origin": "DOMESTIC",
+        "provider.tax_regime": "LUCRO_REAL",
+        "provider.person_type": "PRIVATE_LEGAL_ENTITY",
+        "operation.amount": "5179.50",
+        "federal.evaluate_withholdings": false,
+        "rtc.evaluate": true,
+        "rtc.operation_date": "2026-09-25",
+        "rtc.operation_kind": "DIGITAL",
+        "rtc.buyer_relation": "B2B",
+        "rtc.delivery_mode": "DIGITAL",
+        "rtc.consideration": "ONEROUS",
+        "rtc.market": "EXPORT",
+        "rtc.supplier_regime": "REGULAR",
+        "rtc.supplier_id": "11111111000191",
+        "rtc.supplier_country": "BR",
+        "rtc.acquirer_id": "22222222000191",
+        "rtc.recipient_id": "22222222000191",
+        "rtc.acquirer_country": "US",
+        "rtc.recipient_country": "US",
+        "rtc.destination_basis": "RECIPIENT_DOMICILE",
+        "rtc.destination_state": "SP",
+        "rtc.destination_municipality_ibge": "3509502",
+        "rtc.destination_evidence_id": "contract-establishment-1",
+        "rtc.document_id": "dps-1",
+        "rtc.gross_amount": "1000.00",
+        "rtc.gross_currency": "USD",
+        "rtc.legacy_tax_inclusion": "EXCLUDED",
+        "rtc.legacy_tax_evidence_id": "net-price-contract-line-1",
+        "rtc.base_adjustments": [],
+        "rtc.tax_treatment": "STANDARD",
+        "rtc.collection_method": "SUPPLIER",
+        "rtc.accessory_obligations_fulfilled": true,
+        "rtc.credit_context": "OUTPUT",
+        "rtc.foreign_consumption_proven": true,
+        "rtc.export_evidence_id": "foreign-consumption-contract-1",
+        "rtc.export_share_percent": "40",
+        "rtc.domestic_consumption_evidence_id": "brazil-usage-report-1",
+        "rtc.export_allocation_method": "METERED_USAGE",
+        "rtc.export_allocation_evidence_id": "usage-meter-sep-2026",
+        "rtc.export_domestic_recipient_id": "33333333000191",
+        "rtc.export_domestic_recipient_country": "BR",
+        "rtc.export_domestic_document_id": "dps-domestic-1",
+        "rtc.acquirer_foreign_nif": "FOREIGN-ACQUIRER-NIF-73",
+        "rtc.export_foreign_document_id": "foreign-invoice-73",
+        "rtc.export_transaction_evidence_id": "export-contract-73",
+        "rtc.operation_amount_reconciliation_id": "export-fx-reconciliation-73",
+        "rtc.export_fx_source_id": "USD",
+        "rtc.export_fx_proof": [],
+        "rtc.assess_export_iss_results": false,
+        "rtc.assess_export_sp_results": false,
+        "rtc.assess_export_dps_identity": false,
+        "rtc.assess_export_dated_documents": false,
+        "provider.iss_regime": "GENERAL_AD_VALOREM",
+        "provider.iss_regime_proof_records": [
+            {
+                "contract": "ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105",
+                "kind": "ISS_SUPPLIER_REGIME_MATERIAL_EVIDENCE",
+                "evidence_id": "REGIME-fx-refusal-proof-missing",
+                "valid_from": "2026-01-01",
+                "valid_to": "2032-12-31",
+                "observed_at": "2026-10-19T16:58:22.398209+00:00",
+                "revoked_at": null,
+                "superseded_at": null,
+                "value": {
+                    "supplier_id": "11111111000191",
+                    "supplier_municipality": "3550308",
+                    "service_kind": "SOFTWARE_SERVICE",
+                    "regime": "GENERAL_AD_VALOREM",
+                    "special_regime": false,
+                    "supplier_immunity": false,
+                    "supplier_flat_tax": false,
+                    "simples_option": false
+                },
+                "origin": {
+                    "reference": "synthetic:\/\/dated108\/REGIME-fx-refusal-proof-missing",
+                    "media_type": "application\/json",
+                    "content": "{\"contract\":\"ISS-PARTIAL-EXPORT-MATERIAL-EVIDENCE-2026.10.19-105\",\"evidence_id\":\"REGIME-fx-refusal-proof-missing\",\"kind\":\"ISS_SUPPLIER_REGIME_MATERIAL_EVIDENCE\",\"observed_at\":\"2026-10-19T16:58:22.398209+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"regime\":\"GENERAL_AD_VALOREM\",\"service_kind\":\"SOFTWARE_SERVICE\",\"simples_option\":false,\"special_regime\":false,\"supplier_flat_tax\":false,\"supplier_id\":\"11111111000191\",\"supplier_immunity\":false,\"supplier_municipality\":\"3550308\"}}",
+                    "content_sha256": "60e46ad101ce12c6821b65d2722bc7cc360365e19829608c7b97a18540ccafe4"
+                },
+                "source_hash": "993848318e086c0be2eace2373eb8080391cf6d58f730413176ae6c4d8dc2dbd"
+            }
+        ],
+        "rtc.export_iss_material_records": [],
+        "rtc.export_iss_dated_result_records": [],
+        "rtc.export_dated_dps_identity_records": [],
+        "rtc.assess_export_document_prices": true,
+        "rtc.export_contract_price_records": [
+            {
+                "role": "RTC_FOREIGN",
+                "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+                "contract_reference": "SYNTHETIC-CONTRACT-105",
+                "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+                "price_currency": "BRL",
+                "service_price": "1000.00",
+                "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE"
+            },
+            {
+                "role": "RTC_DOMESTIC",
+                "document_reference": "dps-domestic-1",
+                "contract_reference": "SYNTHETIC-CONTRACT-105",
+                "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+                "price_currency": "BRL",
+                "service_price": "1000.00",
+                "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE"
+            }
+        ],
+        "rtc.export_contract_price_proof_records": [
+            {
+                "contract": "LOCAL-PARTIAL-EXPORT-CONTRACT-PRICES-2026.10.19-110",
+                "kind": "CAPTURED_CONTRACT_PRICE_PAIR",
+                "evidence_id": "SYNTHETIC-PRICE112-CONTRACT-both-GROSS_BEFORE_ALL_DISCOUNTS",
+                "observed_at": "2026-10-19T19:00:00.123456+00:00",
+                "valid_from": "2026-01-01",
+                "valid_to": "2032-12-31",
+                "revoked_at": null,
+                "superseded_at": null,
+                "value": {
+                    "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+                    "transaction_evidence_id": "SYNTHETIC-TRANSACTION-BRL-96",
+                    "supplier_id": "11111111000191",
+                    "acquirer_id": "22222222000191",
+                    "supplier_municipality": "3550308",
+                    "dated_identity_binding_hash": "87c269909fa18ff3fb8b5b52d351a7a3e6bff8ed5b463fd9f698cf5af1752fba",
+                    "contract_price_currency": "BRL",
+                    "contract_service_price_total": "2000.00",
+                    "rtc_price_relationship": "SEPARATE_PRICE_BASIS_UNRECONCILED_WITH_RTC",
+                    "documents": [
+                        {
+                            "role": "RTC_FOREIGN",
+                            "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+                            "contract_reference": "SYNTHETIC-CONTRACT-105",
+                            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                            "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+                            "price_currency": "BRL",
+                            "service_price": "1000.00",
+                            "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+                            "iss_supply_on": "2026-09-25",
+                            "dps_id": "DPS355030821111111100019100001000000000000001",
+                            "identity_hash": "8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3",
+                            "dated_document_hash": "81a42f92d241949840079e25c6c1eaf9b9a98010fe9010f01ad22775bb4e6fc8"
+                        },
+                        {
+                            "role": "RTC_DOMESTIC",
+                            "document_reference": "dps-domestic-1",
+                            "contract_reference": "SYNTHETIC-CONTRACT-105",
+                            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                            "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+                            "price_currency": "BRL",
+                            "service_price": "1000.00",
+                            "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+                            "iss_supply_on": "2026-09-25",
+                            "dps_id": "DPS355030821111111100019100001000000000000002",
+                            "identity_hash": "a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53",
+                            "dated_document_hash": "5939e5839d3ae45b52ce302db5739475f2f1133980bcd626a06a67e81c0f5cd8"
+                        }
+                    ]
+                },
+                "origin": {
+                    "reference": "synthetic:\/\/price112\/contract\/both-GROSS_BEFORE_ALL_DISCOUNTS",
+                    "media_type": "application\/json",
+                    "content": "{\"contract\":\"LOCAL-PARTIAL-EXPORT-CONTRACT-PRICES-2026.10.19-110\",\"evidence_id\":\"SYNTHETIC-PRICE112-CONTRACT-both-GROSS_BEFORE_ALL_DISCOUNTS\",\"kind\":\"CAPTURED_CONTRACT_PRICE_PAIR\",\"observed_at\":\"2026-10-19T19:00:00.123456+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"acquirer_id\":\"22222222000191\",\"contract_price_currency\":\"BRL\",\"contract_service_price_total\":\"2000.00\",\"dated_identity_binding_hash\":\"87c269909fa18ff3fb8b5b52d351a7a3e6bff8ed5b463fd9f698cf5af1752fba\",\"documents\":[{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"dated_document_hash\":\"81a42f92d241949840079e25c6c1eaf9b9a98010fe9010f01ad22775bb4e6fc8\",\"document_reference\":\"SYNTHETIC-FOREIGN-BRL-96\",\"dps_id\":\"DPS355030821111111100019100001000000000000001\",\"identity_hash\":\"8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3\",\"iss_supply_on\":\"2026-09-25\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN\",\"price_currency\":\"BRL\",\"price_semantics\":\"CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE\",\"role\":\"RTC_FOREIGN\",\"service_price\":\"1000.00\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},{\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"dated_document_hash\":\"5939e5839d3ae45b52ce302db5739475f2f1133980bcd626a06a67e81c0f5cd8\",\"document_reference\":\"dps-domestic-1\",\"dps_id\":\"DPS355030821111111100019100001000000000000002\",\"identity_hash\":\"a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53\",\"iss_supply_on\":\"2026-09-25\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC\",\"price_currency\":\"BRL\",\"price_semantics\":\"CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE\",\"role\":\"RTC_DOMESTIC\",\"service_price\":\"1000.00\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"}],\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"rtc_price_relationship\":\"SEPARATE_PRICE_BASIS_UNRECONCILED_WITH_RTC\",\"supplier_id\":\"11111111000191\",\"supplier_municipality\":\"3550308\",\"transaction_evidence_id\":\"SYNTHETIC-TRANSACTION-BRL-96\"}}",
+                    "content_sha256": "629cd652214069c6454288a601b359846c9b734e1ee6a14ae8e299eae251e153"
+                },
+                "source_hash": "3dda7da5a9c5339268def6e5b04aa27c02b41b20793fdd276fad7df3586a97f1"
+            }
+        ],
+        "rtc.export_price_composition_records": [
+            {
+                "role": "RTC_FOREIGN",
+                "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+                "contract_reference": "SYNTHETIC-CONTRACT-105",
+                "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+                "currency": "BRL",
+                "principal": "1000.00",
+                "service_additions": [],
+                "unconditional_discounts": [
+                    {
+                        "reference": "RTC_FOREIGN-unconditional_discounts",
+                        "amount": "100.00",
+                        "terms_kind": "UNCONDITIONAL",
+                        "granted_on": "2026-01-01",
+                        "future_condition": null
+                    }
+                ],
+                "conditional_discounts": [
+                    {
+                        "reference": "RTC_FOREIGN-conditional_discounts",
+                        "amount": "50.00",
+                        "terms_kind": "CONDITIONAL",
+                        "granted_on": "2026-01-01",
+                        "future_condition": "PAYMENT_BY_CONTRACTUAL_DEADLINE"
+                    }
+                ],
+                "price110_amount_basis": "GROSS_BEFORE_ALL_DISCOUNTS",
+                "all_price_adjustments_enumerated": true
+            },
+            {
+                "role": "RTC_DOMESTIC",
+                "document_reference": "dps-domestic-1",
+                "contract_reference": "SYNTHETIC-CONTRACT-105",
+                "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+                "currency": "BRL",
+                "principal": "1000.00",
+                "service_additions": [],
+                "unconditional_discounts": [
+                    {
+                        "reference": "RTC_DOMESTIC-unconditional_discounts",
+                        "amount": "100.00",
+                        "terms_kind": "UNCONDITIONAL",
+                        "granted_on": "2026-01-01",
+                        "future_condition": null
+                    }
+                ],
+                "conditional_discounts": [
+                    {
+                        "reference": "RTC_DOMESTIC-conditional_discounts",
+                        "amount": "50.00",
+                        "terms_kind": "CONDITIONAL",
+                        "granted_on": "2026-01-01",
+                        "future_condition": "PAYMENT_BY_CONTRACTUAL_DEADLINE"
+                    }
+                ],
+                "price110_amount_basis": "GROSS_BEFORE_ALL_DISCOUNTS",
+                "all_price_adjustments_enumerated": true
+            }
+        ],
+        "rtc.export_price_composition_proof_records": [
+            {
+                "contract": "LOCAL-ISS-DOCUMENT-PRICE-COMPOSITION-2026.10.19-111",
+                "kind": "CAPTURED_DOCUMENT_PRICE_COMPOSITION_PAIR",
+                "evidence_id": "SYNTHETIC-PRICE112-COMPOSITION-both-GROSS_BEFORE_ALL_DISCOUNTS",
+                "observed_at": "2026-10-19T19:00:00.123456+00:00",
+                "valid_from": "2026-01-01",
+                "valid_to": "2032-12-31",
+                "revoked_at": null,
+                "superseded_at": null,
+                "value": {
+                    "price110_binding_hash": "412215df13c1aef30f87012e9c9d18127e17b27d7253052512434e70176e870e",
+                    "operation_reference": "SYNTHETIC-EXPORT-SP98-brl-control",
+                    "supplier_id": "11111111000191",
+                    "acquirer_id": "22222222000191",
+                    "supplier_municipality": "3550308",
+                    "documents": [
+                        {
+                            "role": "RTC_FOREIGN",
+                            "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+                            "contract_reference": "SYNTHETIC-CONTRACT-105",
+                            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                            "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+                            "price_currency": "BRL",
+                            "service_price": "1000.00",
+                            "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+                            "iss_supply_on": "2026-09-25",
+                            "dps_id": "DPS355030821111111100019100001000000000000001",
+                            "identity_hash": "8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3",
+                            "dated_document_hash": "81a42f92d241949840079e25c6c1eaf9b9a98010fe9010f01ad22775bb4e6fc8",
+                            "composition": {
+                                "role": "RTC_FOREIGN",
+                                "document_reference": "SYNTHETIC-FOREIGN-BRL-96",
+                                "contract_reference": "SYNTHETIC-CONTRACT-105",
+                                "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                                "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN",
+                                "currency": "BRL",
+                                "principal": "1000.00",
+                                "service_additions": [],
+                                "unconditional_discounts": [
+                                    {
+                                        "reference": "RTC_FOREIGN-unconditional_discounts",
+                                        "amount": "100.00",
+                                        "terms_kind": "UNCONDITIONAL",
+                                        "granted_on": "2026-01-01",
+                                        "future_condition": null
+                                    }
+                                ],
+                                "conditional_discounts": [
+                                    {
+                                        "reference": "RTC_FOREIGN-conditional_discounts",
+                                        "amount": "50.00",
+                                        "terms_kind": "CONDITIONAL",
+                                        "granted_on": "2026-01-01",
+                                        "future_condition": "PAYMENT_BY_CONTRACTUAL_DEADLINE"
+                                    }
+                                ],
+                                "price110_amount_basis": "GROSS_BEFORE_ALL_DISCOUNTS",
+                                "all_price_adjustments_enumerated": true
+                            },
+                            "gross_service_price": "1000.00",
+                            "unconditional_discount": "100.00",
+                            "conditional_discount": "50.00",
+                            "price_for_iss_evaluation_in_input_currency": "900.00",
+                            "payment_candidate_if_conditional_terms_satisfied": "850.00"
+                        },
+                        {
+                            "role": "RTC_DOMESTIC",
+                            "document_reference": "dps-domestic-1",
+                            "contract_reference": "SYNTHETIC-CONTRACT-105",
+                            "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                            "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+                            "price_currency": "BRL",
+                            "service_price": "1000.00",
+                            "price_semantics": "CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE",
+                            "iss_supply_on": "2026-09-25",
+                            "dps_id": "DPS355030821111111100019100001000000000000002",
+                            "identity_hash": "a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53",
+                            "dated_document_hash": "5939e5839d3ae45b52ce302db5739475f2f1133980bcd626a06a67e81c0f5cd8",
+                            "composition": {
+                                "role": "RTC_DOMESTIC",
+                                "document_reference": "dps-domestic-1",
+                                "contract_reference": "SYNTHETIC-CONTRACT-105",
+                                "unit_reference": "SYNTHETIC-SPLIT-UNIT-105",
+                                "line_reference": "SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC",
+                                "currency": "BRL",
+                                "principal": "1000.00",
+                                "service_additions": [],
+                                "unconditional_discounts": [
+                                    {
+                                        "reference": "RTC_DOMESTIC-unconditional_discounts",
+                                        "amount": "100.00",
+                                        "terms_kind": "UNCONDITIONAL",
+                                        "granted_on": "2026-01-01",
+                                        "future_condition": null
+                                    }
+                                ],
+                                "conditional_discounts": [
+                                    {
+                                        "reference": "RTC_DOMESTIC-conditional_discounts",
+                                        "amount": "50.00",
+                                        "terms_kind": "CONDITIONAL",
+                                        "granted_on": "2026-01-01",
+                                        "future_condition": "PAYMENT_BY_CONTRACTUAL_DEADLINE"
+                                    }
+                                ],
+                                "price110_amount_basis": "GROSS_BEFORE_ALL_DISCOUNTS",
+                                "all_price_adjustments_enumerated": true
+                            },
+                            "gross_service_price": "1000.00",
+                            "unconditional_discount": "100.00",
+                            "conditional_discount": "50.00",
+                            "price_for_iss_evaluation_in_input_currency": "900.00",
+                            "payment_candidate_if_conditional_terms_satisfied": "850.00"
+                        }
+                    ]
+                },
+                "origin": {
+                    "reference": "synthetic:\/\/price112\/composition\/both-GROSS_BEFORE_ALL_DISCOUNTS",
+                    "media_type": "application\/json",
+                    "content": "{\"contract\":\"LOCAL-ISS-DOCUMENT-PRICE-COMPOSITION-2026.10.19-111\",\"evidence_id\":\"SYNTHETIC-PRICE112-COMPOSITION-both-GROSS_BEFORE_ALL_DISCOUNTS\",\"kind\":\"CAPTURED_DOCUMENT_PRICE_COMPOSITION_PAIR\",\"observed_at\":\"2026-10-19T19:00:00.123456+00:00\",\"revoked_at\":null,\"superseded_at\":null,\"valid_from\":\"2026-01-01\",\"valid_to\":\"2032-12-31\",\"value\":{\"acquirer_id\":\"22222222000191\",\"documents\":[{\"composition\":{\"all_price_adjustments_enumerated\":true,\"conditional_discounts\":[{\"amount\":\"50.00\",\"future_condition\":\"PAYMENT_BY_CONTRACTUAL_DEADLINE\",\"granted_on\":\"2026-01-01\",\"reference\":\"RTC_FOREIGN-conditional_discounts\",\"terms_kind\":\"CONDITIONAL\"}],\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"currency\":\"BRL\",\"document_reference\":\"SYNTHETIC-FOREIGN-BRL-96\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN\",\"price110_amount_basis\":\"GROSS_BEFORE_ALL_DISCOUNTS\",\"principal\":\"1000.00\",\"role\":\"RTC_FOREIGN\",\"service_additions\":[],\"unconditional_discounts\":[{\"amount\":\"100.00\",\"future_condition\":null,\"granted_on\":\"2026-01-01\",\"reference\":\"RTC_FOREIGN-unconditional_discounts\",\"terms_kind\":\"UNCONDITIONAL\"}],\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},\"conditional_discount\":\"50.00\",\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"dated_document_hash\":\"81a42f92d241949840079e25c6c1eaf9b9a98010fe9010f01ad22775bb4e6fc8\",\"document_reference\":\"SYNTHETIC-FOREIGN-BRL-96\",\"dps_id\":\"DPS355030821111111100019100001000000000000001\",\"gross_service_price\":\"1000.00\",\"identity_hash\":\"8aa9f1b5bedd0972d591060196eae3233c58555e5b81fa99becddee4c85040e3\",\"iss_supply_on\":\"2026-09-25\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_FOREIGN\",\"payment_candidate_if_conditional_terms_satisfied\":\"850.00\",\"price_currency\":\"BRL\",\"price_for_iss_evaluation_in_input_currency\":\"900.00\",\"price_semantics\":\"CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE\",\"role\":\"RTC_FOREIGN\",\"service_price\":\"1000.00\",\"unconditional_discount\":\"100.00\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},{\"composition\":{\"all_price_adjustments_enumerated\":true,\"conditional_discounts\":[{\"amount\":\"50.00\",\"future_condition\":\"PAYMENT_BY_CONTRACTUAL_DEADLINE\",\"granted_on\":\"2026-01-01\",\"reference\":\"RTC_DOMESTIC-conditional_discounts\",\"terms_kind\":\"CONDITIONAL\"}],\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"currency\":\"BRL\",\"document_reference\":\"dps-domestic-1\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC\",\"price110_amount_basis\":\"GROSS_BEFORE_ALL_DISCOUNTS\",\"principal\":\"1000.00\",\"role\":\"RTC_DOMESTIC\",\"service_additions\":[],\"unconditional_discounts\":[{\"amount\":\"100.00\",\"future_condition\":null,\"granted_on\":\"2026-01-01\",\"reference\":\"RTC_DOMESTIC-unconditional_discounts\",\"terms_kind\":\"UNCONDITIONAL\"}],\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"},\"conditional_discount\":\"50.00\",\"contract_reference\":\"SYNTHETIC-CONTRACT-105\",\"dated_document_hash\":\"5939e5839d3ae45b52ce302db5739475f2f1133980bcd626a06a67e81c0f5cd8\",\"document_reference\":\"dps-domestic-1\",\"dps_id\":\"DPS355030821111111100019100001000000000000002\",\"gross_service_price\":\"1000.00\",\"identity_hash\":\"a39e93acd65adf2d1a342bbe04d6a27065bb7770d78ad09e0b19e5386db7ec53\",\"iss_supply_on\":\"2026-09-25\",\"line_reference\":\"SYNTHETIC-CONTRACT-LINE-RTC_DOMESTIC\",\"payment_candidate_if_conditional_terms_satisfied\":\"850.00\",\"price_currency\":\"BRL\",\"price_for_iss_evaluation_in_input_currency\":\"900.00\",\"price_semantics\":\"CONTRACTUAL_SERVICE_PRICE_NOT_TAX_BASE\",\"role\":\"RTC_DOMESTIC\",\"service_price\":\"1000.00\",\"unconditional_discount\":\"100.00\",\"unit_reference\":\"SYNTHETIC-SPLIT-UNIT-105\"}],\"operation_reference\":\"SYNTHETIC-EXPORT-SP98-brl-control\",\"price110_binding_hash\":\"412215df13c1aef30f87012e9c9d18127e17b27d7253052512434e70176e870e\",\"supplier_id\":\"11111111000191\",\"supplier_municipality\":\"3550308\"}}",
+                    "content_sha256": "8c853f9d3a2e06d60b8e2295fda47c17329c4c8f44118e8fa239c8ed9c1d8e9e"
+                },
+                "source_hash": "67571eb7ef8a5ead394c12900d3fb5aa5d5ea1e724a83c8e4f411cd24580a2df"
+            }
+        ]
+    }
+}

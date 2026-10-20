@@ -8,10 +8,11 @@
     "required": ["key", "type", "material"],
     "properties": {
       "key": {"type": "string", "pattern": "^[a-z][a-z0-9_.]+$"},
-      "type": {"enum": ["BOOLEAN", "STRING", "CODE", "INTEGER", "DECIMAL", "DATE", "ENUM"]},
+      "type": {"enum": ["BOOLEAN", "STRING", "CODE", "INTEGER", "DECIMAL", "DATE", "ENUM", "ARRAY"]},
       "material": {"type": "boolean"},
-      "allowed_values": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      "allowed_values": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+      "pattern": {"type": "string", "minLength": 1},
+      "min_length": {"type": "integer", "minimum": 0}
     }
   }
 }
-

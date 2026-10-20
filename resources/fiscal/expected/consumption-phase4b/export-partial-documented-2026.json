@@ -1,0 +1,10 @@
+{
+    "status":  "ACTION_REQUIRED",
+    "reason_codes":  [
+                         "RTC_PARTIAL_EXPORT_DOMESTIC_LEG_NOT_MATERIALIZED"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "82e25a73ff354cd39a9c7da22f428136b1a5600587d22077ddd8b812b5a1737c"
+}

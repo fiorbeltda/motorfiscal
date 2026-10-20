@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MEI_REGULAR_ELECTION_FORBIDDEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "614a6c45b0ea26c3d3b493d73ae9330c2c3c2c9380f0ebff03e4906f3ae49cba"
+}

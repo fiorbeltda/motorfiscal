@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SIMPLES_OPTION_OUTSIDE_STANDARD_WINDOW"
+  ],
+  "missing_facts": [],
+  "decision_hash": "5b78e2c6299ab0dbf78a20a70a400d14d9ade8d8c613a8c4aebef3fe8fc302c5"
+}

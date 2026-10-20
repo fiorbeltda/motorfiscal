@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:resources_applied_in_brazil"
+  ],
+  "missing_facts": [],
+  "decision_hash": "68e084d26d8c326e9d147950ba957352ffcc11678b1a2242193f09cd78dc0699"
+}

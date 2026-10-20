@@ -1,0 +1,379 @@
+{
+  "independent_oracle": {
+    "daily_memory": [
+      {
+        "date": "2026-09-01",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10000.00000000",
+        "daily_selic_interest": "5.16600000",
+        "accumulated_selic_interest": "5.16600000",
+        "remaining_benchmark_balance": "10005.16600000"
+      },
+      {
+        "date": "2026-09-02",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10005.16600000",
+        "daily_selic_interest": "5.16866876",
+        "accumulated_selic_interest": "10.33466876",
+        "remaining_benchmark_balance": "10010.33466876"
+      },
+      {
+        "date": "2026-09-03",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10010.33466876",
+        "daily_selic_interest": "5.17133889",
+        "accumulated_selic_interest": "15.50600765",
+        "remaining_benchmark_balance": "10015.50600765"
+      },
+      {
+        "date": "2026-09-04",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10015.50600765",
+        "daily_selic_interest": "5.17401040",
+        "accumulated_selic_interest": "20.68001805",
+        "remaining_benchmark_balance": "10020.68001805"
+      },
+      {
+        "date": "2026-09-05",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10020.68001805",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "20.68001805",
+        "remaining_benchmark_balance": "10020.68001805"
+      },
+      {
+        "date": "2026-09-06",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10020.68001805",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "20.68001805",
+        "remaining_benchmark_balance": "10020.68001805"
+      },
+      {
+        "date": "2026-09-07",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10020.68001805",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "20.68001805",
+        "remaining_benchmark_balance": "10020.68001805"
+      },
+      {
+        "date": "2026-09-08",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10020.68001805",
+        "daily_selic_interest": "5.17668330",
+        "accumulated_selic_interest": "25.85670135",
+        "remaining_benchmark_balance": "10025.85670135"
+      },
+      {
+        "date": "2026-09-09",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10150.00000000",
+        "selic_basis": "10025.85670135",
+        "daily_selic_interest": "5.17935757",
+        "accumulated_selic_interest": "31.03605892",
+        "remaining_benchmark_balance": "10031.03605892"
+      },
+      {
+        "date": "2026-09-10",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10200.00000000",
+        "selic_basis": "10031.03605892",
+        "daily_selic_interest": "5.18203323",
+        "accumulated_selic_interest": "36.21809215",
+        "remaining_benchmark_balance": "10036.21809215"
+      },
+      {
+        "date": "2026-09-11",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10200.00000000",
+        "selic_basis": "10036.21809215",
+        "daily_selic_interest": "5.18471027",
+        "accumulated_selic_interest": "41.40280242",
+        "remaining_benchmark_balance": "10041.40280242"
+      },
+      {
+        "date": "2026-09-12",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10200.00000000",
+        "selic_basis": "10041.40280242",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "41.40280242",
+        "remaining_benchmark_balance": "10041.40280242"
+      },
+      {
+        "date": "2026-09-13",
+        "quantity": "1000.00000000",
+        "acquisition_cost": "10000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "10200.00000000",
+        "selic_basis": "10041.40280242",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "41.40280242",
+        "remaining_benchmark_balance": "10041.40280242"
+      },
+      {
+        "date": "2026-09-14",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6024.84168145",
+        "daily_selic_interest": "3.11243321",
+        "accumulated_selic_interest": "44.51523563",
+        "remaining_benchmark_balance": "6027.95411466"
+      },
+      {
+        "date": "2026-09-15",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6027.95411466",
+        "daily_selic_interest": "3.11404110",
+        "accumulated_selic_interest": "47.62927673",
+        "remaining_benchmark_balance": "6031.06815576"
+      },
+      {
+        "date": "2026-09-16",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6031.06815576",
+        "daily_selic_interest": "3.11564981",
+        "accumulated_selic_interest": "50.74492654",
+        "remaining_benchmark_balance": "6034.18380557"
+      },
+      {
+        "date": "2026-09-17",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6034.18380557",
+        "daily_selic_interest": "3.06464127",
+        "accumulated_selic_interest": "53.80956781",
+        "remaining_benchmark_balance": "6037.24844684"
+      },
+      {
+        "date": "2026-09-18",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6037.24844684",
+        "daily_selic_interest": "3.06619774",
+        "accumulated_selic_interest": "56.87576555",
+        "remaining_benchmark_balance": "6040.31464458"
+      },
+      {
+        "date": "2026-09-19",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6040.31464458",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "56.87576555",
+        "remaining_benchmark_balance": "6040.31464458"
+      },
+      {
+        "date": "2026-09-20",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6040.31464458",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "56.87576555",
+        "remaining_benchmark_balance": "6040.31464458"
+      },
+      {
+        "date": "2026-09-21",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6040.31464458",
+        "daily_selic_interest": "3.06775500",
+        "accumulated_selic_interest": "59.94352055",
+        "remaining_benchmark_balance": "6043.38239958"
+      },
+      {
+        "date": "2026-09-22",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6043.38239958",
+        "daily_selic_interest": "3.06931305",
+        "accumulated_selic_interest": "63.01283360",
+        "remaining_benchmark_balance": "6046.45171263"
+      },
+      {
+        "date": "2026-09-23",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6046.45171263",
+        "daily_selic_interest": "3.07087190",
+        "accumulated_selic_interest": "66.08370550",
+        "remaining_benchmark_balance": "6049.52258453"
+      },
+      {
+        "date": "2026-09-24",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6049.52258453",
+        "daily_selic_interest": "3.07243153",
+        "accumulated_selic_interest": "69.15613703",
+        "remaining_benchmark_balance": "6052.59501606"
+      },
+      {
+        "date": "2026-09-25",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6052.59501606",
+        "daily_selic_interest": "3.07399196",
+        "accumulated_selic_interest": "72.23012899",
+        "remaining_benchmark_balance": "6055.66900802"
+      },
+      {
+        "date": "2026-09-26",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6055.66900802",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "72.23012899",
+        "remaining_benchmark_balance": "6055.66900802"
+      },
+      {
+        "date": "2026-09-27",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6055.66900802",
+        "daily_selic_interest": "0.00000000",
+        "accumulated_selic_interest": "72.23012899",
+        "remaining_benchmark_balance": "6055.66900802"
+      },
+      {
+        "date": "2026-09-28",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6055.66900802",
+        "daily_selic_interest": "3.07555318",
+        "accumulated_selic_interest": "75.30568217",
+        "remaining_benchmark_balance": "6058.74456120"
+      },
+      {
+        "date": "2026-09-29",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6058.74456120",
+        "daily_selic_interest": "3.07711519",
+        "accumulated_selic_interest": "78.38279736",
+        "remaining_benchmark_balance": "6061.82167639"
+      },
+      {
+        "date": "2026-09-30",
+        "quantity": "600.00000000",
+        "acquisition_cost": "6000.00000000",
+        "unit_cost": "10.00000000",
+        "book_balance": "6120.00000000",
+        "selic_basis": "6061.82167639",
+        "daily_selic_interest": "3.07867799",
+        "accumulated_selic_interest": "81.46147535",
+        "remaining_benchmark_balance": "6064.90035438"
+      }
+    ],
+    "closing_quantity": "600.00000000",
+    "closing_acquisition_cost": "6000.00000000",
+    "closing_unit_cost": "10.00000000",
+    "realized_sale_gain": "0.00",
+    "monthly": {
+      "vSaldoContIni": "10150.00",
+      "vEntradas": "0.00",
+      "vSaidas": "4080.00",
+      "vJurosRec": "0.00",
+      "vVarMensal": "50.00",
+      "vSaldoContFin": "6120.00",
+      "vSelic": "81.46",
+      "vPisCofins": "5.00",
+      "vApur": "45.00"
+    }
+  },
+  "prior_available": {
+    "assessed_produced_return": "99.31000000",
+    "excluded_art195_return": "40.69000000",
+    "removed_pis_cofins": "10.00000000",
+    "deferred_fair_value": "0.00000000"
+  },
+  "inventory": {
+    "opening": {
+      "prior_produced_return": "150",
+      "current_produced_return_already_in_curve": "0",
+      "deferred_fair_value_realized": "0",
+      "rounding_bridge": "0"
+    },
+    "closing": {
+      "prior_produced_return": "90.0",
+      "current_produced_return_already_in_curve": "30.0",
+      "deferred_fair_value_realized": "0",
+      "rounding_bridge": "0"
+    },
+    "other_releases": [],
+    "closing_fiscal_components": {
+      "assessed_produced_return": "59.58600000",
+      "excluded_art195_return": "24.41400000",
+      "removed_pis_cofins": "6.00000000"
+    }
+  },
+  "expected_base": "745.00",
+  "scope28_completed": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_THIRD_PARTY_REIMBURSEMENT_PROOF_MISSING"
+  ],
+  "missing_facts": [],
+  "decision_hash": "8942084a1a6cd5739b58fbdae2171672a04ebb52b316e0d41dd711ccf1efe0bf"
+}

@@ -1,0 +1,1 @@
+{"status":"VALID_WITH_WARNINGS","reason_codes":["ISS_DECISION_VALID","MUNICIPAL_PARAMETERS_ARE_FIXTURES"],"decision":{"iss":{"location":{"municipality_ibge":"3509502"},"calculation":{"taxable_base":"2500.00","tax_amount":"75.00"}}},"decision_hash":"6b95532fd1d29a229b73b4bc0721cec3c3a5a085acc58382eecb661ae4348afd"}

@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_DESTINATION_EVIDENCE_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "c026540d4ced98f9876ed574314da0747f88074b211b60a6a17ebebe4809fabc"
+}

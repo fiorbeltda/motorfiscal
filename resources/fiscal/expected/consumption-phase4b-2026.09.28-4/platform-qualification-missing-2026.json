@@ -1,0 +1,13 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PLATFORM_QUALIFICATION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.platform_remote_intermediation",
+    "rtc.platform_controlled_elements",
+    "rtc.platform_activity_exclusion",
+    "rtc.platform_qualification_evidence_id"
+  ],
+  "decision_hash": "890f2093799160aaccfb212d260ee2629661f6aefe5f40bd7f5a6ca680bb288a"
+}

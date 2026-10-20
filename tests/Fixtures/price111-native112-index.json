@@ -1,0 +1,540 @@
+{
+  "cases": [
+    {
+      "name": "no-adjustments-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/000-no-adjustments-gross-before-all-discounts.json",
+      "sha256": "c64843a8ddc255faca6cbb17a52625b858de3859e93a4c46343ea9d643f5fd60"
+    },
+    {
+      "name": "no-adjustments-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/001-no-adjustments-net-after-unconditional-only.json",
+      "sha256": "a8ac3ff99617332ad13a5462f3cc1523025f779fecaea961547565c70f7a2d6b"
+    },
+    {
+      "name": "no-adjustments-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/002-no-adjustments-net-after-all-discounts.json",
+      "sha256": "3bd875c3562885dc81d417843e892017404578c2a911d25daeb6abd0f4861a13"
+    },
+    {
+      "name": "unconditional-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/003-unconditional-gross-before-all-discounts.json",
+      "sha256": "d9d1e69410548964254ea704e6dd63dcf423fa186ad7c3398adba3d57ff5076c"
+    },
+    {
+      "name": "unconditional-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/004-unconditional-net-after-unconditional-only.json",
+      "sha256": "566af5ec0ce919de2a591767481ea56be33b88b61c69c1197bdd049633a614a9"
+    },
+    {
+      "name": "unconditional-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/005-unconditional-net-after-all-discounts.json",
+      "sha256": "aef3a437e2889159d8e3b0f3fd535393eb8f8f3da9db34837a18f56786205860"
+    },
+    {
+      "name": "conditional-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/006-conditional-gross-before-all-discounts.json",
+      "sha256": "21e46083f79fb84a5ccc12f90521a6fad12b8afcf0fd3f36e4d1a124e5d9ecee"
+    },
+    {
+      "name": "conditional-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/007-conditional-net-after-unconditional-only.json",
+      "sha256": "a53d6510785bea8c26f66619fd8e6419fb3c985620f0ff215a2955dddba89bcd"
+    },
+    {
+      "name": "conditional-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/008-conditional-net-after-all-discounts.json",
+      "sha256": "19fef6e6977e1d03e4e21d0d9ac3bd76daf89e33abffbaeb3ccad346df373a3f"
+    },
+    {
+      "name": "both-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/009-both-gross-before-all-discounts.json",
+      "sha256": "c56c65c0f798c434edc3dddd04dc631549a74269589aaee6a8a4f1091ad3aa19"
+    },
+    {
+      "name": "both-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/010-both-net-after-unconditional-only.json",
+      "sha256": "404dc1c2fc5141d903897036478df355d527f3f2e609ecc6a175cc1ca506fffc"
+    },
+    {
+      "name": "both-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/011-both-net-after-all-discounts.json",
+      "sha256": "e9e046656afb3ce0b7e01f2a8529abff493b0e22312a4c6adbc7fbcd6d70c71c"
+    },
+    {
+      "name": "service-addition-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/012-service-addition-gross-before-all-discounts.json",
+      "sha256": "cb281e39d0e0c9034b2e60ea9830dfae18e7d8b9196484d44b99eb79b88f50cb"
+    },
+    {
+      "name": "service-addition-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/013-service-addition-net-after-unconditional-only.json",
+      "sha256": "0d7c3ebe7cb801980b53d5691a1f92a1eeb13e96986b5969921ba91199e36bbc"
+    },
+    {
+      "name": "service-addition-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/014-service-addition-net-after-all-discounts.json",
+      "sha256": "298c29c127bda4e485c34d3b0dc57209b703a984f13b33099eb2ce9b2233ce99"
+    },
+    {
+      "name": "above-float-safe-integer-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/015-above-float-safe-integer-gross-before-all-discounts.json",
+      "sha256": "926cdd635d4c0ad9c04d970f8484906ea6517a5160b72de25bce4f99232a777a"
+    },
+    {
+      "name": "above-float-safe-integer-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/016-above-float-safe-integer-net-after-unconditional-only.json",
+      "sha256": "c3a61c3c543c083fda4af6b8c7781eef0bbad01c8036be9d2ee11ad5ff69472c"
+    },
+    {
+      "name": "above-float-safe-integer-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/017-above-float-safe-integer-net-after-all-discounts.json",
+      "sha256": "971f1561e524c7dd8bc9067f497d3692451e0e9117ad61ca91ddc289f2f69a87"
+    },
+    {
+      "name": "smallest-unit-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/018-smallest-unit-gross-before-all-discounts.json",
+      "sha256": "5de5e3996ebe828297945242e400e4581e8a56c9b9be1048381141aa8cb14158"
+    },
+    {
+      "name": "smallest-unit-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/019-smallest-unit-net-after-unconditional-only.json",
+      "sha256": "2734d23954f43facf71cd0bf8d9d881c90b5f32b0272beaf4f8b60f798a22f27"
+    },
+    {
+      "name": "smallest-unit-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/020-smallest-unit-net-after-all-discounts.json",
+      "sha256": "639477ec893262930b6da8951d7d62416829ad3d982789a37149e6927ddfe13d"
+    },
+    {
+      "name": "zero-iss-price-GROSS_BEFORE_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/021-zero-iss-price-gross-before-all-discounts.json",
+      "sha256": "6840fa7f4ccb567b38878fdec79ad84875aa75a9f120c2ae569e4e6167f4c098"
+    },
+    {
+      "name": "zero-iss-price-NET_AFTER_UNCONDITIONAL_ONLY",
+      "path": "tests/Fixtures/price111-native112/022-zero-iss-price-net-after-unconditional-only.json",
+      "sha256": "bdb01dca7b6b3bf62b94b4d5484a26d45dc75c7101f6d8fe8bb9d364496e5102"
+    },
+    {
+      "name": "zero-iss-price-NET_AFTER_ALL_DISCOUNTS",
+      "path": "tests/Fixtures/price111-native112/023-zero-iss-price-net-after-all-discounts.json",
+      "sha256": "e16b05a0cb671e7a681fc3b92a29cfcca400f0e0aa7b473060a327035b923b4c"
+    },
+    {
+      "name": "dated-variation-0",
+      "path": "tests/Fixtures/price111-native112/024-dated-variation-0.json",
+      "sha256": "8d8580d09c065c9cdf049794451c7eabc6d90a5ec3cba090d43b3b9f5e221c21"
+    },
+    {
+      "name": "dated-variation-1",
+      "path": "tests/Fixtures/price111-native112/025-dated-variation-1.json",
+      "sha256": "20a9463a3336d2e4231cf7c3a124d07df44e97007aab5331f9481293de239ee8"
+    },
+    {
+      "name": "dated-variation-2",
+      "path": "tests/Fixtures/price111-native112/026-dated-variation-2.json",
+      "sha256": "8b32941c5d496f2a63e0959f8d3506dfc5508ee8b30f9be804b2dd8b6ae6830b"
+    },
+    {
+      "name": "dated-variation-3",
+      "path": "tests/Fixtures/price111-native112/027-dated-variation-3.json",
+      "sha256": "cc1aeb0fd1f701845744e53c1cbdf87d15d7ca4b05e1d9e004cb14b287dd8184"
+    },
+    {
+      "name": "dated-variation-4",
+      "path": "tests/Fixtures/price111-native112/028-dated-variation-4.json",
+      "sha256": "46eb40dad7904f509ab0d6b5ffbf32ac35272d066d3637eba0619e73d7ae29c6"
+    },
+    {
+      "name": "dated-variation-5",
+      "path": "tests/Fixtures/price111-native112/029-dated-variation-5.json",
+      "sha256": "238f7907aa17cd7ec87aefa4c7160d91a0b68059073ea23bcf65a9783f8ffa86"
+    },
+    {
+      "name": "dated-variation-6",
+      "path": "tests/Fixtures/price111-native112/030-dated-variation-6.json",
+      "sha256": "ace5740a500ceec422d9be35e442b163deac9f1e7d220f2f0bd0e401ce4fbb7c"
+    },
+    {
+      "name": "dated-variation-7",
+      "path": "tests/Fixtures/price111-native112/031-dated-variation-7.json",
+      "sha256": "f14898d8439cd112142aafa8e948d496c1109c240a07e745027b984c03f44427"
+    },
+    {
+      "name": "dated-variation-8",
+      "path": "tests/Fixtures/price111-native112/032-dated-variation-8.json",
+      "sha256": "c606695d21bc3d5c31f1b94d4fc1a398ad72e96bfd98ba1c6a61a4e195b6f379"
+    },
+    {
+      "name": "dated-variation-9",
+      "path": "tests/Fixtures/price111-native112/033-dated-variation-9.json",
+      "sha256": "502d1b68272527d470df59fa1c5e750d9369f6a34cacdbbf2526678323ab637e"
+    },
+    {
+      "name": "dated-variation-10",
+      "path": "tests/Fixtures/price111-native112/034-dated-variation-10.json",
+      "sha256": "b6971cba2460b052edd85a0a90e42ee4ab3916f576bc4766c595f793848d8505"
+    },
+    {
+      "name": "dated-variation-11",
+      "path": "tests/Fixtures/price111-native112/035-dated-variation-11.json",
+      "sha256": "440b111a2f3948d1ad9f94e73ac691bc6043250db1b708340e879a64a03d1075"
+    },
+    {
+      "name": "dated-variation-12",
+      "path": "tests/Fixtures/price111-native112/036-dated-variation-12.json",
+      "sha256": "f7c08d4fdf5d402b0fe5ad6e158222a27508acb9d41377bd2db42beda229d829"
+    },
+    {
+      "name": "dated-variation-13",
+      "path": "tests/Fixtures/price111-native112/037-dated-variation-13.json",
+      "sha256": "5d926f4e5de132cb9a8e6a1668ec2f265637bd0547abd30dba5c925d9c00d0ff"
+    },
+    {
+      "name": "dated-variation-14",
+      "path": "tests/Fixtures/price111-native112/038-dated-variation-14.json",
+      "sha256": "4a1f00bf85be38f3a435f60962b01e11f1ab43265f366aa7fda4cdd265261627"
+    },
+    {
+      "name": "dated-variation-15",
+      "path": "tests/Fixtures/price111-native112/039-dated-variation-15.json",
+      "sha256": "85c8602a2c688fe08228c4e7bae446f5da1333688b18202e699214a3f5bffdac"
+    },
+    {
+      "name": "dated-variation-16",
+      "path": "tests/Fixtures/price111-native112/040-dated-variation-16.json",
+      "sha256": "3ee86ef34b03f4831191e81a1bd90da330f90e2fbde9c1cfb3b556ff5ddc3aaf"
+    },
+    {
+      "name": "dated-variation-17",
+      "path": "tests/Fixtures/price111-native112/041-dated-variation-17.json",
+      "sha256": "085b2c2cfd591c798d2608d131f01d06570ae2ead31185e20d201828334c152a"
+    },
+    {
+      "name": "dated-variation-18",
+      "path": "tests/Fixtures/price111-native112/042-dated-variation-18.json",
+      "sha256": "711ba2a1228ca54ecf069b9e8276f7572bdca3c71e0066661e6a14be39724a2e"
+    },
+    {
+      "name": "dated-variation-19",
+      "path": "tests/Fixtures/price111-native112/043-dated-variation-19.json",
+      "sha256": "5f9b6b251fdf4f202c0648c79e89b14d8f365c01494687e3495fac9e84290537"
+    },
+    {
+      "name": "dated-variation-20",
+      "path": "tests/Fixtures/price111-native112/044-dated-variation-20.json",
+      "sha256": "e37e81ed11fdd96daeecd6be7cab0aaaa1ba753d3a8a19d54d38ceb5e327a232"
+    },
+    {
+      "name": "dated-variation-21",
+      "path": "tests/Fixtures/price111-native112/045-dated-variation-21.json",
+      "sha256": "e7bef16b94485c51257892421f2def9180513256ebb93f00d938c5f281425549"
+    },
+    {
+      "name": "dated-variation-22",
+      "path": "tests/Fixtures/price111-native112/046-dated-variation-22.json",
+      "sha256": "fdcf8fd060d5ed8d788793f927a1277aa17eb8ec734060a04d05df6a054397dd"
+    },
+    {
+      "name": "unknown-policy",
+      "path": "tests/Fixtures/price111-native112/047-unknown-policy.json",
+      "sha256": "8e0c93a41b52ada2f2cce1348e8577c37d8c982127ba28603c7eea1d16342735"
+    },
+    {
+      "name": "pre-availability",
+      "path": "tests/Fixtures/price111-native112/048-pre-availability.json",
+      "sha256": "052ae8a05ffb4adf99f1ae59794d1c522bb546facbf01bf5e59250d0ff16852c"
+    },
+    {
+      "name": "bad-knowledge",
+      "path": "tests/Fixtures/price111-native112/049-bad-knowledge.json",
+      "sha256": "f9c93fa9e3a639b32448f98f257ebdc17e599930cf1d2b07fa434b13fc3fff92"
+    },
+    {
+      "name": "invalid-offset",
+      "path": "tests/Fixtures/price111-native112/050-invalid-offset.json",
+      "sha256": "0f59c91fa30b3eca41011e80a06eba4cc9ac3996da880e0c5f670f1a0b56bcc4"
+    },
+    {
+      "name": "incomplete-enumeration",
+      "path": "tests/Fixtures/price111-native112/051-incomplete-enumeration.json",
+      "sha256": "fe6ac7bfa7cc6d4067559cae27abbcb3a562eb5b0ad7c21f5086c6c11f079e45"
+    },
+    {
+      "name": "unknown-enumeration",
+      "path": "tests/Fixtures/price111-native112/052-unknown-enumeration.json",
+      "sha256": "f755fa85de943e81f1934cdc360519c0f7eb1ebdc0f7af5c40fa3bd92cd1e0f1"
+    },
+    {
+      "name": "duplicate-role",
+      "path": "tests/Fixtures/price111-native112/053-duplicate-role.json",
+      "sha256": "1d216ecf39b87afabe02fd0be048a7494db6746c9f5a8a2500cc5191cbb9110f"
+    },
+    {
+      "name": "missing-document",
+      "path": "tests/Fixtures/price111-native112/054-missing-document.json",
+      "sha256": "618020d42e94fefedd6e4efeaf918c5c7aab99597adb1ce7f4b6a1bd817b8bf8"
+    },
+    {
+      "name": "wrong-document_reference",
+      "path": "tests/Fixtures/price111-native112/055-wrong-document-reference.json",
+      "sha256": "607d7706258fe019556e49a1a09af3fac148f84b8149e332f12db8b0e89fd18f"
+    },
+    {
+      "name": "wrong-contract_reference",
+      "path": "tests/Fixtures/price111-native112/056-wrong-contract-reference.json",
+      "sha256": "e5c89bd7a5cb5421de4f238b5764459b0cd7f17596856c32999681d130b5f7fa"
+    },
+    {
+      "name": "wrong-unit_reference",
+      "path": "tests/Fixtures/price111-native112/057-wrong-unit-reference.json",
+      "sha256": "5ca92ba6215516aa42d8fa745271c3476c2982aebf16bff608934209d0f2536a"
+    },
+    {
+      "name": "wrong-line_reference",
+      "path": "tests/Fixtures/price111-native112/058-wrong-line-reference.json",
+      "sha256": "e702260b3e37d66377cf77e257731855a384e66e7b27367880e2e3031e244f0e"
+    },
+    {
+      "name": "mixed-currency",
+      "path": "tests/Fixtures/price111-native112/059-mixed-currency.json",
+      "sha256": "6506b585b3146f84eac82abc3be0f69fc9dd80023b97d83a6a791575ce81e714"
+    },
+    {
+      "name": "unknown-basis",
+      "path": "tests/Fixtures/price111-native112/060-unknown-basis.json",
+      "sha256": "84d9f0dd0dadd39b7acafb62c2e26602e0c3e4ff39f8046da610ca09f0882831"
+    },
+    {
+      "name": "unreconciled-gross",
+      "path": "tests/Fixtures/price111-native112/061-unreconciled-gross.json",
+      "sha256": "8454055187cbc572fb3057cbcb3cb56cec016730e2d943ab580b73268b27a214"
+    },
+    {
+      "name": "noncanonical-principal-0",
+      "path": "tests/Fixtures/price111-native112/062-noncanonical-principal-0.json",
+      "sha256": "5e1d292fb7481f3b628c18de58bd61c1069a9c15b55cf9860576fc9b54ed0927"
+    },
+    {
+      "name": "noncanonical-principal-1",
+      "path": "tests/Fixtures/price111-native112/063-noncanonical-principal-1.json",
+      "sha256": "997971af47302380c0fb76c50f19083cc4ac5bdd31d5781afc0cc7646dda72d6"
+    },
+    {
+      "name": "noncanonical-principal-2",
+      "path": "tests/Fixtures/price111-native112/064-noncanonical-principal-2.json",
+      "sha256": "42414739cf7e21a2b9f8f83ea5634c18d990ed14c0527cf0aaf4d993eb1c4665"
+    },
+    {
+      "name": "noncanonical-principal-3",
+      "path": "tests/Fixtures/price111-native112/065-noncanonical-principal-3.json",
+      "sha256": "68e4a320f8b4c6b0f3ffd3c032e5d549f406d7e8d63e951d3a357128fedf9c64"
+    },
+    {
+      "name": "noncanonical-principal-4",
+      "path": "tests/Fixtures/price111-native112/066-noncanonical-principal-4.json",
+      "sha256": "f703ef45e430e59fc781bdfd42ac57f06a43a33ab67273a50140dbafb54436b6"
+    },
+    {
+      "name": "noncanonical-principal-5",
+      "path": "tests/Fixtures/price111-native112/067-noncanonical-principal-5.json",
+      "sha256": "284acc018b5eddfc806eb10fb6a9bae7488f655f63bab4f84b84c514bb7e2861"
+    },
+    {
+      "name": "noncanonical-principal-6",
+      "path": "tests/Fixtures/price111-native112/068-noncanonical-principal-6.json",
+      "sha256": "355df7c6c23ff10fb622d713aa7e9fbeb1102f3fd37cdb1dd10264459d6cc75b"
+    },
+    {
+      "name": "discount-exceeds-price",
+      "path": "tests/Fixtures/price111-native112/069-discount-exceeds-price.json",
+      "sha256": "3185f23d333a945872cebb96d91d8038972b5d9aa282bf00180e7176da79f8b4"
+    },
+    {
+      "name": "duplicate-adjustment",
+      "path": "tests/Fixtures/price111-native112/070-duplicate-adjustment.json",
+      "sha256": "21a3cbdb215602ad318f8591600ebc35e557c0f646dc6be8f6c75e3e2b956a22"
+    },
+    {
+      "name": "unconditional-has-condition",
+      "path": "tests/Fixtures/price111-native112/071-unconditional-has-condition.json",
+      "sha256": "8496bd9746344a24f79226f76a3929758d6f5559ccf7b230ce2883f9ee9ab302"
+    },
+    {
+      "name": "conditional-no-condition",
+      "path": "tests/Fixtures/price111-native112/072-conditional-no-condition.json",
+      "sha256": "0bd524e3fa5ab46fba18aaacef366cc548ed1449f89a8f20dc8a9ef895225642"
+    },
+    {
+      "name": "future-grant",
+      "path": "tests/Fixtures/price111-native112/073-future-grant.json",
+      "sha256": "e1e4a1b4d8f2f9bce58f180f0b922707472cce6b0180d76f0d1dbd064e1b4da6"
+    },
+    {
+      "name": "forged-condition-kind",
+      "path": "tests/Fixtures/price111-native112/074-forged-condition-kind.json",
+      "sha256": "21ac964cfb492af8c3a6c2c05e0336311a33c9dc109b9b48ac5962a48752bcb2"
+    },
+    {
+      "name": "unknown-record-field",
+      "path": "tests/Fixtures/price111-native112/075-unknown-record-field.json",
+      "sha256": "152dcae538d545a79bd8e4444ddaf970641e87bce9544e1b783c129426d9fa8d"
+    },
+    {
+      "name": "missing-proof",
+      "path": "tests/Fixtures/price111-native112/076-missing-proof.json",
+      "sha256": "2a59d446c090594f188e35d447ff1fc7dea044ad4e6ca4c9eca434d8924294d2"
+    },
+    {
+      "name": "future-observation",
+      "path": "tests/Fixtures/price111-native112/077-future-observation.json",
+      "sha256": "538bee1afd485f85fa65dc27340d7f973f4d800b982b5c8e9015356596bb0bbe"
+    },
+    {
+      "name": "early-observation",
+      "path": "tests/Fixtures/price111-native112/078-early-observation.json",
+      "sha256": "f0a812108763dd895052b5ae8c324d91285e896e1286677d28a4b6eb59c053cf"
+    },
+    {
+      "name": "reuse-price-proof",
+      "path": "tests/Fixtures/price111-native112/079-reuse-price-proof.json",
+      "sha256": "ef6d3d978b393721edc8952c724f3d212336a0ecb61495a436e0af47ce507a30"
+    },
+    {
+      "name": "reuse-regime-proof",
+      "path": "tests/Fixtures/price111-native112/080-reuse-regime-proof.json",
+      "sha256": "f5cf5ee47d078698df9a0ab692566c971634414ea76a5d4d637562853950c3e9"
+    },
+    {
+      "name": "reuse-material-proof",
+      "path": "tests/Fixtures/price111-native112/081-reuse-material-proof.json",
+      "sha256": "5a6d6cca10d6579332ca204a0eb6d5761af1b26c24dc63a0099d27bca2d8219e"
+    },
+    {
+      "name": "coverage-does-not-cover",
+      "path": "tests/Fixtures/price111-native112/082-coverage-does-not-cover.json",
+      "sha256": "570c3e4598465d8ef756a992e27e9d5dd0a36da4e5cc25c6b153dc61aac0dbe2"
+    },
+    {
+      "name": "bad-coverage",
+      "path": "tests/Fixtures/price111-native112/083-bad-coverage.json",
+      "sha256": "8b8f23bd157f03863e605b20dabb37a680c9859e8fadbfecfc1b51841b8d9507"
+    },
+    {
+      "name": "revoked",
+      "path": "tests/Fixtures/price111-native112/084-revoked.json",
+      "sha256": "43ae707ae2a248c850d6fb2288e9a314e7891604e5c9ab94b90c2ebe1475116f"
+    },
+    {
+      "name": "superseded",
+      "path": "tests/Fixtures/price111-native112/085-superseded.json",
+      "sha256": "23948bb0c31da8c704bc4b7dc0caa811e268f21dfae2eed28d3a4ae6b5b3ed8d"
+    },
+    {
+      "name": "bad-lifecycle",
+      "path": "tests/Fixtures/price111-native112/086-bad-lifecycle.json",
+      "sha256": "f561325eb1cef883360836ea624e0acdeeb9e54e2fce031a1b7c6248fae30c10"
+    },
+    {
+      "name": "stale-price-binding",
+      "path": "tests/Fixtures/price111-native112/087-stale-price-binding.json",
+      "sha256": "bcc11ad0a7df452686f8d8d755aa7f3e3a0bd54bc8ab1b3b392fd1b527616906"
+    },
+    {
+      "name": "forged-result-price",
+      "path": "tests/Fixtures/price111-native112/088-forged-result-price.json",
+      "sha256": "89cbca53548e9219f2f88341340b9af218650ae4b8e48aa14690f86ffeae2263"
+    },
+    {
+      "name": "tampered-content",
+      "path": "tests/Fixtures/price111-native112/089-tampered-content.json",
+      "sha256": "45b60b31408720a7434d4c0865fbaa17a79a53a89ce1e21225fface7d2cb9c39"
+    },
+    {
+      "name": "tampered-envelope",
+      "path": "tests/Fixtures/price111-native112/090-tampered-envelope.json",
+      "sha256": "79737aa469bb34818bcf1154cb9553f8abd5ac07d5315fd9169d637484ddbd25"
+    },
+    {
+      "name": "tampered-upstream",
+      "path": "tests/Fixtures/price111-native112/091-tampered-upstream.json",
+      "sha256": "51daa8e574a944eee3a426ef1f849104c6ffb25f1794a971251f35944132cede"
+    },
+    {
+      "name": "reuse-result-proof",
+      "path": "tests/Fixtures/price111-native112/092-reuse-result-proof.json",
+      "sha256": "8234f620815a3bca2cdf37c9889aff167259509e7ed194c9c8aa60852b10b12a"
+    },
+    {
+      "name": "reuse-municipal-proof",
+      "path": "tests/Fixtures/price111-native112/093-reuse-municipal-proof.json",
+      "sha256": "636289a098d453a3bc3ec292c7bcf469b9b6e510cc20b76522baa01b802426b3"
+    },
+    {
+      "name": "reuse-event-proof",
+      "path": "tests/Fixtures/price111-native112/094-reuse-event-proof.json",
+      "sha256": "654c15c3e451485dad04229b8f192f28fb75120d23beab15af8c4bee5044a8c0"
+    },
+    {
+      "name": "reuse-identity-proof",
+      "path": "tests/Fixtures/price111-native112/095-reuse-identity-proof.json",
+      "sha256": "7131c63224f8171030f5cf7952f52328b52d735962474718cfeee44c55e4bb51"
+    },
+    {
+      "name": "unknown-adjustment-field",
+      "path": "tests/Fixtures/price111-native112/096-unknown-adjustment-field.json",
+      "sha256": "e3db877492fec58a178dec01d5d118fab420c3a99771a514e7a64016eaf4c503"
+    },
+    {
+      "name": "unconditional-zero-claim",
+      "path": "tests/Fixtures/price111-native112/097-unconditional-zero-claim.json",
+      "sha256": "f625e130bc7084320e195030113f85a06c38f8c044185ef051ca7040da1fbac8"
+    },
+    {
+      "name": "conditional-exceeds-remainder",
+      "path": "tests/Fixtures/price111-native112/098-conditional-exceeds-remainder.json",
+      "sha256": "c040003d421c76aa770686a3b1e83da9eb4ea0329074b796d9ca7a9e27252182"
+    },
+    {
+      "name": "unsupported-cost-deduction",
+      "path": "tests/Fixtures/price111-native112/099-unsupported-cost-deduction.json",
+      "sha256": "d76bcafbfe6a73ef2eec48f26d762185b7d32a1acc5ea8b4a1f636658b0a13c4"
+    },
+    {
+      "name": "deduct-iss-from-itself",
+      "path": "tests/Fixtures/price111-native112/100-deduct-iss-from-itself.json",
+      "sha256": "50feadd8782dc649d7c18962a925463c9ce20d7ea76a0bb55cd756f2ba3b78b5"
+    },
+    {
+      "name": "future-revoked_at",
+      "path": "tests/Fixtures/price111-native112/101-future-revoked-at.json",
+      "sha256": "c366e07dff7bc042c4c4e4a559561896aac361ffbd357d018944303809c8911e"
+    },
+    {
+      "name": "future-superseded_at",
+      "path": "tests/Fixtures/price111-native112/102-future-superseded-at.json",
+      "sha256": "3b7c9e1c09519a1f5918d840358bfad8045a65025d42fb0bfdcb05ce173f7f1b"
+    },
+    {
+      "name": "record-order-not-business-data",
+      "path": "tests/Fixtures/price111-native112/103-record-order-not-business-data.json",
+      "sha256": "076f10f91e8045b89d031915d8f093eaf208d268ec8063b23332cdd132197986"
+    },
+    {
+      "name": "different-adjustments-per-role-0",
+      "path": "tests/Fixtures/price111-native112/104-different-adjustments-per-role-0.json",
+      "sha256": "3b67a3cb25240a14d2cb9fb8794df813f8205e69f935c0113383a4af109cea54"
+    },
+    {
+      "name": "different-adjustments-per-role-1",
+      "path": "tests/Fixtures/price111-native112/105-different-adjustments-per-role-1.json",
+      "sha256": "59d3134115ee1f06d7f7bccd58cce5678545ab7f9b1e9aedf11d542d0e14a0af"
+    },
+    {
+      "name": "different-adjustments-per-role-2",
+      "path": "tests/Fixtures/price111-native112/106-different-adjustments-per-role-2.json",
+      "sha256": "65231e14e630345df8095ef96fdeaf8bea7ad5d28fbf6dfe0c132af20f2f9330"
+    }
+  ],
+  "source_is_synthetic": true
+}

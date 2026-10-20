@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_LEGACY_EVENT_TIMING_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.legacy_event_spans_transition"
+  ],
+  "decision_hash": "681d664be70d6c41611f58fe7320b7d12fc04e82f7f5128535816409561c0dce"
+}

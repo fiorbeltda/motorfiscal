@@ -7,21 +7,24 @@ RUN apt-get update \
         libpq-dev \
         libzip-dev \
         unzip \
-    && docker-php-ext-install -j$(nproc) bcmath intl opcache pdo_pgsql zip \
+    && docker-php-ext-install -j$(nproc) bcmath intl pdo_pgsql zip \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer:2.9 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
-COPY composer.json composer.lock ./
-RUN composer install --no-interaction --no-scripts --prefer-dist
+RUN git config --system --add safe.directory /var/www/html \
+    && mkdir -p /var/www/.composer \
+    && chown www-data:www-data /var/www/.composer /var/www/html
 
-COPY . .
-RUN composer dump-autoload --optimize \
-    && chown -R www-data:www-data storage bootstrap/cache
+COPY --chown=www-data:www-data composer.json composer.lock ./
 
 USER www-data
 
-CMD ["php-fpm"]
+RUN composer install --no-interaction --no-scripts --prefer-dist
 
+COPY --chown=www-data:www-data . .
+RUN composer dump-autoload --optimize
+
+CMD ["php-fpm"]

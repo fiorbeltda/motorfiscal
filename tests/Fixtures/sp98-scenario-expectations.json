@@ -1,0 +1,554 @@
+{
+  "created_at": "2026-10-16T16:40:11.110937+00:00",
+  "bundle": "bundles/consumption-phase4b-2026.10.16-98-draft1.json",
+  "cases": [
+    {
+      "name": "usd-direct",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-direct.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "usd-weekend",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-weekend.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5199.10",
+        "foreign_immune_gross_brl": "2079.64",
+        "domestic_taxable_base_brl": "3119.46",
+        "ibs_state_nominal_brl": "3.12",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "28.08"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "usd-quarter",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-quarter.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "1294.88",
+        "domestic_taxable_base_brl": "3884.62",
+        "ibs_state_nominal_brl": "3.88",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "34.96"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "usd-mostly-foreign",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-mostly-foreign.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "5127.71",
+        "domestic_taxable_base_brl": "51.79",
+        "ibs_state_nominal_brl": "0.05",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "0.47"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "usd-mostly-domestic",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/usd-mostly-domestic.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "51.80",
+        "domestic_taxable_base_brl": "5127.70",
+        "ibs_state_nominal_brl": "5.13",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "46.15"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "brl-control",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/brl-control.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "1000.00",
+        "foreign_immune_gross_brl": "400.00",
+        "domestic_taxable_base_brl": "600.00",
+        "ibs_state_nominal_brl": "0.60",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "5.40"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "foreign-subject-software-br-linked",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-subject-software-br-linked.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "HAS_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "foreign-rtc-result-br",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-rtc-result-br.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [
+        "BR",
+        "BR"
+      ],
+      "expected_br_links": [
+        "HAS_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "domestic-rtc-result-abroad",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-rtc-result-abroad.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "ABROAD"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "NO_BR_LINK"
+      ]
+    },
+    {
+      "name": "continuing-monthly-stages",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/continuing-monthly-stages.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [
+        "ABROAD",
+        "BR"
+      ],
+      "expected_br_links": [
+        "NO_BR_LINK",
+        "HAS_BR_LINK"
+      ]
+    },
+    {
+      "name": "proof-order-reversed",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/proof-order-reversed.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": true,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [
+        "BR",
+        "ABROAD"
+      ],
+      "expected_br_links": [
+        "HAS_BR_LINK",
+        "NO_BR_LINK"
+      ]
+    },
+    {
+      "name": "foreign-link-unproven",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-link-unproven.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "foreign-mixed-result",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-mixed-result.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "foreign-wrong-municipality",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-wrong-municipality.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "foreign-wrong-national-proof",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/foreign-wrong-national-proof.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "domestic-link-unproven",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-link-unproven.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "domestic-mixed-result",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-mixed-result.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "domestic-wrong-municipality",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-wrong-municipality.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "domestic-wrong-national-proof",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/domestic-wrong-national-proof.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "missing-proofs",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/missing-proofs.json",
+      "reason": "RTC_EXPORT_SP98_TWO_MUNICIPAL_PROOFS_REQUIRED",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "duplicate-role",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/duplicate-role.json",
+      "reason": "RTC_EXPORT_SP98_DUPLICATE_MUNICIPAL_ROLE",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "swapped-sibling-proof",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/swapped-sibling-proof.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "proof-tampered",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/proof-tampered.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "payment-not-municipal-result",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/payment-not-municipal-result.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "unfinished-monthly-stage",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/unfinished-monthly-stage.json",
+      "reason": "RTC_EXPORT_SP98_MUNICIPAL_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "national-assessment-disabled",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/national-assessment-disabled.json",
+      "reason": "RTC_EXPORT_SP98_NATIONAL_RESULT_ASSESSMENT_REQUIRED",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "disabled-malformed-proofs",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/disabled-malformed-proofs.json",
+      "reason": "RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "national-proof-fails-first",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/national-proof-fails-first.json",
+      "reason": "RTC_EXPORT_ISS96_INDEPENDENT_ISS_RESULT_NOT_BOUND",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "wrong-route",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/wrong-route.json",
+      "reason": "RTC_EXPORT_ISS96_PARTIAL_EXPORT_ROUTE_REQUIRED",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    },
+    {
+      "name": "temporal-combination",
+      "path": "resources/fiscal/scenarios/export-sp-2026.10.16-98-draft1/temporal-combination.json",
+      "reason": "RTC_EXPORT_ISS96_SEPARATE_TEMPORAL_CONTEXT_REQUIRED",
+      "expected_bound": false,
+      "independent_decimal": {
+        "total_gross_brl": "5179.50",
+        "foreign_immune_gross_brl": "2071.80",
+        "domestic_taxable_base_brl": "3107.70",
+        "ibs_state_nominal_brl": "3.11",
+        "ibs_municipal_nominal_brl": "0.00",
+        "cbs_nominal_brl": "27.97"
+      },
+      "expected_scopes": [],
+      "expected_br_links": []
+    }
+  ],
+  "full_suite_complete": false,
+  "production_ready": false
+}

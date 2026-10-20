@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_DOCUMENT_PENDING"
+  ],
+  "missing_facts": [],
+  "decision_hash": "3f7071df8a529c71921a822cf9abb14fc3f26ed01770fa3ecae8c2a401ae84fa"
+}

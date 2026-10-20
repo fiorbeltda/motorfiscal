@@ -1,0 +1,10 @@
+{
+    "status":  "ACTION_REQUIRED",
+    "reason_codes":  [
+                         "RTC_PARTIAL_EXPORT_CURRENCY_CONVERSION_NOT_MATERIALIZED"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "4c582bd7bb2d547ba5dab3254dae79e20d7032f273eb82cb76b8517d4a618891"
+}

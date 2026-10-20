@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_OUTPUT_POLICY_NOT_PROVEN:IBS"
+  ],
+  "missing_facts": [
+    "rtc.supplier_credit_period"
+  ],
+  "decision_hash": "b7c22eaca4d9a9782a89c47143298d4319fa70b36ead6e4f33469c748568fe40"
+}

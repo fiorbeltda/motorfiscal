@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_PROFESSIONAL_REDUCTION_NOT_ELIGIBLE"
+  ],
+  "missing_facts": [],
+  "decision_hash": "b58500667a647528287fbfe3c66fc1522600f3491ed2ebeeabb1be13b86a7dec"
+}

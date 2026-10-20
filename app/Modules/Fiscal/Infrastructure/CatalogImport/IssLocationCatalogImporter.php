@@ -23,10 +23,20 @@ final class IssLocationCatalogImporter
         $issues = [];
         $lineNumber = 0;
         $insideCatalogTable = false;
+        $declaredRows = null;
+        $documentedDivergences = [];
+        $seenCodes = [];
 
         try {
             while (($line = fgets($handle)) !== false) {
                 $lineNumber++;
+                if (preg_match('/Total de códigos listados:\s*\*\*(\d+)\*\*/u', $line, $matches) === 1) {
+                    $declaredRows = (int) $matches[1];
+                }
+                if ((str_contains($line, 'Códigos marcados como `LP`') || str_contains($line, 'Código incluído na lista textual de LP'))
+                    && preg_match_all('/\b\d{2}\.\d{2}\.\d{2}\b/', $line, $matches) > 0) {
+                    array_push($documentedDivergences, ...$matches[0]);
+                }
                 if (str_starts_with(trim($line), '| cTribNac | Descrição | LI |')) {
                     $insideCatalogTable = true;
 
@@ -56,6 +66,13 @@ final class IssLocationCatalogImporter
                 if (preg_match('/^\d{2}\.\d{2}\.\d{2}$/', $code) !== 1) {
                     continue;
                 }
+                $canonicalCode = str_replace('.', '', $code);
+                if (isset($seenCodes[$canonicalCode])) {
+                    $issues[] = new ImportIssue('DUPLICATE_CTRIBNAC', "Duplicate cTribNac code: {$code}", basename($markdownPath), $lineNumber);
+
+                    continue;
+                }
+                $seenCodes[$canonicalCode] = true;
 
                 $strategyRaw = trim($cells[3], '* ');
                 $strategy = match ($strategyRaw) {
@@ -69,7 +86,7 @@ final class IssLocationCatalogImporter
                 }
 
                 $rows[] = new IssLocationRuleRow(
-                    ctribnacCode: str_replace('.', '', $code),
+                    ctribnacCode: $canonicalCode,
                     description: $cells[2],
                     strategy: $strategy,
                     importOverride: $cells[7] === 'X' ? 'EDEmit' : null,
@@ -80,16 +97,25 @@ final class IssLocationCatalogImporter
             fclose($handle);
         }
 
-        if (count($rows) !== 337) {
-            $issues[] = new ImportIssue('UNEXPECTED_LOCATION_COUNT', 'Expected 337 cTribNac rows, found '.count($rows).'.', basename($markdownPath));
+        if ($declaredRows !== null && count($rows) !== $declaredRows) {
+            $issues[] = new ImportIssue('UNEXPECTED_LOCATION_COUNT', "Document declares {$declaredRows} cTribNac rows, found ".count($rows).'.', basename($markdownPath));
+        }
+        $documentedDivergences = array_values(array_unique($documentedDivergences));
+        if ($documentedDivergences !== []) {
+            $issues[] = new ImportIssue(
+                'SOURCE_INTERNAL_DIVERGENCE',
+                'Territorial divergence between source sheets for: '.implode(', ', $documentedDivergences).'.',
+                basename($markdownPath),
+            );
+        }
+        if ($declaredRows !== null && $declaredRows !== 338) {
+            $issues[] = new ImportIssue(
+                'TERRITORIAL_CATALOG_PARTIAL_AGAINST_CTRIBNAC_REFERENCE',
+                "Territorial source declares {$declaredRows} codes while the referenced cTribNac catalog declares 338; full coverage is not assumed.",
+                basename($markdownPath),
+            );
         }
 
-        $issues[] = new ImportIssue(
-            'SOURCE_INTERNAL_DIVERGENCE',
-            'MUN.INCID_INFO.SERV. and RN DPS_NFS-e contain documented territorial divergences; official validation is required.',
-            basename($markdownPath),
-        );
-
-        return new IssLocationImportReport($rows, $issues);
+        return new IssLocationImportReport($rows, $issues, $declaredRows, $documentedDivergences);
     }
 }

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_LEDGER_INCOMPLETE:prior_debts_complete"
+  ],
+  "missing_facts": [
+    "rtc.monthly_assessment"
+  ],
+  "decision_hash": "fd6691c54d43abcc150fd66a904a4dceacaead1b4ddd5795e2eb896a37b8d88f"
+}

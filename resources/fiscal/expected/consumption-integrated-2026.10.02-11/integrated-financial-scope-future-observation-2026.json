@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_FINANCIAL_SCOPE_PROOF_PERIOD_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "fff2bebcd83fe00e9e715231a5a99051184f86f5afc182cc7b4a2f4187e64785"
+}

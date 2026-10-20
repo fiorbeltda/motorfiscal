@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INPUT_CREDIT_TREATMENT_COMPONENT_INVALID"
+  ],
+  "missing_facts": [],
+  "decision_hash": "a0fb6dd1b2537a09b1b2f67428b78418943cf3ccb83d85c4b1b2e114afd3b4fd"
+}

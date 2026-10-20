@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_PRESUMED_CREDIT_RULE_NOT_QUALIFIED"
+  ],
+  "missing_facts": [
+    "rtc.monthly_assessment"
+  ],
+  "decision_hash": "2495041fccc44e8905663e3dac5be5ac92305d0168b29f71573e8ef165b8c919"
+}

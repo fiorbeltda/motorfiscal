@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_NETWORK_EVIDENCE_MISSING:bank_participation_evidence_id"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_zero_proof"
+  ],
+  "decision_hash": "e57ee91800f755da386252df2e1f41a59fdf23829a7784daf8955391f3b67c43"
+}

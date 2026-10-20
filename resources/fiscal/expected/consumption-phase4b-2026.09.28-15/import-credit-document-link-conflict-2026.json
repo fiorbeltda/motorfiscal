@@ -1,0 +1,11 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_IMPORT_CREDIT_DOCUMENT_LINK_CONFLICT"
+  ],
+  "missing_facts": [
+    "rtc.input_document_id",
+    "rtc.import_credit_fiscal_document_id"
+  ],
+  "decision_hash": "ec9b6844c322e0b22bad8df0ab772cd334d220154d6bf83aef441f5a5d7d057c"
+}

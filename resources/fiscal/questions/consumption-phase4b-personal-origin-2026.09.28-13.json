@@ -1,0 +1,18 @@
+[
+  {
+    "fact_key": "rtc.personal_use_supply_origin",
+    "prompt": "O bem ou serviço para uso pessoal foi produzido ou prestado pelo próprio contribuinte, ou adquirido de terceiro?",
+    "rank": 160,
+    "answer_type": "ENUM",
+    "options": [
+      "SELF_PRODUCED_OR_PROVIDED",
+      "ACQUIRED_FROM_THIRD_PARTY"
+    ]
+  },
+  {
+    "fact_key": "rtc.personal_use_origin_evidence_id",
+    "prompt": "Informe o documento que comprova a origem do bem ou serviço fornecido para uso pessoal.",
+    "rank": 161,
+    "answer_type": "STRING"
+  }
+]

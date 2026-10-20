@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_IMPORT_CREDIT_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.import_credit_extinction_evidence_id"
+  ],
+  "decision_hash": "05253c159bc88e1bfd8523e6c6cf0708d60d68bfbe2c9f3606ad9804b21e7b09"
+}

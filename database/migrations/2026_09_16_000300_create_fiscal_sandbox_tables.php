@@ -47,6 +47,8 @@ return new class extends Migration
             $table->date('effective_from');
             $table->date('effective_to')->nullable();
             $table->timestampTz('recorded_at');
+            $table->timestampTz('invalidated_at')->nullable();
+            $table->string('confidence');
             $table->jsonb('evidence')->nullable();
             $table->unique(['decision_run_id', 'fact_key']);
         });

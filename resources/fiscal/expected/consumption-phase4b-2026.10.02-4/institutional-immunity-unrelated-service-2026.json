@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:service_directly_related_to_statutory_objectives"
+  ],
+  "missing_facts": [],
+  "decision_hash": "2ff8b2e361fd7e827808ba587b554eb5161fd93323f9a291948295a4e65f2f09"
+}

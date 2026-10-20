@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:professes_faith_and_practices_religion"
+  ],
+  "missing_facts": [],
+  "decision_hash": "960d5212e0ce7cd5bf29cb1bd4586be84b2c69f4cabb2c729de400f737e14cf8"
+}

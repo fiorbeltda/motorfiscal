@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_EXTINCTION_EXCEEDS_DEBIT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "f4f467dca546f83961e999d88913baf11d11ffcba4b1239455b2fdd8069a6cb5"
+}

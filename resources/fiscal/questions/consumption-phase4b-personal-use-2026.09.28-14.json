@@ -1,0 +1,53 @@
+[
+  {
+    "fact_key": "rtc.recipient_relationship",
+    "prompt": "Qual é a relação comprovada do destinatário pessoa física com o fornecedor?",
+    "rank": 157,
+    "answer_type": "ENUM",
+    "options": [
+      "PARTNER",
+      "SHAREHOLDER",
+      "ADMINISTRATOR",
+      "BOARD_OR_COMMITTEE_MEMBER",
+      "EMPLOYEE",
+      "SPOUSE_OR_PARTNER",
+      "RELATIVE_FIRST_DEGREE",
+      "RELATIVE_SECOND_DEGREE",
+      "RELATIVE_THIRD_DEGREE",
+      "OTHER",
+      "SELF"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_anchor_role",
+    "prompt": "Qual é o papel da pessoa física à qual o familiar está vinculado?",
+    "rank": 158,
+    "answer_type": "ENUM",
+    "options": [
+      "PARTNER",
+      "SHAREHOLDER",
+      "ADMINISTRATOR",
+      "BOARD_OR_COMMITTEE_MEMBER",
+      "EMPLOYEE",
+      "SELF"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_anchor_evidence_id",
+    "prompt": "Informe o documento que comprova o papel da pessoa vinculada ao familiar.",
+    "rank": 159,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.personal_use_input_credit_eligible",
+    "prompt": "A aquisição do bem ou serviço permitiu crédito de IBS e CBS, conforme documento e regra aplicável?",
+    "rank": 162,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.personal_use_input_credit_evidence_id",
+    "prompt": "Informe o documento de aquisição e a evidência da elegibilidade do crédito de IBS e CBS.",
+    "rank": 163,
+    "answer_type": "STRING"
+  }
+]

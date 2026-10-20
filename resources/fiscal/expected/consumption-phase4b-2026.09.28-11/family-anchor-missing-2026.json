@@ -1,0 +1,6 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": ["RTC_NON_ONEROUS_EVIDENCE_MISSING"],
+  "missing_facts": ["rtc.recipient_anchor_evidence_id"],
+  "decision_hash": "d6d05cf4f871130f30cfc2b3272084ff7760a4fb2fa8a1bb77f6edd2077a40e3"
+}

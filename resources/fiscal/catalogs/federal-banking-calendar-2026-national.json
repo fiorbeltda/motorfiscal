@@ -1,0 +1,15 @@
+{
+  "calendar_id": "FEDERAL.BANKING.NATIONAL.2026",
+  "version": "2026-national-febraban-1",
+  "status": "SANDBOX_CANDIDATE",
+  "coverage_from": "2026-01-01",
+  "coverage_to": "2026-12-31",
+  "scope": "NATIONAL_BANKING_DAYS",
+  "source_id": "SOURCE.FEBRABAN.BANK_HOLIDAYS.2026",
+  "source_url": "https://portal.febraban.org.br/noticia/4413/pt-br/",
+  "holidays": [
+    "2026-01-01", "2026-02-16", "2026-02-17", "2026-04-03", "2026-04-21",
+    "2026-05-01", "2026-06-04", "2026-09-07", "2026-10-12", "2026-11-02",
+    "2026-11-15", "2026-11-20", "2026-12-25"
+  ]
+}

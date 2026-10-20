@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SPLIT_OFFICIAL_DEPLOYMENT_NOT_PROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "a9fc075687608ac72ec324dc77238621161efc826385b89284fc6a51a9934c12"
+}

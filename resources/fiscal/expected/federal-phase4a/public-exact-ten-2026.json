@@ -1,0 +1,12 @@
+{
+  "status": "VALID_WITH_WARNINGS",
+  "decision": {
+    "federal_withholdings": {
+      "status": "RESOLVED",
+      "total_withholding": "10.00",
+      "irrf": {"status": "WITHHOLD", "amount": "5.08"},
+      "pcc": {"status": "WITHHOLD", "total_withholding": "4.92"}
+    }
+  },
+  "decision_hash": "076247ab76723085b344e32148de36aeb9952dbc4200258a20380ba3c7e550ea"
+}

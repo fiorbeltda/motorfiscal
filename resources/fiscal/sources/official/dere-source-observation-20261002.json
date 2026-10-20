@@ -1,0 +1,30 @@
+{
+  "index_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1",
+  "artifacts": [
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/01-manual-usuario-dere-declaracao-de-regimes-especificos-v-1-1-0.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/01-manual-usuario-dere-declaracao-de-regimes-especificos-v-1-1-0.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-observed-20261002-01-manual-usuario-dere-declaracao-de-regimes-especificos-v-1-1-0.pdf",
+      "sha256": "6677a3596771239a440e8d44b998b27e4be28c332dbb818533f84ff3319a5dba",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/02-leiautes-da-dere-eventos-v-1-2-0-2.pdf",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/02-leiautes-da-dere-eventos-v-1-2-0-2.pdf/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-observed-20261002-02-leiautes-da-dere-eventos-v-1-2-0-2.pdf",
+      "sha256": "7adbc82a55f0d60dfc2a63771a4c65c67d479e6a50a7821079e73f38b21873c7",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    },
+    {
+      "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/06-arquivos-xsd-v-1-2-0.zip",
+      "download_url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/06-arquivos-xsd-v-1-2-0.zip/@@download/file",
+      "path": "resources/fiscal/sources/official/dere-observed-20261002-06-arquivos-xsd-v-1-2-0.zip",
+      "sha256": "c750f7d522400e5bd93b7ddd1d1d0d8108cd033eb250c1f10011ac57cc732818",
+      "retrieved_on": "2026-10-02",
+      "status": "OBSERVED_NOT_ACTIVATED"
+    }
+  ],
+  "notice": "Not activated in fiscal bundle; publication, legal effect and layout dependencies require review."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_MIXED_SERVICES_REQUIRE_SEPARATE_TREATMENT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "b809ee9949c5750e4cc7fae41f975123c12c4c9a47b9635826badb567f85e5e0"
+}

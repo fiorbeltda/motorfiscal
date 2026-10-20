@@ -1,0 +1,17 @@
+{
+  "scenario_id": "construction-missing-deduction-support",
+  "competence_date": "2026-09-15",
+  "knowledge_at": "2026-09-16T12:00:00-03:00",
+  "rule_bundle_id": "MVP-ISS-2026.09.16-1",
+  "catalog_versions": {"services": "2026.09.16-1", "municipal_parameters": "2026.09.16-1"},
+  "facts": {
+    "service.canonical_id": "CONSTRUCTION_CONTRACT",
+    "customer.person_type": "PJ",
+    "operation.construction_municipality_ibge": "3552205",
+    "operation.construction_work_id": "CNO-TEST-0004",
+    "operation.construction_object_type": "WORK",
+    "operation.construction_contract_type": "PARTIAL_CONTRACT",
+    "operation.amount": "10000.00",
+    "operation.allowed_deduction": "500.00"
+  }
+}

@@ -15,6 +15,7 @@ final readonly class MunicipalIssRateImportReport
         public int $blankRates,
         public int $municipalities,
         public int $serviceCodes,
+        public string $logicalHash,
         public ImportSinkSummary $sink,
         public array $issues,
     ) {}
@@ -30,6 +31,7 @@ final readonly class MunicipalIssRateImportReport
             'blank_rates' => $this->blankRates,
             'municipalities' => $this->municipalities,
             'service_codes' => $this->serviceCodes,
+            'logical_hash' => $this->logicalHash,
             'inserted' => $this->sink->inserted,
             'duplicates' => $this->sink->duplicates,
             'issues' => array_map(fn (ImportIssue $issue): array => $issue->toArray(), $this->issues),

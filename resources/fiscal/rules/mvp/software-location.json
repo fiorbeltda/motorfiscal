@@ -1,0 +1,12 @@
+{
+  "rule_id": "ISS.SOFTWARE.LOCATION.PROVIDER",
+  "version": "1.0.0",
+  "kind": "LOCATION",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.canonical_id", "operator": "EQ", "value": "SOFTWARE_DEVELOPMENT"},
+  "effects": [{"type": "SELECT_STRATEGY", "strategy": "PROVIDER_ESTABLISHMENT"}],
+  "source_id": "SOURCE.LC116.ART3.CAPUT",
+  "source_version": "CONSOLIDATED-2026-09-15",
+  "reason_codes": ["ISS_LOCATION_PROVIDER_ESTABLISHMENT"]
+}

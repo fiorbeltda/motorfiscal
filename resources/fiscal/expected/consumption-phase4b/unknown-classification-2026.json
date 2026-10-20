@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_SUPPLIED_CLASSIFICATION_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "1a7cb35e115efcdad2aca97ce952dc5aa4b3e1006bc0be8d011b55e0d8d37e7b"
+}

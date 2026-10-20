@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_EVIDENCE_MISSING:transfer_regulatory_validation_evidence_id"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_credit_transfer"
+  ],
+  "decision_hash": "6ba66b7ccad2bb65e46982b69771fcbb3190d2705569c0a99fd699f7c977db97"
+}

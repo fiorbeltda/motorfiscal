@@ -1,0 +1,1 @@
+{"status":"ACTION_REQUIRED","reason_codes":["ISS_LOCATION_FACTS_MISSING"],"missing_facts":["operation.construction_work_id"],"decision_hash":"757d516bac37797a94c2a00e732a8ff4193e7b442aebec6c266d342619601bed"}

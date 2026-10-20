@@ -1,0 +1,21 @@
+{
+  "bundle_id": "MVP-ISS-2026.09.16-1",
+  "bundle_key": "MVP-ISS",
+  "version": "2026.09.16-1",
+  "status": "SANDBOX_CANDIDATE",
+  "knowledge_available_at": "2026-09-16T08:00:00-03:00",
+  "catalog_versions": {
+    "services": "2026.09.16-1",
+    "municipal_parameters": "2026.09.16-1"
+  },
+  "content_hashes": {
+    "fact_definitions": "e1ec4cfbb20b8e6473803e35826f0f92f54012164325e4cfad3600b1402ab255",
+    "questions": "0816111ac4c1c07a31fad2d5df0bf3fb450a90d369e47a965cb2794fbe7b7983",
+    "service_catalog": "5f1889ef41259559f0a964b7841431c23d56b97bc349be955448c7d8312614f7",
+    "municipal_parameters": "ac3fef68ea9ec14727c8e54307435ca596f321c1282b794db7d8bbc6114ab655",
+    "invariants": "249ac325998d3e41775179021978d1680b180deabb84a0192d0b81d6816e48f1",
+    "scenario_schema": "579d1c85896cd603ab802ae2de60f80ee9cd8191944e5c369ebd573003bfeddd",
+    "rules": "780fbe748664fd410fe842e0cc5725505b7fd589377dec2d8ecdb8925d398ae2"
+  },
+  "notice": "Bundle técnico com parâmetros municipais sintéticos; não aprovado para uso fiscal em produção."
+}

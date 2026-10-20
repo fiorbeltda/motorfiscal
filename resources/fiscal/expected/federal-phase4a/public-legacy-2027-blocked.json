@@ -1,0 +1,5 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": ["PUBLIC_LEGACY_PIS_COFINS_REVALIDATION_REQUIRED"],
+  "decision_hash": "8def41809df0e85bfd387464438521db9127c2984a986e6699eb7058d9176e43"
+}

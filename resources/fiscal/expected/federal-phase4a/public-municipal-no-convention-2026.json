@@ -1,0 +1,12 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": ["LOCAL_IR_COLLECTION_RULE_MISSING_OR_EXPIRED"],
+  "missing_facts": [
+    "public.local_ir_collection_rule_id",
+    "public.local_ir_collection_code",
+    "public.local_ir_due_rule",
+    "public.local_ir_valid_from",
+    "public.local_ir_valid_to"
+  ],
+  "decision_hash": "124a0e99b67feaf94ad513e468dbceb3319381b62ed8f2a5421595518fe06ba4"
+}

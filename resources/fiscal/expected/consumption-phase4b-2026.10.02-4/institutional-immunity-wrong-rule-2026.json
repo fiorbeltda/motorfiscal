@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_RULE_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "adad8318367a69d7b12b17fef9ea43007ed06bc64ad54c646d9a7aa54d4cba20"
+}

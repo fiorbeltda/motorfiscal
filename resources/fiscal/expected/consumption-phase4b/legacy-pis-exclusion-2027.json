@@ -1,0 +1,10 @@
+{
+    "status":  "ACTION_REQUIRED",
+    "reason_codes":  [
+                         "RTC_RATE_NOT_PROVEN:CBS"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "640a56ee8c5aaf4ddd9b964e081845fe36efe626d58fdc739eedc73f975233b8"
+}

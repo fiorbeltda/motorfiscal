@@ -13,4 +13,5 @@ enum FactValueType: string
     case DECIMAL = 'DECIMAL';
     case DATE = 'DATE';
     case ENUM = 'ENUM';
+    case ARRAY = 'ARRAY';
 }

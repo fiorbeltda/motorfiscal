@@ -1,0 +1,39 @@
+[
+  {
+    "fact_key": "rtc.recipient_relationship",
+    "prompt": "Qual é a relação comprovada do destinatário pessoa física com o fornecedor?",
+    "rank": 157,
+    "answer_type": "ENUM",
+    "options": [
+      "PARTNER",
+      "SHAREHOLDER",
+      "ADMINISTRATOR",
+      "BOARD_OR_COMMITTEE_MEMBER",
+      "EMPLOYEE",
+      "SPOUSE_OR_PARTNER",
+      "RELATIVE_FIRST_DEGREE",
+      "RELATIVE_SECOND_DEGREE",
+      "RELATIVE_THIRD_DEGREE",
+      "OTHER"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_anchor_role",
+    "prompt": "Qual é o papel da pessoa física à qual o familiar está vinculado?",
+    "rank": 158,
+    "answer_type": "ENUM",
+    "options": [
+      "PARTNER",
+      "SHAREHOLDER",
+      "ADMINISTRATOR",
+      "BOARD_OR_COMMITTEE_MEMBER",
+      "EMPLOYEE"
+    ]
+  },
+  {
+    "fact_key": "rtc.recipient_anchor_evidence_id",
+    "prompt": "Informe o documento que comprova o papel da pessoa vinculada ao familiar.",
+    "rank": 159,
+    "answer_type": "STRING"
+  }
+]

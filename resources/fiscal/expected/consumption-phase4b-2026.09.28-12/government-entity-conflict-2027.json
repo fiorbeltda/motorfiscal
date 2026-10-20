@@ -1,0 +1,6 @@
+{
+  "status": "INVALID",
+  "reason_codes": ["RTC_GOVERNMENT_ENTITY_PUBLIC_LAW_CONFLICT"],
+  "missing_facts": [],
+  "decision_hash": "d13ab46ed22f0d74acecc531e9c5d05681f0743b8c7aba61c70cf90deee161d7"
+}

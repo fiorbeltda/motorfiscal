@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_EVALUATION_REQUIRED_AFTER_ISS_EXTINCTION"
+  ],
+  "missing_facts": [],
+  "decision_hash": "623796079b231f0090f98d358b18e854dd37b856d31dc749f626dc8dc212ab8d"
+}

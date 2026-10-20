@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INPUT_CREDIT_EXCEEDS_TREATMENT_LIMIT:IBS"
+  ],
+  "missing_facts": [],
+  "decision_hash": "ef62be73b8e98105f8eccaffea5ebb08b2d537334a84f61c651f408a034d0f57"
+}

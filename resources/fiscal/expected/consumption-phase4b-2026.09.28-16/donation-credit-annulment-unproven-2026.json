@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_DONATION_CREDIT_ANNULMENT_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.donation_credit_annulment_evidence_id"
+  ],
+  "decision_hash": "c03157f4b866f9a71de2c3a5423ea83150bf6e1965c68774e49610dffd7b5364"
+}

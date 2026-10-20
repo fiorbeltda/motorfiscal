@@ -1,0 +1,15 @@
+# Dois títulos históricos na mesma conta patrimonial — draft43
+
+O bundle `2026.10.09-28-draft43` aceitou localmente oito fechamentos atuais com BRFIXTDEB019 e BRFIXTDEB027 na conta debt000. As fontes anteriores42 foram efetivamente executadas e reproduzidas; não são snapshots antigos renomeados. Os saldos10100,00 e9850,00 formam abertura agregada19950,00. Cada título conserva sua quantidade, custo e cinco componentes fiscais históricos.
+
+A regra optativa `PUBLIC_DISTINCT_ISINS_AGGREGATED_ACCOUNT` confere a soma dos saldos iniciais/finais dos títulos contra o livro fornecido e exige identidades ISIN/conta distintas, diários individuais completos, movimentos brutos e vínculos financeiros reconciliados, PGCC e prova do conteúdo completo do livro. A regra anterior continua exigindo uma posição individual por conta. O novo modo cobre a curva pública sem componente de valor justo; não representa aceitação de todos os modelos contábeis numa conta comum.
+
+O ativo apresenta débito50,00, crédito50,00 mais as duas vendas e saldo final19950,00 menos os recebimentos das vendas. O registro de saldo anterior fornece os dois componentes de abertura e hashes dos snapshots42. O caixa abre somente uma vez com10000,00. As vendas parciais/totais, inclusive assimétricas, usam resultado separado ou compartilhado. O D2101 conserva dois detTitulo com a mesma cCta e ISINs distintos; bases individuais45,00/41,85 para o título positivo e0,00 para o negativo. A perda50,00 não reduz a base positiva. Bases financeiras745,00/741,85, com receita1000,00 e dedução300,00 fornecidas uma única vez.
+
+Validação:24 testes dirigidos/687 asserções na captura, suíte1.559 testes/17.855 asserções, PHPStan/Pint, reprodução do builder, regressões41/38/29/21 e candidatos27/26/25 aprovados. O corpus contém oito snapshots/replays e48 XMLs XSD1.3.0; ausência de assinatura é o único erro estrutural esperado. A auditoria conferiu6.310 artefatos históricos sem alteração e49 fontes oficiais.
+
+Os testes negativos recusam abertura, fechamento e movimentos incorretos mesmo com provas do livro refeitas; também recusam título duplicado, política ausente/desconhecida, fonte trocada/reutilizada, período histórico inválido, cobertura incompleta, vínculo ausente e compensação cruzada. A primeira execução foi recusada porque a fixture agregava a abertura corrente mas conservava o saldo anterior de um único título. Os logs dessa falha foram preservados; o registro foi corrigido para os dois fechamentos anteriores.
+
+A compressão de24 inputs conservou os bytes e os hashes. Mapas de preservação, pesquisas e hashes de implementação acompanham `storage/app/phase4b-realization-shared-asset-current-draft-20261009-28/multiple-progress-report.json`. A apuração e os diários são sintéticos; não houve lançamento automático, assinatura ou recepção oficial.
+
+O recorte de conta patrimonial compartilhada está concluído localmente. O candidato integral mais recente continua27. Escopo28 integral/Fase4B permanecem abertos e produção bloqueada. Próximo objetivo: [consolidar o corpus de realização](phase4b-next-scope-realization-consolidation.md).

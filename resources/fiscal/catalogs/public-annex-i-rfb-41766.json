@@ -1,0 +1,21 @@
+{
+  "catalog_id": "PUBLIC.IN_RFB_1234.ANNEX_I",
+  "version": "rfb-41766-sandbox-1",
+  "status": "SANDBOX_CANDIDATE",
+  "source_id": "SOURCE.RFB.IN_1234.ANNEX_I.41766",
+  "source_sha256": "52b085909d4135585f1adc82255dfd8c1a39fd83edb56cec1de6fd8d9163feac",
+  "effective_from": null,
+  "effective_to": null,
+  "review_after": "2026-12-31",
+  "rows": [
+    {"category": "GOODS_MATERIALS_HOSPITAL_CARGO", "ir": "1.20", "csll": "1.00", "cofins": "3.00", "pis": "0.65", "total": "5.85", "revenue_code": "6147", "locator": "Anexo I, linha 6147"},
+    {"category": "FUEL_PRODUCER_IMPORTER", "ir": "0.24", "csll": "1.00", "cofins": "3.00", "pis": "0.65", "total": "4.89", "revenue_code": "9060", "locator": "Anexo I, linha 9060"},
+    {"category": "FUEL_DISTRIBUTOR_RETAIL", "ir": "0.24", "csll": "1.00", "cofins": "0.00", "pis": "0.00", "total": "1.24", "revenue_code": "8739", "locator": "Anexo I, linha 8739"},
+    {"category": "INTERNATIONAL_CARGO_AND_ZERO_CONTRIBUTIONS", "ir": "1.20", "csll": "1.00", "cofins": "0.00", "pis": "0.00", "total": "2.20", "revenue_code": "8767", "locator": "Anexo I, linha 8767"},
+    {"category": "PASSENGER_TRANSPORT", "ir": "2.40", "csll": "1.00", "cofins": "3.00", "pis": "0.65", "total": "7.05", "revenue_code": "6175", "locator": "Anexo I, linha 6175"},
+    {"category": "INTERNATIONAL_PASSENGER_TRANSPORT", "ir": "2.40", "csll": "1.00", "cofins": "0.00", "pis": "0.00", "total": "3.40", "revenue_code": "8850", "locator": "Anexo I, linha 8850"},
+    {"category": "PROFESSIONAL_ASSOCIATION_COOPERATIVE", "ir": "0.00", "csll": "1.00", "cofins": "3.00", "pis": "0.65", "total": "4.65", "revenue_code": "8863", "locator": "Anexo I, linha 8863"},
+    {"category": "FINANCIAL_AND_HEALTH_INSURANCE", "ir": "2.40", "csll": "1.00", "cofins": "3.00", "pis": "0.65", "total": "7.05", "revenue_code": "6188", "locator": "Anexo I, linha 6188"},
+    {"category": "GENERAL_SERVICES", "ir": "4.80", "csll": "1.00", "cofins": "3.00", "pis": "0.65", "total": "9.45", "revenue_code": "6190", "locator": "Anexo I, linha 6190"}
+  ]
+}

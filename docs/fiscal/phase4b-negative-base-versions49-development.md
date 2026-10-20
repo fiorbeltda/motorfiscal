@@ -1,0 +1,15 @@
+# Bases negativas49 — versões de fechamento e reabertura
+
+`DereNegativeBaseClosingVersionReconciler` confere uma cadeia local de fechamentos D9199, pedidos de reabertura D1198 e retornos D9198 com os schemas oficiais1.3.0. A cadeia começa na sequência00 e exige uma reabertura bem-sucedida, vinculada ao recibo ativo, antes de cada fechamento sucessor com sequência seguinte. Recibos repetidos, sequência ausente, reabertura de recibo divergente, fornecedor/período/hash de contexto incompatível e competência ainda aberta são recusados.
+
+O retorno sucessor substitui o estoque da versão anterior. A rotina preserva recibo e SHA das versões superadas, sem somar seus saldos. Origens de períodos anteriores devem conservar identidade, valor original e saldo inicial entre as versões do mesmo fechamento; alterações desses elementos exigem reprocessamento das dependências. As origens geradas no próprio período recebem o código da sequência sucessora, conforme o retorno recebido como insumo.
+
+Os horários declarados são conferidos na ordem recepção/processamento e entre eventos, com conversão de fuso e manutenção das sete casas fracionárias do schema. Essa consistência não comprova autenticidade dos horários ou recepção governamental. Assinatura e hash do evento processado continuam declarados, sem verificação criptográfica de origem nesta entrega. Todos os exemplos de captura são sintéticos e o modo sem assinatura exige escolha explícita.
+
+Validação conjunta dos cinco componentes49:80 testes/267 asserções; PHPStan do componente de versões e Pint aprovados. Dois registros de falha do PHPStan por comparação terminal redundante foram conservados com as fontes anteriores; a condição foi corrigida sem alterar a regra de competência aberta. Não houve nova execução da suíte completa.
+
+Captura nativa em `storage/app/phase4b-negative-base49-preparation-20261009`: quatro XMLs da cadeia, entrada/resultado de reconciliação e entrada/resultado de consumo sucessor. A correção do exemplo de setembro reduz a utilização anterior do IBS de30,00 para20,00 e restaura o saldo de40,00 para50,00; reduz a geração CBS de20,00 para10,00. O consumo sintético de outubro recalculado passa a deduzir50,00 de IBS e10,00 de CBS. O cálculo anterior, com40,00/20,00, permanece preservado e identificado como dependente do retorno superado.
+
+Esse recálculo é somente uma proposta local de consumo. Não reprocessa fechamentos governamentais dos períodos dependentes, não qualifica bases correntes reais e não integra a rota mensal. O relatório `versions-development-validation.json` conserva essas pendências expressas, além dos hashes das fontes, implementações e capturas. O candidato integral aceito permanece27 e produção bloqueada.
+
+Próximos requisitos do [escopo49](phase4b-next-scope-negative-bases49.md): qualificar calendário/fronteira de vencimento, comprovar origem e estoque ao longo das competências, integrar um bundle temporal próprio e a projeção mensal, e testar o reprocessamento dos períodos dependentes com snapshots/replays/XMLs e regressão integral. A cadeia local de versões não encerra a aceitação do escopo49, do escopo28 ou da Fase4B.8.

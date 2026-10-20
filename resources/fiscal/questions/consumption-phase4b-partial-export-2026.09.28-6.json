@@ -1,0 +1,20 @@
+[
+  {
+    "fact_key": "rtc.export_domestic_recipient_id",
+    "prompt": "Informe e comprove rtc.export_domestic_recipient_id para a parcela consumida no Brasil.",
+    "rank": 240,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.export_domestic_recipient_country",
+    "prompt": "Informe e comprove rtc.export_domestic_recipient_country para a parcela consumida no Brasil.",
+    "rank": 241,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.export_domestic_document_id",
+    "prompt": "Informe e comprove rtc.export_domestic_document_id para a parcela consumida no Brasil.",
+    "rank": 242,
+    "answer_type": "STRING"
+  }
+]

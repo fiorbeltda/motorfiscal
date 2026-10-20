@@ -1,0 +1,54 @@
+{
+  "status": "DATE105_PUBLICATION_METADATA_VERIFIED_NOT_EFFECTIVE_DATE_APPROVAL",
+  "created_at": "2026-10-19T12:37:40.723338+00:00",
+  "auditor_sha256": "9ffd67cdcea3ae533c5cdfa3a5a9eb142c07e24e2e637de037462a34c260ce1a",
+  "norm_metadata_sources_verified": 3,
+  "total105_source_captures_verified": 13,
+  "norms": [
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss-date105-primary-research-20261019\\norm-metadata-20261019-v1\\sp-pn4-2016-details.html",
+      "url": "https://legislacao.prefeitura.sp.gov.br/parecer-normativo-secretaria-municipal-da-fazenda-4-de-10-de-novembro-de-2016/detalhe",
+      "sha256": "b730f3b8d3857b91e00531325f2678513b51812bceeb96665f4c5d048994249a",
+      "observed_at": "2026-10-19T12:36:52.320524+00:00",
+      "signed_on_reported": "2016-11-09",
+      "published_on_reported": "2016-11-10",
+      "publication_time_and_offset": null,
+      "portal_status_reported": "SEM REVOGAÇÃO EXPRESSA",
+      "effective_from_qualified": null,
+      "historical_applicability_approved": false
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss-date105-primary-research-20261019\\norm-metadata-20261019-v1\\sp-law13701-details.html",
+      "url": "https://legislacao.prefeitura.sp.gov.br/lei-13701-de-24-de-dezembro-de-2003/detalhe",
+      "sha256": "6ff5c3bd9918743be3dd2811effee3df00495bcc356dfe5eabb2cedfe492f903",
+      "observed_at": "2026-10-19T12:36:52.884684+00:00",
+      "signed_on_reported": "2003-12-24",
+      "published_on_reported": "2003-12-25",
+      "publication_time_and_offset": null,
+      "portal_status_reported": "ALTERADO REVOGADO(A) PARCIALMENTE",
+      "effective_from_qualified": null,
+      "historical_applicability_approved": false
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss-date105-primary-research-20261019\\norm-metadata-20261019-v1\\sp-decree53151-details.html",
+      "url": "https://legislacao.prefeitura.sp.gov.br/decreto-53151-de-17-de-maio-de-2012/detalhe",
+      "sha256": "894682770324e142548326938152510899deaca7640dccc3efa4f0a1d1deed2f",
+      "observed_at": "2026-10-19T12:36:53.318384+00:00",
+      "signed_on_reported": "2012-05-17",
+      "published_on_reported": "2012-05-18",
+      "publication_time_and_offset": null,
+      "portal_status_reported": "ALTERADO REVOGADO(A) PARCIALMENTE",
+      "effective_from_qualified": null,
+      "historical_applicability_approved": false
+    }
+  ],
+  "previous_review_sha256": "6fdcfd18a9c751483ee56f4e910ee6e0e51093dc26db5f35138764d92f56f988",
+  "old_capture_receipts_modified": false,
+  "runtime104_hashes_unchanged": 79,
+  "outside104_frozen_inputs": true,
+  "new_effective_dates_qualified": 0,
+  "material_dates_qualified": 0,
+  "runtime_integrated": false,
+  "research_complete": false,
+  "production_ready": false
+}

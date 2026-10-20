@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_PERIOD_OUTPUT_INVALID"
+  ],
+  "missing_facts": [],
+  "decision_hash": "90ab605bb8d57224477be8b44932426f624dd3f7f7e5bc9a8276aceef40e5f38"
+}

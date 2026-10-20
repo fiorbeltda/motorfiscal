@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_INPUT_CREDIT_TREATMENT_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.input_tax_treatments"
+  ],
+  "decision_hash": "671bdb125d35dd67f36669534ec10cf09d4bcf8f3b64eefe9305aac350bde7c3"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_PROOF_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_credit_transfer"
+  ],
+  "decision_hash": "8972b17ee568121503c93316ea84c2b7f62e1fbf6332b53d9861189fe53bfa6b"
+}

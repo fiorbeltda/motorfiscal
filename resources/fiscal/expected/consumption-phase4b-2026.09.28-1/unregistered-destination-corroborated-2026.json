@@ -1,0 +1,8 @@
+{
+  "status": "VALID",
+  "reason_codes": [
+    "RTC_2026_COLLECTION_DISPENSED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "9939698e7bcd11257ad76f9873e8df1f74879832606df5aa15b32292e404fa2f"
+}

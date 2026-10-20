@@ -1,0 +1,12 @@
+{
+  "rule_id": "ISS.CALCULATION.PHASE3.PERCENTAGE",
+  "version": "2.0.0",
+  "kind": "CALCULATION",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.ctribnac_code", "operator": "IN_CATALOG", "catalog": "ISS_SERVICES.CTRIBNAC"},
+  "effects": [{"type": "SELECT_FORMULA", "formula": "PERCENTAGE_OF_BASE", "arguments": {"base": "iss.taxable_base", "rate": "municipal.rate"}}],
+  "source_id": "SOURCE.MVP.FORMULA.REGISTRY",
+  "source_version": "1.0.0",
+  "reason_codes": ["ISS_PERCENTAGE_FORMULA_SELECTED"]
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic XSD fixture: the official serie facet treats ^ and $ literally in libxml. -->
+<DPS xmlns="http://www.sped.fazenda.gov.br/nfse" versao="1.01">
+  <infDPS Id="DPS000000000000000000000000000000000000000000">
+    <tpAmb>2</tpAmb>
+    <dhEmi>2026-09-28T19:00:00-03:00</dhEmi>
+    <verAplic>FISCAL-SANDBOX-1</verAplic>
+    <serie>^1$</serie>
+    <nDPS>1</nDPS>
+    <dCompet>2026-09-28</dCompet>
+    <tpEmit>1</tpEmit>
+    <cLocEmi>3550308</cLocEmi>
+    <prest>
+      <CNPJ>11111111000191</CNPJ>
+      <regTrib>
+        <opSimpNac>2</opSimpNac>
+        <regEspTrib>0</regEspTrib>
+      </regTrib>
+    </prest>
+    <serv>
+      <locPrest><cLocPrestacao>3550308</cLocPrestacao></locPrest>
+      <cServ>
+        <cTribNac>010101</cTribNac>
+        <xDescServ>Serviço sintético para teste local de schema</xDescServ>
+      </cServ>
+    </serv>
+    <valores>
+      <vServPrest><vServ>1000.00</vServ></vServPrest>
+      <trib>
+        <tribMun>
+          <tribISSQN>1</tribISSQN>
+          <tpRetISSQN>1</tpRetISSQN>
+        </tribMun>
+        <totTrib><indTotTrib>0</indTotTrib></totTrib>
+      </trib>
+    </valores>
+    <IBSCBS>
+      <finNFSe>0</finNFSe>
+      <cIndOp>100301</cIndOp>
+      <indDest>0</indDest>
+      <valores>
+        <trib>
+          <gIBSCBS>
+            <CST>000</CST>
+            <cClassTrib>000001</cClassTrib>
+          </gIBSCBS>
+        </trib>
+      </valores>
+    </IBSCBS>
+  </infDPS>
+</DPS>

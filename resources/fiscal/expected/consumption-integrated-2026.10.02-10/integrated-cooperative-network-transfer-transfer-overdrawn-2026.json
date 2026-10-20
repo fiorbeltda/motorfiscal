@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_TRANSFER_EXCEEDS_AVAILABLE_CREDIT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "7beddaf71aac4fc13aeffd4c09c5eb30d77f59f0bf09de6c1e57b77e04a37da3"
+}

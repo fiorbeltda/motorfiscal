@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_ANNEX_SERVICE_NBS_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "151f628188ef9e00f8228b164ada65768f26665815dbe33b6216a6d6a2617032"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_INSTITUTIONAL_IMMUNITY_CONDITION_NOT_MET:no_asset_or_income_distribution"
+  ],
+  "missing_facts": [],
+  "decision_hash": "9f9336c5d2f922b404c0377bf19d9f3c071a75e3fd4efbe2088d9dc614139fb0"
+}

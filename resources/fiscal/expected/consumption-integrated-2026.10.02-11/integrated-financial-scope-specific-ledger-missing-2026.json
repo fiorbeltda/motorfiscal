@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_QUALIFIED_LEDGER_MISSING"
+  ],
+  "missing_facts": [],
+  "decision_hash": "4d02c3ee4b9f9c8793d690111d35555b3dd7343a9b47e8cdfc2b397d1f141d78"
+}

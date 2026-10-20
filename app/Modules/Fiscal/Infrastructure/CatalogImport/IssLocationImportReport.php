@@ -13,6 +13,9 @@ final readonly class IssLocationImportReport
     public function __construct(
         public array $rows,
         public array $issues,
+        public ?int $declaredRows = null,
+        /** @var list<string> */
+        public array $documentedDivergences = [],
     ) {}
 
     /** @return array<string, mixed> */
@@ -27,7 +30,10 @@ final readonly class IssLocationImportReport
 
         return [
             'rows' => count($this->rows),
+            'declared_rows' => $this->declaredRows,
+            'reference_ctribnac_rows' => 338,
             'strategies' => $strategies,
+            'documented_divergences' => $this->documentedDivergences,
             'issues' => array_map(fn (ImportIssue $issue): array => $issue->toArray(), $this->issues),
         ];
     }

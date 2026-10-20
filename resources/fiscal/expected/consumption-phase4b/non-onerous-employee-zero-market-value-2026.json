@@ -1,0 +1,10 @@
+{
+    "status":  "INVALID",
+    "reason_codes":  [
+                         "RTC_NON_ONEROUS_MARKET_VALUE_INVALID"
+                     ],
+    "missing_facts":  [
+
+                      ],
+    "decision_hash":  "fe09b57c0b6fc2015c5ad3231ed3eb3760323e8f43a3246b1e460551045a000a"
+}

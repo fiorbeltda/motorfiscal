@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_MONTHLY_ASSESSMENT_LEDGER_INCOMPLETE:all_establishments_included"
+  ],
+  "missing_facts": [
+    "rtc.monthly_assessment"
+  ],
+  "decision_hash": "d5ae5aa13b707bb3ecfbb5e018681e89eba9fe7fcce5abfc537ec712ea44bf25"
+}

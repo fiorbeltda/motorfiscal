@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_SUPPLIER_CREDIT_PERIOD_OWNER_OR_CURRENCY_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "9e58e53bdbb40cecb7ec2cfccb22842712b2645de4a80fb76073eb6681e9e9bf"
+}

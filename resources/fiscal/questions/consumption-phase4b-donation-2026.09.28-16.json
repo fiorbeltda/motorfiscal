@@ -1,0 +1,38 @@
+[
+  {
+    "fact_key": "rtc.donation_no_counterbenefit",
+    "prompt": "A doação não proporciona contraprestação em benefício do doador?",
+    "rank": 166,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.donation_counterbenefit_evidence_id",
+    "prompt": "Qual documento comprova a ausência de contraprestação?",
+    "rank": 167,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.donation_input_credit_eligible",
+    "prompt": "O bem ou serviço doado permitiu apropriação de crédito IBS/CBS, inclusive na produção?",
+    "rank": 168,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "rtc.donation_input_credit_evidence_id",
+    "prompt": "Qual documento comprova a elegibilidade ou ausência de crédito na aquisição ou produção?",
+    "rank": 169,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "rtc.donation_credit_option",
+    "prompt": "Se houve crédito elegível, a opção é tributar pelo valor de mercado ou anular créditos?",
+    "rank": 170,
+    "answer_type": "ENUM"
+  },
+  {
+    "fact_key": "rtc.donation_credit_annulment_evidence_id",
+    "prompt": "Qual prova identifica a anulação dos créditos da doação?",
+    "rank": 171,
+    "answer_type": "STRING"
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "version": "2026.09.28-14",
+  "scope": "INTEGRATED_ISS_4A_4B",
+  "status": "IN_PROGRESS",
+  "controls": [
+    {
+      "id": "4B.1.TEMPORALITY",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "2033 sem ISS encaminhado ao IBS/CBS com prova de evento não transicional; operações cruzando 2032/2033 ainda exigem regra específica. CBS 2027+ e IBS por destino 2029+ sem alíquotas comprovadas."
+    },
+    {
+      "id": "4B.2.INCIDENCE_AND_DESTINATION",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026",
+        "NFSE-CINDOP"
+      ],
+      "gap": "Uso pessoal adquirido sob art. 5º, I, a, qualificado por origem, vínculo e elegibilidade de crédito; uso pessoal de produção própria sob b exige origem comprovada. Documento específico, demais operações não onerosas, locais especiais e domicílio inferido ainda pendentes."
+    },
+    {
+      "id": "4B.2.EXPORT_IMPORT",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026",
+        "DECREE-12955-CAMARA-2026"
+      ],
+      "gap": "Exportação parcial digital: papéis, destino e valores nominais da parcela brasileira qualificados; obrigação documental e revisão da classificação ainda pendentes. Importação: documento definitivo pendente."
+    },
+    {
+      "id": "4B.3.SUBJECTS_AND_COLLECTION",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "Compras públicas qualificadas pelos arts. 372, 472 e 473, com exceções e parcelas temporais; redutor não publicado, cálculo de destinação, consórcios, recolhimento e cadastro ainda pendentes."
+    },
+    {
+      "id": "4B.3.SIMPLES_MEI",
+      "state": "PARTIAL",
+      "source_ids": [
+        "RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918"
+      ],
+      "gap": "Janelas de opção regular de ambos os semestres de 2027 qualificadas; apuração interna, início de atividade, MEI e anos seguintes ainda pendentes."
+    },
+    {
+      "id": "4B.4.BASE_AND_SPECIAL_REGIMES",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "Regimes financeiro, imobiliário, construção, cooperativas e tratamentos diferenciados exigem cálculo e prova de elegibilidade."
+    },
+    {
+      "id": "4B.5.CREDITS",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "Crédito de importação digital qualificado para adquirente regular com documento fiscal, extinção e vínculo; projeção definitiva da importação, preservação ou anulação em benefícios e apropriação por tratamento ainda incompletas."
+    },
+    {
+      "id": "4B.6.CLASSIFICATION",
+      "state": "PARTIAL",
+      "source_ids": [
+        "NFSE-CINDOP",
+        "NFE-CCLASSTRIB",
+        "NFSE-NBS-ANEXO-B",
+        "NFSE-CORRELATION"
+      ],
+      "gap": "Regras decisórias além do SaaS e revisão jurídica das correlações interpretativas ainda pendentes."
+    },
+    {
+      "id": "4B.7.DOCUMENT",
+      "state": "PARTIAL",
+      "source_ids": [
+        "NFSE-NT004-LAYOUT",
+        "NFSE-NT009-LAYOUT",
+        "NFSE-RTC-XSD"
+      ],
+      "gap": "Campos projetados pelo emissor para NT004 validados por caminho e restrições simples do XSD oficial; XML completo, obrigação de importação/exportação parcial e implantação/vigência de NT009 ainda pendentes."
+    },
+    {
+      "id": "4B.8.CORPUS",
+      "state": "PARTIAL",
+      "source_ids": [
+        "LC214-CONSOLIDATED-CAMARA-2026"
+      ],
+      "gap": "O corpus atual não demonstra decisão positiva e homologada para todas as famílias, períodos e tratamentos."
+    },
+    {
+      "id": "INTEGRATED.ISS_MUNICIPAL",
+      "state": "OPEN",
+      "source_ids": [],
+      "gap": "O bundle usa parâmetros municipais sintéticos; a transição exige fonte municipal oficial para 31/12/2028 e parâmetros atuais de responsabilidade."
+    },
+    {
+      "id": "INTEGRATED.4A",
+      "state": "PARTIAL",
+      "source_ids": [],
+      "gap": "Avaliação federal após 2032 encaminhada à 4A com prova de data e veto a PIS/Cofins legados; perfis públicos/cooperativos, obrigações temporais e atos locais ainda exigem revisão."
+    }
+  ]
+}

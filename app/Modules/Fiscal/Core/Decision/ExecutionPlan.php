@@ -14,4 +14,9 @@ final readonly class ExecutionPlan
     {
         return array_map(fn (DecisionNodeDefinition $node): string => $node->id, $this->nodes);
     }
+
+    public function cursor(): ExecutionPlanCursor
+    {
+        return new ExecutionPlanCursor($this->nodeIds());
+    }
 }

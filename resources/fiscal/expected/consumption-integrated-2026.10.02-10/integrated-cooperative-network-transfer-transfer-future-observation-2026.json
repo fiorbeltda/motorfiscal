@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_OBSERVATION_CONFLICT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "e0cf0a16c04e16fde6d6a5ab08f1025eae5b5aa835e02c96908c05be4fe254ee"
+}

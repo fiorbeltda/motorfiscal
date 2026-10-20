@@ -1,0 +1,42 @@
+{
+  "catalog_id": "MVP_SERVICES",
+  "version": "2026.09.16-1",
+  "services": [
+    {
+      "id": "SOFTWARE_DEVELOPMENT",
+      "family": "SOFTWARE",
+      "lc116_code": "01.01",
+      "ctribnac_code": "010101",
+      "description": "Análise e desenvolvimento de sistemas",
+      "location_strategy": "PROVIDER_ESTABLISHMENT",
+      "dps_detail_group": null,
+      "nbs_candidates": [],
+      "mapping_status": "CONFIRMED",
+      "source_id": "SOURCE.ANEXO_I_NFSE_DERIVED.2026-09-15"
+    },
+    {
+      "id": "TRADE_FAIR_EVENT",
+      "family": "EVENT",
+      "lc116_code": "12.08",
+      "ctribnac_code": "120801",
+      "description": "Feiras, exposições, congressos e congêneres",
+      "location_strategy": "EVENT_LOCATION",
+      "dps_detail_group": "atvEvento",
+      "nbs_candidates": [],
+      "mapping_status": "CONFIRMED",
+      "source_id": "SOURCE.ANEXO_I_NFSE_DERIVED.2026-09-15"
+    },
+    {
+      "id": "CONSTRUCTION_CONTRACT",
+      "family": "CONSTRUCTION",
+      "lc116_code": "07.02",
+      "ctribnac_code": "070202",
+      "description": "Execução de obras de construção civil",
+      "location_strategy": "CONSTRUCTION_WORK_LOCATION",
+      "dps_detail_group": "obra",
+      "nbs_candidates": [],
+      "mapping_status": "CONFIRMED",
+      "source_id": "SOURCE.ANEXO_I_NFSE_DERIVED.2026-09-15"
+    }
+  ]
+}

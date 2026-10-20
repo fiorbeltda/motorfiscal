@@ -1,0 +1,17 @@
+# Integração do histórico contextual de competência — 63
+
+Objetivo: admitir no cálculo e no comando mensal uma versão pública ativa somente depois de reconstruir sua economia e qualificar o histórico sintético de fechamento/reabertura até o instante de conhecimento utilizado.
+
+A geração61 foi aceita localmente com2.121 testes e45.190 asserções antes da promoção do qualificador62. O bundle próprio `2026.10.13-28-draft63` exige `require_public_period_history=true`, além da seleção de versões já habilitada. Uma entrada contendo somente XML de retorno não satisfaz essa política: precisa fornecer a cadeia pública e o histórico contextual. Informar esse histórico sob uma política anterior também é recusado, evitando interpretá-lo como prova sem habilitação explícita.
+
+O histórico contém pares de origem/retorno de fechamento e reabertura, testemunho de escopo e completude, hash próprio e vínculo com o hash da entrada mensal. O qualificador confere o último recibo ativo, sequências independentes por família, hashes reais das origens, identidade, competência, status, erros, cronologia e cobertura exata do conhecimento. Cada evento público precisa estar em intervalo aberto sem sobreposição com mudança de estado. Só então o conteúdo econômico ativo é comparado à projeção mensal nativa, e seu total entra uma vez no codBC1010.
+
+A captura própria usa dois ciclos de fechamento/reabertura e a versão pública03. O comando emite os bytes ativos do D2101 e preserva os seis XMLs da captura61. A proposta mantém IBS0,74/CBS7,02, enquanto o cálculo bruto original permanece IBS0,80/CBS7,18. O comando mantém os hashes da projeção nativa para a solicitação de opções D1199, sem derivar codBCN da sequência D2101.
+
+Os testes dirigidos somam36 casos e148 asserções:22 do estado contextual, oito da seleção no planejador e seis do comando. As recusas cobrem ausência de histórico, divergência do mês, hash de testemunho adulterado, competência fechada, evento inválido e entrada que tenta usar apenas XML. O comando recusa esses casos antes de produzir qualquer um dos seis XMLs ou relatório. As gerações61/58 e o corpus56 são reproduzidos em destinos próprios63, preservando os relatórios históricos.
+
+As três fontes alteradas foram arquivadas antes da integração. Fontes, protótipos e relatórios62 permanecem inalterados. A geração61 continua comprovada pelos arquivos arquivados quando a implementação corrente evolui. A evidência provisória fica em `integration-progress-validation.json`; a aceitação após suíte completa, se confirmada pelo auditor, fica em `period-development-validation.json`.
+
+O estado inicial aberto e a completude são declarados em testemunho sintético. O qualificador não autentica o estado governamental, e o histórico antigo de fechamento do fixture não reconcilia a economia daquele fechamento com a memória financeira corrente. Esses limites aparecem nos campos `period_state_externally_verified=false` e `closing_origin_economics_reconciled=false`. A integração prova o ciclo contextual local e a economia da versão pública corrente; essas condições não permitem contabilização ou liberação de produção.
+
+Continuam pendentes a qualificação efetiva do contexto inicial e do histórico recebido, a reconciliação econômica dos fechamentos anteriores quando exigida, o D1021 para exclusões por processo, os demais perfis do escopo54, o escopo28 e a aceitação integral da Fase4B. Próximo trabalho: pesquisar e qualificar o D1021 e sua temporalidade antes de admitir motivo1, mantendo as demais guardas de versões e competência.

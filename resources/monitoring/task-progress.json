@@ -1,0 +1,1393 @@
+{
+  "updated_at": "2026-10-20T13:30:50.054Z",
+  "title": "Desenvolvimento pausado · snapshot Git",
+  "state": "Pausa solicitada pelo usuário antes da implementação119. Commit local concluído; publicação bloqueada: fiorbeltda não autenticada no GitHub CLI e tiacopfiles sem escrita.",
+  "criterion": "75% = 3/4 marcos desta entrega de versionamento após commit local. Publicação remota depende da autenticação fiorbeltda; não representa progresso funcional da4B.",
+  "milestones": [
+    {
+      "title": "Parar desenvolvimento em ponto seguro",
+      "complete": true
+    },
+    {
+      "title": "Revisar arquivos e excluir temporários do versionamento",
+      "complete": true
+    },
+    {
+      "title": "Registrar snapshot em commit local",
+      "complete": true
+    },
+    {
+      "title": "Publicar e conferir commit no GitHub",
+      "complete": false
+    }
+  ],
+  "finished": [
+    "Desenvolvimento pausado antes119; último aceite integral112 preservado.",
+    "Arquivos temporários e credenciais locais excluídos do versionamento.",
+    "Snapshot do estado atual registrado em commit local."
+  ],
+  "pending": [
+    "Autenticar fiorbeltda e publicar no repositório motorfiscal.",
+    "119 e regressão integral continuam pendentes, sem execução.",
+    "36 requisitos ainda não revisados; produção permanece bloqueada."
+  ],
+  "next_step": "Autenticar a conta fiorbeltda no Git local e publicar o snapshot. Não retomar desenvolvimento sem nova orientação do usuário.",
+  "evidence": [
+    "docs/fiscal/phase4b-material-input119-plan.md",
+    "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+    "docs/fiscal/phase4b-requirements118-base-review.md",
+    "D:/ProjetoSaasExports/phase4b-requirements118-base-audit-20261020-v1/requirements-review-v1/requirements118-base-review.json",
+    "docs/fiscal/phase4b-requirements117-subjects-review.md",
+    "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+    "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+  ],
+  "history": [
+    {
+      "updated_at": "2026-10-20T13:25:42Z",
+      "title": "Entradas119 — ponto de parada preservado",
+      "state": "Corpus116 terminado e auditado como etapa intermediária. Auditorias117/118 concluídas com falhas de contratos materiais reproduzidas;119 ainda não instalada. Último aceite integral112;produção bloqueada.",
+      "criterion": "33% = 2/6 marcos da correção119:auditoria das falhas e preservação do corte116 concluídas. Implementação,testes,corpus/replays e regressão/aceite permanecem pendentes. É uma nova entrega delimitada,não percentual funcional global da4B.",
+      "milestones": [
+        {
+          "title": "Auditar e reproduzir falhas materiais117/118",
+          "complete": true
+        },
+        {
+          "title": "Preservar corpus116 e arquivos anteriores à119",
+          "complete": true
+        },
+        {
+          "title": "Implementar políticas versionadas de entrada119",
+          "complete": false
+        },
+        {
+          "title": "Validar contratos,positivos e recusas em testes dirigidos",
+          "complete": false
+        },
+        {
+          "title": "Qualificar corpus e replays da nova versão",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e auditoria de aceite",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "116:248 decisões/replays próprios e791 históricos auditados.",
+        "117/118:24 itens examinados;44 IDs revisados no total.",
+        "88 hashes preservados e91 arquivos arquivados antes119."
+      ],
+      "pending": [
+        "Corrigir fundamentos de recolhimento e contratos de ajustes.",
+        "Validar119 com testes,corpus,replays e regressão integral.",
+        "Revisar36 IDs restantes;concluir ISS/câmbio e documentos."
+      ],
+      "next_step": "Implementar119 a partir do arquivo anterior preservado,com recusas controladas e compatibilidade histórica;depois qualificar novos cenários e executar a regressão integral.",
+      "evidence": [
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+        "docs/fiscal/phase4b-requirements118-base-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements118-base-audit-20261020-v1/requirements-review-v1/requirements118-base-review.json",
+        "docs/fiscal/phase4b-requirements117-subjects-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Falhas materiais diagnosticadas;correção119 ainda não instalada.",
+        "finished": [
+          "116:248 decisões/replays próprios e791 históricos auditados.",
+          "117/118:24 itens examinados;44 IDs revisados no total.",
+          "88 hashes preservados e91 arquivos arquivados antes119."
+        ],
+        "pending": [
+          "Corrigir fundamentos de recolhimento e contratos de ajustes.",
+          "Validar119 com testes,corpus,replays e regressão integral.",
+          "Revisar36 IDs restantes;concluir ISS/câmbio e documentos."
+        ],
+        "next_step": "Implementar119 a partir do arquivo anterior preservado,com recusas controladas e compatibilidade histórica;depois qualificar novos cenários e executar a regressão integral."
+      }
+    },
+    {
+      "title": "Geografia116 — corpus terminal intermediário",
+      "updated_at": "2026-10-20T13:25:42Z",
+      "state": "5/6 marcos;83% do corte116,sem aceite integral",
+      "summary": "248 decisões/replays próprios e791 históricos exatos;35.072 checks independentes/568 Decimal.32 decisões/replays geográficos curtos anteriores preservados. Nenhuma suíte completa116 iniciada. Falhas117/118 motivaram correção119 antes do próximo aceite integral;91 arquivos anteriores preservados.",
+      "evidence": [
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json"
+      ]
+    },
+    {
+      "title": "Base118 — auditoria dos14 requisitos",
+      "updated_at": "2026-10-20T13:25:42Z",
+      "state": "4/4 marcos;100% da auditoria delimitada,sem correção instalada",
+      "summary": "34 cenários/68 chamadas:66 decisões e duas exceções no caso booleano falso.417 conferências e180 Decimal. Dez entradas malformadas aceitas,além da duplicidade sem identidade de linha qualificada.14 itens revistos;44 IDs no total,36 não revistos e nenhum encerramento formal.",
+      "milestones": [
+        {
+          "title": "Examinar fonte e rotas de base",
+          "complete": true
+        },
+        {
+          "title": "Capturar positivos,recusas e falhas",
+          "complete": true
+        },
+        {
+          "title": "Revisar os14 itens originais",
+          "complete": true
+        },
+        {
+          "title": "Auditar aritmética,evidências e integridade",
+          "complete": true
+        }
+      ],
+      "evidence": [
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+        "docs/fiscal/phase4b-requirements118-base-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements118-base-audit-20261020-v1/requirements-review-v1/requirements118-base-review.json",
+        "docs/fiscal/phase4b-requirements117-subjects-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "previous_current_record": {
+        "updated_at": "2026-10-20T13:01:23Z",
+        "title": "116 em validação · sujeitos117 auditados",
+        "state": "Auditoria117 concluída com três inconsistências materiais de base de recolhimento reproduzidas,sem correção instalada. Corpus116 permanece em execução. Último aceite integral112;produção bloqueada.",
+        "criterion": "83% = 5/6 marcos da integração116. A auditoria117 é uma entrega paralela concluída,sem promover esse percentual. Corpus/replays terminais,regressão integral e aceite116 ainda pendentes. Não é percentual funcional global da4B.",
+        "milestones": [
+          {
+            "title": "Auditar os12 itens4B.2 e reproduzir os contraexemplos",
+            "complete": true
+          },
+          {
+            "title": "Preservar/normalizar referênciaIBGE sem inventar vigência histórica",
+            "complete": true
+          },
+          {
+            "title": "Implementar componente auxiliar de consistência com fonte vinculada",
+            "complete": true
+          },
+          {
+            "title": "Validar47 casos,limites,Pint/PHPStan e integridade",
+            "complete": true
+          },
+          {
+            "title": "Integrar política versionada em todos os ramos de destino afetados",
+            "complete": true
+          },
+          {
+            "title": "Ampliar corpus/replays históricos, executar regressão integral e auditar o aceite",
+            "complete": false
+          }
+        ],
+        "finished": [
+          "116:124 cenários preparados;593/14.934 testes dirigidos aprovados.",
+          "117:dez requisitos auditados;78 avaliações nativas e186 conferências.",
+          "Três bases inconsistentes reproduzidas;88 hashes116 preservados."
+        ],
+        "pending": [
+          "Concluir corpus116,regressão completa e auditoria de aceite.",
+          "Corrigir a base material de recolhimento em nova versão,sem alterar o corpus congelado.",
+          "Revisar os50 IDs restantes e concluir base/câmbioISS,documentos e demais famílias."
+        ],
+        "next_step": "Concluir e auditar o processo existente do corpus116;executar regressão integral. Preparar a correção de recolhimento isoladamente,sem instalá-la durante a validação congelada.",
+        "evidence": [
+          "docs/fiscal/phase4b-requirements117-subjects-review.md",
+          "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+          "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/native-probe-v1/execution.json",
+          "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/primary-source-v1/primary-source-observation.json",
+          "docs/fiscal/phase4b-geographic116-price-expansion.md",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-expanded-preparation-validation.json",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/expanded-cli-v1/process-start.json",
+          "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+        ],
+        "focus": {
+          "summary": "Sujeitos117 auditados;corpus116 segue em validação.",
+          "finished": [
+            "116:124 cenários preparados;593/14.934 testes dirigidos aprovados.",
+            "117:dez requisitos auditados;78 avaliações nativas e186 conferências.",
+            "Três bases inconsistentes reproduzidas;88 hashes116 preservados."
+          ],
+          "pending": [
+            "Concluir corpus116,regressão completa e auditoria de aceite.",
+            "Corrigir a base material de recolhimento em nova versão,sem alterar o corpus congelado.",
+            "Revisar os50 IDs restantes e concluir base/câmbioISS,documentos e demais famílias."
+          ],
+          "next_step": "Concluir e auditar o processo existente do corpus116;executar regressão integral. Preparar a correção de recolhimento isoladamente,sem instalá-la durante a validação congelada."
+        }
+      }
+    },
+    {
+      "title": "Sujeitos117 — auditoria dos dez requisitos",
+      "updated_at": "2026-10-20T13:01:23Z",
+      "state": "4/4 marcos;100% desta auditoria delimitada,sem correção de runtime ou encerramento formal",
+      "summary": "117:dez requisitos originais de sujeitos revistos;40 cenários,78 avaliações nativas euma recusa tipada;186 conferências e88 hashes116 intactos. Três bases materiais inconsistentes aceitas no recolhimento pelo adquirente; lacuna reproduzida,sem correção instalada. Três fontes primárias capturadas,nenhuma ativada. Agora30 IDs distintos examinados nos cortes114/115/117 e50 não revistos;zero encerramentos formais.116 mantém593/14.934 dirigidos e auditoria3.657;corpus ampliado em execução,sem resultado terminal integral.112 último aceite.3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada.",
+      "milestones": [
+        {
+          "title": "Capturar e examinar fontes primárias",
+          "complete": true
+        },
+        {
+          "title": "Observar rotas nativas e contraexemplos",
+          "complete": true
+        },
+        {
+          "title": "Revisar os dez IDs originais e limites",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências e integridade do runtime",
+          "complete": true
+        }
+      ],
+      "evidence": [
+        "docs/fiscal/phase4b-requirements117-subjects-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/native-probe-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/primary-source-v1/primary-source-observation.json",
+        "docs/fiscal/phase4b-geographic116-price-expansion.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/expanded-cli-v1/process-start.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "previous_current_record": {
+        "updated_at": "2026-10-20T12:45:26Z",
+        "title": "Geografia116 · corpus ampliado em execução",
+        "state": "124 cenários transportados com vínculos sintéticos atuais e eventos temporais preservados. Testes dirigidos e auditoria de preparação aprovados; corpusCLI em execução. Último aceite integral112; produção bloqueada.",
+        "criterion": "83% = 5/6 marcos desta entrega. Expansão preparada e dirigida; o sexto marco exige corpus/replays terminais, regressão integral e auditoria de aceite. Não é percentual funcional global da4B.",
+        "milestones": [
+          {
+            "title": "Auditar os12 itens4B.2 e reproduzir os contraexemplos",
+            "complete": true
+          },
+          {
+            "title": "Preservar/normalizar referênciaIBGE sem inventar vigência histórica",
+            "complete": true
+          },
+          {
+            "title": "Implementar componente auxiliar de consistência com fonte vinculada",
+            "complete": true
+          },
+          {
+            "title": "Validar47 casos,limites,Pint/PHPStan e integridade",
+            "complete": true
+          },
+          {
+            "title": "Integrar política versionada em todos os ramos de destino afetados",
+            "complete": true
+          },
+          {
+            "title": "Ampliar corpus/replays históricos, executar regressão integral e auditar o aceite",
+            "complete": false
+          }
+        ],
+        "finished": [
+          "124 cenários transportados sem alterar fatos monetários.",
+          "593 testes/14.934 verificações; PHPStan/Pint587 aprovados.",
+          "Dois eventos temporais preservados; auditoria3.657 conferências."
+        ],
+        "pending": [
+          "Concluir corpusCLI e791 replays históricos, em execução.",
+          "Executar regressão completa e auditar o aceite116.",
+          "Prosseguir auditoria dos80 requisitos, base/câmbioISS e documentos."
+        ],
+        "next_step": "Concluir e auditar o corpus ampliado no processo existente; depois executar a regressão única116 com entradas congeladas e a auditoria de aceite.",
+        "evidence": [
+          "docs/fiscal/phase4b-geographic116-price-expansion.md",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-expanded-preparation-validation.json",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/price116-directed-v1.log",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/price116-phpstan-v1.log",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/price116-pint-v1.log",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/expanded-cli-v1/process-start.json",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-targeted-validation.json",
+          "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+        ],
+        "focus": {
+          "summary": "Expansão preparada e validada; corpusCLI em execução.",
+          "finished": [
+            "124 cenários transportados sem alterar fatos monetários.",
+            "593 testes/14.934 verificações; PHPStan/Pint587 aprovados.",
+            "Dois eventos temporais preservados; auditoria3.657 conferências."
+          ],
+          "pending": [
+            "Concluir corpusCLI e791 replays históricos, em execução.",
+            "Executar regressão completa e auditar o aceite116.",
+            "Prosseguir auditoria dos80 requisitos, base/câmbioISS e documentos."
+          ],
+          "next_step": "Concluir e auditar o corpus ampliado no processo existente; depois executar a regressão única116 com entradas congeladas e a auditoria de aceite."
+        }
+      }
+    },
+    {
+      "title": "Geografia116 — expansão124 e ciclo de vida preservado",
+      "updated_at": "2026-10-20T12:45:26Z",
+      "state": "Preparação aprovada; corpus ampliado em execução,sem aceite116",
+      "summary": "Expansão116 preparada:124 cenários,249 testes novos de transporte;593 testes/14.934 verificações dirigidas, PHPStan/Pint587 e auditoria3.657 checks aprovados. Fatos monetários e eventos originais preservados; duas provas passam a recusar corretamente por revogação/supersessão conhecida.71 composições positivas,11 fontesUSD. CorpusCLI ampliado em execução para248 decisões/replays próprios e791 históricos;essas contagens ainda não são resultado terminal.88 hashes de runtime116 intactos.112 último aceite integral; regressão e aceite116 pendentes. Oito grupos4B parciais;3/4A encerradas emSandbox,5–7 planejadas e produção bloqueada.",
+      "evidence": [
+        "docs/fiscal/phase4b-geographic116-price-expansion.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/price116-directed-v1.log",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/price116-phpstan-v1.log",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/price116-pint-v1.log",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-targeted-validation.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "previous_current_record": {
+        "updated_at": "2026-10-20T12:27:24Z",
+        "title": "Geografia116 · integração direcionada",
+        "state": "Coerência município/UF integrada e validada nos caminhos ordinário, importação, doação e exportação parcial. Não determina local fiscal histórico. Último aceite integral112; produção bloqueada.",
+        "criterion": "83% = 5/6 marcos desta entrega:auditoria, fontes, componente, testes isolados e integração direcionada concluídos. Expansão de corpus, replays históricos e regressão integral permanecem no sexto marco. Não é percentual funcional global da4B.",
+        "milestones": [
+          {
+            "title": "Auditar os12 itens4B.2 e reproduzir os contraexemplos",
+            "complete": true
+          },
+          {
+            "title": "Preservar/normalizar referênciaIBGE sem inventar vigência histórica",
+            "complete": true
+          },
+          {
+            "title": "Implementar componente auxiliar de consistência com fonte vinculada",
+            "complete": true
+          },
+          {
+            "title": "Validar47 casos,limites,Pint/PHPStan e integridade",
+            "complete": true
+          },
+          {
+            "title": "Integrar política versionada em todos os ramos de destino afetados",
+            "complete": true
+          },
+          {
+            "title": "Ampliar corpus/replays históricos, executar regressão integral e auditar o aceite",
+            "complete": false
+          }
+        ],
+        "finished": [
+          "Validação geográfica nos quatro caminhos;80 testes permanentes novos.",
+          "96 testes/416 verificações, PHPStan e estilo aprovados.",
+          "32 decisões e32 replays exatos;97 fontes conferidas."
+        ],
+        "pending": [
+          "Ampliar cenários112 e replays históricos no novo bundle.",
+          "Executar regressão completa e aceite independente pós114/116.",
+          "Continuar auditoria dos80 requisitos, base/câmbioISS e documentos."
+        ],
+        "next_step": "Transportar e qualificar o corpus de preços112 no bundle116, preservando provas e recusas; depois conferir históricos e executar a regressão integral.",
+        "evidence": [
+          "docs/fiscal/phase4b-geographic116-current-integration.md",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-targeted-validation.json",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/cli-v2/geographic116-cli-validation.json",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/directed-v5.log",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/phpstan-v2.log",
+          "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/pint-final-v2.log",
+          "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+        ],
+        "focus": {
+          "summary": "Referência geográfica integrada e validada; aceite integral ainda pendente.",
+          "finished": [
+            "Validação geográfica nos quatro caminhos;80 testes permanentes novos.",
+            "96 testes/416 verificações, PHPStan e estilo aprovados.",
+            "32 decisões e32 replays exatos;97 fontes conferidas."
+          ],
+          "pending": [
+            "Ampliar cenários112 e replays históricos no novo bundle.",
+            "Executar regressão completa e aceite independente pós114/116.",
+            "Continuar auditoria dos80 requisitos, base/câmbioISS e documentos."
+          ],
+          "next_step": "Transportar e qualificar o corpus de preços112 no bundle116, preservando provas e recusas; depois conferir históricos e executar a regressão integral."
+        }
+      }
+    },
+    {
+      "title": "Geografia116 — integração e corpus direcionados",
+      "updated_at": "2026-10-20T12:27:24Z",
+      "state": "5/6 marcos;83% da entrega delimitada,sem aceite integral116",
+      "summary": "116 integrada nos quatro caminhos de destino:80 testes permanentes novos;96 testes/416 verificações dirigidas, PHPStan e Pint584 aprovados. Corpus final:32 decisões e32 replays exatos;97 fontes válidas,126 bloqueios de produção. Último aceite integral112; regressão completa e expansão de corpus posteriores a114/116 pendentes. Auditoria114/115 examinou20 IDs,60 não revistos nesses cortes e zero encerramentos formais. Oito grupos4B parciais; fases3/4A encerradas em Sandbox e5–7 planejadas.",
+      "evidence": [
+        "docs/fiscal/phase4b-geographic116-current-integration.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-targeted-validation.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/cli-v2/geographic116-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/directed-v5.log",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/phpstan-v2.log",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/pint-final-v2.log",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "previous_current_record": {
+        "updated_at": "2026-10-20T12:00:57Z",
+        "title": "Incidência115 · referência geográfica preparada",
+        "state": "12 itens de incidência/local examinados;três destinos inconsistentes reproduzidos nos dois executores. ReferênciaIBGE e componente auxiliar verificados,sem integração115.112 último aceite integral;produção bloqueada.",
+        "criterion": "67% = 4/6 marcos do corte115:auditoria,fontes/normalização,componente e checks isolados concluídos. Integração e validação integrada/corpus ainda pendentes. Não é percentual funcional4B.",
+        "milestones": [
+          {
+            "title": "Auditar os12 itens4B.2 e reproduzir os contraexemplos",
+            "complete": true
+          },
+          {
+            "title": "Preservar/normalizar referênciaIBGE sem inventar vigência histórica",
+            "complete": true
+          },
+          {
+            "title": "Implementar componente auxiliar de consistência com fonte vinculada",
+            "complete": true
+          },
+          {
+            "title": "Validar47 casos,limites,Pint/PHPStan e integridade",
+            "complete": true
+          },
+          {
+            "title": "Integrar política versionada em todos os ramos de destino afetados",
+            "complete": false
+          },
+          {
+            "title": "Validar cenários/replay integrados e fechamento de regressão aplicável",
+            "complete": false
+          }
+        ],
+        "finished": [
+          "Auditoria114/115:20 IDs distintos examinados;nenhum encerramento formal.",
+          "Referência observada:27UFs/5.571 registros;três capturas válidas euma falha preservada.",
+          "Componente isolado:47 casos/423 limites,Pint/PHPStan aprovados;87 hashes de execução intactos."
+        ],
+        "pending": [
+          "Integrar coerência município/UF nos ramos ordinário,importação,doação e exportação parcial,com política temporal explícita.",
+          "Concluir corpus/replay/regressão posterior às mudanças;112 última suíte integral.",
+          "60 IDs não revisados nesses cortes;base/câmbioISS,documentos e demais famílias pendentes."
+        ],
+        "next_step": "Definir a política temporal de uso da referência observada e integrá-la em nova versão,sem torná-la prova automática de domicílio/local fiscal histórico;testar todos os ramos afetados.",
+        "evidence": [
+          "D:/ProjetoSaasExports/phase4b-requirements115-incidence-audit-20261020-v1/requirements-review-v1/requirements115-incidence-review.json",
+          "D:/ProjetoSaasExports/phase4b-requirements115-incidence-audit-20261020-v1/geographic-checks-v2/geographic-reference-validation.json",
+          "docs/fiscal/phase4b-requirements115-incidence-review.md",
+          "D:/ProjetoSaasExports/phase4b-requirements114-temporal-audit-20261020-v1/integration-v1/final-checks/integration114-targeted-validation.json",
+          "D:/ProjetoSaasExports/phase4b-requirements114-temporal-audit-20261020-v1/post-install-review-v1/requirements114-remediation-review.json",
+          "storage/app/phase4b-price112-development-20261019/price112-development-validation.json",
+          "storage/app/phase4b-price112-development-20261019/evidence-copy-receipt.json",
+          "D:/ProjetoSaasExports/phase4b-requirements114-temporal-audit-20261020-v1/requirements-review-v1/requirements114-temporal-review.json",
+          "docs/fiscal/phase4b-requirements114-temporal-review.md",
+          "D:/ProjetoSaasExports/phase4b-price112-full-suite-20261019/price112-regression-validation.json",
+          "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/code-history-review-v1/code-history-review.json",
+          "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/code-history-review-v1/row-count-label-correction.json",
+          "D:/ProjetoSaasExports/cleanup-c-safe-caches-20261020-v1/cleanup-report.json",
+          "docs/fiscal/cleanup-c-safe-caches-20261020.md",
+          "docs/fiscal/phase4b-iss-base113-boundary-contract.md",
+          "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/price-base-boundary-v1/price-base-boundary-observation.json",
+          "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/legacy-review-v1/legacy-source-review.json",
+          "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/pf-supplement-v1/primary-source-observation.json",
+          "D:/ProjetoSaasExports/phase4b-price112-full-suite-20261019/preflight.json",
+          "D:/ProjetoSaasExports/phase4b-price112-full-suite-20261019/process-start.json",
+          "docs/fiscal/phase4b-iss-base113-primary-intake.md",
+          "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/review-v1/source-scope-review.json",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/cli-v1/price112-cli-validation.json",
+          "D:/ProjetoSaasExports/phase4b-price112-closure-review-20261020-v1/audit-observation.json",
+          "scripts/verify_phase4b_price112_evidence.py",
+          "scripts/capture_phase4b_price112_full_suite.py",
+          "scripts/finish_phase4b_price112_development.py",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/price112-expanded-directed-validation.json",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/cli-v1/process-start.json",
+          "docs/fiscal/phase4b-price112-current-integration.md",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/price112-initial-directed-validation.json",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/before-integration-archive.json",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/combined-directed-v3.json",
+          "D:/ProjetoSaasExports/phase4b-price112-integration-20261019/typed-documentary-context-v2.json",
+          "docs/fiscal/phase4b-iss-price111-local-component.md",
+          "docs/fiscal/phase4b-price112-integration-plan.md",
+          "D:/ProjetoSaasExports/phase4b-iss-base111-primary-research-20261019/price111-local-component-validation.json",
+          "D:/ProjetoSaasExports/phase4b-iss-base111-primary-research-20261019/source-contract-v2/iss-base111-source-scope-review.json",
+          "storage/app/phase4b-dated108-development-20261019/dated108-development-validation.json",
+          "docs/fiscal/console-clean-20261019.md",
+          "D:/ProjetoSaasExports/console-clean-20261019/qa-result.json",
+          "D:/ProjetoSaasExports/phase4b-iss-base111-primary-research-20261019/existing-iss-base111-probe.json",
+          "docs/fiscal/cleanup-c-user-caches-20261019-late.md",
+          "D:/ProjetoSaasExports/cleanup-c-user-caches-20261019-v2/cleanup-report.json",
+          "D:/ProjetoSaasExports/cleanup-c-crashdump-20261019-v1-failure.json",
+          "docs/fiscal/phase4b-price110-local-component.md",
+          "D:/ProjetoSaasExports/phase4b-price110-local-preparation-20261019/price110-local-component-validation.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-full-suite-20261019/preflight.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-full-suite-20261019/process-start.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/cli-v1/dated108-cli-validation.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-review-correction-20261019/collector-lookup-correction.json",
+          "docs/fiscal/phase4b-iss-fx109-source-scope-review.md",
+          "D:/ProjetoSaasExports/phase4b-iss-fx109-primary-research-20261019/iss-fx109-source-scope-review.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/dated108-upstream-validation.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/directed-v4.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/cli-v1/process-start.json",
+          "docs/fiscal/cleanup-c-20261019-afternoon.md",
+          "D:/ProjetoSaasExports/cleanup-c-20261019-afternoon/cleanup-report.json",
+          "docs/fiscal/phase4b-dated108-current-integration.md",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/dated108-directed-validation.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/before-integration-archive.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/scenario-schema-v1-failure-review.json",
+          "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/scenario-array-transport-v2-failure-review.json",
+          "docs/fiscal/phase4b-identity107-dated-preparation.md",
+          "D:/ProjetoSaasExports/phase4b-identity107-dated-preparation-20261019/identity107-local-dated-validation.json",
+          "docs/fiscal/phase4b-iss-date106-result-composition.md",
+          "D:/ProjetoSaasExports/phase4b-iss-date106-result-composition-20261019/dated106-local-composition-validation.json",
+          "storage/app/phase4b-identity104-development-20261019/identity104-development-validation.json",
+          "storage/app/phase4b-identity104-development-20261019/evidence-copy-receipt.json",
+          "docs/fiscal/phase4b-iss-date105-local-component.md",
+          "D:/ProjetoSaasExports/phase4b-iss-date105-local-preparation-20261019/date105-local-component-validation.json",
+          "docs/fiscal/phase4b-iss-date105-municipal-supplement.md",
+          "docs/fiscal/phase4b-iss-date105-material-contract-draft.md",
+          "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-supplement-and-coupling-review-v2.json",
+          "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-norm-metadata-review.json",
+          "docs/fiscal/phase4b-iss-date105-source-scope-review.md",
+          "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-source-scope-review.json",
+          "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-source-inspection-v2.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-full-suite-20261019/preflight.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-full-suite-20261019/process-start.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/cli-v2/identity104-cli-validation.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/regression-first-space-refusal.json",
+          "D:/ProjetoSaasExports/cleanup-c-docker-update-20261019-v1/cleanup-report.json",
+          "D:/ProjetoSaasExports/cleanup-c-download-caches-20261019-v1/cleanup-report.json",
+          "docs/fiscal/phase4b-iss-date105-primary-intake.md",
+          "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/primary-source-observation.json",
+          "docs/fiscal/phase4b-identity104-current-integration.md",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/identity104-directed-validation.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/before-integration-archive.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/identity104-bundle-installation.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/directed-v2.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/cli-v1-failure-review.json",
+          "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/cli-v2/process-start.json",
+          "D:/ProjetoSaasExports/cleanup-c-temp-20261019-v1/cleanup-report.json",
+          "scripts/cleanup_c_temp_20261019.ps1",
+          "docs/fiscal/phase4b-identity103-local-preparation.md",
+          "D:/ProjetoSaasExports/phase4b-identity103-local-preparation-20261016/identity103-preparation-validation.json",
+          "docs/fiscal/phase4b-identity102-primary-research.md",
+          "D:/ProjetoSaasExports/phase4b-identity102-primary-preparation-20261016/identity102-research-validation-v2.json",
+          "storage/app/phase4b-catalog101-development-20261016/catalog101-development-validation.json",
+          "storage/app/phase4b-catalog101-development-20261016/evidence-copy-receipt.json",
+          "D:/ProjetoSaasExports/phase4b-catalog101-full-suite-20261016/catalog101-regression-validation.json",
+          "docs/fiscal/phase4b-catalog101-invariants-scope-review.md",
+          "docs/fiscal/phase4b-catalog101-original-scope-review.md",
+          "D:/ProjetoSaasExports/phase4b-catalog101-full-suite-20261016/preflight.json",
+          "D:/ProjetoSaasExports/phase4b-catalog101-full-suite-20261016/process-start.json",
+          "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/cli/catalog101-cli-validation.json",
+          "docs/fiscal/phase4b-catalog101-current-integration.md",
+          "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/directed-v5.json",
+          "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/phpstan-v2.json",
+          "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/pint-v2.json",
+          "D:/ProjetoSaasExports/cleanup-c-temp-20261016-v1/cleanup-report.json",
+          "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/catalog101-bundle-installation.json",
+          "storage/app/phase4b-sp98-development-20261016/sp98-development-validation.json",
+          "storage/app/phase4b-sp98-development-20261016/evidence-copy-receipt.json",
+          "docs/fiscal/phase4b-catalog100-reference-preparation.md",
+          "D:/ProjetoSaasExports/phase4b-catalog100-reference-preparation-20261016/catalog100-reference-preparation-validation.json",
+          "D:/ProjetoSaasExports/phase4b-sp98-full-suite-20261016/full-suite.json",
+          "docs/fiscal/phase4b-catalog99-current-primary-preparation.md",
+          "D:/ProjetoSaasExports/phase4b-catalog99-primary-research-20261016/catalog99-preparation-validation.json",
+          "D:/ProjetoSaasExports/phase4b-sp98-full-suite-20261016/preflight.json",
+          "D:/ProjetoSaasExports/phase4b-sp98-full-suite-20261016/process-start.json",
+          "docs/fiscal/phase4b-sp98-current-integration.md",
+          "D:/ProjetoSaasExports/phase4b-sp98-integration-20261016/cli/sp98-cli-validation.json",
+          "D:/ProjetoSaasExports/phase4b-sp98-integration-20261016/before-integration-archive.json",
+          "D:/ProjetoSaasExports/phase4b-document97-sp-primary-research-20261016-v2/sp97-preparation-validation.json",
+          "D:/ProjetoSaasExports/phase4b-document97-sp-primary-research-20261016-v2/primary-source-review.json",
+          "docs/fiscal/phase4b-sp97-municipal-result-preparation.md",
+          "storage/app/phase4b-export-iss96-development-20261016/export-iss96-development-validation.json",
+          "storage/app/phase4b-export-iss96-development-20261016/evidence-copy-receipt.json",
+          "D:/ProjetoSaasExports/phase4b-export-iss96-full-suite-20261016/export-iss96-regression-validation.json",
+          "D:/ProjetoSaasExports/phase4b-export-iss96-integration-20261016/cli/export-iss96-cli-validation.json",
+          "docs/fiscal/phase4b-export-iss96-live-integration.md",
+          "storage/app/phase4b-document94-development-20261016/document94-development-validation.json"
+        ],
+        "focus": {
+          "summary": "Lacuna geográfica reproduzida;referência auxiliar115 preparada,sem integração.",
+          "finished": [
+            "12 itens de incidência/local examinados.",
+            "47 casos ePint/PHPStan do componente aprovados."
+          ],
+          "pending": [
+            "Política temporal e integração nos ramos afetados.",
+            "Corpus/replay e regressão após mudanças."
+          ],
+          "next_step": "Definir a política temporal de uso da referência observada e integrá-la em nova versão,sem torná-la prova automática de domicílio/local fiscal histórico;testar todos os ramos afetados."
+        }
+      }
+    },
+    {
+      "title": "Incidência115 · auditoria e preparação geográfica",
+      "state": "4/6 marcos;67% do corte,sem integração",
+      "summary": "31 casos/60 avaliações nativas euma recusa de carregamento. UFXX,UF/município conflitantes e código ausente do retrato aceitos nos dois executores. ReferênciaIBGE27UFs/5.571 registros,3 capturas válidas/1 falha preservada.47 casos/423 limites ePint/PHPStan isolados aprovados;87 hashes intactos.20 IDs revisados nos cortes114/115,zero encerrados. Não qualifica local histórico ou domicílio.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-requirements115-incidence-audit-20261020-v1/requirements-review-v1/requirements115-incidence-review.json",
+        "D:/ProjetoSaasExports/phase4b-requirements115-incidence-audit-20261020-v1/geographic-checks-v2/geographic-reference-validation.json",
+        "docs/fiscal/phase4b-requirements115-incidence-review.md"
+      ]
+    },
+    {
+      "title": "Temporal114 · ciclo de ativação split corrigido",
+      "state": "4/4 marcos;100% da correção dirigida,sem nova regressão integral",
+      "summary": "Duas guardas e16 testes permanentes após o aceite112.59 testes/220 verificações,PHPStan/Pint582 finais;quatro observações corrigidas e29 preservadas no diagnóstico real.86 hashes/3.869 recursos intactos,94 fontes/125 bloqueios. Nenhuma implantação oficial de split ativada. Oito requisitos examinados neste corte;72 não revisados. Não encerra4B.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-requirements114-temporal-audit-20261020-v1/integration-v1/final-checks/integration114-targeted-validation.json",
+        "D:/ProjetoSaasExports/phase4b-requirements114-temporal-audit-20261020-v1/post-install-review-v1/requirements114-remediation-review.json",
+        "docs/fiscal/phase4b-requirements114-temporal-review.md"
+      ]
+    },
+    {
+      "title": "Integração112 · aceite local publicado",
+      "state": "Aceito localmente;7/7 marcos,100% da integração112",
+      "summary": "Suíte7.738/116.599,17.418 entradas intactas e87 hashes,qualidade e auditoria aprovadas. Este é o estado anterior à correção temporal114. Aceite112 preservado;produção bloqueada.",
+      "evidence": [
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ]
+    },
+    {
+      "title": "Integração112 · aceite local após auditoria independente",
+      "state": "Concluída;7/7 marcos,100% dessa integração",
+      "summary": "7.738 testes/116.599 verificações,17.418 entradas intactas e87 hashes;PHPStan/Pint581 finais.124 cenários,248 decisões/replays próprios,543 históricos,94 fontes e125 bloqueios. Auditoria27.116 conferências e584 verificaçõesDecimal. Não calcula base/impostoISS,converte preçoISS,emiteXML ou encerra4B.108 preservado.",
+      "evidence": [
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json",
+        "storage/app/phase4b-price112-development-20261019/evidence-copy-receipt.json"
+      ]
+    },
+    {
+      "title": "Integração112 · regressão e qualidade final aprovadas",
+      "state": "6/7 marcos;86% da entrega delimitada",
+      "summary": "7.738 testes/116.599 verificações,17.418 entradas intactas,PHPStan sem erros/Pint581.94 fontes e125 bloqueios mantidos. Auditoria independente1628 em execução;sem aceite112 publicado ainda. Não encerra grupo4B ou produção.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-price112-full-suite-20261019/price112-regression-validation.json"
+      ]
+    },
+    {
+      "title": "Limpeza do C: · temporários e caches delimitados",
+      "state": "Concluída;3/3 marcos,100% da manutenção",
+      "summary": "1.136 arquivos/103.524.939 bytes lógicos removidos;copiados e1.136 hashes de recuperação reconferidos noD:.65 indisponíveis,3.095 recentes e1.321 protegidos preservados. Livre imediato385.806.336 bytes;capacidade segue baixa. Nenhuma alteração de paginação,ambiente,evidência fiscal ou processoPest. Não conta como avanço funcional4B.",
+      "evidence": [
+        "docs/fiscal/cleanup-c-safe-caches-20261020.md",
+        "D:/ProjetoSaasExports/cleanup-c-safe-caches-20261020-v1/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Pesquisa113 · cadeia posterior de códigos municipais",
+      "state": "Revisão parcial conferida;sem política instalada",
+      "summary": "23 corpos primários preservados,196 novas conferências e87 hashes de execução intactos.22 páginas PDF adicionais extraídas;quatro inspecionadas visualmente. Tabela efetiva2026 tem25 linhas:primeiro rótulo24 corrigido com relatório original preservado. Captura retornouPDF sob nomeHTML;falha inicial de decodificação preservada. Não equivale a classificação/aplicabilidade atual aceita.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/code-history-review-v1/code-history-review.json",
+        "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/code-history-review-v1/row-count-label-correction.json",
+        "docs/fiscal/phase4b-iss-base113-primary-intake.md"
+      ]
+    },
+    {
+      "title": "Pesquisa113 · fronteira entre preço e baseISS",
+      "state": "Estudo conferido;sem componente ou regra nova",
+      "summary": "124 capturas112:73 compõem preços e51 não;1.842 conferências,87 hashes de execução intactos. Catálogo1.01 e prova municipal família1 não bastam para código/aliquota específicos. Contrato e matriz de recusas propostos;regressão112 viva,108 último aceite. Nenhum fechamento4B ou produção.",
+      "evidence": [
+        "docs/fiscal/phase4b-iss-base113-boundary-contract.md",
+        "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/price-base-boundary-v1/price-base-boundary-observation.json"
+      ]
+    },
+    {
+      "updated_at": "2026-10-20T10:57:02Z",
+      "title": "Pesquisa113 · leitura histórica da planilha",
+      "state": "Parcial;nenhuma regra fiscal ativada",
+      "summary": "XLS lido sem edição ecom fonte intacta. Nota6b completa localizada;codigos/anotacoes23/27 distinguidos.141 conferencias adicionais,13capturas e87 hashes112 intactos. Regulamentacao/aplicabilidade ainda pendentes;regressao112 segue ativa.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss-base113-primary-research-20261019/legacy-review-v1/legacy-source-review.json"
+      ]
+    },
+    {
+      "updated_at": "2026-10-20T07:43:00-03:00",
+      "title": "Integração112 · corpus validado",
+      "state": "Corpus112 validado: 124 cenários, 248 decisões/replays próprios e 543 históricos exatos. Auditoria independente: 27.116 conferências e 584 verificações decimais. Preparação da regressão completa em execução; ainda sem resultado da suíte ou aceite112. Último aceite:108. Produção bloqueada.",
+      "criterion": "71% = 5/7 marcos da integração112. Corpus e auditoria independente concluídos; preparação da regressão ativa. Suíte completa, qualidade final e publicação do aceite ainda pendentes. Não é percentual funcional global4B.",
+      "focus": {
+        "summary": "Corpus112 e auditoria independente passaram. A preparação da regressão completa está em execução;108 continua último aceite integrado.",
+        "finished": [
+          "248 decisões/replays próprios e543 históricos exatos.",
+          "Auditoria:27.116 conferências; evidências anteriores preservadas."
+        ],
+        "pending": [
+          "Regressão completa e qualidade final.",
+          "Auditoria terminal e publicação do aceite112."
+        ],
+        "next_step": "Acompanhar o coordenador da regressão sem reiniciar; confirmar início do Pest, resultado terminal e integridade das entradas antes do aceite."
+      },
+      "finished": [
+        "124 cenários nos dois fluxos: 248 decisões/replays próprios e 543 históricos exatos.",
+        "Auditoria independente aprovada: 27.116 conferências, 584 verificações decimais e 232 comparações de estágios108.",
+        "Ambiente recuperado sem recriar volumes ou repetir o corpus; PostgreSQL saudável e 28 checks do console aprovados."
+      ],
+      "pending": [
+        "Concluir preparação, regressão completa e qualidade final. 7.738 testes é expectativa, não resultado observado.",
+        "Auditar a regressão e publicar o aceite112 somente após todos os gates passarem.",
+        "Qualificação jurídica, conversão/base/imposto ISS por documento, XML e auditoria individual dos80 requisitos continuam pendentes."
+      ]
+    },
+    {
+      "updated_at": "2026-10-19T16:19:00-03:00",
+      "title": "Integração112 · expansão verificada",
+      "state": "Expansão112 verificada:124 cenários,58 fontes108 transportadas,11 sucessos RTC/USD.1.442 testes/21.844 verificações,PHPStan/Pint581 e auditoria1.092 checks aprovados;87 hashes runtime intactos desde a instalação112. CorpusCLI em execução;regressão completa e aceite112 pendentes.108 último aceite;produção bloqueada.",
+      "criterion": "57% = 4/7 marcos da integração112:expansão dirigida a montante concluída. CorpusCLI em execução não conta como aprovação;regressão completa e aceite independente pendentes. Não é percentual funcional global4B.",
+      "focus": {
+        "summary": "Expansão112 passou. Os comandos fiscais e replays estão em execução;108 continua o último aceite integrado.",
+        "finished": [
+          "1.442 testes / 21.844 verificações e auditoria da expansão aprovados.",
+          "58 cenários anteriores cobertos, incluindo11 sucessosRTC/USD;recusas preservadas."
+        ],
+        "pending": [
+          "Concluir CLI e543 replays históricos.",
+          "Regressão completa e aceite independente112."
+        ],
+        "next_step": "Concluir e auditar o corpusCLI112;somente após aceite terminal congelar entradas e iniciar uma regressão completa."
+      },
+      "finished": [
+        "124 cenários nos dois fluxos;58 originais108 representados,23 novas composições e11 sucessosRTC/USD,sem substituir o câmbioISS.",
+        "1.442 testes/21.844 verificações,538 testes novos;PHPStan/Pint581 aprovados e87 hashes runtime preservados.",
+        "Auditoria da expansão:1.092 checks e92 oráculosDecimal;fatos originais,nominais/FX capturados e corrupções históricas preservados."
+      ],
+      "pending": [
+        "Concluir e auditar corpusCLI112:248 decisões/replays próprios e543 históricos. Verificadores de fechamento preparados;execução ativa,sem aceite terminal.",
+        "Executar regressão completa com inventário congelado,qualidade final e auditoria independente;7738 testes é expectativa,não resultado.",
+        "Qualificação jurídica,conversãoISS,base/imposto/XML e auditoria individual dos80 requisitos seguem pendentes nos oito grupos4B."
+      ]
+    },
+    {
+      "updated_at": "2026-10-19T16:13:00-03:00",
+      "title": "Integração112 · expansão verificada",
+      "state": "Expansão112 verificada:124 cenários,58 fontes108 transportadas,11 sucessos RTC/USD.1.442 testes/21.844 verificações,PHPStan/Pint581 e auditoria1.092 checks aprovados;87 hashes runtime intactos desde a instalação112. CorpusCLI em execução;regressão completa e aceite112 pendentes.108 último aceite;produção bloqueada.",
+      "focus": {
+        "summary": "Expansão112 passou. Os comandos fiscais e replays estão em execução;108 continua o último aceite integrado.",
+        "finished": [
+          "1.442 testes / 21.844 verificações e auditoria da expansão aprovados.",
+          "58 cenários anteriores cobertos, incluindo11 sucessosRTC/USD;recusas preservadas."
+        ],
+        "pending": [
+          "Concluir CLI e543 replays históricos.",
+          "Regressão completa e aceite independente112."
+        ],
+        "next_step": "Concluir e auditar o corpusCLI112;somente após aceite terminal congelar entradas e iniciar uma regressão completa."
+      }
+    },
+    {
+      "updated_at": "2026-10-19T15:53:54.5017602-03:00",
+      "title": "Integração112 · validação parcial",
+      "state": "112 instalado em draft2:quatro classes e7 fatos/perguntas,94 fontes,438 testes novos.1.342 testes/19.170 checks dirigidos com predecessores,PHPStan/Pint580 e auditoria inicial17.238 checks aprovados.13.393 entradas108 protegidas intactas,duas mudanças previstas arquivadas;87 hashes atuais. Ainda faltam50 cenários108 no novo transporte,incluindo sucessoRTC/USD,CLI/543históricos,regressão completa e aceite112.108 último aceite;produção bloqueada.",
+      "criterion": "43% = 3/7 marcos da integração112. Ampliação a montante,corpusCLI/replays,regressão completa e aceite independente ainda pendentes.108 é o último aceite publicado;não é percentual funcional global4B.",
+      "finished": [
+        "112 instalado em draft2:quatro classes e7 fatos/perguntas,94 fontes,438 testes novos.1.342 testes/19.170 checks dirigidos com predecessores,PHPStan/Pint580 e auditoria inicial17.238 checks aprovados.13.393 entradas108 protegidas intactas,duas mudanças previstas arquivadas;87 hashes atuais. Ainda faltam50 cenários108 no novo transporte,incluindo sucessoRTC/USD,CLI/543históricos,regressão completa e aceite112.108 último aceite;produção bloqueada.",
+        "112 mantém registros monetários e fatos fornecidos nos hashes;exclui apenas carriers de prova contratados.50 composições positivas,16 variações de transporte e8 recusas anteriores avaliadas em RTC/integrado. Positivos iniciais têm brutoRTC em BRL;moedas declaradas dos documentos não provam passagem por conversãoRTC/USD. Duas chaves documentais foram tipadas em draft2,sem descartar valores ou reescrever referênciaRTC.",
+        "111 preparação isolada verificada:107 casos/2.239 checks,50 composições locais/42INVALID/15ACTION_REQUIRED;400 oráculos Decimal,160 controles110 completos iguais,PHPStan/Pint e auditoria1.793 checks aprovados.18 capturas/192 checks de fontes/runtime;cadeia18270/IN15 com publicação08/12/2025 qualificada no escopo construção,não dedução de software.83 hashes108 intactos;nenhuma integração111,base/imposto/FX/XML ou produção aprovada.",
+        "111 não desconta condições futuras do preçoISS,não subtrai duas vezes preço já líquido e distingue candidato de pagamento de recebimento.24 vetores iniciais são oráculos de desenho,não testes extras do motor;BRL/USD/EUR/AUD só entradas declaradas. Três casos usam preços/ajustes distintos por papel. Duas entradas110 com preço zero e uma prova expirada às19:00 são recusadas;160 resultados antigos às18:00 permanecem iguais.",
+        "Aceite108 publicado:7.200/107.350,13.395 entradas inalteradas,83 hashes atuais,58 cenários/116 replays próprios e427 históricos,76 fontes e124 bloqueios. Auditoria independente e cópias SHA256 verificadas;104 preservado.",
+        "Console reorganizado em três áreas;resumo atual separado do histórico completo,pesquisa no histórico,detalhes recolhidos e estado preservado no refresh.28 checks observador e17 navegador aprovados;desktop/celular inspecionados.",
+        "Diagnóstico111 da APIISS executado isoladamente:sem dedução calcula1000/20 usando alíquota2% sintética;allowed_deduction10 ou0 para software recusaDEDUCTION_NOT_SUPPORTED_FOR_SERVICE. Três entradas preservadas;sem prova de desconto incondicional,sem política/base nova ou aprovação fiscal.",
+        "Regressão108 terminal:7.200 testes/107.350 verificações;13.395 entradas inalteradas,PHPStan/Pint572 e avaliação76 fontes/124 bloqueios concluídos. Auditoria independente em execução,sem publicação de aceite ainda.",
+        "Limpeza adicional14:36 concluída3/3 marcos:1.793 arquivos de caches de downloadsVSIX/JS compilado antigos removidos,539.818.347 bytes lógicos,com copias SHA256 recuperáveis no D:.Extensões instaladas,perfis,senhas,índices,projeto,evidências,ambientes,paginação e suíte preservados. Livre161.767.424→626.905.088 bytes;delta inclui sistema. DumpWindows1.088.760.882 bytes foi preservado após acesso de leitura negado,sem mudança de permissões ou elevação. Nenhum novo encerramento fiscal.",
+        "110 isolado verificado no D::160 casos/3.296 checks nativos,24 pares locais,101INVALID/35ACTION_REQUIRED;72 oráculos PythonDecimal,PHPStan do componente/Pint3 e auditoria aprovados.23 positivos têm preço proporcional diferente do consumoRTC e quatro têm total distinto do brutoRTC,sem alterar fatos ou reconciliar automaticamente bases. Conteúdo/envelope,origem,observações,cobertura por datasISS,ciclo de vida e linhas/partes/contrato vinculados após105/106/107 frescos.83 hashes108 intactos. Nenhuma instalação110,testesPest novos,baseISS,câmbio,XML ou aprovação legal.",
+        "110 preserva154 casos/resultados iniciais e acrescenta seis recusas por onerosidade não qualificada. Primeiro Pint com dois problemas de estilo e primeira formatação sem permissão de escrita em três arquivos temporários preservados;ajustado somente dono desses arquivos no /tmp,formatado e verificado novamente. Conhecimento18:00UTC das fixtures é sintético,com hashes de mapeamento rederivados;negócios/datas/identidades originais preservados nos positivos.",
+        "CorpusCLI108 terminal14:16:45:58 cenários/116 decisões e116 replays próprios,427 históricos exatos,92 memórias nominais104 iguais e72 checks decimais independentes;76 fontes válidas/124 bloqueios. Conferência prévia da regressão iniciada,sem reinício. Corretivo de revisão:30 nomes104 já têm upstream-export-,portanto o lookup do coletor estava correto;verificador por original_path é redundância independente. Errata preservada no D:,sem editar recibos congeláveis.",
+        "Pesquisa109 parcial:11 capturas oficiais,quatro PDFs/oito páginas integralmente lidos e visualmente conferidos;Pesquisa31 completa2490 linhas e perguntas copiadas com SHA256. Consultas têm escopos de importação distintos;divergência cabeçalho1.07/corpo17.01 naSC24/2014 preservada.83 hashes108 intactos. Nenhuma política cambial de exportação,preço/baseISS por documento,vigência integral ou componente109 aprovado/instalado.",
+        "Expansão108 auditada:36 cenários/72 testes novos,904/12.595 dirigidos totais e671 testes novos108.56 contextos nacionais,56 corpos municipais e60 identidades iguais aos originais;seis recusas cambiais73 preservadas. PHPStan/Pint572 gerais aprovados. Registros originais preservados. A revisão posterior corrigiu a inferência sobre prefixos:lookup original por nome já era correto;verificador por original_path confirmou52 controles redundantes. Nenhuma expectativa fiscal ou runtime alterado por essa correção documental.",
+        "Limpeza adicional19/10 às14:05:1.060 arquivos/117.199.472 bytes lógicos removidos de temporários antigos e entradas descartáveis f_ do cache Chrome,sem apagar índice,perfil,cookies ou senhas. Cópias SHA256 no D:/ProjetoSaasExports/cleanup-c-20261019-afternoon.38 indisponíveis preservados;livre3.397.189.632 bytes após execução. Não somar variação livre aos bytes lógicos nem atribuir avanço fiscal à manutenção.",
+        "108 instalado:105/106/107 em namespace do motor,política própria e opt-in após nominalRTC.832/11.355 dirigidos,599 testes novos,PHPStan geral,Pint570 e auditoria.22 cenários/44 avaliaçõesRTC/SaaS,positivos com datasISS diferentes daRTC e comparação do nominal104.11.131 entradas104 intactas,apenas engine/assessor alterados com originais arquivados;83 hashes atuais.76 fontes válidas/124 bloqueios. Nenhum aceite108 ou obrigação documental completa.",
+        "Transporte108 final usa lista de uma prova de regimeISS,normalizada para105;FactDefinition/schema histórico preservados. Drafts1/2 e falhas preservados. Projeção exclui o portador do próprio hash e somente cinco chaves de apresentação quandoDERIVED,sem descartar entradas fornecidas ou negócios derivados desconhecidos.11 testes específicos. Primeira bateria801 aprovados/20 falhas no integrado preservada;correção de contexto sem mudar expectativas fiscais.107 instalado recebeu também ajustePint de import redundante/estilo,predecessor preservado.",
+        "107 isolado verificado:255 casos novos e128 controles históricos103 inalterados,5.708 verificações;26 pares locais,106ACTION_REQUIRED e123INVALID.24 transformações sobre103 original arquivado,guardas de ID/canal/numeração preservadas.105/106 reavaliados,competência por dataISS própria,emissão confrontada com evento/fuso e mapeamento com observações/hash do par e documento. PHPStan/Pint e auditoria aprovados;11.133 entradas/79 hashes104 e originais105/106 intactos. Sem integração107,identidade fiscal integral ou aprovação legal.",
+        "106 isolado verificado:174 casos/3.586 verificações,18 composições locais,84ACTION_REQUIRED e72INVALID.105 reexecutado com provas atuais;95/97 inalterados recebem dataISS de cada documento. Prova do mesmo evento liga unidade,partes,referências e hashes dos três qualificadores. Competência/identidadeDPS ainda não requalificadas. PHPStan/Pint finais e auditoria aprovados,11.133 entradas/79 hashes104 e originais105 intactos. Primeiras falhas estática/estilo preservadas;sem instalação,XML ou aprovação legal.",
+        "104 aceito localmente:6.529 testes/98.175 verificações,exit0;11.133 entradas sem alterações,adições ou remoções. PHPStan/Pint562 finais,auditoria independente,79 hashes runtime e duas cópias conferidas. Corpus90/337,71 fontes,123 bloqueios e52 memórias nominais101 iguais. Aceite101 preservado.7/7 marcos,100% desta integração,não da Fase4B.",
+        "105 componente isolado:115 casos/2.007 verificações,13 vínculos locais,58ACTION_REQUIRED e44INVALID. PHPStan/Pint de dois arquivos e auditoria aprovados;primeira falha de estilo e fonte anterior preservadas,saída nativa idêntica após formatar. Provas sintéticas de prestação/etapa e regime vinculam conteúdo,envelope,partes,papel e datas;inclui ISS anterior/posterior aoRTC e diferenças por unidade/papel.79 hashes104 intactos. Nenhum componente105 instalado ou data material legalmente qualificada.",
+        "Limpeza C: encerrada:1.517 arquivos/508.760.135 bytes lógicos removidos em19/10,com cópias recuperáveis no D: e SHA256 novamente conferidos. Temporários,caches e instalador temporário sem uso;projeto,evidências,ambientes e paginação preservados. Entrega de manutenção100%:3/3 marcos (seleção segura,remoção recuperável,revisão do acompanhamento). Última medição250.703.872 bytes livres;pressão de armazenamento não resolvida. Oito grupos4B e fases revisados,sem novo encerramento fiscal.",
+        "CorpusCLI104 V2 terminal aprovado:45 cenários/90 decisões e replays próprios,337 históricos exatos,71 fontes válidas e123 bloqueios.52 memórias nominais comparadas com snapshots101 capturados permaneceram idênticas. Coletor valida exit1 exclusivamente para RTC INVALID esperado;demais execuções/replays exigem exit0.",
+        "Regressão104:primeira chamada recusada pelo piso de espaço antes dos testes,recusa preservada. Execução única posterior terminou6.529/98.175,exit0,com11.133 entradas intactas e79 hashes. Logs no D:,sem reinício por timeout;aceite independente publicado.",
+        "Limpeza adicional:91 temporários/caches de download removidos,401.603.065 bytes lógicos,cópias SHA256 no D:. Instalador temporário Docker sem processo/lock e caches antigos;instalação,ambientes,evidências,discos virtuais e arquivos de paginação preservados. Espaço final medido297.324.544 bytes;ganho livre não equivale aos bytes lógicos removidos.",
+        "Pesquisa105 parcial:leituras30/36,13 capturas e seis páginas PDF preservadas. DivergênciaSC08/2017 confrontada com leis13701/15406. Sete avaliaçõesPHP reproduzem acoplamento96/103;105 isolado posteriormente implementado e verificado115/2.007,mas ainda não integrado aos resultados/identidade. Metadados separados dos efeitos;sem nova vigência/data material legalmente qualificada.79 hashes104 intactos. Aplicabilidade,corpus composto e integração pendentes.",
+        "104 instalado sob política própria:opt-in e dois mapeamentosDPS somente após gates RTC/ISS96/98;referências originais preservadas.103 instalado com mudança exclusiva de namespace. Cinco cópias oficiais históricas adicionais,71 entradas de fonte. Sem alterar alíquotas,transição,classificações anteriores ou fechar obrigação documental.",
+        "104 dirigidos terminais:3.378 testes/42.846 verificações,233 novos;PHPStan geral e Pint562 aprovados.45 cenários preparados,15 de identidade e30 rotas101 incluindo USD/BRL e recusas anteriores. Auditoria:9.270 entradas101 intactas,apenas engine/assessor alterados com originais arquivados;aceite101 imutável.",
+        "Primeiro corpus104 parou por expectativa do coletor:RTC retorna exit1 para INVALID esperado;JSON recusou corretamente papel duplicado. Fonte/logs preservados;V2 exige o exit exato por comando/status,sem alterar engine ou casos. CorpusV2 posteriormente aprovado com90 decisões/replays e337 históricos.",
+        "Limpeza19/10:1.426 arquivos com mais de48 horas removidos de temporários e caches Composer/npm;107.157.070 bytes lógicos com cópias SHA256 verificadas no D:.66 indisponíveis,189 recentes e2 discos virtuais preservados. Livre durante a execução:1.459.052.544→1.639.915.520 bytes;delta inclui atividade concorrente do sistema. Projeto,evidências e ambientes preservados.",
+        "Preparação103 concluída:manual municipal original igual à captura oficial,componente isolado e contrato próprios;128 casos/2.350 verificações,11 vínculos locais,59ACTION_REQUIRED e58INVALID. PHPStan/Pint e auditoriaV2 aprovados;9.272 entradas/78 hashes101 intactos. Primeiras falhas preservadas. Sem instalação,testesPest novos,regressão completa ou nova aceitação fiscal.",
+        "Pesquisa102 concluída:manualAPI/portais/ZIP/anexos oficiais capturados;manual seis páginas,página4 visual e tiposXSD conferidos.58 linhas de dois anexos cruzadas ArtifactTool/openpyxl,sem editar fontes. Primeira comparação fórmula/valor preservada e corrigida.9.272 entradas e78 hashes101 intactos;nenhuma implementação fiscal nova.",
+        "101 aceito localmente:6.296 testes/94.755 verificações,exit0;9.272 entradas sem alterações,adições ou remoções. PHPStan/Pint558 finais,auditoria independente,78 hashes runtime e duas cópias conferidos.98 e predecessores preservados. Fonte1.70 disponível não significa decisão fiscal automática.",
+        "Revisão4B.8.11 delimitada:18 invariantes vinculadas/executadas no SaaS integrado101,17 caminhos presentes e um fora da vigência. SaídaCLI,hashes e replay conferidos. Não comprova matriz integral por família/período;regressão101 encerrada e aceita.",
+        "Revisão delimitada4B.6:fonte atual preservada,hash/versão/vigência e distinção referência/correlação/regra examinados. Não encerra todos os mapeamentos nem o grupo4B.6. Regressão101 encerrada sem reinício ou alterações nas entradas congeladas.",
+        "CorpusCLI101 terminal:61 cenários/122 decisões e replays próprios;215 históricos exatos,66 fontes válidas e122 bloqueios.9.272 entradas congeladas e78 hashes conferidos após regressão completa;sem liberação de produção.",
+        "Limpeza:823 arquivos antigos,115.933.152 bytes lógicos removidos com cópias recuperáveis verificadas no D:.66 indisponíveis/em uso e1.413 recentes preservados. Ganho livre medido na execução:80.371.712 bytes;variações posteriores incluem atividade do sistema. Conferência atual:C:1.977.196.544 bytes livres.",
+        "101 integrado e aceito:bundle173 classes/18CST,referência100 nas duas consultas cClassTrib;66 fontes válidas e122 bloqueios.3.186 testes/40.482 verificações dirigidas,3.123 testes novos. Alíquotas,transição,regras decisórias,correlações,cIndOp,facts e perguntas anteriores preservados.",
+        "61 cenáriosV2 com fatos intactos e conhecimento não anterior ao original;provas futuras continuam sintéticas.122 testes de integração comparam status/motivos98/101. Primeira tentativa temporal e falhas preservadas. CorpusCLI próprio terminal aprovado.",
+        "Regressão98 terminal:3.173 testes/55.383 verificações,exit0.7.577 entradas sem alterações,adições ou remoções. PHPStan/Pint554 finais e auditoria independente aprovados;77 hashes runtime e duas cópias de evidência conferidos. Aceitação98 publicada,96 e históricos preservados.",
+        "Preparação100 isolada:2.981 casos/37.029 verificações,2.941 pares de173 códigos×17 modelos e40 casos adicionais. PHPStan/Pint de dois arquivos e auditoria de integridade aprovados. Nenhuma decisão tributária,alíquota ou campo documental selecionado;runtime98 intacto.",
+        "Pesquisa99 concluída:seis capturas oficiais,tabela cClassTrib1.70 com173 códigos/18CST,13 páginas PDF e confronto entre bibliotecas. Incorporada ao101 aceito localmente;relatórios99/100 preservam seus momentos de preparação.",
+        "61 casos RTC contrafactuais99 mantiveram resultados após normalizar só a versão;sem novos testes Pest,replays aceitos ou validação integrada.9 códigos novos,indicador documental de doação e alteração NFSe410028 exigem migração versionada.7.577 entradas/77 hashes98 intactos na auditoria99.",
+        "98:97 integrado aos fatos atuais e aos dois resultados96,com município3550308 do prestador vinculado e provas municipais independentes. Sem replay recursivo;RTC estrangeiro não impõe não incidência ISS.",
+        "211 testes permanentes novos;392 testes/5.989 verificações dirigidas após formatação. PHPStan e Pint554 gerais aprovados. Primeira falha de estilo e arquivo anterior preservados.",
+        "30 cenários/60 decisões e60 replays próprios pelos dois runners;155 históricos exatos incluindo os42 snapshots96. ISS integral e valores RTC anteriores preservados.62 fontes válidas e121 bloqueios de produção.",
+        "Bundle98,dois fatos/perguntas e controles próprios;catálogos de alíquotas/transição anteriores não alterados. Antes da integração,6.121 entradas e75 hashes96 conferidos e predecessores arquivados.",
+        "Preflight98 e pós-checks:7.577 entradas congeladas,incluindo scripts verificadores,77 hashes runtime e apenas duas alterações autorizadas entre as entradas96. Regressão iniciada uma única vez e encerrada,com logs no D:.",
+        "Preparações95/97 e aceitações anteriores preservadas no histórico e nas evidências. Provas de resultado e vínculo municipal não são autenticação governamental nem política cambial de exportação.",
+        "ISS integral anterior preservado. Prova de resultado local não implica identidade fiscal,data material,conversão,base,imposto por documento,XML,lançamento ou produção.",
+        "Oito grupos4B e fases revisados:3/4A encerradas funcionalmente em Sandbox;4B parcial,5–7 planejadas. Auditoria80 requisitos continua pendente."
+      ],
+      "pending": [
+        "Ampliar112 para os50 cenários originais108 ainda não transportados.58 fontes estão inventariadas;validar sucessoRTC/USD,nominais,câmbio e recusas sem reparar silenciosamente corrupção histórica.",
+        "Capturar comandos fiscais112,dois fluxos,snapshots/replays próprios e543 controles históricos. Não há corpusCLI112 concluído neste corte.",
+        "Congelar inventário final após ampliação/corpus e executar regressão completa,qualidade final e auditoria independente.7638 testes é somente expectativa da árvore atual,não resultado;nenhuma suíte completa112 iniciada.",
+        "Concluir fonte cambial própria do ISS,qualificação jurídica e base/imposto/parXML por documento. Composição de preço não resolve essas etapas;parâmetros municipais anteriores são fixtures preservadas.",
+        "Auditar individualmente os80 requisitos originais. Oito grupos4B continuam parciais;3/4A encerradas em Sandbox,5–7 planejadas;produção bloqueada.",
+        "C: 2991263744 bytes livres nesta leitura;variação inclui o sistema,não nova limpeza. Logs/evidências grandes no D:,preservar históricos,ambientes,paginação e discos virtuais."
+      ],
+      "focus": {
+        "summary": "Preços e composições110/111 já estão no motor, com transporte112 próprio. A validação inicial passou; o novo aceite ainda está pendente.",
+        "finished": [
+          "1.342 testes / 19.170 verificações aprovados, incluindo 438 testes novos.",
+          "PHPStan, Pint e auditoria inicial passaram; versões e evidências anteriores preservadas."
+        ],
+        "pending": [
+          "Ampliar a cobertura a montante, especialmente após conversão RTC/USD bem-sucedida.",
+          "Concluir CLI, 543 controles históricos, regressão completa e aceite independente112."
+        ],
+        "next_step": "Transportar os 50 cenários108 restantes para112 sem reescrever seus fatos de negócio; depois capturar o corpus CLI."
+      }
+    },
+    {
+      "updated_at": "2026-10-19T15:53:54.5017602-03:00",
+      "title": "112 — transporte instalado e dirigido inicial aprovado",
+      "state": "3/7 marcos;43% da integração delimitada",
+      "summary": "112 instalado em draft2:quatro classes e7 fatos/perguntas,94 fontes,438 testes novos.1.342 testes/19.170 checks dirigidos com predecessores,PHPStan/Pint580 e auditoria inicial17.238 checks aprovados.13.393 entradas108 protegidas intactas,duas mudanças previstas arquivadas;87 hashes atuais. Ainda faltam50 cenários108 no novo transporte,incluindo sucessoRTC/USD,CLI/543históricos,regressão completa e aceite112.108 último aceite;produção bloqueada."
+    },
+    {
+      "title": "Preço ISS111 · preparação local validada",
+      "updated_at": "2026-10-19T15:21:18.5248904-03:00",
+      "state": "111 preparação isolada verificada:107 casos/2.239 checks,50 composições locais/42INVALID/15ACTION_REQUIRED;400 oráculos Decimal,160 controles110 completos iguais,PHPStan/Pint e auditoria1.793 checks aprovados.18 capturas/192 checks de fontes/runtime;cadeia18270/IN15 com publicação08/12/2025 qualificada no escopo construção,não dedução de software.83 hashes108 intactos;nenhuma integração111,base/imposto/FX/XML ou produção aprovada.",
+      "summary": "100% = 4/4 marcos desta preparação isolada111:fontes/contrato,componente,casos/qualidade e auditoria/documentação. Não é percentual funcional4B,nem nova aceitação integrada;108 continua último aceite local do motor.",
+      "milestones": [
+        {
+          "title": "18 capturas primárias,192 checks de fontes/runtime e contrato de composição",
+          "complete": true
+        },
+        {
+          "title": "Componente111 com110/107/106/105 frescos e provas próprias de ajustes",
+          "complete": true
+        },
+        {
+          "title": "107 casos/2.239 checks,160 controles110 completos e PHPStan/Pint",
+          "complete": true
+        },
+        {
+          "title": "400 oráculos Decimal,auditoria1.793 checks,documentação e console",
+          "complete": true
+        }
+      ],
+      "focus": {
+        "summary": "Composição de preços por documento validada isoladamente, com descontos e entradas brutas ou líquidas. O motor integrado permanece no aceite108.",
+        "finished": [
+          "107 casos / 2.239 verificações e 400 cálculos decimais independentes aprovados.",
+          "160 controles110 preservados; PHPStan, Pint e auditoria final passaram."
+        ],
+        "pending": [
+          "Integrar110/111 com transporte, fatos, perguntas e corpus próprios.",
+          "Concluir câmbio/base/imposto ISS e par XML; auditar os 80 requisitos originais."
+        ],
+        "next_step": "Definir o transporte versionado de preços e provas e integrar110/111, preservando os controles nominais108."
+      },
+      "pending": [
+        "Integrar110/111 em versão própria:contrato de transporte sem autorreferência de hashes,fatos/perguntas,trace,testes permanentes/corpus/replays e nova regressão/aceite. Composição local concluída não qualifica baseISS,conversão,tributo ou emissão.",
+        "Concluir aplicabilidade municipal/histórica,cobertura de regimes e ciclo documental;integração local108 não significa aprovação jurídica da prestação,competência,identidade ou emissão.",
+        "Composição doID não demonstra autorização municipal/cadastral,não duplicidade remota ou emissão válida. Esses gates permanecem separados e não serão inferidos de um identificador sintético.",
+        "Qualificar regras de autônomos/doação e indicadores documentais sem seleção automática da tabela.101 usa referência1.70;bundle98 e históricos preservam1.60. A migração101 não materializa por si essas novas regras.",
+        "Qualificar identidade fiscal,data material,conversão documental e bases ISS/RTC por documento;projetar o par XML com schema/ambiente/data comprovados.",
+        "Não transportar automaticamente a cotação RTC ao ISS;confrontar CTN143 e legislação municipal aplicável,sem generalizar consultas de importação para exportação.",
+        "Documento definitivo de importação,demais famílias/períodos e auditoria individual dos80 requisitos. Nenhum dos oito grupos4B está formalmente encerrado.",
+        "C: medição desta revisão 2971369472 bytes livres;variação inclui paginação/atividade do sistema,não nova limpeza. Logs grandes no D:.Preservar evidências,ambientes,paginação e discos virtuais;dump anterior permanece sem acesso,sem mudança de permissões."
+      ]
+    },
+    {
+      "updated_at": "2026-10-19T15:21:18.5248904-03:00",
+      "title": "111 — composição de preços por documento",
+      "state": "Preparação isolada verificada;4/4 marcos",
+      "summary": "111 preparação isolada verificada:107 casos/2.239 checks,50 composições locais/42INVALID/15ACTION_REQUIRED;400 oráculos Decimal,160 controles110 completos iguais,PHPStan/Pint e auditoria1.793 checks aprovados.18 capturas/192 checks de fontes/runtime;cadeia18270/IN15 com publicação08/12/2025 qualificada no escopo construção,não dedução de software.83 hashes108 intactos;nenhuma integração111,base/imposto/FX/XML ou produção aprovada."
+    },
+    {
+      "title": "Integração108 concluída · console organizado",
+      "updated_at": "2026-10-19T15:01:21.5611384-03:00",
+      "state": "Aceite local108 publicado após regressão e auditoria independente. Console reorganizado e verificado em desktop/celular. Fase4B continua parcial; produção bloqueada.",
+      "summary": "100% = 7/7 marcos da entrega108 aceitos localmente. Console: organização, atualização dos registros e validação técnica/visual concluídas (3/3). Nenhum desses percentuais representa a cobertura global da Fase4B.",
+      "milestones": [
+        {
+          "title": "Protótipos105/106/107 verificados com datas independentes",
+          "complete": true
+        },
+        {
+          "title": "11.133 entradas104 conferidas e predecessores arquivados",
+          "complete": true
+        },
+        {
+          "title": "Integração,bundle108draft3,seis fatos/perguntas e fontes próprios",
+          "complete": true
+        },
+        {
+          "title": "904 testes/12.595 verificações,PHPStan/Pint572 e auditoria dirigida/upstream",
+          "complete": true
+        },
+        {
+          "title": "CorpusCLI116 decisões/replays próprios e427 históricos terminais",
+          "complete": true
+        },
+        {
+          "title": "Regressão completa108 com entradas congeladas e qualidade final",
+          "complete": true
+        },
+        {
+          "title": "Auditoria independente e publicação do aceite local108",
+          "complete": true
+        }
+      ],
+      "focus": {
+        "summary": "Corte108 aceito em desenvolvimento local. O console agora separa situação atual, fases/objetivos e histórico pesquisável.",
+        "finished": [
+          "7.200 testes / 107.350 verificações; auditoria independente e 83 hashes conferidos.",
+          "Console validado: 28 checks do observador e 17 verificações de navegação, desktop e celular."
+        ],
+        "pending": [
+          "Qualificar preço/base ISS, descontos e conversão por documento; 110 ainda não integrado.",
+          "Auditar os 80 requisitos originais. Os oito grupos4B permanecem parciais."
+        ],
+        "next_step": "Avançar no contrato versionado de preço/base ISS por documento (111), preservando a separação entre preço contratual, alocação RTC e regra cambial."
+      }
+    },
+    {
+      "updated_at": "2026-10-19T15:01:21.5611384-03:00",
+      "title": "108 aceito e console reorganizado",
+      "state": "Concluído no escopo local;7/7 marcos108 e3/3 manutenção",
+      "summary": "Aceite independente1087.200/107.350 e83 hashes. Console28 checks/17 verificações de navegador;histórico preservado. Diagnóstico111 confirma recusa do campo genérico de dedução em software,não valida política de descontos. Oito grupos4B parciais;produção bloqueada."
+    },
+    {
+      "updated_at": "2026-10-19T15:01:21.5611384-03:00",
+      "title": "Corte anterior · preços110 e limpeza",
+      "state": "110 isolado160 casos/3.296 checks,24 vínculos locais/101INVALID/35ACTION_REQUIRED,72 oráculos decimais,PHPStan/Pint3 e auditoria aprovados;sem instalação ou baseISS/câmbio qualificados.83 hashes108 intactos. Regressão108 única viva,13.395 arquivos congelados,7200 testes esperados;sem resultado terminal. Limpeza adicional1.793 caches/539.818.347 bytes lógicos,cópias SHA256 no D:,C:626.905.088 bytes livres;dumpWindows preservado por acesso negado.104 último aceite;produção bloqueada.",
+      "summary": "Percentual principal71%=5/7 marcos da integração108;regressão/qualidade final e aceite independente pendentes. Preparação110 concluída100%=4/4 marcos próprios:contrato,componente isolado,casos/qualidade e auditoria/documentação. Não é percentual funcional4B ou aprovação jurídica/produção."
+    },
+    {
+      "title": "Limpeza C: — caches antigos com regressão108 preservada",
+      "state": "Manutenção3/3 marcos,100%;capacidade ainda limitada",
+      "summary": "1.793 arquivos/539.818.347 bytes lógicos removidos,cópias SHA256 recuperáveis no D:.Livre161.767.424→626.905.088 bytes,com atividade concorrente. Extensões instaladas,perfis,ambientes,evidências,paginação e suíte preservados.DumpWindows antigo permanece por acesso negado,sem alteração de permissões. Nenhuma liberação fiscal ou novo aceite108.",
+      "evidence": [
+        "docs/fiscal/cleanup-c-user-caches-20261019-late.md",
+        "D:/ProjetoSaasExports/cleanup-c-user-caches-20261019-v2/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Preços110 — componente contratual isolado verificado",
+      "state": "Preparação4/4 marcos,100%;não integrada",
+      "summary": "160 casos/3.296 checks,24 vínculos locais/101INVALID/35ACTION_REQUIRED,72 controles decimais independentes,PHPStan/Pint3 e auditoria.83 hashes108 intactos;13.395 entradas da regressão108 continuam congeladas. Preços vinculados a documentos/contrato/eventos não são baseISS ou regra cambial;sem novos testesPest,XML,aceite108 ou avanço formal dos oito grupos. Primeiras tentativas de estilo/permissão preservadas.",
+      "evidence": [
+        "docs/fiscal/phase4b-price110-local-component.md",
+        "D:/ProjetoSaasExports/phase4b-price110-local-preparation-20261019/price110-local-component-validation.json"
+      ]
+    },
+    {
+      "title": "Datados108 — corpus terminal e pesquisaISS109",
+      "state": "5/7 marcos,71%;regressão/aceite pendentes",
+      "summary": "116 decisões/replays próprios,427 históricos exatos,92 comparações nominais104 e72 checks decimais;76 fontes/124 bloqueios. Conferência prévia da regressão viva. Pesquisa109 com11 capturas/oito páginas PDF e83 hashes108 intactos,sem nova política instalada. Corrigida inferência anterior sobre prefixos:30 nomes104 já correspondiam ao coletor;errata explícita preservada fora das entradas congeláveis.",
+      "evidence": [
+        "docs/fiscal/phase4b-dated108-current-integration.md",
+        "docs/fiscal/phase4b-iss-fx109-source-scope-review.md"
+      ]
+    },
+    {
+      "title": "Datados108 — expansão a montante auditada",
+      "state": "4/7 marcos,57%;corpus histórico em execução",
+      "summary": "36 cenários adicionais/72 testes novos,904/12.595 dirigidos e671 testes novos108.56 contextos95,56 provas97 e60 identidades originais preservados;PHPStan/Pint572 gerais aprovados.58 cenários nos dois runners e replays próprios percorridos;históricos ainda vivos,sem aceite de corpus/regressão. Preflight/regressão exclusiva/auditoria final preparados,com comparação capturada104 por original_path.",
+      "evidence": [
+        "docs/fiscal/phase4b-dated108-current-integration.md",
+        "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/dated108-upstream-validation.json"
+      ]
+    },
+    {
+      "title": "Limpeza C: — nova solicitação19/10 à tarde",
+      "state": "Concluída;3/3 marcos,100% da manutenção",
+      "summary": "1.060 arquivos/117.199.472 bytes lógicos removidos com cópias SHA256 recuperáveis no D:.38 indisponíveis preservados. Livre3.279.863.808→3.397.189.632 bytes,com atividade concorrente. Projeto,evidências,ambientes,paginação e discos virtuais preservados;fases e oito objetivos revisados sem novo aceite fiscal.",
+      "evidence": [
+        "docs/fiscal/cleanup-c-20261019-afternoon.md",
+        "D:/ProjetoSaasExports/cleanup-c-20261019-afternoon/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Datados108 — integração inicial e checks dirigidos aprovados",
+      "state": "4/7 marcos,57% da integração delimitada;sem aceite108",
+      "summary": "832 testes/11.355 verificações,599 novos;PHPStan geral,Pint570 e auditoria.22 cenários/44 avaliaçõesRTC/SaaS com nominal104 preservado;11.131 entradas104 intactas,2 mudanças autorizadas arquivadas e83 hashes atuais. Bundle108draft3,seis fatos/perguntas,76 fontes/124 bloqueios. Primeiras falhas de schema/transporte/contexto integrado e estilo preservadas;expectativas fiscais mantidas. CorpusCLI ampliado/replays,regressão completa e aceite independente pendentes.4B parcial e produção bloqueada.",
+      "evidence": [
+        "docs/fiscal/phase4b-dated108-current-integration.md",
+        "D:/ProjetoSaasExports/phase4b-dated108-integration-20261019/dated108-directed-validation.json"
+      ]
+    },
+    {
+      "title": "DPS107 — identidade e competência pela dataISS de cada documento",
+      "state": "Protótipo isolado verificado;4/4 marcos,100% dessa entrega delimitada",
+      "criterion": "Contrato/derivação,implementação,corpus/qualidade final e auditoria;quatro marcos com igual peso,não integração ou aprovação legal.",
+      "summary": "255 casos107+128 controles103 inalterados,5.708 verificações totais;26 pares locais,106ACTION_REQUIRED e123INVALID.24 transformações auditáveis preservam guardas103,competência ligada ao106 fresco sem mutar dataRTC;emissão/evento/fuso e observações conferidos. PHPStan/Pint finais e auditoria,11.133 entradas/79 hashes104 intactos. Sem instalação107,bundle,fato/pergunta,testePest novo,XML ou aprovação legal.104 último aceite integrado;4B parcial e produção bloqueada.",
+      "evidence": [
+        "docs/fiscal/phase4b-identity107-dated-preparation.md",
+        "D:/ProjetoSaasExports/phase4b-identity107-dated-preparation-20261019/identity107-local-dated-validation.json"
+      ]
+    },
+    {
+      "title": "Composição106 — data material e resultado por documento",
+      "state": "Protótipo isolado verificado;4/4 marcos,100% dessa entrega delimitada",
+      "criterion": "Contrato,implementação,corpus/qualidade final e auditoria;quatro marcos com igual peso,não pesquisa ou integração completas.",
+      "summary": "174 casos/3.586 verificações,18 composições locais,84ACTION_REQUIRED e72INVALID.105 fresco,95/97 inalterados com data por papel,eventos/unidades ligados por prova própria;fronteiras de disponibilidade106 conferidas. PHPStan/Pint finais,auditoria e11.133 entradas/79 hashes104 intactos. Sem competênciaDPS nova,instalação106,testePest permanente,XML ou aprovação legal.104 permanece último aceite integrado6.529/98.175;4B parcial e produção bloqueada.",
+      "evidence": [
+        "docs/fiscal/phase4b-iss-date106-result-composition.md",
+        "D:/ProjetoSaasExports/phase4b-iss-date106-result-composition-20261019/dated106-local-composition-validation.json"
+      ]
+    },
+    {
+      "title": "Identidade104 — aceite local após regressão terminal",
+      "state": "Aceito localmente;7/7 marcos,100% da integração delimitada",
+      "summary": "6.529 testes/98.175 verificações,exit0;11.133 entradas intactas,79 hashes e duas cópias conferidos. PHPStan/Pint562 finais,auditoria independente e corpus90/337;71 fontes,123 bloqueios e52 memórias nominais101 preservadas.105 isolado:115 casos/2.007 verificações,13 vínculos locais,58ACTION_REQUIRED e44INVALID,PHPStan/Pint aprovados. Sem integração105,data material legalmente qualificada,XML ou conclusão4B. Produção bloqueada.",
+      "evidence": [
+        "storage/app/phase4b-identity104-development-20261019/identity104-development-validation.json",
+        "storage/app/phase4b-identity104-development-20261019/evidence-copy-receipt.json",
+        "docs/fiscal/phase4b-iss-date105-local-component.md",
+        "D:/ProjetoSaasExports/phase4b-iss-date105-local-preparation-20261019/date105-local-component-validation.json"
+      ]
+    },
+    {
+      "title": "ISS105 — revisão municipal e diagnóstico de datas independentes",
+      "state": "Pesquisa parcial;104 permanece5/7 marcos,71%,regressão ativa",
+      "summary": "13 capturas verificadas,seis páginas PDF lidas/visualmente conferidas,metadados de três atos e sete avaliaçõesPHP.96/103 ainda acoplam dataISS/competência à dataRTC;contrato proposto exige vinculação por papel e positivos com datas diferentes. DivergênciaSC08 preservada;primeira falha do auditor por campo95 ausente não alterou runtime ou saídas nativas.79 hashes104 intactos. Sem implementação105,vigência/data material aceita,XML ou encerramento4B.",
+      "evidence": [
+        "docs/fiscal/phase4b-iss-date105-municipal-supplement.md",
+        "docs/fiscal/phase4b-iss-date105-material-contract-draft.md",
+        "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-supplement-and-coupling-review-v2.json",
+        "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-norm-metadata-review.json"
+      ]
+    },
+    {
+      "title": "Limpeza C: — remoções recuperáveis e encerramento conferidos",
+      "state": "Concluída;3/3 marcos,100% da manutenção delimitada",
+      "criterion": "Seleção segura,remoção com cópias verificadas e revisão do console/objetivos/fases;três marcos com igual peso.",
+      "summary": "1.517 arquivos/508.760.135 bytes lógicos removidos em19/10;SHA256 das cópias recuperáveis no D: novamente conferidos. C: ainda crítico,250.703.872 bytes livres na medição. Não equivale ao ganho físico. Nenhum dado fiscal,ambiente instalado ou arquivo de paginação excluído.104 continua5/7 marcos,71%,com a mesma suíte ativa;3/4A encerradas,4B parcial e5–7 planejadas,produção bloqueada.",
+      "evidence": [
+        "docs/fiscal/cleanup-c-20261019-closure.md",
+        "D:/ProjetoSaasExports/cleanup-c-temp-20261019-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-docker-update-20261019-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-download-caches-20261019-v1/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Pesquisa105 — leituras internas e escopo primário registrados",
+      "state": "Pesquisa parcial;integração104 permanece5/7 marcos,71%,regressão ativa",
+      "summary": "10.132 linhas das respostas30/36 e perguntas lidas,cópias/hash preservados;cinco capturas verificadas e revisão delimitada de contexto normativo. ÍndiceV1 preservado,V2 distingue referências/sufixos/tachados;numeração repetida exige seleção humana.79 hashes104 intactos. Sem componente,vigência ou data material qualificada;pesquisa105 não concluída. Nenhuma entrada congelada editada por este trabalho.",
+      "evidence": [
+        "docs/fiscal/phase4b-iss-date105-source-scope-review.md",
+        "D:/ProjetoSaasExports/phase4b-iss-date105-primary-research-20261019/date105-source-scope-review.json"
+      ]
+    },
+    {
+      "title": "Identidade104 — regressão iniciada após preflight concluído",
+      "state": "5/7 marcos;71% da integração delimitada,suíte ativa",
+      "summary": "11.133 entradas congeladas e79 hashes runtime após corpus90/337 aprovado. Regressão completa confirmada ativa no contêiner,6.529 testes esperados sem aprovação antecipada. Primeira recusa por espaço preservada;limpeza recuperável no D:. Checks finais,auditoria e aceite104 ainda pendentes.101 é corte anterior.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-identity104-full-suite-20261019/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-identity104-full-suite-20261019/process-start.json"
+      ]
+    },
+    {
+      "title": "Identidade104 — corpusCLI terminal e preflight da regressão",
+      "state": "5/7 marcos;71% da integração delimitada",
+      "summary": "45 cenários/90 decisões/replays e337 históricos exatos,71 fontes e123 bloqueios.52 memórias nominais iguais aos snapshots101. Primeira regressão recusada por espaço antes dos testes;recusa preservada.91 temporários/caches adicionais removidos com cópias no D:;C:297.324.544 bytes livres. Novo preflight ativo,sem regressão ou aceite104 antecipados.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/cli-v2/identity104-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/regression-first-space-refusal.json"
+      ]
+    },
+    {
+      "title": "Identidade104 — integração e checks dirigidos",
+      "state": "4/7 marcos;57% da integração delimitada,corpusCLI V2 ativo",
+      "summary": "3.378 testes/42.846 verificações,233 testes novos,PHPStan geral e Pint562 aprovados.45 cenários,71 entradas oficiais;9.270 entradas101 intactas e2 alterações runtime autorizadas arquivadas. Primeiro coletor interpretou exit1 de INVALID como falha;corrigido somente o contrato do coletor,fonte/logs preservados. Sem regressão completa ou novo aceite104;101 descreve o runtime anterior.",
+      "evidence": [
+        "docs/fiscal/phase4b-identity104-current-integration.md",
+        "D:/ProjetoSaasExports/phase4b-identity104-integration-20261019/identity104-directed-validation.json"
+      ]
+    },
+    {
+      "title": "Limpeza do C:19/10 — temporários antigos e caches",
+      "state": "Concluída;3/3 marcos,100% da manutenção delimitada",
+      "summary": "1.426 arquivos removidos,107.157.070 bytes lógicos e cópias SHA256 verificadas no D:.66 indisponíveis,189 recentes e2 discos virtuais preservados. Livre ao término1.639.915.520 bytes;delta do disco inclui atividade concorrente. Evidências,projeto e ambientes preservados;sem avanço fiscal ou encerramento adicional de fases.",
+      "evidence": [
+        "D:/ProjetoSaasExports/cleanup-c-temp-20261019-v1/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Identidade103 — preparação local auditada,sem integração",
+      "state": "Concluída;4/4 marcos,100% da preparação delimitada",
+      "summary": "Fonte municipal original confrontada,componente/contrato e128 casos nativos/2.350 verificações,PHPStan/Pint e auditoriaV2 aprovados.9.272 entradas/78 hashes101 intactos. Sem instalação ou nova aceitação fiscal;composição local não prova cadastro,unicidade remota,data material,XML ou produção. Integração versionada pendente.",
+      "evidence": [
+        "docs/fiscal/phase4b-identity103-local-preparation.md",
+        "D:/ProjetoSaasExports/phase4b-identity103-local-preparation-20261016/identity103-preparation-validation.json"
+      ]
+    },
+    {
+      "title": "Identidade102 — pesquisa primária e integridade",
+      "state": "Pesquisa concluída;4/4 marcos,100% do alcance delimitado",
+      "summary": "Seis capturas oficiais,manual seis páginas e página4 visual,tiposXSD e58 linhas de dois anexos cruzados. Primeira tentativa fórmula/valor preservada.9.272 entradas/78 hashes101 intactos. Sem componente instalado,novos testesPest,autorização cadastral,XML ou produção.",
+      "evidence": [
+        "docs/fiscal/phase4b-identity102-primary-research.md",
+        "D:/ProjetoSaasExports/phase4b-identity102-primary-preparation-20261016/identity102-research-validation-v2.json"
+      ]
+    },
+    {
+      "title": "Catálogo101 — aceitação local após regressão terminal",
+      "state": "Aceito localmente;7/7 marcos,100% da integração delimitada",
+      "summary": "6.296 testes/94.755 verificações,9.272 entradas intactas,78 hashes e duas cópias conferidos. PHPStan/Pint558 finais e auditoria independente.61 cenários/122 decisões/replays,215 históricos,66 fontes válidas e122 bloqueios. Referência1.70 por fonte,tempo,vigência e modelo;sem novas regras automáticas,campos emitidos,XML ou produção.98 preservado.",
+      "evidence": [
+        "storage/app/phase4b-catalog101-development-20261016/catalog101-development-validation.json",
+        "storage/app/phase4b-catalog101-development-20261016/evidence-copy-receipt.json"
+      ]
+    },
+    {
+      "title": "Catálogo101 — corpusCLI terminal aprovado",
+      "state": "5/7 marcos;71% da entrega delimitada",
+      "summary": "61 cenários/122 decisões e replays,215 históricos exatos,66 fontes válidas e122 bloqueios. Preflight da regressão disparado após recusa inicial por espaço,antes de qualquer teste completo. Nenhuma regressão ou aceitação101 declarada por antecipação.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/cli/catalog101-cli-validation.json"
+      ]
+    },
+    {
+      "title": "Catálogo101 — integração e checks dirigidos",
+      "state": "4/7 marcos;57% da entrega delimitada,corpusCLI ativo",
+      "summary": "3.186 testes/40.482 verificações,3.123 testes novos,PHPStan geral e Pint558 aprovados. Fonte1.70,173 classes/18CST e gate nas duas consultas cClassTrib;66 fontes válidas e122 bloqueios no assessor. Primeira preparação recuou conhecimento de provas futuras sintéticas;V2 corrigida com fatos intactos e comparação98/101. Sem regressão integral,aceitação fiscal nova ou produção.",
+      "evidence": [
+        "docs/fiscal/phase4b-catalog101-current-integration.md",
+        "D:/ProjetoSaasExports/phase4b-catalog101-integration-20261016/directed-v5.json"
+      ]
+    },
+    {
+      "title": "Limpeza do C: — encerramento conferido",
+      "state": "Concluída;3/3 marcos,100% da manutenção",
+      "summary": "823 arquivos antigos removidos,115.933.152 bytes lógicos,cópias recuperáveis no D:.66 indisponíveis/em uso e1.413 recentes preservados. C: com1.977.196.544 bytes livres na conferência;sem apagar evidências fiscais.98 última aceitação;101 ainda em validação.",
+      "evidence": [
+        "D:/ProjetoSaasExports/cleanup-c-temp-20261016-v1/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Municipal98 — aceitação local após regressão terminal",
+      "state": "Aceito localmente;7/7 marcos,100% da entrega delimitada",
+      "summary": "3.173 testes/55.383 verificações,7.577 entradas intactas,77 hashes e duas cópias conferidos. PHPStan/Pint554 finais;60 decisões/replays próprios,155 históricos,62 fontes e121 bloqueios. Provas municipaisSP atuais por documento;sem conversão,imposto por documento,XML ou encerramento4B.99/100 preparados separadamente,não instalados.",
+      "evidence": [
+        "storage/app/phase4b-sp98-development-20261016/sp98-development-validation.json",
+        "storage/app/phase4b-sp98-development-20261016/evidence-copy-receipt.json",
+        "docs/fiscal/phase4b-sp98-current-integration.md"
+      ]
+    },
+    {
+      "title": "Referência100 — disponibilidade cClassTrib por modelo preparada",
+      "state": "Preparação100%:4/4 marcos;sem integração ou nova aceitação fiscal",
+      "criterion": "Contrato da fonte,componente,corpus/gates nativos e auditoria de integridade;quatro marcos com igual peso.",
+      "summary": "2.981 casos/37.029 verificações;173 códigos×17 modelos e40 casos adicionais.419 referências disponíveis,2.486INVALID e76ACTION_REQUIRED. PHPStan/Pint finais e7577 entradas/77 hashes98 intactos. Referência não é regra decisória;não seleciona tratamento,alíquota ou campo documental. Somente no D: e/tmp do contêiner.",
+      "evidence": [
+        "docs/fiscal/phase4b-catalog100-reference-preparation.md",
+        "D:/ProjetoSaasExports/phase4b-catalog100-reference-preparation-20261016/catalog100-reference-preparation-validation.json"
+      ]
+    },
+    {
+      "title": "Catálogo99 — referência oficial1.70 preparada sem instalação",
+      "state": "Preparação100%:4/4 marcos;sem nova aceitação fiscal",
+      "criterion": "Capturas/revisão visual,comparação/importação por cabeçalho,61 casos contrafactuais e auditoria de integridade;quatro marcos com igual peso.",
+      "summary": "Seis capturas,13 páginas PDF e planilhas conferidas por duas bibliotecas.173 classes/18CST;nove adições,tpDoacao novo e NFSe410028 desabilitado;172 linhas ocultas incluídas.61 casos RTC comparados,sem regras novas ou instalação.7.577 entradas e77 hashes98 intactos;regressão98 continua ativa.",
+      "evidence": [
+        "docs/fiscal/phase4b-catalog99-current-primary-preparation.md",
+        "D:/ProjetoSaasExports/phase4b-catalog99-primary-research-20261016/catalog99-preparation-validation.json"
+      ]
+    },
+    {
+      "title": "Municipal98 — integração e corpus aprovados",
+      "state": "5/7 marcos;71% da entrega,regressão completa ativa/aceitação pendente",
+      "summary": "211 testes novos;392/5.989 dirigidos,PHPStan/Pint554 gerais.30 cenários/60 decisões e replays,155 históricos exatos;62 fontes e121 bloqueios. Município do prestador e duas provas municipais vinculados aos fatos atuais96. Sem conversão,imposto ISS por documento,XML ou conclusão4B.",
+      "evidence": [
+        "docs/fiscal/phase4b-sp98-current-integration.md",
+        "D:/ProjetoSaasExports/phase4b-sp98-integration-20261016/cli/sp98-cli-validation.json"
+      ]
+    },
+    {
+      "title": "Municipal97 — preparação isolada verificada",
+      "state": "Preparação100%:4/4 marcos;sem integração ou nova aceitação fiscal",
+      "criterion": "Fontes/revisão visual,componente,casos/gates finais e auditoria de integridade;quatro marcos com igual peso.",
+      "summary": "140 casos/2.314 verificações;22 candidatos locais,dois casos que afastam exportação e116 recusas. Sete fontes,quatro páginas PDF e PHPStan/Pint conferidos.6.121 entradas e75 hashes96 intactos. Prova municipalSP do resultado e vínculo de software com pessoaBR preparada;sem regra cambial de exportação,imposto,XML ou conclusão4B.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-document97-sp-primary-research-20261016-v2/sp97-preparation-validation.json",
+        "docs/fiscal/phase4b-sp97-municipal-result-preparation.md"
+      ]
+    },
+    {
+      "title": "Pesquisa97 — captura municipal incompleta preservada",
+      "state": "Sem aceite de pesquisa ou ativação de regras",
+      "summary": "Uma de sete capturas locais verificada:CTN. Seis fontes municipais recusadas pela validação TLS; nenhuma desativação de certificados ou regra nova. PDFs não capturados/renderizados,portanto revisão visual pendente. Não altera os75 hashes runtime96 nem encerra objetivos4B.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-document97-sp-primary-research-20261016/primary-source-observation.json"
+      ]
+    },
+    {
+      "title": "Exportação96 — aceitação local após regressão terminal",
+      "state": "Aceito localmente;7/7 marcos,100% da entrega delimitada",
+      "summary": "2.962 testes/51.784 verificações;6.121 entradas intactas,75 hashes runtime e duas cópias conferidos. PHPStan/Pint549 finais;42 decisões/replays e113 históricos;60 fontes e120 bloqueios. Vínculo local ISS por documento,sem conversão,imposto,XML ou conclusão da Fase4B.",
+      "evidence": [
+        "storage/app/phase4b-export-iss96-development-20261016/export-iss96-development-validation.json",
+        "storage/app/phase4b-export-iss96-development-20261016/evidence-copy-receipt.json",
+        "docs/fiscal/phase4b-export-iss96-live-integration.md"
+      ]
+    },
+    {
+      "title": "Exportação96 — integração atual e corpus concluídos",
+      "state": "5/7 marcos;71% da entrega,regressão completa em execução",
+      "summary": "169 testes novos;181/2.390 dirigidos,PHPStan/Pint549 gerais.42 decisões/replays próprios e113 históricos exatos;60 fontes e120 bloqueios.6.121 entradas congeladas e75 hashes runtime. Não calcula ISS por documento,converte moeda documental ou emite XML;aceite96 pendente.",
+      "evidence": [
+        "docs/fiscal/phase4b-export-iss96-live-integration.md",
+        "D:/ProjetoSaasExports/phase4b-export-iss96-integration-20261016/cli/export-iss96-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-export-iss96-full-suite-20261016/preflight.json"
+      ]
+    },
+    {
+      "title": "Documental94 — utilitário aceito após regressão terminal",
+      "state": "Aceito localmente;7/7 marcos,100% da entrega delimitada",
+      "summary": "2.793 testes/49.475 verificações;5.360 entradas intactas,PHPStan/Pint544 finais,59 fontes e119 bloqueios.72 hashes runtime e duas cópias verificadas. Engine/bundle91 mantido;corpus novo94 de seis cenários/12 decisões/replays com gate documental preservado. Não conclui par XML,grupo4B ou produção.",
+      "evidence": [
+        "storage/app/phase4b-document94-development-20261016/document94-development-validation.json",
+        "storage/app/phase4b-document94-development-20261016/evidence-copy-receipt.json"
+      ]
+    },
+    {
+      "title": "ISS95 — vínculo independente dos dois documentos ao snapshotRTC",
+      "state": "Preparação100%:4/4 marcos; não integrado",
+      "criterion": "Origens nativas vinculadas,componente implementado,58 casos/gates finais aprovados e auditoria de integridade concluída;quatro marcos com igual peso.",
+      "summary": "58 casos/856 verificações;10 vínculos locais e48 recusas,com quatro variantes recalculadas/replayadas nativamente. Conhecimento confrontado com bundle do projeto; corpo alterado/resignado e provas trocadas recusados. Critérios ISS/RTC independentes. PHPStan/Pint finais aprovados,primeira falha estática preservada;5.360 entradas94 intactas.",
+      "evidence": [
+        "docs/fiscal/phase4b-iss-export95-preparation.md",
+        "D:/ProjetoSaasExports/phase4b-iss-export95-pair-binding-20261016/iss-export95-pair-binding-validation.json"
+      ]
+    },
+    {
+      "title": "ISS95 — preparação de resultado por documento",
+      "state": "Preparação100%:4/4 marcos; não integrado",
+      "criterion": "Fontes vinculadas,protótipo implementado,casos/gates nativos aprovados e auditoria de integridade concluída;4 marcos com igual peso. Não é avanço percentual da Fase4B nem aceitação da integração.",
+      "summary": "116 casos/1.553 verificações nativas ePHPStan/Pint aprovados;5.360 entradas94 intactas antes/depois. Candidato estrangeiro sem imposto calculado;resultadoBR afasta somente a alegação de exportação. Sem ramo novo do engine,XML ou conclusão da obrigação documental. Regressão94 ainda em execução.",
+      "evidence": [
+        "docs/fiscal/phase4b-iss-export95-preparation.md",
+        "D:/ProjetoSaasExports/phase4b-iss-export95-preparation-20261016/iss-export95-preparation-validation.json"
+      ]
+    },
+    {
+      "title": "Documental94 — preparação auditada e utilitário instalado",
+      "state": "5/7 marcos; regressão completa ainda sem aceitação",
+      "summary": "56 casos/596 verificações e12 oráculos;5.353 entradas91 e71 hashes preservados antes da instalação.58 testes permanentes/686 verificações,PHPStan ePint544 aprovados. Sem mudança no engine91,XML,obrigação documental ou produção.",
+      "evidence": [
+        "docs/fiscal/phase4b-document94-base-memory.md"
+      ]
+    },
+    {
+      "title": "Limpeza do C: — temporários e caches antigos",
+      "state": "Concluída;7/7 marcos,100% da limpeza delimitada",
+      "summary": "823 arquivos/115.933.152 bytes removidos com cópias recuperáveis verificadas no D:.66 indisponíveis e1.413 recentes preservados. C: permaneceu com1.137.594.368 bytes livres no encerramento da execução. Revisão dos oito objetivos e fases sem nova aceitação fiscal; baseline91 preservada.",
+      "evidence": [
+        "D:/ProjetoSaasExports/cleanup-c-temp-20261016-v1/cleanup-report.json"
+      ]
+    },
+    {
+      "title": "Documental94 — protótipo de comparação de bases",
+      "state": "Checks isolados aprovados; auditoria final e integração pendentes",
+      "summary": "56 casos/596 verificações nativas e12 oráculos decimais; PHPStan e Pint de2 arquivos aprovados após formatação. Sem integração no runtime91, geração XML, prova de obrigação documental ou nova aceitação fiscal.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-document94-base-reconciliation-20261016"
+      ]
+    },
+    {
+      "title": "Prompt de contexto — arquitetura, cobertura e fases",
+      "state": "Documentação consolidada em 16/10/2026",
+      "summary": "Prompt pronto para continuidade; baseline91, 2.735 testes históricos e71 hashes runtime coincidentes na leitura. Fases3/4A encerradas em Sandbox, oito grupos4B parciais e5–7 planejadas. Sem nova aceitação fiscal ou execução de suíte completa.",
+      "evidence": [
+        "docs/PROMPT_CONTEXTO_MOTOR_FISCAL_2026-10-16.md"
+      ]
+    },
+    {
+      "title": "Antecipações91 — aceitação local de registros capturados e definitivo",
+      "state": "Aceito em desenvolvimento;7/7 marcos",
+      "summary": "2.735 testes/48.789 verificações;PHPStan/Pint542 finais;60 decisões/replays e53 históricos;59 fontes,119 bloqueios,5.353 entradas intactas.71 arquivos runtime e11 cópias conferidos. Não prova débito legal,consumo efetivo ou liquidação documental nem encerra a Fase4B."
+    },
+    {
+      "title": "Aceitação93 — quatro entregas pontuais verificadas",
+      "state": "Verificação nativa concluída; grupo4B.8 parcial",
+      "summary": "4B.8.2/3/8/9:bundle próprio,fatos/perguntas próprios,trace e decisão positiva no91 com replay exato.344 fatos/339 perguntas únicos; quatro adições91 conferidas. Não são quatro grupos encerrados nem aceitação da fase; suíte91 segue ativa."
+    },
+    {
+      "title": "Documental92 — fontes atuais confrontadas",
+      "state": "Pesquisa concluída; nenhuma ativação",
+      "summary": "Sete capturas válidas; quatro binários iguais à pesquisa74. Dois fechamentosXSD com quatro membros ainda sem seis campos novosNT009. Imagem do cronograma retornou HTML de login e não foi aceita. Inputs91 intactos; não encerra projeção/documentação da exportação parcial."
+    },
+    {
+      "title": "Antecipações91 — corpus e preflight concluídos",
+      "state": "5/7 marcos; regressão completa em execução",
+      "summary": "30 cenários,60 decisões/replays exatos,53 históricos,59 fontes e119 bloqueios conferidos. Congelados71 arquivos runtime, incluindo integridade do replay RTC. Regressão iniciada com log emD; sem aceitação91 até resultado terminal e auditoria."
+    },
+    {
+      "title": "Console — correção dos objetivos e fases após integração91",
+      "state": "Revisão de acompanhamento concluída",
+      "summary": "Pendência desatualizada de integrar89/90 substituída por regressão/aceitação91. Fases3 e4A confirmadas nos termos de encerramento; oito grupos4B revisados, ainda parciais. Entrega91 em4/7 marcos (57%); não é conclusão da Fase4B."
+    },
+    {
+      "title": "Antecipações88 — aceitação local de origem e nominal",
+      "state": "Aceito em desenvolvimento;7/7 marcos",
+      "summary": "2.678 testes/48.287 verificações;PHPStan/Pint534 finais;48 decisões/replays e5 históricos;59 fontes,119 bloqueios,4.692 entradas intactas. Sem registro anterior/definitivo completos, liquidação documental ou conclusão da Fase4B."
+    },
+    {
+      "title": "Antecipações90 — reconciliação externa do definitivo",
+      "state": "Protótipo verificado; não integrado",
+      "summary": "28 casos nativos,14 oráculos decimais e PHPStan/Pint aprovados. Usa valores anteriores capturados, sem repricing; negativo não concede crédito. Token corrigido para vincular contexto e cálculo finais.4.692 entradas88 intactas; consumo efetivo e produção falsos."
+    },
+    {
+      "title": "Antecipações89 — vínculo externo de registros anteriores",
+      "state": "Protótipo verificado; não integrado",
+      "summary": "43 casos nativos,4 snapshots adicionais e PHPStan/Pint do componente aprovados. Conferidos4.692 arquivos congelados88 sem alteração. Integridade do corpo salvo antes do replay; sem prova legal de débito, extinção, crédito ou produção."
+    },
+    {
+      "title": "Antecipações88 — gates direcionados e corpus",
+      "state": "Verificados; regressão completa pendente",
+      "summary": "238 testes/1.680 verificações,24 cenários nos dois runners,48 replays finais e5 históricos;59 fontes,119 bloqueios. Primeiras falhas preservadas. Sem prova de registro anterior ou aceitação integral88."
+    },
+    {
+      "title": "Console — revisão das fases e dos oito objetivos",
+      "state": "Revisado por evidências",
+      "summary": "Fases3/4A encerradas em Sandbox;4B parcial com entregues e pendências por grupo;5–7 planejadas. Percentual funcional4B não auditado, distinto de0/8 encerramentos formais."
+    },
+    {
+      "title": "Temporal86 — integração local de datas e antecipações",
+      "state": "Aceito em desenvolvimento;7/7 marcos",
+      "summary": "2.589 testes /47.492 verificações;149 testes direcionados;28 decisões nativas e28 replays, mais3 históricos. Produção bloqueada; não conclui Fase4B."
+    },
+    {
+      "title": "Simples78 — eleição H1/2027 local",
+      "state": "Aceito em desenvolvimento",
+      "summary": "2.440 testes / 46.607 verificações; produção bloqueada. Não conclui Simples integral."
+    },
+    {
+      "title": "Temporal83–85 — preparação isolada",
+      "state": "Componentes verificados",
+      "summary": "47 casos documentais,40 de reconciliação e11 composições, mais36 anteriores; agora integrados em86."
+    },
+    {
+      "title": "Console fiscal — atualização e regra de encerramento",
+      "state": "Concluído",
+      "summary": "Progresso da entrega separado do aceite formal; regra permanente em AGENTS.md;22 checks isolados aprovados e tela verificada."
+    }
+  ],
+  "focus": {
+    "summary": "Pausa solicitada pelo usuário antes da implementação119. Commit local concluído; publicação bloqueada: fiorbeltda não autenticada no GitHub CLI e tiacopfiles sem escrita.",
+    "finished": [
+      "Desenvolvimento pausado antes119; último aceite integral112 preservado.",
+      "Arquivos temporários e credenciais locais excluídos do versionamento.",
+      "Snapshot do estado atual registrado em commit local."
+    ],
+    "pending": [
+      "Autenticar fiorbeltda e publicar no repositório motorfiscal.",
+      "119 e regressão integral continuam pendentes, sem execução.",
+      "36 requisitos ainda não revisados; produção permanece bloqueada."
+    ],
+    "next_step": "Autenticar a conta fiorbeltda no Git local e publicar o snapshot. Não retomar desenvolvimento sem nova orientação do usuário."
+  }
+}

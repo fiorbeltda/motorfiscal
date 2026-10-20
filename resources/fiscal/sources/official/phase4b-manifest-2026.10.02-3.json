@@ -1,0 +1,190 @@
+{
+  "version": "2026.10.02-3",
+  "retrieved_on": "2026-10-02",
+  "status": "SANDBOX_EVIDENCE_REVIEW_REQUIRED",
+  "artifacts": [
+    {
+      "id": "LC214-CONSOLIDATED-CAMARA-2026",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.pdf",
+      "file": "lc214-consolidada-lc227-camara-2026.pdf",
+      "sha256": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+      "version": "consolidated with LC227/2026",
+      "proven_effective_scope": "LC214 arts. 343-346 and transition provisions; individual later amendments require review",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-NT004-LAYOUT",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/anexovi-leiautesrn_rtc_ibscbs-v1-01-03-nt004.xlsx",
+      "file": "anexovi-leiautesrn_rtc_ibscbs-v1-01-03-nt004.xlsx",
+      "sha256": "c32c30a2aac3aaf8eb71a8baf512954aac70867d883343d202d1c1e9b4453651",
+      "version": "1.01.03",
+      "proven_effective_scope": "production baseline from 2026-01-05 per RTC portal, with NT007 tpRetPisCofins",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-NT009-LAYOUT",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-04-00-2013-nt009.xlsx",
+      "file": "anexovi-leiautesrn_rtc_ibscbs-v1-04-00-2013-nt009.xlsx",
+      "sha256": "ba8f9823fbbc454df4dfecb6ac64a75183f080feefba1ebc64b6afac50d6f24a",
+      "version": "1.04.00",
+      "proven_effective_scope": null,
+      "status": "PUBLISHED_NOT_DEPLOYED",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-CINDOP",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovii-indop_ibscbs_v1-02-00.xlsx",
+      "file": "anexovii-indop_ibscbs_v1-02-00.xlsx",
+      "sha256": "b75305109d26f106216a8372d5f9ef589dda78804da5128b34c7712d72740675",
+      "version": "1.02.00",
+      "proven_effective_scope": "official code list, item validity requires version review",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-NBS-ANEXO-B",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/anexo_b-nbs2-lista_servico_nacional-snnfse-v1-01-20260122.xlsx/@@download/file",
+      "file": "anexo-b-servicos-nacionais-v1.01-20260122.xlsx",
+      "sha256": "e74b0be8ad204e458932efb1716225a3fb5703a84e5475ce5c4c6789d1c61b1a",
+      "version": "v1.01-20260122",
+      "proven_effective_scope": null,
+      "status": "CANDIDATE",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-CORRELATION",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+      "file": "anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+      "sha256": "a21be0e86b7ae2c0c1cfec4ef0d398b96520345790b50f79e4c5b7d1dfe32fb3",
+      "version": "1.01.00",
+      "proven_effective_scope": null,
+      "status": "PROVISIONAL_NO_DECISION_AUTHORITY",
+      "superseded_by": null
+    },
+    {
+      "id": "NFE-CCLASSTRIB",
+      "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=D5b4Ov84WDg=",
+      "file": "nfe-cclasstrib-it2025.002-v1.60-20260623.xlsx",
+      "sha256": "1448cb63a41bdb67ea30b4e11f4dc200d9568542c6b9335b6cff87a4fd664654",
+      "version": "IT 2025.002 v1.60",
+      "published_on": "2026-06-23",
+      "proven_effective_scope": "per-row dIniVig/dFimVig; NFS-e applicability per indNFSe",
+      "superseded_by": null
+    },
+    {
+      "id": "NFE-CBS-RATES",
+      "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=LRksVAMl7nQ=",
+      "file": "nfe-cbs-rates-20260512.xlsx",
+      "sha256": "33f17aa3322de841c7cb7bd469a2785d34cea34fadd0571e18bd8f7c88872f3b",
+      "version": "2026-05-12",
+      "proven_effective_scope": "2026 only; 2027 explicitly awaits legislation",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-RTC-XSD",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/nfse-esquemas_xsd-rtc-v1-00-20251210.zip",
+      "file": "nfse-esquemas_xsd-rtc-v1-00-20251210.zip",
+      "sha256": "04662996e290add36f118c4457d8efed17848eb65d64e8b7ab56c6983c2429ad",
+      "version": "2025-12-10",
+      "proven_effective_scope": "NT004 pilot schema; production applicability subject to portal schedule",
+      "superseded_by": null
+    },
+    {
+      "id": "DECREE-12955-CAMARA-2026",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+      "file": "decreto-12955-camara-2026.html",
+      "sha256": "0bee9333c55e702273f6536737d68506ff58d6dc6be1e39c95aa55e92fc1c01e",
+      "version": "consolidated through 2026-09-25 retrieval",
+      "proven_effective_scope": "arts. 65-74; art. 74 conditions a specific import service tax document on a joint act",
+      "superseded_by": null
+    },
+    {
+      "id": "RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918",
+      "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual%20op%C3%A7%C3%A3o%20regime%20regular%20IBS%20e%20CBS%20no%20Simples%20Nacional.pdf",
+      "file": "manual-opcao-regime-regular-ibs-cbs-simples-20260918.pdf",
+      "sha256": "b19d49de35ce6bf2a9d446f2c7c204e39f91899e7525e6842d7c982bcc7776cb",
+      "version": "2026-09-18",
+      "retrieved_on": "2026-09-28",
+      "proven_effective_scope": "option procedure for 2027 regular IBS/CBS within Simples; not a source of tax rates",
+      "superseded_by": null
+    },
+    {
+      "id": "CGSN-SIMPLES-OPTIONS-2027-GOVBR-2026",
+      "url": "https://www.gov.br/memp/pt-br/assuntos/noticias/cgsn-atualiza-regras-do-simples-nacional-para-adequacao-a-reforma-tributaria-do-consumo",
+      "file": "cgsn-simples-2027-options-govbr-2026.html",
+      "sha256": "26a26fc6d16f7515464c404390fb31fd7c025e3b1057d6e17510f162814d9a8a",
+      "version": "2026-08 official CGSN 190/191 explanation",
+      "retrieved_on": "2026-09-28",
+      "proven_effective_scope": "2027 second-semester regular IBS/CBS option: filing 01-31 March 2027, cancellation through 31 May 2027",
+      "superseded_by": null
+    },
+    {
+      "id": "LC116-CAMARA-20260928",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html",
+      "file": "lc116-camara-2026-09-28.html",
+      "sha256": "9f3ea2baf131b8f9712267d503a5a2153ec5c9616d8e8bdd002e4797c70b9a90",
+      "version": "consolidated through 2026-09-28 retrieval",
+      "retrieved_on": "2026-09-28",
+      "proven_effective_scope": "LC 116 art. 8-B: 2029-2032 ISS factors applied to municipal rate effective on 2028-12-31",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-PRODUCTION-XSD-20260209",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/nfse-esquemas_xsd-v1-01-20260209.zip",
+      "file": "nfse-esquemas_xsd-v1-01-20260209.zip",
+      "sha256": "e7935cbd9470527c6cc32984c1b2263e614183bf0139ce2733eaaed2de9a8072",
+      "version": "v1.01-20260209",
+      "published_on": null,
+      "retrieved_on": "2026-09-28",
+      "proven_effective_scope": "Listed as current production XSD on the official page updated 2026-08-15; first deployment date not established by that listing",
+      "superseded_by": null
+    },
+    {
+      "id": "NFSE-CONTRIBUTOR-API-MANUAL-OBSERVED-20261001",
+      "file": "nfse-manual-contribuintes-api-v1.2-observed-20261001.pdf",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/manual-contribuintes-emissor-publico-api-sistema-nacional-nfs-e-v1-2-out2025.pdf",
+      "sha256": "ac2f36e34ff565cc36d67c5d67415c33cc09f27b2dea006e8da9bcd2ddce5581",
+      "version": "observed-2026-10-01",
+      "published_on": null,
+      "retrieved_on": "2026-10-01",
+      "proven_effective_scope": "API manual lists DPS ID components and independent municipal/business validation. No proof of first deployment date.",
+      "source_kind": "OFFICIAL_TECHNICAL_MANUAL",
+      "superseded_by": null
+    },
+    {
+      "id": "RFB-RTC-DOCUMENT-SCHEDULE-OBSERVED-20261001",
+      "file": "rfb-rtc-obrigacoes-observed-20261001.html",
+      "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-da-reforma-tributaria",
+      "sha256": "1ec6502ba7247c26d7034544b777f8154b9f11638dc79a65ebd3006e3d9026f1",
+      "version": "observed-2026-10-01",
+      "published_on": "2026-09-18",
+      "retrieved_on": "2026-10-01",
+      "proven_effective_scope": "Official procedural guidance: RTC NFS-e general service schedule 2026-10-01 and specific subitems 2026-12-01; full joint act review pending.",
+      "source_kind": "OFFICIAL_GUIDANCE",
+      "superseded_by": null
+    },
+    {
+      "id": "MF-CGSN194-NOTICE-OBSERVED-20261001",
+      "file": "mf-simples-prazos-2027-observed-20261001.html",
+      "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/setembro/simples-nacional-2027-tem-novos-prazos-para-microempresas-e-empresas-de-pequeno-porte/",
+      "sha256": "bd0b7a81f841fcdcdda3ed9dcd4401144a7750e6b8dc11da0d3141434e4d7c1c",
+      "version": "observed-2026-10-01",
+      "published_on": "2026-09-29",
+      "retrieved_on": "2026-10-01",
+      "proven_effective_scope": "Supersession alert for 2027 first-semester option deadlines; CGSN 194 full act inaccessible. Announced dates are not active normative windows.",
+      "source_kind": "OFFICIAL_GUIDANCE",
+      "superseded_by": null
+    },
+    {
+      "id": "LC214-CONSOLIDATED-CAMARA-OBSERVED-20261001",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+      "file": "lc214-camara-observed-20261001.html",
+      "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+      "version": "consolidated-observed-2026-10-01",
+      "published_on": "2025-01-16",
+      "retrieved_on": "2026-10-01",
+      "source_kind": "OFFICIAL_CONSOLIDATED_ACT",
+      "superseded_by": null,
+      "proven_effective_scope": "LC 214 art. 127 including physical education corporate exception; arts. 344 and 348 reduced transition rates. Observation availability is recorded in the bundle."
+    }
+  ]
+}

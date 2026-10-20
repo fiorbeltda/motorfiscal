@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_DUPLICATE_DOCUMENT_COMPONENT"
+  ],
+  "missing_facts": [],
+  "decision_hash": "eaccaa2c96e8ddb928a0a8baf86bfdf269a60339c2a4eb7f8d1a763d9575a9a8"
+}

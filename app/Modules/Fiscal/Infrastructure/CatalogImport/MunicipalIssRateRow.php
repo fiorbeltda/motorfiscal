@@ -14,6 +14,8 @@ final readonly class MunicipalIssRateRow
         public string $uf,
         public string $municipalityName,
         public string $serviceCode,
+        public string $ctribnacCode,
+        public string $municipalServiceCode,
         public ?string $incidenceRaw,
         public ?string $rate,
         public LocalDate $effectiveFrom,
@@ -26,6 +28,8 @@ final readonly class MunicipalIssRateRow
         return CanonicalJson::hash([
             'municipality_ibge' => $this->municipalityIbge,
             'service_code' => $this->serviceCode,
+            'ctribnac_code' => $this->ctribnacCode,
+            'municipal_service_code' => $this->municipalServiceCode,
             'effective_from' => $this->effectiveFrom->value(),
             'effective_to' => $this->effectiveTo?->value(),
         ]);
@@ -40,6 +44,8 @@ final readonly class MunicipalIssRateRow
             'uf' => $this->uf,
             'municipality_name' => $this->municipalityName,
             'service_code' => $this->serviceCode,
+            'ctribnac_code' => $this->ctribnacCode,
+            'municipal_service_code' => $this->municipalServiceCode,
             'incidence_raw' => $this->incidenceRaw,
             'rate' => $this->rate,
             'effective_from' => $this->effectiveFrom->value(),
@@ -49,5 +55,21 @@ final readonly class MunicipalIssRateRow
             'created_at' => $timestamp,
             'updated_at' => $timestamp,
         ];
+    }
+
+    public function logicalHash(): string
+    {
+        return CanonicalJson::hash([
+            'municipality_ibge' => $this->municipalityIbge,
+            'uf' => $this->uf,
+            'municipality_name' => $this->municipalityName,
+            'service_code' => $this->serviceCode,
+            'ctribnac_code' => $this->ctribnacCode,
+            'municipal_service_code' => $this->municipalServiceCode,
+            'incidence_raw' => $this->incidenceRaw,
+            'rate' => $this->rate,
+            'effective_from' => $this->effectiveFrom->value(),
+            'effective_to' => $this->effectiveTo?->value(),
+        ]);
     }
 }

@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_COOPERATIVE_ZERO_OTHER_OPERATION_RULE_REQUIRED"
+  ],
+  "missing_facts": [
+    "rtc.cooperative_zero_proof"
+  ],
+  "decision_hash": "1094cfd6ea11b8244d3f61f9205f1622e392c5c330e4c60040c48c6b23b440b1"
+}

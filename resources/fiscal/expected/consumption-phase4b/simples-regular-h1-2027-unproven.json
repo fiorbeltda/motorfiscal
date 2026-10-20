@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_SIMPLES_REGULAR_OPTION_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.simples_option_receipt_id"
+  ],
+  "decision_hash": "09ff25f11b08c214856e2282bf7e6baadbd80200f429c63fd4e0cfdd8a3bbaf7"
+}

@@ -1,0 +1,1 @@
+{"status":"ACTION_REQUIRED","reason_codes":["ISS_LOCATION_FACTS_MISSING"],"missing_facts":["operation.construction_municipality_ibge"],"decision_hash":"09880cde1ad0608ee43e6edd643579074766b63ff22e2f7df2498d0256021f80"}

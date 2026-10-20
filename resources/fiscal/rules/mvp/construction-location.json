@@ -1,0 +1,15 @@
+{
+  "rule_id": "ISS.CONSTRUCTION.LOCATION.WORK",
+  "version": "1.0.0",
+  "kind": "LOCATION",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "when": {"fact": "service.canonical_id", "operator": "EQ", "value": "CONSTRUCTION_CONTRACT"},
+  "effects": [
+    {"type": "SELECT_STRATEGY", "strategy": "CONSTRUCTION_WORK_LOCATION"},
+    {"type": "REQUIRE_DETAIL_GROUP", "group": "obra"}
+  ],
+  "source_id": "SOURCE.LC116.ART3.III",
+  "source_version": "CONSOLIDATED-2026-09-15",
+  "reason_codes": ["ISS_LOCATION_CONSTRUCTION_WORK", "DPS_CONSTRUCTION_DETAIL_REQUIRED"]
+}

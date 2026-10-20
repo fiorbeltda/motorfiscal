@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_IMPORT_FX_CONVERSION_NOT_MATERIALIZED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "87bdee35ac597f22713f23c5a674c687d375b4f87a15033fbc04ac9ed01b477f"
+}

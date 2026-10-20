@@ -1,0 +1,8 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_FINANCIAL_SCOPE_SUPERVISION_UNPROVEN"
+  ],
+  "missing_facts": [],
+  "decision_hash": "2a2f0ce2bd42bea9186e098daf7580976d53426bbfbe7a11573f21e34595db41"
+}

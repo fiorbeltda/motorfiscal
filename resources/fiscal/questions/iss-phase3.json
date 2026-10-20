@@ -1,0 +1,197 @@
+[
+  {
+    "fact_key": "service.ctribnac_code",
+    "prompt": "Qual é o código cTribNac do serviço?",
+    "rank": 5,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.service_origin",
+    "prompt": "O serviço é nacional ou importado do exterior?",
+    "rank": 6,
+    "answer_type": "ENUM",
+    "options": ["DOMESTIC", "FOREIGN"]
+  },
+  {
+    "fact_key": "operation.issuer_role",
+    "prompt": "Na importação, a DPS é emitida pelo tomador ou pelo intermediário?",
+    "rank": 7,
+    "answer_type": "ENUM",
+    "options": ["CUSTOMER", "INTERMEDIARY"]
+  },
+  {
+    "fact_key": "provider.municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento prestador?",
+    "rank": 10,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "provider.tax_regime",
+    "prompt": "Qual é o regime tributário do prestador?",
+    "rank": 13,
+    "answer_type": "ENUM",
+    "options": ["SIMPLES_NACIONAL", "MEI", "LUCRO_PRESUMIDO", "LUCRO_REAL"]
+  },
+  {
+    "fact_key": "provider.activity_start_date",
+    "prompt": "Qual é a data de início das atividades do prestador no Simples Nacional?",
+    "rank": 14,
+    "answer_type": "DATE"
+  },
+  {
+    "fact_key": "provider.simples_iss_fixed_monthly",
+    "prompt": "O prestador recolhe ISS por valor fixo mensal no Simples Nacional?",
+    "rank": 14,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_rate_informed",
+    "prompt": "A alíquota efetiva de ISS do Simples foi informada no documento fiscal?",
+    "rank": 48,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "provider.simples_effective_iss_rate",
+    "prompt": "Qual é a alíquota efetiva de ISS aplicável à retenção do Simples Nacional?",
+    "rank": 49,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "customer.municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento tomador?",
+    "rank": 11,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.intermediary_municipality_ibge",
+    "prompt": "Qual é o município do estabelecimento intermediário?",
+    "rank": 12,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "customer.person_type",
+    "prompt": "Qual é a natureza do tomador?",
+    "rank": 15,
+    "answer_type": "ENUM",
+    "options": ["PF", "PJ", "PJ_IMMUNE", "PJ_EXEMPT", "PUBLIC_ADMINISTRATION", "FOREIGN"]
+  },
+  {
+    "fact_key": "intermediary.person_type",
+    "prompt": "Qual é a natureza do intermediário responsável?",
+    "rank": 16,
+    "answer_type": "ENUM",
+    "options": ["PF", "PJ", "PJ_IMMUNE", "PJ_EXEMPT", "PUBLIC_ADMINISTRATION", "FOREIGN"]
+  },
+  {
+    "fact_key": "operation.responsible_role",
+    "prompt": "A responsabilidade nacional recai sobre o tomador ou o intermediário?",
+    "rank": 17,
+    "answer_type": "ENUM",
+    "options": ["CUSTOMER", "INTERMEDIARY"]
+  },
+  {
+    "fact_key": "operation.illegal_below_minimum_tax_burden",
+    "prompt": "A operação está enquadrada na hipótese comprovada de benefício ilegal abaixo da carga mínima?",
+    "rank": 18,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.card_arrangement_operation",
+    "prompt": "O serviço do subitem 15.01 integra uma operação de arranjo de cartões?",
+    "rank": 18,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.execution_municipality_ibge",
+    "prompt": "Em qual município o serviço foi executado? Informe 0000000 apenas para hipótese marítima admitida.",
+    "rank": 19,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.event_municipality_ibge",
+    "prompt": "Em qual município o evento foi realizado?",
+    "rank": 20,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.event_activity_confirmed",
+    "prompt": "A operação corresponde efetivamente à atividade de evento indicada pelo serviço?",
+    "rank": 21,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.construction_municipality_ibge",
+    "prompt": "Em qual município a obra está localizada?",
+    "rank": 20,
+    "answer_type": "CODE"
+  },
+  {
+    "fact_key": "operation.construction_work_id",
+    "prompt": "Qual é o identificador da obra?",
+    "rank": 30,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.construction_object_type",
+    "prompt": "O objeto é uma obra ou um serviço isolado de construção?",
+    "rank": 31,
+    "answer_type": "ENUM",
+    "options": ["WORK", "SERVICE"]
+  },
+  {
+    "fact_key": "operation.construction_contract_type",
+    "prompt": "Qual é a modalidade contratual da construção?",
+    "rank": 32,
+    "answer_type": "ENUM",
+    "options": ["DIRECT_ADMINISTRATION", "TOTAL_CONTRACT", "PARTIAL_CONTRACT", "SUBCONTRACT", "ISOLATED_SERVICE"]
+  },
+  {
+    "fact_key": "operation.amount",
+    "prompt": "Qual é o valor bruto da operação?",
+    "rank": 40,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "operation.materials_amount",
+    "prompt": "Qual valor de materiais está documentalmente vinculado à dedução?",
+    "rank": 41,
+    "answer_type": "DECIMAL"
+  },
+  {
+    "fact_key": "operation.deduction_evidence_id",
+    "prompt": "Qual documento fundamenta a dedução da base?",
+    "rank": 42,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.deduction_municipal_rule_id",
+    "prompt": "Qual norma municipal vigente fundamenta a dedução?",
+    "rank": 43,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.materials_produced_offsite",
+    "prompt": "Os materiais deduzidos foram produzidos fora do local da obra?",
+    "rank": 44,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.materials_separate_sale",
+    "prompt": "Os materiais foram comercializados separadamente do serviço?",
+    "rank": 45,
+    "answer_type": "BOOLEAN"
+  },
+  {
+    "fact_key": "operation.materials_icms_document_id",
+    "prompt": "Qual documento fiscal comprova a operação sujeita ao ICMS dos materiais?",
+    "rank": 46,
+    "answer_type": "STRING"
+  },
+  {
+    "fact_key": "operation.deduction_validation_status",
+    "prompt": "Qual foi o resultado da validação documental e jurídica da dedução?",
+    "rank": 47,
+    "answer_type": "ENUM",
+    "options": ["APPROVED", "REJECTED", "REVIEW_REQUIRED"]
+  }
+]

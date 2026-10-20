@@ -3,12 +3,12 @@
   "$id": "https://fiscal-engine.local/schemas/expected.schema.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["status"],
+  "required": ["status", "decision_hash"],
   "properties": {
     "status": {"enum": ["VALID", "VALID_WITH_WARNINGS", "ACTION_REQUIRED", "INVALID"]},
     "reason_codes": {"type": "array", "items": {"type": "string"}},
     "missing_facts": {"type": "array", "items": {"type": "string"}},
-    "decision": {"type": "object"}
+    "decision": {"type": "object"},
+    "decision_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
   }
 }
-

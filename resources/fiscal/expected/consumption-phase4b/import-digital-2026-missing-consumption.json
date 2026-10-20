@@ -1,0 +1,10 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_IMPORT_EVIDENCE_MISSING"
+  ],
+  "missing_facts": [
+    "rtc.domestic_consumption_evidence_id"
+  ],
+  "decision_hash": "73b6fb508630fdcd97a47209b7c37cfa852d15ad5730a8764e513a9969722072"
+}

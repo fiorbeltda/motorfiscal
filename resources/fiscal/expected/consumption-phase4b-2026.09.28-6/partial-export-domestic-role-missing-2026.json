@@ -1,0 +1,11 @@
+{
+  "status": "ACTION_REQUIRED",
+  "reason_codes": [
+    "RTC_PARTIAL_EXPORT_DOMESTIC_ROLE_UNPROVEN"
+  ],
+  "missing_facts": [
+    "rtc.export_domestic_recipient_id",
+    "rtc.export_domestic_recipient_country"
+  ],
+  "decision_hash": "0dc7561f6d0d9681ec1cc4908ee8670b964238d92a7d43720d73fc3cf1aad17a"
+}

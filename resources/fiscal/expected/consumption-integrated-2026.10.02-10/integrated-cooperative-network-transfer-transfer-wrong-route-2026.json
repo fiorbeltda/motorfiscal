@@ -1,0 +1,8 @@
+{
+  "status": "INVALID",
+  "reason_codes": [
+    "RTC_COOPERATIVE_TRANSFER_MEMBER_SUPPLY_ROUTE_REQUIRED"
+  ],
+  "missing_facts": [],
+  "decision_hash": "3610812c4876a37b4db487fae2301c1acd641cd162b99bedf139f797275370fd"
+}
