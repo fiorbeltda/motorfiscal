@@ -30,11 +30,14 @@ aceites anteriores. Um clone não contém o banco nem as evidências de execuç�
 
 ## Publicação
 
-Na preparação, o GitHub CLI tinha somente `tiacopfiles` autenticada, sem
-permissão de escrita nesse repositório. A conta solicitada é `fiorbeltda`,
-que precisa ser autenticada para concluir o envio. Nenhum push com outra
-identidade foi realizado. A autoria Git local existente foi preservada;
-autoria do commit e conta autenticada para envio são conceitos distintos.
+Snapshot publicado usando a conta `fiorbeltda`, com permissão de escrita
+confirmada, na branch `codex/fiscal-engine-bootstrap`.
 
-Após autenticar `fiorbeltda`, conferir a conta e a permissão de escrita antes
-de enviar a branch `codex/fiscal-engine-bootstrap`. Não usar force-push.
+Commit do motor: `dd1e1db9347b691a8ceb4f3a7f4985f80a57bac7`.
+O SHA foi confirmado pela referência remota e pela API do GitHub.
+O registro de encerramento do console é um commit posterior ao snapshot.
+
+Na preparação inicial, `tiacopfiles` estava autenticada sem escrita; nenhum
+push foi realizado com essa identidade. A autoria Git local existente foi
+preservada; autoria do commit e conta autenticada para envio são conceitos
+distintos. Não foi usado force-push. O desenvolvimento permanece pausado.

@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-20T13:30:50.054Z",
-  "title": "Desenvolvimento pausado · snapshot Git",
-  "state": "Pausa solicitada pelo usuário antes da implementação119. Commit local concluído; publicação bloqueada: fiorbeltda não autenticada no GitHub CLI e tiacopfiles sem escrita.",
-  "criterion": "75% = 3/4 marcos desta entrega de versionamento após commit local. Publicação remota depende da autenticação fiorbeltda; não representa progresso funcional da4B.",
+  "updated_at": "2026-10-20T13:38:50.375Z",
+  "title": "Snapshot Git publicado · desenvolvimento pausado",
+  "state": "Snapshot dd1e1db publicado por fiorbeltda no repositório motorfiscal. Desenvolvimento permanece pausado antes119;produção bloqueada.",
+  "criterion": "100% = 4/4 marcos desta entrega de versionamento:parada segura,revisão dos arquivos,commit local e publicação confirmada no GitHub. Não é percentual funcional do motor.",
   "milestones": [
     {
       "title": "Parar desenvolvimento em ponto seguro",
@@ -18,21 +18,23 @@
     },
     {
       "title": "Publicar e conferir commit no GitHub",
-      "complete": false
+      "complete": true
     }
   ],
   "finished": [
-    "Desenvolvimento pausado antes119; último aceite integral112 preservado.",
-    "Arquivos temporários e credenciais locais excluídos do versionamento.",
-    "Snapshot do estado atual registrado em commit local."
+    "Commit do motor dd1e1db preservado e publicado no GitHub.",
+    "Conta fiorbeltda e referência remota verificadas.",
+    "Console,fases e objetivos revisados;desenvolvimento segue pausado."
   ],
   "pending": [
-    "Autenticar fiorbeltda e publicar no repositório motorfiscal.",
-    "119 e regressão integral continuam pendentes, sem execução.",
-    "36 requisitos ainda não revisados; produção permanece bloqueada."
+    "Implementação119 e regressão integral continuam pendentes.",
+    "36 requisitos ainda não revisados;nenhum grupo4B formalmente encerrado.",
+    "Produção bloqueada;último aceite integral112."
   ],
-  "next_step": "Autenticar a conta fiorbeltda no Git local e publicar o snapshot. Não retomar desenvolvimento sem nova orientação do usuário.",
+  "next_step": "Aguardar nova orientação do usuário para retomar o desenvolvimento a partir do plano119.",
   "evidence": [
+    "https://github.com/fiorbeltda/motorfiscal/commit/dd1e1db9347b691a8ceb4f3a7f4985f80a57bac7",
+    "docs/fiscal/versioning-snapshot-20261020.md",
     "docs/fiscal/phase4b-material-input119-plan.md",
     "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
     "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
@@ -43,6 +45,67 @@
     "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
   ],
   "history": [
+    {
+      "updated_at": "2026-10-20T13:30:50.054Z",
+      "title": "Desenvolvimento pausado · snapshot Git",
+      "state": "Pausa solicitada pelo usuário antes da implementação119. Commit local concluído; publicação bloqueada: fiorbeltda não autenticada no GitHub CLI e tiacopfiles sem escrita.",
+      "criterion": "75% = 3/4 marcos desta entrega de versionamento após commit local. Publicação remota depende da autenticação fiorbeltda; não representa progresso funcional da4B.",
+      "milestones": [
+        {
+          "title": "Parar desenvolvimento em ponto seguro",
+          "complete": true
+        },
+        {
+          "title": "Revisar arquivos e excluir temporários do versionamento",
+          "complete": true
+        },
+        {
+          "title": "Registrar snapshot em commit local",
+          "complete": true
+        },
+        {
+          "title": "Publicar e conferir commit no GitHub",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Desenvolvimento pausado antes119; último aceite integral112 preservado.",
+        "Arquivos temporários e credenciais locais excluídos do versionamento.",
+        "Snapshot do estado atual registrado em commit local."
+      ],
+      "pending": [
+        "Autenticar fiorbeltda e publicar no repositório motorfiscal.",
+        "119 e regressão integral continuam pendentes, sem execução.",
+        "36 requisitos ainda não revisados; produção permanece bloqueada."
+      ],
+      "next_step": "Autenticar a conta fiorbeltda no Git local e publicar o snapshot. Não retomar desenvolvimento sem nova orientação do usuário.",
+      "evidence": [
+        "https://github.com/fiorbeltda/motorfiscal/commit/dd1e1db9347b691a8ceb4f3a7f4985f80a57bac7",
+        "docs/fiscal/versioning-snapshot-20261020.md",
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+        "docs/fiscal/phase4b-requirements118-base-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements118-base-audit-20261020-v1/requirements-review-v1/requirements118-base-review.json",
+        "docs/fiscal/phase4b-requirements117-subjects-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Pausa solicitada pelo usuário antes da implementação119. Commit local concluído; publicação bloqueada: fiorbeltda não autenticada no GitHub CLI e tiacopfiles sem escrita.",
+        "finished": [
+          "Desenvolvimento pausado antes119; último aceite integral112 preservado.",
+          "Arquivos temporários e credenciais locais excluídos do versionamento.",
+          "Snapshot do estado atual registrado em commit local."
+        ],
+        "pending": [
+          "Autenticar fiorbeltda e publicar no repositório motorfiscal.",
+          "119 e regressão integral continuam pendentes, sem execução.",
+          "36 requisitos ainda não revisados; produção permanece bloqueada."
+        ],
+        "next_step": "Autenticar a conta fiorbeltda no Git local e publicar o snapshot. Não retomar desenvolvimento sem nova orientação do usuário."
+      }
+    },
     {
       "updated_at": "2026-10-20T13:25:42Z",
       "title": "Entradas119 — ponto de parada preservado",
@@ -1377,17 +1440,17 @@
     }
   ],
   "focus": {
-    "summary": "Pausa solicitada pelo usuário antes da implementação119. Commit local concluído; publicação bloqueada: fiorbeltda não autenticada no GitHub CLI e tiacopfiles sem escrita.",
+    "summary": "Snapshot dd1e1db publicado por fiorbeltda no repositório motorfiscal. Desenvolvimento permanece pausado antes119;produção bloqueada.",
     "finished": [
-      "Desenvolvimento pausado antes119; último aceite integral112 preservado.",
-      "Arquivos temporários e credenciais locais excluídos do versionamento.",
-      "Snapshot do estado atual registrado em commit local."
+      "Commit do motor dd1e1db preservado e publicado no GitHub.",
+      "Conta fiorbeltda e referência remota verificadas.",
+      "Console,fases e objetivos revisados;desenvolvimento segue pausado."
     ],
     "pending": [
-      "Autenticar fiorbeltda e publicar no repositório motorfiscal.",
-      "119 e regressão integral continuam pendentes, sem execução.",
-      "36 requisitos ainda não revisados; produção permanece bloqueada."
+      "Implementação119 e regressão integral continuam pendentes.",
+      "36 requisitos ainda não revisados;nenhum grupo4B formalmente encerrado.",
+      "Produção bloqueada;último aceite integral112."
     ],
-    "next_step": "Autenticar a conta fiorbeltda no Git local e publicar o snapshot. Não retomar desenvolvimento sem nova orientação do usuário."
+    "next_step": "Aguardar nova orientação do usuário para retomar o desenvolvimento a partir do plano119."
   }
 }

@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-10-20T13:31:02.176Z",
+  "reviewed_at": "2026-10-20T13:38:50.375Z",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.19-112-draft2",
-  "criterion": "Revisão preservada na pausa para versionamento:44/80 requisitos examinados,36 não revisados,0/8 grupos formalmente encerrados. Aceite integral112;116 intermediário e119 não instalada. Sem percentual funcional global ou liberação de produção.",
+  "criterion": "Revisão preservada após publicação do snapshot dd1e1db em fiorbeltda/motorfiscal. Desenvolvimento pausado:44/80 requisitos examinados,36 não revisados,0/8 grupos formalmente encerrados. Aceite integral112;116 intermediário e119 não instalada. Sem percentual funcional global ou liberação de produção.",
   "objectives": [
     {
       "id": "4B.1",

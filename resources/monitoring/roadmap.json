@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-20T13:31:02.575Z",
-  "scope_note": "Desenvolvimento pausado por solicitação do usuário para versionamento. Fases3 e4A encerradas em Sandbox;4B permanece em andamento,com execução pausada;5–7 planejadas. Produção bloqueada;119 não instalada.",
+  "reviewed_at": "2026-10-20T13:38:50.375Z",
+  "scope_note": "Snapshot publicado em fiorbeltda/motorfiscal;desenvolvimento permanece pausado antes119. Fases3 e4A encerradas funcionalmente em Sandbox;4B em andamento,com execução pausada;5–7 planejadas. Produção bloqueada.",
   "phases": [
     {
       "id": "base",
