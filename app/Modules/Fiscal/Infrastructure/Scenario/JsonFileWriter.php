@@ -15,7 +15,7 @@ final class JsonFileWriter
         if (! is_dir($directory) && ! mkdir($directory, 0775, true) && ! is_dir($directory)) {
             throw new RuntimeException("Unable to create directory: {$directory}");
         }
-        $json = json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR).PHP_EOL;
+        $json = json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRESERVE_ZERO_FRACTION | JSON_THROW_ON_ERROR).PHP_EOL;
         $stream = @fopen($path, 'x');
         if ($stream === false) {
             throw new RuntimeException("Refusing to overwrite immutable JSON file: {$path}");

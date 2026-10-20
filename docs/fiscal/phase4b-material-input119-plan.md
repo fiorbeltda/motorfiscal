@@ -1,5 +1,14 @@
 # Entradas119 — correção versionada a implementar
 
+Plano histórico:implementação119,corpus,regressão integral e auditoria de aceite
+agora concluídos. Estado atual em`phase4b-material119-day-closure-20261020.md`;
+não tratar as pendências históricas abaixo como tarefas ainda abertas da119.
+
+Plano de origem, preservado abaixo como checkpoint anterior à implementação.
+Desenvolvimento retomado e contratos119 instalados: consulte
+`phase4b-material-input119-targeted.md` para os350 testes dirigidos e limites
+atuais. Corpus/replays e regressão integral119 continuam pendentes.
+
 O corpus116 terminou e a auditoria independente passou:35.072 conferências,
 568 comparaçõesDecimal e232 comparações nominais/cambiais108. Registro:
 `D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json`,

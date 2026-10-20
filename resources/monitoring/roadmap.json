@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-20T13:38:50.375Z",
-  "scope_note": "Snapshot publicado em fiorbeltda/motorfiscal;desenvolvimento permanece pausado antes119. Fases3 e4A encerradas funcionalmente em Sandbox;4B em andamento,com execução pausada;5–7 planejadas. Produção bloqueada.",
+  "reviewed_at": "2026-10-20T19:57:01.895Z",
+  "scope_note": "Continuidade automática retomada. Fases3/4A encerradas em Sandbox;4B em andamento,8 grupos parciais;5–7 planejadas.119 corpus terminal e fidelidadeJSON corrigida,sem novo aceite integral.120:54 requisitos examinados,26 não revistos;produção bloqueada.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "IBS/CBS em integração,com oito grupos parciais.112 último aceite;116 corpus intermediário auditado e correções119 a implementar.",
+      "summary": "Entrega 119 aceita: 8.614 testes/133.926 verificações e corpus auditado. Fase 4B em andamento, oito grupos parciais; 54 requisitos examinados e 26 por revisar. Desenvolvimento no ponto seguro de fechamento do dia; produção bloqueada.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -226,7 +226,17 @@
       "field": "before118_base_review_and116_intermediate",
       "reviewed_at": "2026-10-20T13:01:23Z",
       "summary": "117:dez requisitos originais de sujeitos revistos;40 cenários,78 avaliações nativas euma recusa tipada;186 conferências e88 hashes116 intactos. Três bases materiais inconsistentes aceitas no recolhimento pelo adquirente; lacuna reproduzida,sem correção instalada. Três fontes primárias capturadas,nenhuma ativada. Agora30 IDs distintos examinados nos cortes114/115/117 e50 não revistos;zero encerramentos formais.116 mantém593/14.934 dirigidos e auditoria3.657;corpus ampliado em execução,sem resultado terminal integral.112 último aceite.3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "before119_full_regression",
+      "reviewed_at": "2026-10-20T17:31:14.951Z",
+      "summary": "116 terminal intermediário:248 decisões/replays próprios e791 históricos,35.072 conferências independentes/568 Decimal/232 comparações108,97 fontes/126 bloqueios;sem suíte completa116 ou aceite.117/118 examinaram24 itens novos:44 IDs distintos revisados e36 não revistos,nenhum encerrado formalmente.118:34 cenários,68 chamadas,66 decisões e duas exceções;417 conferências/180 Decimal,contratos aninhados falham com booleanos,evidências vazias e duplicidade sem desambiguação.88 hashes intactos;91 arquivos arquivados antes119. Próximo aceite integral deverá incorporar correções119,ainda não instaladas.112 último aceite;3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+    },
+    {
+      "field": "before119_day_closure",
+      "reviewed_at": "2026-10-20T17:44:10.944Z",
+      "summary": "119 instalada:370 decisões/replays próprios e1.071 históricos concluídos;599 testes/9.439 verificações mais28/188 de fidelidadeJSON. Auditorias pós-correção:38.178 conferências ampliadas e1.962 curtas. Regressão integral119 iniciada17:41UTC,24.800 arquivos congelados;sem resultado terminal ou novo aceite.120 examinou dez itens de crédito:54/80 IDs distintos revisados,26 por revisar;lacunas de ajustes e documento identificadas.112 último aceite integral;3/4A encerradas emSandbox,4B com oito grupos parciais e0/8 encerramentos formais,5–7 planejadas e produção bloqueada."
     }
   ],
-  "current_review": "116 terminal intermediário:248 decisões/replays próprios e791 históricos,35.072 conferências independentes/568 Decimal/232 comparações108,97 fontes/126 bloqueios;sem suíte completa116 ou aceite.117/118 examinaram24 itens novos:44 IDs distintos revisados e36 não revistos,nenhum encerrado formalmente.118:34 cenários,68 chamadas,66 decisões e duas exceções;417 conferências/180 Decimal,contratos aninhados falham com booleanos,evidências vazias e duplicidade sem desambiguação.88 hashes intactos;91 arquivos arquivados antes119. Próximo aceite integral deverá incorporar correções119,ainda não instaladas.112 último aceite;3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+  "current_review": "119 aceita localmente: 8.614 testes/133.926 verificações, 370 decisões/replays próprios e 1.071 históricos; 24.800 arquivos congelados intactos, 92 hashes, PHPStan/Pint e auditoria independente aprovados. 120 auditou crédito: 54/80 IDs examinados e 26 por revisar; pesquisa 121 preservada, sem nova integração ou aprovação. Fechamento seguro do dia solicitado pelo usuário, com publicação no GitHub e retomada posterior. Fases 3/4A encerradas em Sandbox, 4B com oito grupos parciais e 0/8 encerramentos formais; 5–7 planejadas, produção bloqueada."
 }

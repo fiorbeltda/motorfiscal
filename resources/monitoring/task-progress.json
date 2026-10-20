@@ -1,50 +1,393 @@
 {
-  "updated_at": "2026-10-20T13:38:50.375Z",
-  "title": "Snapshot Git publicado · desenvolvimento pausado",
-  "state": "Snapshot dd1e1db publicado por fiorbeltda no repositório motorfiscal. Desenvolvimento permanece pausado antes119;produção bloqueada.",
-  "criterion": "100% = 4/4 marcos desta entrega de versionamento:parada segura,revisão dos arquivos,commit local e publicação confirmada no GitHub. Não é percentual funcional do motor.",
+  "updated_at": "2026-10-20T19:57:01.895Z",
+  "title": "Entrega 119 concluída · fechamento de 20/10/2026",
+  "state": "119 aceita localmente: 8.614 testes e 133.926 verificações, 370 decisões/replays próprios e 1.071 históricos. Desenvolvimento encerrado neste ponto seguro a pedido do usuário. Fase 4B parcial; produção bloqueada.",
+  "criterion": "100% dos 6 marcos da entrega 119 concluídos. Não representa percentual funcional da fase 4B nem liberação de produção.",
   "milestones": [
     {
-      "title": "Parar desenvolvimento em ponto seguro",
+      "title": "Auditar e reproduzir falhas materiais117/118",
       "complete": true
     },
     {
-      "title": "Revisar arquivos e excluir temporários do versionamento",
+      "title": "Preservar corpus116 e arquivos anteriores à119",
       "complete": true
     },
     {
-      "title": "Registrar snapshot em commit local",
+      "title": "Implementar políticas versionadas de entrada119",
       "complete": true
     },
     {
-      "title": "Publicar e conferir commit no GitHub",
+      "title": "Validar contratos,positivos e recusas em testes dirigidos",
+      "complete": true
+    },
+    {
+      "title": "Qualificar corpus e replays da nova versão",
+      "complete": true
+    },
+    {
+      "title": "Executar regressão integral e auditoria de aceite",
       "complete": true
     }
   ],
   "finished": [
-    "Commit do motor dd1e1db preservado e publicado no GitHub.",
-    "Conta fiorbeltda e referência remota verificadas.",
-    "Console,fases e objetivos revisados;desenvolvimento segue pausado."
+    "Entrega 119: regressão integral, qualidade final e auditoria independente aprovadas.",
+    "Guardas materiais/recolhimento e fidelidade JSON; 370 replays próprios e 1.071 históricos exatos.",
+    "Créditos 120 auditados; pesquisa 121 preservada e próximos passos documentados."
   ],
   "pending": [
-    "Implementação119 e regressão integral continuam pendentes.",
-    "36 requisitos ainda não revisados;nenhum grupo4B formalmente encerrado.",
-    "Produção bloqueada;último aceite integral112."
+    "Corrigir os contratos de ajustes de crédito e identificadores documentais observados em 120.",
+    "Concluir a revisão dos 26 requisitos restantes; a pesquisa 121 ainda não fecha sua matriz.",
+    "Concluir base, câmbio e documentos ISS e demais lacunas da fase 4B."
   ],
-  "next_step": "Aguardar nova orientação do usuário para retomar o desenvolvimento a partir do plano119.",
+  "next_step": "Na próxima retomada, corrigir os contratos de crédito 120 em nova versão, preservar o aceite 119 e seguir a matriz original dos 80 requisitos.",
   "evidence": [
-    "https://github.com/fiorbeltda/motorfiscal/commit/dd1e1db9347b691a8ceb4f3a7f4985f80a57bac7",
-    "docs/fiscal/versioning-snapshot-20261020.md",
-    "docs/fiscal/phase4b-material-input119-plan.md",
-    "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
-    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
-    "docs/fiscal/phase4b-requirements118-base-review.md",
-    "D:/ProjetoSaasExports/phase4b-requirements118-base-audit-20261020-v1/requirements-review-v1/requirements118-base-review.json",
-    "docs/fiscal/phase4b-requirements117-subjects-review.md",
-    "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+    "storage/app/phase4b-material119-development-20261020/material119-development-validation.json",
+    "docs/fiscal/phase4b-material119-day-closure-20261020.md",
+    "docs/fiscal/phase4b-catalog121-research-checkpoint.md",
+    "D:/ProjetoSaasExports/phase4b-material119-full-suite-20261020/process-start.json",
+    "docs/fiscal/phase4b-material119-corpus-progress.md",
+    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-snapshot-fidelity-validation.json",
+    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-short-validation.json",
+    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/expanded-cli-v1/material119-expanded-cli-validation.json",
+    "docs/fiscal/phase4b-requirements120-credit-review.md",
+    "D:/ProjetoSaasExports/phase4b-requirements120-credit-audit-20261020-v1/requirements-review-v2/requirements120-credit-review.json",
     "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
   ],
   "history": [
+    {
+      "updated_at": "2026-10-20T17:43:52.899Z",
+      "title": "Entradas119 · regressão integral em execução",
+      "state": "Regressão integral119 iniciada em20/10 às17:41UTC,com24.800 arquivos congelados.370 decisões/replays próprios e1.071 históricos concluídos;auditorias pós-correção aprovadas.112 último aceite integral;produção bloqueada.",
+      "criterion": "83% = 5/6 marcos119:auditoria,preservação,guardas,testes dirigidos e corpus/replays concluídos. Regressão integral e aceite permanecem pendentes. Não é percentual funcional global da4B.",
+      "milestones": [
+        {
+          "title": "Auditar e reproduzir falhas materiais117/118",
+          "complete": true
+        },
+        {
+          "title": "Preservar corpus116 e arquivos anteriores à119",
+          "complete": true
+        },
+        {
+          "title": "Implementar políticas versionadas de entrada119",
+          "complete": true
+        },
+        {
+          "title": "Validar contratos,positivos e recusas em testes dirigidos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus e replays da nova versão",
+          "complete": true
+        },
+        {
+          "title": "Executar regressão integral e auditoria de aceite",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "370 decisões/replays próprios e1.071 históricos;tentativa falha preservada.",
+        "599 testes/9.439 verificações e28 testes/188 verificações da fidelidadeJSON.",
+        "120:74 cenários/148 chamadas auditados;54 IDs examinados,26 por revisar."
+      ],
+      "pending": [
+        "Concluir a regressão integral119 ativa e auditoria de aceite,sem promover execução a aprovação.",
+        "Corrigir em versão própria os ajustes de crédito e documento significativo.",
+        "Revisar26 IDs restantes e concluir ISS/base/câmbio e documentos."
+      ],
+      "next_step": "Acompanhar a mesma regressão119 até estado terminal e executar auditoria de aceite;em paralelo auditar catálogos121 sem alterar entradas congeladas.",
+      "evidence": [
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json",
+        "docs/fiscal/phase4b-material119-day-closure-20261020.md",
+        "docs/fiscal/phase4b-catalog121-research-checkpoint.md",
+        "D:/ProjetoSaasExports/phase4b-material119-full-suite-20261020/process-start.json",
+        "docs/fiscal/phase4b-material119-corpus-progress.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-snapshot-fidelity-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-short-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/expanded-cli-v1/material119-expanded-cli-validation.json",
+        "docs/fiscal/phase4b-requirements120-credit-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements120-credit-audit-20261020-v1/requirements-review-v2/requirements120-credit-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Regressão integral119 iniciada em20/10 às17:41UTC,com24.800 arquivos congelados.370 decisões/replays próprios e1.071 históricos concluídos;auditorias pós-correção aprovadas.112 último aceite integral;produção bloqueada.",
+        "finished": [
+          "370 decisões/replays próprios e1.071 históricos;tentativa falha preservada.",
+          "599 testes/9.439 verificações e28 testes/188 verificações da fidelidadeJSON.",
+          "120:74 cenários/148 chamadas auditados;54 IDs examinados,26 por revisar."
+        ],
+        "pending": [
+          "Concluir a regressão integral119 ativa e auditoria de aceite,sem promover execução a aprovação.",
+          "Corrigir em versão própria os ajustes de crédito e documento significativo.",
+          "Revisar26 IDs restantes e concluir ISS/base/câmbio e documentos."
+        ],
+        "next_step": "Acompanhar a mesma regressão119 até estado terminal e executar auditoria de aceite;em paralelo auditar catálogos121 sem alterar entradas congeladas."
+      }
+    },
+    {
+      "updated_at": "2026-10-20T17:31:14.951Z",
+      "title": "Entradas119 · preparação da regressão integral",
+      "state": "370 decisões/replays próprios e1.071 históricos concluídos. Falha de tipo do snapshot corrigida,com28 testes novos;contratosCLI v2 completos. Auditorias finais e preparação da regressão integral em andamento.112 último aceite integral;produção bloqueada.",
+      "criterion": "83% = 5/6 marcos119:auditoria,preservação,guardas,testes dirigidos e corpus/replays concluídos. Regressão integral e aceite permanecem pendentes. Não é percentual funcional global da4B.",
+      "milestones": [
+        {
+          "title": "Auditar e reproduzir falhas materiais117/118",
+          "complete": true
+        },
+        {
+          "title": "Preservar corpus116 e arquivos anteriores à119",
+          "complete": true
+        },
+        {
+          "title": "Implementar políticas versionadas de entrada119",
+          "complete": true
+        },
+        {
+          "title": "Validar contratos,positivos e recusas em testes dirigidos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus e replays da nova versão",
+          "complete": true
+        },
+        {
+          "title": "Executar regressão integral e auditoria de aceite",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "370 decisões/replays próprios e1.071 históricos;tentativa falha preservada.",
+        "599 testes/9.439 verificações e28 testes/188 verificações da fidelidadeJSON.",
+        "120:74 cenários/148 chamadas auditados;54 IDs examinados,26 por revisar."
+      ],
+      "pending": [
+        "Concluir a regressão integral119 ativa e auditoria de aceite,sem promover execução a aprovação.",
+        "Corrigir em versão própria os ajustes de crédito e documento significativo.",
+        "Revisar26 IDs restantes e concluir ISS/base/câmbio e documentos."
+      ],
+      "next_step": "Concluir auditoria pós-correção e iniciar uma única regressão integral119;depois qualificar contratos de crédito e seguir a matriz original dos80 requisitos.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-material119-full-suite-20261020/process-start.json",
+        "docs/fiscal/phase4b-material119-corpus-progress.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-snapshot-fidelity-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-short-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/expanded-cli-v1/material119-expanded-cli-validation.json",
+        "docs/fiscal/phase4b-requirements120-credit-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements120-credit-audit-20261020-v1/requirements-review-v2/requirements120-credit-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Regressão integral119 iniciada em20/10 às17:41UTC,com24.800 arquivos congelados.370 decisões/replays próprios e1.071 históricos concluídos;auditorias pós-correção aprovadas.112 último aceite integral;produção bloqueada.",
+        "finished": [
+          "370 decisões/replays próprios e1.071 históricos;tentativa falha preservada.",
+          "599 testes/9.439 verificações e28 testes/188 verificações da fidelidadeJSON.",
+          "120:74 cenários/148 chamadas auditados;54 IDs examinados,26 por revisar."
+        ],
+        "pending": [
+          "Concluir a regressão integral119 ativa e auditoria de aceite,sem promover execução a aprovação.",
+          "Corrigir em versão própria os ajustes de crédito e documento significativo.",
+          "Revisar26 IDs restantes e concluir ISS/base/câmbio e documentos."
+        ],
+        "next_step": "Acompanhar a mesma regressão119 até estado terminal e executar auditoria de aceite;em paralelo auditar catálogos121 sem alterar entradas congeladas."
+      }
+    },
+    {
+      "updated_at": "2026-10-20T14:48:17.684Z",
+      "title": "Entradas119 · corpus e fidelidade de replay",
+      "state": "599 testes dirigidos aprovados;32 decisões/replays geográficos concluídos. ContratosCLI v1 pararam por perda do tipo1.0 no snapshot:89 decisões,88 replays exatos e uma divergência. Corpus de preços/históricos segue em execução;nenhuma regressão integral iniciada.",
+      "criterion": "67% = 4/6 marcos119:auditoria,preservação,guardas e testes dirigidos concluídos. Falha nativa de transporte identificada impede concluir corpus/replays e aceite. Não é percentual funcional global da4B.",
+      "milestones": [
+        {
+          "title": "Auditar e reproduzir falhas materiais117/118",
+          "complete": true
+        },
+        {
+          "title": "Preservar corpus116 e arquivos anteriores à119",
+          "complete": true
+        },
+        {
+          "title": "Implementar políticas versionadas de entrada119",
+          "complete": true
+        },
+        {
+          "title": "Validar contratos,positivos e recusas em testes dirigidos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus e replays da nova versão",
+          "complete": true
+        },
+        {
+          "title": "Executar regressão integral e auditoria de aceite",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "599 testes/9.439 verificações e auditoria3.660 checks dos124 transportes.",
+        "32 decisões e32 replays geográficos119 concluídos.",
+        "Falha1.0→1 no snapshot reproduzida;tentativa e código anteriores preservados."
+      ],
+      "pending": [
+        "Corrigir fidelidade de tipo do snapshot após término do corpus congelado.",
+        "Requalificar replays e executar regressão integral/aceite119.",
+        "Auditar36 IDs restantes e concluir lacunas de créditos,ISS e documentos."
+      ],
+      "next_step": "Acompanhar o mesmo corpus de preços/históricos até estado terminal,sem alterar entradas;em seguida preservar JSON1.0 nos novos snapshots,criar regressões e requalificar os contratosCLI em nova tentativa.",
+      "evidence": [
+        "docs/fiscal/phase4b-material119-corpus-progress.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/snapshot-fidelity-fix-v1/failure-observation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-expanded-preparation-validation.json",
+        "docs/fiscal/phase4b-material-input119-targeted.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-targeted-validation.json",
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "119 em validação:falha de tipo no snapshot impede aceite;corpus congelado segue ativo.",
+        "finished": [
+          "599 testes/9.439 verificações e auditoria3.660 checks dos124 transportes.",
+          "32 decisões e32 replays geográficos119 concluídos.",
+          "Falha1.0→1 no snapshot reproduzida;tentativa e código anteriores preservados."
+        ],
+        "pending": [
+          "Corrigir fidelidade de tipo do snapshot após término do corpus congelado.",
+          "Requalificar replays e executar regressão integral/aceite119.",
+          "Auditar36 IDs restantes e concluir lacunas de créditos,ISS e documentos."
+        ],
+        "next_step": "Acompanhar o mesmo corpus de preços/históricos até estado terminal,sem alterar entradas;em seguida preservar JSON1.0 nos novos snapshots,criar regressões e requalificar os contratosCLI em nova tentativa."
+      }
+    },
+    {
+      "updated_at": "2026-10-20T14:31:18.527Z",
+      "title": "Entradas119 · validação dirigida concluída",
+      "state": "Desenvolvimento retomado. Contratos119 instalados e350 testes/1.079 verificações aprovados;corpus,replays e regressão integral pendentes.112 continua último aceite;produção bloqueada.",
+      "criterion": "67% = 4/6 marcos da entrega119:auditoria,preservação,implementação e testes dirigidos concluídos. Corpus/replays e regressão/aceite ainda pendentes. Não é percentual funcional global da4B.",
+      "milestones": [
+        {
+          "title": "Auditar e reproduzir falhas materiais117/118",
+          "complete": true
+        },
+        {
+          "title": "Preservar corpus116 e arquivos anteriores à119",
+          "complete": true
+        },
+        {
+          "title": "Implementar políticas versionadas de entrada119",
+          "complete": true
+        },
+        {
+          "title": "Validar contratos,positivos e recusas em testes dirigidos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus e replays da nova versão",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e auditoria de aceite",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "119:tipos exatos,evidências,linhas e fundamentos de recolhimento qualificados.",
+        "350 testes/1.079 verificações;PHPStan ePint593 aprovados.",
+        "Auditoria413 checks;98 fontes verificadas,127 bloqueios de produção."
+      ],
+      "pending": [
+        "Requalificar124 cenários de preços e corpus geográfico para119.",
+        "Capturar replays,históricos e regressão integral antes do aceite.",
+        "Revisar36 IDs restantes;concluir ISS/base/câmbio e documentos."
+      ],
+      "next_step": "Reemitir apenas vínculos sintéticos de identidade/preço/composição com conhecimento posterior à disponibilidade119,preservando eventos de ciclo;depois executar corpus,replays e regressão integral.",
+      "evidence": [
+        "docs/fiscal/phase4b-material119-corpus-progress.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/snapshot-fidelity-fix-v1/failure-observation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-expanded-preparation-validation.json",
+        "docs/fiscal/phase4b-material-input119-targeted.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-targeted-validation.json",
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Contratos119 instalados e verificados de forma dirigida;sem aceite integral.",
+        "finished": [
+          "119:tipos exatos,evidências,linhas e fundamentos de recolhimento qualificados.",
+          "350 testes/1.079 verificações;PHPStan ePint593 aprovados.",
+          "Auditoria413 checks;98 fontes verificadas,127 bloqueios de produção."
+        ],
+        "pending": [
+          "Requalificar124 cenários de preços e corpus geográfico para119.",
+          "Capturar replays,históricos e regressão integral antes do aceite.",
+          "Revisar36 IDs restantes;concluir ISS/base/câmbio e documentos."
+        ],
+        "next_step": "Reemitir apenas vínculos sintéticos de identidade/preço/composição com conhecimento posterior à disponibilidade119,preservando eventos de ciclo;depois executar corpus,replays e regressão integral."
+      }
+    },
+    {
+      "updated_at": "2026-10-20T13:38:50.375Z",
+      "title": "Snapshot Git publicado · desenvolvimento pausado",
+      "state": "Snapshot dd1e1db publicado por fiorbeltda no repositório motorfiscal. Desenvolvimento permanece pausado antes119;produção bloqueada.",
+      "criterion": "100% = 4/4 marcos desta entrega de versionamento:parada segura,revisão dos arquivos,commit local e publicação confirmada no GitHub. Não é percentual funcional do motor.",
+      "milestones": [
+        {
+          "title": "Parar desenvolvimento em ponto seguro",
+          "complete": true
+        },
+        {
+          "title": "Revisar arquivos e excluir temporários do versionamento",
+          "complete": true
+        },
+        {
+          "title": "Registrar snapshot em commit local",
+          "complete": true
+        },
+        {
+          "title": "Publicar e conferir commit no GitHub",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Commit do motor dd1e1db preservado e publicado no GitHub.",
+        "Conta fiorbeltda e referência remota verificadas.",
+        "Console,fases e objetivos revisados;desenvolvimento segue pausado."
+      ],
+      "pending": [
+        "Implementação119 e regressão integral continuam pendentes.",
+        "36 requisitos ainda não revisados;nenhum grupo4B formalmente encerrado.",
+        "Produção bloqueada;último aceite integral112."
+      ],
+      "next_step": "Aguardar nova orientação do usuário para retomar o desenvolvimento a partir do plano119.",
+      "evidence": [
+        "https://github.com/fiorbeltda/motorfiscal/commit/dd1e1db9347b691a8ceb4f3a7f4985f80a57bac7",
+        "docs/fiscal/versioning-snapshot-20261020.md",
+        "docs/fiscal/phase4b-material-input119-plan.md",
+        "D:/ProjetoSaasExports/phase4b-geographic116-integration-20261020/geographic116-intermediate-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/before-integration-archive.json",
+        "docs/fiscal/phase4b-requirements118-base-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements118-base-audit-20261020-v1/requirements-review-v1/requirements118-base-review.json",
+        "docs/fiscal/phase4b-requirements117-subjects-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements117-subjects-audit-20261020-v1/requirements-review-v2/requirements117-subjects-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Snapshot dd1e1db publicado por fiorbeltda no repositório motorfiscal. Desenvolvimento permanece pausado antes119;produção bloqueada.",
+        "finished": [
+          "Commit do motor dd1e1db preservado e publicado no GitHub.",
+          "Conta fiorbeltda e referência remota verificadas.",
+          "Console,fases e objetivos revisados;desenvolvimento segue pausado."
+        ],
+        "pending": [
+          "Implementação119 e regressão integral continuam pendentes.",
+          "36 requisitos ainda não revisados;nenhum grupo4B formalmente encerrado.",
+          "Produção bloqueada;último aceite integral112."
+        ],
+        "next_step": "Aguardar nova orientação do usuário para retomar o desenvolvimento a partir do plano119."
+      }
+    },
     {
       "updated_at": "2026-10-20T13:30:50.054Z",
       "title": "Desenvolvimento pausado · snapshot Git",
@@ -1440,17 +1783,17 @@
     }
   ],
   "focus": {
-    "summary": "Snapshot dd1e1db publicado por fiorbeltda no repositório motorfiscal. Desenvolvimento permanece pausado antes119;produção bloqueada.",
+    "summary": "119 aceita localmente: 8.614 testes e 133.926 verificações, 370 decisões/replays próprios e 1.071 históricos. Desenvolvimento encerrado neste ponto seguro a pedido do usuário. Fase 4B parcial; produção bloqueada.",
     "finished": [
-      "Commit do motor dd1e1db preservado e publicado no GitHub.",
-      "Conta fiorbeltda e referência remota verificadas.",
-      "Console,fases e objetivos revisados;desenvolvimento segue pausado."
+      "Entrega 119: regressão integral, qualidade final e auditoria independente aprovadas.",
+      "Guardas materiais/recolhimento e fidelidade JSON; 370 replays próprios e 1.071 históricos exatos.",
+      "Créditos 120 auditados; pesquisa 121 preservada e próximos passos documentados."
     ],
     "pending": [
-      "Implementação119 e regressão integral continuam pendentes.",
-      "36 requisitos ainda não revisados;nenhum grupo4B formalmente encerrado.",
-      "Produção bloqueada;último aceite integral112."
+      "Corrigir os contratos de ajustes de crédito e identificadores documentais observados em 120.",
+      "Concluir a revisão dos 26 requisitos restantes; a pesquisa 121 ainda não fecha sua matriz.",
+      "Concluir base, câmbio e documentos ISS e demais lacunas da fase 4B."
     ],
-    "next_step": "Aguardar nova orientação do usuário para retomar o desenvolvimento a partir do plano119."
+    "next_step": "Na próxima retomada, corrigir os contratos de crédito 120 em nova versão, preservar o aceite 119 e seguir a matriz original dos 80 requisitos."
   }
 }

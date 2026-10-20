@@ -108,6 +108,19 @@ final readonly class ConsumptionReformEngine
         if ($missing !== []) {
             return $this->stop('ACTION_REQUIRED', ['RTC_MATERIAL_FACTS_MISSING'], $missing, $trace);
         }
+        $materialInput119 = MaterialInputPolicy119::required($this->codes);
+        if ($materialInput119) {
+            $inputPolicy = (new MaterialInputPolicy119)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'MATERIAL_INPUT_POLICY119', ...$inputPolicy];
+            if ($inputPolicy['status'] !== 'RESOLVED') {
+                return $this->stop('ACTION_REQUIRED', [$inputPolicy['reason']], [], $trace);
+            }
+            $adjustmentInput = (new OrdinaryAdjustmentInput119)->qualify($facts->value('rtc.base_adjustments'));
+            $trace[] = ['stage' => 'ADJUSTMENT_INPUT119', ...$adjustmentInput];
+            if ($adjustmentInput['status'] !== 'RESOLVED') {
+                return $this->stop($adjustmentInput['status'], [$adjustmentInput['reason']], [], $trace);
+            }
+        }
         $kind = (string) $facts->value('rtc.operation_kind');
         $consideration = (string) $facts->value('rtc.consideration');
         $market = (string) $facts->value('rtc.market');
@@ -1049,6 +1062,14 @@ final readonly class ConsumptionReformEngine
         }
         $collection = (string) $facts->value('rtc.collection_method');
         $collectionDecision = null;
+        if ($materialInput119 && in_array($collection, ['SUPPLIER', 'ACQUIRER', 'SPLIT_PAYMENT'], true)) {
+            $collectionReference = (new CollectionBasisReference119)->qualify($collection, $facts->value('rtc.collection_legal_basis'));
+            $trace[] = ['stage' => 'COLLECTION_REFERENCE119', ...$collectionReference];
+            if ($collectionReference['status'] !== 'RESOLVED') {
+                return $this->stop($collectionReference['status'], [$collectionReference['reason']],
+                    $collectionReference['reason'] === 'RTC_COLLECTION_BASIS_MISSING' ? ['rtc.collection_legal_basis'] : [], $trace);
+            }
+        }
         if ($this->transitions->qualifiesCollectionMethods()) {
             $collectionDecision = (new CollectionDecisionEngine)->resolve($facts, $market,
                 $this->transitions->splitOperational($on, $knownAt));
@@ -1483,7 +1504,7 @@ final readonly class ConsumptionReformEngine
         // Bundle policy, not a caller opt-in: old captured bundles retain their original behavior.
         if (! array_key_exists('observed_geographic_reference', $this->codes)
             && ! array_key_exists('observed_geographic_reference_policy', $this->codes)
-            && ($this->codes['version'] ?? null) !== '2026.10.20-116-draft1') {
+            && ! in_array($this->codes['version'] ?? null, ['2026.10.20-116-draft1', MaterialInputPolicy119::VERSION], true)) {
             return null;
         }
         $catalog = $this->codes['observed_geographic_reference'] ?? [];

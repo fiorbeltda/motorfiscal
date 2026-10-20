@@ -1,20 +1,21 @@
 {
-  "reviewed_at": "2026-10-20T13:38:50.375Z",
-  "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.19-112-draft2",
-  "criterion": "Revisão preservada após publicação do snapshot dd1e1db em fiorbeltda/motorfiscal. Desenvolvimento pausado:44/80 requisitos examinados,36 não revisados,0/8 grupos formalmente encerrados. Aceite integral112;116 intermediário e119 não instalada. Sem percentual funcional global ou liberação de produção.",
+  "reviewed_at": "2026-10-20T19:57:01.895Z",
+  "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.20-119-draft1",
+  "criterion": "Entrega 119 aceita localmente após suíte 8.614/133.926 e auditoria independente. 54/80 requisitos examinados, 26 ainda por revisar; 0/8 grupos formalmente encerrados. Produção bloqueada; sem percentual funcional global.",
   "objectives": [
     {
       "id": "4B.1",
       "finished": [
         "Seleção temporal e bloqueio de versões indisponíveis;IBS estadual/municipal eCBS segregados.",
         "Antecipações88/91 e documentos108 aceitos localmente;datasISS próprias preservadas,sem reescreverRTC.",
-        "4B.1.1–8 examinados;guardas split114 corrigidas.116 preserva eventos de revogação/supersessão ao mudar o conhecimento;593/14.934 dirigidos aprovados,sem encerrar o grupo."
+        "Oito requisitos temporais examinados; correções split 114 e recusas temporais 116 preservadas na regressão integral 119 aprovada."
       ],
       "pending": [
-        "Qualificar materialidade,datas e regimes restantes,sem reescreverRTC. Preservar ciclo114 e recusas temporais116 na próxima regressão integral com119.",
+        "Qualificar materialidade, datas e regimes restantes, preservando os eventos e as recusas temporais já aceitos.",
         "Concluir demais espécies temporais, taxas futuras e transição2032/2033."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
         "phase4b-geographic116-price-expansion.md",
         "phase4b-requirements114-temporal-review.md",
         "phase4b-price112-current-integration.md",
@@ -33,22 +34,23 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.2",
       "finished": [
         "12 itens originais de incidência/local examinados, com razõesRTC/ISS preservadas por ramo.",
-        "116:coerência município/UF integrada e corpus ampliado terminal248/248+791 históricos auditado;32 decisões/replays geográficos anteriores preservados.",
+        "Coerência município/UF 116 incorporada ao aceite 119; corpus 370/370 e 1.071 históricos, sem presumir domicílio ou validade histórica.",
         "ConversãoRTC73 e resultadosISS96/98 preservados; a referência geográfica não prova domicílio ou validade histórica."
       ],
       "pending": [
-        "Validar integração com correções119 e concluir regressão integral;qualificar materialidade/local fiscal histórico além da referência auxiliar.",
+        "Qualificar materialidade e local fiscal histórico além da referência geográfica auxiliar.",
         "Concluir obrigação documental da importação/exportação parcial, demais locais especiais e operações não onerosas.",
         "Qualificar conversão e bases ISS por documento, sem substituir essas provas pela parcela ou cotação RTC.",
         "Comprovar origem material das demais moedas e regras de conversão cruzada."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
         "phase4b-geographic116-price-expansion.md",
         "phase4b-geographic116-current-integration.md",
         "phase4b-requirements115-incidence-review.md",
@@ -59,39 +61,45 @@
         "phase4b-sp97-municipal-result-preparation.md",
         "phase4b-sp98-current-integration.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.3",
       "finished": [
         "117 examinou os dez itens de sujeitos:40 cenários/78 avaliações nativas,uma recusa tipada e186 conferências;88 hashes116 intactos.",
         "Papéis,importador,plataformas e guardas públicas/split observados;pagador elegível separado da extinção.",
-        "Simples78 e ciclo split114 preservados.117 reproduziu três inconsistências de base material,sem correção instalada."
+        "119 aceita: referências vinculadas ao método ordinário; inconsistências 117 recusadas nos dois executores, sem comprovar pagamento ou extinção."
       ],
       "pending": [
-        "Corrigir em119 a vinculação de base material ao método;concluir split,liquidação,responsabilidades gerais e opções das plataformas.",
+        "Concluir split, liquidação, responsabilidades gerais e opções das plataformas, além das referências já qualificadas.",
         "Concluir públicos/consórcios,Simples/MEI e demais perfis,com cadastro,documentos e parâmetros qualificados."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
+        "phase4b-material119-corpus-progress.md",
+        "phase4b-material-input119-targeted.md",
         "phase4b-requirements117-subjects-review.md",
         "phase4b-requirements114-temporal-review.md",
         "phase4b-simples78-local-integration.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.4",
       "finished": [
         "118 examinou os14 itens de base:34 cenários/68 chamadas,66 decisões e duas exceções;417 checks/180 Decimal e88 hashes intactos.",
         "116 preservou preços e memória nominal nos124 cenários;71 composições locais positivas,sem base/impostoISS aprovados.",
-        "Coerção de booleanos,evidências vazias e duplicidade sem desambiguação reproduzidas;119 ainda não instalada."
+        "119 aceita: recusa tipos/evidências inválidos e linhas ambíguas; novos snapshots preservam 1.0, com 28 regressões de fidelidade e corpus auditado."
       ],
       "pending": [
-        "Implementar contratos119 de ajuste exato,evidência significativa e identidade de linha,sem enfraquecer as guardas atuais.",
+        "Comprovar autenticidade e materialidade das evidências; guardas e replays não encerram base/cálculo.",
         "Concluir base/câmbio/impostoISS,benefícios e reduções de base,operações combinadas e demais perfis obrigatórios.",
         "Qualificar liquidação,documentos e parâmetros restantes;aritmética correta não aprova prova material."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
+        "phase4b-material119-corpus-progress.md",
+        "phase4b-material-input119-targeted.md",
         "phase4b-requirements118-base-review.md",
         "phase4b-material-input119-plan.md",
         "phase4b-geographic116-price-expansion.md",
@@ -103,31 +111,35 @@
         "phase4b-iss-fx109-source-scope-review.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.5",
       "finished": [
-        "Crédito de aquisição condicionado ao tratamento,documento e extinção;IBS/CBS independentes.",
-        "Anulação/manutenção e apuração sobre livro previamente qualificado;propostas locais de transferência cooperativa."
+        "120:dez requisitos examinados em74 cenários/148 chamadas;142 decisões e seis exceções preservadas.507 checks/180 Decimal.",
+        "Crédito de entrada,anulação do fornecedor e apuração mensal segregados;ALLOWED,DENIED,CONDITIONAL eNOT_ASSESSED distintos.",
+        "Importação com ponte sintética explícita alcança guardas e créditos1.00/9.00;documento definitivo permanece pendente."
       ],
       "pending": [
-        "Concluir créditos presumidos/específicos e integração contábil.",
-        "Demonstrar condições materiais de transferência, extinção e apropriação; proposta local não prova sua efetivação."
+        "Corrigir ajustes de crédito booleanos/binários,evidências/documento em branco e linhas ambíguas,com recusas controladas.",
+        "Concluir apropriação,estorno/glosa,créditos presumidos/específicos e demais provas materiais.",
+        "Demonstrar transferência,extinção e apropriação efetivas quando exigidas;livro pré-qualificado e proposta local não as comprovam."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
+        "phase4b-requirements120-credit-review.md",
         "phase4b-input-credit-treatments.md",
         "phase4b-supplier-credit-period.md",
         "phase4b-cooperative-network-credit-transfer.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.6",
       "finished": [
-        "Catálogos e fontes oficiais versionados;correlação documental separada de regra decisória aprovada.",
-        "112:94/94 capturas válidas e sete fatos/perguntas próprios;parâmetros municipais e alíquotas anteriores preservados.",
-        "116:referênciaIBGE27UFs/5.571 registros e97 fontes ativas conferidas.117 capturou três fontes de pesquisa adicionais,sem ativação ou mudança de runtime."
+        "Catálogos oficiais versionados; correlação separada de regra decisória, com 98 fontes/hash válidos no aceite 119.",
+        "Pesquisa 121: 4.421 conferências de 39 cIndOp, 173 classes, 18 CST, 1.208 NBS e 200 correlações; nenhuma ativação nova.",
+        "cClassTrib 1.70 recapturado com mesmo hash; cIndOp 1.03.00 e leiaute NT009 1.04.01 preservados para qualificação posterior."
       ],
       "pending": [
         "Qualificar autônomos/doação e indicadores documentais, sem decisão automática inferida da tabela1.70.",
@@ -135,6 +147,9 @@
         "Auditar cobertura por requisito; correlação oficial não equivale a regra decisória."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
+        "phase4b-catalog121-research-checkpoint.md",
+        "phase4b-material-input119-targeted.md",
         "phase4b-requirements117-subjects-review.md",
         "phase4b-geographic116-price-expansion.md",
         "phase4b-geographic116-current-integration.md",
@@ -149,13 +164,13 @@
         "phase4b-catalog101-current-integration.md",
         "phase4b-catalog101-original-scope-review.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.7",
       "finished": [
         "Projeção documental parcial e qualificação local de resultados,identidade e datas por documento até o aceite108.",
-        "116:124 cenários e corpus248/248 terminal,com71 composições positivas e duas recusas temporais corretas. Ainda não geraXML nem autoriza emissão.",
+        "119 preserva a composição local de preços nos 124 cenários, com 142 decisões compostas e quatro recusas literais de ciclo; não gera XML nem autoriza emissão.",
         "Obrigação documental continua bloqueada;composição local não geraXML nem autoriza emissão."
       ],
       "pending": [
@@ -164,6 +179,7 @@
         "Concluir ciclo de cancelamento/substituição, demais perfis e dependênciaD1021, sem assinatura/transmissão ao vivo."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
         "phase4b-geographic116-price-expansion.md",
         "phase4b-price112-current-integration.md",
         "phase4b-iss-price111-local-component.md",
@@ -185,21 +201,25 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     },
     {
       "id": "4B.8",
       "finished": [
-        "Último aceite integrado112:7.738 testes/116.599 verificações;248 decisões/replays próprios e543 históricos.",
-        "112:538 testes novos;1.442/21.844 dirigidos,PHPStan/Pint581 e auditoria1.092 checks aprovados.",
-        "116:248 decisões/replays próprios e791 históricos auditados,35.072 checks/568 Decimal;sem suíte integral.117/118:44 IDs examinados,zero encerramentos formais."
+        "119: suíte integral aprovada, 8.614 testes/133.926 verificações, 24.800 arquivos congelados sem mudanças e 92 hashes de runtime conferidos.",
+        "370 decisões/replays próprios, 1.071 históricos e 40.140 conferências independentes de corpus; PHPStan sem erros e Pint 597 aprovados.",
+        "876 testes permanentes novos desde 112; auditoria 120 mantém 54 IDs examinados e 26 não revisados, sem fechamento formal de grupos."
       ],
       "pending": [
-        "Implementar correções119,novo corpus/replays,regressão e aceite. Continuar auditoria dos36 IDs ainda não revistos;os44 examinados não são requisitos aprovados.",
+        "Corrigir contratos de crédito 120 e concluir a auditoria dos 26 IDs restantes; 54 examinados não equivalem a requisitos aprovados.",
         "Completar corpus positivo e matriz de propriedades/invariantes por família/período.",
         "Comprovar registro/consumo e liquidação documental nos escopos restantes; contagem de testes não substitui aceitação funcional."
       ],
       "evidence": [
+        "phase4b-material119-day-closure-20261020.md",
+        "phase4b-material119-corpus-progress.md",
+        "phase4b-material119-corpus-progress.md",
+        "phase4b-material-input119-targeted.md",
         "phase4b-requirements118-base-review.md",
         "phase4b-material-input119-plan.md",
         "phase4b-requirements117-subjects-review.md",
@@ -223,10 +243,10 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-20T13:25:42Z"
+      "reviewed_at": "2026-10-20T19:57:01.895Z"
     }
   ],
-  "reviewed_acceptance": "storage/app/phase4b-price112-development-20261019/price112-development-validation.json",
+  "reviewed_acceptance": "storage/app/phase4b-material119-development-20261020/material119-development-validation.json",
   "history_reviews": [
     {
       "field": "storage1437_review",
@@ -1561,7 +1581,249 @@
           "reviewed_at": "2026-10-20T13:01:23Z"
         }
       ]
+    },
+    {
+      "field": "before119_day_closure",
+      "reviewed_at": "2026-10-20T17:43:53.255Z",
+      "summary": "116 terminal intermediário:248 decisões/replays próprios e791 históricos,35.072 conferências independentes/568 Decimal/232 comparações108,97 fontes/126 bloqueios;sem suíte completa116 ou aceite.117/118 examinaram24 itens novos:44 IDs distintos revisados e36 não revistos,nenhum encerrado formalmente.118:34 cenários,68 chamadas,66 decisões e duas exceções;417 conferências/180 Decimal,contratos aninhados falham com booleanos,evidências vazias e duplicidade sem desambiguação.88 hashes intactos;91 arquivos arquivados antes119. Próximo aceite integral deverá incorporar correções119,ainda não instaladas.112 último aceite;3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada.",
+      "objectives": [
+        {
+          "id": "4B.1",
+          "finished": [
+            "Seleção temporal e bloqueio de versões indisponíveis;IBS estadual/municipal eCBS segregados.",
+            "Antecipações88/91 e documentos108 aceitos localmente;datasISS próprias preservadas,sem reescreverRTC.",
+            "4B.1.1–8 examinados;guardas split114 corrigidas.116 preserva eventos de revogação/supersessão ao mudar o conhecimento;593/14.934 dirigidos aprovados,sem encerrar o grupo."
+          ],
+          "pending": [
+            "Qualificar materialidade,datas e regimes restantes,sem reescreverRTC. Preservar ciclo114 e recusas temporais116 na próxima regressão integral com119.",
+            "Concluir demais espécies temporais, taxas futuras e transição2032/2033."
+          ],
+          "evidence": [
+            "phase4b-geographic116-price-expansion.md",
+            "phase4b-requirements114-temporal-review.md",
+            "phase4b-price112-current-integration.md",
+            "phase4b-iss-price111-local-component.md",
+            "phase4b-temporal86-local-integration.md",
+            "phase4b-advance88-local-integration.md",
+            "phase4b-advance89-record-binding-preparation.md",
+            "phase4b-advance90-captured-final-preparation.md",
+            "phase4b-advance91-local-integration.md",
+            "phase4b-iss-date105-source-scope-review.md",
+            "phase4b-iss-date105-municipal-supplement.md",
+            "phase4b-iss-date105-material-contract-draft.md",
+            "phase4b-iss-date105-local-component.md",
+            "phase4b-iss-date106-result-composition.md",
+            "phase4b-identity107-dated-preparation.md",
+            "phase4b-dated108-current-integration.md",
+            "phase4b-price110-local-component.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.2",
+          "finished": [
+            "12 itens originais de incidência/local examinados, com razõesRTC/ISS preservadas por ramo.",
+            "116:coerência município/UF integrada e corpus ampliado terminal248/248+791 históricos auditado;32 decisões/replays geográficos anteriores preservados.",
+            "ConversãoRTC73 e resultadosISS96/98 preservados; a referência geográfica não prova domicílio ou validade histórica."
+          ],
+          "pending": [
+            "Validar integração com correções119 e concluir regressão integral;qualificar materialidade/local fiscal histórico além da referência auxiliar.",
+            "Concluir obrigação documental da importação/exportação parcial, demais locais especiais e operações não onerosas.",
+            "Qualificar conversão e bases ISS por documento, sem substituir essas provas pela parcela ou cotação RTC.",
+            "Comprovar origem material das demais moedas e regras de conversão cruzada."
+          ],
+          "evidence": [
+            "phase4b-geographic116-price-expansion.md",
+            "phase4b-geographic116-current-integration.md",
+            "phase4b-requirements115-incidence-review.md",
+            "phase4b-export73-resumption-and-schema74.md",
+            "phase4b-import-fx68-integration-progress.md",
+            "phase4b-iss-export95-preparation.md",
+            "phase4b-export-iss96-live-integration.md",
+            "phase4b-sp97-municipal-result-preparation.md",
+            "phase4b-sp98-current-integration.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.3",
+          "finished": [
+            "117 examinou os dez itens de sujeitos:40 cenários/78 avaliações nativas,uma recusa tipada e186 conferências;88 hashes116 intactos.",
+            "Papéis,importador,plataformas e guardas públicas/split observados;pagador elegível separado da extinção.",
+            "119 vincula referências ao método ordinário;três inconsistências117 recusadas. ContratosCLI v2 e replays concluídos;instrumento/split e extinçãoUNCONFIRMED preservados."
+          ],
+          "pending": [
+            "Qualificar119 em corpus/replays e regressão integral;concluir split,liquidação,responsabilidades gerais e opções das plataformas.",
+            "Concluir públicos/consórcios,Simples/MEI e demais perfis,com cadastro,documentos e parâmetros qualificados."
+          ],
+          "evidence": [
+            "phase4b-material119-corpus-progress.md",
+            "phase4b-material-input119-targeted.md",
+            "phase4b-requirements117-subjects-review.md",
+            "phase4b-requirements114-temporal-review.md",
+            "phase4b-simples78-local-integration.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.4",
+          "finished": [
+            "118 examinou os14 itens de base:34 cenários/68 chamadas,66 decisões e duas exceções;417 checks/180 Decimal e88 hashes intactos.",
+            "116 preservou preços e memória nominal nos124 cenários;71 composições locais positivas,sem base/impostoISS aprovados.",
+            "119 recusa tipos/evidências inválidos e linhas ambíguas;falha de transporte1.0→1 corrigida em novos snapshots,com28 regressões. Corpus370/370+1.071 históricos concluído."
+          ],
+          "pending": [
+            "Concluir regressão integral/aceite119. Guardas e replays não comprovam autenticidade das evidências nem encerram base/cálculo.",
+            "Concluir base/câmbio/impostoISS,benefícios e reduções de base,operações combinadas e demais perfis obrigatórios.",
+            "Qualificar liquidação,documentos e parâmetros restantes;aritmética correta não aprova prova material."
+          ],
+          "evidence": [
+            "phase4b-material119-corpus-progress.md",
+            "phase4b-material119-corpus-progress.md",
+            "phase4b-material-input119-targeted.md",
+            "phase4b-requirements118-base-review.md",
+            "phase4b-material-input119-plan.md",
+            "phase4b-geographic116-price-expansion.md",
+            "phase4b-iss-base113-boundary-contract.md",
+            "phase4b-price112-current-integration.md",
+            "phase4b-iss-price111-local-component.md",
+            "phase4b-financial-scope-integration.md",
+            "phase4b-temporal86-local-integration.md",
+            "phase4b-iss-fx109-source-scope-review.md",
+            "phase4b-price110-local-component.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.5",
+          "finished": [
+            "120:dez requisitos examinados em74 cenários/148 chamadas;142 decisões e seis exceções preservadas.507 checks/180 Decimal.",
+            "Crédito de entrada,anulação do fornecedor e apuração mensal segregados;ALLOWED,DENIED,CONDITIONAL eNOT_ASSESSED distintos.",
+            "Importação com ponte sintética explícita alcança guardas e créditos1.00/9.00;documento definitivo permanece pendente."
+          ],
+          "pending": [
+            "Corrigir ajustes de crédito booleanos/binários,evidências/documento em branco e linhas ambíguas,com recusas controladas.",
+            "Concluir apropriação,estorno/glosa,créditos presumidos/específicos e demais provas materiais.",
+            "Demonstrar transferência,extinção e apropriação efetivas quando exigidas;livro pré-qualificado e proposta local não as comprovam."
+          ],
+          "evidence": [
+            "phase4b-requirements120-credit-review.md",
+            "phase4b-input-credit-treatments.md",
+            "phase4b-supplier-credit-period.md",
+            "phase4b-cooperative-network-credit-transfer.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.6",
+          "finished": [
+            "Catálogos e fontes oficiais versionados;correlação documental separada de regra decisória aprovada.",
+            "112:94/94 capturas válidas e sete fatos/perguntas próprios;parâmetros municipais e alíquotas anteriores preservados.",
+            "116:referênciaIBGE27UFs/5.571 registros e97 fontes ativas conferidas.117 capturou três fontes de pesquisa adicionais,sem ativação ou mudança de runtime.",
+            "119 adiciona uma captura117 preservada daLC214:98 fontes com hashes válidos;referência local de contrato,não nova vigência fiscal."
+          ],
+          "pending": [
+            "Qualificar autônomos/doação e indicadores documentais, sem decisão automática inferida da tabela1.70.",
+            "Qualificar por documento o subitem/código municipal e sua cadeia temporal;família1 não basta. Revisar mapeamentos restantes e aprovar regras candidatas.",
+            "Auditar cobertura por requisito; correlação oficial não equivale a regra decisória."
+          ],
+          "evidence": [
+            "phase4b-material-input119-targeted.md",
+            "phase4b-requirements117-subjects-review.md",
+            "phase4b-geographic116-price-expansion.md",
+            "phase4b-geographic116-current-integration.md",
+            "phase4b-requirements115-incidence-review.md",
+            "phase4b-iss-base113-boundary-contract.md",
+            "phase4b-iss-base113-primary-intake.md",
+            "phase4b-price112-current-integration.md",
+            "phase4b-iss-price111-local-component.md",
+            "phase4b-status.md",
+            "phase4b-catalog99-current-primary-preparation.md",
+            "phase4b-catalog100-reference-preparation.md",
+            "phase4b-catalog101-current-integration.md",
+            "phase4b-catalog101-original-scope-review.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.7",
+          "finished": [
+            "Projeção documental parcial e qualificação local de resultados,identidade e datas por documento até o aceite108.",
+            "116:124 cenários e corpus248/248 terminal,com71 composições positivas e duas recusas temporais corretas. Ainda não geraXML nem autoriza emissão.",
+            "Obrigação documental continua bloqueada;composição local não geraXML nem autoriza emissão."
+          ],
+          "pending": [
+            "Concluir NT009, documentos separados da exportação parcial e documento definitivo de importação.",
+            "Qualificar cadastro/autorização, identidade fiscal integral, unicidade, conversão/bases e par XML por documento.",
+            "Concluir ciclo de cancelamento/substituição, demais perfis e dependênciaD1021, sem assinatura/transmissão ao vivo."
+          ],
+          "evidence": [
+            "phase4b-geographic116-price-expansion.md",
+            "phase4b-price112-current-integration.md",
+            "phase4b-iss-price111-local-component.md",
+            "phase4b-export73-resumption-and-schema74.md",
+            "phase4b-foreign-acquirer76-local-integration.md",
+            "phase4b-dere9121-63-contextual-period-integration.md",
+            "phase4b-document92-fresh-research.md",
+            "phase4b-document94-base-memory.md",
+            "phase4b-export-iss96-live-integration.md",
+            "phase4b-identity102-primary-research.md",
+            "phase4b-identity103-local-preparation.md",
+            "phase4b-identity104-current-integration.md",
+            "phase4b-iss-date105-source-scope-review.md",
+            "phase4b-iss-date105-municipal-supplement.md",
+            "phase4b-iss-date105-material-contract-draft.md",
+            "phase4b-iss-date105-local-component.md",
+            "phase4b-iss-date106-result-composition.md",
+            "phase4b-identity107-dated-preparation.md",
+            "phase4b-dated108-current-integration.md",
+            "phase4b-price110-local-component.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        },
+        {
+          "id": "4B.8",
+          "finished": [
+            "Último aceite integrado112:7.738 testes/116.599 verificações;248 decisões/replays próprios e543 históricos.",
+            "112:538 testes novos;1.442/21.844 dirigidos,PHPStan/Pint581 e auditoria1.092 checks aprovados.",
+            "119:370 decisões/replays próprios e1.071 históricos;599+28 testes dirigidos,fidelidadeJSON corrigida.120:54 IDs examinados,26 não revistos;sem novo aceite integral."
+          ],
+          "pending": [
+            "Concluir regressão/aceite119 e corrigir contratos de crédito. Auditar26 IDs não revistos;54 examinados não equivalem a requisitos aprovados.",
+            "Completar corpus positivo e matriz de propriedades/invariantes por família/período.",
+            "Comprovar registro/consumo e liquidação documental nos escopos restantes; contagem de testes não substitui aceitação funcional."
+          ],
+          "evidence": [
+            "phase4b-material119-corpus-progress.md",
+            "phase4b-material119-corpus-progress.md",
+            "phase4b-material-input119-targeted.md",
+            "phase4b-requirements118-base-review.md",
+            "phase4b-material-input119-plan.md",
+            "phase4b-requirements117-subjects-review.md",
+            "phase4b-geographic116-price-expansion.md",
+            "phase4b-geographic116-current-integration.md",
+            "phase4b-requirements115-incidence-review.md",
+            "phase4b-requirements114-temporal-review.md",
+            "phase4b-price112-current-integration.md",
+            "phase4b-iss-price111-local-component.md",
+            "phase4b-advance88-local-integration.md",
+            "phase4b-original-requirements72-partial-export73.md",
+            "phase4b-advance89-record-binding-preparation.md",
+            "phase4b-advance90-captured-final-preparation.md",
+            "phase4b-advance91-local-integration.md",
+            "phase4b-acceptance93-artifact-review.md",
+            "phase4b-document94-base-memory.md",
+            "phase4b-export-iss96-live-integration.md",
+            "phase4b-sp98-current-integration.md",
+            "phase4b-iss-date106-result-composition.md",
+            "phase4b-identity107-dated-preparation.md",
+            "phase4b-dated108-current-integration.md",
+            "phase4b-price110-local-component.md"
+          ],
+          "reviewed_at": "2026-10-20T17:31:14.951Z"
+        }
+      ]
     }
   ],
-  "current_review": "116 terminal intermediário:248 decisões/replays próprios e791 históricos,35.072 conferências independentes/568 Decimal/232 comparações108,97 fontes/126 bloqueios;sem suíte completa116 ou aceite.117/118 examinaram24 itens novos:44 IDs distintos revisados e36 não revistos,nenhum encerrado formalmente.118:34 cenários,68 chamadas,66 decisões e duas exceções;417 conferências/180 Decimal,contratos aninhados falham com booleanos,evidências vazias e duplicidade sem desambiguação.88 hashes intactos;91 arquivos arquivados antes119. Próximo aceite integral deverá incorporar correções119,ainda não instaladas.112 último aceite;3/4A encerradas emSandbox,4B com oito grupos parciais,5–7 planejadas e produção bloqueada."
+  "current_review": "119 aceita localmente: 8.614 testes/133.926 verificações, 370 decisões/replays próprios e 1.071 históricos; 24.800 arquivos congelados intactos, 92 hashes, PHPStan/Pint e auditoria independente aprovados. 120 auditou crédito: 54/80 IDs examinados e 26 por revisar; pesquisa 121 preservada, sem nova integração ou aprovação. Fechamento seguro do dia solicitado pelo usuário, com publicação no GitHub e retomada posterior. Fases 3/4A encerradas em Sandbox, 4B com oito grupos parciais e 0/8 encerramentos formais; 5–7 planejadas, produção bloqueada."
 }

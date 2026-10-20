@@ -1,0 +1,403 @@
+{
+    "ready": false,
+    "eligible_for_local_validation": true,
+    "development_blockers": [],
+    "external_dependencies": [
+        {
+            "code": "CBS_RATE_2027_UNAVAILABLE",
+            "consequence": "ACTION_REQUIRED for calculations requiring this rate"
+        },
+        {
+            "code": "IBS_JURISDICTIONAL_RATES_2029_UNAVAILABLE",
+            "consequence": "ACTION_REQUIRED for calculations requiring these rates"
+        },
+        {
+            "code": "ISS_BASE_RATE_2028_FUTURE",
+            "consequence": "2029-2032 ISS needs the municipal rate effective on 2028-12-31"
+        },
+        {
+            "code": "SPLIT_OPERATIONAL_DEPLOYMENT_UNPROVEN",
+            "consequence": "Split collection stays ACTION_REQUIRED until official deployment is bound to a dated catalog row"
+        },
+        {
+            "code": "DOCUMENT_LAYOUT_DEPLOYMENT_UNPROVEN:NT009-RTC-1.04.00",
+            "consequence": "Use only the layout proven effective for the target environment"
+        },
+        {
+            "code": "RTC_DPS_RESTRICTED_SCHEMA_LOCAL_ONLY",
+            "consequence": "Observed restricted schema permits local structural validation only; production requires a separately proven environment contract"
+        }
+    ],
+    "known_parameters": {
+        "rates": [
+            {
+                "tax": "IBS_STATE",
+                "jurisdiction": "BR",
+                "percent": "0.10",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "source_id": "LC214-ART343",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"
+            },
+            {
+                "tax": "IBS_MUNICIPAL",
+                "jurisdiction": "BR",
+                "percent": "0.00",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "source_id": "LC214-ART343",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"
+            },
+            {
+                "tax": "CBS",
+                "jurisdiction": "BR",
+                "percent": "0.90",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "source_id": "LC214-ART346",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"
+            },
+            {
+                "tax": "IBS_STATE",
+                "jurisdiction": "BR",
+                "percent": "0.05",
+                "valid_from": "2027-01-01",
+                "valid_to": "2028-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "source_id": "LC214-ART344",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"
+            },
+            {
+                "tax": "IBS_MUNICIPAL",
+                "jurisdiction": "BR",
+                "percent": "0.05",
+                "valid_from": "2027-01-01",
+                "valid_to": "2028-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "source_id": "LC214-ART344",
+                "source_hash": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442"
+            }
+        ],
+        "transition": [
+            {
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "TEST",
+                "iss_factor": "1.00",
+                "icms_factor": "1.00",
+                "pis_cofins_status": "COEXISTS",
+                "iss_status": "COEXISTS",
+                "source_article": "LC214 arts. 343, 346"
+            },
+            {
+                "valid_from": "2027-01-01",
+                "valid_to": "2028-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "INITIAL",
+                "iss_factor": "1.00",
+                "icms_factor": "1.00",
+                "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+                "iss_status": "COEXISTS",
+                "source_article": "LC214 arts. 344-347"
+            },
+            {
+                "valid_from": "2029-01-01",
+                "valid_to": "2029-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "GRADUAL",
+                "iss_factor": "0.90",
+                "icms_factor": "0.90",
+                "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+                "iss_status": "COEXISTS",
+                "source_article": "LC214 art. 508; LC116 art. 8-B"
+            },
+            {
+                "valid_from": "2030-01-01",
+                "valid_to": "2030-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "GRADUAL",
+                "iss_factor": "0.80",
+                "icms_factor": "0.80",
+                "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+                "iss_status": "COEXISTS",
+                "source_article": "LC214 art. 508; LC116 art. 8-B"
+            },
+            {
+                "valid_from": "2031-01-01",
+                "valid_to": "2031-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "GRADUAL",
+                "iss_factor": "0.70",
+                "icms_factor": "0.70",
+                "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+                "iss_status": "COEXISTS",
+                "source_article": "LC214 art. 508; LC116 art. 8-B"
+            },
+            {
+                "valid_from": "2032-01-01",
+                "valid_to": "2032-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "GRADUAL",
+                "iss_factor": "0.60",
+                "icms_factor": "0.60",
+                "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+                "iss_status": "COEXISTS",
+                "source_article": "LC214 art. 508; LC116 art. 8-B"
+            },
+            {
+                "valid_from": "2033-01-01",
+                "valid_to": "2033-12-31",
+                "published_at": "2025-01-16T00:00:00-03:00",
+                "status": "ACTIVE",
+                "phase": "FINAL",
+                "iss_factor": "0.00",
+                "icms_factor": "0.00",
+                "pis_cofins_status": "EXTINCT_FOR_CONSUMPTION",
+                "iss_status": "EXTINCT",
+                "source_article": "LC214 transition provisions"
+            }
+        ]
+    },
+    "bundle_id": "CONSUMPTION-PHASE4B-2026.10.20-119-draft1",
+    "bundle_manifest_hash": "4c105e92dd539762da9c003a639c73c3e4b6d84c5939be0e8b8ef6c6ba766edc",
+    "controls_version": "2026.10.20-119-draft1",
+    "controls_hash": "25bd6089d666625701e7079902d866e79e73f38c93fb1b6855a8eb26b13e9484",
+    "controls": [
+        {
+            "id": "4B.1.TEMPORALITY",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "2033 sem ISS encaminhado ao IBS/CBS com prova de evento não transicional; operações cruzando 2032/2033 ainda exigem regra específica. CBS 2027+ e IBS por destino 2029+ sem alíquotas comprovadas. Eventos86 opt-in: data local qualificada; débitos anteriores, conciliação documental e demais contextos continuam pendentes."
+        },
+        {
+            "id": "4B.2.INCIDENCE_AND_DESTINATION",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Doação com opção de tributação pelo valor de mercado recebe cálculo nominal segregado quando destino e alíquotas estão comprovados; documento, anulação quantitativa de créditos, outras operações não onerosas e locais especiais ainda pendentes. Destino presencial sobre pessoa com prova de local e estabelecimento implementado; demais locais especiais pendentes."
+        },
+        {
+            "id": "4B.2.EXPORT_IMPORT",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Exportação parcial digital: papéis, destino e valores nominais da parcela brasileira qualificados; obrigação documental e revisão da classificação ainda pendentes. Importação: documento definitivo pendente.96: resultados ISS por documento vinculados localmente após alocação RTC;identidade fiscal,data ISS,conversão,base e par XML ainda não qualificados.98:condições municipaisSP do resultado vinculadas localmente;sem aprovação legal,conversão,imposto ou XML por documento."
+        },
+        {
+            "id": "4B.3.SUBJECTS_AND_COLLECTION",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Compras públicas qualificadas pelos arts. 372, 472 e 473, com exceções e parcelas temporais; redutor não publicado, cálculo de destinação, consórcios, recolhimento e cadastro ainda pendentes."
+        },
+        {
+            "id": "4B.3.SIMPLES_MEI",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Eleição regular H1/2027 aceita localmente78 com íntegra CGSN194/186. Sem autenticação governamental, alíquotas futuras, apuração Simples integral ou aprovação de produção."
+        },
+        {
+            "id": "4B.4.BASE_AND_SPECIAL_REGIMES",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Redução de 30% profissional e de 60% em educação/saúde com anexos II/III e glosa médica não paga materializadas; demais benefícios/regimes e operações combinadas ainda pendentes. Imunidade institucional de ISS com prova das finalidades essenciais, nominal zero e campos DPS1.01; demais perfis e atos municipais tributáveis continuam pendentes. Cooperativas: rotas I/II art271 não financeiras com opção comprovada e cálculo zero; financeiro, intercooperativas, agropecuário e transferência272 permanecem pendentes. Rotas não financeiras entre cooperativas e originadas de banco cooperativo qualificados; demais financeiros/agropecuários pendentes. Enquadramento182–184 ativado; software não financeiro de fornecedor183 integrado sob regras gerais. Base192/193 qualificada na memória; tributos/créditos/documentos financeiros específicos continuam pendentes. Débitos financeiros brutos192/193 calculados em2026 com343/346/348; condições de recolhimento separadas. Componentes futuros exigem atos; créditos/documentos específicos e demais bases pendentes. Crédito financeiro194–199 integrado com prova pré-qualificada, caixa, limites do relatório e extinção por componente. Selic/DI brutas, qualificação automática da carteira195 e documento financeiro permanecem pendentes. Arredondamento DeRE de débitos brutos em14; bases, gross-down e créditos específicos ainda exigem revisão completa da política documental.112:preço110 e composição111 locais;FX/base/imposto,obrigação eXML continuam pendentes,não aprovados por este contrato."
+        },
+        {
+            "id": "4B.5.CREDITS",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Crédito de entrada arts49/50; anulação/manutenção51/52 e cálculo mensal consolidado42-45/53 sobre livro previamente qualificado, sem entrega. Qualificação dos regimes específicos/presumidos e integração contábil ainda pendentes. Art272: vínculo produtivo, origem/data, saldo disponível e proposta de transferência por tributo; sem transferência efetiva e sem conceder crédito presumido automaticamente."
+        },
+        {
+            "id": "4B.6.CLASSIFICATION",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "98 regras interpretativas candidatas; duas novas regras educacionais de cooperativas. Demais mapeamentos e aprovação formal pendentes.101:referência1.70 por fonte,vigência e modelo integrada;sem seleção automática de códigos novos,indicador de doação emitido ou aprovação legal."
+        },
+        {
+            "id": "4B.7.DOCUMENT",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "DPS XML local de serviço doméstico tributável com tomador/destinatário e retenções 4A, replay e hashes implementados. Faceta serie do XSD oficial conflita com série operacional; perfis especiais, prova municipal e implantação NT009 ainda pendentes. Cronograma RTC explícito e independente de implantação, com revisão do ato completo pendente. Glosa médica altera base RTC com trace, mas exige grupo documental antes de XML; conflito oficial de série permanece. DeRE: projetor transacional192/193 exige alocação mensal qualificada, corpo validado nos XSDs originais sem assinatura; eventos mensais, regras completas, implantação e ISS/4A financeiros ainda pendentes. D1101 local com replay e vínculo ao livro qualificado; PGCC referencial completo, D1121 e D1199 continuam pendentes. D1121 local com replay e vínculo ao livro qualificado; documentos e histórico qualificados vinculados; PGCC referencial e D1199 continuam pendentes. D1199 local com replay e vínculo ao livro qualificado; D1101 e D1121 reconstruídos no mesmo período; cadastro e PGCC referenciais, D1106/D2101 e reabertura permanecem pendentes. D1001 financeiro local com Tabela21 oficial1.3.0 e cinco provas independentes datadas; cadastro/calendário positivos permanecem sintéticos. XSD mensal mantido1.2.0: pacote integral1.3.0 não demonstrado. PGCC/auxiliares, alterações/exclusões, demais perfis e homologação continuam pendentes. Candidato19: D1011 original local, seis referências COSIF, domínio Tabela11 e RN completa de auxiliares; aplicação temporal/institucional e classificação dependem de provas externas, sintéticas no corpus. Sem aprovação histórica universal COSIF nem execução D1106/D2101. Candidato20: D1121 obrigatório411011105 reconcilia documento/conta/lançamento de correspondente, separando captação; provas e histórico positivos sintéticos. Demais códigos/atividades D1121, fonte documental real e recepção continuam pendentes. Candidato21: D2101 original sem movimento, somente contas zeradas com prova independente sintética; novo XSD completo1.3.0 vinculado somente ao D2101. Movimentos, saldos não nulos, D1106 e migração dos outros eventos continuam pendentes. Candidato22: seis eventos do subconjunto mensal original usam um unico pacoteXSD1.3.0, D1011v1.0.4 e D1121v0.0.2 com desdobramento por conta; continuacao exige historico vinculado a conta. Sem homologacao, recebimento, novas atividades ou planos referenciais. Candidato23: D2101 principal movimentado, saldo por ISIN/conta e reconciliacao D1101; provas externas Selic previamente qualificadas. Juros/ganhos/variacoes e apuracao diaria propria pendentes. Candidato25: rendimento art195 de custo constante integrado a base e D2101, emissor regular fora do regime financeiro, origem fiscal unica, gross contabile separado, arredondamento8/2 half-even e saldo reconciliado. Estoque/custo variavel e fechamento oficial pendentes. Candidato26: memoria diaria local de custo medio, compras/saidas/amortizacoes/cupons, curvas contabeis e benchmark Selic com convencao temporal expressa. Homologacao do metodo, tributacao do ganho de venda e integracao mensal variavel pendentes. Candidato27: posicao variavel com memoria diaria local reproduzida integrada a base e D2101, compras/saidas/amortizacoes/cupons reconciliados ao D1101 e origem unica. Convencoes sem homologacao e ganho de venda nao enquadrado permanecem bloqueados. Desenvolvimento28:parcelas atuais TVM com historico reproduzido integradas experimentalmente;escopo integral,perdas/casos restantes e ponte D1101/D2101 ainda em desenvolvimento. Draft2:ponte privada sem valor justo com diarios balanceados em verificacao;oferta publica e subcontas de valor justo ainda pendentes. Draft2:ponte privada sem valor justo com diarios balanceados em verificacao;oferta publica e subcontas de valor justo ainda pendentes. Draft4:valor justo requer subconta, diarios reais fornecidos, ajustes e evidencia independente;oferta publica e demais caminhos28 continuam em desenvolvimento. Draft5: amortizacao com realizacao provada; cupom de rendimento anterior sem nova inclusao; escopo28 integral pendente.104:composição e vínculo local dos IDsDPS após96/98;cadastro,autorização,unicidade remota,data material,conversão,bases e XML continuam sem aprovação.108:105-107 ligados localmente por data própria;aplicabilidade material/regimes completos,câmbio,base/imposto eXML ainda sem aprovação.112:preço110 e composição111 locais;FX/base/imposto,obrigação eXML continuam pendentes,não aprovados por este contrato."
+        },
+        {
+            "id": "4B.8.CORPUS",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "O corpus atual não demonstra decisão positiva e homologada para todas as famílias, períodos e tratamentos."
+        },
+        {
+            "id": "INTEGRATED.ISS_MUNICIPAL",
+            "state": "OPEN",
+            "approved": false,
+            "gap": "O bundle usa parâmetros municipais sintéticos; a transição exige fonte municipal oficial para 31/12/2028 e parâmetros atuais de responsabilidade. Imunidade institucional de ISS com prova das finalidades essenciais, nominal zero e campos DPS1.01; demais perfis e atos municipais tributáveis continuam pendentes."
+        },
+        {
+            "id": "INTEGRATED.4A",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Avaliação federal após 2032 encaminhada à 4A com prova de data e veto a PIS/Cofins legados; perfis públicos/cooperativos, obrigações temporais e atos locais ainda exigem revisão."
+        },
+        {
+            "id": "4B.1.TEMPORAL_EVENT_SETTLEMENT",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Prova dos débitos anteriores, período de apuração, cancelamento/pagamento a maior, documentos e demais espécies ainda não aceitos. Origem88: cálculo nominal local anterior ao fornecimento; registro e liquidação ainda não comprovados.91: vínculo local de registros e memória final com valores capturados; qualificação legal do registro, consumo atômico e documento permanecem pendentes."
+        },
+        {
+            "id": "4B.2.OBSERVED_GEOGRAPHY_REFERENCE",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Reference consistency only;no historical territorial validity,fiscal location,domicile or establishment authentication. Current snapshot absence is not historical nonexistence. Complete material/date/profile acceptance separately."
+        },
+        {
+            "id": "4B.4.MATERIAL_INPUT119",
+            "state": "PARTIAL",
+            "approved": false,
+            "gap": "Local exact-type/evidence/line-identity and collection-reference guards119;not proof of authenticity,legal applicability,payment or complete4B. Full regression and independent acceptance pending."
+        }
+    ],
+    "official_sources_checked": 98,
+    "official_source_hashes_valid": 98,
+    "blockers": [
+        "CONTROL_NOT_APPROVED:4B.1.TEMPORALITY",
+        "CONTROL_NOT_APPROVED:4B.2.INCIDENCE_AND_DESTINATION",
+        "CONTROL_NOT_APPROVED:4B.2.EXPORT_IMPORT",
+        "CONTROL_NOT_APPROVED:4B.3.SUBJECTS_AND_COLLECTION",
+        "CONTROL_NOT_APPROVED:4B.3.SIMPLES_MEI",
+        "CONTROL_NOT_APPROVED:4B.4.BASE_AND_SPECIAL_REGIMES",
+        "CONTROL_NOT_APPROVED:4B.5.CREDITS",
+        "CONTROL_NOT_APPROVED:4B.6.CLASSIFICATION",
+        "CONTROL_NOT_APPROVED:4B.7.DOCUMENT",
+        "CONTROL_NOT_APPROVED:4B.8.CORPUS",
+        "CONTROL_NOT_APPROVED:INTEGRATED.ISS_MUNICIPAL",
+        "CONTROL_NOT_APPROVED:INTEGRATED.4A",
+        "CONTROL_NOT_APPROVED:4B.1.TEMPORAL_EVENT_SETTLEMENT",
+        "CONTROL_NOT_APPROVED:4B.2.OBSERVED_GEOGRAPHY_REFERENCE",
+        "CONTROL_NOT_APPROVED:4B.4.MATERIAL_INPUT119",
+        "INTEGRATED_MUNICIPAL_PARAMETERS_ARE_FIXTURES",
+        "RTC_CATALOG_NOT_PRODUCTION_APPROVED:rtc_rate_catalog",
+        "RTC_CATALOG_NOT_PRODUCTION_APPROVED:rtc_code_catalog",
+        "RTC_CATALOG_NOT_PRODUCTION_APPROVED:rtc_transition_catalog",
+        "ISS_EXPORT_RESULT_LOCAL_CANDIDATE_ONLY",
+        "SP_SOFTWARE_EXPORT_RESULT_LOCAL_CANDIDATE_ONLY",
+        "DPS_IDENTITY_LOCAL_MAPPING_ONLY_NOT_ISSUANCE_APPROVAL",
+        "DATED_ISS_DPS_LOCAL_EVIDENCE_ONLY_NOT_LEGAL_OR_DOCUMENT_APPROVAL",
+        "DOCUMENT_PRICE_COMPOSITION_LOCAL_ONLY_NOT_ISS_BASE_FX_OR_ISSUANCE_APPROVAL",
+        "CCLASSTRIB_REFERENCE_LOCAL_ONLY_NOT_CLASSIFICATION_APPROVAL",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.SAAS.RESIDUAL.SANDBOX-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.IMPORTED_SAAS.RESIDUAL.SANDBOX-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.SAAS.RECIPIENT_DESTINATION.SANDBOX-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.IMPORTED_SAAS.RECIPIENT_DESTINATION.SANDBOX-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.LAWYER.REMOTE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.LAWYER.REMOTE.REDUCED_30-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.LAWYER.DIGITAL.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.LAWYER.DIGITAL.REDUCED_30-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ACCOUNTANT.REMOTE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ACCOUNTANT.REMOTE.REDUCED_30-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ACCOUNTANT.DIGITAL.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ACCOUNTANT.DIGITAL.REDUCED_30-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080102.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080102.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080102.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080102.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080201.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080201.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080201.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080201.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040101.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040101.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040101.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040101.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040301.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040301.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040301.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040301.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040302.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040302.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040302.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040302.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040401.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040401.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040401.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040401.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040601.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040601.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040601.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040601.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040701.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040701.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040701.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040701.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040802.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040802.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040802.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040802.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040803.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040803.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040803.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.040803.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041001.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041001.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041001.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041001.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041201.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041201.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041201.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041201.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041601.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041601.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041601.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041601.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041701.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041701.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041701.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041701.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041704.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041704.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041704.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041704.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041901.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041901.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041901.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.041901.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.042101.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.042101.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.042101.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.042101.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250101.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250101.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250101.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250101.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250202.ACQUIRER_DOMICILE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250202.PERSON_PRESENCE.STANDARD-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250202.ACQUIRER_DOMICILE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.250202.PERSON_PRESENCE.REDUCED_60-1",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.IMMUNITY.410006",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.IMMUNITY.410007",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.IMMUNITY.410006",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.IMMUNITY.410007",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.COOPERATIVE.ZERO",
+        "CLASSIFICATION_RULE_NOT_APPROVED:RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.COOPERATIVE.ZERO",
+        "DOCUMENT_LAYOUT_DEPLOYMENT_NOT_PROVEN:NT009-RTC-1.04.00",
+        "BUNDLE_NOT_PRODUCTION_APPROVED",
+        "RTC_DPS_RESTRICTED_SCHEMA_LOCAL_ONLY",
+        "LEGAL_APPROVAL_SIGNATURE_MISSING_OR_INVALID"
+    ]
+}

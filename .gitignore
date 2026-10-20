@@ -20,6 +20,8 @@
 /storage/pail
 /vendor
 /tmp/
+__pycache__/
+*.py[cod]
 Homestead.json
 Homestead.yaml
 Thumbs.db
