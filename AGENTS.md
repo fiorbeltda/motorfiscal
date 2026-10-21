@@ -27,3 +27,35 @@ Ao finalizar qualquer tarefa neste projeto, atualizar `/console-fiscal`:
 
 Checkout real: `C:/xampp/htdocs/projeto-saas-motor`. Preservar alterações do usuário.
 Nunca reiniciar suíte viva por mero timeout de observação.
+
+# Arquivos volumosos e rastreabilidade entre C: e D:
+
+Priorizar sempre o D: para arquivos pesados,corpora,snapshots,XML,logs extensos,
+renderizações e novas evidências volumosas. Manter no C: os caminhos lógicos
+necessários ao projeto e índices/recibos compactos que apontem para o D:.
+
+O usuário autorizou transferir evidências históricas volumosas para o D:,
+preservando integralmente o conteúdo e a rastreabilidade. Usar junções quando
+necessário para que os caminhos antigos no C: continuem funcionando. Registrar
+origem,destino,data,inventário e SHA256;verificar cópia e acesso pelos dois
+caminhos antes de considerar a transferência concluída. Não apagar histórico.
+
+Não mover arquivos utilizados por capturas,suítes ou replays ativos. Confirmar
+estado terminal primeiro;validar os alvos absolutos e manter recuperação segura.
+
+No DockerDesktop,junçõesNTFS para outro disco não são suficientes:um teste
+sintético confirmou que funcionam noWindows mas não pelo bind do checkout.
+Para evidências migradas,manter também binds explícitos doD: nos mesmos
+caminhos lógicos do contêiner,preferencialmente somente leitura. Conferir hashes
+no host e no contêiner antes de remover a cópia antiga. Não recriar contêiner
+vivo;preservar antes sua camada gravável/temporários relevantes noD: e manter
+volumes e banco intactos. Configuração preparada não significa mount aplicado.
+
+Em21/10/2026,o DockerDesktop foi relançado oculto porWin32_Process.Create,
+com paiWmiPrvSE.exe,fora da árvore transitória do executor. Recibo:
+`D:/ProjetoSaasExports/docker122-detached-relaunch-20261021-v1/readiness-validation.json`.
+Se precisar relançá-lo,preferir esse método com logs/PID noD:,sem tarefas
+agendadas adicionais. Não reiniciar se já estiver vivo nem interromper coletas.
+Validar também reinício com junções existentes;apenas o teste antes da migração
+não comprova a conectividade posterior. O índice compacto das duas primeiras
+pastas migradas está em`storage/app/evidence-storage-index-20261021.json`.

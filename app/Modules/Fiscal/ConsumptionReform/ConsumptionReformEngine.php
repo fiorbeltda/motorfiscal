@@ -108,7 +108,8 @@ final readonly class ConsumptionReformEngine
         if ($missing !== []) {
             return $this->stop('ACTION_REQUIRED', ['RTC_MATERIAL_FACTS_MISSING'], $missing, $trace);
         }
-        $materialInput119 = MaterialInputPolicy119::required($this->codes);
+        $creditInput122 = CreditInputPolicy122::required($this->codes);
+        $materialInput119 = MaterialInputPolicy119::required($this->codes) || $creditInput122;
         if ($materialInput119) {
             $inputPolicy = (new MaterialInputPolicy119)->qualify($this->codes, $knownAt);
             $trace[] = ['stage' => 'MATERIAL_INPUT_POLICY119', ...$inputPolicy];
@@ -144,6 +145,21 @@ final readonly class ConsumptionReformEngine
             }
         }
         $inputCreditTreatment = null;
+        if ($creditInput122) {
+            $creditPolicy = (new CreditInputPolicy122)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'CREDIT_INPUT_POLICY122', ...$creditPolicy];
+            if ($creditPolicy['status'] !== 'RESOLVED') {
+                return $this->stop($creditPolicy['status'], [$creditPolicy['reason']], [], $trace);
+            }
+            if ($facts->value('rtc.credit_context') === 'INPUT' && $facts->value('rtc.acquirer_regime') === 'REGULAR'
+                && ! ($kind === 'FINANCIAL' && isset($this->codes['financial_operation']['credit']))) {
+                $creditInput = (new CreditInput122)->qualify($facts->canonicalValues(), $market);
+                $trace[] = ['stage' => 'CREDIT_INPUT122', ...$creditInput];
+                if ($creditInput['status'] !== 'RESOLVED') {
+                    return $this->stop($creditInput['status'], [$creditInput['reason']], $creditInput['missing_facts'], $trace);
+                }
+            }
+        }
         if ($facts->value('rtc.credit_context') === 'INPUT' && isset($this->codes['input_credit_treatment'])
             && $facts->value('rtc.acquirer_regime') === 'REGULAR'
             && ! ($kind === 'FINANCIAL' && isset($this->codes['financial_operation']['credit']))) {
@@ -1011,7 +1027,15 @@ final readonly class ConsumptionReformEngine
             if ($this->transitions->qualifiesImportCredits() && $facts->value('rtc.credit_context') === 'INPUT') {
                 $importCredit = (new CreditDecisionEngine)->resolve($facts, 'IMPORT', true, $inputCreditTreatment);
                 if ($importCredit['status'] !== 'RESOLVED') {
-                    return $this->stop('ACTION_REQUIRED', [$importCredit['reason']], $importCredit['missing_facts'], $trace);
+                    $creditMissing = $creditInput122
+                        ? (new CreditInput122)->correctionFacts($importCredit['reason'], $importCredit['missing_facts'])
+                        : $importCredit['missing_facts'];
+                    if ($creditMissing !== $importCredit['missing_facts']) {
+                        $trace[] = ['stage' => 'CREDIT_CORRECTION122', 'reason' => $importCredit['reason'],
+                            'missing_facts' => $creditMissing, 'credit_granted' => false];
+                    }
+
+                    return $this->stop('ACTION_REQUIRED', [$importCredit['reason']], $creditMissing, $trace);
                 }
                 $trace[] = ['stage' => 'IMPORT_CREDIT', 'source_article' => $importCredit['source_article'] ?? null,
                     'source_hash' => $this->transitions->sourceHash(),
@@ -1058,7 +1082,15 @@ final readonly class ConsumptionReformEngine
         }
         $credit = (new CreditDecisionEngine)->resolve($facts, $market, treatmentDecision: $inputCreditTreatment);
         if ($credit['status'] === 'ACTION_REQUIRED') {
-            return $this->stop('ACTION_REQUIRED', [$credit['reason']], $credit['missing_facts'], $trace);
+            $creditMissing = $creditInput122
+                ? (new CreditInput122)->correctionFacts($credit['reason'], $credit['missing_facts'])
+                : $credit['missing_facts'];
+            if ($creditMissing !== $credit['missing_facts']) {
+                $trace[] = ['stage' => 'CREDIT_CORRECTION122', 'reason' => $credit['reason'],
+                    'missing_facts' => $creditMissing, 'credit_granted' => false];
+            }
+
+            return $this->stop('ACTION_REQUIRED', [$credit['reason']], $creditMissing, $trace);
         }
         $collection = (string) $facts->value('rtc.collection_method');
         $collectionDecision = null;
@@ -1504,7 +1536,7 @@ final readonly class ConsumptionReformEngine
         // Bundle policy, not a caller opt-in: old captured bundles retain their original behavior.
         if (! array_key_exists('observed_geographic_reference', $this->codes)
             && ! array_key_exists('observed_geographic_reference_policy', $this->codes)
-            && ! in_array($this->codes['version'] ?? null, ['2026.10.20-116-draft1', MaterialInputPolicy119::VERSION], true)) {
+            && ! in_array($this->codes['version'] ?? null, ['2026.10.20-116-draft1', MaterialInputPolicy119::VERSION, CreditInputPolicy122::VERSION], true)) {
             return null;
         }
         $catalog = $this->codes['observed_geographic_reference'] ?? [];

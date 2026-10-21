@@ -1,59 +1,1127 @@
 {
-  "updated_at": "2026-10-20T19:57:01.895Z",
-  "title": "Entrega 119 concluída · fechamento de 20/10/2026",
-  "state": "119 aceita localmente: 8.614 testes e 133.926 verificações, 370 decisões/replays próprios e 1.071 históricos. Desenvolvimento encerrado neste ponto seguro a pedido do usuário. Fase 4B parcial; produção bloqueada.",
-  "criterion": "100% dos 6 marcos da entrega 119 concluídos. Não representa percentual funcional da fase 4B nem liberação de produção.",
+  "updated_at": "2026-10-21T19:40:19.700Z",
+  "title": "Fechamento122 · atualização de21/10",
+  "state": "Aceite local122 concluído:9061 testes/143868 verificações,550 decisões/replays e1441 históricos exatos,94 hashes coincidentes. PHPStan0/Pint606;80 IDs examinados,17 correções locais consolidadas. Desenvolvimento encerrado no ponto seguro solicitado21/10;sem nova implementação.",
+  "criterion": "100% = 6/6 marcos da entrega122 concluídos. Não é percentual funcional4B:0/8 grupos formalmente encerrados,produção bloqueada.",
   "milestones": [
     {
-      "title": "Auditar e reproduzir falhas materiais117/118",
+      "title": "Preservar templates,fontes e corte de perguntas qualificado",
       "complete": true
     },
     {
-      "title": "Preservar corpus116 e arquivos anteriores à119",
+      "title": "Instalar124 cenários e250 testes de preços122",
       "complete": true
     },
     {
-      "title": "Implementar políticas versionadas de entrada119",
+      "title": "Validar447 dirigidos e qualidade geral",
       "complete": true
     },
     {
-      "title": "Validar contratos,positivos e recusas em testes dirigidos",
+      "title": "Auditar transporte de fatos,valores e eventos",
       "complete": true
     },
     {
-      "title": "Qualificar corpus e replays da nova versão",
+      "title": "Qualificar corpus ampliado e históricos do runtime atual",
       "complete": true
     },
     {
-      "title": "Executar regressão integral e auditoria de aceite",
+      "title": "Concluir regressão integral e aceite local122",
       "complete": true
     }
   ],
   "finished": [
-    "Entrega 119: regressão integral, qualidade final e auditoria independente aprovadas.",
-    "Guardas materiais/recolhimento e fidelidade JSON; 370 replays próprios e 1.071 históricos exatos.",
-    "Créditos 120 auditados; pesquisa 121 preservada e próximos passos documentados."
+    "Aceite122:9061 testes/143868 verificações,550 decisões/replays atuais e1441 históricos exatos;PHPStan0/Pint606.",
+    "94 hashes e7396 entradas da regressão preservados;98 fontes válidas/128 bloqueios. Evidências pesadas noD:,cópias compactas vinculadas noC:.",
+    "80 IDs examinados e matriz consolidada com17 correções locais posteriores;lacunas restantes explícitas,sem encerramento integral4B."
   ],
   "pending": [
-    "Corrigir os contratos de ajustes de crédito e identificadores documentais observados em 120.",
-    "Concluir a revisão dos 26 requisitos restantes; a pesquisa 121 ainda não fecha sua matriz.",
-    "Concluir base, câmbio e documentos ISS e demais lacunas da fase 4B."
+    "Desenvolvimento interrompido no ponto seguro por solicitação do usuário;retomar somente quando solicitado.",
+    "Concluir lacunas funcionais por requisito/família,documentos,base/câmbioISS,crédito e perfis obrigatórios.",
+    "Qualificar cIndOp1.03.00 e parâmetros temporais aplicáveis;produção permanece bloqueada."
   ],
-  "next_step": "Na próxima retomada, corrigir os contratos de crédito 120 em nova versão, preservar o aceite 119 e seguir a matriz original dos 80 requisitos.",
+  "next_step": "Aguardar solicitação de retomada. Na retomada,usar o checkpoint122 aceito e as pendências atuais da matriz80;publicaçãoGitHub solicitada neste fechamento.",
   "evidence": [
-    "storage/app/phase4b-material119-development-20261020/material119-development-validation.json",
-    "docs/fiscal/phase4b-material119-day-closure-20261020.md",
-    "docs/fiscal/phase4b-catalog121-research-checkpoint.md",
-    "D:/ProjetoSaasExports/phase4b-material119-full-suite-20261020/process-start.json",
-    "docs/fiscal/phase4b-material119-corpus-progress.md",
-    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-snapshot-fidelity-validation.json",
-    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-short-validation.json",
-    "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/expanded-cli-v1/material119-expanded-cli-validation.json",
-    "docs/fiscal/phase4b-requirements120-credit-review.md",
-    "D:/ProjetoSaasExports/phase4b-requirements120-credit-audit-20261020-v1/requirements-review-v2/requirements120-credit-review.json",
-    "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+    "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json",
+    "storage/app/phase4b-credit122-development-20261021/evidence-copy-receipt.json",
+    "storage/app/phase4b-credit122-development-20261021/requirements80-current-matrix.json",
+    "docs/fiscal/phase4b-day-closure-20261021.md",
+    "docs/fiscal/phase4b-original80-current-matrix.md",
+    "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/requirements-review-v1/requirements125-catalog-review.json",
+    "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/cindop125-version-comparison.json",
+    "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/primary-source-v1/capture.json",
+    "docs/fiscal/phase4b-requirements125-catalog-review.md",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-current-native-audit-v1.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/credit122-expanded-cli-validation.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v2/process-start.json",
+    "D:/ProjetoSaasExports/phase4b-requirements124-acceptance-audit-20261021-v1/requirements-review-v1/requirements124-acceptance-review.json",
+    "docs/fiscal/phase4b-requirements124-acceptance-review.md",
+    "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
+    "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
+    "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+    "docs/fiscal/phase4b-credit122-progress.md"
   ],
   "history": [
+    {
+      "updated_at": "2026-10-21T19:04:00.491Z",
+      "title": "Créditos122 · regressão e exame dos80 itens",
+      "state": "80/80 IDs originais examinados após revisão125 dos catálogos;não são80 aprovados.550 decisões/replays atuais auditados;regressão9061 e novos1441 históricos ativos noD:.cIndOp1.03.00 comparado integralmente,sem ativação. Aceite122 pendente;119 último aceite integral.",
+      "criterion": "67% = 4/6 marcos da ampliação122:preservação,instalação,dirigidos/qualidade e auditoria de origem concluídos. Corpus/replays e regressão/aceite pendentes;não é percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Preservar templates,fontes e corte de perguntas qualificado",
+          "complete": true
+        },
+        {
+          "title": "Instalar124 cenários e250 testes de preços122",
+          "complete": true
+        },
+        {
+          "title": "Validar447 dirigidos e qualidade geral",
+          "complete": true
+        },
+        {
+          "title": "Auditar transporte de fatos,valores e eventos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus ampliado e históricos do runtime atual",
+          "complete": true
+        },
+        {
+          "title": "Concluir regressão integral e aceite local122",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Exame dos80 IDs concluído:125 revisou os dez catálogos com12566 conferências e4421 de materialização;sem fechamento formal.",
+        "550 decisões/replays atuais e auditoria17333;447/9942 dirigidos,PHPStan0/Pint606 aprovados no corte.",
+        "Seis fontes recapturadas;comparação cIndOp312 células,um código/duas colunas novos e oito alterações compartilhadas. Originais preservados,sem ativação."
+      ],
+      "pending": [
+        "Concluir os1441 históricos e a regressão9061 ativos;auditar aceite122 sem antecipar aprovação.",
+        "Qualificar seleção temporal/ambiente e impacto do cIndOp1.03.00 antes de instalar a nova versão.",
+        "Consolidar evidências e fechar lacunas funcionais por requisito/família;80 examinados não encerra os oito grupos nem libera produção."
+      ],
+      "next_step": "Concluir QA/aceite122 e consolidar o estado funcional dos80 IDs para a próxima implementação;manter código/testes/recursos congelados enquanto os processos estão ativos.",
+      "evidence": [
+        "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json",
+        "storage/app/phase4b-credit122-development-20261021/evidence-copy-receipt.json",
+        "storage/app/phase4b-credit122-development-20261021/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-day-closure-20261021.md",
+        "docs/fiscal/phase4b-original80-current-matrix.md",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/requirements-review-v1/requirements125-catalog-review.json",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/cindop125-version-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/primary-source-v1/capture.json",
+        "docs/fiscal/phase4b-requirements125-catalog-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-current-native-audit-v1.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/credit122-expanded-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v2/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-requirements124-acceptance-audit-20261021-v1/requirements-review-v1/requirements124-acceptance-review.json",
+        "docs/fiscal/phase4b-requirements124-acceptance-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md"
+      ],
+      "focus": {
+        "summary": "80/80 IDs originais examinados após revisão125 dos catálogos;não são80 aprovados.550 decisões/replays atuais auditados;regressão9061 e novos1441 históricos ativos noD:.cIndOp1.03.00 comparado integralmente,sem ativação. Aceite122 pendente;119 último aceite integral.",
+        "finished": [
+          "Exame dos80 IDs concluído:125 revisou os dez catálogos com12566 conferências e4421 de materialização;sem fechamento formal.",
+          "550 decisões/replays atuais e auditoria17333;447/9942 dirigidos,PHPStan0/Pint606 aprovados no corte.",
+          "Seis fontes recapturadas;comparação cIndOp312 células,um código/duas colunas novos e oito alterações compartilhadas. Originais preservados,sem ativação."
+        ],
+        "pending": [
+          "Concluir os1441 históricos e a regressão9061 ativos;auditar aceite122 sem antecipar aprovação.",
+          "Qualificar seleção temporal/ambiente e impacto do cIndOp1.03.00 antes de instalar a nova versão.",
+          "Consolidar evidências e fechar lacunas funcionais por requisito/família;80 examinados não encerra os oito grupos nem libera produção."
+        ],
+        "next_step": "Concluir QA/aceite122 e consolidar o estado funcional dos80 IDs para a próxima implementação;manter código/testes/recursos congelados enquanto os processos estão ativos."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T18:52:52.741Z",
+      "title": "Créditos122 · regressão e históricos",
+      "state": "550 decisões/replays atuais auditados em17333 conferências. Regressão9061 e novos1441 históricos ativos noD:. Revisão124 examinou os12 itens de aceitação:70/80 IDs examinados,dez catálogos por revisar. Aceite122 ainda pendente;119 último aceite integral.",
+      "criterion": "67% = 4/6 marcos da ampliação122:preservação,instalação,dirigidos/qualidade e auditoria de origem concluídos. Corpus/replays e regressão/aceite pendentes;não é percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Preservar templates,fontes e corte de perguntas qualificado",
+          "complete": true
+        },
+        {
+          "title": "Instalar124 cenários e250 testes de preços122",
+          "complete": true
+        },
+        {
+          "title": "Validar447 dirigidos e qualidade geral",
+          "complete": true
+        },
+        {
+          "title": "Auditar transporte de fatos,valores e eventos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus ampliado e históricos do runtime atual",
+          "complete": false
+        },
+        {
+          "title": "Concluir regressão integral e aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "550 decisões/replays atuais verificados;185 cenários ampliados,71 composições locais,11 fontesUSD e eventos literais preservados.",
+        "Revisão124:12 IDs examinados,10863 conferências,18 avaliações/replays e36 mutações de invariantes;70/80 examinados,sem encerramento formal.",
+        "447 testes dirigidos/9942 verificações,PHPStan0/Pint606 e auditoria8640 aprovados;histórico e limpeza recuperávelC:↔D: preservados."
+      ],
+      "pending": [
+        "Concluir os1441 históricos no mesmo runtime94 corrigido;processo atual vivo,sem reutilizar o recibo pré-correção.",
+        "Aguardar o resultado terminal dos9061 testes e auditar o aceite122;execução ativa não é aprovação.",
+        "Revisar os dez IDs de catálogos4B.6 e concluir as lacunas funcionais dos oito grupos;produção permanece bloqueada."
+      ],
+      "next_step": "Concluir históricos/regressão e aceite122;em paralelo,revisar catálogos sem alterar app,testes ou recursos congelados.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/requirements-review-v1/requirements125-catalog-review.json",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/cindop125-version-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/primary-source-v1/capture.json",
+        "docs/fiscal/phase4b-requirements125-catalog-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-current-native-audit-v1.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/credit122-expanded-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v2/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-requirements124-acceptance-audit-20261021-v1/requirements-review-v1/requirements124-acceptance-review.json",
+        "docs/fiscal/phase4b-requirements124-acceptance-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md"
+      ],
+      "focus": {
+        "summary": "550 decisões/replays atuais auditados em17333 conferências. Regressão9061 e novos1441 históricos ativos noD:. Revisão124 examinou os12 itens de aceitação:70/80 IDs examinados,dez catálogos por revisar. Aceite122 ainda pendente;119 último aceite integral.",
+        "finished": [
+          "550 decisões/replays atuais verificados;185 cenários ampliados,71 composições locais,11 fontesUSD e eventos literais preservados.",
+          "Revisão124:12 IDs examinados,10863 conferências,18 avaliações/replays e36 mutações de invariantes;70/80 examinados,sem encerramento formal.",
+          "447 testes dirigidos/9942 verificações,PHPStan0/Pint606 e auditoria8640 aprovados;histórico e limpeza recuperávelC:↔D: preservados."
+        ],
+        "pending": [
+          "Concluir os1441 históricos no mesmo runtime94 corrigido;processo atual vivo,sem reutilizar o recibo pré-correção.",
+          "Aguardar o resultado terminal dos9061 testes e auditar o aceite122;execução ativa não é aprovação.",
+          "Revisar os dez IDs de catálogos4B.6 e concluir as lacunas funcionais dos oito grupos;produção permanece bloqueada."
+        ],
+        "next_step": "Concluir históricos/regressão e aceite122;em paralelo,revisar catálogos sem alterar app,testes ou recursos congelados."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T18:38:29.020Z",
+      "title": "Créditos122 · preços ampliados e regressão",
+      "state": "Regressão integral9061 em execução desde15h37(SP),com entradas congeladas e logs noD:.61 casos de compatibilidade/122 decisões e replays passaram;captura124 preços continua.447/9942 dirigidos e auditoria8640 aprovados. C: limpo com cópiasSHA recuperáveis;nenhum aceite122 antecipado.",
+      "criterion": "67% = 4/6 marcos da ampliação122:preservação,instalação,dirigidos/qualidade e auditoria de origem concluídos. Corpus/replays e regressão/aceite pendentes;não é percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Preservar templates,fontes e corte de perguntas qualificado",
+          "complete": true
+        },
+        {
+          "title": "Instalar124 cenários e250 testes de preços122",
+          "complete": true
+        },
+        {
+          "title": "Validar447 dirigidos e qualidade geral",
+          "complete": true
+        },
+        {
+          "title": "Auditar transporte de fatos,valores e eventos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus ampliado e históricos do runtime atual",
+          "complete": false
+        },
+        {
+          "title": "Concluir regressão integral e aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "124 cenários e250 novos testes de preços;447 dirigidos/9942 verificações,PHPStan0 ePint606.",
+        "8640 conferências de origem e61 casos de compatibilidade/122 decisões e replays;fatos,valores e eventos preservados. Três temporários removidos com cópiasSHA noD:.",
+        "Perguntas122 qualificadas:180 decisões/replays;176 comparações mantêm decisões,status e razões anteriores."
+      ],
+      "pending": [
+        "Concluir captura124 preços e1441 históricos no runtime atual;61 casos de compatibilidade já passaram.",
+        "Aguardar resultado terminal dos9061 testes em execução e auditar o aceite122;preflightv1 recusado por espaço foi preservado.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+      ],
+      "next_step": "Concluir captura ampliada;então iniciar novos1441 históricos em paralelo com a regressão,sem alterar código/testes/recursos nem reiniciar processos vivos.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-current-native-audit-v1.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/credit122-expanded-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v2/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-requirements124-acceptance-audit-20261021-v1/requirements-review-v1/requirements124-acceptance-review.json",
+        "docs/fiscal/phase4b-requirements124-acceptance-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md"
+      ],
+      "focus": {
+        "summary": "Regressão integral9061 em execução desde15h37(SP),com entradas congeladas e logs noD:.61 casos de compatibilidade/122 decisões e replays passaram;captura124 preços continua.447/9942 dirigidos e auditoria8640 aprovados. C: limpo com cópiasSHA recuperáveis;nenhum aceite122 antecipado.",
+        "finished": [
+          "124 cenários e250 novos testes de preços;447 dirigidos/9942 verificações,PHPStan0 ePint606.",
+          "8640 conferências de origem e61 casos de compatibilidade/122 decisões e replays;fatos,valores e eventos preservados. Três temporários removidos com cópiasSHA noD:.",
+          "Perguntas122 qualificadas:180 decisões/replays;176 comparações mantêm decisões,status e razões anteriores."
+        ],
+        "pending": [
+          "Concluir captura124 preços e1441 históricos no runtime atual;61 casos de compatibilidade já passaram.",
+          "Aguardar resultado terminal dos9061 testes em execução e auditar o aceite122;preflightv1 recusado por espaço foi preservado.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+        ],
+        "next_step": "Concluir captura ampliada;então iniciar novos1441 históricos em paralelo com a regressão,sem alterar código/testes/recursos nem reiniciar processos vivos."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T18:28:23.024Z",
+      "title": "Créditos122 · preços ampliados e regressão",
+      "state": "Captura ampliada122 em execução noD:,com código/recursos congelados:61 cenários de compatibilidade seguidos de124 de preços. Lista real da regressão conferida:9061 testes;suíte ainda não iniciada.447/9942 dirigidos,PHPStan0/Pint606 e auditoria8640 aprovados;119 último aceite integral.",
+      "criterion": "67% = 4/6 marcos da ampliação122:preservação,instalação,dirigidos/qualidade e auditoria de origem concluídos. Corpus/replays e regressão/aceite pendentes;não é percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Preservar templates,fontes e corte de perguntas qualificado",
+          "complete": true
+        },
+        {
+          "title": "Instalar124 cenários e250 testes de preços122",
+          "complete": true
+        },
+        {
+          "title": "Validar447 dirigidos e qualidade geral",
+          "complete": true
+        },
+        {
+          "title": "Auditar transporte de fatos,valores e eventos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus ampliado e históricos do runtime atual",
+          "complete": false
+        },
+        {
+          "title": "Concluir regressão integral e aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "124 cenários e250 novos testes de preços;447 dirigidos/9942 verificações,PHPStan0 ePint606.",
+        "8640 conferências de origem e61 casos de compatibilidade/122 decisões e replays;fatos,valores e eventos preservados. Três temporários removidos com cópiasSHA noD:.",
+        "Perguntas122 qualificadas:180 decisões/replays;176 comparações mantêm decisões,status e razões anteriores."
+      ],
+      "pending": [
+        "Concluir captura124 preços e1441 históricos no runtime atual;61 casos de compatibilidade já passaram.",
+        "Aguardar resultado terminal dos9061 testes em execução e auditar o aceite122;preflightv1 recusado por espaço foi preservado.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+      ],
+      "next_step": "Concluir os61 casos de compatibilidade;iniciar a regressão9061 com o mesmo corte congelado,enquanto a captura dos124 preços prossegue.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md"
+      ],
+      "focus": {
+        "summary": "Captura ampliada122 em execução noD:,com código/recursos congelados:61 cenários de compatibilidade seguidos de124 de preços. Lista real da regressão conferida:9061 testes;suíte ainda não iniciada.447/9942 dirigidos,PHPStan0/Pint606 e auditoria8640 aprovados;119 último aceite integral.",
+        "finished": [
+          "124 cenários e250 novos testes de preços;447 dirigidos/9942 verificações,PHPStan0 ePint606.",
+          "8640 conferências de origem:4974 arquivos anteriores intactos,127 adições esperadas;71 composições locais,11 fontesUSD e dois eventos literais preservados.",
+          "Perguntas122 qualificadas:180 decisões/replays;176 comparações mantêm decisões,status e razões anteriores."
+        ],
+        "pending": [
+          "Concluir corpus nativo ampliado e1441 históricos no runtime atual;os recibos anteriores não validam a correção posterior.",
+          "Executar os9061 testes reais da suíte sem filtros e auditar o aceite122;lista e execução ativa não são aprovação.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+        ],
+        "next_step": "Concluir os61 casos de compatibilidade;iniciar a regressão9061 com o mesmo corte congelado,enquanto a captura dos124 preços prossegue."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T17:53:11.417Z",
+      "title": "Créditos122 · preços ampliados e regressão",
+      "state": "124 controles de preços instalados e validados;447 testes/9942 verificações,PHPStan0/Pint606. Auditoria8640 preserva fatos/valores,eventos e71 composições locais,11 fontesUSD. Perguntas122 já qualificadas em180 decisões/replays. Corpus ampliado e regressão integral ainda pendentes;119 último aceite integral.",
+      "criterion": "67% = 4/6 marcos da ampliação122:preservação,instalação,dirigidos/qualidade e auditoria de origem concluídos. Corpus/replays e regressão/aceite pendentes;não é percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Preservar templates,fontes e corte de perguntas qualificado",
+          "complete": true
+        },
+        {
+          "title": "Instalar124 cenários e250 testes de preços122",
+          "complete": true
+        },
+        {
+          "title": "Validar447 dirigidos e qualidade geral",
+          "complete": true
+        },
+        {
+          "title": "Auditar transporte de fatos,valores e eventos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus ampliado e históricos do runtime atual",
+          "complete": false
+        },
+        {
+          "title": "Concluir regressão integral e aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "124 cenários e250 novos testes de preços;447 dirigidos/9942 verificações,PHPStan0 ePint606.",
+        "8640 conferências de origem:4974 arquivos anteriores intactos,127 adições esperadas;71 composições locais,11 fontesUSD e dois eventos literais preservados.",
+        "Perguntas122 qualificadas:180 decisões/replays;176 comparações mantêm decisões,status e razões anteriores."
+      ],
+      "pending": [
+        "Concluir corpus nativo ampliado e1441 históricos no runtime atual;os recibos anteriores não validam a correção posterior.",
+        "Executar os9061 testes reais da suíte sem filtros e auditar o aceite122;lista e execução ativa não são aprovação.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+      ],
+      "next_step": "Conferir a lista real da suíte;iniciar regressão e novas capturas com o mesmo código/recursos congelados,evidências noD:.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md"
+      ],
+      "focus": {
+        "summary": "124 controles de preços instalados e validados;447 testes/9942 verificações,PHPStan0/Pint606. Auditoria8640 preserva fatos/valores,eventos e71 composições locais,11 fontesUSD. Perguntas122 já qualificadas em180 decisões/replays. Corpus ampliado e regressão integral ainda pendentes;119 último aceite integral.",
+        "finished": [
+          "124 cenários e250 novos testes de preços;447 dirigidos/9942 verificações,PHPStan0 ePint606.",
+          "8640 conferências de origem:4974 arquivos anteriores intactos,127 adições esperadas;71 composições locais,11 fontesUSD e dois eventos literais preservados.",
+          "Perguntas122 qualificadas:180 decisões/replays;176 comparações mantêm decisões,status e razões anteriores."
+        ],
+        "pending": [
+          "Concluir corpus nativo ampliado e1441 históricos no runtime atual;os recibos anteriores não validam a correção posterior.",
+          "Executar a suíte completa sem filtros e auditar o aceite122;nenhuma execução planejada é aprovação.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+        ],
+        "next_step": "Conferir a lista real da suíte;iniciar regressão e novas capturas com o mesmo código/recursos congelados,evidências noD:."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T17:34:43.575Z",
+      "title": "Créditos122 · correção de perguntas concluída",
+      "state": "Correção de perguntas qualificada em197 testes/698 verificações,PHPStan0/Pint605,180 decisões/replays e108 checks de perguntas. Comparação176:156 resultados inteiros idênticos e20 com apenas perguntas/rastreio declarados alterados;valores,status e razões preservados. Não é aceite integral122.",
+      "criterion": "100% = 4/4 marcos da correção de perguntas. Não encerra122 nem aFase4B;preços ampliados,regressão e aceite permanecem pendentes.",
+      "milestones": [
+        {
+          "title": "Preservar os quatro testemunhos e o código/testes anteriores",
+          "complete": true
+        },
+        {
+          "title": "Corrigir perguntas de linhas e recusas aritméticas apenas em122",
+          "complete": true
+        },
+        {
+          "title": "Revalidar dirigidos,PHPStan ePint após formatação",
+          "complete": true
+        },
+        {
+          "title": "Concluir corpus nativo,novos replays e comparação independente",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "197 testes/698 verificações,PHPStan0 ePint605;4974 arquivos auditados,com recursos intactos no corte.",
+        "90 cenários/180 decisões e180 replays exatos;108 checks de perguntas e84 conferênciasDecimal,entradas congeladas intactas.",
+        "176 resultados anteriores comparados:156 inteiros idênticos;20 somente com perguntas/rastreio corrigidos,sem mudar decisões,status ou razões."
+      ],
+      "pending": [
+        "Instalar e validar os124 controles de preços122;preservar valores,recusas e eventos literais das fontes.",
+        "Executar regressão,novos históricos e aceite122;1441 replays existentes são anteriores à correção.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados e0/8 grupos formalmente encerrados."
+      ],
+      "next_step": "Materializar os controles de preços122 e validar ambos os executores,sem reescrever valores ou eventos das fontes anteriores.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-fix-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/before-question-fix-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-gap-v1/question-gap-observation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/credit-cli-v2-launch.json",
+        "docs/fiscal/phase4b-credit122-question-repair.md"
+      ],
+      "focus": {
+        "summary": "Correção de perguntas qualificada em197 testes/698 verificações,PHPStan0/Pint605,180 decisões/replays e108 checks de perguntas. Comparação176:156 resultados inteiros idênticos e20 com apenas perguntas/rastreio declarados alterados;valores,status e razões preservados. Não é aceite integral122.",
+        "finished": [
+          "197 testes/698 verificações,PHPStan0 ePint605;4974 arquivos auditados,com recursos intactos no corte.",
+          "90 cenários/180 decisões e180 replays exatos;108 checks de perguntas e84 conferênciasDecimal,entradas congeladas intactas.",
+          "176 resultados anteriores comparados:156 inteiros idênticos;20 somente com perguntas/rastreio corrigidos,sem mudar decisões,status ou razões."
+        ],
+        "pending": [
+          "Instalar e validar os124 controles de preços122;preservar valores,recusas e eventos literais das fontes.",
+          "Executar regressão,novos históricos e aceite122;1441 replays existentes são anteriores à correção.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados e0/8 grupos formalmente encerrados."
+        ],
+        "next_step": "Materializar os controles de preços122 e validar ambos os executores,sem reescrever valores ou eventos das fontes anteriores."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T14:01:11.026Z",
+      "title": "Créditos122 · perguntas corrigidas em validação nativa",
+      "state": "Correção122 dirigida aprovada:197 testes/698 verificações,PHPStan0 ePint605. Auditoria4974 arquivos:exatamente dois arquivos de código e dois de teste mudaram;recursos intactos. Captura90 cenários/180 decisões e replays planejados em execução;sem aceite integral122.",
+      "criterion": "75% = 3/4 marcos da correção de perguntas:preservação,implementação e validação dirigida/qualidade concluídas;corpus nativo e auditoria pendentes. Não é percentual funcional da4B ou aceite122.",
+      "milestones": [
+        {
+          "title": "Preservar os quatro testemunhos e o código/testes anteriores",
+          "complete": true
+        },
+        {
+          "title": "Corrigir perguntas de linhas e recusas aritméticas apenas em122",
+          "complete": true
+        },
+        {
+          "title": "Revalidar dirigidos,PHPStan ePint após formatação",
+          "complete": true
+        },
+        {
+          "title": "Concluir corpus nativo,novos replays e comparação independente",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "197 testes/698 verificações após formatação;PHPStan geral sem erros ePint605 aprovados.",
+        "Perguntas de ajustes e valores negativos corrigidas;índice de linha e recusas preservados,sem conceder crédito.",
+        "4974 arquivos auditados;recursos inalterados e código/testes anteriores preservados. Testemunhos119 mantêm comportamento anterior."
+      ],
+      "pending": [
+        "Concluir a captura nativa90 cenários,180 decisões/replays e comparação com o corte anterior;execução ainda não é aprovação.",
+        "Materializar controles de preços e executar regressão/aceite122;os1441 históricos existentes descrevem o runtime anterior à correção.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados e0/8 grupos formalmente encerrados."
+      ],
+      "next_step": "Acompanhar o worker nativo8904 sem alterar app/testes/recursos;conferir perguntas e valores contra os testemunhos preservados.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-fix-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/before-question-fix-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-gap-v1/question-gap-observation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/credit-cli-v2-launch.json",
+        "docs/fiscal/phase4b-credit122-question-repair.md"
+      ],
+      "focus": {
+        "summary": "Correção122 dirigida aprovada:197 testes/698 verificações,PHPStan0 ePint605. Auditoria4974 arquivos:exatamente dois arquivos de código e dois de teste mudaram;recursos intactos. Captura90 cenários/180 decisões e replays planejados em execução;sem aceite integral122.",
+        "finished": [
+          "197 testes/698 verificações após formatação;PHPStan geral sem erros ePint605 aprovados.",
+          "Perguntas de ajustes e valores negativos corrigidas;índice de linha e recusas preservados,sem conceder crédito.",
+          "4974 arquivos auditados;recursos inalterados e código/testes anteriores preservados. Testemunhos119 mantêm comportamento anterior."
+        ],
+        "pending": [
+          "Concluir a captura nativa90 cenários,180 decisões/replays e comparação com o corte anterior;execução ainda não é aprovação.",
+          "Materializar controles de preços e executar regressão/aceite122;os1441 históricos existentes descrevem o runtime anterior à correção.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados e0/8 grupos formalmente encerrados."
+        ],
+        "next_step": "Acompanhar o worker nativo8904 sem alterar app/testes/recursos;conferir perguntas e valores contra os testemunhos preservados."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T13:38:39.287Z",
+      "title": "Preservação C: ↔ D: concluída",
+      "state": "1798 arquivos/6,6GB lógicos preservados noD:,com junçõesC: e bindsD: somente leitura. Hashes pós-junção aprovados;94 hashes do motor intactos. Reinício,1798 caminhos e smoke2/6 aprovados.119 último aceite fiscal integral;122 eFase4B continuam pendentes.",
+      "criterion": "100% = 6/6 marcos da preservação do armazenamento. Não encerra122 nem aFase4B. Pastas compactadas:6,6GB lógicos não equivalem ao espaço físico liberado;C: observado com cerca de3,8GB livres.",
+      "milestones": [
+        {
+          "title": "Registrar autorização e regra permanente de priorizar D:",
+          "complete": true
+        },
+        {
+          "title": "Concluir1441 históricos sem mudar entradas",
+          "complete": true
+        },
+        {
+          "title": "Preservar11141 entradas graváveis e manter a imagem original",
+          "complete": true
+        },
+        {
+          "title": "Copiar1798 arquivos e verificar hashes C:/D:/contêiner",
+          "complete": true
+        },
+        {
+          "title": "Criar junções C: e binds D: somente leitura",
+          "complete": true
+        },
+        {
+          "title": "Concluir auditoria pós-junção,smoke e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "1798 arquivos/6.607.692.213bytes noD:,com todos os hashes conferidos após as junções no host e no contêiner;índiceC: com destinos eSHA.",
+        "11141 entradas temporárias preservadas;falha de exportação mantida,arquivo incompleto rejeitado e cópia correta verificada;imagem original mantida.",
+        "1441 históricos exatos;94 hashes de runtime intactos. Reinício testado,1798 caminhos acessíveis,smoke2 testes/6 verificações econsole28 checks."
+      ],
+      "pending": [
+        "Retomar122:corrigir perguntas de ajuste e recapturar corpus em tentativa nova,sem alterar testemunhos.",
+        "Materializar controles ampliados de preços;concluir regressão integral e aceite122.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+      ],
+      "next_step": "Retomar os contratos122 pelas perguntas de correção,com código/casos anteriores preservados;novos arquivos volumosos continuam noD: com índicesC:.",
+      "evidence": [
+        "D:/ProjetoSaasExports/storage-relocation122-20261021-v1/storage122-final-validation.json",
+        "D:/ProjetoSaasExports/storage-relocation122-20261021-v1/post-restart-access-validation.json",
+        "D:/ProjetoSaasExports/container-preservation122-recovery-20261021-v3/container-preservation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/storage122-post-restart-smoke-v2/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v1/credit122-historical-validation.json",
+        "storage/app/evidence-storage-index-20261021.json",
+        "docs/fiscal/phase4b-evidence-storage122.md"
+      ],
+      "focus": {
+        "summary": "1798 arquivos/6,6GB lógicos preservados noD:,com junçõesC: e bindsD: somente leitura. Hashes pós-junção aprovados;94 hashes do motor intactos. Reinício,1798 caminhos e smoke2/6 aprovados.119 último aceite fiscal integral;122 eFase4B continuam pendentes.",
+        "finished": [
+          "1798 arquivos/6.607.692.213bytes noD:,com todos os hashes conferidos após as junções no host e no contêiner;índiceC: com destinos eSHA.",
+          "11141 entradas temporárias preservadas;falha de exportação mantida,arquivo incompleto rejeitado e cópia correta verificada;imagem original mantida.",
+          "1441 históricos exatos;94 hashes de runtime intactos. Reinício testado,1798 caminhos acessíveis,smoke2 testes/6 verificações econsole28 checks."
+        ],
+        "pending": [
+          "Retomar122:corrigir perguntas de ajuste e recapturar corpus em tentativa nova,sem alterar testemunhos.",
+          "Materializar controles ampliados de preços;concluir regressão integral e aceite122.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados,0/8 grupos formalmente encerrados e produção bloqueada."
+        ],
+        "next_step": "Retomar os contratos122 pelas perguntas de correção,com código/casos anteriores preservados;novos arquivos volumosos continuam noD: com índicesC:."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T13:31:32.296Z",
+      "title": "Preservação C: ↔ D: · conferência final",
+      "state": "Duas pastas transferidas:1798 arquivos/6,6GB lógicos,com junçõesC: e bindsD: somente leitura. Temporários11141 preservados em arquivos recuperados,sem afirmar exportação integral. Auditoria pós-junção em execução;119 último aceite fiscal integral.",
+      "criterion": "83% = 5/6 marcos da preservação do armazenamento;auditoria final/console pendentes. Não representa avanço funcional da4B ou aceite122. Pastas compactadas:C: ganhou menos espaço físico que6,6GB lógicos.",
+      "milestones": [
+        {
+          "title": "Registrar autorização e regra permanente de priorizar D:",
+          "complete": true
+        },
+        {
+          "title": "Concluir1441 históricos sem mudar entradas",
+          "complete": true
+        },
+        {
+          "title": "Preservar11141 entradas graváveis e manter a imagem original",
+          "complete": true
+        },
+        {
+          "title": "Copiar1798 arquivos e verificar hashes C:/D:/contêiner",
+          "complete": true
+        },
+        {
+          "title": "Criar junções C: e binds D: somente leitura",
+          "complete": true
+        },
+        {
+          "title": "Concluir auditoria pós-junção,smoke e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "1798 arquivos em duas pastas preservados noD:,com inventários e caminhosC: mantidos;nenhum histórico apagado.",
+        "11141 entradas temporárias preservadas;arquivo incompleto rejeitado e substituição verificada;imagem mantida e Docker relançado viaWMI.",
+        "1441 replays históricos exatos e inventário intacto;119 permanece último aceite integral."
+      ],
+      "pending": [
+        "Concluir auditoria pós-junção e smoke de ambos os executores;publicar índice corrigido e validar o console.",
+        "Retomar122:perguntas de correção,controles ampliados,regressão e aceite.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados e0/8 grupos formalmente encerrados."
+      ],
+      "next_step": "Acompanhar o auditor PID17000 e o smoke;conferir hashes após as junções,índiceC: e estado final do console antes de retomar o motor122.",
+      "evidence": [
+        "D:/ProjetoSaasExports/storage-relocation122-20261021-v1/relocation-validation.json",
+        "D:/ProjetoSaasExports/storage-relocation122-20261021-v1/final-audit-start.json",
+        "D:/ProjetoSaasExports/container-preservation122-recovery-20261021-v3/container-preservation-validation.json",
+        "D:/ProjetoSaasExports/docker122-detached-relaunch-20261021-v1/readiness-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v1/credit122-historical-validation.json",
+        "docs/fiscal/phase4b-evidence-storage122.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-gap-v1/question-gap-observation.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v1/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-requirements123-document-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements123-document-audit-20261021-v1/requirements-review-v1/requirements123-document-review.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-targeted-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/component-tests-v2/execution.json",
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Duas pastas transferidas:1798 arquivos/6,6GB lógicos,com junçõesC: e bindsD: somente leitura. Temporários11141 preservados em arquivos recuperados,sem afirmar exportação integral. Auditoria pós-junção em execução;119 último aceite fiscal integral.",
+        "finished": [
+          "1798 arquivos em duas pastas preservados noD:,com inventários e caminhosC: mantidos;nenhum histórico apagado.",
+          "11141 entradas temporárias preservadas;arquivo incompleto rejeitado e substituição verificada;imagem mantida e Docker relançado viaWMI.",
+          "1441 replays históricos exatos e inventário intacto;119 permanece último aceite integral."
+        ],
+        "pending": [
+          "Concluir auditoria pós-junção e smoke de ambos os executores;publicar índice corrigido e validar o console.",
+          "Retomar122:perguntas de correção,controles ampliados,regressão e aceite.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais;58 examinados e0/8 grupos formalmente encerrados."
+        ],
+        "next_step": "Acompanhar o auditor PID17000 e o smoke;conferir hashes após as junções,índiceC: e estado final do console antes de retomar o motor122."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T12:27:02.642Z",
+      "title": "Históricos122 concluídos · preservação em D:",
+      "state": "1441 replays históricos exatos,com entradas congeladas intactas;176 replays próprios no corte v1. Preservação do contêiner em D: em execução,antes da migração de6,6GB.122 ainda sem regressão/aceite integral;119 último aceite.",
+      "criterion": "50% = 3/6 marcos122:preservação,implementação e validação dirigida concluídas. Corpus/replays,regressão e aceite pendentes; não representa percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Auditar crédito120 e preservar o aceite119",
+          "complete": true
+        },
+        {
+          "title": "Implementar contratos e bundle122",
+          "complete": true
+        },
+        {
+          "title": "Validar ambos os executores e políticas herdadas",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus,replays e controles ampliados122",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e qualidade",
+          "complete": false
+        },
+        {
+          "title": "Auditar e publicar aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "88 cenários/176 decisões e176 replays exatos de crédito,com seis exceções antigas agora recusadas de forma controlada.",
+        "187/546 dirigidos,PHPStan/Pint603 no corte e auditoria246 aprovados;58 decisões de negócio anteriores iguais,exceto versão explícita do catálogo.",
+        "123:376 conferências;manual original e versionamento verificados,seisXML locais válidos,três recusas de produção;58 IDs examinados."
+      ],
+      "pending": [
+        "Concluir exportação verificada do contêiner e migrar as duas maiores pastas para D:,mantendo caminhosC:/contêiner e recibos.",
+        "Corrigir perguntas de ajuste122,recapturar em tentativa nova e concluir controles de preços,regressão e aceite.",
+        "Revisar22 IDs restantes;58/80 examinados,não concluídos.0/8 grupos formalmente encerrados;produção bloqueada."
+      ],
+      "next_step": "Concluir a preservação do contêiner;depois copiar e verificar os históricos,aplicar os mountsD: e criar as junçõesC:.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v1/credit122-historical-validation.json",
+        "docs/fiscal/phase4b-evidence-storage122.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-gap-v1/question-gap-observation.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v1/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-requirements123-document-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements123-document-audit-20261021-v1/requirements-review-v1/requirements123-document-review.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-targeted-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/component-tests-v2/execution.json",
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json"
+      ],
+      "focus": {
+        "summary": "1441 replays históricos exatos,com entradas congeladas intactas;176 replays próprios no corte v1. Preservação do contêiner em D: em execução,antes da migração de6,6GB.122 ainda sem regressão/aceite integral;119 último aceite.",
+        "finished": [
+          "88 cenários/176 decisões e176 replays exatos de crédito,com seis exceções antigas agora recusadas de forma controlada.",
+          "187/546 dirigidos,PHPStan/Pint603 no corte e auditoria246 aprovados;58 decisões de negócio anteriores iguais,exceto versão explícita do catálogo.",
+          "123:376 conferências;manual original e versionamento verificados,seisXML locais válidos,três recusas de produção;58 IDs examinados."
+        ],
+        "pending": [
+          "Concluir exportação verificada do contêiner e migrar as duas maiores pastas para D:,mantendo caminhosC:/contêiner e recibos.",
+          "Corrigir perguntas de ajuste122,recapturar em tentativa nova e concluir controles de preços,regressão e aceite.",
+          "Revisar22 IDs restantes;58/80 examinados,não concluídos.0/8 grupos formalmente encerrados;produção bloqueada."
+        ],
+        "next_step": "Concluir a preservação do contêiner;depois copiar e verificar os históricos,aplicar os mountsD: e criar as junçõesC:."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T12:08:13.956Z",
+      "title": "Créditos122 · replays ativos e preservação em D:",
+      "state": "176 decisões/replays de crédito concluídos no corte v1;1441 históricos ainda em execução. Quatro recusas122 sem perguntas de correção exigem ajuste posterior. Migração histórica para D: autorizada,aguardando o término do coletor.119 último aceite integral.",
+      "criterion": "50% = 3/6 marcos122:preservação,implementação e validação dirigida concluídas. Corpus/replays,regressão e aceite pendentes; não representa percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Auditar crédito120 e preservar o aceite119",
+          "complete": true
+        },
+        {
+          "title": "Implementar contratos e bundle122",
+          "complete": true
+        },
+        {
+          "title": "Validar ambos os executores e políticas herdadas",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus,replays e controles ampliados122",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e qualidade",
+          "complete": false
+        },
+        {
+          "title": "Auditar e publicar aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "88 cenários/176 decisões e176 replays exatos de crédito,com seis exceções antigas agora recusadas de forma controlada.",
+        "187/546 dirigidos,PHPStan/Pint603 no corte e auditoria246 aprovados;58 decisões de negócio anteriores iguais,exceto versão explícita do catálogo.",
+        "123:376 conferências;manual original e versionamento verificados,seisXML locais válidos,três recusas de produção;58 IDs examinados."
+      ],
+      "pending": [
+        "Terminar os1441 históricos antes de mover evidências;transferir as duas maiores pastas para D: com hashes e junções verificadas no host/contêiner.",
+        "Corrigir perguntas de ajuste122,recapturar em tentativa nova e concluir controles de preços,regressão e aceite.",
+        "Revisar22 IDs restantes;58/80 examinados,não concluídos.0/8 grupos formalmente encerrados;produção bloqueada."
+      ],
+      "next_step": "Acompanhar o coletor histórico PID980 sem alterar entradas congeladas;após recibo terminal executar a migração preservada C:→D: e validar o console.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-gap-v1/question-gap-observation.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v1/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-requirements123-document-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements123-document-audit-20261021-v1/requirements-review-v1/requirements123-document-review.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-targeted-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/component-tests-v2/execution.json",
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json"
+      ],
+      "focus": {
+        "summary": "176 decisões/replays de crédito concluídos no corte v1;1441 históricos ainda em execução. Quatro recusas122 sem perguntas de correção exigem ajuste posterior. Migração histórica para D: autorizada,aguardando o término do coletor.119 último aceite integral.",
+        "finished": [
+          "88 cenários/176 decisões e176 replays exatos de crédito,com seis exceções antigas agora recusadas de forma controlada.",
+          "187/546 dirigidos,PHPStan/Pint603 no corte e auditoria246 aprovados;58 decisões de negócio anteriores iguais,exceto versão explícita do catálogo.",
+          "123:376 conferências;manual original e versionamento verificados,seisXML locais válidos,três recusas de produção;58 IDs examinados."
+        ],
+        "pending": [
+          "Terminar os1441 históricos antes de mover evidências;transferir as duas maiores pastas para D: com hashes e junções verificadas no host/contêiner.",
+          "Corrigir perguntas de ajuste122,recapturar em tentativa nova e concluir controles de preços,regressão e aceite.",
+          "Revisar22 IDs restantes;58/80 examinados,não concluídos.0/8 grupos formalmente encerrados;produção bloqueada."
+        ],
+        "next_step": "Acompanhar o coletor histórico PID980 sem alterar entradas congeladas;após recibo terminal executar a migração preservada C:→D: e validar o console."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T11:50:46.079Z",
+      "title": "Créditos122 · corpus concluído, históricos em execução",
+      "state": "Corpus de crédito122 concluído:176 decisões/176 replays próprios. Históricos1441 em execução;187 testes/546 verificações dirigidas aprovados. Auditoria documental123:58 IDs examinados,22 por revisar.119 último aceite integral;runtime122 ainda sem aceite.",
+      "criterion": "50% = 3/6 marcos122:preservação,implementação e validação dirigida concluídas. Corpus/replays,regressão e aceite pendentes; não representa percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Auditar crédito120 e preservar o aceite119",
+          "complete": true
+        },
+        {
+          "title": "Implementar contratos e bundle122",
+          "complete": true
+        },
+        {
+          "title": "Validar ambos os executores e políticas herdadas",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus,replays e controles ampliados122",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e qualidade",
+          "complete": false
+        },
+        {
+          "title": "Auditar e publicar aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "88 cenários/176 decisões e176 replays exatos de crédito,com seis exceções antigas agora recusadas de forma controlada.",
+        "187/546 dirigidos,PHPStan/Pint603 no corte e auditoria246 aprovados;58 decisões de negócio anteriores iguais,exceto versão explícita do catálogo.",
+        "123:376 conferências;manual original e versionamento verificados,seisXML locais válidos,três recusas de produção;58 IDs examinados."
+      ],
+      "pending": [
+        "Concluir os1441 históricos e materializar os controles de preços122 após o congelamento.",
+        "Concluir corpus ampliado,regressão integral e auditoria de aceite122.",
+        "Revisar22 IDs restantes e concluir lacunas funcionais de créditos,ISS,câmbio e documentos."
+      ],
+      "next_step": "Acompanhar o mesmo coletor histórico PID980 sem alterar app/testes/recursos;em paralelo concluir as auditorias de evidência e preparar controles122 sem executá-los sobre o inventário congelado.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v1/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-requirements123-document-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements123-document-audit-20261021-v1/requirements-review-v1/requirements123-document-review.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-targeted-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/component-tests-v2/execution.json",
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Corpus de crédito122 concluído:176 decisões/176 replays próprios. Históricos1441 em execução;187 testes/546 verificações dirigidas aprovados. Auditoria documental123:58 IDs examinados,22 por revisar.119 último aceite integral;runtime122 ainda sem aceite.",
+        "finished": [
+          "88 cenários/176 decisões e176 replays exatos de crédito,com seis exceções antigas agora recusadas de forma controlada.",
+          "187/546 dirigidos,PHPStan/Pint603 no corte e auditoria246 aprovados;58 decisões de negócio anteriores iguais,exceto versão explícita do catálogo.",
+          "123:376 conferências;manual original e versionamento verificados,seisXML locais válidos,três recusas de produção;58 IDs examinados."
+        ],
+        "pending": [
+          "Concluir os1441 históricos e materializar os controles de preços122 após o congelamento.",
+          "Concluir corpus ampliado,regressão integral e auditoria de aceite122.",
+          "Revisar22 IDs restantes e concluir lacunas funcionais de créditos,ISS,câmbio e documentos."
+        ],
+        "next_step": "Acompanhar o mesmo coletor histórico PID980 sem alterar app/testes/recursos;em paralelo concluir as auditorias de evidência e preparar controles122 sem executá-los sobre o inventário congelado."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T11:29:44.522Z",
+      "title": "Créditos 122 · corpus nativo em preparação",
+      "state": "122 dirigida aprovada:187 testes/546 verificações,PHPStan geral ePint603. Auditoria246 conferências;98 fontes válidas e128 bloqueios. Captura nativa em preparação; runtime122 posterior ao aceite119,sem novo aceite integral.",
+      "criterion": "50% = 3/6 marcos122:preservação,implementação e validação dirigida concluídas. Corpus/replays,regressão e aceite pendentes; não representa percentual funcional da4B.",
+      "milestones": [
+        {
+          "title": "Auditar crédito120 e preservar o aceite119",
+          "complete": true
+        },
+        {
+          "title": "Implementar contratos e bundle122",
+          "complete": true
+        },
+        {
+          "title": "Validar ambos os executores e políticas herdadas",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus,replays e controles ampliados122",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e qualidade",
+          "complete": false
+        },
+        {
+          "title": "Auditar e publicar aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "187 testes/546 verificações nos contratos122 e controles históricos,sem mudar elegibilidade/extinção.",
+        "PHPStan geral,Pint603 e auditoria independente246 conferências aprovados.",
+        "95 arquivos anteriores preservados;98 fontes com hashes válidos e128 bloqueios de produção."
+      ],
+      "pending": [
+        "Concluir corpus nativo122 e replays próprios/históricos; execução não equivale a aceite.",
+        "Executar regressão integral122 e auditoria independente antes de promover a nova versão.",
+        "Revisar26 requisitos restantes e demais lacunas de créditos,ISS e documentos."
+      ],
+      "next_step": "Acompanhar a mesma captura nativa122,sem alterar app/testes/recursos fiscais;depois concluir controles ampliados e regressão.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v1/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-requirements123-document-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements123-document-audit-20261021-v1/requirements-review-v1/requirements123-document-review.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-targeted-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/component-tests-v2/execution.json",
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json"
+      ],
+      "focus": {
+        "summary": "122 dirigida aprovada:187 testes/546 verificações,PHPStan geral ePint603. Auditoria246 conferências;98 fontes válidas e128 bloqueios. Captura nativa em preparação; runtime122 posterior ao aceite119,sem novo aceite integral.",
+        "finished": [
+          "187 testes/546 verificações nos contratos122 e controles históricos,sem mudar elegibilidade/extinção.",
+          "PHPStan geral,Pint603 e auditoria independente246 conferências aprovados.",
+          "95 arquivos anteriores preservados;98 fontes com hashes válidos e128 bloqueios de produção."
+        ],
+        "pending": [
+          "Concluir corpus nativo122 e replays próprios/históricos; execução não equivale a aceite.",
+          "Executar regressão integral122 e auditoria independente antes de promover a nova versão.",
+          "Revisar26 requisitos restantes e demais lacunas de créditos,ISS e documentos."
+        ],
+        "next_step": "Acompanhar a mesma captura nativa122,sem alterar app/testes/recursos fiscais;depois concluir controles ampliados e regressão."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T11:20:50.077Z",
+      "title": "Créditos 122 · integração em validação",
+      "state": "Guardas 122 e bundle próprio instalados; componente isolado aprovado em 69 testes/161 verificações. Integração dirigida ainda sem resultado; ambiente Docker recuperado.119 é o último aceite integral; produção bloqueada.",
+      "criterion": "33% = 2/6 marcos da entrega122: preservação e implementação concluídas. Não é percentual funcional da4B; integração,corpus,regressão e aceite pendentes.",
+      "milestones": [
+        {
+          "title": "Auditar crédito120 e preservar o aceite119",
+          "complete": true
+        },
+        {
+          "title": "Implementar contratos e bundle122",
+          "complete": true
+        },
+        {
+          "title": "Validar ambos os executores e políticas herdadas",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus e replays122",
+          "complete": false
+        },
+        {
+          "title": "Executar regressão integral e qualidade",
+          "complete": false
+        },
+        {
+          "title": "Auditar e publicar aceite local122",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "95 arquivos anteriores arquivados; 92 hashes do aceite119 reconferidos.",
+        "Componente de entrada aprovado: 69 testes/161 verificações; PHPStan sem erros.",
+        "Bundle122 instalado com guardas herdadas119 obrigatórias e sem nova autorização fiscal."
+      ],
+      "pending": [
+        "Concluir testes integrados e corrigir eventuais falhas, sem promover execução a aprovação.",
+        "Concluir corpus, replays, regressão e auditoria de aceite122.",
+        "Revisar 26 requisitos restantes e demais lacunas de créditos, ISS e documentos."
+      ],
+      "next_step": "Validar a integração122 nos dois executores e qualificar os contratos de crédito com a matriz120 preservada.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-targeted-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/before-integration-archive.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/component-tests-v2/execution.json",
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json"
+      ],
+      "focus": {
+        "summary": "Guardas 122 e bundle próprio instalados; componente isolado aprovado em 69 testes/161 verificações. Integração dirigida ainda sem resultado; ambiente Docker recuperado.119 é o último aceite integral; produção bloqueada.",
+        "finished": [
+          "95 arquivos anteriores arquivados; 92 hashes do aceite119 reconferidos.",
+          "Componente de entrada aprovado: 69 testes/161 verificações; PHPStan sem erros.",
+          "Bundle122 instalado com guardas herdadas119 obrigatórias e sem nova autorização fiscal."
+        ],
+        "pending": [
+          "Concluir testes integrados e corrigir eventuais falhas, sem promover execução a aprovação.",
+          "Concluir corpus, replays, regressão e auditoria de aceite122.",
+          "Revisar 26 requisitos restantes e demais lacunas de créditos, ISS e documentos."
+        ],
+        "next_step": "Validar a integração122 nos dois executores e qualificar os contratos de crédito com a matriz120 preservada."
+      }
+    },
+    {
+      "updated_at": "2026-10-20T19:57:01.895Z",
+      "title": "Entrega 119 concluída · fechamento de 20/10/2026",
+      "state": "119 aceita localmente: 8.614 testes e 133.926 verificações, 370 decisões/replays próprios e 1.071 históricos. Desenvolvimento encerrado neste ponto seguro a pedido do usuário. Fase 4B parcial; produção bloqueada.",
+      "criterion": "100% dos 6 marcos da entrega 119 concluídos. Não representa percentual funcional da fase 4B nem liberação de produção.",
+      "milestones": [
+        {
+          "title": "Auditar e reproduzir falhas materiais117/118",
+          "complete": true
+        },
+        {
+          "title": "Preservar corpus116 e arquivos anteriores à119",
+          "complete": true
+        },
+        {
+          "title": "Implementar políticas versionadas de entrada119",
+          "complete": true
+        },
+        {
+          "title": "Validar contratos,positivos e recusas em testes dirigidos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus e replays da nova versão",
+          "complete": true
+        },
+        {
+          "title": "Executar regressão integral e auditoria de aceite",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Entrega 119: regressão integral, qualidade final e auditoria independente aprovadas.",
+        "Guardas materiais/recolhimento e fidelidade JSON; 370 replays próprios e 1.071 históricos exatos.",
+        "Créditos 120 auditados; pesquisa 121 preservada e próximos passos documentados."
+      ],
+      "pending": [
+        "Corrigir os contratos de ajustes de crédito e identificadores documentais observados em 120.",
+        "Concluir a revisão dos 26 requisitos restantes; a pesquisa 121 ainda não fecha sua matriz.",
+        "Concluir base, câmbio e documentos ISS e demais lacunas da fase 4B."
+      ],
+      "next_step": "Na próxima retomada, corrigir os contratos de crédito 120 em nova versão, preservar o aceite 119 e seguir a matriz original dos 80 requisitos.",
+      "evidence": [
+        "storage/app/phase4b-material119-development-20261020/material119-development-validation.json",
+        "docs/fiscal/phase4b-material119-day-closure-20261020.md",
+        "docs/fiscal/phase4b-catalog121-research-checkpoint.md",
+        "D:/ProjetoSaasExports/phase4b-material119-full-suite-20261020/process-start.json",
+        "docs/fiscal/phase4b-material119-corpus-progress.md",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-snapshot-fidelity-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/material119-short-validation.json",
+        "D:/ProjetoSaasExports/phase4b-material-input119-integration-20261020/expanded-cli-v1/material119-expanded-cli-validation.json",
+        "docs/fiscal/phase4b-requirements120-credit-review.md",
+        "D:/ProjetoSaasExports/phase4b-requirements120-credit-audit-20261020-v1/requirements-review-v2/requirements120-credit-review.json",
+        "storage/app/phase4b-price112-development-20261019/price112-development-validation.json"
+      ],
+      "focus": {
+        "summary": "119 aceita localmente: 8.614 testes e 133.926 verificações, 370 decisões/replays próprios e 1.071 históricos. Desenvolvimento encerrado neste ponto seguro a pedido do usuário. Fase 4B parcial; produção bloqueada.",
+        "finished": [
+          "Entrega 119: regressão integral, qualidade final e auditoria independente aprovadas.",
+          "Guardas materiais/recolhimento e fidelidade JSON; 370 replays próprios e 1.071 históricos exatos.",
+          "Créditos 120 auditados; pesquisa 121 preservada e próximos passos documentados."
+        ],
+        "pending": [
+          "Corrigir os contratos de ajustes de crédito e identificadores documentais observados em 120.",
+          "Concluir a revisão dos 26 requisitos restantes; a pesquisa 121 ainda não fecha sua matriz.",
+          "Concluir base, câmbio e documentos ISS e demais lacunas da fase 4B."
+        ],
+        "next_step": "Na próxima retomada, corrigir os contratos de crédito 120 em nova versão, preservar o aceite 119 e seguir a matriz original dos 80 requisitos."
+      }
+    },
     {
       "updated_at": "2026-10-20T17:43:52.899Z",
       "title": "Entradas119 · regressão integral em execução",
@@ -1783,17 +2851,17 @@
     }
   ],
   "focus": {
-    "summary": "119 aceita localmente: 8.614 testes e 133.926 verificações, 370 decisões/replays próprios e 1.071 históricos. Desenvolvimento encerrado neste ponto seguro a pedido do usuário. Fase 4B parcial; produção bloqueada.",
+    "summary": "Aceite local122 concluído:9061 testes/143868 verificações,550 decisões/replays e1441 históricos exatos,94 hashes coincidentes. PHPStan0/Pint606;80 IDs examinados,17 correções locais consolidadas. Desenvolvimento encerrado no ponto seguro solicitado21/10;sem nova implementação.",
     "finished": [
-      "Entrega 119: regressão integral, qualidade final e auditoria independente aprovadas.",
-      "Guardas materiais/recolhimento e fidelidade JSON; 370 replays próprios e 1.071 históricos exatos.",
-      "Créditos 120 auditados; pesquisa 121 preservada e próximos passos documentados."
+      "Aceite122:9061 testes/143868 verificações,550 decisões/replays atuais e1441 históricos exatos;PHPStan0/Pint606.",
+      "94 hashes e7396 entradas da regressão preservados;98 fontes válidas/128 bloqueios. Evidências pesadas noD:,cópias compactas vinculadas noC:.",
+      "80 IDs examinados e matriz consolidada com17 correções locais posteriores;lacunas restantes explícitas,sem encerramento integral4B."
     ],
     "pending": [
-      "Corrigir os contratos de ajustes de crédito e identificadores documentais observados em 120.",
-      "Concluir a revisão dos 26 requisitos restantes; a pesquisa 121 ainda não fecha sua matriz.",
-      "Concluir base, câmbio e documentos ISS e demais lacunas da fase 4B."
+      "Desenvolvimento interrompido no ponto seguro por solicitação do usuário;retomar somente quando solicitado.",
+      "Concluir lacunas funcionais por requisito/família,documentos,base/câmbioISS,crédito e perfis obrigatórios.",
+      "Qualificar cIndOp1.03.00 e parâmetros temporais aplicáveis;produção permanece bloqueada."
     ],
-    "next_step": "Na próxima retomada, corrigir os contratos de crédito 120 em nova versão, preservar o aceite 119 e seguir a matriz original dos 80 requisitos."
+    "next_step": "Aguardar solicitação de retomada. Na retomada,usar o checkpoint122 aceito e as pendências atuais da matriz80;publicaçãoGitHub solicitada neste fechamento."
   }
 }

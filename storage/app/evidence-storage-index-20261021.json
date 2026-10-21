@@ -1,0 +1,41 @@
+{
+  "completed_at": "2026-10-21T13:27:39.7595002Z",
+  "status": "PRESERVED_ON_D_WITH_C_JUNCTIONS",
+  "c_free_before": 3496427520,
+  "c_free_after": 3836588032,
+  "completed": [
+    {
+      "name": "phase4b-private-consolidation48-draft-20261009-28",
+      "source": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-private-consolidation48-draft-20261009-28",
+      "destination": "D:\\ProjetoSaasExports\\preserved-storage-app\\phase4b-private-consolidation48-draft-20261009-28",
+      "files": 969,
+      "bytes": 3350553583,
+      "inventory": "D:\\ProjetoSaasExports\\storage-relocation122-20261021-v1\\phase4b-private-consolidation48-draft-20261009-28-inventory.json",
+      "inventory_sha256": "0c0c8925a9dcf976bfdf2281484eba3da225697f069db3e995f0a68d62e79aac",
+      "c_duplicate_removed": true,
+      "container_read_only_mount_verified": true
+    },
+    {
+      "name": "phase4b-realization-consolidated-expansion47-draft-20261009-28",
+      "source": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-realization-consolidated-expansion47-draft-20261009-28",
+      "destination": "D:\\ProjetoSaasExports\\preserved-storage-app\\phase4b-realization-consolidated-expansion47-draft-20261009-28",
+      "files": 829,
+      "bytes": 3257138630,
+      "inventory": "D:\\ProjetoSaasExports\\storage-relocation122-20261021-v1\\phase4b-realization-consolidated-expansion47-draft-20261009-28-inventory.json",
+      "inventory_sha256": "17d9dcad9ae510bcd13680405fd00f8eb79703902b13d797381dbdc4fbe200fd",
+      "c_duplicate_removed": true,
+      "container_read_only_mount_verified": true
+    }
+  ],
+  "history_deleted": false,
+  "container_preservation_report": "D:\\ProjetoSaasExports\\container-preservation122-recovery-20261021-v3\\container-preservation-validation.json",
+  "git_status_unchanged": true,
+  "receipts": "D:\\ProjetoSaasExports\\storage-relocation122-20261021-v1",
+  "updated_at": "2026-10-21T13:36:42.541Z",
+  "final_validation": "D:\\ProjetoSaasExports\\storage-relocation122-20261021-v1\\storage122-final-validation.json",
+  "final_validation_sha256": "d0cf6e12868c6103ea748ff52ffe4d372675a13ab8212b1834b1acf85a1f570d",
+  "total_files": 1798,
+  "total_bytes": 6607692213,
+  "byte_totals_source": "Recomputed from individually hashed manifest rows; original immutable terminal receipt retained on D:.",
+  "post_restart_validation": "D:\\ProjetoSaasExports\\storage-relocation122-20261021-v1\\post-restart-access-validation.json"
+}

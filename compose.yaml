@@ -1,3 +1,21 @@
+# Historical evidence remains readable at its original logical paths in Linux.
+# Windows junctions alone cannot cross Docker Desktop's parent bind mount.
+x-preserved-evidence:
+  consolidation48: &consolidation48
+    type: bind
+    source: "${FISCAL_EVIDENCE_ROOT:-D:/ProjetoSaasExports/preserved-storage-app}/phase4b-private-consolidation48-draft-20261009-28"
+    target: /var/www/html/storage/app/phase4b-private-consolidation48-draft-20261009-28
+    read_only: true
+    bind:
+      create_host_path: false
+  expansion47: &expansion47
+    type: bind
+    source: "${FISCAL_EVIDENCE_ROOT:-D:/ProjetoSaasExports/preserved-storage-app}/phase4b-realization-consolidated-expansion47-draft-20261009-28"
+    target: /var/www/html/storage/app/phase4b-realization-consolidated-expansion47-draft-20261009-28
+    read_only: true
+    bind:
+      create_host_path: false
+
 services:
   app:
     build:
@@ -17,6 +35,8 @@ services:
     volumes:
       - .:/var/www/html
       - vendor_data:/var/www/html/vendor
+      - *consolidation48
+      - *expansion47
     depends_on:
       postgres:
         condition: service_healthy
@@ -28,6 +48,8 @@ services:
     volumes:
       - .:/var/www/html:ro
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - *consolidation48
+      - *expansion47
     depends_on:
       - app
 
