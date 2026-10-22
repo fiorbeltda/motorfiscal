@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T16:43:08.519378-03:00",
+  "updated_at": "2026-10-22T16:44:21.627482-03:00",
   "title": "Checkpoint seguro134 — desenvolvimento interrompido a pedido do usuário",
   "state": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
   "criterion": "6/6 marcos do corte134 verificados;nenhum percentual global4B;0/8 grupos encerrados.",
@@ -5365,7 +5365,7 @@
     }
   ],
   "focus": {
-    "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+    "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada. Commit27ab5a6 publicado noGitHub;console atualizado após envio.",
     "finished": [
       "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
       "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
@@ -5378,5 +5378,14 @@
     ],
     "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada."
   },
-  "scope_package": "134"
+  "scope_package": "134",
+  "checkpoint_publication": {
+    "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+    "branch": "codex/fiscal-engine-bootstrap",
+    "published_at": "2026-10-22T16:44:21.627482-03:00",
+    "push_confirmed": true,
+    "development_stopped_by_user": true,
+    "phase4b_complete": false
+  }
 }

@@ -35,3 +35,9 @@ Publicação solicitada na branch `codex/fiscal-engine-bootstrap`,no repositóri
 `https://github.com/fiorbeltda/motorfiscal`. Formato histórico de mensagem:
 `Atualização - DD/MM/AAAA HH:mm (São Paulo)`. O hash publicado será registrado
 na atualização imediatamente posterior ao commit principal.
+
+Atualização imediatamente após publicação em 2026-10-22T16:44:21.627482-03:00:commit principal
+`27ab5a6d4492244761d7ba9921a5274c32564765` enviado aoGitHub,branch
+`codex/fiscal-engine-bootstrap`.Mensagem:`Atualização - 22/10/2026 16:43 (São Paulo)`.
+Console atualizado após o envio;esta atualização documental terá commit próprio
+no mesmo formato. Árvore limpa e remoto serão conferidos após a publicação.
