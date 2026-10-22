@@ -18,6 +18,49 @@ final readonly class ConsumptionReformEngine
     public function evaluate(FactBag $facts, LocalDate $competence, DateTimeImmutable $knownAt): array
     {
         $trace = [['stage' => 'TEMPORAL', 'competence_date' => $competence->value(), 'known_at' => $knownAt->format(DATE_ATOM)]];
+        if (DocumentIssIntegration134::required($this->codes)) {
+            $issPolicy = (new DocumentIssIntegration134)->qualifyPolicy($this->codes, $knownAt);
+            $trace[] = ['stage' => 'DOCUMENT_ISS_POLICY134', ...$issPolicy];
+            if ($issPolicy['status'] !== 'RESOLVED') {
+                return $this->stop($issPolicy['status'], [$issPolicy['reason']], [], $trace);
+            }
+        }
+        if (DocumentSchedule131::required($this->codes)) {
+            $schedulePolicy = (new DocumentSchedule131)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'DOCUMENT_SCHEDULE_POLICY131', ...$schedulePolicy];
+            if ($schedulePolicy['status'] !== 'RESOLVED') {
+                return $this->stop($schedulePolicy['status'], [$schedulePolicy['reason']], [], $trace);
+            }
+        }
+        $importResponsibility129 = ImportResponsibility129::required($this->codes);
+        if ($importResponsibility129) {
+            $importPolicy = (new ImportResponsibility129)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'IMPORT_POLICY129', ...$importPolicy];
+            if ($importPolicy['status'] !== 'RESOLVED') {
+                return $this->stop($importPolicy['status'], [$importPolicy['reason']], [], $trace);
+            }
+        }
+        if (DpsForeignPolicy128::required($this->codes)) {
+            $foreignPolicy = (new DpsForeignPolicy128)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'DPS_FOREIGN_POLICY128', ...$foreignPolicy];
+            if ($foreignPolicy['status'] !== 'RESOLVED') {
+                return $this->stop($foreignPolicy['status'], [$foreignPolicy['reason']], [], $trace);
+            }
+        }
+        if (DpsLayoutPolicy127::required($this->codes)) {
+            $schemaPolicy = (new DpsLayoutPolicy127)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'DPS_LAYOUT_POLICY127', ...$schemaPolicy];
+            if ($schemaPolicy['status'] !== 'RESOLVED') {
+                return $this->stop($schemaPolicy['status'], [$schemaPolicy['reason']], [], $trace);
+            }
+        }
+        if (CIndOpReference126::required($this->codes)) {
+            $referencePolicy = (new CIndOpReference126)->qualify($this->codes, $knownAt);
+            $trace[] = ['stage' => 'CINDOP_POLICY126', ...$referencePolicy];
+            if ($referencePolicy['status'] !== 'RESOLVED') {
+                return $this->stop($referencePolicy['status'], [$referencePolicy['reason']], [], $trace);
+            }
+        }
         $datedDocuments = $facts->value('rtc.assess_export_dated_documents') === true;
         $documentPrices = $facts->value('rtc.assess_export_document_prices') === true;
         if ($documentPrices && ($datedDocuments || $facts->value('rtc.assess_export_iss_results') === true
@@ -427,6 +470,13 @@ final readonly class ConsumptionReformEngine
             }
             $trace[] = ['stage' => 'IMPORT_QUALIFICATION', 'source_article' => 'LC214 art. 64', 'taxpayer' => $taxpayer,
                 'brazil_share_percent' => $brazilShare->value(), 'consumption_evidence_id' => $facts->value('rtc.domestic_consumption_evidence_id')];
+            if ($importResponsibility129) {
+                $responsibility = (new ImportResponsibility129)->resolve($facts, $platformDecision);
+                $trace[] = ['stage' => 'IMPORT_RESPONSIBILITY129', ...$responsibility];
+                if ($responsibility['status'] !== 'RESOLVED') {
+                    return $this->stop($responsibility['status'], [$responsibility['reason']], $responsibility['missing_facts'], $trace);
+                }
+            }
         }
         $financialOperation = null;
         if (isset($this->codes['financial_operation']) && ($kind === 'FINANCIAL' || $facts->value('rtc.financial_provider') === true
@@ -760,6 +810,13 @@ final readonly class ConsumptionReformEngine
             ? (string) $classificationRule['cindop_by_presence'][$facts->value('rtc.presence_at_supplier_establishment') === true ? 'SUPPLIER' : 'OTHER']
             : (string) $classificationRule['cindop'];
         $class = (string) $classificationRule['cclasstrib'];
+        if (CIndOpReference126::required($this->codes)) {
+            $operationReference = (new CIndOpReference126)->resolve($this->codes, $code, 'LOCAL_SANDBOX', $on, $knownAt);
+            $trace[] = ['stage' => 'CINDOP_REFERENCE126', 'context' => 'STANDARD_OPERATION', ...$operationReference];
+            if ($operationReference['status'] !== 'REFERENCE_ROW_AVAILABLE') {
+                return $this->stop($operationReference['status'], [$operationReference['reason']], [], $trace);
+            }
+        }
         if (($facts->has('rtc.cindop') && $facts->value('rtc.cindop') !== $code)
             || ($facts->has('rtc.cclasstrib') && $facts->value('rtc.cclasstrib') !== $class)
             || ($facts->has('rtc.classification_rule_id') && $facts->value('rtc.classification_rule_id') !== $classificationRuleId)) {
@@ -1065,6 +1122,9 @@ final readonly class ConsumptionReformEngine
                 'DPS.infDPS.IBSCBS.valores.trib.gIBSCBS.cClassTrib' => $class,
             ];
             if (isset($this->codes['dps_xsd'])) {
+                if (DpsLayoutPolicy127::required($this->codes)) {
+                    $issuerFields = (new DpsLayoutPolicy127)->mapIssuerFields($issuerFields);
+                }
                 $validation = (new DpsIssuerFieldValidator)->validate($issuerFields, $layouts[0], $this->codes);
                 $trace[] = ['stage' => 'DPS_ISSUER_XSD_VALIDATION', ...$validation];
                 if ($validation['status'] !== 'VALID') {
@@ -1077,6 +1137,24 @@ final readonly class ConsumptionReformEngine
                 'evidence' => ['foreign_invoice_id' => $facts->value('rtc.import_document_id'),
                     'transaction_evidence_id' => $facts->value('rtc.import_transaction_evidence_id'),
                     'fx_contract_id' => $facts->value('rtc.import_fx_contract_id')]];
+
+            if (DocumentSchedule131::required($this->codes)) {
+                $documentRegime = $regime;
+                if (($this->codes['version'] ?? null) === DocumentSchedule131::VERSION) {
+                    $regimeFact = $facts->value('rtc.acquirer_country') === 'BR' ? 'rtc.acquirer_regime' : 'rtc.recipient_regime';
+                    $documentRegime = $facts->value($regimeFact);
+                    if (! is_string($documentRegime)) {
+                        return $this->stop('ACTION_REQUIRED', ['RTC_DOCUMENT131_TAXPAYER_REGIME_REQUIRED'], [$regimeFact], $trace);
+                    }
+                }
+                $schedule = (new DocumentObligationEngine)->resolve((string) ($classificationRule['ctribnac_code'] ?? ''),
+                    $documentRegime, $on, $knownAt, $this->codes, in_array($platformDecision['responsibility'] ?? null,
+                        ['FOREIGN_SUPPLIER_SUBSTITUTIVE_SOLIDARY', 'DOMESTIC_SUPPLIER_SOLIDARY', 'NOT_TRIGGERED'], true));
+                $trace[] = ['stage' => 'IMPORT_DOCUMENT_SCHEDULE131', ...$schedule];
+                if ($schedule['status'] !== 'RESOLVED') {
+                    return $this->stop($schedule['status'], [$schedule['reason']], [], $trace);
+                }
+            }
 
             return $this->stop('ACTION_REQUIRED', ['RTC_IMPORT_DOCUMENT_OBLIGATION_NOT_PROVEN'], [], $trace);
         }
@@ -1134,6 +1212,9 @@ final readonly class ConsumptionReformEngine
             'IBSCBS.valores.trib.gIBSCBS.cClassTrib' => $class,
         ];
         if (isset($this->codes['dps_xsd'])) {
+            if (DpsLayoutPolicy127::required($this->codes)) {
+                $issuerFields = (new DpsLayoutPolicy127)->mapIssuerFields($issuerFields);
+            }
             $validation = (new DpsIssuerFieldValidator)->validate($issuerFields, $layouts[0], $this->codes);
             $trace[] = ['stage' => 'DPS_ISSUER_XSD_VALIDATION', ...$validation];
             if ($validation['status'] !== 'VALID') {
@@ -1143,7 +1224,8 @@ final readonly class ConsumptionReformEngine
         $documentObligation = null;
         if (isset($this->codes['document_obligations'])) {
             $documentObligation = (new DocumentObligationEngine)->resolve(
-                (string) ($classificationRule['ctribnac_code'] ?? ''), $regime, $on, $knownAt, $this->codes);
+                (string) ($classificationRule['ctribnac_code'] ?? ''), $regime, $on, $knownAt, $this->codes,
+                in_array($platformDecision['responsibility'] ?? null, ['FOREIGN_SUPPLIER_SUBSTITUTIVE_SOLIDARY', 'DOMESTIC_SUPPLIER_SOLIDARY', 'NOT_TRIGGERED'], true));
             $trace[] = ['stage' => 'DOCUMENT_OBLIGATION', ...$documentObligation];
             if ($documentObligation['status'] !== 'RESOLVED') {
                 return $this->stop($documentObligation['status'], [$documentObligation['reason']], [], $trace);
@@ -1408,6 +1490,13 @@ final readonly class ConsumptionReformEngine
         }
         $code = (string) $rule['cindop'];
         $class = (string) $rule['cclasstrib'];
+        if (CIndOpReference126::required($this->codes)) {
+            $operationReference = (new CIndOpReference126)->resolve($this->codes, $code, 'LOCAL_SANDBOX', $on, $knownAt);
+            $trace[] = ['stage' => 'CINDOP_REFERENCE126', 'context' => 'PARTIAL_EXPORT_DOMESTIC', ...$operationReference];
+            if ($operationReference['status'] !== 'REFERENCE_ROW_AVAILABLE') {
+                return $this->stop($operationReference['status'], [$operationReference['reason']], [], $trace);
+            }
+        }
         if (! isset($this->codes['cindop'][$code], $this->codes['cclasstrib'][$class])) {
             return $this->stop('INVALID', ['RTC_PARTIAL_EXPORT_DOMESTIC_CLASSIFICATION_INVALID'], [], $trace);
         }
@@ -1450,6 +1539,15 @@ final readonly class ConsumptionReformEngine
             'rate_sources' => [$stateRate['row']['source_id'], $municipalRate['row']['source_id'], $cbsRate['row']['source_id']]];
 
         if ($facts->value('rtc.assess_export_document_prices') === true) {
+            if (DocumentIssIntegration134::required($this->codes)) {
+                $documentIss = (new DocumentIssIntegration134)->qualify($facts, $knownAt, $this->codes['document_iss_policy134']);
+                $trace[] = ['stage' => 'PARTIAL_EXPORT_DOCUMENT_ISS134', ...$documentIss];
+                if ($documentIss['status'] !== 'LOCAL_ISS_DOCUMENT_BASES_CALCULATED') {
+                    return $this->stop($documentIss['status'], [$documentIss['reason']], $documentIss['missing_facts'], $trace);
+                }
+
+                return $this->stop('ACTION_REQUIRED', ['RTC_PARTIAL_EXPORT_DOCUMENT_OBLIGATION_NOT_PROVEN'], [], $trace);
+            }
             $policy = $this->codes['partial_export_document_prices_policy'] ?? [];
             $prices = (new PartialExportDocumentPrices112)->qualify($facts, $knownAt, is_array($policy) ? $policy : []);
             $trace = [...$trace, ...$prices['trace']];

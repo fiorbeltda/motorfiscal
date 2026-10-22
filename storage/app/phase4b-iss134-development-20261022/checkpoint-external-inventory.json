@@ -1,0 +1,397 @@
+{
+  "created_at": "2026-10-22T16:43:08.519378-03:00",
+  "external_files_preserved": [
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\changed-comex-report.json",
+      "bytes": 113,
+      "sha256": "3dda7e8cfb99c8a33328e70c1493e8a8ec8e173b5d02aef4746d2a5b70f68f41"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\changed-comex-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\first-report.json",
+      "bytes": 9122,
+      "sha256": "011a95810abf862925c765c128070800214ec046ffd043824bb4ae67a808e005"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\first-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\input.json",
+      "bytes": 2220642,
+      "sha256": "aff6e77815f08c42e9450014e75d1040a81ce6b9bf3eb7917217c8e978c930bd"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\probe.php",
+      "bytes": 9184,
+      "sha256": "227ab27f928a01b820ab8c55eeba4d89f977d158a2085abab9dab7a5110b92aa"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\RTC_DOMESTIC.xml",
+      "bytes": 2306,
+      "sha256": "aff04a90dbc1b30d0563aacc070d0d4f5f6beb7e836f2dfbec76927fabe41607"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\RTC_FOREIGN.xml",
+      "bytes": 2171,
+      "sha256": "14a1e6de5a5b729602a1b919da94837d0176dea8f1af0cbfd3d746d7043a5f87"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\second-report.json",
+      "bytes": 9122,
+      "sha256": "011a95810abf862925c765c128070800214ec046ffd043824bb4ae67a808e005"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\second-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\bound-pair-comex-bridge-v1\\validation.json",
+      "bytes": 1103,
+      "sha256": "e2742213884f20a95e509fce65b023c8707d6dc70f8fed1076286559f81832e9"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\comex-v1\\first-report.json",
+      "bytes": 17024,
+      "sha256": "fb6b5b035a54652d5ae19536e344d96cbab70fd8e029805c2a1c159aafc4abbb"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\comex-v1\\first-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\comex-v1\\second-report.json",
+      "bytes": 17024,
+      "sha256": "fb6b5b035a54652d5ae19536e344d96cbab70fd8e029805c2a1c159aafc4abbb"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\comex-v1\\second-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\comex-v1\\validation.json",
+      "bytes": 716,
+      "sha256": "d69ee6a84ca63bb85a5fafb74a7562835a94e1c32a3653c89c35d85b82c77a57"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\DocumentComex135.php",
+      "bytes": 8897,
+      "sha256": "07bd5e65b1cb7ab0e9ada61cccb15150bfa4123b6474c42edb93354283d08cd8"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\DocumentPriceBridge135.php",
+      "bytes": 8764,
+      "sha256": "ae740e48e94a1536bb448d85ddf00f383dc114283f9d459f9617488b7b2f3b9a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v1\\input.json",
+      "bytes": 2211531,
+      "sha256": "aac23e941bbf74d13f5362ae2fa2960d3a2c9166b36b0a173fb1fc2d4725ed24"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v1\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v1\\stdout.json",
+      "bytes": 9659,
+      "sha256": "1994e103a5946b5c6753c4f540d5b4908313342ce7840ca8d8783f345ca18cb7"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\first-report.json",
+      "bytes": 9041,
+      "sha256": "9d5ff820ebbcc3875014a2c0d4b4b286eed116b82acd730826c0b73eec02c046"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\first-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\input.json",
+      "bytes": 2211531,
+      "sha256": "aac23e941bbf74d13f5362ae2fa2960d3a2c9166b36b0a173fb1fc2d4725ed24"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\RTC_DOMESTIC.xml",
+      "bytes": 2308,
+      "sha256": "19d4df64f4ca292a2aa73a4666061b365a46d8c736921fd48363f4070135c426"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\RTC_FOREIGN.xml",
+      "bytes": 2173,
+      "sha256": "c515ac62b7055759e2fe05e7aca4d3256c04ca129f7512835e070d68fab2736d"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\second-report.json",
+      "bytes": 9041,
+      "sha256": "9d5ff820ebbcc3875014a2c0d4b4b286eed116b82acd730826c0b73eec02c046"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\second-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\full-pair-probe-v2\\validation.json",
+      "bytes": 1015,
+      "sha256": "43bb05d213134d310ce5e9786bdaf84dfb613bbbf98f8469d3ceadd420db0c77"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-binding-v1\\capture.php",
+      "bytes": 1909,
+      "sha256": "b091076fe4fdab8f5ebc94c097b6413978b3a4cbd3ee457c81476fe2434369b6"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-binding-v1\\derivation.json",
+      "bytes": 471,
+      "sha256": "f2902096c9983fc06230cf3b4159a7f59b21a5f4bb3b8d989ba6009159318206"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-binding-v1\\fixture135.php",
+      "bytes": 8381,
+      "sha256": "7fcc838ed1bcc6adb556df59d1fc5e5b5afedcbdc57933447e6ee2507eb5f2f6"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-binding-v1\\snapshot.json",
+      "bytes": 2075031,
+      "sha256": "d3cb3fecad2d46e82ad9966f23889e29ed46dd6c1455cd2d526dafa2a3eee467"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-binding-v1\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\changed-number-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\changed-number-stdout.log",
+      "bytes": 704,
+      "sha256": "c1df0c7a93e9b1973b71877d35399486156029dd18dd896b889e2194634c24a7"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\first-report.json",
+      "bytes": 9040,
+      "sha256": "a29878ca2ee6a6496704653b2972969619dbe0622088077444db1f3e814a7a6a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\first-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\input.json",
+      "bytes": 2211459,
+      "sha256": "8b44ecbce25f653b30bf85ded7a4b20c0781f16ecc2ab9c52c4cb0326cd386ba"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\probe.php",
+      "bytes": 7819,
+      "sha256": "ed01f8097eda8e2e37de627fc83b0508cd76bed1fae2fd9cff808540ad1e1f3e"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\RTC_DOMESTIC.xml",
+      "bytes": 2308,
+      "sha256": "19d4df64f4ca292a2aa73a4666061b365a46d8c736921fd48363f4070135c426"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\RTC_FOREIGN.xml",
+      "bytes": 2173,
+      "sha256": "c515ac62b7055759e2fe05e7aca4d3256c04ca129f7512835e070d68fab2736d"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\second-report.json",
+      "bytes": 9040,
+      "sha256": "a29878ca2ee6a6496704653b2972969619dbe0622088077444db1f3e814a7a6a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v1\\second-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\changed-number-report.json",
+      "bytes": 115,
+      "sha256": "31326babd32369a9ae4054aa0dae12936e31367355ae51c8390ab0516ac28c37"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\changed-number-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\first-report.json",
+      "bytes": 9040,
+      "sha256": "a29878ca2ee6a6496704653b2972969619dbe0622088077444db1f3e814a7a6a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\first-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\input.json",
+      "bytes": 2211459,
+      "sha256": "8b44ecbce25f653b30bf85ded7a4b20c0781f16ecc2ab9c52c4cb0326cd386ba"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\probe.php",
+      "bytes": 8037,
+      "sha256": "d9d4325f6136578de32e0061002b3a18106dbfe2eb5f7c4cc045dc036a57180a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\RTC_DOMESTIC.xml",
+      "bytes": 2308,
+      "sha256": "19d4df64f4ca292a2aa73a4666061b365a46d8c736921fd48363f4070135c426"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\RTC_FOREIGN.xml",
+      "bytes": 2173,
+      "sha256": "c515ac62b7055759e2fe05e7aca4d3256c04ca129f7512835e070d68fab2736d"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\second-report.json",
+      "bytes": 9040,
+      "sha256": "a29878ca2ee6a6496704653b2972969619dbe0622088077444db1f3e814a7a6a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\second-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\identity-pair-probe-v2\\validation.json",
+      "bytes": 865,
+      "sha256": "e2abd2bed76016a563ce638f75e762952dbebc1ee68cb5c7296c41fddfa6ee68"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\PartialExportForeignClassification135.php",
+      "bytes": 8849,
+      "sha256": "38f6c5e5035ffb97c43a6878eee857a056b7240d6f2f0ddc36b9d7b1db0a4234"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\capture.php",
+      "bytes": 1954,
+      "sha256": "9039bcadbd78d84b5fccbd4a288422ee7e5bf1739e4b92fbad871f74e598fbd7"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\declared-contract-prices.json",
+      "bytes": 267,
+      "sha256": "62e1e937a7931e3633d8d808434d98d6e9922f62acfc34c4cfa2f655bf567d30"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\first-report.json",
+      "bytes": 26742,
+      "sha256": "142f1da32feffa0a3246463880ce02c57b628f7f2e856cd71a01b40d57061ce0"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\first-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\fixture.php",
+      "bytes": 9325,
+      "sha256": "b41ad6afddba889510aa8b6ec62e009308724c118fccc007103bea393dabe958"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\probe.php",
+      "bytes": 6603,
+      "sha256": "929d7646988c4476a17bf44e8607fdbcc973305e3c162d09b0e4b659d357349a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\second-report.json",
+      "bytes": 26742,
+      "sha256": "142f1da32feffa0a3246463880ce02c57b628f7f2e856cd71a01b40d57061ce0"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\second-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\snapshot.json",
+      "bytes": 2074992,
+      "sha256": "b0a122fbc8e5757a40cd81d0ace8311808d17da316cdb5af12aeb4c5942995a5"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\price-bridge-v1\\validation.json",
+      "bytes": 1045,
+      "sha256": "adaf788dbb42d7e73ef415c116bde35d9ad6316822dd93ff7964371862111833"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\probe-comex135.php",
+      "bytes": 6706,
+      "sha256": "b640391b98afe0b0abb2ac2b1ee01718e367adb040aa049140b4f4b2fcb9aa90"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\probe-full-pair135.php",
+      "bytes": 6990,
+      "sha256": "726d53ce7fac472dd5035bcea18f1cb37a078dce0f54f30f95643043d9f7c7b6"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\probe-v1\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\probe-v1\\stdout.json",
+      "bytes": 5659,
+      "sha256": "fa64987915a2340d532eb3bc6bee26f0f509a8ddbe1c3b82cc7c46fcb5ab026a"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\probe135.php",
+      "bytes": 3679,
+      "sha256": "b8a5cc15f7144b9bb3d5872d9223a2083f1a32e351cf23fc05e520b606f25737"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\source-staging135-v1\\validation.json",
+      "bytes": 934,
+      "sha256": "b27f56d86ac14acde34c099074a8ec6747bd9fd43f3c144ee1d08d99f123fb64"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\full-suite-v1\\input-hashes-after.json",
+      "bytes": 859336,
+      "sha256": "80764e28adcc78b50b49ce0d59c5deb6a6c63c7b6bf6998f28f738cef848cf60"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\full-suite-v1\\input-hashes-before.json",
+      "bytes": 859336,
+      "sha256": "80764e28adcc78b50b49ce0d59c5deb6a6c63c7b6bf6998f28f738cef848cf60"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\full-suite-v1\\process.json",
+      "bytes": 421,
+      "sha256": "8defca8b044ca69c50a7d3b152ed2028e6b663ebe1570c04f9c7ab5cfa2a9388"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\full-suite-v1\\stdout.log",
+      "bytes": 9846,
+      "sha256": "0426492fc06f2b09909fcdb11176384e662deea64469c8a5503e99dc705ccc0b"
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-iss134-20261022-v1\\full-suite-v1\\validation.json",
+      "bytes": 395,
+      "sha256": "cb86dc9ffe75dbef83f330b4f546f9b080cc6f0b24b27cddf6c653591c0a9bc6"
+    }
+  ],
+  "staged135_installed": false,
+  "phase4b_complete": false
+}

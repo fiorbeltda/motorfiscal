@@ -1,5 +1,11 @@
 # Fronteira113 - contrato proposto para baseISS por documento
 
+Atualização22/10:parte deste contrato foi implementada no componente local133,
+com base/impostoBRL por documento,classificação granular e contexto tributário,
+reexecução106/111 e prova própria por data.Registros históricos abaixo preservados.
+Ver`phase4b-iss133-local-document-base.md`.Integração versionada,DPS,câmbioISS,
+importação e demais perfis permanecem pendentes;esta fronteira não está encerrada.
+
 Estudo em20/10/2026,enquanto a regressao112 executa com17.418 entradas
 congeladas. Este documento nao instala politica ou componente,nem aceita
 classificacao,base,aliquota,conversao ou imposto. Preservar os cenarios112.

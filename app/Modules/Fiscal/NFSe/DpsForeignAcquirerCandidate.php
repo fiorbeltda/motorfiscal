@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Modules\Fiscal\NFSe;
 
+use App\Modules\Fiscal\ConsumptionReform\DpsForeignPolicy128;
 use App\Modules\Fiscal\ConsumptionReform\DpsIssuerFieldValidator;
+use App\Modules\Fiscal\ConsumptionReform\DpsLayoutPolicy127;
 use App\Modules\Fiscal\Core\Shared\CanonicalJson;
 use DateTimeImmutable;
 
@@ -22,7 +24,9 @@ final readonly class DpsForeignAcquirerCandidate
     public function bind(array $facts, array $identity, array $codes): array
     {
         $policy = $codes['foreign_acquirer_candidate'] ?? null;
-        if (($codes['local_xml_projection']['contract_version'] ?? null) !== self::CONTRACT
+        $modern = DpsForeignPolicy128::required($codes);
+        if (! in_array($codes['local_xml_projection']['contract_version'] ?? null,
+            $modern ? [DpsForeignPolicy128::CONTRACT] : [self::CONTRACT], true)
             || ! is_array($policy) || ($policy['scope'] ?? null) !== 'LOCAL_STRUCTURAL_CANDIDATE_ONLY'
             || ($policy['currency_competence_validity_proven'] ?? null) !== false
             || ! is_string($policy['currency_code_source_sha256'] ?? null)
@@ -44,6 +48,13 @@ final readonly class DpsForeignAcquirerCandidate
         if ($issued < $observed) {
             return $this->stop('ACTION_REQUIRED', 'CURRENCY_ARTIFACT_NOT_YET_OBSERVED');
         }
+        if ($modern) {
+            foreach ([(new DpsForeignPolicy128)->qualify($codes, $issued), (new DpsLayoutPolicy127)->qualify($codes, $issued)] as $qualification) {
+                if ($qualification['status'] !== 'RESOLVED') {
+                    return $qualification;
+                }
+            }
+        }
         if (($facts['rtc.market'] ?? null) !== 'DOMESTIC'
             || ($facts['rtc.recipient_country'] ?? null) !== 'BR'
             || ($facts['rtc.destination_basis'] ?? null) !== 'RECIPIENT_DOMICILE'
@@ -62,7 +73,7 @@ final readonly class DpsForeignAcquirerCandidate
             || (isset($facts['rtc.acquirer_foreign_nif']) && ($party['nif'] ?? null) !== $facts['rtc.acquirer_foreign_nif'])) {
             return $this->stop('INVALID', 'PARTY_OR_DOCUMENT_BINDING_CONFLICT');
         }
-        $projected = (new DpsForeignPartyProjector)->project($party, 'toma', $codes);
+        $projected = (new DpsForeignPartyProjector)->project($party, 'toma', $codes, $modern ? $issued : null);
         if ($projected['status'] !== 'PROJECTED') {
             return $projected;
         }
@@ -98,7 +109,7 @@ final readonly class DpsForeignAcquirerCandidate
             }
         }
         $validation = (new DpsIssuerFieldValidator)->validate($fields,
-            ['xsd_source_hash' => DpsRestrictedSchemaSelection::ARCHIVE_SHA256], $codes);
+            ['xsd_source_hash' => $modern ? DpsLayoutPolicy127::SOURCE_SHA256 : DpsRestrictedSchemaSelection::ARCHIVE_SHA256], $codes);
         if ($validation['status'] !== 'VALID') {
             return [...$this->stop('INVALID', 'COMEXT_SOURCE_FACET_CONFLICT'), 'field_validation' => $validation];
         }

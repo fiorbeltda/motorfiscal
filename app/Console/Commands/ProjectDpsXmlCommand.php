@@ -4,13 +4,17 @@ declare(strict_types=1);
 
 namespace App\Console\Commands;
 
+use App\Modules\Fiscal\ConsumptionReform\DpsForeignPolicy128;
+use App\Modules\Fiscal\ConsumptionReform\DpsLayoutPolicy127;
 use App\Modules\Fiscal\Core\Shared\CanonicalJson;
 use App\Modules\Fiscal\Infrastructure\Scenario\FiscalEngineFactory;
 use App\Modules\Fiscal\Infrastructure\Scenario\JsonFileWriter;
 use App\Modules\Fiscal\Infrastructure\Schema\DpsXmlSchemaValidator;
 use App\Modules\Fiscal\NFSe\DpsForeignAcquirerCandidate;
 use App\Modules\Fiscal\NFSe\DpsRestrictedSchemaSelection;
+use App\Modules\Fiscal\NFSe\DpsRestrictedSchemaSelection127;
 use App\Modules\Fiscal\NFSe\DpsXmlProjector;
+use App\Modules\Fiscal\NFSe\DpsXmlProjector127;
 use RuntimeException;
 use Throwable;
 
@@ -35,7 +39,7 @@ final class ProjectDpsXmlCommand extends FiscalJsonCommand
             $knowledge = $factory->captureKnowledge(
                 resource_path('fiscal'), (string) $this->option('bundle-manifest'));
             $projectionContract = $knowledge['documents']['rtc_code_catalog']['local_xml_projection']['contract_version'] ?? null;
-            if (! in_array($projectionContract, [DpsXmlProjector::CONTRACT_VERSION, DpsXmlProjector::NBS_CONTRACT_VERSION, DpsXmlProjector::IMMUNITY_CONTRACT_VERSION, DpsRestrictedSchemaSelection::CONTRACT, DpsForeignAcquirerCandidate::CONTRACT], true)) {
+            if (! in_array($projectionContract, [DpsXmlProjector::CONTRACT_VERSION, DpsXmlProjector::NBS_CONTRACT_VERSION, DpsXmlProjector::IMMUNITY_CONTRACT_VERSION, DpsRestrictedSchemaSelection::CONTRACT, DpsForeignAcquirerCandidate::CONTRACT, DpsLayoutPolicy127::CONTRACT, DpsForeignPolicy128::CONTRACT], true)) {
                 throw new RuntimeException('Bundle does not bind the supported local DPS projection contract.');
             }
             if (($snapshot['result']['decision']['versions']['rule_bundle_id'] ?? null) !== $knowledge['rule_bundle_id']) {
@@ -57,6 +61,15 @@ final class ProjectDpsXmlCommand extends FiscalJsonCommand
                 throw new RuntimeException('DPS competence differs from the replayed decision.');
             }
             $selection = null;
+            if (in_array($projectionContract, [DpsLayoutPolicy127::CONTRACT, DpsForeignPolicy128::CONTRACT], true)) {
+                $selection = (new DpsRestrictedSchemaSelection127)->qualify($identity,
+                    $knowledge['documents']['rtc_code_catalog'], (string) ($snapshot['input']['knowledge_at'] ?? ''));
+                if ($selection['status'] !== 'VALID') {
+                    $this->outputJson(['scope' => 'LOCAL_NO_SIGNATURE_OR_TRANSMISSION', ...$selection]);
+
+                    return self::FAILURE;
+                }
+            }
             if (in_array($projectionContract, [DpsRestrictedSchemaSelection::CONTRACT, DpsForeignAcquirerCandidate::CONTRACT], true)) {
                 $selection = (new DpsRestrictedSchemaSelection)->qualify($identity,
                     $knowledge['documents']['rtc_code_catalog']['local_xml_projection'],
@@ -68,8 +81,11 @@ final class ProjectDpsXmlCommand extends FiscalJsonCommand
                     return self::FAILURE;
                 }
             }
-            $projected = (new DpsXmlProjector)->project($snapshot['result']['decision'], $identity,
-                $projectionContract === DpsForeignAcquirerCandidate::CONTRACT ? $knowledge['documents']['rtc_code_catalog'] : null);
+            $projected = in_array($projectionContract, [DpsLayoutPolicy127::CONTRACT, DpsForeignPolicy128::CONTRACT], true)
+                ? (new DpsXmlProjector127)->project($snapshot['result']['decision'], $identity,
+                    $projectionContract === DpsForeignPolicy128::CONTRACT ? $knowledge['documents']['rtc_code_catalog'] : null)
+                : (new DpsXmlProjector)->project($snapshot['result']['decision'], $identity,
+                    $projectionContract === DpsForeignAcquirerCandidate::CONTRACT ? $knowledge['documents']['rtc_code_catalog'] : null);
             if ($projected['status'] !== 'PROJECTED' || $projected['xml'] === null) {
                 $this->outputJson(['scope' => 'LOCAL_NO_SIGNATURE_OR_TRANSMISSION', ...$projected]);
 

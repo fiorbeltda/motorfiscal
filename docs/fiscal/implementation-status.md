@@ -1,5 +1,74 @@
 # Estado da implementação
 
+Checkpoint em 2026-10-22T16:43:08.519378-03:00: parada segura solicitada pelo usuário. Regressão134 encerrada:9.406 testes/145.560 asserções,5.179 entradas intactas;auditoria415/114 hashes. Corte134 validado;4B parcial,0/8 encerrados. Ensaios135 externos não integrados. Ver `phase4b-day-closure-20261022.md`.
+
+Atualização134 em22/10:ISS133 integrado ao bundle134 e aos dois runners;
+grupo valores daDPS projetado e validado no tipo oficial,sem afirmarDPS completa.
+355 testes dirigidos/2755 asserções,PHPStan0/Pint655;22 snapshots/replays,
+16 arquivos de fragmentos e19 históricos exatos.Regressão integral134 aprovada:9406 testes/145560 asserções;inventário intacto.
+Ver`phase4b-iss134-versioned-document-values.md`.4B parcial,0/8 encerrados.
+
+Atualização133 em22/10:componente local de base/impostoISS por documento
+implementado,com reexecução106/111,classificação02660/01.01 e cinco fontes
+municipais atuais.338 testes/2599 asserções,PHPStan0/Pint648;52 replays
+componente/CLI,84 documentos conferidos por oráculo decimal e19 históricos exatos.
+Integração versionada/DPS,câmbioISS e demais perfis seguem pendentes.
+Ver`phase4b-iss133-local-document-base.md`.4B parcial;122 último aceite integral.
+
+Atualização132 em22/10:reconciliação declarada de preçoBRL por fatura/linha,
+hash do arquivo original e valoresISS/RTC do snapshot reexecutado,integrada
+como opção ao candidato130.57 testes/206 asserções,PHPStan0/Pint643,
+doisXML idênticos ao histórico130 e19 replays históricos exatos;auditoria242.
+Não extrai campos da fonte,não autentica a fatura,nem qualifica base legalISS.
+Ver`phase4b-import132-document-values.md`.4B parcial;122 último aceite integral.
+
+Atualização131-draft2 em22/10:cronograma documental peloAto4 integral,
+32 perfis/datas/exceções e regime do contribuinte brasileiro na importação,
+com pergunta própria pelo destinatário.112 testes/809 verificações,PHPStan0/
+Pint639,18 decisões/replays e41 históricos exatos;auditoria265 conferências.
+107 hashes/107 fontes/130 bloqueios. Não encerra corpo/obrigação de importação.
+Ver`phase4b-schedule131-primary-act.md`.4B parcial;122 último aceite integral.
+
+Atualização130 em22/10:candidato documental local de importação pelo tomador,
+com fornecedor estrangeiro/COMEX/NBS e vínculo ao snapshot integrado129 replayado.
+99 testes/333 verificações,PHPStan0/Pint634,doisXML iguais/XSD-válidos e24
+históricos exatos. Auditoria199 conferências/106 hashes. O resultado fiscal
+continua ACTION_REQUIRED;obrigação e demais perfis ainda em desenvolvimento.
+Ver`phase4b-import130-local-candidate.md`.129 preservado,122 último aceite integral.
+
+Atualização129 em22/10:contribuinte e fundamentos próprios da importação
+qualificados em nova versão,com responsabilidade do fornecedor/plataforma
+separada.318 testes/1220 verificações,PHPStan0/Pint626,28 decisões/replays e
+36 históricos exatos. Auditoria322 conferências;107 fontes/130 bloqueios.
+Documentos completos de importação continuam em desenvolvimento;nenhum grupo
+encerrado. Ver`phase4b-import129-responsibility.md`.122 último aceite integral.
+
+Atualização128 em22/10:adquirente estrangeiro/destinatárioBR eCOMEX migrados para
+oXSD atual,com identificaçãoNIF/ausência justificada e guardas herdadas.394
+testes/1676 verificações,PHPStan0/Pint621,24 decisões/replays e12 XML válidos;
+24 históricos preservados exatos. Auditoria500 conferências;106 fontes/130
+bloqueios. Matriz80 atualizada em cinco pendências,sem encerramento formal.
+Ver`phase4b-foreign128-current-projection.md`.4B parcial;122 último aceite
+integral. Cortes127 e anteriores abaixo preservam seus próprios escopos.
+
+Atualização127 em22/10:projeção local migrada para oXSD restrito publicado20/10,
+com finNFSe,CST/cClassTrib e ordemcNBS corretos.305 testes/1310 verificações,
+PHPStan0/Pint617,12 decisões/replays comparativos e seisXML válidos nos perfis
+federal,educação e presencial.12 históricos122 exatos e auditoria285 conferências.
+106 fontes/129 bloqueios;fase4B parcial. Sem nova regressão integral;122 segue
+último aceite integral. Ver`phase4b-dps127-current-restricted-projection.md`.
+Entradas126 e anteriores abaixo preservam os cortes correspondentes.
+
+Atualização22/10/2026:desenvolvimento retomado sobre o aceite integral122 de
+21/10(9061 testes/143868 verificações,550 decisões/replays e1441 históricos).
+O corte126 implementa referência localcIndOp1.03.00,separada doAnexoC de
+homologação,com fonte/ambiente/conhecimento explícitos e guardas obrigatórias.
+205 testes/882 verificações dirigidas,PHPStan sem erros,32 decisões/replays
+comparativos e12 históricos preservados aprovados. Não houve nova suíte
+integral;126 não substitui o aceite integral122 nem encerra grupo4B.
+Ver`phase4b-catalog126-local-reference.md`.80 requisitos examinados,0/8 grupos
+formalmente encerrados,produção bloqueada. Entradas abaixo são históricas.
+
 Último aceite16/10:101 em6.296 testes/94.755 verificações,9.272 entradas
 intactas,78 hashes,duas cópias e auditoria conferidos;PHPStan/Pint558 finais.
 122 decisões/replays próprios e215 históricos,66 fontes e122 bloqueios.

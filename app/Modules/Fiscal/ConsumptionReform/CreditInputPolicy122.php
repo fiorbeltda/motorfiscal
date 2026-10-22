@@ -25,7 +25,8 @@ final readonly class CreditInputPolicy122
     /** @param array<string, mixed> $codes */
     public static function required(array $codes): bool
     {
-        return ($codes['version'] ?? null) === self::VERSION || array_key_exists('credit_input_policy122', $codes);
+        return in_array($codes['version'] ?? null, [self::VERSION, CIndOpReference126::VERSION, DpsLayoutPolicy127::VERSION, DpsForeignPolicy128::VERSION, ImportResponsibility129::VERSION, DocumentSchedule131::VERSION, DocumentSchedule131::PRIOR_VERSION, DocumentIssIntegration134::VERSION], true)
+            || array_key_exists('credit_input_policy122', $codes);
     }
 
     /** @param array<string, mixed> $codes

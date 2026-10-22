@@ -14,8 +14,11 @@ final readonly class DocumentObligationEngine
      * @param  array<string, mixed>  $catalog
      * @return array<string, mixed>
      */
-    public function resolve(string $serviceCode, string $regime, LocalDate $on, DateTimeImmutable $knownAt, array $catalog): array
+    public function resolve(string $serviceCode, string $regime, LocalDate $on, DateTimeImmutable $knownAt, array $catalog, bool $platformQualified = false): array
     {
+        if (DocumentSchedule131::required($catalog)) {
+            return (new DocumentSchedule131)->nfse($serviceCode, $regime, $on, $knownAt, $catalog, $platformQualified);
+        }
         if (! preg_match('/^[0-9]{6}$/', $serviceCode)) {
             return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_DOCUMENT_SERVICE_CLASSIFICATION_REQUIRED'];
         }

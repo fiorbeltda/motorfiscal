@@ -1,6 +1,11 @@
 # Regra de acompanhamento do motor fiscal
 
-Ao finalizar qualquer tarefa neste projeto, atualizar `/console-fiscal`:
+Durante o desenvolvimento e ao finalizar qualquer tarefa neste projeto,
+atualizar `/console-fiscal`:
+
+- Atualizar o acompanhamento também na retomada, em cada avanço verificável e
+  no início/fim de validações demoradas. Não esperar apenas o encerramento da
+  tarefa; registrar processos ativos como execução, sem antecipar aprovação.
 
 - Atualizar `resources/monitoring/task-progress.json` com data, estado,
   percentual da entrega com critério e marcos explícitos, concluídos, evidências,

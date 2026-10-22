@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-21T19:40:19.700Z",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas.122 aceito localmente:9061/143868,550 decisões/replays e1441 históricos.80 IDs examinados,0/8 grupos formalmente encerrados.Parada segura solicitada21/10 para publicação;produção bloqueada.",
+  "reviewed_at": "2026-10-22T16:43:08.519378-03:00",
+  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas.134 regressão integral aprovada;desenvolvimento interrompido a pedido do usuário.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "122 aceito localmente:9061 testes/143868 verificações,550 decisões/replays e1441 históricos.80 IDs examinados,oito grupos parciais.Parada segura solicitada21/10;fase não concluída.",
+      "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -103,6 +103,971 @@
     }
   ],
   "history_reviews": [
+    {
+      "reviewed_at": "2026-10-22T18:34:43.539685+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte133 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "133 validado localmente:338 testes/2599 asserções,PHPStan0/Pint648;52 replays componente/CLI,84 documentos conferidos por oráculo decimal e19 snapshots históricos exatos.Auditoria463 conferências/110 hashes.Integração versionada/DPS e câmbioISS pendentes;4B parcial,122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "133 validado localmente:338 testes/2599 asserções,PHPStan0/Pint648;52 replays componente/CLI,84 documentos conferidos por oráculo decimal e19 snapshots históricos exatos.Auditoria463 conferências/110 hashes.Integração versionada/DPS e câmbioISS pendentes;4B parcial,122 último aceite integral.",
+      "scope_package": "133"
+    },
+    {
+      "reviewed_at": "2026-10-22T18:17:01.272224+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte132 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "132 validado localmente:57 testes/206 asserções,PHPStan0/Pint643,doisXML idênticos ao130,19 históricos exatos e242 conferências de auditoria.Console28 verificações.Permanece pendente a base legal/câmbioISS e obrigação documental;4B parcial,122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "132 validado localmente:57 testes/206 asserções,PHPStan0/Pint643,doisXML idênticos ao130,19 históricos exatos e242 conferências de auditoria.Console28 verificações.Permanece pendente a base legal/câmbioISS e obrigação documental;4B parcial,122 último aceite integral.",
+      "scope_package": "132"
+    },
+    {
+      "reviewed_at": "2026-10-22T18:04:12.751262+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte131 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "131-draft2 validado:112 testes/809 verificações,PHPStan0/Pint639,18 decisões/replays e41 históricos exatos. Auditoria265 conferências/107 hashes;32 perfis/datas doAto4.107 fontes/130 bloqueios. Obrigação de importação ainda incompleta;4B parcial,122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "131-draft2 validado:112 testes/809 verificações,PHPStan0/Pint639,18 decisões/replays e41 históricos exatos. Auditoria265 conferências/107 hashes;32 perfis/datas doAto4.107 fontes/130 bloqueios. Obrigação de importação ainda incompleta;4B parcial,122 último aceite integral.",
+      "scope_package": "131"
+    },
+    {
+      "reviewed_at": "2026-10-22T17:45:00.513060+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte130 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "Candidato130 validado:99 testes/333 verificações,PHPStan0/Pint634,doisXML iguais/XSD-válidos e24 históricos exatos. Auditoria199 conferências/106 hashes. Fiscal129 permanece ACTION_REQUIRED;obrigação de importação em desenvolvimento.4B parcial,122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "Candidato130 validado:99 testes/333 verificações,PHPStan0/Pint634,doisXML iguais/XSD-válidos e24 históricos exatos. Auditoria199 conferências/106 hashes. Fiscal129 permanece ACTION_REQUIRED;obrigação de importação em desenvolvimento.4B parcial,122 último aceite integral.",
+      "scope_package": "130"
+    },
+    {
+      "reviewed_at": "2026-10-22T16:52:58.958822+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte129 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "Corte129 validado:318 testes/1220 verificações,PHPStan0/Pint626,28 decisões/replays e36 históricos exatos. Auditoria322 conferências/103 hashes;107 fontes/130 bloqueios. Documentos de importação continuam em desenvolvimento;4B parcial,122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "Corte129 validado:318 testes/1220 verificações,PHPStan0/Pint626,28 decisões/replays e36 históricos exatos. Auditoria322 conferências/103 hashes;107 fontes/130 bloqueios. Documentos de importação continuam em desenvolvimento;4B parcial,122 último aceite integral.",
+      "scope_package": "129"
+    },
+    {
+      "reviewed_at": "2026-10-22T12:03:27-00:00",
+      "analysis_review": {
+        "state": "ANALYSIS_COMPLETE_DEVELOPMENT_PAUSED",
+        "evidence": "docs/fiscal/phase4b-transition-analysis-20261022.md",
+        "scope": "3/4A encerradas emSandbox;4B parcial;5–7 planejadas. Sem nova implementação ou encerramento."
+      },
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte128 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "Corte128 validado localmente:394 testes/1676 verificações,PHPStan0/Pint621,24 decisões/replays e12 XML válidos;24 históricos exatos. Auditoria500 conferências/102 hashes atuais;106 fontes/130 bloqueios.4B parcial;122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "Corte128 validado localmente:394 testes/1676 verificações,PHPStan0/Pint621,24 decisões/replays e12 XML válidos;24 históricos exatos. Auditoria500 conferências/102 hashes atuais;106 fontes/130 bloqueios.4B parcial;122 último aceite integral.",
+      "scope_package": "128"
+    },
+    {
+      "reviewed_at": "2026-10-22T11:34:39.327846+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas.127 documental validado no escopo local;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "Corte127 validado no escopo local:305 testes/1310 verificações,PHPStan0/Pint617,12 decisões/replays comparativos,seisXML válidos e12 históricos122 exatos. Auditoria285 conferências/99 hashes atuais;106 fontes/129 bloqueios.4B parcial;122 último aceite integral. Fase parcial,0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "Corte127 validado no escopo local:305 testes/1310 verificações,PHPStan0/Pint617,12 decisões/replays comparativos,seisXML válidos e12 históricos122 exatos. Auditoria285 conferências/99 hashes atuais;106 fontes/129 bloqueios.4B parcial;122 último aceite integral."
+    },
+    {
+      "reviewed_at": "2026-10-22T11:11:46.035611+00:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Retomada22/10:catálogos126 validados no escopo local;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "Corte126 validado no escopo local:205 testes/882 verificações,PHPStan0,Pint611,32 decisões/replays e12 históricos exatos. Auditoria319 conferências;105 fontes/129 bloqueios.122 permanece último aceite integral;Fase4B em desenvolvimento. Fase parcial;0/8 grupos formalmente encerrados.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "Corte126 validado no escopo local:205 testes/882 verificações,PHPStan0,Pint611,32 decisões/replays e12 históricos exatos. Auditoria319 conferências;105 fontes/129 bloqueios.122 permanece último aceite integral;Fase4B em desenvolvimento."
+    },
+    {
+      "reviewed_at": "2026-10-21T19:40:19.700Z",
+      "current_review": "122 aceito localmente:9061/143868,550 decisões/replays e1441 históricos exatos,94 hashes/7396 entradas da regressão intactos,PHPStan0/Pint606,98 fontes/128 bloqueios.80 IDs examinados;matriz consolida17 correções locais sem promover aprovação integral.0/8 grupos formalmente encerrados;produção bloqueada. Parada segura solicitada21/10 para publicaçãoGitHub;sem nova implementação.",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas.122 aceito localmente:9061/143868,550 decisões/replays e1441 históricos.80 IDs examinados,0/8 grupos formalmente encerrados.Parada segura solicitada21/10 para publicação;produção bloqueada.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "122 aceito localmente:9061 testes/143868 verificações,550 decisões/replays e1441 históricos.80 IDs examinados,oito grupos parciais.Parada segura solicitada21/10;fase não concluída.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ]
+    },
     {
       "reviewed_at": "2026-10-21T19:04:00.491Z",
       "current_review": "125 completou o exame dos80/80 IDs originais:dez catálogos,12566 conferências e4421 de materialização,sem transformar exame em aprovação. cIndOp1.03.00 comparado,sem ativação.122:550 decisões/replays atuais auditados;regressão9061 e1441 históricos ativos,aceite pendente.0/8 grupos formalmente encerrados;lacunas funcionais permanecem,119 último aceite integral e produção bloqueada.",
@@ -883,5 +1848,7 @@
       "summary": "119 aceita localmente: 8.614 testes/133.926 verificações, 370 decisões/replays próprios e 1.071 históricos; 24.800 arquivos congelados intactos, 92 hashes, PHPStan/Pint e auditoria independente aprovados. 120 auditou crédito: 54/80 IDs examinados e 26 por revisar; pesquisa 121 preservada, sem nova integração ou aprovação. Fechamento seguro do dia solicitado pelo usuário, com publicação no GitHub e retomada posterior. Fases 3/4A encerradas em Sandbox, 4B com oito grupos parciais e 0/8 encerramentos formais; 5–7 planejadas, produção bloqueada."
     }
   ],
-  "current_review": "122 aceito localmente:9061/143868,550 decisões/replays e1441 históricos exatos,94 hashes/7396 entradas da regressão intactos,PHPStan0/Pint606,98 fontes/128 bloqueios.80 IDs examinados;matriz consolida17 correções locais sem promover aprovação integral.0/8 grupos formalmente encerrados;produção bloqueada. Parada segura solicitada21/10 para publicaçãoGitHub;sem nova implementação."
+  "current_review": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+  "scope_package": "134",
+  "updated_at": "2026-10-22T16:43:08.519378-03:00"
 }

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace App\Modules\Fiscal\Infrastructure\Production;
 
+use App\Modules\Fiscal\ConsumptionReform\CIndOpReference126;
+use App\Modules\Fiscal\ConsumptionReform\DpsForeignPolicy128;
+use App\Modules\Fiscal\ConsumptionReform\DpsLayoutPolicy127;
 use App\Modules\Fiscal\Core\Shared\CanonicalJson;
 use App\Modules\Fiscal\Infrastructure\Scenario\FiscalEngineFactory;
 use App\Modules\Fiscal\NFSe\DpsForeignAcquirerCandidate;
@@ -105,6 +108,9 @@ final readonly class Phase4bReadinessAssessor
         if (isset($documents['rtc_code_catalog']['cclass_reference_policy']) || isset($documents['rtc_code_catalog']['cst_reference_rows'])) {
             $blockers[] = 'CCLASSTRIB_REFERENCE_LOCAL_ONLY_NOT_CLASSIFICATION_APPROVAL';
         }
+        if (CIndOpReference126::required($documents['rtc_code_catalog'] ?? [])) {
+            $blockers[] = 'CINDOP126_REFERENCE_LOCAL_ONLY_NOT_OFFICIAL_ENVIRONMENT_ACTIVATION';
+        }
         foreach ($documents['rtc_code_catalog']['engine_decision_rules'] ?? [] as $id => $rule) {
             if (! is_array($rule) || ($rule['review_status'] ?? null) !== 'APPROVED') {
                 $blockers[] = 'CLASSIFICATION_RULE_NOT_APPROVED:'.$id;
@@ -144,8 +150,11 @@ final readonly class Phase4bReadinessAssessor
         if (($documents['rtc_code_catalog']['local_xml_projection']['known_source_conflict'] ?? null) !== null) {
             $blockers[] = 'RTC_DPS_OFFICIAL_SERIE_PATTERN_CONFLICT';
         }
-        if (in_array($documents['rtc_code_catalog']['local_xml_projection']['contract_version'] ?? null, [DpsRestrictedSchemaSelection::CONTRACT, DpsForeignAcquirerCandidate::CONTRACT], true)) {
+        if (in_array($documents['rtc_code_catalog']['local_xml_projection']['contract_version'] ?? null, [DpsRestrictedSchemaSelection::CONTRACT, DpsForeignAcquirerCandidate::CONTRACT, DpsLayoutPolicy127::CONTRACT, DpsForeignPolicy128::CONTRACT], true)) {
             $blockers[] = 'RTC_DPS_RESTRICTED_SCHEMA_LOCAL_ONLY';
+        }
+        if (DpsForeignPolicy128::required($documents['rtc_code_catalog'] ?? [])) {
+            $blockers[] = 'DPS128_FOREIGN_PARTY_COMEXT_LOCAL_ONLY_NOT_DOCUMENT_OBLIGATION_APPROVAL';
         }
         foreach ($documents['rtc_transition_catalog']['simples_option_supersession_notices'] ?? [] as $notice) {
             if (is_array($notice) && ($notice['full_act_verified'] ?? false) !== true) {

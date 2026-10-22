@@ -10,10 +10,28 @@ use ZipArchive;
 
 final readonly class DpsXmlSchemaValidator
 {
+    private const VALUES_ROOT = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sped.fazenda.gov.br/nfse" xmlns="http://www.sped.fazenda.gov.br/nfse" elementFormDefault="qualified"><xs:include schemaLocation="tiposComplexos_v1.01.xsd"/><xs:element name="valores" type="TCInfoValores"/></xs:schema>';
+
     /**
      * @return array{status: string, reason: string, xml_sha256: string, schema_sha256: string, errors: list<array{line: int, message: string}>}
      */
     public function validate(string $xml, string $zipPath, string $expectedSha256, string $rootSchema): array
+    {
+        return $this->validateInternal($xml, $zipPath, $expectedSha256, $rootSchema);
+    }
+
+    /** Validate a local fragment against an unchanged official complex type, never a complete DPS.
+     * @return array<string, mixed>
+     */
+    public function validateValuesFragment(string $xml, string $zipPath, string $expectedSha256, string $rootSchema): array
+    {
+        return [...$this->validateInternal($xml, $zipPath, $expectedSha256, $rootSchema, true),
+            'validation_scope' => 'LOCAL_VALUES_ROOT_OFFICIAL_TCInfoValores_TYPE', 'full_document_validated' => false,
+            'local_root_declaration_sha256' => hash('sha256', self::VALUES_ROOT)];
+    }
+
+    /** @return array{status: string, reason: string, xml_sha256: string, schema_sha256: string, errors: list<array{line: int, message: string}>} */
+    private function validateInternal(string $xml, string $zipPath, string $expectedSha256, string $rootSchema, bool $valuesFragment = false): array
     {
         $xmlHash = hash('sha256', $xml);
         $schemaHash = is_file($zipPath) ? (string) hash_file('sha256', $zipPath) : '';
@@ -62,6 +80,16 @@ final readonly class DpsXmlSchemaValidator
             }
             if (! in_array($rootName, $files, true)) {
                 return $this->result('ACTION_REQUIRED', 'RTC_DPS_XSD_ROOT_MISSING', $xmlHash, $schemaHash);
+            }
+            if ($valuesFragment) {
+                if (! in_array('tiposComplexos_v1.01.xsd', $files, true) || in_array('local-values134.xsd', $files, true)) {
+                    return $this->result('ACTION_REQUIRED', 'RTC_DPS134_VALUES_TYPE_NOT_BOUND', $xmlHash, $schemaHash);
+                }
+                $rootName = 'local-values134.xsd';
+                if (file_put_contents($directory.DIRECTORY_SEPARATOR.$rootName, self::VALUES_ROOT) === false) {
+                    throw new RuntimeException('Unable to create local values root declaration.');
+                }
+                $files[] = $rootName;
             }
 
             $previous = libxml_use_internal_errors(true);

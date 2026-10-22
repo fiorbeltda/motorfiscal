@@ -1,76 +1,2590 @@
 {
-  "updated_at": "2026-10-21T19:40:19.700Z",
-  "title": "Fechamento122 · atualização de21/10",
-  "state": "Aceite local122 concluído:9061 testes/143868 verificações,550 decisões/replays e1441 históricos exatos,94 hashes coincidentes. PHPStan0/Pint606;80 IDs examinados,17 correções locais consolidadas. Desenvolvimento encerrado no ponto seguro solicitado21/10;sem nova implementação.",
-  "criterion": "100% = 6/6 marcos da entrega122 concluídos. Não é percentual funcional4B:0/8 grupos formalmente encerrados,produção bloqueada.",
+  "updated_at": "2026-10-22T16:43:08.519378-03:00",
+  "title": "Checkpoint seguro134 — desenvolvimento interrompido a pedido do usuário",
+  "state": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+  "criterion": "6/6 marcos do corte134 verificados;nenhum percentual global4B;0/8 grupos encerrados.",
   "milestones": [
     {
-      "title": "Preservar templates,fontes e corte de perguntas qualificado",
+      "title": "Conferir checkpoint/processos",
       "complete": true
     },
     {
-      "title": "Instalar124 cenários e250 testes de preços122",
+      "title": "Preservar fontes e qualificar contrato",
       "complete": true
     },
     {
-      "title": "Validar447 dirigidos e qualidade geral",
+      "title": "Implementar comportamento delimitado",
       "complete": true
     },
     {
-      "title": "Auditar transporte de fatos,valores e eventos",
+      "title": "Integrar nova versão preservando históricos",
       "complete": true
     },
     {
-      "title": "Qualificar corpus ampliado e históricos do runtime atual",
+      "title": "Validar casos,recusas e replays",
       "complete": true
     },
     {
-      "title": "Concluir regressão integral e aceite local122",
+      "title": "Auditar evidências,documentação e console",
       "complete": true
     }
   ],
   "finished": [
-    "Aceite122:9061 testes/143868 verificações,550 decisões/replays atuais e1441 históricos exatos;PHPStan0/Pint606.",
-    "94 hashes e7396 entradas da regressão preservados;98 fontes válidas/128 bloqueios. Evidências pesadas noD:,cópias compactas vinculadas noC:.",
-    "80 IDs examinados e matriz consolidada com17 correções locais posteriores;lacunas restantes explícitas,sem encerramento integral4B."
+    "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
+    "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
+    "Ensaios135 externos preservados com hashes;nenhuma instalação135."
   ],
   "pending": [
-    "Desenvolvimento interrompido no ponto seguro por solicitação do usuário;retomar somente quando solicitado.",
-    "Concluir lacunas funcionais por requisito/família,documentos,base/câmbioISS,crédito e perfis obrigatórios.",
-    "Qualificar cIndOp1.03.00 e parâmetros temporais aplicáveis;produção permanece bloqueada."
+    "Integrar135 após qualificar exclusões legais e demais tributos do preço.",
+    "Concluir câmbioISS,importação e demais mínimos dos80 requisitos.",
+    "Retomar somente por solicitação do usuário;nenhum processo de desenvolvimento ativo."
   ],
-  "next_step": "Aguardar solicitação de retomada. Na retomada,usar o checkpoint122 aceito e as pendências atuais da matriz80;publicaçãoGitHub solicitada neste fechamento.",
+  "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada.",
   "evidence": [
-    "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json",
-    "storage/app/phase4b-credit122-development-20261021/evidence-copy-receipt.json",
-    "storage/app/phase4b-credit122-development-20261021/requirements80-current-matrix.json",
-    "docs/fiscal/phase4b-day-closure-20261021.md",
-    "docs/fiscal/phase4b-original80-current-matrix.md",
-    "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/requirements-review-v1/requirements125-catalog-review.json",
-    "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/cindop125-version-comparison.json",
-    "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/primary-source-v1/capture.json",
-    "docs/fiscal/phase4b-requirements125-catalog-review.md",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-current-native-audit-v1.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/credit122-expanded-cli-validation.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v2/process-start.json",
-    "D:/ProjetoSaasExports/phase4b-requirements124-acceptance-audit-20261021-v1/requirements-review-v1/requirements124-acceptance-review.json",
-    "docs/fiscal/phase4b-requirements124-acceptance-review.md",
-    "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
-    "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
-    "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
-    "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
-    "docs/fiscal/phase4b-credit122-progress.md"
+    "storage/app/phase4b-iss134-development-20261022/iss134-scoped-validation.json",
+    "storage/app/phase4b-iss134-development-20261022/requirements80-current-matrix.json",
+    "docs/fiscal/phase4b-day-closure-20261022.md"
   ],
   "history": [
+    {
+      "updated_at": "2026-10-22T19:34:21.506337+00:00",
+      "title": "Regressão134 e ponte de preços documentais",
+      "state": "Suíte integral134 ainda ativa.Preparação135 avançou na ponte aritmética preço documental/ISS próprio/parcelaRTC:12 controles,duas execuções idênticas e oráculo decimal independente.Exclusões legais e outros tributos ainda não qualificados;nenhum bundle135 instalado.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Identidades do par ligadas à cadeia107/110/111/133 eXML completo XSD-válido.",
+        "Ponte aritmética validada em12 controles,duas execuções e oráculo decimal independente.",
+        "Preços anteriores com diferença não explicada continuam recusados;históricos preservados."
+      ],
+      "pending": [
+        "Concluir suíte integral134 e auditar resultado terminal e inventário congelado.",
+        "Qualificar exclusões legais e demais tributos do preço,COMEX e integração fiscal do parDPS135.",
+        "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+      ],
+      "next_step": "Concluir regressão134;qualificar exclusões legais,COMEX e demais vínculos antes de integrar o parDPS135.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/full-suite-v1/process.json",
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/source-staging135-v1/price-bridge-v1/validation.json",
+        "docs/fiscal/phase4b-export135-staged-classification.md"
+      ],
+      "focus": {
+        "summary": "Suíte integral134 ainda ativa.Preparação135 avançou na ponte aritmética preço documental/ISS próprio/parcelaRTC:12 controles,duas execuções idênticas e oráculo decimal independente.Exclusões legais e outros tributos ainda não qualificados;nenhum bundle135 instalado.",
+        "finished": [
+          "Identidades do par ligadas à cadeia107/110/111/133 eXML completo XSD-válido.",
+          "Ponte aritmética validada em12 controles,duas execuções e oráculo decimal independente.",
+          "Preços anteriores com diferença não explicada continuam recusados;históricos preservados."
+        ],
+        "pending": [
+          "Concluir suíte integral134 e auditar resultado terminal e inventário congelado.",
+          "Qualificar exclusões legais e demais tributos do preço,COMEX e integração fiscal do parDPS135.",
+          "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+        ],
+        "next_step": "Concluir regressão134;qualificar exclusões legais,COMEX e demais vínculos antes de integrar o parDPS135."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T19:30:13.443738+00:00",
+      "title": "Regressão134 e vínculo de identidade do parDPS",
+      "state": "Regressão134 ainda ativa.Ensaio135 agora vincula novas identidades107 ao envelopeXML após reexecução106/110/111/133/134:doisXML completos XSD-válidos e determinísticos,número divergente recusado.Sem instalar no checkout congelado.COMEX/reconciliaçãoRTC seguem pendentes.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Novas identidades sintéticas requalificadas na cadeia107/110/111/133 e integração134.",
+        "DoisXML completos XSD-válidos e idênticos;alteração do número recusada comexit1.",
+        "Históricos e checkout congelado preservados;COMEX e reconciliaçãoRTC ainda pendentes."
+      ],
+      "pending": [
+        "Concluir suíte integral134 e auditar o resultado terminal sem modificar arquivos congelados.",
+        "QualificarCOMEX e reconciliação dos preços documentais comRTC antes da integração135.",
+        "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+      ],
+      "next_step": "Concluir e auditar suíte134;qualificarCOMEX e reconciliação de preços antes de integrar o parDPS135.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/full-suite-v1/process.json",
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/source-staging135-v1/identity-pair-probe-v2/validation.json",
+        "docs/fiscal/phase4b-export135-staged-classification.md"
+      ],
+      "focus": {
+        "summary": "Regressão134 ainda ativa.Ensaio135 agora vincula novas identidades107 ao envelopeXML após reexecução106/110/111/133/134:doisXML completos XSD-válidos e determinísticos,número divergente recusado.Sem instalar no checkout congelado.COMEX/reconciliaçãoRTC seguem pendentes.",
+        "finished": [
+          "Novas identidades sintéticas requalificadas na cadeia107/110/111/133 e integração134.",
+          "DoisXML completos XSD-válidos e idênticos;alteração do número recusada comexit1.",
+          "Históricos e checkout congelado preservados;COMEX e reconciliaçãoRTC ainda pendentes."
+        ],
+        "pending": [
+          "Concluir suíte integral134 e auditar o resultado terminal sem modificar arquivos congelados.",
+          "QualificarCOMEX e reconciliação dos preços documentais comRTC antes da integração135.",
+          "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+        ],
+        "next_step": "Concluir e auditar suíte134;qualificarCOMEX e reconciliação de preços antes de integrar o parDPS135."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T19:26:49.147356+00:00",
+      "title": "Regressão134 e ensaio estrutural do parDPS",
+      "state": "Regressão134 ainda ativa.Preliminar135 avançou:doisXML completos XSD-válidos e idênticos em duas execuções,fora do checkout congelado;novas identidades,COMEX e reconciliaçãoRTC ainda não qualificados.Sem instalar bundle135 ou encerrar obrigação.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Integração134 validada em355 testes dirigidos,22 replays e16 fragmentos.",
+        "Classificação estrangeira135 validada isoladamente em7 controles.",
+        "Ensaio do par completo:doisXML XSD-válidos e determinísticos;qualificação fiscal pendente."
+      ],
+      "pending": [
+        "Concluir regressão134 ativa e auditar resultado terminal dos5179 arquivos congelados.",
+        "Vincular novas identidades,COMEX e preçosRTC ao parDPS estrutural135 antes da integração fiscal.",
+        "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+      ],
+      "next_step": "Concluir suíte134 e auditar inventário;integrar classificação estrangeira e provas documentais antes de aceitar o parDPS fiscal.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/full-suite-v1/process.json",
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/source-staging135-v1/full-pair-probe-v2/validation.json",
+        "docs/fiscal/phase4b-export135-staged-classification.md"
+      ],
+      "focus": {
+        "summary": "Regressão134 ainda ativa.Preliminar135 avançou:doisXML completos XSD-válidos e idênticos em duas execuções,fora do checkout congelado;novas identidades,COMEX e reconciliaçãoRTC ainda não qualificados.Sem instalar bundle135 ou encerrar obrigação.",
+        "finished": [
+          "Integração134 validada em355 testes dirigidos,22 replays e16 fragmentos.",
+          "Classificação estrangeira135 validada isoladamente em7 controles.",
+          "Ensaio do par completo:doisXML XSD-válidos e determinísticos;qualificação fiscal pendente."
+        ],
+        "pending": [
+          "Concluir regressão134 ativa e auditar resultado terminal dos5179 arquivos congelados.",
+          "Vincular novas identidades,COMEX e preçosRTC ao parDPS estrutural135 antes da integração fiscal.",
+          "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+        ],
+        "next_step": "Concluir suíte134 e auditar inventário;integrar classificação estrangeira e provas documentais antes de aceitar o parDPS fiscal."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T19:23:17.090425+00:00",
+      "title": "Regressão134 e preparação da parcela estrangeira",
+      "state": "Suíte integral134 continua viva,sem aprovação terminal.Integração134 já tem355 testes/2755 asserções e22 replays.Preliminar135 validado isoladamente em7 controles,fora dos5179 arquivos congelados;sem instalar bundle ou regra nova.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Integração134 e fragmentosDPS validados em355 testes dirigidos.",
+        "Componente estrangeiro135 preparado noD:com1 controle positivo e6 recusas verificadas.",
+        "Entradas da suíte preservadas;nenhum bundle135 instalado."
+      ],
+      "pending": [
+        "Concluir suíte integral134 viva e auditar os5179 arquivos congelados.",
+        "Instalar e integrar classificação estrangeira135 após auditoria134;montar o parDPS completo.",
+        "Concluir câmbioISS,importação e demais requisitos originais4B."
+      ],
+      "next_step": "Concluir e auditar suíte134;depois instalar classificação estrangeira135 e montar o parDPS completo.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/full-suite-v1/process.json",
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/source-staging135-v1/validation.json",
+        "docs/fiscal/phase4b-export135-staged-classification.md"
+      ],
+      "focus": {
+        "summary": "Suíte integral134 continua viva,sem aprovação terminal.Integração134 já tem355 testes/2755 asserções e22 replays.Preliminar135 validado isoladamente em7 controles,fora dos5179 arquivos congelados;sem instalar bundle ou regra nova.",
+        "finished": [
+          "Integração134 e fragmentosDPS validados em355 testes dirigidos.",
+          "Componente estrangeiro135 preparado noD:com1 controle positivo e6 recusas verificadas.",
+          "Entradas da suíte preservadas;nenhum bundle135 instalado."
+        ],
+        "pending": [
+          "Concluir suíte integral134 viva e auditar os5179 arquivos congelados.",
+          "Instalar e integrar classificação estrangeira135 após auditoria134;montar o parDPS completo.",
+          "Concluir câmbioISS,importação e demais requisitos originais4B."
+        ],
+        "next_step": "Concluir e auditar suíte134;depois instalar classificação estrangeira135 e montar o parDPS completo."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T19:07:40.117149+00:00",
+      "title": "ISS por documento: regressão integral em execução",
+      "state": "ISS133 integrado no134 e valoresDPS projetados como fragmentos:355 testes/2755 asserções,PHPStan0/Pint655,22 snapshots/replays,16 fragmentos e19 históricos exatos.Suíte integral viva:PID PHP1249,clienteDocker16404;resultado ainda pendente.4B parcial,0/8 grupos encerrados.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "ISS por documento integrado aos dois runners,com112 fontes e prova tipada.",
+        "355 testes/2755 asserções;22 snapshots exatos,16 fragmentos válidos e19 replays históricos.",
+        "Novo anexo técnico preservado noD:para o próximo passo,sem alterar entradas da suíte."
+      ],
+      "pending": [
+        "Concluir suíte integral viva e auditar os5179 arquivos congelados antes do recibo134.",
+        "Concluir o parDPS completo e qualificar as regras de ocorrência da classificação estrangeira.",
+        "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+      ],
+      "next_step": "Observar o processo71370 até término;auditar suíte e inventário antes do recibo134.Depois concluir o parDPS com classificação estrangeira e regras de ocorrência qualificadas.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/full-suite-v1/process.json",
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/native-v1/validation.json",
+        "docs/fiscal/phase4b-iss134-versioned-document-values.md"
+      ],
+      "focus": {
+        "summary": "ISS133 integrado no134 e valoresDPS projetados como fragmentos:355 testes/2755 asserções,PHPStan0/Pint655,22 snapshots/replays,16 fragmentos e19 históricos exatos.Suíte integral viva:PID PHP1249,clienteDocker16404;resultado ainda pendente.4B parcial,0/8 grupos encerrados.",
+        "finished": [
+          "ISS por documento integrado aos dois runners,com112 fontes e prova tipada.",
+          "355 testes/2755 asserções;22 snapshots exatos,16 fragmentos válidos e19 replays históricos.",
+          "Novo anexo técnico preservado noD:para o próximo passo,sem alterar entradas da suíte."
+        ],
+        "pending": [
+          "Concluir suíte integral viva e auditar os5179 arquivos congelados antes do recibo134.",
+          "Concluir o parDPS completo e qualificar as regras de ocorrência da classificação estrangeira.",
+          "Concluir câmbioISS,importação e demais mínimos dos80 requisitos4B."
+        ],
+        "next_step": "Observar o processo71370 até término;auditar suíte e inventário antes do recibo134.Depois concluir o parDPS com classificação estrangeira e regras de ocorrência qualificadas."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T18:51:01.222038+00:00",
+      "title": "ISS por documento: integração e regressão integral",
+      "state": "355 testes dirigidos/2755 asserções,Pint655,PHPStan0;22 snapshots/replays e16 fragmentos válidos.A suíte completa está sendo iniciada com congelamento dos arquivos de entrada;resultado ainda não aprovado.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Observar o processo da suíte completa e consolidar fontes,matriz e console após término.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss134-20261022-v1/native-v1/validation.json"
+      ],
+      "focus": {
+        "summary": "355 testes dirigidos/2755 asserções,Pint655,PHPStan0;22 snapshots/replays e16 fragmentos válidos.A suíte completa está sendo iniciada com congelamento dos arquivos de entrada;resultado ainda não aprovado.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Observar o processo da suíte completa e consolidar fontes,matriz e console após término."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T18:45:10.610520+00:00",
+      "title": "ISS por documento: integração versionada e DPS",
+      "state": "Novo bundle134 instalado com112 fontes e transporte tipado;ISS133 integrado nos dois percursos.Projeção de fragmentos valores daDPS implementada;testes em execução.O código municipal de5 dígitos não é truncado para cTribMun de3.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Validar execução,replay,recusas e fragmentos no tipo oficial;consolidar a matriz sem promover fragmento aDPS completa.",
+      "evidence": [
+        "resources/fiscal/bundles/consumption-phase4b-2026.10.22-134-draft1.json"
+      ],
+      "focus": {
+        "summary": "Novo bundle134 instalado com112 fontes e transporte tipado;ISS133 integrado nos dois percursos.Projeção de fragmentos valores daDPS implementada;testes em execução.O código municipal de5 dígitos não é truncado para cTribMun de3.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Validar execução,replay,recusas e fragmentos no tipo oficial;consolidar a matriz sem promover fragmento aDPS completa."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T18:36:07.871769+00:00",
+      "title": "ISS por documento: integração versionada e DPS",
+      "state": "Retomada:componente133 validado.Preservar históricos e integrar cálculoISS próprio ao novo bundle,com prova transportada sem ciclo de hash e projeção documental por papel.",
+      "criterion": "1/6 marcos observados (17%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": false
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos"
+      ],
+      "pending": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "next_step": "Instalar contrato134 e nova definição de prova;integrar reexecução133 sem alterar as versões anteriores.",
+      "evidence": [],
+      "focus": {
+        "summary": "Retomada:componente133 validado.Preservar históricos e integrar cálculoISS próprio ao novo bundle,com prova transportada sem ciclo de hash e projeção documental por papel.",
+        "finished": [
+          "Conferir checkpoint/processos"
+        ],
+        "pending": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "next_step": "Instalar contrato134 e nova definição de prova;integrar reexecução133 sem alterar as versões anteriores."
+      },
+      "scope_package": "134"
+    },
+    {
+      "updated_at": "2026-10-22T18:34:43.539685+00:00",
+      "title": "ISS por documento: base e classificação municipal",
+      "state": "133 validado localmente:338 testes/2599 asserções,PHPStan0/Pint648;52 replays componente/CLI,84 documentos conferidos por oráculo decimal e19 snapshots históricos exatos.Auditoria463 conferências/110 hashes.Integração versionada/DPS e câmbioISS pendentes;4B parcial,122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
+        "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
+        "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas."
+      ],
+      "pending": [
+        "Integrar cálculoISS133 ao fluxo versionado e àDPS com valores próprios por documento.",
+        "Concluir câmbioISS próprio,importação e demais perfis de base/classificação.",
+        "Concluir obrigação documental e demais mínimos dos80 requisitos originais4B."
+      ],
+      "next_step": "Integrar o componente133 ao fluxo versionado e à projeçãoDPS,com base/impostoISS próprios;depois ampliar câmbioISS,importação e demais perfis.",
+      "evidence": [
+        "storage/app/phase4b-iss133-development-20261022/iss133-scoped-validation.json",
+        "docs/fiscal/phase4b-iss133-local-document-base.md"
+      ],
+      "focus": {
+        "summary": "133 validado localmente:338 testes/2599 asserções,PHPStan0/Pint648;52 replays componente/CLI,84 documentos conferidos por oráculo decimal e19 snapshots históricos exatos.Auditoria463 conferências/110 hashes.Integração versionada/DPS e câmbioISS pendentes;4B parcial,122 último aceite integral.",
+        "finished": [
+          "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
+          "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
+          "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas."
+        ],
+        "pending": [
+          "Integrar cálculoISS133 ao fluxo versionado e àDPS com valores próprios por documento.",
+          "Concluir câmbioISS próprio,importação e demais perfis de base/classificação.",
+          "Concluir obrigação documental e demais mínimos dos80 requisitos originais4B."
+        ],
+        "next_step": "Integrar o componente133 ao fluxo versionado e à projeçãoDPS,com base/impostoISS próprios;depois ampliar câmbioISS,importação e demais perfis."
+      },
+      "scope_package": "133"
+    },
+    {
+      "updated_at": "2026-10-22T18:31:59.666895+00:00",
+      "title": "ISS por documento: base e classificação municipal",
+      "state": "Validados338 testes/2599 asserções e52 replays componente/CLI;42 pares calculados,8 recusas por câmbioISS ausente e2 por provas anteriores não requalificadas.Cinco fontes municipais preservadas,84 documentos conferidos por oráculo decimal e19 snapshots históricos exatos.",
+      "criterion": "5/6 marcos observados (83%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays"
+      ],
+      "pending": [
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Auditar os hashes,fontes e matriz80;documentar o componente local e suas integrações ainda pendentes.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss133-20261022-v1/native-v2/validation.json",
+        "D:/ProjetoSaasExports/phase4b-iss133-20261022-v1/directed-v4/execution.json"
+      ],
+      "focus": {
+        "summary": "Validados338 testes/2599 asserções e52 replays componente/CLI;42 pares calculados,8 recusas por câmbioISS ausente e2 por provas anteriores não requalificadas.Cinco fontes municipais preservadas,84 documentos conferidos por oráculo decimal e19 snapshots históricos exatos.",
+        "finished": [
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays"
+        ],
+        "pending": [
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Auditar os hashes,fontes e matriz80;documentar o componente local e suas integrações ainda pendentes."
+      },
+      "scope_package": "133"
+    },
+    {
+      "updated_at": "2026-10-22T18:25:02.549323+00:00",
+      "title": "ISS por documento: base e classificação municipal",
+      "state": "Implementado cálculo local por documento com reexecução106/111,prova granular02660/01.01,regime/benefícios explícitos e preço composto;cinco fontes primárias preservadas.Testes dirigidos em execução,sem aprovação antecipada.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir controles de preço,classificação,ciclo de vida e replays antes de consolidar a entrega.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-iss133-20261022-v1/primary-v1/capture.json"
+      ],
+      "focus": {
+        "summary": "Implementado cálculo local por documento com reexecução106/111,prova granular02660/01.01,regime/benefícios explícitos e preço composto;cinco fontes primárias preservadas.Testes dirigidos em execução,sem aprovação antecipada.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir controles de preço,classificação,ciclo de vida e replays antes de consolidar a entrega."
+      },
+      "scope_package": "133"
+    },
+    {
+      "updated_at": "2026-10-22T18:17:54.584501+00:00",
+      "title": "ISS por documento: base e classificação municipal",
+      "state": "Retomada: corte132 preservado.Revisão da cadeia normativa e da fronteira113 para calcular baseISS própria por documento,sem promover alíquota sintética ou parcelaRTC a regra municipal.",
+      "criterion": "1/6 marcos observados (17%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": false
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos"
+      ],
+      "pending": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "next_step": "Qualificar fontes municipais,regime e composição de preço antes de implementar a base por documento.",
+      "evidence": [],
+      "focus": {
+        "summary": "Retomada: corte132 preservado.Revisão da cadeia normativa e da fronteira113 para calcular baseISS própria por documento,sem promover alíquota sintética ou parcelaRTC a regra municipal.",
+        "finished": [
+          "Conferir checkpoint/processos"
+        ],
+        "pending": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "next_step": "Qualificar fontes municipais,regime e composição de preço antes de implementar a base por documento."
+      },
+      "scope_package": "133"
+    },
+    {
+      "updated_at": "2026-10-22T18:17:01.272224+00:00",
+      "title": "Importação: reconciliação de valores por documento",
+      "state": "132 validado localmente:57 testes/206 asserções,PHPStan0/Pint643,doisXML idênticos ao130,19 históricos exatos e242 conferências de auditoria.Console28 verificações.Permanece pendente a base legal/câmbioISS e obrigação documental;4B parcial,122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Reconciliação declarada por fatura/linha com hash dos bytes integrada ao candidato130.",
+        "57 testes/206 asserções;PHPStan0/Pint643;doisXML idênticos e19 replays históricos exatos.",
+        "Recibo auditado242 conferências/108 hashes;80 revisões preservadas e0/8 grupos encerrados."
+      ],
+      "pending": [
+        "Qualificar base legalISS por documento,classificação municipal granular e composição de preço.",
+        "Concluir contrato cambialISS próprio e demais moedas/perfis,sem presumir câmbioRTC.",
+        "Concluir obrigação documental integrada da importação e demais mínimos dos80 requisitos4B."
+      ],
+      "next_step": "Concluir qualificação material e valoresISS por documento,com classificação municipal e câmbio próprios,antes do fechamento documental da importação.",
+      "evidence": [
+        "storage/app/phase4b-values132-development-20261022/values132-scoped-validation.json",
+        "docs/fiscal/phase4b-import132-document-values.md"
+      ],
+      "focus": {
+        "summary": "132 validado localmente:57 testes/206 asserções,PHPStan0/Pint643,doisXML idênticos ao130,19 históricos exatos e242 conferências de auditoria.Console28 verificações.Permanece pendente a base legal/câmbioISS e obrigação documental;4B parcial,122 último aceite integral.",
+        "finished": [
+          "Reconciliação declarada por fatura/linha com hash dos bytes integrada ao candidato130.",
+          "57 testes/206 asserções;PHPStan0/Pint643;doisXML idênticos e19 replays históricos exatos.",
+          "Recibo auditado242 conferências/108 hashes;80 revisões preservadas e0/8 grupos encerrados."
+        ],
+        "pending": [
+          "Qualificar base legalISS por documento,classificação municipal granular e composição de preço.",
+          "Concluir contrato cambialISS próprio e demais moedas/perfis,sem presumir câmbioRTC.",
+          "Concluir obrigação documental integrada da importação e demais mínimos dos80 requisitos4B."
+        ],
+        "next_step": "Concluir qualificação material e valoresISS por documento,com classificação municipal e câmbio próprios,antes do fechamento documental da importação."
+      },
+      "scope_package": "132"
+    },
+    {
+      "updated_at": "2026-10-22T18:15:56.882909+00:00",
+      "title": "Importação: reconciliação de valores por documento",
+      "state": "Validados57 testes/206 asserções,PHPStan0/Pint643,doisXML idênticos ao130 e19 replays históricos exatos.Auditoria242 conferências;console/documentação em conferência final.",
+      "criterion": "5/6 marcos observados (83%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferência declarada por fatura/linha,moedaBRL e hash do arquivo integrada ao candidato.",
+        "57 testes/206 asserções;PHPStan0/Pint643;XML determinístico e19 replays exatos.",
+        "242 conferências de auditoria e80 revisões preservadas;0/8 grupos encerrados."
+      ],
+      "pending": [
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir painel,os oito objetivos e hashes finais,sem encerrar a fase4B.",
+      "evidence": [
+        "storage/app/phase4b-values132-development-20261022/values132-scoped-validation.json"
+      ],
+      "focus": {
+        "summary": "Validados57 testes/206 asserções,PHPStan0/Pint643,doisXML idênticos ao130 e19 replays históricos exatos.Auditoria242 conferências;console/documentação em conferência final.",
+        "finished": [
+          "Conferência declarada por fatura/linha,moedaBRL e hash do arquivo integrada ao candidato.",
+          "57 testes/206 asserções;PHPStan0/Pint643;XML determinístico e19 replays exatos.",
+          "242 conferências de auditoria e80 revisões preservadas;0/8 grupos encerrados."
+        ],
+        "pending": [
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir painel,os oito objetivos e hashes finais,sem encerrar a fase4B."
+      },
+      "scope_package": "132"
+    },
+    {
+      "updated_at": "2026-10-22T18:11:22.943699+00:00",
+      "title": "Importação: reconciliação de valores por documento",
+      "state": "Contrato132 integrado ao candidato130;39 testes/156 asserções passaram e PHPStan sem erros. Validação ampliada e captura de artefatos em preparação.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir limites monetários, preservar candidato e recibos no D: e atualizar documentação.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/phpstan-v1/execution.json"
+      ],
+      "focus": {
+        "summary": "Contrato132 integrado ao candidato130;39 testes/156 asserções passaram e PHPStan sem erros. Validação ampliada e captura de artefatos em preparação.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir limites monetários, preservar candidato e recibos no D: e atualizar documentação."
+      },
+      "scope_package": "132"
+    },
+    {
+      "updated_at": "2026-10-22T18:08:23.361571+00:00",
+      "title": "Importação: reconciliação de valores por documento",
+      "state": "Em desenvolvimento: vincular fatura e linha aos valores ISS e RTC do snapshot reexecutado, com moeda explícita e sem conversão cambial presumida.",
+      "criterion": "1/6 marcos observados (17%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": false
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos"
+      ],
+      "pending": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "next_step": "Implementar contrato documental independente e exercitar divergências antes de gerar candidato XML.",
+      "evidence": [],
+      "focus": {
+        "summary": "Em desenvolvimento: vincular fatura e linha aos valores ISS e RTC do snapshot reexecutado, com moeda explícita e sem conversão cambial presumida.",
+        "finished": [
+          "Conferir checkpoint/processos"
+        ],
+        "pending": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "next_step": "Implementar contrato documental independente e exercitar divergências antes de gerar candidato XML."
+      },
+      "scope_package": "132"
+    },
+    {
+      "updated_at": "2026-10-22T18:04:12.751262+00:00",
+      "title": "Documentos131 — cronograma e regime do contribuinte",
+      "state": "131-draft2 validado:112 testes/809 verificações,PHPStan0/Pint639,18 decisões/replays e41 históricos exatos. Auditoria265 conferências/107 hashes;32 perfis/datas doAto4.107 fontes/130 bloqueios. Obrigação de importação ainda incompleta;4B parcial,122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados."
+      ],
+      "pending": [
+        "Corpo e obrigação documental integrada da importação.",
+        "CamposNT009 de fatura/câmbio e base/câmbioISS por documento.",
+        "Demais perfis e requisitos da matriz80,sem encerramento formal de grupos."
+      ],
+      "next_step": "Completar corpo e obrigação documental da importação,camposNT009 de fatura/câmbio e base/câmbioISS por documento;continuar demais mínimos da matriz80.",
+      "evidence": [
+        "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
+        "docs/fiscal/phase4b-schedule131-primary-act.md"
+      ],
+      "focus": {
+        "summary": "131-draft2 validado:112 testes/809 verificações,PHPStan0/Pint639,18 decisões/replays e41 históricos exatos. Auditoria265 conferências/107 hashes;32 perfis/datas doAto4.107 fontes/130 bloqueios. Obrigação de importação ainda incompleta;4B parcial,122 último aceite integral.",
+        "finished": [
+          "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados."
+        ],
+        "pending": [
+          "Corpo e obrigação documental integrada da importação.",
+          "CamposNT009 de fatura/câmbio e base/câmbioISS por documento.",
+          "Demais perfis e requisitos da matriz80,sem encerramento formal de grupos."
+        ],
+        "next_step": "Completar corpo e obrigação documental da importação,camposNT009 de fatura/câmbio e base/câmbioISS por documento;continuar demais mínimos da matriz80."
+      },
+      "scope_package": "131"
+    },
+    {
+      "updated_at": "2026-10-22T18:01:34.199572+00:00",
+      "title": "Documentos131 — cronograma e regime do contribuinte",
+      "state": "Correção em131-draft2 preservando draft1:cronograma de importação usa regime do contribuinte brasileiro e pergunta pelo destinatário quando necessário.18 decisões/replays atuais/comparativos e12 replays do draft1 exatos. Gates finais em execução.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Concluir testes da correção,auditoria por fonte,qualidade e matriz80.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-schedule131-20261022-v1/native-draft2-v1/validation.json"
+      ],
+      "focus": {
+        "summary": "Correção em131-draft2 preservando draft1:cronograma de importação usa regime do contribuinte brasileiro e pergunta pelo destinatário quando necessário.18 decisões/replays atuais/comparativos e12 replays do draft1 exatos. Gates finais em execução.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Concluir testes da correção,auditoria por fonte,qualidade e matriz80."
+      },
+      "scope_package": "131"
+    },
+    {
+      "updated_at": "2026-10-22T17:55:21.525425+00:00",
+      "title": "Documentos131 — cronograma temporal pelo ato original",
+      "state": "32 linhas/exceções materializadas e integração131 instalada.12 decisões/replays comparativos concluídos;primeiros9 testes/469 verificações aprovados. Validação ampliada,qualidade e históricos em conferência;sem encerramento4B.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Auditar cada data diretamente noPDF e conferir resultados terminais,matriz80 econsole.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-schedule131-20261022-v1/native-v1/validation.json"
+      ],
+      "focus": {
+        "summary": "32 linhas/exceções materializadas e integração131 instalada.12 decisões/replays comparativos concluídos;primeiros9 testes/469 verificações aprovados. Validação ampliada,qualidade e históricos em conferência;sem encerramento4B.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Auditar cada data diretamente noPDF e conferir resultados terminais,matriz80 econsole."
+      },
+      "scope_package": "131"
+    },
+    {
+      "updated_at": "2026-10-22T17:49:16.601029+00:00",
+      "title": "Documentos131 — cronograma temporal pelo ato original",
+      "state": "Ato4 integral lido e três páginas conferidas visualmente. Fonte preservada reutilizada;URL antiga retornaHTML eDOU403,sem aceitar essas respostas comoPDF. Implementando resolução temporal e exceções documentais sem alterar históricos.",
+      "criterion": "2/6 marcos observados (33%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos",
+        "Preservar fontes e qualificar contrato"
+      ],
+      "pending": [
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays"
+      ],
+      "next_step": "Integrar cronograma por perfil,exceções do art1 e ressalvas de cumprimento;validar limites de datas e replays.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-schedule131-20261022-v1/primary-source-v2/capture.json"
+      ],
+      "focus": {
+        "summary": "Ato4 integral lido e três páginas conferidas visualmente. Fonte preservada reutilizada;URL antiga retornaHTML eDOU403,sem aceitar essas respostas comoPDF. Implementando resolução temporal e exceções documentais sem alterar históricos.",
+        "finished": [
+          "Conferir checkpoint/processos",
+          "Preservar fontes e qualificar contrato"
+        ],
+        "pending": [
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays"
+        ],
+        "next_step": "Integrar cronograma por perfil,exceções do art1 e ressalvas de cumprimento;validar limites de datas e replays."
+      },
+      "scope_package": "131"
+    },
+    {
+      "updated_at": "2026-10-22T17:45:00.513060+00:00",
+      "title": "Importação130 — candidato documental local pelo tomador",
+      "state": "Candidato130 validado:99 testes/333 verificações,PHPStan0/Pint634,doisXML iguais/XSD-válidos e24 históricos exatos. Auditoria199 conferências/106 hashes. Fiscal129 permanece ACTION_REQUIRED;obrigação de importação em desenvolvimento.4B parcial,122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "130:candidato local pelo tomador,com fornecedor estrangeiro/COMEX/NBS,consumindo o snapshot129 real replayado;sem promover resultado fiscal não final."
+      ],
+      "pending": [
+        "Obrigação documental integrada e camposNT009 de fatura/contrato cambial.",
+        "Base,câmbio eISS por documento com vínculos materiais próprios.",
+        "Demais perfis de importação e par documental da exportação parcial."
+      ],
+      "next_step": "Completar obrigação documental real,camposNT009 de fatura/câmbio e base/câmbioISS por documento;ampliar demais perfis de importação e exportação parcial.",
+      "evidence": [
+        "storage/app/phase4b-import130-development-20261022/import130-candidate-validation.json",
+        "docs/fiscal/phase4b-import130-local-candidate.md"
+      ],
+      "focus": {
+        "summary": "Candidato130 validado:99 testes/333 verificações,PHPStan0/Pint634,doisXML iguais/XSD-válidos e24 históricos exatos. Auditoria199 conferências/106 hashes. Fiscal129 permanece ACTION_REQUIRED;obrigação de importação em desenvolvimento.4B parcial,122 último aceite integral.",
+        "finished": [
+          "130:candidato local pelo tomador,com fornecedor estrangeiro/COMEX/NBS,consumindo o snapshot129 real replayado;sem promover resultado fiscal não final."
+        ],
+        "pending": [
+          "Obrigação documental integrada e camposNT009 de fatura/contrato cambial.",
+          "Base,câmbio eISS por documento com vínculos materiais próprios.",
+          "Demais perfis de importação e par documental da exportação parcial."
+        ],
+        "next_step": "Completar obrigação documental real,camposNT009 de fatura/câmbio e base/câmbioISS por documento;ampliar demais perfis de importação e exportação parcial."
+      },
+      "scope_package": "130"
+    },
+    {
+      "updated_at": "2026-10-22T17:40:36.655615+00:00",
+      "title": "Importação130 — candidato documental local pelo tomador",
+      "state": "Candidato130 XSD-válido/determinístico:um snapshot129 replayado e doisXML iguais. PHPStan0 e24 históricos127/128 exatos;validação ampliada/auditoria final ainda em conferência. Resultado fiscal permanece ACTION_REQUIRED.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Concluir auditoria de fontes,XML,recusas,matriz econsole;seguir as obrigações e os campos de fatura/câmbio ainda não mapeados.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-import130-20261022-v1/native-v1/validation.json",
+        "D:/ProjetoSaasExports/phase4b-import130-20261022-v1/historical128-v1/validation.json"
+      ],
+      "focus": {
+        "summary": "Candidato130 XSD-válido/determinístico:um snapshot129 replayado e doisXML iguais. PHPStan0 e24 históricos127/128 exatos;validação ampliada/auditoria final ainda em conferência. Resultado fiscal permanece ACTION_REQUIRED.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Concluir auditoria de fontes,XML,recusas,matriz econsole;seguir as obrigações e os campos de fatura/câmbio ainda não mapeados."
+      },
+      "scope_package": "130"
+    },
+    {
+      "updated_at": "2026-10-22T17:35:29.170932+00:00",
+      "title": "Importação130 — candidato documental local pelo tomador",
+      "state": "Candidato130 implementado;validação dirigida iniciada após recuperarDocker. Capturasv1 inconsistentes rejeitadas e preservadas;v2 recapturada com escrita durável/SHA.107 fontes129 e28 snapshots anteriores reconferidos.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir XML real noXSD,recusas,replays e qualidade;manter a decisão fiscal não final e as obrigações ainda abertas.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-import130-20261022-v1/source-storage-integrity-observation.json",
+        "D:/ProjetoSaasExports/phase4b-import130-20261022-v1/primary-text-v2/capture.json"
+      ],
+      "focus": {
+        "summary": "Candidato130 implementado;validação dirigida iniciada após recuperarDocker. Capturasv1 inconsistentes rejeitadas e preservadas;v2 recapturada com escrita durável/SHA.107 fontes129 e28 snapshots anteriores reconferidos.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir XML real noXSD,recusas,replays e qualidade;manter a decisão fiscal não final e as obrigações ainda abertas."
+      },
+      "scope_package": "130"
+    },
+    {
+      "updated_at": "2026-10-22T16:58:14.686065+00:00",
+      "title": "Importação130 — candidato documental local pelo tomador",
+      "state": "129 preservado. Conferindo fontes para construir o candidato documental de importação com tomador emitente e fornecedor estrangeiro. Obrigações RTC e municipais permanecem distintas.",
+      "criterion": "1/6 marcos observados (17%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": false
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos"
+      ],
+      "pending": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "next_step": "Preservar fontes e construir a projeção a partir do snapshot real,com gate explícito de candidato local.",
+      "evidence": [
+        "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json"
+      ],
+      "focus": {
+        "summary": "129 preservado. Conferindo fontes para construir o candidato documental de importação com tomador emitente e fornecedor estrangeiro. Obrigações RTC e municipais permanecem distintas.",
+        "finished": [
+          "Conferir checkpoint/processos"
+        ],
+        "pending": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "next_step": "Preservar fontes e construir a projeção a partir do snapshot real,com gate explícito de candidato local."
+      },
+      "scope_package": "130"
+    },
+    {
+      "updated_at": "2026-10-22T16:52:58.958822+00:00",
+      "title": "Importação129 — contribuinte e fundamentos específicos",
+      "state": "Corte129 validado:318 testes/1220 verificações,PHPStan0/Pint626,28 decisões/replays e36 históricos exatos. Auditoria322 conferências/103 hashes;107 fontes/130 bloqueios. Documentos de importação continuam em desenvolvimento;4B parcial,122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores."
+      ],
+      "pending": [],
+      "next_step": "Completar a projeção documental da importação pelo tomador,com fornecedor estrangeiro,COMEX,NBS e vínculos de base/câmbioISS por documento;seguir a matriz80 sem deslocar mínimos4B.",
+      "evidence": [
+        "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
+        "docs/fiscal/phase4b-import129-responsibility.md"
+      ],
+      "focus": {
+        "summary": "Corte129 validado:318 testes/1220 verificações,PHPStan0/Pint626,28 decisões/replays e36 históricos exatos. Auditoria322 conferências/103 hashes;107 fontes/130 bloqueios. Documentos de importação continuam em desenvolvimento;4B parcial,122 último aceite integral.",
+        "finished": [
+          "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores."
+        ],
+        "pending": [],
+        "next_step": "Completar a projeção documental da importação pelo tomador,com fornecedor estrangeiro,COMEX,NBS e vínculos de base/câmbioISS por documento;seguir a matriz80 sem deslocar mínimos4B."
+      },
+      "scope_package": "129"
+    },
+    {
+      "updated_at": "2026-10-22T16:47:53.568330+00:00",
+      "title": "Importação129 — contribuinte e fundamentos específicos",
+      "state": "Implementação129 integrada. Primeiros33 testes/91 verificações aprovados;validação ampliada,PHPStan e corpus nativo em execução,sem aceite antecipado.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir resultados terminais,replays preservados e matriz80;continuar a projeção documental de importação.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-import129-20261022-v1/directed-v1/execution.json"
+      ],
+      "focus": {
+        "summary": "Implementação129 integrada. Primeiros33 testes/91 verificações aprovados;validação ampliada,PHPStan e corpus nativo em execução,sem aceite antecipado.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir resultados terminais,replays preservados e matriz80;continuar a projeção documental de importação."
+      },
+      "scope_package": "129"
+    },
+    {
+      "updated_at": "2026-10-22T16:43:42.393273+00:00",
+      "title": "Importação129 — contribuinte e fundamentos específicos",
+      "state": "Retomada autorizada pelo usuário. Fonte LC214 atual capturada;art64 idêntico à captura119. Corrigindo validação de fundamento e papéis na importação;sem nova aceitação fiscal.",
+      "criterion": "2/6 marcos observados (33%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos",
+        "Preservar fontes e qualificar contrato"
+      ],
+      "pending": [
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays"
+      ],
+      "next_step": "Validar referências V/VI,papéis separados e recusas nos dois executores;prosseguir com documentos de importação.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-import129-20261022-v1/preparation-v1/preparation.json"
+      ],
+      "focus": {
+        "summary": "Retomada autorizada pelo usuário. Fonte LC214 atual capturada;art64 idêntico à captura119. Corrigindo validação de fundamento e papéis na importação;sem nova aceitação fiscal.",
+        "finished": [
+          "Conferir checkpoint/processos",
+          "Preservar fontes e qualificar contrato"
+        ],
+        "pending": [
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays"
+        ],
+        "next_step": "Validar referências V/VI,papéis separados e recusas nos dois executores;prosseguir com documentos de importação."
+      },
+      "scope_package": "129"
+    },
+    {
+      "updated_at": "2026-10-22T12:03:27-00:00",
+      "analysis_review": {
+        "state": "ANALYSIS_COMPLETE_DEVELOPMENT_PAUSED",
+        "evidence": "docs/fiscal/phase4b-transition-analysis-20261022.md",
+        "runtime128_hashes_checked": 102,
+        "runtime128_mismatches": 0,
+        "new_full_suite_executed": false
+      },
+      "title": "Documentos128 · adquirente estrangeiro no schema atual",
+      "state": "Corte128 validado localmente:394 testes/1676 verificações,PHPStan0/Pint621,24 decisões/replays e12 XML válidos;24 históricos exatos. Auditoria500 conferências/102 hashes atuais;106 fontes/130 bloqueios.4B parcial;122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "128:adquirente estrangeiro/destinatárioBR com NIF ou ausência justificada eCOMEX projetados noXSD atual;12 XML válidos/determinísticos com controles domésticos."
+      ],
+      "pending": [],
+      "next_step": "Completar documentos/obrigações de importação e exportação parcial,com base/câmbioISS e vínculos por documento quando exigidos;seguir a matriz80 atualizada,sem deslocar mínimos4B àFase5.",
+      "evidence": [
+        "storage/app/phase4b-foreign128-development-20261022/foreign128-scoped-validation.json",
+        "storage/app/phase4b-foreign128-development-20261022/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-foreign128-current-projection.md"
+      ],
+      "focus": {
+        "summary": "Análise de transição concluída;desenvolvimento aguardando orientação do usuário. Worktree contém cortes126–128;102 hashes128 reconferidos sem divergência. Resultados anteriores128 preservados;122 último aceite integral.4B parcial,0/8 grupos encerrados.",
+        "finished": [
+          "128:adquirente estrangeiro/destinatárioBR com NIF ou ausência justificada eCOMEX projetados noXSD atual;12 XML válidos/determinísticos com controles domésticos."
+        ],
+        "pending": [],
+        "next_step": "Aguardar orientação do usuário para retomar;delimitar a próxima entrega na matriz80 atual,considerando documentos de importação/exportação parcial e base/câmbioISS por documento."
+      },
+      "scope_package": "128"
+    },
+    {
+      "updated_at": "2026-10-22T11:50:14.113369+00:00",
+      "title": "Documentos128 · adquirente estrangeiro no schema atual",
+      "state": "128:394 testes/1676 verificações aprovados,PHPStan0/Pint621.24 decisões/replays e12 XML válidos/determinísticos;24 históricos preservados exatos. Auditoria e documentação em fechamento;produção bloqueada.",
+      "criterion": "5/6 marcos observados (83%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "128:adquirente estrangeiro/destinatárioBR com NIF ou ausência justificada eCOMEX projetados noXSD atual;12 XML válidos/determinísticos com controles domésticos."
+      ],
+      "pending": [
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir recibo independente,objetivos,fases e endpoint;avançar nas obrigações/documentos internacionais ainda pendentes.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-foreign128-20261022-v1/native-v1/validation.json",
+        "D:/ProjetoSaasExports/phase4b-foreign128-20261022-v1/final-directed-v1/execution.json"
+      ],
+      "focus": {
+        "summary": "128:394 testes/1676 verificações aprovados,PHPStan0/Pint621.24 decisões/replays e12 XML válidos/determinísticos;24 históricos preservados exatos. Auditoria e documentação em fechamento;produção bloqueada.",
+        "finished": [
+          "128:adquirente estrangeiro/destinatárioBR com NIF ou ausência justificada eCOMEX projetados noXSD atual;12 XML válidos/determinísticos com controles domésticos."
+        ],
+        "pending": [
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir recibo independente,objetivos,fases e endpoint;avançar nas obrigações/documentos internacionais ainda pendentes."
+      },
+      "scope_package": "128"
+    },
+    {
+      "updated_at": "2026-10-22T11:42:37.075746+00:00",
+      "title": "Documentos128 · adquirente estrangeiro no schema atual",
+      "state": "128 integrado:três casos deNIF/ausênciaNIF geraram XML válido noXSD atual,com ISS20.00/IBS1.00/CBS9.00 preservados. Recusas,compatibilidade e corpus ampliado em preparação.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "pending": [
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Validar tipos,evidências,COMEX,políticas herdadas e replays,sem atribuir enquadramento fiscal aoXML.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-foreign128-20261022-v1/initial-v1/execution.json"
+      ],
+      "focus": {
+        "summary": "128 integrado:três casos deNIF/ausênciaNIF geraram XML válido noXSD atual,com ISS20.00/IBS1.00/CBS9.00 preservados. Recusas,compatibilidade e corpus ampliado em preparação.",
+        "finished": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "pending": [
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Validar tipos,evidências,COMEX,políticas herdadas e replays,sem atribuir enquadramento fiscal aoXML."
+      },
+      "scope_package": "128"
+    },
+    {
+      "updated_at": "2026-10-22T11:37:45.587935+00:00",
+      "title": "Documentos128 · adquirente estrangeiro no schema atual",
+      "state": "Checkpoint127 conferido;nenhuma suíte ativa. Fonte oficial recapturada e idêntica.128 migra a rota de adquirente estrangeiro/destinatárioBR eCOMEX para oXSD20/10,sem presumir exportação.",
+      "criterion": "2/6 marcos observados (33%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint/processos",
+        "Preservar fontes e qualificar contrato"
+      ],
+      "pending": [
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays"
+      ],
+      "next_step": "Instalar contrato versionado e reutilizar as guardas das partes/COMEX com a fonte atual.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-foreign128-20261022-v1/primary-source-v1/capture.json"
+      ],
+      "focus": {
+        "summary": "Checkpoint127 conferido;nenhuma suíte ativa. Fonte oficial recapturada e idêntica.128 migra a rota de adquirente estrangeiro/destinatárioBR eCOMEX para oXSD20/10,sem presumir exportação.",
+        "finished": [
+          "Conferir checkpoint/processos",
+          "Preservar fontes e qualificar contrato"
+        ],
+        "pending": [
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays"
+        ],
+        "next_step": "Instalar contrato versionado e reutilizar as guardas das partes/COMEX com a fonte atual."
+      },
+      "scope_package": "128"
+    },
+    {
+      "updated_at": "2026-10-22T11:34:39.327846+00:00",
+      "title": "Documentos127 · schema restrito observado20/10",
+      "state": "Corte127 validado no escopo local:305 testes/1310 verificações,PHPStan0/Pint617,12 decisões/replays comparativos,seisXML válidos e12 históricos122 exatos. Auditoria285 conferências/99 hashes atuais;106 fontes/129 bloqueios.4B parcial;122 último aceite integral.",
+      "criterion": "6/6 marcos observados (100%) desta entrega. Fase4B parcial,0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir estado126 e processos ativos",
+          "complete": true
+        },
+        {
+          "title": "Preservar e comparar schema oficial20/10",
+          "complete": true
+        },
+        {
+          "title": "Implementar contrato e projeção no schema observado",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle sem reescrever os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar XML,recusas e replay nos executores",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Integrar novo bundle sem reescrever os históricos",
+        "Validar XML,recusas e replay nos executores",
+        "Auditar evidências,documentação e console"
+      ],
+      "pending": [],
+      "next_step": "Completar campos e documentos internacionais/perfis restantes do contrato atual,com base/câmbioISS e vínculo por documento quando exigidos;seguir matriz80,sem assinatura ou transmissão.",
+      "evidence": [
+        "storage/app/phase4b-dps127-development-20261022/dps127-scoped-validation.json",
+        "docs/fiscal/phase4b-dps127-current-restricted-projection.md",
+        "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/native-v3/validation.json"
+      ],
+      "focus": {
+        "summary": "Corte127 validado no escopo local:305 testes/1310 verificações,PHPStan0/Pint617,12 decisões/replays comparativos,seisXML válidos e12 históricos122 exatos. Auditoria285 conferências/99 hashes atuais;106 fontes/129 bloqueios.4B parcial;122 último aceite integral.",
+        "finished": [
+          "Integrar novo bundle sem reescrever os históricos",
+          "Validar XML,recusas e replay nos executores",
+          "Auditar evidências,documentação e console"
+        ],
+        "pending": [],
+        "next_step": "Completar campos e documentos internacionais/perfis restantes do contrato atual,com base/câmbioISS e vínculo por documento quando exigidos;seguir matriz80,sem assinatura ou transmissão."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:33:17.205991+00:00",
+      "title": "Documentos127 · schema restrito observado20/10",
+      "state": "127 validado:305 testes/1310 verificações,PHPStan0/Pint617,12 decisões/replays e6 XML válidos;12 históricos122 exatos. Auditoria285 conferências,106 fontes/129 bloqueios. Documentação e conferência final do console em fechamento.",
+      "criterion": "5/6 marcos observados (83%) desta entrega. Fase4B parcial,0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir estado126 e processos ativos",
+          "complete": true
+        },
+        {
+          "title": "Preservar e comparar schema oficial20/10",
+          "complete": true
+        },
+        {
+          "title": "Implementar contrato e projeção no schema observado",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle sem reescrever os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar XML,recusas e replay nos executores",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Implementar contrato e projeção no schema observado",
+        "Integrar novo bundle sem reescrever os históricos",
+        "Validar XML,recusas e replay nos executores"
+      ],
+      "pending": [
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir os oito grupos,fases e endpoint;continuar os campos/documentos internacionais e perfis restantes da matriz80.",
+      "evidence": [
+        "storage/app/phase4b-dps127-development-20261022/dps127-scoped-validation.json",
+        "docs/fiscal/phase4b-dps127-current-restricted-projection.md"
+      ],
+      "focus": {
+        "summary": "127 validado:305 testes/1310 verificações,PHPStan0/Pint617,12 decisões/replays e6 XML válidos;12 históricos122 exatos. Auditoria285 conferências,106 fontes/129 bloqueios. Documentação e conferência final do console em fechamento.",
+        "finished": [
+          "Implementar contrato e projeção no schema observado",
+          "Integrar novo bundle sem reescrever os históricos",
+          "Validar XML,recusas e replay nos executores"
+        ],
+        "pending": [
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir os oito grupos,fases e endpoint;continuar os campos/documentos internacionais e perfis restantes da matriz80."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:27:47.946622+00:00",
+      "title": "Documentos127 · schema restrito observado20/10",
+      "state": "127:80 testes/334 verificações aprovados;corpus nativo completo12 decisões/replays e6 XML válidos/determinísticos nos três perfis. Comparação126 preserva decisões fiscais e delimita mudanças documentais. QA final em execução.",
+      "criterion": "4/6 marcos observados (67%) desta entrega. Fase4B parcial,0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir estado126 e processos ativos",
+          "complete": true
+        },
+        {
+          "title": "Preservar e comparar schema oficial20/10",
+          "complete": true
+        },
+        {
+          "title": "Implementar contrato e projeção no schema observado",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle sem reescrever os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar XML,recusas e replay nos executores",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar e comparar schema oficial20/10",
+        "Implementar contrato e projeção no schema observado",
+        "Integrar novo bundle sem reescrever os históricos"
+      ],
+      "pending": [
+        "Validar XML,recusas e replay nos executores",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Concluir compatibilidade dirigida com74/76,crédito122 e126;análise estática e auditoria independente.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/native-v3/validation.json",
+        "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/directed-v1/execution.json"
+      ],
+      "focus": {
+        "summary": "127:80 testes/334 verificações aprovados;corpus nativo completo12 decisões/replays e6 XML válidos/determinísticos nos três perfis. Comparação126 preserva decisões fiscais e delimita mudanças documentais. QA final em execução.",
+        "finished": [
+          "Preservar e comparar schema oficial20/10",
+          "Implementar contrato e projeção no schema observado",
+          "Integrar novo bundle sem reescrever os históricos"
+        ],
+        "pending": [
+          "Validar XML,recusas e replay nos executores",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Concluir compatibilidade dirigida com74/76,crédito122 e126;análise estática e auditoria independente."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:24:10.202950+00:00",
+      "title": "Documentos127 · schema restrito observado20/10",
+      "state": "127 integrado:as três rotas federal,educação e presencial já geraram XML válido no XSD20/10. finNFSe,CST/cClassTrib e ordemcNBS corrigidos versionadamente;testes ampliados e compatibilidade74 em execução.",
+      "criterion": "4/6 marcos observados (67%) desta entrega. Fase4B parcial,0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir estado126 e processos ativos",
+          "complete": true
+        },
+        {
+          "title": "Preservar e comparar schema oficial20/10",
+          "complete": true
+        },
+        {
+          "title": "Implementar contrato e projeção no schema observado",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle sem reescrever os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar XML,recusas e replay nos executores",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar e comparar schema oficial20/10",
+        "Implementar contrato e projeção no schema observado",
+        "Integrar novo bundle sem reescrever os históricos"
+      ],
+      "pending": [
+        "Validar XML,recusas e replay nos executores",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Concluir testes de recusas,qualidade e corpus nativo com XML,snapshots e replays próprios.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/initial-projection-v3/execution.json"
+      ],
+      "focus": {
+        "summary": "127 integrado:as três rotas federal,educação e presencial já geraram XML válido no XSD20/10. finNFSe,CST/cClassTrib e ordemcNBS corrigidos versionadamente;testes ampliados e compatibilidade74 em execução.",
+        "finished": [
+          "Preservar e comparar schema oficial20/10",
+          "Implementar contrato e projeção no schema observado",
+          "Integrar novo bundle sem reescrever os históricos"
+        ],
+        "pending": [
+          "Validar XML,recusas e replay nos executores",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Concluir testes de recusas,qualidade e corpus nativo com XML,snapshots e replays próprios."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:15:05.274508+00:00",
+      "title": "Documentos127 · schema restrito observado20/10",
+      "state": "127 iniciado:estado126 preservado,Docker sem suíte ativa;schema oficial20/10 capturado. finNFSe e classificaçãoIBSCBS mudaram de caminho;projeção legada ainda não migrou.",
+      "criterion": "2/6 marcos observados (33%) desta entrega. Fase4B parcial,0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir estado126 e processos ativos",
+          "complete": true
+        },
+        {
+          "title": "Preservar e comparar schema oficial20/10",
+          "complete": true
+        },
+        {
+          "title": "Implementar contrato e projeção no schema observado",
+          "complete": false
+        },
+        {
+          "title": "Integrar novo bundle sem reescrever os históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar XML,recusas e replay nos executores",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir estado126 e processos ativos",
+        "Preservar e comparar schema oficial20/10"
+      ],
+      "pending": [
+        "Implementar contrato e projeção no schema observado",
+        "Integrar novo bundle sem reescrever os históricos",
+        "Validar XML,recusas e replay nos executores"
+      ],
+      "next_step": "Materializar os caminhos/facetas do XSD e integrar projeção versionada com validação positiva local.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/primary-source-v2/capture.json"
+      ],
+      "focus": {
+        "summary": "127 iniciado:estado126 preservado,Docker sem suíte ativa;schema oficial20/10 capturado. finNFSe e classificaçãoIBSCBS mudaram de caminho;projeção legada ainda não migrou.",
+        "finished": [
+          "Conferir estado126 e processos ativos",
+          "Preservar e comparar schema oficial20/10"
+        ],
+        "pending": [
+          "Implementar contrato e projeção no schema observado",
+          "Integrar novo bundle sem reescrever os históricos",
+          "Validar XML,recusas e replay nos executores"
+        ],
+        "next_step": "Materializar os caminhos/facetas do XSD e integrar projeção versionada com validação positiva local."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:11:46.035611+00:00",
+      "title": "Catálogos126 · seleção temporal e ambiental cIndOp",
+      "state": "Corte126 validado no escopo local:205 testes/882 verificações,PHPStan0,Pint611,32 decisões/replays e12 históricos exatos. Auditoria319 conferências;105 fontes/129 bloqueios.122 permanece último aceite integral;Fase4B em desenvolvimento.",
+      "criterion": "6/6 marcos observados desta entrega (100%). Não é percentual da Fase4B;0/8 grupos formalmente encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint122 e pendências atuais",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes atuais e qualificar versões/ambientes",
+          "complete": true
+        },
+        {
+          "title": "Implementar seleção determinística e contratos",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle preservando os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar cenários,recusas e replay",
+          "complete": true
+        },
+        {
+          "title": "Conferir documentação,objetivos e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Integrar novo bundle preservando os históricos",
+        "Validar cenários,recusas e replay",
+        "Conferir documentação,objetivos e console"
+      ],
+      "pending": [],
+      "next_step": "Continuar a seleção documental por ambiente e as provas por corte de conhecimento,seguindo as pendências atuais da matriz80. Não repetir o aceite122 nem encerrar4B por contagens.",
+      "evidence": [
+        "storage/app/phase4b-catalog126-development-20261022/catalog126-scoped-validation.json",
+        "docs/fiscal/phase4b-catalog126-local-reference.md",
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/native-v5/execution.json"
+      ],
+      "focus": {
+        "finished": [
+          "Integrar novo bundle preservando os históricos",
+          "Validar cenários,recusas e replay",
+          "Conferir documentação,objetivos e console"
+        ],
+        "pending": [],
+        "next_step": "Continuar a seleção documental por ambiente e as provas por corte de conhecimento,seguindo as pendências atuais da matriz80. Não repetir o aceite122 nem encerrar4B por contagens.",
+        "summary": "Corte126 validado no escopo local:205 testes/882 verificações,PHPStan0,Pint611,32 decisões/replays e12 históricos exatos. Auditoria319 conferências;105 fontes/129 bloqueios.122 permanece último aceite integral;Fase4B em desenvolvimento."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:10:14.714575+00:00",
+      "title": "Catálogos126 · seleção temporal e ambiental cIndOp",
+      "state": "126:205 testes/882 verificações,PHPStan0,32 decisões/replays e12 históricos exatos.105 fontes conferidas;129 bloqueios,ready=false. Ajustes finais de estilo e auditoria independente em fechamento.",
+      "criterion": "5/6 marcos observados desta entrega (83%). Não é percentual da Fase4B;0/8 grupos formalmente encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint122 e pendências atuais",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes atuais e qualificar versões/ambientes",
+          "complete": true
+        },
+        {
+          "title": "Implementar seleção determinística e contratos",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle preservando os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar cenários,recusas e replay",
+          "complete": true
+        },
+        {
+          "title": "Conferir documentação,objetivos e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Implementar seleção determinística e contratos",
+        "Integrar novo bundle preservando os históricos",
+        "Validar cenários,recusas e replay"
+      ],
+      "pending": [
+        "Conferir documentação,objetivos e console"
+      ],
+      "next_step": "Emitir recibo compacto,auditar documentação/console e selecionar a próxima lacuna funcional.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/final-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/native-v5/execution.json"
+      ],
+      "focus": {
+        "finished": [
+          "Implementar seleção determinística e contratos",
+          "Integrar novo bundle preservando os históricos",
+          "Validar cenários,recusas e replay"
+        ],
+        "pending": [
+          "Conferir documentação,objetivos e console"
+        ],
+        "next_step": "Emitir recibo compacto,auditar documentação/console e selecionar a próxima lacuna funcional.",
+        "summary": "126:205 testes/882 verificações,PHPStan0,32 decisões/replays e12 históricos exatos.105 fontes conferidas;129 bloqueios,ready=false. Ajustes finais de estilo e auditoria independente em fechamento."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:04:08.382091+00:00",
+      "title": "Catálogos126 · seleção temporal e ambiental cIndOp",
+      "state": "PHPStan geral sem erros com512M;85 testes/381 verificações de catálogos e assessor aprovados.24 decisões/replays novos comparados com122 e12 snapshots históricos122 reproduzidos exatamente. Auditoria final do corte pendente.",
+      "criterion": "4/6 marcos observados desta entrega (67%). Não é percentual da Fase4B;0/8 grupos formalmente encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint122 e pendências atuais",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes atuais e qualificar versões/ambientes",
+          "complete": true
+        },
+        {
+          "title": "Implementar seleção determinística e contratos",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle preservando os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar cenários,recusas e replay",
+          "complete": false
+        },
+        {
+          "title": "Conferir documentação,objetivos e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes atuais e qualificar versões/ambientes",
+        "Implementar seleção determinística e contratos",
+        "Integrar novo bundle preservando os históricos"
+      ],
+      "pending": [
+        "Validar cenários,recusas e replay",
+        "Conferir documentação,objetivos e console"
+      ],
+      "next_step": "Conferir fontes/materialização independente e emitir recibo do corte126,sem declarar encerramento4B.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/directed-v5/execution.json",
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/historical-v1/validation.json"
+      ],
+      "focus": {
+        "finished": [
+          "Preservar fontes atuais e qualificar versões/ambientes",
+          "Implementar seleção determinística e contratos",
+          "Integrar novo bundle preservando os históricos"
+        ],
+        "pending": [
+          "Validar cenários,recusas e replay",
+          "Conferir documentação,objetivos e console"
+        ],
+        "next_step": "Conferir fontes/materialização independente e emitir recibo do corte126,sem declarar encerramento4B.",
+        "summary": "PHPStan geral sem erros com512M;85 testes/381 verificações de catálogos e assessor aprovados.24 decisões/replays novos comparados com122 e12 snapshots históricos122 reproduzidos exatamente. Auditoria final do corte pendente."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T11:00:12.552776+00:00",
+      "title": "Catálogos126 · seleção temporal e ambiental cIndOp",
+      "state": "190 testes dirigidos/807 verificações aprovados. Bundle126 usa referência local1.03.00;ambientes oficiais seguem sem ativação presumida. Auditoria de produção e PHPStan em validação.",
+      "criterion": "4/6 marcos observados desta entrega (67%). Não é percentual da Fase4B;0/8 grupos formalmente encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint122 e pendências atuais",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes atuais e qualificar versões/ambientes",
+          "complete": true
+        },
+        {
+          "title": "Implementar seleção determinística e contratos",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle preservando os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar cenários,recusas e replay",
+          "complete": false
+        },
+        {
+          "title": "Conferir documentação,objetivos e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes atuais e qualificar versões/ambientes",
+        "Implementar seleção determinística e contratos",
+        "Integrar novo bundle preservando os históricos"
+      ],
+      "pending": [
+        "Validar cenários,recusas e replay",
+        "Conferir documentação,objetivos e console"
+      ],
+      "next_step": "Concluir auditoria de produção,PHPStan e corpus/replay do corte126.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/directed-v3/execution.json"
+      ],
+      "focus": {
+        "finished": [
+          "Preservar fontes atuais e qualificar versões/ambientes",
+          "Implementar seleção determinística e contratos",
+          "Integrar novo bundle preservando os históricos"
+        ],
+        "pending": [
+          "Validar cenários,recusas e replay",
+          "Conferir documentação,objetivos e console"
+        ],
+        "next_step": "Concluir auditoria de produção,PHPStan e corpus/replay do corte126.",
+        "summary": "190 testes dirigidos/807 verificações aprovados. Bundle126 usa referência local1.03.00;ambientes oficiais seguem sem ativação presumida. Auditoria de produção e PHPStan em validação."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T10:56:41.764118+00:00",
+      "title": "Catálogos126 · seleção temporal e ambiental cIndOp",
+      "state": "Fontes preservadas;bundle126 e seletor local cIndOp implementados. Primeiros testes dirigidos identificaram divergências no dataset;validação ainda não aceita.",
+      "criterion": "4/6 marcos observados desta entrega (67%). Não é percentual da Fase4B;0/8 grupos formalmente encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint122 e pendências atuais",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes atuais e qualificar versões/ambientes",
+          "complete": true
+        },
+        {
+          "title": "Implementar seleção determinística e contratos",
+          "complete": true
+        },
+        {
+          "title": "Integrar novo bundle preservando os históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar cenários,recusas e replay",
+          "complete": false
+        },
+        {
+          "title": "Conferir documentação,objetivos e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Preservar fontes atuais e qualificar versões/ambientes",
+        "Implementar seleção determinística e contratos",
+        "Integrar novo bundle preservando os históricos"
+      ],
+      "pending": [
+        "Validar cenários,recusas e replay",
+        "Conferir documentação,objetivos e console"
+      ],
+      "next_step": "Corrigir o dataset de identificadores e concluir testes de integração e replay.",
+      "evidence": [
+        "D:/ProjetoSaasExports/phase4b-catalog126-20261022-v1/preparation.json"
+      ],
+      "focus": {
+        "finished": [
+          "Preservar fontes atuais e qualificar versões/ambientes",
+          "Implementar seleção determinística e contratos",
+          "Integrar novo bundle preservando os históricos"
+        ],
+        "pending": [
+          "Validar cenários,recusas e replay",
+          "Conferir documentação,objetivos e console"
+        ],
+        "next_step": "Corrigir o dataset de identificadores e concluir testes de integração e replay.",
+        "summary": "Fontes preservadas;bundle126 e seletor local cIndOp implementados. Primeiros testes dirigidos identificaram divergências no dataset;validação ainda não aceita."
+      }
+    },
+    {
+      "updated_at": "2026-10-22T10:51:01.336426+00:00",
+      "title": "Catálogos126 · seleção temporal e ambiental cIndOp",
+      "state": "Retomada autorizada22/10:checkpoint122 íntegro;qualificação temporal/ambiental cIndOp em andamento. Docker iniciado,aguardando daemon;nenhuma regra fiscal nova aceita.",
+      "criterion": "1/6 marcos observados desta entrega (17%). Não é percentual da Fase4B;0/8 grupos formalmente encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint122 e pendências atuais",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes atuais e qualificar versões/ambientes",
+          "complete": false
+        },
+        {
+          "title": "Implementar seleção determinística e contratos",
+          "complete": false
+        },
+        {
+          "title": "Integrar novo bundle preservando os históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar cenários,recusas e replay",
+          "complete": false
+        },
+        {
+          "title": "Conferir documentação,objetivos e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Conferir checkpoint122 e pendências atuais"
+      ],
+      "pending": [
+        "Preservar fontes atuais e qualificar versões/ambientes",
+        "Implementar seleção determinística e contratos",
+        "Integrar novo bundle preservando os históricos"
+      ],
+      "next_step": "Preservar fontes oficiais atuais e confrontar as versões RTC e homologação.",
+      "evidence": [
+        "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json"
+      ],
+      "focus": {
+        "finished": [
+          "Conferir checkpoint122 e pendências atuais"
+        ],
+        "pending": [
+          "Preservar fontes atuais e qualificar versões/ambientes",
+          "Implementar seleção determinística e contratos",
+          "Integrar novo bundle preservando os históricos"
+        ],
+        "next_step": "Preservar fontes oficiais atuais e confrontar as versões RTC e homologação.",
+        "summary": "Retomada autorizada22/10:checkpoint122 íntegro;qualificação temporal/ambiental cIndOp em andamento. Docker iniciado,aguardando daemon;nenhuma regra fiscal nova aceita."
+      }
+    },
+    {
+      "updated_at": "2026-10-21T19:40:19.700Z",
+      "title": "Fechamento122 · atualização de21/10",
+      "state": "Aceite local122 concluído:9061 testes/143868 verificações,550 decisões/replays e1441 históricos exatos,94 hashes coincidentes. PHPStan0/Pint606;80 IDs examinados,17 correções locais consolidadas. Desenvolvimento encerrado no ponto seguro solicitado21/10;sem nova implementação.",
+      "criterion": "100% = 6/6 marcos da entrega122 concluídos. Não é percentual funcional4B:0/8 grupos formalmente encerrados,produção bloqueada.",
+      "milestones": [
+        {
+          "title": "Preservar templates,fontes e corte de perguntas qualificado",
+          "complete": true
+        },
+        {
+          "title": "Instalar124 cenários e250 testes de preços122",
+          "complete": true
+        },
+        {
+          "title": "Validar447 dirigidos e qualidade geral",
+          "complete": true
+        },
+        {
+          "title": "Auditar transporte de fatos,valores e eventos",
+          "complete": true
+        },
+        {
+          "title": "Qualificar corpus ampliado e históricos do runtime atual",
+          "complete": true
+        },
+        {
+          "title": "Concluir regressão integral e aceite local122",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Aceite122:9061 testes/143868 verificações,550 decisões/replays atuais e1441 históricos exatos;PHPStan0/Pint606.",
+        "94 hashes e7396 entradas da regressão preservados;98 fontes válidas/128 bloqueios. Evidências pesadas noD:,cópias compactas vinculadas noC:.",
+        "80 IDs examinados e matriz consolidada com17 correções locais posteriores;lacunas restantes explícitas,sem encerramento integral4B."
+      ],
+      "pending": [
+        "Desenvolvimento interrompido no ponto seguro por solicitação do usuário;retomar somente quando solicitado.",
+        "Concluir lacunas funcionais por requisito/família,documentos,base/câmbioISS,crédito e perfis obrigatórios.",
+        "Qualificar cIndOp1.03.00 e parâmetros temporais aplicáveis;produção permanece bloqueada."
+      ],
+      "next_step": "Aguardar solicitação de retomada. Na retomada,usar o checkpoint122 aceito e as pendências atuais da matriz80;publicaçãoGitHub solicitada neste fechamento.",
+      "evidence": [
+        "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json",
+        "storage/app/phase4b-credit122-development-20261021/evidence-copy-receipt.json",
+        "storage/app/phase4b-credit122-development-20261021/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-day-closure-20261021.md",
+        "docs/fiscal/phase4b-original80-current-matrix.md",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/requirements-review-v1/requirements125-catalog-review.json",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/cindop125-version-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-requirements125-catalog-review-20261021-v1/primary-source-v1/capture.json",
+        "docs/fiscal/phase4b-requirements125-catalog-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-current-native-audit-v1.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/credit122-expanded-cli-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/historical-replay-v2/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-requirements124-acceptance-audit-20261021-v1/requirements-review-v1/requirements124-acceptance-review.json",
+        "docs/fiscal/phase4b-requirements124-acceptance-review.md",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/pest-process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-full-suite-20261021-v2/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/full-suite-v1-worker-finished.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-updater-20261021-v2/cleanup-report.json",
+        "D:/ProjetoSaasExports/cleanup-c-credit122-old-downloads-20261021-v1/cleanup-report.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/process-start.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/expanded-cli-v1/preflight.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-full-test-list-v1/stdout.log",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit122-expanded-preparation-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price122-directed-v1/execution.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/price-controls-v1/before-price-controls-validation.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/question-fix-v2/question-result-comparison.json",
+        "D:/ProjetoSaasExports/phase4b-credit122-preparation-20261021/credit-cli-v2/credit122-cli-validation.json",
+        "docs/fiscal/phase4b-credit122-progress.md"
+      ],
+      "focus": {
+        "summary": "Aceite local122 concluído:9061 testes/143868 verificações,550 decisões/replays e1441 históricos exatos,94 hashes coincidentes. PHPStan0/Pint606;80 IDs examinados,17 correções locais consolidadas. Desenvolvimento encerrado no ponto seguro solicitado21/10;sem nova implementação.",
+        "finished": [
+          "Aceite122:9061 testes/143868 verificações,550 decisões/replays atuais e1441 históricos exatos;PHPStan0/Pint606.",
+          "94 hashes e7396 entradas da regressão preservados;98 fontes válidas/128 bloqueios. Evidências pesadas noD:,cópias compactas vinculadas noC:.",
+          "80 IDs examinados e matriz consolidada com17 correções locais posteriores;lacunas restantes explícitas,sem encerramento integral4B."
+        ],
+        "pending": [
+          "Desenvolvimento interrompido no ponto seguro por solicitação do usuário;retomar somente quando solicitado.",
+          "Concluir lacunas funcionais por requisito/família,documentos,base/câmbioISS,crédito e perfis obrigatórios.",
+          "Qualificar cIndOp1.03.00 e parâmetros temporais aplicáveis;produção permanece bloqueada."
+        ],
+        "next_step": "Aguardar solicitação de retomada. Na retomada,usar o checkpoint122 aceito e as pendências atuais da matriz80;publicaçãoGitHub solicitada neste fechamento."
+      }
+    },
     {
       "updated_at": "2026-10-21T19:04:00.491Z",
       "title": "Créditos122 · regressão e exame dos80 itens",
@@ -2851,17 +5365,18 @@
     }
   ],
   "focus": {
-    "summary": "Aceite local122 concluído:9061 testes/143868 verificações,550 decisões/replays e1441 históricos exatos,94 hashes coincidentes. PHPStan0/Pint606;80 IDs examinados,17 correções locais consolidadas. Desenvolvimento encerrado no ponto seguro solicitado21/10;sem nova implementação.",
+    "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
     "finished": [
-      "Aceite122:9061 testes/143868 verificações,550 decisões/replays atuais e1441 históricos exatos;PHPStan0/Pint606.",
-      "94 hashes e7396 entradas da regressão preservados;98 fontes válidas/128 bloqueios. Evidências pesadas noD:,cópias compactas vinculadas noC:.",
-      "80 IDs examinados e matriz consolidada com17 correções locais posteriores;lacunas restantes explícitas,sem encerramento integral4B."
+      "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
+      "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
+      "Ensaios135 externos preservados com hashes;nenhuma instalação135."
     ],
     "pending": [
-      "Desenvolvimento interrompido no ponto seguro por solicitação do usuário;retomar somente quando solicitado.",
-      "Concluir lacunas funcionais por requisito/família,documentos,base/câmbioISS,crédito e perfis obrigatórios.",
-      "Qualificar cIndOp1.03.00 e parâmetros temporais aplicáveis;produção permanece bloqueada."
+      "Integrar135 após qualificar exclusões legais e demais tributos do preço.",
+      "Concluir câmbioISS,importação e demais mínimos dos80 requisitos.",
+      "Retomar somente por solicitação do usuário;nenhum processo de desenvolvimento ativo."
     ],
-    "next_step": "Aguardar solicitação de retomada. Na retomada,usar o checkpoint122 aceito e as pendências atuais da matriz80;publicaçãoGitHub solicitada neste fechamento."
-  }
+    "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada."
+  },
+  "scope_package": "134"
 }

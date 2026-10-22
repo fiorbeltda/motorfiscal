@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace App\Modules\Fiscal\NFSe;
 
+use App\Modules\Fiscal\ConsumptionReform\DpsForeignPolicy128;
 use App\Modules\Fiscal\ConsumptionReform\DpsIssuerFieldValidator;
+use App\Modules\Fiscal\ConsumptionReform\DpsLayoutPolicy127;
 use App\Modules\Fiscal\Core\Shared\CanonicalJson;
+use DateTimeImmutable;
 use DOMDocument;
 use DOMElement;
 
@@ -19,18 +22,35 @@ final readonly class DpsForeignPartyProjector
      * @param  array<string, mixed>  $codes
      * @return array<string, mixed>
      */
-    public function project(array $party, string $role, array $codes): array
+    public function project(array $party, string $role, array $codes, ?DateTimeImmutable $knownAt = null): array
     {
-        if (! in_array($role, ['toma', 'IBSCBS.dest'], true)) {
+        $supplier = $role === 'prest';
+        if (! in_array($role, ['toma', 'IBSCBS.dest'], true)
+            && (! $supplier || $knownAt === null || (new DpsImportCandidatePolicy130)->qualify($codes, $knownAt)['status'] !== 'RESOLVED')) {
             return $this->stop('ACTION_REQUIRED', 'ROLE_NOT_BOUND_TO_OBSERVED_SCHEMA');
         }
-        if (($codes['dps_xsd']['source_sha256'] ?? null) !== DpsRestrictedSchemaSelection::ARCHIVE_SHA256
+        $modern = DpsForeignPolicy128::required($codes);
+        $schemaHash = DpsRestrictedSchemaSelection::ARCHIVE_SHA256;
+        if ($modern) {
+            if ($knownAt === null) {
+                return $this->stop('ACTION_REQUIRED', 'EXPLICIT_KNOWLEDGE_REQUIRED');
+            }
+            foreach ([(new DpsForeignPolicy128)->qualify($codes, $knownAt), (new DpsLayoutPolicy127)->qualify($codes, $knownAt)] as $qualification) {
+                if ($qualification['status'] !== 'RESOLVED') {
+                    return $qualification;
+                }
+            }
+            $schemaHash = DpsLayoutPolicy127::SOURCE_SHA256;
+        } elseif (($codes['dps_xsd']['source_sha256'] ?? null) !== DpsRestrictedSchemaSelection::ARCHIVE_SHA256
             || ($codes['dps_xsd']['root_schema'] ?? null) !== 'DPS_v1.01.xsd'
             || ($codes['local_xml_projection']['schema_selection']['root_sha256'] ?? null) !== DpsRestrictedSchemaSelection::ROOT_SHA256) {
             return $this->stop('ACTION_REQUIRED', 'SCHEMA_BINDING_NOT_PROVEN');
         }
         $allowed = ['country', 'name', 'nif', 'no_nif_reason', 'address', 'phone', 'email',
             'party_evidence_id', 'identification_evidence_id', 'address_evidence_id'];
+        if ($supplier) {
+            $allowed[] = 'regime';
+        }
         if (array_diff(array_keys($party), $allowed) !== []) {
             return $this->stop('ACTION_REQUIRED', 'ADDITIONAL_PARTY_DATA_NOT_MAPPED');
         }
@@ -78,6 +98,17 @@ final readonly class DpsForeignPartyProjector
                 $fields[$tag] = $party[$key];
             }
         }
+        if ($supplier) {
+            $regime = $party['regime'] ?? null;
+            if (! is_array($regime) || array_is_list($regime)
+                || array_diff(array_keys($regime), ['opSimpNac', 'regEspTrib', 'evidence_id']) !== []
+                || ($regime['opSimpNac'] ?? null) !== '1' || ($regime['regEspTrib'] ?? null) !== '0'
+                || ! $this->text($regime['evidence_id'] ?? null)) {
+                return $this->stop('ACTION_REQUIRED', 'EXPLICIT_FOREIGN_ORDINARY_REGIME_REQUIRED');
+            }
+            $fields['regTrib.opSimpNac'] = $regime['opSimpNac'];
+            $fields['regTrib.regEspTrib'] = $regime['regEspTrib'];
+        }
         $qualifiedFields = [];
         foreach ($fields as $field => $value) {
             if (! $this->text($value)) {
@@ -95,12 +126,12 @@ final readonly class DpsForeignPartyProjector
             $qualifiedFields[$role.'.'.$field] = $value;
         }
         $validation = (new DpsIssuerFieldValidator)->validate($qualifiedFields,
-            ['xsd_source_hash' => DpsRestrictedSchemaSelection::ARCHIVE_SHA256], $codes);
+            ['xsd_source_hash' => $schemaHash], $codes);
         if ($validation['status'] !== 'VALID') {
             return [...$this->stop($validation['status'], 'OBSERVED_FIELD_FACET_CONFLICT'), 'field_validation' => $validation];
         }
         $document = new DOMDocument('1.0', 'UTF-8');
-        $element = $document->createElementNS('http://www.sped.fazenda.gov.br/nfse', $role === 'toma' ? 'toma' : 'dest');
+        $element = $document->createElementNS('http://www.sped.fazenda.gov.br/nfse', $supplier ? 'prest' : ($role === 'toma' ? 'toma' : 'dest'));
         $document->appendChild($element);
         /** @var array<string, DOMElement> $containers */
         $containers = ['' => $element];
@@ -126,11 +157,11 @@ final readonly class DpsForeignPartyProjector
         }
 
         return ['status' => 'PROJECTED', 'reason' => 'RTC_DPS_FOREIGN_PARTY_CANDIDATE_BUILT',
-            'contract_version' => self::CONTRACT, 'scope' => 'FOREIGN_PARTY_FRAGMENT_ONLY',
+            'contract_version' => $supplier ? DpsImportCandidatePolicy130::CONTRACT : ($modern ? 'DPS-FOREIGN-PARTY-CANDIDATE-2026.10.22-128' : self::CONTRACT), 'scope' => 'FOREIGN_PARTY_FRAGMENT_ONLY',
             'role' => $role, 'fields' => $qualifiedFields, 'xml' => $xml, 'xml_sha256' => hash('sha256', $xml),
             'party_input_hash' => CanonicalJson::hash($party),
             'evidence_links' => array_intersect_key($party, array_flip(['party_evidence_id', 'identification_evidence_id', 'address_evidence_id'])),
-            'schema_sha256' => DpsRestrictedSchemaSelection::ARCHIVE_SHA256,
+            'schema_sha256' => $schemaHash,
             'country_list_qualified' => false, 'identity_authenticity_verified' => false,
             'residency_verified' => false, 'document_obligation_qualified' => false,
             'native_complete_document_validation_performed' => false, 'production_ready' => false];

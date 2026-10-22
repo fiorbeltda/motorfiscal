@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-10-22T11:10:48.103704+00:00",
+  "status": "CATALOG126_SCOPED_LOCAL_REFERENCE_VALIDATED_NOT_PHASE4B_CLOSURE",
+  "audit_checks": 319,
+  "tests": 205,
+  "assertions": 882,
+  "full_suite_executed": false,
+  "quality": {
+    "final-directed-v1": {
+      "receipt_sha256": "400c17b13fc21dc09f7b7bd63e74c73032b0b1d1d2c73da1965ad7fe204f5062",
+      "exit_code": 0
+    },
+    "phpstan-v2": {
+      "receipt_sha256": "dc8ce7ed50e72e5b019221ccd374e5a081f921e6e1d502d44009eb356bc2a21c",
+      "exit_code": 0
+    },
+    "pint-final-v2": {
+      "receipt_sha256": "fa03e62249580415b9416c5aa1026a977eef75f3176a54a32aee454f48eabe3b",
+      "exit_code": 0
+    },
+    "production-assess-v1": {
+      "receipt_sha256": "92f4f4d702f06596d1ccb08c2101ba40d7ef537936628859f290a2ec394a8607",
+      "exit_code": 0
+    }
+  },
+  "native_decisions": 32,
+  "current126_decisions": 16,
+  "baseline122_comparison_decisions": 16,
+  "native_exact_replays": 32,
+  "preserved122_historical_sample_exact_replays": 12,
+  "official_sources_valid": 105,
+  "production_blockers": 129,
+  "ready": false,
+  "eligible_for_local_validation": true,
+  "formal_phase4b_groups_closed": 0,
+  "phase4b_complete": false,
+  "runtime_baseline_hashes_unchanged": 91,
+  "runtime_declared_changes": [
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php",
+    "app/Modules/Fiscal/Infrastructure/Production/Phase4bReadinessAssessor.php",
+    "app/Modules/Fiscal/ConsumptionReform/CreditInputPolicy122.php"
+  ],
+  "bundle_sha256": "87aabbdb9c69679ddf0163fb478897ef6787dba912a425f26437d157fe59677e",
+  "evidence_root": "D:\\ProjetoSaasExports\\phase4b-catalog126-20261022-v1",
+  "limits": [
+    "No official environment activation or legal effective date proved.",
+    "Partial export evidence is refused at a changed knowledge cut;no positive documentary closure.",
+    "No global credit,document,classification or Phase4B acceptance;no new full regression."
+  ]
+}

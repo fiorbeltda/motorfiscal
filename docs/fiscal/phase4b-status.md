@@ -1,5 +1,73 @@
 # Fase 4B — IBS/CBS e reforma do consumo
 
+Checkpoint em 2026-10-22T16:43:08.519378-03:00: parada segura solicitada pelo usuário. Regressão134 encerrada:9.406 testes/145.560 asserções,5.179 entradas intactas;auditoria415/114 hashes. Corte134 validado;4B parcial,0/8 encerrados. Ensaios135 externos não integrados. Ver `phase4b-day-closure-20261022.md`.
+
+Estado atual134 em22/10:ISS próprio por documento integrado e grupo valores
+daDPS projetado em fragmentos explicitamente parciais.355 testes dirigidos/
+2755 asserções,22 snapshots/replays e19 históricos exatos;PHPStan0/Pint655.
+Regressão integral134 aprovada:9406 testes/145560 asserções;112 fontes conferidas,produção bloqueada.
+ParDPS completo,classificação estrangeira,câmbioISS e demais mínimos pendentes.
+Ver`phase4b-iss134-versioned-document-values.md`.0/8 grupos encerrados.
+
+Estado atual133 em22/10:base/impostoISS locais por documentoBRL,com prova
+granular e tratamento municipal fresco,implementados no componente/CLI.
+338 testes/2599 asserções,PHPStan0/Pint648;52 replays locais e19 históricos
+integrados exatos.Auditoria463 conferências/110 hashes;integração/DPS pendentes.
+0/8 grupos encerrados;122 último aceite integral.Ver`phase4b-iss133-local-document-base.md`.
+
+Estado atual132 em22/10:conferência declarada de valoresBRL por fatura/linha
+integrada ao candidato local130,com hash do arquivo e replay completo antes
+da gravação.57 testes/206 asserções,PHPStan0/Pint643;doisXML determinísticos
+e19 históricos exatos.Recibo auditado242 conferências/108 hashes correntes.
+Base legalISS,câmbio próprio e fechamento documental seguem pendentes.
+0/8 grupos encerrados;122 último aceite integral.Ver`phase4b-import132-document-values.md`.
+
+Estado atual131-draft2 em22/10:cronograma temporal integrado peloAto4 revisado,
+com exceções e regime do contribuinte brasileiro.112 testes/809 verificações,
+PHPStan0/Pint639,18 decisões/replays e41 históricos exatos;auditadas265 conferências.
+Corpo documental,base/câmbioISS e demais mínimos permanecem pendentes.
+0/8 grupos encerrados;122 último aceite integral. Ver`phase4b-schedule131-primary-act.md`.
+
+Estado atual130 em22/10:candidato local de importação pelo tomador implementado
+sem alterar a decisão não final129.99 testes/333 verificações,PHPStan0/Pint634,
+doisXML determinísticos/XSD-válidos e24 históricos exatos;auditadas199 conferências.
+Restam obrigação integrada,camposNT009 de fatura/câmbio e demais perfis/documentos.
+Fase parcial,0/8 grupos encerrados;122 último aceite integral.
+Ver`phase4b-import130-local-candidate.md`.
+
+Estado atual129 em22/10:referência/papéis na importação corrigidos,sem aceitar
+fundamento genérico ou art36 doméstico como se fosse art64§5ºV/VI.318 testes/
+1220 verificações,PHPStan0/Pint626,28 decisões/replays e36 históricos exatos.
+Auditoria322 conferências,107 fontes/130 bloqueios. Documento definitivo de
+importação e demais mínimos permanecem em desenvolvimento.4B parcial,0/8
+grupos encerrados;122 último aceite integral. Ver`phase4b-import129-responsibility.md`.
+
+Estado atual128 em22/10:projeção local de adquirente estrangeiro/destinatárioBR
+comCOMEX noXSD atual.394 testes/1676 verificações,PHPStan0/Pint621,24 decisões/
+replays próprios,12 XML válidos e24 históricos exatos;auditadas500 conferências.
+106 fontes/130 bloqueios,ready=false. Matriz80 consolidada após126–128,com
+cinco pendências atualizadas;0/8 grupos encerrados e122 último aceite integral.
+Importação,exportação parcial e demais mínimos4B permanecem pendentes.
+Ver`phase4b-foreign128-current-projection.md`. Histórico127 e anteriores abaixo.
+
+Estado atual127 em22/10:seisXML locais determinísticos/XSD-válidos nos três
+perfis regulares,federal/educação/presencial,com fonte oficial20/10 preservada.
+305 testes/1310 verificações dirigidas,PHPStan0/Pint617,12 decisões/replays e
+12 históricos122 exatos;auditadas285 conferências.106 fontes/129 bloqueios,
+ready=false.122 continua último aceite com regressão integral;nenhum grupo
+encerrado. Ver`phase4b-dps127-current-restricted-projection.md`. Continuidade
+internacional,demais documentos/perfis e requisitos da matriz80 permanecem.
+
+Estado atual22/10/2026:retomada autorizada,a partir do aceite122 de21/10.
+126 implementa seleção explícita da referência localcIndOp1.03.00,sem fundir
+oAnexoC de homologação ou presumir ativação oficial.205 testes/882 verificações,
+PHPStan sem erros,32 decisões/replays comparativos e12 históricos preservados.
+Última regressão integral permanece122:9061/143868,550 atuais e1441 históricos.
+80/80 requisitos examinados,0/8 grupos formalmente encerrados;fase parcial.
+Produção bloqueada105 fontes/129 bloqueios. Não confundir referência local
+com seleção oficial por ambiente ou encerramento4B.6. Ver
+`phase4b-catalog126-local-reference.md`. Cronologia anterior preservada abaixo.
+
 Estado atual20/10/2026:119 aceita localmente após8.614 testes/133.926
 verificações e auditoria independente,24.800 arquivos congelados intactos e92
 hashes de runtime.370 decisões/replays próprios e1.071 históricos;98 fontes
