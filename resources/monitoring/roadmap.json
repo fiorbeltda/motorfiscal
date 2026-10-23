@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+  "reviewed_at": "2026-10-23T15:28:36.615703-03:00",
   "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas.137 escopado validado,integral não iniciada por parada solicitada;produção bloqueada.",
   "phases": [
     {
@@ -2150,17 +2150,36 @@
         "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
         "uncommitted_development": true
       }
+    },
+    {
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
+      "checkpoint_publication": {
+        "status": "PREPARED_NOT_YET_PUSHED",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "development_stopped_by_user": true,
+        "full137_started": false,
+        "phase4b_complete": false
+      }
     }
   ],
   "current_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
   "scope_package": "137",
-  "updated_at": "2026-10-23T18:26:42.172423+00:00",
+  "updated_at": "2026-10-23T15:28:36.615703-03:00",
   "checkpoint_publication": {
-    "status": "PREPARED_NOT_YET_PUSHED",
+    "commit": "cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
     "branch": "codex/fiscal-engine-bootstrap",
+    "published_at": "2026-10-23T15:28:36.615703-03:00",
+    "push_confirmed": true,
+    "remote_sha_confirmed": true,
+    "message": "Atualização - 23/10/2026 15:27 (São Paulo)",
     "development_stopped_by_user": true,
+    "last_full_regression": "136:9569/145843",
+    "current137_scoped_validation": "41tests/118assertions;nativeCLI4XML;PHPStan0;PintPASS",
     "full137_started": false,
-    "phase4b_complete": false
+    "phase4b_complete": false,
+    "production_ready": false
   },
   "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
   "development_state": "STOPPED_BY_USER_SCOPED137_VALIDATED_FULL_PENDING",
