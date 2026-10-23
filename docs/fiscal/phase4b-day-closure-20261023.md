@@ -73,3 +73,14 @@ commit principal `7c4429089e605cba1de9a9410d36ea89704997bd` enviado e SHA remoto
 Console atualizado com hash,horário e parada solicitada. Regressão integral
 permanece em captura;nenhum aceite integral foi declarado. Esta atualização
 documental será publicada em commit próprio no mesmo formato histórico.
+
+Atualização em 2026-10-23T12:55:14.169871+00:00:regressão135 terminal às09:52:39 deSãoPaulo,9544 testes/145778 asserções,exit0.5896 entradas intactas,121 hashes de runtime auditados;recibo `storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json`,SHA256 `8af4b36b0106aa66def73e6b401fe3f2f528a074d6bc77d7fbb6a741be8f4409`. Retomada autorizada;136 em preparação.0/8 grupos encerrados.
+O pedido posterior do usuário autorizou retomar a meta normalmente. O checkpoint publicado com integral pendente permanece histórico;esta evidência terminal posterior o complementa.
+
+## Continuidade:136 integral e137 documental
+
+Atualização em 2026-10-23T17:53:57.848470+00:00: regressão136 terminal às14:42:49 deSãoPaulo, 9.569 testes/145.843 asserções, exit0; 5.907 entradas intactas, 124 hashes auditados. Recibo `storage/app/phase4b-own136-development-20261023/own136-full-validation.json`, SHA256 `67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2`. 137 continua noD:, vínculo por documento auditado com42 recusas; país do cliente, crédito contábil e partes explícitos. ComposiçãoXML e proveniênciaNT007 ainda pendentes; 0/8 grupos encerrados.
+
+## Novo checkpoint:137 escopado validado
+
+Checkpoint solicitado em 2026-10-23T18:26:42.172423+00:00: desenvolvimento parado após auditoria escopada137. 41 testes/118 asserções;CLI real repetido,4 XML/XSD idênticos,PHPStan global0 ePint aprovados. 5.916 entradas preservadas no ensaio nativo e130 hashes de runtime auditados. Recibo `storage/app/phase4b-retention137-development-20261023/retention137-integration-scoped-validation.json`, SHA256 `2c5f1c7013451ddd7522bf3fd8b90964a70857ced1418e1023ef47c190ef6398`. Regressão integral137 não iniciada. Última integral136:9.569 testes/145.843 asserções. 0/8 grupos encerrados;produção bloqueada.

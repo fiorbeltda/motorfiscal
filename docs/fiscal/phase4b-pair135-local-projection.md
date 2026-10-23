@@ -1,5 +1,7 @@
 # 135 — projetor local do parDPS de exportação parcial
 
+Atualização em 2026-10-23T12:55:14.169871+00:00:regressão135 terminal às09:52:39 deSãoPaulo,9544 testes/145778 asserções,exit0.5896 entradas intactas,121 hashes de runtime auditados;recibo `storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json`,SHA256 `8af4b36b0106aa66def73e6b401fe3f2f528a074d6bc77d7fbb6a741be8f4409`. Retomada autorizada;136 em preparação.0/8 grupos encerrados.
+
 Checkpoint de23/10:desenvolvimento interrompido a pedido do usuário. Validação dirigida135 aprovada;regressão integral ainda pendente de resultado e auditoria. Ver `phase4b-day-closure-20261023.md`.0/8 grupos encerrados,produção bloqueada.
 
 Em23/10/2026,o comando `fiscal:dps:project-export-pair {snapshot} {declarations}`

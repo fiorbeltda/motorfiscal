@@ -1,50 +1,64 @@
 {
-  "updated_at": "2026-10-23T09:29:47.515788-03:00",
-  "title": "135: checkpoint publicado; desenvolvimento interrompido",
-  "state": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
-  "criterion": "4/6 marcos da entrega135 (67%);aceite integral pendente. Checkpoint publicado não encerra a entrega ou a Fase4B.",
+  "updated_at": "2026-10-23T18:26:42.172423+00:00",
+  "title": "Checkpoint137:parada segura epublicação",
+  "state": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
+  "criterion": "4/5 marcos locais137;regressão integral explicitamente pendente. Sem percentual funcional global4B.",
   "milestones": [
     {
-      "title": "Conferir checkpoint/processos",
+      "title": "Preservar e conferir fonteNT007",
       "complete": true
     },
     {
-      "title": "Preservar fontes e qualificar contrato",
+      "title": "Vincular pagamentos e reexecutar4A por documento",
       "complete": true
     },
     {
-      "title": "Implementar comportamento delimitado",
+      "title": "Compor XML e validar coerência/XSD",
       "complete": true
     },
     {
-      "title": "Integrar nova versão preservando históricos",
+      "title": "Integrar versão qualificada preservando históricos",
       "complete": true
     },
     {
-      "title": "Validar casos,recusas e replays",
-      "complete": false
-    },
-    {
-      "title": "Auditar evidências,documentação e console",
+      "title": "Validar regressão,qualidade e auditoria",
       "complete": false
     }
   ],
   "finished": [
-    "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
-    "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
-    "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+    "137:integraçãoCLI,41 testes/118 asserções equalidade aprovados;130 hashes auditados.",
+    "137:quatroXML nativos idênticos,conteúdo não federal preservado eentrada recusada sem saída.",
+    "136:regressão integral auditada;NT007 e evidências volumosas preservadas noD:."
   ],
   "pending": [
-    "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
-    "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
-    "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+    "Regressão integral137 não iniciada por pedido de parada.",
+    "Completar outros perfis de partes/pagamentos,moeda eeventos;efeitos judiciais eobrigações integrais.",
+    "Concluir os demais80 requisitos originais eaceites por grupo;produção permanece bloqueada."
   ],
-  "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida.",
+  "next_step": "Após autorização de retomada,executar captura integral137 preparada em scripts/capture_phase4b_retention137_full_suite.py e auditar o resultado.",
   "evidence": [
     "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
     "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
     "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
-    "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json"
+    "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+    "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+    "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+    "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+    "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+    "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+    "docs/fiscal/phase4b-retention137-staged-review.md",
+    "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+    "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\integration-start-v3.json",
+    "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\development-attempts-v3.json",
+    "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json",
+    "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\requirements80-current-matrix.json",
+    "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\checkpoint-stop-scoped137-validation.json"
   ],
   "history": [
     {
@@ -6187,48 +6201,1438 @@
       "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
       "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
       "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
+    },
+    {
+      "updated_at": "2026-10-23T09:29:47.515788-03:00",
+      "title": "135: checkpoint publicado; desenvolvimento interrompido",
+      "state": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+      "criterion": "4/6 marcos da entrega135 (67%);aceite integral pendente. Checkpoint publicado não encerra a entrega ou a Fase4B.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+        "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+        "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+      ],
+      "pending": [
+        "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+        "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+        "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+      ],
+      "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json"
+      ],
+      "focus": {
+        "summary": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+        "finished": [
+          "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+          "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+          "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+        ],
+        "pending": [
+          "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+          "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+          "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+        ],
+        "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": false,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "RUNNING_OBSERVED",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
+    },
+    {
+      "updated_at": "2026-10-23T12:48:09.183500+00:00",
+      "title": "135 em regressão;136 em preparação externa",
+      "state": "Retomada expressamente autorizada pelo usuário. Regressão integral135 confirmada viva no mesmo processo;resultado terminal pendente. Preparação136 noD:para campos própriosPIS/Cofins noXML,sem modificar entradas congeladas.4B parcial,0/8 grupos encerrados.",
+      "criterion": "4/6 marcos da entrega135 (67%);aceite integral pendente. Checkpoint publicado não encerra a entrega ou a Fase4B.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+        "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+        "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+      ],
+      "pending": [
+        "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+        "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+        "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+      ],
+      "next_step": "Acompanhar a mesma regressão135;qualificar códigos e regras do grupo federal próprio e preparar136 exclusivamente noD:.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json"
+      ],
+      "focus": {
+        "summary": "Retomada expressamente autorizada pelo usuário. Regressão integral135 confirmada viva no mesmo processo;resultado terminal pendente. Preparação136 noD:para campos própriosPIS/Cofins noXML,sem modificar entradas congeladas.4B parcial,0/8 grupos encerrados.",
+        "finished": [
+          "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+          "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+          "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+        ],
+        "pending": [
+          "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+          "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+          "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+        ],
+        "next_step": "Acompanhar a mesma regressão135;qualificar códigos e regras do grupo federal próprio e preparar136 exclusivamente noD:."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": false,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "RUNNING_OBSERVED",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_FULL135_RUNNING_PREPARATION136_ON_D",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
+    },
+    {
+      "updated_at": "2026-10-23T12:55:14.169871+00:00",
+      "title": "135: regressão integral validada;136 em preparação",
+      "state": "135 validado localmente por regressão integral:9544 testes/145778 asserções,exit0,5896 entradas intactas e121 hashes de runtime auditados. Preparação136 do grupo federal próprio em curso;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+      "criterion": "6/6 marcos (100%) somente da entrega local135;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Regressão integral9544/145778,exit0,5896 entradas intactas.",
+        "Auditoria135:121 hashes;203 dirigidos/498 asserções,PHPStan0/Pint673 e22 históricos exatos.",
+        "CLI local produz doisDPS XSD;ponte própria reexecutada,limites documentais explícitos."
+      ],
+      "pending": [
+        "Concluir campos própriosPIS/Cofins noXML com códigos e retenção qualificados;136 em preparação externa.",
+        "Concluir país/moeda,efeitos judiciais,demais perfis documentais,câmbioISS e importação.",
+        "Concluir os demais requisitos da matriz80;nenhum dos oito grupos encerrado formalmente."
+      ],
+      "next_step": "Validar componente136,campos próprios e recusas;integrar preservando o contrato135 e seus históricos.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json"
+      ],
+      "focus": {
+        "summary": "135 validado localmente por regressão integral:9544 testes/145778 asserções,exit0,5896 entradas intactas e121 hashes de runtime auditados. Preparação136 do grupo federal próprio em curso;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+        "finished": [
+          "Regressão integral9544/145778,exit0,5896 entradas intactas.",
+          "Auditoria135:121 hashes;203 dirigidos/498 asserções,PHPStan0/Pint673 e22 históricos exatos.",
+          "CLI local produz doisDPS XSD;ponte própria reexecutada,limites documentais explícitos."
+        ],
+        "pending": [
+          "Concluir campos própriosPIS/Cofins noXML com códigos e retenção qualificados;136 em preparação externa.",
+          "Concluir país/moeda,efeitos judiciais,demais perfis documentais,câmbioISS e importação.",
+          "Concluir os demais requisitos da matriz80;nenhum dos oito grupos encerrado formalmente."
+        ],
+        "next_step": "Validar componente136,campos próprios e recusas;integrar preservando o contrato135 e seus históricos."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "TERMINAL_PASS_AUDITED",
+        "terminal_result_observed": true,
+        "finished_at": "2026-10-23T12:52:39.687242+00:00",
+        "tests": 9544,
+        "assertions": 145778
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_135_FULL_VALIDATED_136_IN_PREPARATION",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
+    },
+    {
+      "updated_at": "2026-10-23T16:18:40.004425+00:00",
+      "title": "136: ensaio validado;preservação de evidências em aplicação",
+      "state": "135 integral auditado:9544 testes/145778 asserções,5896 entradas intactas.136 preparado noD:com24 recusas,2DPS XSD e4 conferências independentes. Preservação de349 arquivos históricos e5478 entradas temporárias verificada;aplicação dos novos mounts/restauração em curso.4B parcial,0/8 grupos encerrados.",
+      "criterion": "3/6 marcos (50%) desta entrega local136;nenhum percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Conferir e auditar integral135",
+          "complete": true
+        },
+        {
+          "title": "Capturar fontes e qualificar contrato136",
+          "complete": true
+        },
+        {
+          "title": "Validar componente136 em ensaio externo",
+          "complete": true
+        },
+        {
+          "title": "Concluir preservação e acesso de evidências noDocker",
+          "complete": false
+        },
+        {
+          "title": "Integrar136 e preservar comandos históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar integração,qualidade,auditoria e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "135:regressão9544/145778 e auditoria121 hashes aprovadas.",
+        "136 externo:24 controles de recusa,2DPS completos XSD e4 verificações independentes.",
+        "349 arquivos históricos noD:conferidos nohost/Docker;camada anterior e5478 temporários preservados."
+      ],
+      "pending": [
+        "Concluir mounts somente leitura,restauração e acesso após recriação deapp/web.",
+        "Integrar136 ao comando/projetor com testes e replays,preservando contrato135.",
+        "Concluir país/moeda,efeitos judiciais,demais perfis,câmbioISS,importação e demais requisitos80."
+      ],
+      "next_step": "Terminar a aplicação dos mounts e validar todos os hashes/acessos;então integrar136 ao fluxo local.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json"
+      ],
+      "focus": {
+        "summary": "135 integral auditado:9544 testes/145778 asserções,5896 entradas intactas.136 preparado noD:com24 recusas,2DPS XSD e4 conferências independentes. Preservação de349 arquivos históricos e5478 entradas temporárias verificada;aplicação dos novos mounts/restauração em curso.4B parcial,0/8 grupos encerrados.",
+        "finished": [
+          "135:regressão9544/145778 e auditoria121 hashes aprovadas.",
+          "136 externo:24 controles de recusa,2DPS completos XSD e4 verificações independentes.",
+          "349 arquivos históricos noD:conferidos nohost/Docker;camada anterior e5478 temporários preservados."
+        ],
+        "pending": [
+          "Concluir mounts somente leitura,restauração e acesso após recriação deapp/web.",
+          "Integrar136 ao comando/projetor com testes e replays,preservando contrato135.",
+          "Concluir país/moeda,efeitos judiciais,demais perfis,câmbioISS,importação e demais requisitos80."
+        ],
+        "next_step": "Terminar a aplicação dos mounts e validar todos os hashes/acessos;então integrar136 ao fluxo local."
+      },
+      "scope_package": "136",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "TERMINAL_PASS_AUDITED",
+        "terminal_result_observed": true,
+        "finished_at": "2026-10-23T12:52:39.687242+00:00",
+        "tests": 9544,
+        "assertions": 145778
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_136_STAGED_AND_EVIDENCE_MOUNTS_APPLYING",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "RUNNING_OBSERVED",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": false
+      }
+    },
+    {
+      "updated_at": "2026-10-23T16:51:13.633549+00:00",
+      "title": "136:CLI validado;regressão integral em execução",
+      "state": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados.",
+      "criterion": "5/6 marcos (83%) somente desta entrega local136. Integral136 pendente;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Conferir e auditar integral135",
+          "complete": true
+        },
+        {
+          "title": "Capturar fontes e qualificar contrato136",
+          "complete": true
+        },
+        {
+          "title": "Validar componente136 em ensaio externo",
+          "complete": true
+        },
+        {
+          "title": "Concluir preservação e acesso de evidências noDocker",
+          "complete": true
+        },
+        {
+          "title": "Integrar136 e preservar comandos históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar integração,qualidade,auditoria e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "136:grupo próprioPIS/Cofins noXML,replay134/135 e provas explícitas deCST/retenção;doisDPS idênticos em duas execuções.",
+        "62 dirigidos/137 asserções,5906 entradas intactas;PHPStan global0/Pint678;124 hashes de runtime auditados.",
+        "349 arquivos históricos conferidos nos caminhos originais;4 mounts somente leitura e5478 temporários restaurados."
+      ],
+      "pending": [
+        "Concluir e auditar a mesma regressão integral136,sem reiniciar uma execução viva.",
+        "Concluir outros perfis de retenção,país/moeda e temporalidade,efeitos judiciais e dados municipais aplicáveis.",
+        "Concluir câmbioISS,importação,demais perfis/eventos/créditos e outros requisitos da matriz80."
+      ],
+      "next_step": "Acompanhar a mesma suíte integral136 e preparar fora do checkout a próxima lacuna funcional;auditar somente após resultado terminal.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json"
+      ],
+      "focus": {
+        "summary": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados.",
+        "finished": [
+          "136:grupo próprioPIS/Cofins noXML,replay134/135 e provas explícitas deCST/retenção;doisDPS idênticos em duas execuções.",
+          "62 dirigidos/137 asserções,5906 entradas intactas;PHPStan global0/Pint678;124 hashes de runtime auditados.",
+          "349 arquivos históricos conferidos nos caminhos originais;4 mounts somente leitura e5478 temporários restaurados."
+        ],
+        "pending": [
+          "Concluir e auditar a mesma regressão integral136,sem reiniciar uma execução viva.",
+          "Concluir outros perfis de retenção,país/moeda e temporalidade,efeitos judiciais e dados municipais aplicáveis.",
+          "Concluir câmbioISS,importação,demais perfis/eventos/créditos e outros requisitos da matriz80."
+        ],
+        "next_step": "Acompanhar a mesma suíte integral136 e preparar fora do checkout a próxima lacuna funcional;auditar somente após resultado terminal."
+      },
+      "scope_package": "136",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "RUNNING_OBSERVED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "host_docker_pid": 19336,
+        "container_name": "phase4b-own136-full-suite-v1",
+        "container_id": "772e892731cc4846980cf8a681d69cc5f17840395459d87e3157a83eb045df50",
+        "linux_host_php_pid": 89811,
+        "container_php_pid": 1,
+        "frozen_inputs": 5907,
+        "command": [
+          "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+          "compose",
+          "run",
+          "--rm",
+          "--no-deps",
+          "-T",
+          "--pull",
+          "never",
+          "--name",
+          "phase4b-own136-full-suite-v1",
+          "--volume",
+          "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/full-suite-v1/tmp:/tmp",
+          "app",
+          "php",
+          "-d",
+          "memory_limit=512M",
+          "vendor/bin/pest",
+          "--compact",
+          "--colors=never",
+          "--do-not-cache-result",
+          "--cache-directory=/tmp/phase4b-own136-full-pest-cache"
+        ],
+        "same_app_runtime_verified": true,
+        "bulk_temporary_evidence_on_D": true,
+        "phase4b_complete": false,
+        "exec_session": 47527,
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_136_FULL_SUITE_RUNNING",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      }
+    },
+    {
+      "updated_at": "2026-10-23T17:17:16.254384+00:00",
+      "title": "136:CLI validado;regressão integral em execução",
+      "state": "136 permanece em regressão integral no mesmo processo,sem resultado antecipado.137 em preparação noD::8 combinações de retenção,36 recusas e18 oráculosDecimal;divergência46,50 versus10,00 demonstrada no projetor anterior. Sem instalação137;captura originalNT007 e vínculo por documento pendentes.0/8 grupos encerrados.",
+      "criterion": "5/6 marcos (83%) somente desta entrega local136. Integral136 pendente;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Conferir e auditar integral135",
+          "complete": true
+        },
+        {
+          "title": "Capturar fontes e qualificar contrato136",
+          "complete": true
+        },
+        {
+          "title": "Validar componente136 em ensaio externo",
+          "complete": true
+        },
+        {
+          "title": "Concluir preservação e acesso de evidências noDocker",
+          "complete": true
+        },
+        {
+          "title": "Integrar136 e preservar comandos históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar integração,qualidade,auditoria e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "136:CLI real e62 testes/137 asserções;PHPStan0/Pint678 e124 hashes auditados.",
+        "137 externo:8 combinações,36 recusas e18 conferências independentes;sem alteração de débitos próprios.",
+        "Regressão integral135 e preservação/restauração de evidências anteriores concluídas."
+      ],
+      "pending": [
+        "Concluir e auditar a mesma regressão integral136,sem reiniciar uma execução viva.",
+        "Concluir outros perfis de retenção,país/moeda e temporalidade,efeitos judiciais e dados municipais aplicáveis.",
+        "Concluir câmbioISS,importação,demais perfis/eventos/créditos e outros requisitos da matriz80."
+      ],
+      "next_step": "Acompanhar a mesma regressão136;preparar vínculo documental das retenções137 noD:,preservar fonte original e integrar somente depois do aceite integral136.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md"
+      ],
+      "focus": {
+        "summary": "136 permanece em regressão integral no mesmo processo,sem resultado antecipado.137 em preparação noD::8 combinações de retenção,36 recusas e18 oráculosDecimal;divergência46,50 versus10,00 demonstrada no projetor anterior. Sem instalação137;captura originalNT007 e vínculo por documento pendentes.0/8 grupos encerrados.",
+        "finished": [
+          "136:CLI real e62 testes/137 asserções;PHPStan0/Pint678 e124 hashes auditados.",
+          "137 externo:8 combinações,36 recusas e18 conferências independentes;sem alteração de débitos próprios.",
+          "Regressão integral135 e preservação/restauração de evidências anteriores concluídas."
+        ],
+        "pending": [
+          "Concluir e auditar a mesma regressão integral136,sem reiniciar uma execução viva.",
+          "Concluir outros perfis de retenção,país/moeda e temporalidade,efeitos judiciais e dados municipais aplicáveis.",
+          "Concluir câmbioISS,importação,demais perfis/eventos/créditos e outros requisitos da matriz80."
+        ],
+        "next_step": "Acompanhar a mesma regressão136;preparar vínculo documental das retenções137 noD:,preservar fonte original e integrar somente depois do aceite integral136."
+      },
+      "scope_package": "136",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "RUNNING_OBSERVED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "host_docker_pid": 19336,
+        "container_name": "phase4b-own136-full-suite-v1",
+        "container_id": "772e892731cc4846980cf8a681d69cc5f17840395459d87e3157a83eb045df50",
+        "linux_host_php_pid": 89811,
+        "container_php_pid": 1,
+        "frozen_inputs": 5907,
+        "command": [
+          "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+          "compose",
+          "run",
+          "--rm",
+          "--no-deps",
+          "-T",
+          "--pull",
+          "never",
+          "--name",
+          "phase4b-own136-full-suite-v1",
+          "--volume",
+          "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/full-suite-v1/tmp:/tmp",
+          "app",
+          "php",
+          "-d",
+          "memory_limit=512M",
+          "vendor/bin/pest",
+          "--compact",
+          "--colors=never",
+          "--do-not-cache-result",
+          "--cache-directory=/tmp/phase4b-own136-full-pest-cache"
+        ],
+        "same_app_runtime_verified": true,
+        "bulk_temporary_evidence_on_D": true,
+        "phase4b_complete": false,
+        "exec_session": 47527,
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_136_FULL_SUITE_RUNNING",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "137",
+        "installed": false,
+        "status": "DRAFT_ARITHMETIC_VALIDATED_SOURCE_CAPTURE_AND_DOCUMENT_BINDING_PENDING",
+        "retention_combinations": 8,
+        "negative_controls": 36,
+        "independent_decimal_checks": 18,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "audit_sha256": "178378b77fcb1da21232a85f922810ffa56e0567658dd959eedba585fbfe4031",
+        "nt007_original_bytes_captured": false
+      }
+    },
+    {
+      "updated_at": "2026-10-23T17:53:57.848470+00:00",
+      "title": "136 validado; 137 em desenvolvimento documental",
+      "state": "136: regressão integral auditada, 9.569 testes/145.843 asserções, 5.907 entradas intactas e 124 hashes de runtime conferidos. 137 externo: vínculo por documento/pagamento, 42 recusas e seis documentos auditados; guarda de país do cliente em preparação. 0/8 grupos encerrados; produção bloqueada.",
+      "criterion": "6/6 marcos da entrega local136; sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Conferir e auditar integral135",
+          "complete": true
+        },
+        {
+          "title": "Capturar fontes e qualificar contrato136",
+          "complete": true
+        },
+        {
+          "title": "Validar componente136 em ensaio externo",
+          "complete": true
+        },
+        {
+          "title": "Concluir preservação e acesso de evidências noDocker",
+          "complete": true
+        },
+        {
+          "title": "Integrar136 e preservar comandos históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar integração,qualidade,auditoria e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "136: CLI, XML/XSD, regressão integral e qualidade auditados; evidências preservadas no D:.",
+        "137 externo: retenções, partes, matrizes, crédito contábil e pagamento vinculados por documento; 42 recusas.",
+        "Auditoria independente137: valores próprios preservados, seis documentos e capturas/SHA conferidos."
+      ],
+      "pending": [
+        "137: compor XML com débitos próprios/retidos e qualificar fonte NT007 antes da integração.",
+        "Corrigir em nova versão a guarda de país do cliente; qualificar demais perfis, moeda e temporalidade.",
+        "Concluir revisão individual dos 80 requisitos, efeitos judiciais, câmbioISS, importação e demais grupos."
+      ],
+      "next_step": "Compor candidato137 no D:, validar XML/RN e recusas preservando débitos próprios; qualificar proveniência antes de instalar.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json"
+      ],
+      "focus": {
+        "summary": "136: regressão integral auditada, 9.569 testes/145.843 asserções, 5.907 entradas intactas e 124 hashes de runtime conferidos. 137 externo: vínculo por documento/pagamento, 42 recusas e seis documentos auditados; guarda de país do cliente em preparação. 0/8 grupos encerrados; produção bloqueada.",
+        "finished": [
+          "136: CLI, XML/XSD, regressão integral e qualidade auditados; evidências preservadas no D:.",
+          "137 externo: retenções, partes, matrizes, crédito contábil e pagamento vinculados por documento; 42 recusas.",
+          "Auditoria independente137: valores próprios preservados, seis documentos e capturas/SHA conferidos."
+        ],
+        "pending": [
+          "137: compor XML com débitos próprios/retidos e qualificar fonte NT007 antes da integração.",
+          "Corrigir em nova versão a guarda de país do cliente; qualificar demais perfis, moeda e temporalidade.",
+          "Concluir revisão individual dos 80 requisitos, efeitos judiciais, câmbioISS, importação e demais grupos."
+        ],
+        "next_step": "Compor candidato137 no D:, validar XML/RN e recusas preservando débitos próprios; qualificar proveniência antes de instalar."
+      },
+      "scope_package": "137",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "TERMINAL_PASS_AUDITED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "finished_at": "2026-10-23T17:42:49.136851+00:00",
+        "exit_code": 0,
+        "tests": 9569,
+        "assertions": 145843,
+        "input_files": 5907,
+        "changed_inputs": [],
+        "added_inputs": [],
+        "stdout_sha256": "00f851bc123c42919d3a1b39d2ea8ef4affe0a84c60d42c022daa3585217e9fc",
+        "same_app_runtime_verified": true,
+        "temporary_evidence_on_D": true,
+        "complete": true,
+        "phase4b_complete": false,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "receipt_sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+        "terminal_result_observed": true
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_137_DOCUMENT_COMPOSITION",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "137",
+        "status": "EXTERNAL_DOCUMENT_BINDING_AUDITED_COMPOSITION_PENDING",
+        "installed": false,
+        "negative_controls": 42,
+        "scenario_documents_checked": 6,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "audit_sha256": "8e474d46983d2d1a69df7b017f6ead43dc3e68b257e4467962e101aa09e4f799",
+        "nt007_original_bytes_captured": false,
+        "eligible_for_integration": false,
+        "own_customer_country_legacy_gap_demonstrated": true
+      }
+    },
+    {
+      "updated_at": "2026-10-23T18:01:02.003772+00:00",
+      "title": "137: fonte capturada e composiçãoXML em validação",
+      "state": "137 em desenvolvimento: fonte oficialNT007 capturada e páginas4/6 conferidas; vínculo por documento auditado com42 recusas. ComposiçãoXML em execução, sem aprovação antecipada.136 integral aprovado:9.569 testes/145.843 asserções.0/8 grupos encerrados.",
+      "criterion": "2/5 marcos desta entrega local137;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Preservar e conferir fonteNT007",
+          "complete": true
+        },
+        {
+          "title": "Vincular pagamentos e reexecutar4A por documento",
+          "complete": true
+        },
+        {
+          "title": "Compor XML e validar coerência/XSD",
+          "complete": false
+        },
+        {
+          "title": "Integrar versão qualificada preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar regressão,qualidade e auditoria",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "136:regressão integral e auditoria concluídas.",
+        "137:vínculo por documento auditado com42 recusas e seis documentos.",
+        "FonteNT007:doisGET oficiais idênticos,hash e páginas4/6 conferidos."
+      ],
+      "pending": [
+        "Concluir composiçãoXML em execução e auditar seu resultado.",
+        "Qualificar nova versão com hashesNT007 e integrar;validar regressão/qualidade.",
+        "Concluir demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+      ],
+      "next_step": "Observar o mesmo ensaioXML;preparar nova política com originalNT007 preservado,sem requalificar retroativamente candidatos anteriores.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json"
+      ],
+      "focus": {
+        "summary": "137 em desenvolvimento: fonte oficialNT007 capturada e páginas4/6 conferidas; vínculo por documento auditado com42 recusas. ComposiçãoXML em execução, sem aprovação antecipada.136 integral aprovado:9.569 testes/145.843 asserções.0/8 grupos encerrados.",
+        "finished": [
+          "136:regressão integral e auditoria concluídas.",
+          "137:vínculo por documento auditado com42 recusas e seis documentos.",
+          "FonteNT007:doisGET oficiais idênticos,hash e páginas4/6 conferidos."
+        ],
+        "pending": [
+          "Concluir composiçãoXML em execução e auditar seu resultado.",
+          "Qualificar nova versão com hashesNT007 e integrar;validar regressão/qualidade.",
+          "Concluir demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+        ],
+        "next_step": "Observar o mesmo ensaioXML;preparar nova política com originalNT007 preservado,sem requalificar retroativamente candidatos anteriores."
+      },
+      "scope_package": "137",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "RUNNING_OBSERVED",
+        "scope": "EXTERNAL137_XML_COMPOSITION_NOT_FULL_SUITE",
+        "exec_session": 85541,
+        "container_php_host_pid": 6858,
+        "path": "/tmp/phase4b-composition137-native-v1",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_137_DOCUMENT_COMPOSITION",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "137",
+        "status": "EXTERNAL_DOCUMENT_BINDING_AUDITED_COMPOSITION_PENDING",
+        "installed": false,
+        "negative_controls": 42,
+        "scenario_documents_checked": 6,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "audit_sha256": "8e474d46983d2d1a69df7b017f6ead43dc3e68b257e4467962e101aa09e4f799",
+        "nt007_original_bytes_captured": true,
+        "eligible_for_integration": false,
+        "own_customer_country_legacy_gap_demonstrated": true,
+        "primary_capture": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json"
+      },
+      "last_full_validation": {
+        "status": "TERMINAL_PASS_AUDITED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "finished_at": "2026-10-23T17:42:49.136851+00:00",
+        "exit_code": 0,
+        "tests": 9569,
+        "assertions": 145843,
+        "input_files": 5907,
+        "changed_inputs": [],
+        "added_inputs": [],
+        "stdout_sha256": "00f851bc123c42919d3a1b39d2ea8ef4affe0a84c60d42c022daa3585217e9fc",
+        "same_app_runtime_verified": true,
+        "temporary_evidence_on_D": true,
+        "complete": true,
+        "phase4b_complete": false,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "receipt_sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+        "terminal_result_observed": true
+      }
+    },
+    {
+      "updated_at": "2026-10-23T18:05:23.798172+00:00",
+      "title": "137:XML auditado;fonte fixada em validação",
+      "state": "137:composição externa auditada,6 validaçõesXML/XSD,12 recusas de composição e42 de pagamento. FonteNT007 oficial preservada;versão comSHA fixado em validação.136 integral:9.569 testes/145.843 asserções.0/8 grupos encerrados.",
+      "criterion": "3/5 marcos desta entrega local137;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Preservar e conferir fonteNT007",
+          "complete": true
+        },
+        {
+          "title": "Vincular pagamentos e reexecutar4A por documento",
+          "complete": true
+        },
+        {
+          "title": "Compor XML e validar coerência/XSD",
+          "complete": true
+        },
+        {
+          "title": "Integrar versão qualificada preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar regressão,qualidade e auditoria",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "136:regressão integral auditada e124 hashes preservados.",
+        "137:XML/XSD e12 recusas de composição auditados;42 recusas de pagamento.",
+        "FonteNT007 oficial capturada,hash conferido e páginas4/6 inspecionadas."
+      ],
+      "pending": [
+        "Concluir a mesma validação da versão137 com fonte fixada.",
+        "Integrar versão qualificada,CLI e testes;validar qualidade e regressão.",
+        "Concluir demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+      ],
+      "next_step": "Conferir resultado qualificado137 e integrar classes/CLI preservando comandos históricos.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json"
+      ],
+      "focus": {
+        "summary": "137:composição externa auditada,6 validaçõesXML/XSD,12 recusas de composição e42 de pagamento. FonteNT007 oficial preservada;versão comSHA fixado em validação.136 integral:9.569 testes/145.843 asserções.0/8 grupos encerrados.",
+        "finished": [
+          "136:regressão integral auditada e124 hashes preservados.",
+          "137:XML/XSD e12 recusas de composição auditados;42 recusas de pagamento.",
+          "FonteNT007 oficial capturada,hash conferido e páginas4/6 inspecionadas."
+        ],
+        "pending": [
+          "Concluir a mesma validação da versão137 com fonte fixada.",
+          "Integrar versão qualificada,CLI e testes;validar qualidade e regressão.",
+          "Concluir demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+        ],
+        "next_step": "Conferir resultado qualificado137 e integrar classes/CLI preservando comandos históricos."
+      },
+      "scope_package": "137",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "RUNNING_OBSERVED",
+        "scope": "EXTERNAL137_QUALIFIED_SOURCE_AND_XML_NOT_FULL_SUITE",
+        "exec_session": 62526,
+        "path": "/tmp/phase4b-composition137-native-v2",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_137_DOCUMENT_COMPOSITION",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "137",
+        "status": "COMPOSITION_V1_AUDITED_QUALIFIED_V2_RUNNING",
+        "installed": false,
+        "negative_controls": 42,
+        "scenario_documents_checked": 6,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "audit_sha256": "8e474d46983d2d1a69df7b017f6ead43dc3e68b257e4467962e101aa09e4f799",
+        "nt007_original_bytes_captured": true,
+        "eligible_for_integration": false,
+        "own_customer_country_legacy_gap_demonstrated": true,
+        "primary_capture": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "composition_audit": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json"
+      },
+      "last_full_validation": {
+        "status": "TERMINAL_PASS_AUDITED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "finished_at": "2026-10-23T17:42:49.136851+00:00",
+        "exit_code": 0,
+        "tests": 9569,
+        "assertions": 145843,
+        "input_files": 5907,
+        "changed_inputs": [],
+        "added_inputs": [],
+        "stdout_sha256": "00f851bc123c42919d3a1b39d2ea8ef4affe0a84c60d42c022daa3585217e9fc",
+        "same_app_runtime_verified": true,
+        "temporary_evidence_on_D": true,
+        "complete": true,
+        "phase4b_complete": false,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "receipt_sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+        "terminal_result_observed": true
+      }
+    },
+    {
+      "updated_at": "2026-10-23T18:13:52.909933+00:00",
+      "title": "137 integrado;testes dirigidos em execução",
+      "state": "137 integrado noCLI local após auditoria externa e fonteNT007 fixada;PHPStan global0. Testes dirigidos em execução com512MB após limite padrão128MB esgotado;sem aprovação antecipada.136 integral preservado:9.569 testes/145.843 asserções.0/8 grupos encerrados.",
+      "criterion": "4/5 marcos desta entrega local137;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Preservar e conferir fonteNT007",
+          "complete": true
+        },
+        {
+          "title": "Vincular pagamentos e reexecutar4A por documento",
+          "complete": true
+        },
+        {
+          "title": "Compor XML e validar coerência/XSD",
+          "complete": true
+        },
+        {
+          "title": "Integrar versão qualificada preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar regressão,qualidade e auditoria",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "137:fontes,XML/XSD e54 recusas externas auditadas antes da integração.",
+        "137:novoCLI,guarda de país do cliente eretenções por documento integrados;PHPStan global0.",
+        "136:regressão integral auditada e124 hashes preservados."
+      ],
+      "pending": [
+        "Concluir testes dirigidos com512MB e tratar qualquer falha.",
+        "ValidarCLI nativo,qualidade,auditoria e regressão integral137.",
+        "Concluir os demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+      ],
+      "next_step": "Conferir testes dirigidos,validarCLI nativo e iniciar regressão integral137 com entradas congeladas e temporários noD:.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\integration-start-v3.json"
+      ],
+      "focus": {
+        "summary": "137 integrado noCLI local após auditoria externa e fonteNT007 fixada;PHPStan global0. Testes dirigidos em execução com512MB após limite padrão128MB esgotado;sem aprovação antecipada.136 integral preservado:9.569 testes/145.843 asserções.0/8 grupos encerrados.",
+        "finished": [
+          "137:fontes,XML/XSD e54 recusas externas auditadas antes da integração.",
+          "137:novoCLI,guarda de país do cliente eretenções por documento integrados;PHPStan global0.",
+          "136:regressão integral auditada e124 hashes preservados."
+        ],
+        "pending": [
+          "Concluir testes dirigidos com512MB e tratar qualquer falha.",
+          "ValidarCLI nativo,qualidade,auditoria e regressão integral137.",
+          "Concluir os demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+        ],
+        "next_step": "Conferir testes dirigidos,validarCLI nativo e iniciar regressão integral137 com entradas congeladas e temporários noD:."
+      },
+      "scope_package": "137",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "session": 2258,
+        "memory_limit": "512M",
+        "status": "RUNNING_OBSERVED",
+        "scope": "DIRECTED137_512M_NOT_FULL_SUITE",
+        "terminal_result_observed": false,
+        "first_attempt": {
+          "session": 92509,
+          "terminal_exit": 1,
+          "php_memory_limit": "128M",
+          "reason": "PHP_MEMORY_EXHAUSTED_BEFORE_TEST_RESULT"
+        }
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_137_INTEGRATED_DIRECTED_VALIDATION",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "137",
+        "status": "INTEGRATED_DIRECTED_RETRY_RUNNING",
+        "installed": true,
+        "negative_controls": 42,
+        "scenario_documents_checked": 6,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v2.json",
+        "audit_sha256": "8e474d46983d2d1a69df7b017f6ead43dc3e68b257e4467962e101aa09e4f799",
+        "nt007_original_bytes_captured": true,
+        "eligible_for_integration": false,
+        "own_customer_country_legacy_gap_demonstrated": true,
+        "primary_capture": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "composition_audit": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json"
+      },
+      "last_full_validation": {
+        "status": "TERMINAL_PASS_AUDITED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "finished_at": "2026-10-23T17:42:49.136851+00:00",
+        "exit_code": 0,
+        "tests": 9569,
+        "assertions": 145843,
+        "input_files": 5907,
+        "changed_inputs": [],
+        "added_inputs": [],
+        "stdout_sha256": "00f851bc123c42919d3a1b39d2ea8ef4affe0a84c60d42c022daa3585217e9fc",
+        "same_app_runtime_verified": true,
+        "temporary_evidence_on_D": true,
+        "complete": true,
+        "phase4b_complete": false,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "receipt_sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+        "terminal_result_observed": true
+      }
+    },
+    {
+      "updated_at": "2026-10-23T18:19:52.378322+00:00",
+      "title": "137:integração eCLI em validação",
+      "state": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+      "criterion": "4/5 marcos desta entrega local137;sem percentual funcional global4B.",
+      "milestones": [
+        {
+          "title": "Preservar e conferir fonteNT007",
+          "complete": true
+        },
+        {
+          "title": "Vincular pagamentos e reexecutar4A por documento",
+          "complete": true
+        },
+        {
+          "title": "Compor XML e validar coerência/XSD",
+          "complete": true
+        },
+        {
+          "title": "Integrar versão qualificada preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar regressão,qualidade e auditoria",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "137:fontes,XML/XSD e54 recusas externas auditadas antes da integração.",
+        "137:novoCLI,guarda de país do cliente eretenções por documento integrados;PHPStan global0.",
+        "136:regressão integral auditada e124 hashes preservados."
+      ],
+      "pending": [
+        "Concluir testes dirigidos com512MB e tratar qualquer falha.",
+        "ValidarCLI nativo,qualidade,auditoria e regressão integral137.",
+        "Concluir os demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+      ],
+      "next_step": "Conferir testes dirigidos,validarCLI nativo e iniciar regressão integral137 com entradas congeladas e temporários noD:.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\integration-start-v3.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\development-attempts-v3.json"
+      ],
+      "focus": {
+        "summary": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+        "finished": [
+          "137:fontes,XML/XSD e54 recusas externas auditadas antes da integração.",
+          "137:novoCLI,guarda de país do cliente eretenções por documento integrados;PHPStan global0.",
+          "136:regressão integral auditada e124 hashes preservados."
+        ],
+        "pending": [
+          "Concluir testes dirigidos com512MB e tratar qualquer falha.",
+          "ValidarCLI nativo,qualidade,auditoria e regressão integral137.",
+          "Concluir os demais requisitos originais e efeitos judiciais;0/8 grupos encerrados."
+        ],
+        "next_step": "Conferir testes dirigidos,validarCLI nativo e iniciar regressão integral137 com entradas congeladas e temporários noD:."
+      },
+      "scope_package": "137",
+      "checkpoint_publication": {
+        "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-23T09:29:47.515788-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "full_regression_accepted": false,
+        "full_suite_capture_left_running": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "RUNNING_OBSERVED",
+        "scope": "CURRENT137_AND136_DIRECTED_PLUS_NATIVE_CLI_NOT_FULL_SUITE",
+        "directed_session": 84647,
+        "native_session": 2779,
+        "native_evidence_root": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\integrated-native-v3",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "ACTIVE_137_DIRECTED_AND_NATIVE_CLI",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "137",
+        "status": "CURRENT_POLICY_V6_INTEGRATED_VALIDATION_RUNNING",
+        "installed": true,
+        "negative_controls": 42,
+        "scenario_documents_checked": 6,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v2.json",
+        "audit_sha256": "8e474d46983d2d1a69df7b017f6ead43dc3e68b257e4467962e101aa09e4f799",
+        "nt007_original_bytes_captured": true,
+        "eligible_for_integration": false,
+        "own_customer_country_legacy_gap_demonstrated": true,
+        "primary_capture": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "composition_audit": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json"
+      },
+      "last_full_validation": {
+        "status": "TERMINAL_PASS_AUDITED",
+        "started_at": "2026-10-23T16:49:25.340281+00:00",
+        "finished_at": "2026-10-23T17:42:49.136851+00:00",
+        "exit_code": 0,
+        "tests": 9569,
+        "assertions": 145843,
+        "input_files": 5907,
+        "changed_inputs": [],
+        "added_inputs": [],
+        "stdout_sha256": "00f851bc123c42919d3a1b39d2ea8ef4affe0a84c60d42c022daa3585217e9fc",
+        "same_app_runtime_verified": true,
+        "temporary_evidence_on_D": true,
+        "complete": true,
+        "phase4b_complete": false,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "receipt_sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+        "terminal_result_observed": true
+      }
     }
   ],
   "focus": {
-    "summary": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+    "summary": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
     "finished": [
-      "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
-      "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
-      "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+      "137:integraçãoCLI,41 testes/118 asserções equalidade aprovados;130 hashes auditados.",
+      "137:quatroXML nativos idênticos,conteúdo não federal preservado eentrada recusada sem saída.",
+      "136:regressão integral auditada;NT007 e evidências volumosas preservadas noD:."
     ],
     "pending": [
-      "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
-      "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
-      "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+      "Regressão integral137 não iniciada por pedido de parada.",
+      "Completar outros perfis de partes/pagamentos,moeda eeventos;efeitos judiciais eobrigações integrais.",
+      "Concluir os demais80 requisitos originais eaceites por grupo;produção permanece bloqueada."
     ],
-    "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida."
+    "next_step": "Após autorização de retomada,executar captura integral137 preparada em scripts/capture_phase4b_retention137_full_suite.py e auditar o resultado."
   },
-  "scope_package": "135",
+  "scope_package": "137",
   "checkpoint_publication": {
-    "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+    "status": "PREPARED_NOT_YET_PUSHED",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-23T09:29:47.515788-03:00",
-    "push_confirmed": true,
     "development_stopped_by_user": true,
-    "full_regression_accepted": false,
-    "full_suite_capture_left_running": true,
+    "full137_started": false,
     "phase4b_complete": false
   },
-  "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
-  "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
-  "uncommitted_development": false,
+  "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+  "scope_note": "4/5 marcos locais137;integral pendente. Última integral136 aprovada;aceite histórico122 preservado.",
+  "uncommitted_development": true,
   "active_validation": {
-    "started_at": "2026-10-23T12:03:18.023213+00:00",
-    "host_docker_pid": 3572,
-    "container_php_pid": 1481,
-    "exec_session": 63024,
-    "frozen_inputs": 5896,
-    "script_helpers_included": true,
-    "status": "RUNNING_OBSERVED",
-    "terminal_result_observed": false
+    "status": "NONE_RUNNING",
+    "terminal_result_observed": true,
+    "scoped_receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json",
+    "full137_started": false
   },
-  "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
-  "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
-  "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
+  "stop_requested_at": "2026-10-23T18:26:42.172423+00:00",
+  "development_state": "STOPPED_BY_USER_SCOPED137_VALIDATED_FULL_PENDING",
+  "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
+  "active_maintenance": {
+    "process_session": 94599,
+    "status": "TERMINAL_PASS",
+    "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+    "copied_historical_files": 349,
+    "temporary_entries_preserved": 5478,
+    "applied_mounts_verified": true,
+    "receipt": "storage/app/evidence-storage-index-20261023.json"
+  },
+  "parallel_preparation": {
+    "package": "137",
+    "status": "SCOPED_INTEGRATED137_VALIDATED_FULL_PENDING_STOPPED",
+    "installed": true,
+    "negative_controls": 42,
+    "scenario_documents_checked": 6,
+    "audit_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json",
+    "audit_sha256": "2c5f1c7013451ddd7522bf3fd8b90964a70857ced1418e1023ef47c190ef6398",
+    "nt007_original_bytes_captured": true,
+    "eligible_for_integration": false,
+    "own_customer_country_legacy_gap_demonstrated": true,
+    "primary_capture": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+    "composition_audit": "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json"
+  },
+  "last_full_validation": {
+    "status": "TERMINAL_PASS_AUDITED",
+    "started_at": "2026-10-23T16:49:25.340281+00:00",
+    "finished_at": "2026-10-23T17:42:49.136851+00:00",
+    "exit_code": 0,
+    "tests": 9569,
+    "assertions": 145843,
+    "input_files": 5907,
+    "changed_inputs": [],
+    "added_inputs": [],
+    "stdout_sha256": "00f851bc123c42919d3a1b39d2ea8ef4affe0a84c60d42c022daa3585217e9fc",
+    "same_app_runtime_verified": true,
+    "temporary_evidence_on_D": true,
+    "complete": true,
+    "phase4b_complete": false,
+    "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+    "receipt_sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+    "terminal_result_observed": true
+  }
 }

@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-10-23T09:29:47.515788-03:00",
+  "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
-  "criterion": "135:checkpoint dirigido203/498,PHPStan0/Pint673;integral pendente.134 última regressão integral histórica;122 aceite histórico;80 revisões próprias,0/8 grupos encerrados.",
+  "criterion": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
   "objectives": [
     {
       "id": "4B.1",
@@ -35,14 +35,16 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
         "docs/fiscal/phase4b-schedule131-primary-act.md",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.2",
@@ -70,14 +72,16 @@
         "phase4b-sp97-municipal-result-preparation.md",
         "phase4b-sp98-current-integration.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
         "docs/fiscal/phase4b-import129-responsibility.md",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.3",
@@ -101,14 +105,16 @@
         "phase4b-requirements114-temporal-review.md",
         "phase4b-simples78-local-integration.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
         "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/phpstan-v1/execution.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.4",
@@ -119,7 +125,8 @@
         "122 aceito localmente:124 preços no corpus ampliado185 cenários/370 decisões e replays;tipos/evidências/linhas119 preservados.71 composições/11 fontesUSD,eventos literais e regressão9061 aprovados;sem concluir base/impostoISS.",
         "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
         "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
-        "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas."
+        "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
+        "136:base,alíquotas,débitos eCST próprios noXML por documento,com cálculo fresco e confronto com ponte135;perfil explicitamente não retido."
       ],
       "pending": [
         "Comprovar autenticidade e materialidade das evidências; guardas e replays não encerram base/cálculo.",
@@ -141,13 +148,19 @@
         "phase4b-iss-fx109-source-scope-review.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json"
       ]
     },
     {
@@ -171,11 +184,13 @@
         "phase4b-supplier-credit-period.md",
         "phase4b-cooperative-network-credit-transfer.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ]
     },
     {
@@ -184,7 +199,8 @@
         "125 examinou os dez IDs de catálogos,com12566 conferências;4421 verificam materialização39cIndOp/173classes/18CST/1208NBS/200correlações.",
         "Seis recapturas oficiais21/10:cClass1.70 igual à fonte preservada;cIndOp1.03.00 comparado nas312 células compartilhadas,sem ativação.",
         "98 regrasENGINE separadas de correlaçãoOFFICIAL sem autoridade;classificação122 positiva vinculada à regra atual.80/80 IDs examinados,não aprovados.",
-        "126:40 códigosRTC1.03.00 e26 do AnexoC preservados separadamente;seleção local explícita,tipos,fontes e limites temporais validados,sem ativação oficial presumida."
+        "126:40 códigosRTC1.03.00 e26 do AnexoC preservados separadamente;seleção local explícita,tipos,fontes e limites temporais validados,sem ativação oficial presumida.",
+        "136:quatro tabelasSPED capturadas com bytes/hash/observação;seleçãoCST explícita por tratamento próprio,sem inferência pelo papelRTC."
       ],
       "pending": [
         "Qualificar vigência e seleção dos ambientes oficiais;resolver divergências entreRTC1.03.00 eAnexoC sem fundir tabelas.126 usa referência local;122 preserva1.02.00.",
@@ -210,15 +226,17 @@
         "phase4b-catalog101-current-integration.md",
         "phase4b-catalog101-original-scope-review.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "storage/app/phase4b-dps127-development-20261022/dps127-scoped-validation.json",
         "docs/fiscal/phase4b-dps127-current-restricted-projection.md",
         "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/native-v3/validation.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.7",
@@ -239,12 +257,13 @@
         "Recibo auditado242 conferências/108 hashes;80 revisões preservadas e0/8 grupos encerrados.",
         "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
         "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
-        "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas."
+        "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
+        "136:doisDPS completos XSD com grupo federal próprio e mesma identidade/COMEX/demais nós135;comando anterior preservado."
       ],
       "pending": [
-        "Concluir demais campos/perfisNT009,ajustes,documentos separados da exportação parcial e documento definitivo da importação. As três projeções regulares127 já têm validação XSD local.",
-        "Concluir identidade/cadastro local,unicidade,câmbio e parDPS completo;valoresISS próprios já estão integrados e projetados em fragmentos134.",
-        "Concluir ciclo de cancelamento/substituição, demais perfis e dependênciaD1021, sem assinatura/transmissão ao vivo."
+        "Concluir demais campos/perfisNT009,ajustes,país/moeda e temporalidade,dados municipais quando exigidos e documento definitivo da importação.",
+        "136 projeta o parBRL com identidade/COMEX/ISS/contribuições próprias no perfil não retido;concluir outros perfis de retenção,cadastro/câmbioISS e efeitos judiciais aplicáveis.",
+        "Concluir ciclo de cancelamento/substituição,demais perfis e dependênciaD1021,sem assinatura/transmissão ao vivo."
       ],
       "evidence": [
         "phase4b-requirements123-document-review.md",
@@ -270,14 +289,20 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json"
       ],
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.8",
@@ -339,14 +364,20 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
-      "current_work": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada. Entregas e pendências próprias deste grupo preservadas nos campos finished/pending.",
+      "reviewed_at": "2026-10-23T18:26:42.172423+00:00",
+      "current_work": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada. Entregas ependências próprias do grupo preservadas.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json"
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json"
       ],
-      "current_package_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
     }
   ],
   "reviewed_acceptance": "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json",
@@ -7403,28 +7434,472 @@
         "development_stopped_by_user": true,
         "phase4b_complete": false
       }
+    },
+    {
+      "reviewed_at": "2026-10-23T09:29:47.515788-03:00",
+      "current_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-23T12:48:09.183500+00:00",
+      "current_review": "Retomada expressamente autorizada pelo usuário. Regressão integral135 confirmada viva no mesmo processo;resultado terminal pendente. Preparação136 noD:para campos própriosPIS/Cofins noXML,sem modificar entradas congeladas.4B parcial,0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T12:55:14.169871+00:00",
+      "current_review": "135 validado localmente por regressão integral:9544 testes/145778 asserções,exit0,5896 entradas intactas e121 hashes de runtime auditados. Preparação136 do grupo federal próprio em curso;4B parcial,0/8 grupos encerrados,produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-23T16:18:40.004425+00:00",
+      "current_review": "135 integral auditado:9544 testes/145778 asserções,5896 entradas intactas.136 preparado noD:com24 recusas,2DPS XSD e4 conferências independentes. Preservação de349 arquivos históricos e5478 entradas temporárias verificada;aplicação dos novos mounts/restauração em curso.4B parcial,0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T16:51:13.633549+00:00",
+      "current_review": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T17:17:16.254384+00:00",
+      "current_review": "136 permanece em regressão integral no mesmo processo,sem resultado antecipado.137 em preparação noD::8 combinações de retenção,36 recusas e18 oráculosDecimal;divergência46,50 versus10,00 demonstrada no projetor anterior. Sem instalação137;captura originalNT007 e vínculo por documento pendentes.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T17:53:57.848470+00:00",
+      "current_review": "136: regressão integral auditada, 9.569 testes/145.843 asserções, 5.907 entradas intactas e 124 hashes de runtime conferidos. 137 externo: vínculo por documento/pagamento, 42 recusas e seis documentos auditados; guarda de país do cliente em preparação. 0/8 grupos encerrados; produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-23T18:01:02.003772+00:00",
+      "current_review": "137 em desenvolvimento: fonte oficialNT007 capturada e páginas4/6 conferidas; vínculo por documento auditado com42 recusas. ComposiçãoXML em execução, sem aprovação antecipada.136 integral aprovado:9.569 testes/145.843 asserções.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T18:05:23.798172+00:00",
+      "current_review": "137:composição externa auditada,6 validaçõesXML/XSD,12 recusas de composição e42 de pagamento. FonteNT007 oficial preservada;versão comSHA fixado em validação.136 integral:9.569 testes/145.843 asserções.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T18:13:52.909933+00:00",
+      "current_review": "137 integrado noCLI local após auditoria externa e fonteNT007 fixada;PHPStan global0. Testes dirigidos em execução com512MB após limite padrão128MB esgotado;sem aprovação antecipada.136 integral preservado:9.569 testes/145.843 asserções.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+      "snapshot": {
+        "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+        "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
+        "criterion": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados.",
+        "objectives": [
+          {
+            "id": "4B.1",
+            "finished": [
+              "Seleção temporal e bloqueio de versões indisponíveis;IBS estadual/municipal eCBS segregados.",
+              "Antecipações88/91 e documentos108 aceitos localmente;datasISS próprias preservadas,sem reescreverRTC.",
+              "Oito requisitos temporais examinados; correções split 114 e recusas temporais 116 preservadas na regressão integral 119 aprovada.",
+              "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados."
+            ],
+            "pending": [
+              "Qualificar materialidade, datas e regimes restantes, preservando os eventos e as recusas temporais já aceitos.",
+              "Concluir demais espécies temporais, taxas futuras e transição2032/2033."
+            ],
+            "evidence": [
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-geographic116-price-expansion.md",
+              "phase4b-requirements114-temporal-review.md",
+              "phase4b-price112-current-integration.md",
+              "phase4b-iss-price111-local-component.md",
+              "phase4b-temporal86-local-integration.md",
+              "phase4b-advance88-local-integration.md",
+              "phase4b-advance89-record-binding-preparation.md",
+              "phase4b-advance90-captured-final-preparation.md",
+              "phase4b-advance91-local-integration.md",
+              "phase4b-iss-date105-source-scope-review.md",
+              "phase4b-iss-date105-municipal-supplement.md",
+              "phase4b-iss-date105-material-contract-draft.md",
+              "phase4b-iss-date105-local-component.md",
+              "phase4b-iss-date106-result-composition.md",
+              "phase4b-identity107-dated-preparation.md",
+              "phase4b-dated108-current-integration.md",
+              "phase4b-price110-local-component.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_work": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados. Entregas e pendências próprias deste grupo preservadas.",
+            "current_work_evidence": [
+              "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
+              "docs/fiscal/phase4b-schedule131-primary-act.md",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+            ],
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados."
+          },
+          {
+            "id": "4B.2",
+            "finished": [
+              "12 itens originais de incidência/local examinados, com razõesRTC/ISS preservadas por ramo.",
+              "Coerência município/UF 116 incorporada ao aceite 119; corpus 370/370 e 1.071 históricos, sem presumir domicílio ou validade histórica.",
+              "ConversãoRTC73 e resultadosISS96/98 preservados; a referência geográfica não prova domicílio ou validade histórica.",
+              "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores."
+            ],
+            "pending": [
+              "Qualificar materialidade e local fiscal histórico além da referência geográfica auxiliar.",
+              "Concluir obrigação documental da importação/exportação parcial, demais locais especiais e operações não onerosas.",
+              "Qualificar conversão e bases ISS por documento, sem substituir essas provas pela parcela ou cotação RTC.",
+              "Comprovar origem material das demais moedas e regras de conversão cruzada."
+            ],
+            "evidence": [
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-geographic116-price-expansion.md",
+              "phase4b-geographic116-current-integration.md",
+              "phase4b-requirements115-incidence-review.md",
+              "phase4b-export73-resumption-and-schema74.md",
+              "phase4b-import-fx68-integration-progress.md",
+              "phase4b-iss-export95-preparation.md",
+              "phase4b-export-iss96-live-integration.md",
+              "phase4b-sp97-municipal-result-preparation.md",
+              "phase4b-sp98-current-integration.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_work": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados. Entregas e pendências próprias deste grupo preservadas.",
+            "current_work_evidence": [
+              "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
+              "docs/fiscal/phase4b-import129-responsibility.md",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+            ],
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados."
+          },
+          {
+            "id": "4B.3",
+            "finished": [
+              "117 examinou os dez itens de sujeitos:40 cenários/78 avaliações nativas,uma recusa tipada e186 conferências;88 hashes116 intactos.",
+              "Papéis,importador,plataformas e guardas públicas/split observados;pagador elegível separado da extinção.",
+              "119 aceita: referências vinculadas ao método ordinário; inconsistências 117 recusadas nos dois executores, sem comprovar pagamento ou extinção.",
+              "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores.",
+              "130:candidato local pelo tomador,com fornecedor estrangeiro/COMEX/NBS,consumindo o snapshot129 real replayado;sem promover resultado fiscal não final.",
+              "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados."
+            ],
+            "pending": [
+              "Concluir split, liquidação, responsabilidades gerais e opções das plataformas, além das referências já qualificadas.",
+              "Concluir públicos/consórcios,Simples/MEI e demais perfis,com cadastro,documentos e parâmetros qualificados."
+            ],
+            "evidence": [
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-material119-corpus-progress.md",
+              "phase4b-material-input119-targeted.md",
+              "phase4b-requirements117-subjects-review.md",
+              "phase4b-requirements114-temporal-review.md",
+              "phase4b-simples78-local-integration.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_work": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados. Entregas e pendências próprias deste grupo preservadas.",
+            "current_work_evidence": [
+              "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
+              "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/phpstan-v1/execution.json",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+            ],
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados."
+          },
+          {
+            "id": "4B.4",
+            "finished": [
+              "118 examinou os14 itens de base:34 cenários/68 chamadas,66 decisões e duas exceções;417 checks/180 Decimal e88 hashes intactos.",
+              "116 preservou preços e memória nominal nos124 cenários;71 composições locais positivas,sem base/impostoISS aprovados.",
+              "119 aceita: recusa tipos/evidências inválidos e linhas ambíguas; novos snapshots preservam 1.0, com 28 regressões de fidelidade e corpus auditado.",
+              "122 aceito localmente:124 preços no corpus ampliado185 cenários/370 decisões e replays;tipos/evidências/linhas119 preservados.71 composições/11 fontesUSD,eventos literais e regressão9061 aprovados;sem concluir base/impostoISS.",
+              "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
+              "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
+              "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
+              "136:base,alíquotas,débitos eCST próprios noXML por documento,com cálculo fresco e confronto com ponte135;perfil explicitamente não retido."
+            ],
+            "pending": [
+              "Comprovar autenticidade e materialidade das evidências; guardas e replays não encerram base/cálculo.",
+              "Concluir câmbioISS/importação e demais perfis de base/imposto,benefícios/reduções e operações combinadas. O perfilBRL133 já foi integrado em134.",
+              "Qualificar liquidação,documentos e parâmetros restantes;aritmética correta não aprova prova material."
+            ],
+            "evidence": [
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-material119-corpus-progress.md",
+              "phase4b-material-input119-targeted.md",
+              "phase4b-requirements118-base-review.md",
+              "phase4b-material-input119-plan.md",
+              "phase4b-geographic116-price-expansion.md",
+              "phase4b-iss-base113-boundary-contract.md",
+              "phase4b-price112-current-integration.md",
+              "phase4b-iss-price111-local-component.md",
+              "phase4b-financial-scope-integration.md",
+              "phase4b-temporal86-local-integration.md",
+              "phase4b-iss-fx109-source-scope-review.md",
+              "phase4b-price110-local-component.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+            "current_work": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+            "current_work_evidence": [
+              "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+              "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+              "docs/fiscal/phase4b-retention137-staged-review.md",
+              "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+              "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json"
+            ]
+          },
+          {
+            "id": "4B.5",
+            "finished": [
+              "122 aceito localmente:contratos e perguntas qualificados,180 decisões/replays de créditos,550 atuais com ampliados e1441 históricos exatos;regressão9061/143868. Valores/status/razões anteriores preservados no comparador.",
+              "120:dez requisitos examinados em74 cenários/148 chamadas;142 decisões e seis exceções preservadas.507 checks/180 Decimal.",
+              "Crédito de entrada,anulação do fornecedor e apuração mensal segregados;ALLOWED,DENIED,CONDITIONAL eNOT_ASSESSED distintos.",
+              "Importação com ponte sintética explícita alcança guardas e créditos1.00/9.00;documento definitivo permanece pendente."
+            ],
+            "pending": [
+              "Concluir apropriação,estorno/glosa e ciclos materiais por perfil. Contratos estruturais/perguntas122 preservados na retomada22/10.",
+              "Concluir apropriação,estorno/glosa,créditos presumidos/específicos e demais provas materiais.",
+              "Demonstrar transferência,extinção e apropriação efetivas quando exigidas;livro pré-qualificado e proposta local não as comprovam."
+            ],
+            "evidence": [
+              "phase4b-credit122-progress.md",
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-requirements120-credit-review.md",
+              "phase4b-input-credit-treatments.md",
+              "phase4b-supplier-credit-period.md",
+              "phase4b-cooperative-network-credit-transfer.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+            "current_work": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados. Entregas e pendências próprias deste grupo preservadas.",
+            "current_work_evidence": [
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+            ]
+          },
+          {
+            "id": "4B.6",
+            "finished": [
+              "125 examinou os dez IDs de catálogos,com12566 conferências;4421 verificam materialização39cIndOp/173classes/18CST/1208NBS/200correlações.",
+              "Seis recapturas oficiais21/10:cClass1.70 igual à fonte preservada;cIndOp1.03.00 comparado nas312 células compartilhadas,sem ativação.",
+              "98 regrasENGINE separadas de correlaçãoOFFICIAL sem autoridade;classificação122 positiva vinculada à regra atual.80/80 IDs examinados,não aprovados.",
+              "126:40 códigosRTC1.03.00 e26 do AnexoC preservados separadamente;seleção local explícita,tipos,fontes e limites temporais validados,sem ativação oficial presumida.",
+              "136:quatro tabelasSPED capturadas com bytes/hash/observação;seleçãoCST explícita por tratamento próprio,sem inferência pelo papelRTC."
+            ],
+            "pending": [
+              "Qualificar vigência e seleção dos ambientes oficiais;resolver divergências entreRTC1.03.00 eAnexoC sem fundir tabelas.126 usa referência local;122 preserva1.02.00.",
+              "Concluir perfis autônomos/doação,indicadores documentais e subitem/código municipal com cadeias temporais qualificadas.",
+              "Concluir validação material/jurídica e mapeamentos por família;exame80/80 não encerra catálogo,grupos ou produção."
+            ],
+            "evidence": [
+              "phase4b-requirements125-catalog-review.md",
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-catalog121-research-checkpoint.md",
+              "phase4b-material-input119-targeted.md",
+              "phase4b-requirements117-subjects-review.md",
+              "phase4b-geographic116-price-expansion.md",
+              "phase4b-geographic116-current-integration.md",
+              "phase4b-requirements115-incidence-review.md",
+              "phase4b-iss-base113-boundary-contract.md",
+              "phase4b-iss-base113-primary-intake.md",
+              "phase4b-price112-current-integration.md",
+              "phase4b-iss-price111-local-component.md",
+              "phase4b-status.md",
+              "phase4b-catalog99-current-primary-preparation.md",
+              "phase4b-catalog100-reference-preparation.md",
+              "phase4b-catalog101-current-integration.md",
+              "phase4b-catalog101-original-scope-review.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_work": "136 integrado:CLI real produz doisDPS XSD com contribuições próprias;62 testes/137 asserções,PHPStan0/Pint678 e124 hashes auditados. Integral136 em execução com5907 entradas congeladas e temporários noD:.135 permanece a última regressão integral aprovada.4B parcial,0/8 grupos encerrados. Entregas e pendências próprias deste grupo preservadas.",
+            "current_work_evidence": [
+              "storage/app/phase4b-dps127-development-20261022/dps127-scoped-validation.json",
+              "docs/fiscal/phase4b-dps127-current-restricted-projection.md",
+              "D:/ProjetoSaasExports/phase4b-dps127-20261022-v1/native-v3/validation.json",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+            ],
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados."
+          },
+          {
+            "id": "4B.7",
+            "finished": [
+              "123 examinou os quatro requisitos documentais:manual originalK: igual à cópia oficial,seis páginas lidas/renderizadas.",
+              "No bundle122,três rotas integradas geraram seisXML locais XSD-válidos e determinísticos;produção recusada nas três rotas,sem assinatura/transmissão.",
+              "106 declarações de schema em três identidades explícitas de versão/hash;raízes e dependências fechadas verificadas. Consulta de manual/versionamento comprovados no escopo,não fechamento documental.",
+              "127:seisXML locais determinísticos/XSD-válidos no arquivo observado20/10,em três perfis;finNFSe,CST/cClassTrib e ordemcNBS versionados,sem assinatura/transmissão.",
+              "128:adquirente estrangeiro/destinatárioBR com NIF ou ausência justificada eCOMEX projetados noXSD atual;12 XML válidos/determinísticos com controles domésticos.",
+              "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores.",
+              "130:candidato local pelo tomador,com fornecedor estrangeiro/COMEX/NBS,consumindo o snapshot129 real replayado;sem promover resultado fiscal não final.",
+              "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados.",
+              "Conferência declarada por fatura/linha,moedaBRL e hash do arquivo integrada ao candidato.",
+              "57 testes/206 asserções;PHPStan0/Pint643;XML determinístico e19 replays exatos.",
+              "242 conferências de auditoria e80 revisões preservadas;0/8 grupos encerrados.",
+              "Reconciliação declarada por fatura/linha com hash dos bytes integrada ao candidato130.",
+              "57 testes/206 asserções;PHPStan0/Pint643;doisXML idênticos e19 replays históricos exatos.",
+              "Recibo auditado242 conferências/108 hashes;80 revisões preservadas e0/8 grupos encerrados.",
+              "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
+              "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
+              "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
+              "136:doisDPS completos XSD com grupo federal próprio e mesma identidade/COMEX/demais nós135;comando anterior preservado."
+            ],
+            "pending": [
+              "Concluir demais campos/perfisNT009,ajustes,país/moeda e temporalidade,dados municipais quando exigidos e documento definitivo da importação.",
+              "136 projeta o parBRL com identidade/COMEX/ISS/contribuições próprias no perfil não retido;concluir outros perfis de retenção,cadastro/câmbioISS e efeitos judiciais aplicáveis.",
+              "Concluir ciclo de cancelamento/substituição,demais perfis e dependênciaD1021,sem assinatura/transmissão ao vivo."
+            ],
+            "evidence": [
+              "phase4b-requirements123-document-review.md",
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-geographic116-price-expansion.md",
+              "phase4b-price112-current-integration.md",
+              "phase4b-iss-price111-local-component.md",
+              "phase4b-export73-resumption-and-schema74.md",
+              "phase4b-foreign-acquirer76-local-integration.md",
+              "phase4b-dere9121-63-contextual-period-integration.md",
+              "phase4b-document92-fresh-research.md",
+              "phase4b-document94-base-memory.md",
+              "phase4b-export-iss96-live-integration.md",
+              "phase4b-identity102-primary-research.md",
+              "phase4b-identity103-local-preparation.md",
+              "phase4b-identity104-current-integration.md",
+              "phase4b-iss-date105-source-scope-review.md",
+              "phase4b-iss-date105-municipal-supplement.md",
+              "phase4b-iss-date105-material-contract-draft.md",
+              "phase4b-iss-date105-local-component.md",
+              "phase4b-iss-date106-result-composition.md",
+              "phase4b-identity107-dated-preparation.md",
+              "phase4b-dated108-current-integration.md",
+              "phase4b-price110-local-component.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_work": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+            "current_work_evidence": [
+              "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+              "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+              "docs/fiscal/phase4b-retention137-staged-review.md",
+              "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+              "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json"
+            ],
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados."
+          },
+          {
+            "id": "4B.8",
+            "finished": [
+              "122:suíte9061/143868,550 decisões/replays próprios,1441 históricos exatos;94 hashes/7396 entradas da regressão intactos,PHPStan0/Pint606 e auditoria17333.",
+              "119: suíte integral aprovada, 8.614 testes/133.926 verificações, 24.800 arquivos congelados sem mudanças e 92 hashes de runtime conferidos.",
+              "370 decisões/replays próprios, 1.071 históricos e 40.140 conferências independentes de corpus; PHPStan sem erros e Pint 597 aprovados.",
+              "80 IDs examinados;matriz reúne revisões próprias e17 correções locais posteriores. Não são80 aprovações;nenhum grupo formalmente encerrado.",
+              "127:305 testes/1310 verificações dirigidas,PHPStan0/Pint617,12 decisões/replays comparativos,seisXML válidos e12 históricos122 exatos;sem nova regressão integral.",
+              "128:adquirente estrangeiro/destinatárioBR com NIF ou ausência justificada eCOMEX projetados noXSD atual;12 XML válidos/determinísticos com controles domésticos.",
+              "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores.",
+              "130:candidato local pelo tomador,com fornecedor estrangeiro/COMEX/NBS,consumindo o snapshot129 real replayado;sem promover resultado fiscal não final.",
+              "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados.",
+              "Conferência declarada por fatura/linha,moedaBRL e hash do arquivo integrada ao candidato.",
+              "57 testes/206 asserções;PHPStan0/Pint643;XML determinístico e19 replays exatos.",
+              "242 conferências de auditoria e80 revisões preservadas;0/8 grupos encerrados.",
+              "Reconciliação declarada por fatura/linha com hash dos bytes integrada ao candidato130.",
+              "57 testes/206 asserções;PHPStan0/Pint643;doisXML idênticos e19 replays históricos exatos.",
+              "Recibo auditado242 conferências/108 hashes;80 revisões preservadas e0/8 grupos encerrados.",
+              "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
+              "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
+              "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas."
+            ],
+            "pending": [
+              "Desenvolvimento retomado22/10:fechar lacunas funcionais atuais da matriz80,com aceite próprio por corte e preservação do checkpoint122.",
+              "Completar corpus positivo e matriz de propriedades/invariantes por família/período.",
+              "Comprovar registro/consumo e liquidação documental nos escopos restantes; contagem de testes não substitui aceitação funcional."
+            ],
+            "evidence": [
+              "phase4b-day-closure-20261021.md",
+              "phase4b-original80-current-matrix.md",
+              "phase4b-requirements125-catalog-review.md",
+              "phase4b-requirements124-acceptance-review.md",
+              "phase4b-credit122-progress.md",
+              "phase4b-material119-day-closure-20261020.md",
+              "phase4b-material119-corpus-progress.md",
+              "phase4b-material119-corpus-progress.md",
+              "phase4b-material-input119-targeted.md",
+              "phase4b-requirements118-base-review.md",
+              "phase4b-material-input119-plan.md",
+              "phase4b-requirements117-subjects-review.md",
+              "phase4b-geographic116-price-expansion.md",
+              "phase4b-geographic116-current-integration.md",
+              "phase4b-requirements115-incidence-review.md",
+              "phase4b-requirements114-temporal-review.md",
+              "phase4b-price112-current-integration.md",
+              "phase4b-iss-price111-local-component.md",
+              "phase4b-advance88-local-integration.md",
+              "phase4b-original-requirements72-partial-export73.md",
+              "phase4b-advance89-record-binding-preparation.md",
+              "phase4b-advance90-captured-final-preparation.md",
+              "phase4b-advance91-local-integration.md",
+              "phase4b-acceptance93-artifact-review.md",
+              "phase4b-document94-base-memory.md",
+              "phase4b-export-iss96-live-integration.md",
+              "phase4b-sp98-current-integration.md",
+              "phase4b-iss-date106-result-composition.md",
+              "phase4b-identity107-dated-preparation.md",
+              "phase4b-dated108-current-integration.md",
+              "phase4b-price110-local-component.md"
+            ],
+            "reviewed_at": "2026-10-23T18:19:52.378322+00:00",
+            "current_work": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+            "current_work_evidence": [
+              "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+              "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+              "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+              "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+              "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+              "docs/fiscal/phase4b-retention137-staged-review.md",
+              "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+              "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json"
+            ],
+            "current_package_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados."
+          }
+        ],
+        "reviewed_acceptance": "storage/app/phase4b-credit122-development-20261021/credit122-development-validation.json",
+        "current_review": "137 integrado:novoCLI e política de pagamentoV6 com perfil material explícito. Testes conjuntos137/136 eCLI real repetido em execução;sem aprovação antecipada. FonteNT007 preservada;última integral136 aprovada com9.569 testes.0/8 grupos encerrados.",
+        "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
+        "scope_package": "136",
+        "current_requirements_matrix": {
+          "path": "storage/app/phase4b-own136-development-20261023/requirements80-full-matrix.json",
+          "sha256": "be47eec4dbe3fa6922a59e010b27accf781de6803b0df97d56d844019d6e0f4d"
+        },
+        "updated_at": "2026-10-23T18:19:52.378322+00:00",
+        "checkpoint_publication": {
+          "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+          "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+          "branch": "codex/fiscal-engine-bootstrap",
+          "published_at": "2026-10-23T09:29:47.515788-03:00",
+          "push_confirmed": true,
+          "development_stopped_by_user": true,
+          "full_regression_accepted": false,
+          "full_suite_capture_left_running": true,
+          "phase4b_complete": false
+        },
+        "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+        "development_state": "ACTIVE_137_INTEGRATED_DIRECTED_VALIDATION",
+        "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+        "uncommitted_development": true
+      }
     }
   ],
-  "current_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+  "current_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
   "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
-  "scope_package": "135",
+  "scope_package": "137",
   "current_requirements_matrix": {
-    "path": "storage/app/phase4b-pair135-development-20261023/requirements80-directed-matrix.json",
-    "sha256": "e2b649360ffff83f594dd14a611cc431e2ffc07b7191a3d015fdae01fedef3fd"
+    "path": "storage/app/phase4b-retention137-development-20261023/requirements80-current-matrix.json",
+    "sha256": "b092de16a4704c17eedd602e8858446876daed74183d9d2ae8dbc412a118cbc1"
   },
-  "updated_at": "2026-10-23T09:29:47.515788-03:00",
+  "updated_at": "2026-10-23T18:26:42.172423+00:00",
   "checkpoint_publication": {
-    "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
+    "status": "PREPARED_NOT_YET_PUSHED",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-23T09:29:47.515788-03:00",
-    "push_confirmed": true,
     "development_stopped_by_user": true,
-    "full_regression_accepted": false,
-    "full_suite_capture_left_running": true,
+    "full137_started": false,
     "phase4b_complete": false
   },
-  "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
-  "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
-  "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
+  "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
+  "development_state": "STOPPED_BY_USER_SCOPED137_VALIDATED_FULL_PENDING",
+  "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
+  "uncommitted_development": true
 }
