@@ -15,12 +15,30 @@ require_once __DIR__.'/build_phase4b_price112_scenarios.php';
 /** Reissue only explicit synthetic mapping claims; preserve historical fixtures and business evidence.
  * @return array<string, mixed>
  */
-function phase4bIss133Fixture(string $seed = '000-no-adjustments-gross-before-all-discounts', ?string $amount = null, bool $reverseResults = false, string $knowledgeAt = '2026-10-22T18:20:00.000000+00:00'): array
+function phase4bIss133Fixture(string $seed = '000-no-adjustments-gross-before-all-discounts', ?string $amount = null, bool $reverseResults = false, string $knowledgeAt = '2026-10-22T18:20:00.000000+00:00', ?array $declaredPrices = null, ?array $identityOverrides = null): array
 {
     $factory = new FiscalEngineFactory;
     $knowledge = $factory->captureKnowledge(resource_path('fiscal'), 'bundles/consumption-phase4b-2026.10.22-131-draft2.json');
     $fixture = json_decode((string) file_get_contents(base_path('tests/Fixtures/price111-native112/'.$seed.'.json')), true, 512, JSON_THROW_ON_ERROR);
     $fixture['input']['known_at'] = $knowledgeAt;
+    if ($identityOverrides !== null) {
+        foreach ($fixture['input']['input110']['identity_records'] as &$identityRecord) {
+            $override = $identityOverrides[$identityRecord['role']] ?? throw new RuntimeException('Explicit identity required for both synthetic documents.');
+            foreach ($override as $key => $value) {
+                if (! in_array($key, ['issued_at', 'number', 'series'], true)) {
+                    throw new RuntimeException('Only explicit emission identity fields may be overridden.');
+                }
+                $identityRecord['identity'][$key] = $value;
+            }
+            $identity = &$identityRecord['identity'];
+            $identity['id'] = 'DPS'.$identity['issuer_municipality'].'2'.$identity['supplier_id']
+                .str_pad($identity['series'], 5, '0', STR_PAD_LEFT).str_pad($identity['number'], 15, '0', STR_PAD_LEFT);
+            $identityRecord['proof']['identity_hash'] = CanonicalJson::hash($identity);
+            $identityRecord['proof'] = price112Seal($identityRecord['proof']);
+            unset($identity);
+        }
+        unset($identityRecord);
+    }
     if ($reverseResults) {
         foreach ($fixture['input']['input110']['result_records'] as &$record) {
             $scope = $record['role'] === 'RTC_FOREIGN' ? 'BR' : 'ABROAD';
@@ -40,27 +58,34 @@ function phase4bIss133Fixture(string $seed = '000-no-adjustments-gross-before-al
         }
         unset($record);
     }
-    if ($amount !== null) {
+    if ($amount !== null && $declaredPrices !== null) {
+        throw new RuntimeException('Use one explicit synthetic price declaration.');
+    }
+    if ($amount !== null || $declaredPrices !== null) {
         if ($seed !== '000-no-adjustments-gross-before-all-discounts') {
             throw new RuntimeException('Explicit no-adjustment seed required for new synthetic prices.');
         }
+        $prices = $declaredPrices ?? ['RTC_FOREIGN' => $amount, 'RTC_DOMESTIC' => $amount];
+        if (count($prices) !== 2 || ! isset($prices['RTC_FOREIGN'], $prices['RTC_DOMESTIC'])) {
+            throw new RuntimeException('Two explicit synthetic documentary prices required.');
+        }
         foreach ($fixture['input']['records'] as &$record) {
-            $record['principal'] = $amount;
+            $record['principal'] = $prices[$record['role']];
         }
         unset($record);
         foreach ($fixture['input']['input110']['price_records'] as &$record) {
-            $record['service_price'] = $amount;
+            $record['service_price'] = $prices[$record['role']];
         }
         unset($record);
         foreach ($fixture['expected_result']['documents'] as &$document) {
             foreach (['service_price', 'gross_service_price', 'price_for_iss_evaluation_in_input_currency',
                 'payment_candidate_if_conditional_terms_satisfied'] as $key) {
-                $document[$key] = $amount;
+                $document[$key] = $prices[$document['role']];
             }
         }
         unset($document);
-        $fixture['input']['input110']['proof']['value']['contract_service_price_total'] = DecimalValue::fromString($amount)
-            ->multipliedBy(DecimalValue::fromString('2'))->value();
+        $fixture['input']['input110']['proof']['value']['contract_service_price_total'] = DecimalValue::fromString($prices['RTC_FOREIGN'])
+            ->plus(DecimalValue::fromString($prices['RTC_DOMESTIC']))->value();
     }
     $template = json_decode((string) file_get_contents(resource_path('fiscal/scenarios/dps-identity-2026.10.19-104-draft1/local-pair.json')), true, 512, JSON_THROW_ON_ERROR);
     $prepared = price112Rebase($fixture, $template, $knowledge, $factory);

@@ -1,0 +1,25 @@
+{
+  "observed_at": "2026-10-23T12:27:28.631911+00:00",
+  "status": "DEVELOPMENT_CHECKPOINT_STOPPED_FULL_REGRESSION_PENDING",
+  "stop_requested_by_user": true,
+  "new_implementation_stopped": true,
+  "directed_receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-pair135-development-20261023\\pair135-directed-validation.json",
+  "directed_receipt_sha256": "9c0b7fde24314753a2b59a7fc505e27fec03cb5dd4f1028f15d3e86fe5dfaeef",
+  "current_frozen_inputs_checked": 5896,
+  "changed_frozen_inputs": [],
+  "runtime_hashes_checked": 121,
+  "external_inventory_sha256": "74e4fc255452362e7aa9d3e354ad1ae4cdf03614931aa25a2116055ed7e31dc4",
+  "full_regression_accepted": false,
+  "live_capture": {
+    "container_php_pid": 1481,
+    "host_docker_pid": 3572,
+    "exec_session": 63024,
+    "path": "D:\\ProjetoSaasExports\\phase4b-pair135-20261023-v1\\full-suite-v1",
+    "terminal_result_must_be_reviewed": true
+  },
+  "next_on_resume": "Inspect same full-suite validation.json and run scripts/audit_phase4b_pair135.py only after valid terminal result; never restart a live suite.",
+  "own_federal_xml_projected": false,
+  "production_ready": false,
+  "formal_phase4b_groups_closed": 0,
+  "phase4b_complete": false
+}

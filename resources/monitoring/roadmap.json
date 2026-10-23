@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-22T16:43:08.519378-03:00",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas.134 regressão integral aprovada;desenvolvimento interrompido a pedido do usuário.",
+  "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
+  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas. Desenvolvimento interrompido;regressão135 pendente,produção bloqueada.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+      "summary": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -103,6 +103,123 @@
     }
   ],
   "history_reviews": [
+    {
+      "reviewed_at": "2026-10-22T16:43:08.519378-03:00",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas.134 regressão integral aprovada;desenvolvimento interrompido a pedido do usuário.",
+      "phases": [
+        {
+          "id": "base",
+          "label": "Fundação",
+          "title": "Kernel e infraestrutura",
+          "summary": "Fatos tipados, regras, temporalidade, persistência, importadores e replay.",
+          "source": "docs/adr/README.md",
+          "state": "IMPLEMENTED",
+          "objectives": []
+        },
+        {
+          "id": "3",
+          "label": "Fase 3",
+          "title": "ISS",
+          "summary": "Classificação, territorialidade, responsabilidade, base, cálculo e projeção parcial da DPS.",
+          "source": "docs/fiscal/phase3-closure.md",
+          "closure_marker": "A Fase 3 do roadmap do motor completo está implementada",
+          "objectives": [
+            "Encerramento funcional do escopo ISS documentado"
+          ]
+        },
+        {
+          "id": "4A",
+          "label": "Fase 4A",
+          "title": "Retenções federais",
+          "summary": "IRRF, PIS, Cofins, CSLL, INSS e projeção de obrigações por perfil.",
+          "source": "docs/fiscal/phase4a-status.md",
+          "closure_marker": "O desenvolvimento funcional da Fase 4A está implementado",
+          "objectives": [
+            "Encerramento funcional das retenções federais em Sandbox documentado"
+          ]
+        },
+        {
+          "id": "4B",
+          "label": "Fase 4B",
+          "title": "IBS / CBS e reforma do consumo",
+          "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+          "source": "docs/fiscal/phase4b-status.md",
+          "objectives": [
+            {
+              "id": "4B.1",
+              "title": "Temporalidade"
+            },
+            {
+              "id": "4B.2",
+              "title": "Incidência e local"
+            },
+            {
+              "id": "4B.3",
+              "title": "Sujeitos e responsabilidade"
+            },
+            {
+              "id": "4B.4",
+              "title": "Base e cálculo"
+            },
+            {
+              "id": "4B.5",
+              "title": "Créditos"
+            },
+            {
+              "id": "4B.6",
+              "title": "Catálogos oficiais"
+            },
+            {
+              "id": "4B.7",
+              "title": "NFS-e / DPS RTC"
+            },
+            {
+              "id": "4B.8",
+              "title": "Aceitação, corpus e invariantes"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Fase 5",
+          "title": "Submotores verticais",
+          "summary": "Planejada após4B. Existem componentes de perfis na3/4A/4B; isso não comprova encerramento dos oito orquestradores5.1–5.8.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "6",
+          "label": "Fase 6",
+          "title": "Governança fiscal",
+          "summary": "Planejada. Seleção temporal, precedência e benefícios já existem em escopos anteriores; governança transversal integral ainda sem aceitação.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        },
+        {
+          "id": "7",
+          "label": "Fase 7",
+          "title": "Validação cruzada e gates finais",
+          "summary": "Planejada. Regressões locais aprovadas não substituem o corpus transversal nem os gates finais do projeto.",
+          "state": "PLANNED",
+          "source": null,
+          "objectives": []
+        }
+      ],
+      "current_review": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+      "scope_package": "134",
+      "updated_at": "2026-10-22T16:44:21.627482-03:00",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      }
+    },
     {
       "reviewed_at": "2026-10-22T18:34:43.539685+00:00",
       "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. Corte133 local validado;122 último aceite integral.0/8 grupos encerrados;produção bloqueada.",
@@ -1846,11 +1963,20 @@
       "field": "before122_validation",
       "reviewed_at": "2026-10-20T19:57:01.895Z",
       "summary": "119 aceita localmente: 8.614 testes/133.926 verificações, 370 decisões/replays próprios e 1.071 históricos; 24.800 arquivos congelados intactos, 92 hashes, PHPStan/Pint e auditoria independente aprovados. 120 auditou crédito: 54/80 IDs examinados e 26 por revisar; pesquisa 121 preservada, sem nova integração ou aprovação. Fechamento seguro do dia solicitado pelo usuário, com publicação no GitHub e retomada posterior. Fases 3/4A encerradas em Sandbox, 4B com oito grupos parciais e 0/8 encerramentos formais; 5–7 planejadas, produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-23T12:03:47.675834+00:00",
+      "current_review": "CLI135 confirmado:203 testes/498 asserções,PHPStan global0/Pint673,22 históricos exatos e doisDPS XSD idênticos pelo comando. Capturador da regressão integral ativo;resultado terminal pendente,sem aprovação integral antecipada.",
+      "scope_note": "3/4A encerradas emSandbox;4B parcial,5–7 planejadas. CLI135 local validado;regressão integral135 em execução,sem aceite antecipado;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-23T12:24:05.010456+00:00",
+      "current_review": "Parada e publicação solicitadas pelo usuário. Implementação encerrada neste corte135; a mesma regressão integral permanece ativa, sem resultado antecipado. Nenhuma nova funcionalidade será iniciada antes da retomada."
     }
   ],
-  "current_review": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
-  "scope_package": "134",
-  "updated_at": "2026-10-22T16:44:21.627482-03:00",
+  "current_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+  "scope_package": "135",
+  "updated_at": "2026-10-23T12:27:28.631911+00:00",
   "checkpoint_publication": {
     "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
     "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
@@ -1859,5 +1985,8 @@
     "push_confirmed": true,
     "development_stopped_by_user": true,
     "phase4b_complete": false
-  }
+  },
+  "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+  "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
+  "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
 }

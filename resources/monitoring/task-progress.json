@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-22T16:44:21.627482-03:00",
-  "title": "Checkpoint seguro134 — desenvolvimento interrompido a pedido do usuário",
-  "state": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
-  "criterion": "6/6 marcos do corte134 verificados;nenhum percentual global4B;0/8 grupos encerrados.",
+  "updated_at": "2026-10-23T12:27:28.631911+00:00",
+  "title": "135: checkpoint de desenvolvimento; parada solicitada",
+  "state": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+  "criterion": "4/6 marcos da entrega135 (67%);aceite integral pendente. Checkpoint publicado não encerra a entrega ou a Fase4B.",
   "milestones": [
     {
       "title": "Conferir checkpoint/processos",
@@ -22,30 +22,596 @@
     },
     {
       "title": "Validar casos,recusas e replays",
-      "complete": true
+      "complete": false
     },
     {
       "title": "Auditar evidências,documentação e console",
-      "complete": true
+      "complete": false
     }
   ],
   "finished": [
-    "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
-    "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
-    "Ensaios135 externos preservados com hashes;nenhuma instalação135."
+    "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+    "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+    "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
   ],
   "pending": [
-    "Integrar135 após qualificar exclusões legais e demais tributos do preço.",
-    "Concluir câmbioISS,importação e demais mínimos dos80 requisitos.",
-    "Retomar somente por solicitação do usuário;nenhum processo de desenvolvimento ativo."
+    "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+    "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+    "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
   ],
-  "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada.",
+  "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida.",
   "evidence": [
-    "storage/app/phase4b-iss134-development-20261022/iss134-scoped-validation.json",
-    "storage/app/phase4b-iss134-development-20261022/requirements80-current-matrix.json",
-    "docs/fiscal/phase4b-day-closure-20261022.md"
+    "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+    "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+    "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+    "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json"
   ],
   "history": [
+    {
+      "updated_at": "2026-10-23T11:29:24.967054+00:00",
+      "title": "135: integração do parDPS com ponte própria",
+      "state": "Integração135 em desenvolvimento:fontes preservadas instaladas,projetor com replay134/ponte/COMEX/classificação em preparação. Último corte166/426 preservado;nenhum par novo aprovado.",
+      "criterion": "3/6 marcos observados (50%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Ponte própria e cálculoV2 anteriores validados;fontes imutáveis preservadas."
+      ],
+      "pending": [
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Concluir comando/projetor,testar identidade,NBS,provas e doisXML completos noXSD.",
+      "evidence": [
+        "storage/app/phase4b-own-bridge135-development-20261023/own-bridge135-local-validation.json"
+      ],
+      "focus": {
+        "summary": "Integração135 em desenvolvimento:fontes preservadas instaladas,projetor com replay134/ponte/COMEX/classificação em preparação. Último corte166/426 preservado;nenhum par novo aprovado.",
+        "finished": [
+          "Ponte própria e cálculoV2 anteriores validados;fontes imutáveis preservadas."
+        ],
+        "pending": [
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Concluir comando/projetor,testar identidade,NBS,provas e doisXML completos noXSD."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true
+    },
+    {
+      "updated_at": "2026-10-23T11:23:53.782667+00:00",
+      "title": "135: ponte do preço com todos os tributos próprios",
+      "state": "Ponte135 local validada:166 testes/426 asserções,PHPStan0/Pint5. Novo contrato sintético400/641,33 reconcilia1041,33−41,33=1000,00;contrato anterior617,92 recusado por21,90. Integração/parDPS135 e efeitos judiciais pendentes;0/8 grupos encerrados.",
+      "criterion": "3/6 marcos observados (50%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Ponte comISS/ICMS/PIS/Cofins reexecutados,sem derivar preço do percentualRTC.",
+        "166 testes/426 asserções;23 novos,PHPStan0/Pint5;114 hashes134 intactos.",
+        "3 cenários,6 replays exatos e6 conferênciasDecimal;recusa21,90 e um centavo."
+      ],
+      "pending": [
+        "Integrar a ponte e as contribuições próprias ao parDPS135 com identidades,classificação eCOMEX vinculados.",
+        "Qualificar efeitos judiciais por caso e demais provas/perfis do contrato135.",
+        "Concluir câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+      ],
+      "next_step": "Integrar ponte,contribuições,identidade,COMEX e classificação no parDPS135 e regredir.",
+      "evidence": [
+        "storage/app/phase4b-own-bridge135-development-20261023/own-bridge135-local-validation.json",
+        "docs/fiscal/phase4b-own-bridge135-price-reconciliation.md"
+      ],
+      "focus": {
+        "summary": "Ponte135 local validada:166 testes/426 asserções,PHPStan0/Pint5. Novo contrato sintético400/641,33 reconcilia1041,33−41,33=1000,00;contrato anterior617,92 recusado por21,90. Integração/parDPS135 e efeitos judiciais pendentes;0/8 grupos encerrados.",
+        "finished": [
+          "Ponte comISS/ICMS/PIS/Cofins reexecutados,sem derivar preço do percentualRTC.",
+          "166 testes/426 asserções;23 novos,PHPStan0/Pint5;114 hashes134 intactos.",
+          "3 cenários,6 replays exatos e6 conferênciasDecimal;recusa21,90 e um centavo."
+        ],
+        "pending": [
+          "Integrar a ponte e as contribuições próprias ao parDPS135 com identidades,classificação eCOMEX vinculados.",
+          "Qualificar efeitos judiciais por caso e demais provas/perfis do contrato135.",
+          "Concluir câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+        ],
+        "next_step": "Integrar ponte,contribuições,identidade,COMEX e classificação no parDPS135 e regredir."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true
+    },
+    {
+      "updated_at": "2026-10-23T11:10:24.540759+00:00",
+      "title": "135: ponte documental com todos os tributos próprios",
+      "state": "Continuidade135:preparar reconciliação comISS/ICMS/PIS/Cofins frescos. CálculoV2 anterior143/386 preservado;diferença21,90 segue recusada e nenhuma integração nova foi aprovada.",
+      "criterion": "3/6 marcos observados (50%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Cálculo próprioV2 comTema118 validado;114 hashes134 e80 revisões preservados."
+      ],
+      "pending": [
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Implementar ponte causal,gerar novo cenário contratual explícito e validar positivo/recusas com replay.",
+      "evidence": [
+        "storage/app/phase4b-own135-development-20261023/own135-local-validation.json"
+      ],
+      "focus": {
+        "summary": "Continuidade135:preparar reconciliação comISS/ICMS/PIS/Cofins frescos. CálculoV2 anterior143/386 preservado;diferença21,90 segue recusada e nenhuma integração nova foi aprovada.",
+        "finished": [
+          "Cálculo próprioV2 comTema118 validado;114 hashes134 e80 revisões preservados."
+        ],
+        "pending": [
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Implementar ponte causal,gerar novo cenário contratual explícito e validar positivo/recusas com replay."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true
+    },
+    {
+      "updated_at": "2026-10-23T11:07:41.237885+00:00",
+      "title": "135: contribuições próprias de software eTema118",
+      "state": "Cálculo próprio135V2 validado:143 testes/386 asserções,PHPStan0/Pint4;2 replays134. FonteSTF21/10 e ata23/10 observadas;ISS deduzido da basePIS/Cofins sob alegação local. Ponte anterior diverge21,90;sem integração135 ou encerramento4B.",
+      "criterion": "3/6 marcos observados (50%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "6 fontes primárias preservadas,incluindo julgamentoTema118 e ata23/10.",
+        "143 testes/386 asserções;49 novos,PHPStan0/Pint4;114 hashes134 intactos.",
+        "2 replays134 idênticos;6 controles e10 conferênciasDecimal;diferença21,90 exposta."
+      ],
+      "pending": [
+        "Qualificar efeitos judiciais por caso e provas de receita/divisas para o perfil135V2.",
+        "Reconciliar ponte comISS/ICMS/PIS/Cofins próprios;diferença atual21,90;integrar/regredir par135.",
+        "Concluir câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+      ],
+      "next_step": "Qualificar efeitos judiciais e reconciliar ponte com todos os tributos próprios antes da integração135.",
+      "evidence": [
+        "storage/app/phase4b-own135-development-20261023/own135-local-validation.json",
+        "docs/fiscal/phase4b-own135-software-revenue.md"
+      ],
+      "focus": {
+        "summary": "Cálculo próprio135V2 validado:143 testes/386 asserções,PHPStan0/Pint4;2 replays134. FonteSTF21/10 e ata23/10 observadas;ISS deduzido da basePIS/Cofins sob alegação local. Ponte anterior diverge21,90;sem integração135 ou encerramento4B.",
+        "finished": [
+          "6 fontes primárias preservadas,incluindo julgamentoTema118 e ata23/10.",
+          "143 testes/386 asserções;49 novos,PHPStan0/Pint4;114 hashes134 intactos.",
+          "2 replays134 idênticos;6 controles e10 conferênciasDecimal;diferença21,90 exposta."
+        ],
+        "pending": [
+          "Qualificar efeitos judiciais por caso e provas de receita/divisas para o perfil135V2.",
+          "Reconciliar ponte comISS/ICMS/PIS/Cofins próprios;diferença atual21,90;integrar/regredir par135.",
+          "Concluir câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+        ],
+        "next_step": "Qualificar efeitos judiciais e reconciliar ponte com todos os tributos próprios antes da integração135."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true
+    },
+    {
+      "updated_at": "2026-10-23T10:50:57.279850+00:00",
+      "title": "135: incidência própria PIS/Cofins e provas documentais",
+      "state": "Continuidade135:revisar perfil próprio dePIS/Cofins e vincular avaliações aoISS fresco. Guarda anterior94/316 preservada;sem novo aceite ou bundle135.",
+      "criterion": "3/6 marcos observados (50%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Guarda declarativa anterior validada e114 hashes134 preservados."
+      ],
+      "pending": [
+        "Integrar nova versão preservando históricos",
+        "Validar casos,recusas e replays",
+        "Auditar evidências,documentação e console"
+      ],
+      "next_step": "Conferir regras próprias de software/competência e implementar avaliação vinculada por documento.",
+      "evidence": [
+        "storage/app/phase4b-legacy135-development-20261023/legacy135-scoped-validation.json"
+      ],
+      "focus": {
+        "summary": "Continuidade135:revisar perfil próprio dePIS/Cofins e vincular avaliações aoISS fresco. Guarda anterior94/316 preservada;sem novo aceite ou bundle135.",
+        "finished": [
+          "Guarda declarativa anterior validada e114 hashes134 preservados."
+        ],
+        "pending": [
+          "Integrar nova versão preservando históricos",
+          "Validar casos,recusas e replays",
+          "Auditar evidências,documentação e console"
+        ],
+        "next_step": "Conferir regras próprias de software/competência e implementar avaliação vinculada por documento."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico."
+    },
+    {
+      "updated_at": "2026-10-23T10:48:20.046410+00:00",
+      "title": "135: guarda local de incidência própria por documento",
+      "state": "Guarda declarativa135 validada em23/10:94 testes/316 asserções,PHPStan0/Pint3;2 replays134 exatos. Fonte artigo12 recapturada;nenhum bundle135 integrado,0/8 grupos encerrados.",
+      "criterion": "3/6 marcos observados (50%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Fonte primária artigo12 preservada e janela2026–2032 conferida.",
+        "29 testes novos;94 relacionados aprovados;retenção não vira incidência própria zero.",
+        "2 replays integrais134 idênticos;8 controles e4 oráculosDecimal."
+      ],
+      "pending": [
+        "Qualificar avaliações próprias e provas materiais deISS,ICMS,PIS,Cofins por documento.",
+        "Integrar ciclo de vida,demais exclusões e parDPS135;regredir antes de aceitar.",
+        "Concluir câmbioISS,importação e demais mínimos da matriz80;0/8 grupos encerrados."
+      ],
+      "next_step": "Qualificar avaliações próprias e provas por tributo antes da integração do par135.",
+      "evidence": [
+        "storage/app/phase4b-legacy135-development-20261023/legacy135-scoped-validation.json",
+        "docs/fiscal/phase4b-legacy135-declared-exclusions.md"
+      ],
+      "focus": {
+        "summary": "Guarda declarativa135 validada em23/10:94 testes/316 asserções,PHPStan0/Pint3;2 replays134 exatos. Fonte artigo12 recapturada;nenhum bundle135 integrado,0/8 grupos encerrados.",
+        "finished": [
+          "Fonte primária artigo12 preservada e janela2026–2032 conferida.",
+          "29 testes novos;94 relacionados aprovados;retenção não vira incidência própria zero.",
+          "2 replays integrais134 idênticos;8 controles e4 oráculosDecimal."
+        ],
+        "pending": [
+          "Qualificar avaliações próprias e provas materiais deISS,ICMS,PIS,Cofins por documento.",
+          "Integrar ciclo de vida,demais exclusões e parDPS135;regredir antes de aceitar.",
+          "Concluir câmbioISS,importação e demais mínimos da matriz80;0/8 grupos encerrados."
+        ],
+        "next_step": "Qualificar avaliações próprias e provas por tributo antes da integração do par135."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico."
+    },
+    {
+      "updated_at": "2026-10-23T10:40:19.836984+00:00",
+      "title": "Retomada135: composição tributária documental",
+      "state": "Objetivo reativado em23/10;checkpoint134 intacto. Revisão de exclusões legais e prova dos demais tributos do preço antes da integração135;Docker indisponível na retomada.",
+      "criterion": "1/6 marcos observados (17%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": false
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": false
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": false
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Checkpoint134 publicado e árvore inicialmente limpa;9406 testes históricos preservados."
+      ],
+      "pending": [
+        "Preservar fontes e qualificar contrato",
+        "Implementar comportamento delimitado",
+        "Integrar nova versão preservando históricos"
+      ],
+      "next_step": "Reabrir Docker existente;capturar artigo12 e definir prova granular de tributos por documento.",
+      "evidence": [
+        "docs/fiscal/phase4b-day-closure-20261022.md"
+      ],
+      "focus": {
+        "summary": "Objetivo reativado em23/10;checkpoint134 intacto. Revisão de exclusões legais e prova dos demais tributos do preço antes da integração135;Docker indisponível na retomada.",
+        "finished": [
+          "Checkpoint134 publicado e árvore inicialmente limpa;9406 testes históricos preservados."
+        ],
+        "pending": [
+          "Preservar fontes e qualificar contrato",
+          "Implementar comportamento delimitado",
+          "Integrar nova versão preservando históricos"
+        ],
+        "next_step": "Reabrir Docker existente;capturar artigo12 e definir prova granular de tributos por documento."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      }
+    },
+    {
+      "updated_at": "2026-10-22T16:44:21.627482-03:00",
+      "title": "Checkpoint seguro134 — desenvolvimento interrompido a pedido do usuário",
+      "state": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada.",
+      "criterion": "6/6 marcos do corte134 verificados;nenhum percentual global4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": true
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
+        "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
+        "Ensaios135 externos preservados com hashes;nenhuma instalação135."
+      ],
+      "pending": [
+        "Integrar135 após qualificar exclusões legais e demais tributos do preço.",
+        "Concluir câmbioISS,importação e demais mínimos dos80 requisitos.",
+        "Retomar somente por solicitação do usuário;nenhum processo de desenvolvimento ativo."
+      ],
+      "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada.",
+      "evidence": [
+        "storage/app/phase4b-iss134-development-20261022/iss134-scoped-validation.json",
+        "storage/app/phase4b-iss134-development-20261022/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-day-closure-20261022.md"
+      ],
+      "focus": {
+        "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada. Commit27ab5a6 publicado noGitHub;console atualizado após envio.",
+        "finished": [
+          "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
+          "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
+          "Ensaios135 externos preservados com hashes;nenhuma instalação135."
+        ],
+        "pending": [
+          "Integrar135 após qualificar exclusões legais e demais tributos do preço.",
+          "Concluir câmbioISS,importação e demais mínimos dos80 requisitos.",
+          "Retomar somente por solicitação do usuário;nenhum processo de desenvolvimento ativo."
+        ],
+        "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada."
+      },
+      "scope_package": "134",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      }
+    },
     {
       "updated_at": "2026-10-22T19:34:21.506337+00:00",
       "title": "Regressão134 e ponte de preços documentais",
@@ -5362,23 +5928,193 @@
       "title": "Console fiscal — atualização e regra de encerramento",
       "state": "Concluído",
       "summary": "Progresso da entrega separado do aceite formal; regra permanente em AGENTS.md;22 checks isolados aprovados e tela verificada."
+    },
+    {
+      "updated_at": "2026-10-23T12:03:47.675834+00:00",
+      "title": "135: parDPS local validado;regressão integral em captura",
+      "state": "CLI135 validado:203 testes/498 asserções,PHPStan global0/Pint673 e22 históricos exatos. Regressão integral135 viva desde12:03:18UTC,PHP1481,5896 entradas congeladas;resultado terminal pendente.0/8 grupos encerrados.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+        "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+        "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+      ],
+      "pending": [
+        "Concluir a mesma suíte integral135 e auditar inventário/resultado terminal.",
+        "Qualificar CST/indicadores e projetarPIS-Cofins próprios noXML;concluir país/moeda e dados documentais restantes.",
+        "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+      ],
+      "next_step": "Acompanhar a mesma suíte integral e auditar inventário/resultado;preparar grupo próprioPIS-Cofins apenas noD: durante congelamento.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json"
+      ],
+      "focus": {
+        "summary": "CLI135 validado:203 testes/498 asserções,PHPStan global0/Pint673 e22 históricos exatos. Regressão integral135 viva desde12:03:18UTC,PHP1481,5896 entradas congeladas;resultado terminal pendente.0/8 grupos encerrados.",
+        "finished": [
+          "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+          "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+          "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+        ],
+        "pending": [
+          "Concluir a mesma suíte integral135 e auditar inventário/resultado terminal.",
+          "Qualificar CST/indicadores e projetarPIS-Cofins próprios noXML;concluir país/moeda e dados documentais restantes.",
+          "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+        ],
+        "next_step": "Acompanhar a mesma suíte integral e auditar inventário/resultado;preparar grupo próprioPIS-Cofins apenas noD: durante congelamento."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "RUNNING_OBSERVED",
+        "terminal_result_observed": false
+      }
+    },
+    {
+      "updated_at": "2026-10-23T12:24:05.010456+00:00",
+      "title": "135: fechamento seguro solicitado; aguardando regressão integral",
+      "state": "Parada e publicação solicitadas pelo usuário. Implementação encerrada neste corte135; a mesma regressão integral permanece ativa, sem resultado antecipado. Nenhuma nova funcionalidade será iniciada antes da retomada.",
+      "criterion": "4/6 marcos observados (67%) deste corte. Não é percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+        "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+        "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+      ],
+      "pending": [
+        "Concluir a mesma suíte integral135 e auditar inventário/resultado terminal.",
+        "Qualificar CST/indicadores e projetarPIS-Cofins próprios noXML;concluir país/moeda e dados documentais restantes.",
+        "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+      ],
+      "next_step": "Concluir a regressão já ativa, auditar os resultados, registrar checkpoint e publicar no GitHub no formato histórico com data e horário de São Paulo.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json"
+      ],
+      "focus": {
+        "finished": [
+          "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+          "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+          "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+        ],
+        "pending": [
+          "Concluir a mesma suíte integral135 e auditar inventário/resultado terminal.",
+          "Qualificar CST/indicadores e projetarPIS-Cofins próprios noXML;concluir país/moeda e dados documentais restantes.",
+          "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80;0/8 grupos encerrados."
+        ],
+        "next_step": "Concluir a regressão já ativa, auditar os resultados, registrar checkpoint e publicar no GitHub no formato histórico com data e horário de São Paulo.",
+        "summary": "Parada e publicação solicitadas pelo usuário. Implementação encerrada neste corte135; a mesma regressão integral permanece ativa, sem resultado antecipado. Nenhuma nova funcionalidade será iniciada antes da retomada."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "RUNNING_OBSERVED",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "STOP_REQUESTED_VALIDATION_CLOSURE_ONLY"
     }
   ],
   "focus": {
-    "summary": "Parada segura solicitada pelo usuário:134 validado;9406 testes/145560 asserções,415 conferências.135 somente em ensaio externo;4B parcial,0/8 grupos encerrados,produção bloqueada. Commit27ab5a6 publicado noGitHub;console atualizado após envio.",
+    "summary": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
     "finished": [
-      "Regressão integral134:9406 testes/145560 asserções;5179 entradas intactas.",
-      "Auditoria134:415 conferências,114 hashes;matriz80 preservada.",
-      "Ensaios135 externos preservados com hashes;nenhuma instalação135."
+      "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+      "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+      "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
     ],
     "pending": [
-      "Integrar135 após qualificar exclusões legais e demais tributos do preço.",
-      "Concluir câmbioISS,importação e demais mínimos dos80 requisitos.",
-      "Retomar somente por solicitação do usuário;nenhum processo de desenvolvimento ativo."
+      "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+      "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+      "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
     ],
-    "next_step": "Integrar135 após qualificar exclusões legais e demais tributos do preço. Aguardar nova solicitação de retomada."
+    "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida."
   },
-  "scope_package": "134",
+  "scope_package": "135",
   "checkpoint_publication": {
     "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
     "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
@@ -5387,5 +6123,21 @@
     "push_confirmed": true,
     "development_stopped_by_user": true,
     "phase4b_complete": false
-  }
+  },
+  "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+  "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+  "uncommitted_development": true,
+  "active_validation": {
+    "started_at": "2026-10-23T12:03:18.023213+00:00",
+    "host_docker_pid": 3572,
+    "container_php_pid": 1481,
+    "exec_session": 63024,
+    "frozen_inputs": 5896,
+    "script_helpers_included": true,
+    "status": "RUNNING_OBSERVED",
+    "terminal_result_observed": false
+  },
+  "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+  "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
+  "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
 }

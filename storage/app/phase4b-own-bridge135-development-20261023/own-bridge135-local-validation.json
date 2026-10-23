@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-10-23T11:23:53.614182+00:00",
+  "status": "LOCAL_ALL_OWN_TAX_PRICE_BRIDGE_VALIDATED_NOT_FULL_DPS",
+  "baseline134_runtime_hashes_unchanged": 114,
+  "earlier_own135_hashes_unchanged": 7,
+  "directed_tests": 166,
+  "directed_assertions": 426,
+  "new_bridge_tests": 23,
+  "quality": {
+    "phpstan": "PASS",
+    "pint": "PASS_5_FILES"
+  },
+  "native": {
+    "status": "LOCAL_ALL_OWN_TAX_BRIDGE_VALIDATED_NOT_FULL_DPS",
+    "identical_runs": true,
+    "exact_source_replays": 6,
+    "source_scenarios": 3,
+    "positive": 1,
+    "negative": 2,
+    "independent_decimal_checks": 6,
+    "snapshots": [
+      {
+        "file": "new-explicit-contract.snapshot.json",
+        "sha256": "6b261d02ab2b93b15ceae0f010339eca9be867da8ef69de4835d919a62622bdb",
+        "runner": "integrated"
+      },
+      {
+        "file": "former-iss-only-contract.snapshot.json",
+        "sha256": "e895be716d7c4a8150342f185cbcfc4fdb2b19dfc90defd1d411f9658fca90b7",
+        "runner": "integrated"
+      },
+      {
+        "file": "one-cent-higher-contract.snapshot.json",
+        "sha256": "22ec51f4e0495b8d1f59da4840916692b20ed177ee301af2700a30a5ceda8b35",
+        "runner": "integrated"
+      }
+    ],
+    "output_sha256": "a0227624a1be82bc19aee0c7f79b6b9f967c6c549804f0c41658a6e37a25e881",
+    "bundle135_installed": false,
+    "document_obligation_complete": false,
+    "judicial_temporal_effects_approved": false
+  },
+  "runtime_and_support_hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/DocumentOwnTaxBridge135.php": "2148e788e5902f3c865322a310af1bf78aa5e098cd2fc220987602f1a6d82ff4",
+    "scripts/phase4b_own135_pair_fixture.php": "92a7557a22a8958deb2fd98a16fd212f0b2c00493f272d515937a548c0b66600",
+    "scripts/phase4b_iss133_fixture.php": "5681e45230d009f9731199778e89cb9d65e8322422562bcb22164451975488ba",
+    "scripts/capture_phase4b_own_bridge135_native.php": "720e9004d824edfa47165d06c38e49af6e10081bab1ce37abd5f4440710603ef",
+    "scripts/collect_phase4b_own_bridge135.py": "e7ac1d1a6d3dc45008f85c2cb42d6d2c43bd46dc4c60e9759f8506ba49593fc3",
+    "tests/Fiscal/Integration/DocumentOwnTaxBridge135Test.php": "2d426e1b9fc740ab762163113ec0eed170a60a6482e72c4181288bf8438eeea9"
+  },
+  "fixture133_extension": {
+    "optional_argument": "declaredPrices",
+    "git_head_version_sha256": "2d0b534df6f2b141b58402ce08f851abd960444dfece8446cd0096ff820c1ba5",
+    "current_working_sha256": "5681e45230d009f9731199778e89cb9d65e8322422562bcb22164451975488ba",
+    "previous_defaults_preserved": true,
+    "legacy_directed_tests_rerun": true
+  },
+  "evidence_root": "D:\\ProjetoSaasExports\\phase4b-own-bridge135-20261023-v1",
+  "full_suite_rerun": false,
+  "last_full_suite": "134:9406/145560",
+  "bundle135_installed": false,
+  "complete_dps_documents": 0,
+  "document_obligation_complete": false,
+  "judicial_temporal_effects_approved": false,
+  "phase4b_complete": false,
+  "formal_groups_closed": 0
+}

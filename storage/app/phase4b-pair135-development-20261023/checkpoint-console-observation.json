@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-10-23T12:28:51.434908+00:00",
+  "endpoint_sha256": "6a61664d3e97c63c98b43d368b24f3cbbd0cd358ca07cc03011403e394019fb0",
+  "phases_checked": {
+    "3": "CLOSED",
+    "4A": "CLOSED",
+    "4B": "IN_PROGRESS",
+    "5": "PLANNED",
+    "6": "PLANNED",
+    "7": "PLANNED"
+  },
+  "objectives_reviewed": 8,
+  "historical122_runtime_comparison": {
+    "checked": 94,
+    "mismatches": [
+      "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php",
+      "app/Modules/Fiscal/ConsumptionReform/DocumentObligationEngine.php",
+      "app/Modules/Fiscal/Infrastructure/Production/Phase4bReadinessAssessor.php",
+      "app/Modules/Fiscal/ConsumptionReform/CreditInputPolicy122.php"
+    ],
+    "state": "CHANGED"
+  },
+  "historical_differences": [
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php",
+      "unchanged_since_published_20261022": true,
+      "sha256": "5e56a176dd9f3ab01472aa0376f0b799f4a1929bb98a42e07c23aae548adde99"
+    },
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/DocumentObligationEngine.php",
+      "unchanged_since_published_20261022": true,
+      "sha256": "74b556cb6fdf651d5ffb9938065cbb9f4bc84a7f9ac5575bb80c66f77e5e8c0a"
+    },
+    {
+      "path": "app/Modules/Fiscal/Infrastructure/Production/Phase4bReadinessAssessor.php",
+      "unchanged_since_published_20261022": true,
+      "sha256": "41a0020c6531a2647cd5bf544a02dd35c142061c52bd5c1718257098c3660c7e"
+    },
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/CreditInputPolicy122.php",
+      "unchanged_since_published_20261022": true,
+      "sha256": "9507f69f8ac92aeae936e9055a4ac475ffe2fd9b9194b569404434ccacddd737"
+    }
+  ],
+  "explanation": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged.",
+  "current_runtime_hashes_checked": 121,
+  "current_runtime_mismatches": [],
+  "full135_regression_accepted": false
+}

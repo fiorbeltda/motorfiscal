@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-10-23T10:48:19.918406+00:00",
+  "status": "LOCAL_DECLARED_INCIDENT_AMOUNTS_BOUNDARY_VALIDATED",
+  "baseline134_runtime_hashes_unchanged": 114,
+  "baseline134_receipt_sha256": "600764665f8a915f19116f01a671b649080f070fba0903cbb89ab8e9058d84cd",
+  "primary_capture": {
+    "path": "D:\\ProjetoSaasExports\\phase4b-price135-20261023-v1\\primary-v2\\capture.json",
+    "sha256": "2ca90b40e50bc6dc8ea8d3859af0c347e91f6caa3deeb66bf221199dba396081",
+    "primary_bytes_sha256": "70672c70d87f6e8978c34cd10056fd2d91e7a80c6f3483fa8715c850aae6d9c7"
+  },
+  "directed_tests": 94,
+  "directed_assertions": 316,
+  "new_tests": 29,
+  "quality": {
+    "phpstan": "PASS",
+    "pint": "PASS_3_FILES"
+  },
+  "native": {
+    "status": "LOCAL_DECLARATIONS_ONLY_NOT_FISCAL_ACCEPTANCE",
+    "source_snapshot_sha256": "b0a122fbc8e5757a40cd81d0ace8311808d17da316cdb5af12aeb4c5942995a5",
+    "exact_source_replays": 2,
+    "identical_runs": true,
+    "cases": 8,
+    "positive": 4,
+    "negative": 4,
+    "independent_decimal_checks": 4,
+    "integrated135": false,
+    "output_sha256": "565b69d49bdcc9b660da8fddc3af1f742fb9f90564637f6e488c8005538a2ba6"
+  },
+  "runtime_and_support_hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/LegacyExclusionWindow135.php": "afa5a4fea7308516dedeffe516d989da1ae9c2119dd530bf8d4e1565c622b3f1",
+    "tests/Fiscal/Unit/LegacyExclusionWindow135Test.php": "e2b5deddca0f26c210dea8ce3bacc83e9486231721d794ba4930686823c212cf",
+    "scripts/capture_phase4b_legacy135_native.php": "bd4825f87098598e889078c7a2bba16a420b7d1926921d17f1d5d50ca88a9526",
+    "scripts/collect_phase4b_legacy135.py": "4efbc2d1e8a8add76f189acc173c6728d57912f17ee82b9ce433ac6a3cea32e0",
+    "scripts/capture_phase4b_price135_legal.py": "956c388bc34b54930b4468e2dca165254895c845b70aac92a0db3854301b6baa"
+  },
+  "evidence_root": "D:\\ProjetoSaasExports\\phase4b-price135-20261023-v1",
+  "full_suite_rerun": false,
+  "latest_full_suite": "134:9406/145560",
+  "bundle135_installed": false,
+  "own_incidence_assessed_or_reexecuted": false,
+  "legacy_exclusion_legally_approved": false,
+  "phase4b_complete": false,
+  "formal_groups_closed": 0,
+  "remaining": [
+    "Actual own-tax assessments/provenance for all four taxes per document.",
+    "Other article12 exclusions,material source lifecycle and full135 integration.",
+    "ISS FX/import documents and remaining original80 requirements."
+  ]
+}

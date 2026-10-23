@@ -1,0 +1,110 @@
+{
+  "created_at": "2026-10-23T11:07:41.110608+00:00",
+  "status": "LOCAL_SOFTWARE_OWN_REVENUE_V2_VALIDATED_NOT_FULL_PAIR",
+  "baseline134_runtime_hashes_unchanged": 114,
+  "earlier_guard135_hashes_unchanged": 5,
+  "primary_sources": [
+    {
+      "file": "law10833.html",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833compilado.htm",
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833compilado.htm",
+      "http_status": 200,
+      "observed_at": "2026-10-23T10:52:40.361011+00:00",
+      "sha256": "b8d988f077f01d698f43e137116f74b17a0d9c8e4394e3ab5d8c7c04af3b57c2",
+      "bytes": 268000
+    },
+    {
+      "file": "law9718.html",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l9718.htm",
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/l9718.htm",
+      "http_status": 200,
+      "observed_at": "2026-10-23T10:52:41.042262+00:00",
+      "sha256": "a3e44fe9a8971c402b9e5abe4bbccf15e514a09e3ff766509338f1166c8c94be",
+      "bytes": 196422
+    },
+    {
+      "file": "law9715.html",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l9715.htm",
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/l9715.htm",
+      "http_status": 200,
+      "observed_at": "2026-10-23T10:52:41.433886+00:00",
+      "sha256": "fd8362e0deee013ee899751fba10e40563db43f5f5c2cda1c82f0bacf2491955",
+      "bytes": 22739
+    },
+    {
+      "file": "mp2158.html",
+      "url": "https://www.planalto.gov.br/ccivil_03/mpv/2158-35.htm",
+      "final_url": "https://www.planalto.gov.br/ccivil_03/mpv/2158-35.htm",
+      "http_status": 200,
+      "observed_at": "2026-10-23T10:52:42.112410+00:00",
+      "sha256": "8354d89c9b48e743d918ff6e1efdb87a588925b9cbe3e6289e094cf0976a870d",
+      "bytes": 209195
+    },
+    {
+      "file": "lc116.html",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+      "http_status": 200,
+      "observed_at": "2026-10-23T10:52:42.621426+00:00",
+      "sha256": "07d4cca637235e539c55fae94c008ecd1d5d4b363c8e9a83531ebb0fa8e89f67",
+      "bytes": 104392
+    }
+  ],
+  "court_source": {
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=2637509&numeroTema=118",
+    "final_url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=2637509&numeroTema=118",
+    "http_status": 200,
+    "observed_at": "2026-10-23T11:03:08.451956+00:00",
+    "sha256": "ff9ef0228ee075941384512042499eedf77db333a238c9f21e39036eac642da0",
+    "bytes": 362051,
+    "merit_decided_on": "2026-10-21",
+    "minutes_published_on": "2026-10-23",
+    "final_judgment_verified": false,
+    "modulation_verified": false
+  },
+  "directed_tests": 143,
+  "directed_assertions": 386,
+  "new_own_tests": 49,
+  "quality": {
+    "phpstan": "PASS",
+    "pint": "PASS_4_FILES"
+  },
+  "native": {
+    "status": "OWN_SOFTWARE_LINES_LOCALLY_CALCULATED_OLD_BRIDGE_INCOMPLETE",
+    "exact_source_replays": 2,
+    "cases": 6,
+    "positive": 2,
+    "negative": 4,
+    "independent_decimal_checks": 10,
+    "identical_output": true,
+    "source_snapshot_sha256": "b0a122fbc8e5757a40cd81d0ace8311808d17da316cdb5af12aeb4c5942995a5",
+    "output_sha256": "7ca25b31eaaec5cadc12e81b91e4aab9a24b8490057fe7e56b9bf2c36afe8c1a",
+    "domestic_gap_brl": "-21.90",
+    "bundle135_installed": false,
+    "production_ready": false,
+    "judicial_temporal_effects_approved": false,
+    "final_judgment_verified": false
+  },
+  "runtime_and_support_hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/SoftwareOwnRevenue135.php": "629cae0e32db8dae7ae3c3d66bdde88150cea91eb3e9770e6d670f89fbaf8e8f",
+    "scripts/phase4b_own135_fixture.php": "5498ef6d439a24692075f5dd832160fde947955b9dee5ad375aba0d4bb93b08f",
+    "scripts/capture_phase4b_own135_native.php": "cbadae54b10c6a7dc881372e3dbd394ef61cc3953fa486c9e4b0add81a6513b9",
+    "scripts/collect_phase4b_own135.py": "8605dee2dff6293826b3e4257fad03fec0d7047ac0f971577d1451576ce0ff1b",
+    "scripts/capture_phase4b_own135_sources.py": "d971d8c64d92dea5108e07b5f0910ffa7ce75d929425cc5ef5ce3b7f210b79f5",
+    "scripts/capture_phase4b_own135_court.py": "02f35bcb9e1d6d5b5c456867dd91e65b2fb83ec1643f037229e9717ead26e145",
+    "tests/Fiscal/Integration/SoftwareOwnRevenue135Test.php": "45e58ff1c4d32601156442f5bace2381efe9917854268b319e7496a39622beb0"
+  },
+  "evidence_root": "D:\\ProjetoSaasExports\\phase4b-own135-20261023-v1",
+  "superseded": {
+    "native-v1": "ISS included;counterfactual source study only. Superseded by court-reviewedV2.",
+    "directed-v1": "Failed zero override in old positive-only110 contract;fixed using original fully discounted zero seed.",
+    "directed-v2": "Passed143/386 before STF review;not current own-base fiscal evidence."
+  },
+  "full_suite_rerun": false,
+  "last_full_suite": "134:9406/145560",
+  "bundle135_installed": false,
+  "judicial_temporal_effects_approved": false,
+  "final_judgment_verified": false,
+  "phase4b_complete": false,
+  "formal_groups_closed": 0
+}

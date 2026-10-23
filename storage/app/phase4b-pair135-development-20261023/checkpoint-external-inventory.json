@@ -1,0 +1,1255 @@
+{
+  "observed_at": "2026-10-23T12:27:28.631911+00:00",
+  "scope": "External evidence snapshot; active stdout may grow after this observation.",
+  "files": [
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/directed-v1/execution.json",
+      "bytes_observed": 797,
+      "sha256_observed": "dfbbcc908962da599ddfcd045e0d4e0cd8975826f7c3b90273ff6bef9d364acd",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/directed-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/directed-v1/stdout.log",
+      "bytes_observed": 161,
+      "sha256_observed": "80f02c16683e923148bf291d48daa20ece468012c684b88d64aabad24c888ebe",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v1/execution1.json",
+      "bytes_observed": 17841,
+      "sha256_observed": "565b69d49bdcc9b660da8fddc3af1f742fb9f90564637f6e488c8005538a2ba6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v1/execution1.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v1/execution2.json",
+      "bytes_observed": 17841,
+      "sha256_observed": "565b69d49bdcc9b660da8fddc3af1f742fb9f90564637f6e488c8005538a2ba6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v1/execution2.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v1/validation.json",
+      "bytes_observed": 423,
+      "sha256_observed": "f1639d7437cd9d704b3993f9c079cfbb03150bc2df162f34ea62b8d4635cc060",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v2/execution1.json",
+      "bytes_observed": 17841,
+      "sha256_observed": "565b69d49bdcc9b660da8fddc3af1f742fb9f90564637f6e488c8005538a2ba6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v2/execution1.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v2/execution2.json",
+      "bytes_observed": 17841,
+      "sha256_observed": "565b69d49bdcc9b660da8fddc3af1f742fb9f90564637f6e488c8005538a2ba6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v2/execution2.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/native-v2/validation.json",
+      "bytes_observed": 423,
+      "sha256_observed": "f1639d7437cd9d704b3993f9c079cfbb03150bc2df162f34ea62b8d4635cc060",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/phpstan-v1/execution.json",
+      "bytes_observed": 662,
+      "sha256_observed": "0bdecb29264810542ee7902ee0b6efc3f2daf94a270615f1d1c2967e1a52d0f7",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/phpstan-v1/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/phpstan-v1/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v1/execution.json",
+      "bytes_observed": 639,
+      "sha256_observed": "45855d4f1c3ba1335d95dbad0e48146e7c67bc59804a5cd6f32348b4767f932c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v1/stdout.log",
+      "bytes_observed": 306,
+      "sha256_observed": "1e01d02d2cb94fb59b56f79e03119ad172f19f4014e72ffc4c2de02625ba631e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v2/execution.json",
+      "bytes_observed": 692,
+      "sha256_observed": "01b081541a036557dd9b60fe174311d7f5c3750854136be89740e8abfec9a3c1",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v2/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v2/stdout.log",
+      "bytes_observed": 392,
+      "sha256_observed": "15cd8303ec0c744aef3d809e83e669311ac902a1e2592fd0d4a49d08d8b87ee3",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v3/execution.json",
+      "bytes_observed": 692,
+      "sha256_observed": "1fb5fe59be8ede719830b1cc314e620739ddf031d5243cef3937583559ca9b20",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v3/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/pint-v3/stdout.log",
+      "bytes_observed": 307,
+      "sha256_observed": "d7a9f081a6d08077e54a6db2a436d50423f29b44b4a1c648761353d84f245659",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/primary-v1/lc214.html",
+      "bytes_observed": 5403667,
+      "sha256_observed": "7f5c5fecac931d6038dd9b9843ae00d331275efce8de9fe7d5c62cb9c65fb866",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/primary-v2/capture.json",
+      "bytes_observed": 4585,
+      "sha256_observed": "2ca90b40e50bc6dc8ea8d3859af0c347e91f6caa3deeb66bf221199dba396081",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-price135-20261023-v1/primary-v2/lc214.html",
+      "bytes_observed": 5403667,
+      "sha256_observed": "70672c70d87f6e8978c34cd10056fd2d91e7a80c6f3483fa8715c850aae6d9c7",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/court-v1/capture.json",
+      "bytes_observed": 583,
+      "sha256_observed": "5d5af171888a4a559f6b7378fe2c6548b3ff033a7027087e8818f6a29b89434b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/court-v1/stf-tema118.html",
+      "bytes_observed": 362051,
+      "sha256_observed": "ff9ef0228ee075941384512042499eedf77db333a238c9f21e39036eac642da0",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v1/execution.json",
+      "bytes_observed": 860,
+      "sha256_observed": "6abda0aa883cfa7531e91856be3b32ad9a9227d06c6b2c53c71d46db63c4ed79",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v1/stdout.log",
+      "bytes_observed": 1511,
+      "sha256_observed": "35a93f558daaf5d941e6ae390f46748c70ed5cc600d73d56c50265d15f84b1e5",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v2/execution.json",
+      "bytes_observed": 860,
+      "sha256_observed": "d8baecca8bde1bba037742f172a247c665273134c6402a5d578c0e62518afc88",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v2/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v2/stdout.log",
+      "bytes_observed": 211,
+      "sha256_observed": "1e50994fa57d25f3336691ba2b9cd379841140f4edb5e25bf6a730dc6ff4304c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v3/execution.json",
+      "bytes_observed": 860,
+      "sha256_observed": "8e3b8af81a12cf52cff493930dee1415d7d47d0fde08145a89df05bee688113b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v3/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/directed-v3/stdout.log",
+      "bytes_observed": 211,
+      "sha256_observed": "ec6f50291021403242a34ec0907e78400f88a72f0134a0f3878897cbda3d403c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v1/execution1.json",
+      "bytes_observed": 54320,
+      "sha256_observed": "a71bbe8a2b76c7ca7d78bb600c932fb48b29b1930de6b28c2b5bc68d9f542b20",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v1/execution1.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v1/execution2.json",
+      "bytes_observed": 54320,
+      "sha256_observed": "a71bbe8a2b76c7ca7d78bb600c932fb48b29b1930de6b28c2b5bc68d9f542b20",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v1/execution2.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v1/validation.json",
+      "bytes_observed": 509,
+      "sha256_observed": "3055574219edc5ce2ce7ee322e0ecfddc452af4a3799488f55e59c8a5cabc8db",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v2/execution1.json",
+      "bytes_observed": 56486,
+      "sha256_observed": "7ca25b31eaaec5cadc12e81b91e4aab9a24b8490057fe7e56b9bf2c36afe8c1a",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v2/execution1.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v2/execution2.json",
+      "bytes_observed": 56486,
+      "sha256_observed": "7ca25b31eaaec5cadc12e81b91e4aab9a24b8490057fe7e56b9bf2c36afe8c1a",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v2/execution2.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/native-v2/validation.json",
+      "bytes_observed": 594,
+      "sha256_observed": "b64207557f33b88552dd8565e35474113e068ffbdee003b2db96ae6750d805a4",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/phpstan-v1/execution.json",
+      "bytes_observed": 659,
+      "sha256_observed": "1d67c7178c875bdb38bb011f3349cf20b89fd3cc411edab881ad75646b411cd5",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/phpstan-v1/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/phpstan-v1/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/phpstan-v2/execution.json",
+      "bytes_observed": 659,
+      "sha256_observed": "593500469ac7f8b81ffd2d375d2e81a6f4117bbc46a9d6db78514ab24f881448",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/phpstan-v2/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/phpstan-v2/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/pint-v1/execution.json",
+      "bytes_observed": 733,
+      "sha256_observed": "e4f98886414092307af60c1405abb395eb7f9290c125ee7c40120d34e113f738",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/pint-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/pint-v1/stdout.log",
+      "bytes_observed": 308,
+      "sha256_observed": "523e7370ab1fa4f64e0ede3a9dc8c0ed4be2d3da49c6f869b3e52b05e463a4ee",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/pint-v2/execution.json",
+      "bytes_observed": 733,
+      "sha256_observed": "11aad17858c84498b748232991cd202f6bd6521f7649359920b713fdb8db528d",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/pint-v2/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/pint-v2/stdout.log",
+      "bytes_observed": 308,
+      "sha256_observed": "523e7370ab1fa4f64e0ede3a9dc8c0ed4be2d3da49c6f869b3e52b05e463a4ee",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/primary-v1/capture.json",
+      "bytes_observed": 1992,
+      "sha256_observed": "28a011a0ed65f83c08b840b8e1b9f1203606ae6130fc23ef881a767a00a4652e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/primary-v1/law10833.html",
+      "bytes_observed": 268000,
+      "sha256_observed": "b8d988f077f01d698f43e137116f74b17a0d9c8e4394e3ab5d8c7c04af3b57c2",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/primary-v1/law9715.html",
+      "bytes_observed": 22739,
+      "sha256_observed": "fd8362e0deee013ee899751fba10e40563db43f5f5c2cda1c82f0bacf2491955",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/primary-v1/law9718.html",
+      "bytes_observed": 196422,
+      "sha256_observed": "a3e44fe9a8971c402b9e5abe4bbccf15e514a09e3ff766509338f1166c8c94be",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/primary-v1/lc116.html",
+      "bytes_observed": 104392,
+      "sha256_observed": "07d4cca637235e539c55fae94c008ecd1d5d4b363c8e9a83531ebb0fa8e89f67",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own135-20261023-v1/primary-v1/mp2158.html",
+      "bytes_observed": 209195,
+      "sha256_observed": "8354d89c9b48e743d918ff6e1efdb87a588925b9cbe3e6289e094cf0976a870d",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/directed-v1/execution.json",
+      "bytes_observed": 925,
+      "sha256_observed": "c8bff0d2646f74cdc1659ce0b783f8c38b88ac5934bdfe608f1d948509950a6a",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/directed-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/directed-v1/stdout.log",
+      "bytes_observed": 237,
+      "sha256_observed": "9ca2b5482cdc3c96933e44b7d971f0b2a539082d649fac7128d647c9e01a0e98",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/execution1.json",
+      "bytes_observed": 6266086,
+      "sha256_observed": "a0227624a1be82bc19aee0c7f79b6b9f967c6c549804f0c41658a6e37a25e881",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/execution1.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/execution2.json",
+      "bytes_observed": 6266086,
+      "sha256_observed": "a0227624a1be82bc19aee0c7f79b6b9f967c6c549804f0c41658a6e37a25e881",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/execution2.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/former-iss-only-contract.snapshot.json",
+      "bytes_observed": 3938128,
+      "sha256_observed": "e895be716d7c4a8150342f185cbcfc4fdb2b19dfc90defd1d411f9658fca90b7",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/new-explicit-contract.snapshot.json",
+      "bytes_observed": 3938128,
+      "sha256_observed": "6b261d02ab2b93b15ceae0f010339eca9be867da8ef69de4835d919a62622bdb",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/one-cent-higher-contract.snapshot.json",
+      "bytes_observed": 3938128,
+      "sha256_observed": "22ec51f4e0495b8d1f59da4840916692b20ed177ee301af2700a30a5ceda8b35",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/native-v1/validation.json",
+      "bytes_observed": 1016,
+      "sha256_observed": "33a73c276ac101c8e035152051c17586b7870bf9f1e45c7b644034d661ba2874",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/phpstan-v1/execution.json",
+      "bytes_observed": 661,
+      "sha256_observed": "e6cda5bcc566ec44f53d0b47ffdea40420722d283c77e977c7a046b6c07b04ae",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/phpstan-v1/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/phpstan-v1/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/pint-v1/execution.json",
+      "bytes_observed": 792,
+      "sha256_observed": "319077242557e21ada69609ad1f2e11ef448e1f4732e2e25edc7491b24a7808f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/pint-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-bridge135-20261023-v1/pint-v1/stdout.log",
+      "bytes_observed": 309,
+      "sha256_observed": "0d6977db0c3c4bc00be8189cefff37b259dbc714b6b54b1cc689b304f9990cf2",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/close_requested_checkpoint.py",
+      "bytes_observed": 8564,
+      "sha256_observed": "7d0f3774ba558c12032c1bc03d09bde5baf19f039fbfe5aa8d3844097c5318e4",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/console-full-suite-start-v1/objective-review.json",
+      "bytes_observed": 511503,
+      "sha256_observed": "eb427ef1fd33bdaf179a08b03b91b9e9dccfc6e80257a6a32f3127e8b32bd8da",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/console-full-suite-start-v1/observation.json",
+      "bytes_observed": 642,
+      "sha256_observed": "624664f22f0aef7260abf4f3cc6dbfe47d8d28386b96e1c338a0b4477921b4ea",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/console-full-suite-start-v1/roadmap.json",
+      "bytes_observed": 94840,
+      "sha256_observed": "af40dbb137847b546ff04df3134f912cc2e120b62ed0e6d53c1e239d4cdd08ff",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/console-full-suite-start-v1/status.json",
+      "bytes_observed": 384769,
+      "sha256_observed": "19fdb7a75bef4e5b97fe16e2e972bcc5f315fe9b2ae5a503c06f263c44268a36",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/console-full-suite-start-v1/task-progress.json",
+      "bytes_observed": 368100,
+      "sha256_observed": "c1713e1749db19e6ba9a7dd5f5ad1c39c4b9658b2da41044e22f9275f8133c42",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/continuation-live-v1.json",
+      "bytes_observed": 2385,
+      "sha256_observed": "cc80bcea6cd0fc6d546a89378295a33fa51a2e113218ccf1c7d851a5ddf0bd0b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/directed-v2/execution.json",
+      "bytes_observed": 990,
+      "sha256_observed": "4c3d66597bc982dfb09dd5aa11a86705462a6e475e030c78558979f2551ef024",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/directed-v2/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/directed-v2/stdout.log",
+      "bytes_observed": 275,
+      "sha256_observed": "fbb4359e56f05da559439630c1a7784623053fce1447a047cb843a63e9802f97",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/directed-v3/execution.json",
+      "bytes_observed": 990,
+      "sha256_observed": "1c283fb8c5c1b31194c7846f824a8d366d6a6e1632a2a5df1ed9a24d83fa568c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/directed-v3/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/directed-v3/stdout.log",
+      "bytes_observed": 275,
+      "sha256_observed": "5cbac122a7b2fc6adedff8a409897b22008472af76a88a1ee149dfbb7be50370",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/input-hashes-before.json",
+      "bytes_observed": 946314,
+      "sha256_observed": "0fb4f970ec9e8c792ab5839ec0a40b5bbb4082d75f35ac818997ac116c09ba52",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+      "bytes_observed": 482,
+      "sha256_observed": "50b53fffd61c228d63bb721a67cb743fc56a1442468efdb6ff1c617c4fbe8711",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/stdout.log",
+      "bytes_observed": 2568,
+      "sha256_observed": "731674bda2b7a65760b41f180b90f1d3f16af8308a9467b9f78d75a0579c571a",
+      "mutable_active_log": true
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/historical134-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/historical134-v1/stdout.log",
+      "bytes_observed": 3232,
+      "sha256_observed": "d1c44a86abe658626ca6a1a3967b077703ba172634ae5f65b44abd4c783f2717",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/historical134-v1/validation.json",
+      "bytes_observed": 4392,
+      "sha256_observed": "d798548257ee7a5ffdabe7ba2203b714c0c9e1d5b7c732b0816700b918c54480",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/capture.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/declarations.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "0cc43645c1c213484584babe79d479ce8990e921225d6e5ca0ed2a50b797da81",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/first/report.json",
+      "bytes_observed": 23554,
+      "sha256_observed": "0234a654c72d638cc7a213bd9d1ed1980048c5ab5c7404013ded8d76878b9832",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/first/RTC_DOMESTIC.xml",
+      "bytes_observed": 2323,
+      "sha256_observed": "27400f8cdd8e65714b72b4dc30017f70df1dead62e7abc28cec3bebd6cc6d6c6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/first/RTC_FOREIGN.xml",
+      "bytes_observed": 2188,
+      "sha256_observed": "d7b230a21e300cf29fdb6f231eba514ace1b1ba6787d86d4b34bc4286a69b96e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/first.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/first.stdout.json",
+      "bytes_observed": 23418,
+      "sha256_observed": "ba5aedbfdc1d223d6d733023218e384fe3e5310039f094492147eecfe72e75ad",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/former-contract.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/former-contract.stdout.json",
+      "bytes_observed": 233,
+      "sha256_observed": "c6f9b485b401c9f2da28389f4a0c58706eff9306077144ee4198a6cfd411e2ab",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/former-declarations.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "c53108c5282389fe6c7d83fdb1259ffec549cdec436928b9b14ff0133af24206",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/former-snapshot.json",
+      "bytes_observed": 4032326,
+      "sha256_observed": "24ac0defb83f2e0cd171023084f6f9dfa2e21388c8412bf4525461d53b4849e0",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/input-bundle.json",
+      "bytes_observed": 4206362,
+      "sha256_observed": "8d56a595d958e4a413180647cd62f59133a0e14c0745cb269044bd9c6cfd3c65",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/invalid-identity.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "835b3d79c7ba5ca1f3d1b006b79fae478a051ab9263c9df413d186fecef8579d",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/invalid-identity.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/invalid-identity.stdout.json",
+      "bytes_observed": 205,
+      "sha256_observed": "11e4813e09539ecf5e83806e9a603c6edc02741bbcfcb4876bacdcf2dbe03709",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/second/report.json",
+      "bytes_observed": 23554,
+      "sha256_observed": "0234a654c72d638cc7a213bd9d1ed1980048c5ab5c7404013ded8d76878b9832",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/second/RTC_DOMESTIC.xml",
+      "bytes_observed": 2323,
+      "sha256_observed": "27400f8cdd8e65714b72b4dc30017f70df1dead62e7abc28cec3bebd6cc6d6c6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/second/RTC_FOREIGN.xml",
+      "bytes_observed": 2188,
+      "sha256_observed": "d7b230a21e300cf29fdb6f231eba514ace1b1ba6787d86d4b34bc4286a69b96e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/second.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/second.stdout.json",
+      "bytes_observed": 23418,
+      "sha256_observed": "ba5aedbfdc1d223d6d733023218e384fe3e5310039f094492147eecfe72e75ad",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/snapshot.json",
+      "bytes_observed": 4032326,
+      "sha256_observed": "82ea6c68a798e92e5281e8b097681cab34ed55d7c8090fae7dad31aa84d45c7c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v1/validation.json",
+      "bytes_observed": 1356,
+      "sha256_observed": "1994c816dac827c8c38d97f63a95f90c594f2cefc697492bb4dcd074a4437bce",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/capture.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/declarations.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "0cc43645c1c213484584babe79d479ce8990e921225d6e5ca0ed2a50b797da81",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/first/report.json",
+      "bytes_observed": 23554,
+      "sha256_observed": "0234a654c72d638cc7a213bd9d1ed1980048c5ab5c7404013ded8d76878b9832",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/first/RTC_DOMESTIC.xml",
+      "bytes_observed": 2323,
+      "sha256_observed": "27400f8cdd8e65714b72b4dc30017f70df1dead62e7abc28cec3bebd6cc6d6c6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/first/RTC_FOREIGN.xml",
+      "bytes_observed": 2188,
+      "sha256_observed": "d7b230a21e300cf29fdb6f231eba514ace1b1ba6787d86d4b34bc4286a69b96e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/first.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/first.stdout.json",
+      "bytes_observed": 23418,
+      "sha256_observed": "ba5aedbfdc1d223d6d733023218e384fe3e5310039f094492147eecfe72e75ad",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/former-contract.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/former-contract.stdout.json",
+      "bytes_observed": 233,
+      "sha256_observed": "c6f9b485b401c9f2da28389f4a0c58706eff9306077144ee4198a6cfd411e2ab",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/former-declarations.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "c53108c5282389fe6c7d83fdb1259ffec549cdec436928b9b14ff0133af24206",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/former-snapshot.json",
+      "bytes_observed": 4032326,
+      "sha256_observed": "24ac0defb83f2e0cd171023084f6f9dfa2e21388c8412bf4525461d53b4849e0",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/input-bundle.json",
+      "bytes_observed": 4206362,
+      "sha256_observed": "8d56a595d958e4a413180647cd62f59133a0e14c0745cb269044bd9c6cfd3c65",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/invalid-identity.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "835b3d79c7ba5ca1f3d1b006b79fae478a051ab9263c9df413d186fecef8579d",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/invalid-identity.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/invalid-identity.stdout.json",
+      "bytes_observed": 205,
+      "sha256_observed": "11e4813e09539ecf5e83806e9a603c6edc02741bbcfcb4876bacdcf2dbe03709",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/second/report.json",
+      "bytes_observed": 23554,
+      "sha256_observed": "0234a654c72d638cc7a213bd9d1ed1980048c5ab5c7404013ded8d76878b9832",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/second/RTC_DOMESTIC.xml",
+      "bytes_observed": 2323,
+      "sha256_observed": "27400f8cdd8e65714b72b4dc30017f70df1dead62e7abc28cec3bebd6cc6d6c6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/second/RTC_FOREIGN.xml",
+      "bytes_observed": 2188,
+      "sha256_observed": "d7b230a21e300cf29fdb6f231eba514ace1b1ba6787d86d4b34bc4286a69b96e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/second.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/second.stdout.json",
+      "bytes_observed": 23418,
+      "sha256_observed": "ba5aedbfdc1d223d6d733023218e384fe3e5310039f094492147eecfe72e75ad",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/snapshot.json",
+      "bytes_observed": 4032326,
+      "sha256_observed": "82ea6c68a798e92e5281e8b097681cab34ed55d7c8090fae7dad31aa84d45c7c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v2/validation.json",
+      "bytes_observed": 1536,
+      "sha256_observed": "7ad1412e59be0cebf21b810e6cbff224839df3aa73083018452f191ea99e2544",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/capture.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/declarations.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "81ab5233eb8a57896e79dc3177c82320f6018cbde8502887a703c070a6a2ac01",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/first/report.json",
+      "bytes_observed": 23600,
+      "sha256_observed": "d48682179690bd88f32d57ff80da6fa5b772bc586c6c37b7c385ec85e603595b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/first/RTC_DOMESTIC.xml",
+      "bytes_observed": 2323,
+      "sha256_observed": "27400f8cdd8e65714b72b4dc30017f70df1dead62e7abc28cec3bebd6cc6d6c6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/first/RTC_FOREIGN.xml",
+      "bytes_observed": 2188,
+      "sha256_observed": "d7b230a21e300cf29fdb6f231eba514ace1b1ba6787d86d4b34bc4286a69b96e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/first.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/first.stdout.json",
+      "bytes_observed": 23464,
+      "sha256_observed": "07481fa45ebdce91870430c4084cb6c3db2064c287a8a4c5c6fc92da02ab460b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/former-contract.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/former-contract.stdout.json",
+      "bytes_observed": 233,
+      "sha256_observed": "c6f9b485b401c9f2da28389f4a0c58706eff9306077144ee4198a6cfd411e2ab",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/former-declarations.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "cebea44cd1ad5473eb229ea59e77dc48e528393c478ad7515cb416a21fa5538f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/former-snapshot.json",
+      "bytes_observed": 4032326,
+      "sha256_observed": "24ac0defb83f2e0cd171023084f6f9dfa2e21388c8412bf4525461d53b4849e0",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/input-bundle.json",
+      "bytes_observed": 4206362,
+      "sha256_observed": "e6c21e7f74ba380eeec15ed2ebf6c1d29fdf0010bdd79721334e837353f1c5cf",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/invalid-identity.json",
+      "bytes_observed": 22267,
+      "sha256_observed": "287c567b61963e64de664cb838318a614c39be91131d15913f1a2c21d1c32561",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/invalid-identity.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/invalid-identity.stdout.json",
+      "bytes_observed": 205,
+      "sha256_observed": "11e4813e09539ecf5e83806e9a603c6edc02741bbcfcb4876bacdcf2dbe03709",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/second/report.json",
+      "bytes_observed": 23600,
+      "sha256_observed": "d48682179690bd88f32d57ff80da6fa5b772bc586c6c37b7c385ec85e603595b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/second/RTC_DOMESTIC.xml",
+      "bytes_observed": 2323,
+      "sha256_observed": "27400f8cdd8e65714b72b4dc30017f70df1dead62e7abc28cec3bebd6cc6d6c6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/second/RTC_FOREIGN.xml",
+      "bytes_observed": 2188,
+      "sha256_observed": "d7b230a21e300cf29fdb6f231eba514ace1b1ba6787d86d4b34bc4286a69b96e",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/second.stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/second.stdout.json",
+      "bytes_observed": 23464,
+      "sha256_observed": "07481fa45ebdce91870430c4084cb6c3db2064c287a8a4c5c6fc92da02ab460b",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/snapshot.json",
+      "bytes_observed": 4032326,
+      "sha256_observed": "82ea6c68a798e92e5281e8b097681cab34ed55d7c8090fae7dad31aa84d45c7c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/native-v3/validation.json",
+      "bytes_observed": 1536,
+      "sha256_observed": "ebb42bf89b04fc985c80b026c93e3e2ceb788ef8e44226693db253b30d82f8f6",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pair-directed-v1/execution.json",
+      "bytes_observed": 676,
+      "sha256_observed": "2f82584c7ec196d0f262a41ae8e1d8c353370ef9a5cee5e6ca8aa702fcd98bb1",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pair-directed-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pair-directed-v1/stdout.log",
+      "bytes_observed": 16416,
+      "sha256_observed": "030cd0b29fdc371daeaf28c8b03ef31ff7427b99523d4578598b7112efa7ff0f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-full-v1/execution.json",
+      "bytes_observed": 588,
+      "sha256_observed": "5be5f6b8f879b14ed90e0928a72874e83d68c63886860b1b35d36d59f672302d",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-full-v1/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-full-v1/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-full-v2/execution.json",
+      "bytes_observed": 588,
+      "sha256_observed": "1e0f01f08004ef7e1f995358d669e8cf35a399b86e342fe654d1b4d25374c6d7",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-full-v2/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-full-v2/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-v1/execution.json",
+      "bytes_observed": 872,
+      "sha256_observed": "e9d30f873079098fa4936c639caf2c267536c9fc73ce9bf571a668afb64c8c82",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-v1/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-v1/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-v2/execution.json",
+      "bytes_observed": 872,
+      "sha256_observed": "071e5699965f766ad5290f7aafb3a66d41628ee4abdf44f196ae39d270c8f8a1",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-v2/stderr.log",
+      "bytes_observed": 59,
+      "sha256_observed": "883e0131f9d443f7833754264006b5e266d173795bef99067610eaf34cce0a7f",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/phpstan-v2/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "54e6eb194ee0b354574ec566f17799b533a8be4c7d81b0e9a532389caf087687",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-full-v1/execution.json",
+      "bytes_observed": 506,
+      "sha256_observed": "4715053cc806f6ffda06e7b0e829de5c7d3d3c76b9227b23be8ebb54db16faa0",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-full-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-full-v1/stdout.log",
+      "bytes_observed": 1001,
+      "sha256_observed": "8704c9b2c77ca2d3f9c60b11077368d32dd4de8bf2926e6cf012fb5cbfc20ec9",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-full-v2/execution.json",
+      "bytes_observed": 506,
+      "sha256_observed": "d55f21c17d6847a8e1a0f023eff78ca3bf5406f488927093ccd53f59072a5661",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-full-v2/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-full-v2/stdout.log",
+      "bytes_observed": 1001,
+      "sha256_observed": "8704c9b2c77ca2d3f9c60b11077368d32dd4de8bf2926e6cf012fb5cbfc20ec9",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-v1/execution.json",
+      "bytes_observed": 1045,
+      "sha256_observed": "8e4e2048010e7f0dc5a419da2045df077c1325180189334000139dd5a37849dc",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-v1/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/pint-v1/stdout.log",
+      "bytes_observed": 313,
+      "sha256_observed": "1272b65c171e5f78599410d6177121c64e97e2602f8d21563ceaa93b1adffec0",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/positive-v2/execution.json",
+      "bytes_observed": 725,
+      "sha256_observed": "a609f61b5ad81872651971e8e8b2cb9249eee0d270a069c5e29532a8fcc66b37",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/positive-v2/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/positive-v2/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "6c8a6b2cc9ef57000c9fb932add457d09c5ea9c3cfbc8b675013012efae36ace",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/positive-v3/execution.json",
+      "bytes_observed": 725,
+      "sha256_observed": "04013e9336adb3a0991a947b1feec2e1bb0526a04711dfba645035983c90e874",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/positive-v3/stderr.log",
+      "bytes_observed": 0,
+      "sha256_observed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/positive-v3/stdout.log",
+      "bytes_observed": 62,
+      "sha256_observed": "5bed9ec33819ae9fe36717fb71fabe731849ad729b48e3cdd7472c0d9981d107",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/prepare_requested_closure.py",
+      "bytes_observed": 2395,
+      "sha256_observed": "c18c4afd5246dbdb28ba647458777f6c0f0f7e9144e0c4d0231ca78ceb3c5e08",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/source-install-v1/receipt.json",
+      "bytes_observed": 3315,
+      "sha256_observed": "f295a752719769717a1e571b611187a61269c0a4be7be59ffe66d34c2930e682",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/discover_sped_tables.py",
+      "bytes_observed": 1478,
+      "sha256_observed": "12544230e58f0e679eec9d14e5f2796cdd4abb23382b3521d42bee1cc81912cc",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/inspect_federal_layout.py",
+      "bytes_observed": 4592,
+      "sha256_observed": "7ed4d7ac2f5ea4d75ab321e4c8c3c60eff14c5285d1b2498bafa677386600306",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/layout-inspection-v1/portal-links.json",
+      "bytes_observed": 9150,
+      "sha256_observed": "8dc700dfcf2b975fc909b28bd6a98535185d73b25c8c5791af8bb99a1d575e07",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/layout-inspection-v1/schema-types.json",
+      "bytes_observed": 13735,
+      "sha256_observed": "41d69ec6e7015e4f6f11c2f05a33827c04ef13d014188df620e2c9196bd4d2aa",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/layout-inspection-v1/sped-tables-portal.html",
+      "bytes_observed": 264135,
+      "sha256_observed": "c1abfba645b149ac16a6016bb66066ee2d8b7c68971cc99f837c124c8c0eb66c",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/layout-inspection-v1/validation.json",
+      "bytes_observed": 614,
+      "sha256_observed": "492e2b40c38a4b04a28f694516d60295180b9722791d5d84351127595412cec9",
+      "mutable_active_log": false
+    },
+    {
+      "path": "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/layout-inspection-v1/workbook-rows.json",
+      "bytes_observed": 85588,
+      "sha256_observed": "8ce3f206cfd5724ca16ccf24afad33514770086c5ac242db24c5cb5a2dbdd977",
+      "mutable_active_log": false
+    }
+  ],
+  "historical_evidence_removed": false
+}

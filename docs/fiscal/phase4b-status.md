@@ -1,5 +1,15 @@
 # Fase 4B — IBS/CBS e reforma do consumo
 
+Checkpoint de23/10:desenvolvimento interrompido a pedido do usuário. Validação dirigida135 aprovada;regressão integral ainda pendente de resultado e auditoria. Ver `phase4b-day-closure-20261023.md`.0/8 grupos encerrados,produção bloqueada.
+
+IntegraçãoCLI135 em23/10:comando monta doisDPS completos XSD com replay134,ponte própria,identidade,COMEX e classificação.203 testes/498 asserções,PHPStan global0/Pint673,22 históricos exatos e2 XML distintos idênticos entre execuções. Grupo próprioPIS-Cofins ainda só no relatório. Regressão integral iniciada12:03:18UTC com5896 entradas,incluindo scripts/helpers;resultado terminal pendente.0/8 grupos encerrados. Ver `phase4b-pair135-local-projection.md`.
+
+Avanço da ponte135 em23/10:todos os tributos próprios reexecutados e preços conferidos comRTC.166 testes/426 asserções,PHPStan0/Pint5;3 cenários,6 replays e6 oráculosDecimal. Nova declaração sintética400/641,33 reconcilia1041,33−41,33=1000,00;contrato617,92 e diferença de um centavo continuam recusados. Integração/par135 e efeitos judiciais pendentes;0/8 encerrados. Ver `phase4b-own-bridge135-price-reconciliation.md`.
+
+Avanço135V2 em23/10:cálculo próprio dePIS/Cofins por receita de software,comISS deduzido sob alegação localTema118 (mérito21/10,ata23/10).143 testes/386 asserções,PHPStan0/Pint4;2 replays134 e10 conferênciasDecimal. A ponte preservada diverge21,90 no documento nacional. Efeitos judiciais e integração pendentes;0/8 grupos encerrados. Ver `phase4b-own135-software-revenue.md`.
+
+Retomada135 em23/10:guarda isolada de exclusões declaradas por documento,sem integração ao bundle.94 testes/316 asserções,PHPStan0/Pint3;2 replays134 exatos,8 controles. Próximo:avaliações próprias e provas materiais por tributo antes do par135.134 última regressão integral;0/8 grupos encerrados. Ver `phase4b-legacy135-declared-exclusions.md`.
+
 Checkpoint em 2026-10-22T16:43:08.519378-03:00: parada segura solicitada pelo usuário. Regressão134 encerrada:9.406 testes/145.560 asserções,5.179 entradas intactas;auditoria415/114 hashes. Corte134 validado;4B parcial,0/8 encerrados. Ensaios135 externos não integrados. Ver `phase4b-day-closure-20261022.md`.
 
 Estado atual134 em22/10:ISS próprio por documento integrado e grupo valores
