@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-23T12:27:28.631911+00:00",
-  "title": "135: checkpoint de desenvolvimento; parada solicitada",
+  "updated_at": "2026-10-23T09:29:47.515788-03:00",
+  "title": "135: checkpoint publicado; desenvolvimento interrompido",
   "state": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
   "criterion": "4/6 marcos da entrega135 (67%);aceite integral pendente. Checkpoint publicado não encerra a entrega ou a Fase4B.",
   "milestones": [
@@ -6098,6 +6098,95 @@
       },
       "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
       "development_state": "STOP_REQUESTED_VALIDATION_CLOSURE_ONLY"
+    },
+    {
+      "updated_at": "2026-10-23T12:27:28.631911+00:00",
+      "title": "135: checkpoint de desenvolvimento; parada solicitada",
+      "state": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+      "criterion": "4/6 marcos da entrega135 (67%);aceite integral pendente. Checkpoint publicado não encerra a entrega ou a Fase4B.",
+      "milestones": [
+        {
+          "title": "Conferir checkpoint/processos",
+          "complete": true
+        },
+        {
+          "title": "Preservar fontes e qualificar contrato",
+          "complete": true
+        },
+        {
+          "title": "Implementar comportamento delimitado",
+          "complete": true
+        },
+        {
+          "title": "Integrar nova versão preservando históricos",
+          "complete": true
+        },
+        {
+          "title": "Validar casos,recusas e replays",
+          "complete": false
+        },
+        {
+          "title": "Auditar evidências,documentação e console",
+          "complete": false
+        }
+      ],
+      "finished": [
+        "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+        "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+        "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+      ],
+      "pending": [
+        "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+        "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+        "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+      ],
+      "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json"
+      ],
+      "focus": {
+        "summary": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
+        "finished": [
+          "Comando135 integra replay,ponte própria,COMEX,classificação eidentidade antes da gravação.",
+          "203 testes/498 asserções;PHPStan global0/Pint673;22 históricos134 exatos.",
+          "DoisDPS completos XSD em duas execuções;recusas específicas sem criação de diretório."
+        ],
+        "pending": [
+          "Conferir o resultado terminal da mesma regressão135 e auditar5896 entradas antes de qualquer aceite integral.",
+          "Projetar PIS/Cofins próprios noXML com CST/indicadores qualificados;concluir país/moeda e demais dados documentais.",
+          "Concluir efeitos judiciais,câmbioISS,importação e demais requisitos da matriz80."
+        ],
+        "next_step": "Aguardar nova solicitação de retomada;então conferir a captura já iniciada e executar a auditoria integral135 se terminal e válida."
+      },
+      "scope_package": "135",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      },
+      "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
+      "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "started_at": "2026-10-23T12:03:18.023213+00:00",
+        "host_docker_pid": 3572,
+        "container_php_pid": 1481,
+        "exec_session": 63024,
+        "frozen_inputs": 5896,
+        "script_helpers_included": true,
+        "status": "RUNNING_OBSERVED",
+        "terminal_result_observed": false
+      },
+      "stop_requested_at": "2026-10-23T12:24:05.010456+00:00",
+      "development_state": "STOPPED_BY_USER_FULL_VALIDATION_PENDING",
+      "checkpoint_integrity_note": "Console historical acceptance122 compares94 hashes;four later changes were already published22Oct. Current135 checkpoint separately verifies121 runtime hashes. Historical receipt remains unchanged."
     }
   ],
   "focus": {
@@ -6116,17 +6205,19 @@
   },
   "scope_package": "135",
   "checkpoint_publication": {
-    "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+    "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-22T16:44:21.627482-03:00",
+    "published_at": "2026-10-23T09:29:47.515788-03:00",
     "push_confirmed": true,
     "development_stopped_by_user": true,
+    "full_regression_accepted": false,
+    "full_suite_capture_left_running": true,
     "phase4b_complete": false
   },
   "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
   "scope_note": "3/6 marcos deste desenvolvimento135;guarda isolada validada,integração pendente.134 permanece última regressão integral,122 aceite histórico.",
-  "uncommitted_development": true,
+  "uncommitted_development": false,
   "active_validation": {
     "started_at": "2026-10-23T12:03:18.023213+00:00",
     "host_docker_pid": 3572,

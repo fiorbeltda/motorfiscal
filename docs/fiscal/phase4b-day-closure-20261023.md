@@ -66,3 +66,10 @@ histórica122 mostra4 diferenças em94 hashes, todas já publicadas em22/10
 e preservadas sem alteração neste corte. A conferência atual135 verificou121
 hashes coincidentes, separadamente. Ver `checkpoint-console-observation.json`
 no diretório de recibos135; não promover o recibo histórico para ocultar diferenças.
+
+Atualização imediatamente após publicação em 2026-10-23T09:29:47.515788-03:00:
+commit principal `7c4429089e605cba1de9a9410d36ea89704997bd` enviado e SHA remoto confirmado na branch
+`codex/fiscal-engine-bootstrap`. Mensagem: `Atualização - 23/10/2026 09:29 (São Paulo)`.
+Console atualizado com hash,horário e parada solicitada. Regressão integral
+permanece em captura;nenhum aceite integral foi declarado. Esta atualização
+documental será publicada em commit próprio no mesmo formato histórico.

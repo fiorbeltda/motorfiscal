@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
+  "reviewed_at": "2026-10-23T09:29:47.515788-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
   "criterion": "135:checkpoint dirigido203/498,PHPStan0/Pint673;integral pendente.134 última regressão integral histórica;122 aceite histórico;80 revisões próprias,0/8 grupos encerrados.",
   "objectives": [
@@ -7391,6 +7391,18 @@
           "current_package_review": "Parada e publicação solicitadas pelo usuário. Implementação encerrada neste corte135; a mesma regressão integral permanece ativa, sem resultado antecipado. Nenhuma nova funcionalidade será iniciada antes da retomada. Entregas e pendências próprias deste grupo preservadas; nenhum encerramento formal adicional."
         }
       ]
+    },
+    {
+      "reviewed_at": "2026-10-23T12:27:28.631911+00:00",
+      "checkpoint_publication": {
+        "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "published_at": "2026-10-22T16:44:21.627482-03:00",
+        "push_confirmed": true,
+        "development_stopped_by_user": true,
+        "phase4b_complete": false
+      }
     }
   ],
   "current_review": "Desenvolvimento135 interrompido a pedido do usuário em checkpoint local validado por203 testes/498 asserções,PHPStan0/Pint673. Regressão integral ainda em captura,sem aceite integral135.0/8 grupos encerrados;produção bloqueada.",
@@ -7400,14 +7412,16 @@
     "path": "storage/app/phase4b-pair135-development-20261023/requirements80-directed-matrix.json",
     "sha256": "e2b649360ffff83f594dd14a611cc431e2ffc07b7191a3d015fdae01fedef3fd"
   },
-  "updated_at": "2026-10-23T12:27:28.631911+00:00",
+  "updated_at": "2026-10-23T09:29:47.515788-03:00",
   "checkpoint_publication": {
-    "commit": "27ab5a6d4492244761d7ba9921a5274c32564765",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/27ab5a6d4492244761d7ba9921a5274c32564765",
+    "commit": "7c4429089e605cba1de9a9410d36ea89704997bd",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/7c4429089e605cba1de9a9410d36ea89704997bd",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-22T16:44:21.627482-03:00",
+    "published_at": "2026-10-23T09:29:47.515788-03:00",
     "push_confirmed": true,
     "development_stopped_by_user": true,
+    "full_regression_accepted": false,
+    "full_suite_capture_left_running": true,
     "phase4b_complete": false
   },
   "development_resumed_at": "2026-10-23T10:48:55.599978+00:00",
