@@ -63,11 +63,16 @@
     "endpoint_development_state": "STOPPED_BY_USER_REQUEST"
   },
   "checkpoint_publication": {
-    "status": "PREPARED_NOT_YET_PUSHED",
+    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+    "commit": "1fbe4998c03b7e72ef370dff26aaf09188f09cd0",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/1fbe4998c03b7e72ef370dff26aaf09188f09cd0",
     "branch": "codex/fiscal-engine-bootstrap",
+    "published_at": "2026-10-27T09:49:46.389874-03:00",
+    "push_confirmed": true,
+    "remote_sha_confirmed": true,
     "development_stopped_by_user": true,
     "phase4b_complete": false,
-    "production_ready": false,
-    "recorded_at": "2026-10-27T09:48:22.438044-03:00"
-  }
+    "production_ready": false
+  },
+  "source_bytes_note": "Git whitespace warnings in official HTML captures retained verbatim to preserve audited source hashes; authored files checked separately."
 }

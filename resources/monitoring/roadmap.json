@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+  "reviewed_at": "2026-10-27T09:49:46.389874-03:00",
   "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5-7 planejadas. Parada solicitada no aceite140;141 pendente;producao bloqueada.",
   "phases": [
     {
@@ -2237,17 +2237,21 @@
   ],
   "current_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
   "scope_package": "140",
-  "updated_at": "2026-10-27T09:48:22.438044-03:00",
+  "updated_at": "2026-10-27T09:49:46.389874-03:00",
   "checkpoint_publication": {
-    "status": "PREPARED_NOT_YET_PUSHED",
+    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+    "commit": "1fbe4998c03b7e72ef370dff26aaf09188f09cd0",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/1fbe4998c03b7e72ef370dff26aaf09188f09cd0",
     "branch": "codex/fiscal-engine-bootstrap",
+    "published_at": "2026-10-27T09:49:46.389874-03:00",
+    "push_confirmed": true,
+    "remote_sha_confirmed": true,
     "development_stopped_by_user": true,
     "phase4b_complete": false,
-    "production_ready": false,
-    "recorded_at": "2026-10-27T09:48:22.438044-03:00"
+    "production_ready": false
   },
   "development_resumed_at": "2026-10-26T18:00:28.276940+00:00",
   "development_state": "STOPPED_BY_USER_REQUEST",
   "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
-  "uncommitted_development": true
+  "uncommitted_development": false
 }
