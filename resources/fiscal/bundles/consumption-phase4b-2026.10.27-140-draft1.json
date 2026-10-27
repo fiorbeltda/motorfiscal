@@ -1,0 +1,1460 @@
+{
+    "bundle_id": "CONSUMPTION-PHASE4B-2026.10.27-140-draft1",
+    "bundle_key": "CONSUMPTION-PHASE4B",
+    "version": "2026.10.27-140-draft1",
+    "engine_version": "1.3.0-phase4b",
+    "status": "SANDBOX_CANDIDATE",
+    "knowledge_available_at": "2026-10-27T12:05:00+00:00",
+    "catalog_versions": {
+        "services": "2026.09.17-1",
+        "municipal_parameters": "2026.10.27-140-draft1",
+        "public_annex_i": "rfb-41766-sandbox-1",
+        "federal_obligations": "2026-sandbox-3",
+        "federal_banking_calendar": "2026-national-febraban-1",
+        "rtc_rates": "2026.09.25-1",
+        "rtc_codes": "2026.10.22-134-draft1",
+        "rtc_transition": "2026.10.15-91-draft1",
+        "iss_currency": "2026.10.27-140-draft1"
+    },
+    "resource_paths": {
+        "fact_definitions": "facts/consumption-phase4b-2026.10.27-140-draft1.json",
+        "questions": "questions/consumption-integrated-2026.10.27-140-draft1.json",
+        "service_catalog": "catalogs/iss-services-2026.09.17-1.json",
+        "municipal_parameters": "catalogs/municipal-iss-currency-sandbox-2026.10.27-140-draft1.json",
+        "invariants": "invariants/consumption-phase4b-2026.10.02-5.json",
+        "scenario_schema": "schemas/scenario-price112-v1.schema.json",
+        "rules": "rules/iss-phase3",
+        "public_annex_catalog": "catalogs/public-annex-i-rfb-41766.json",
+        "federal_obligation_catalog": "catalogs/federal-obligations-2026-sandbox-v3.json",
+        "federal_banking_calendar": "catalogs/federal-banking-calendar-2026-national.json",
+        "rtc_rate_catalog": "catalogs/rtc-rates-2026.09.25-1.json",
+        "rtc_code_catalog": "catalogs/rtc-codes-2026.10.22-134-draft1.json",
+        "rtc_transition_catalog": "catalogs/rtc-transition-2026.10.15-91-draft1.json",
+        "iss_currency_catalog": "catalogs/iss-document-currency-2026.10.27-140-draft1.json"
+    },
+    "question_overlays": [],
+    "research_sources": [
+        {
+            "source_id": "SOURCE.RESEARCH.17.IRRF",
+            "file": "Pesquisa 17 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 40847,
+            "sha256": "aacd536f80651a3ef242696793787e62e06933ba4da421ef1d21512ad84b636e"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.18.PIS",
+            "file": "Pesquisa 18 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 40805,
+            "sha256": "9bc422a1a1f114da42528fe37b25c140c05787b9319b622fe55e08d6767db5cc"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.19.COFINS",
+            "file": "Pesquisa 19 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 72799,
+            "sha256": "43b620c7f617b6750802ec0985bef2019495cd8f8007ef058c1e8fb35e4e17f6"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.20.CSLL",
+            "file": "Pesquisa 20 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 99394,
+            "sha256": "e165c781d7eb6643473eb37a2be32161cecbbe5712679967a8409b7bd4afb8ef"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.21.PCC",
+            "file": "Pesquisa 21 - Respostas  - OK.txt",
+            "size_bytes": 32938,
+            "sha256": "6334f021ccc8cc4c28277082aacd3c4c22327c79ca6962785da84c900c82634b"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.22.INSS",
+            "file": "Pesquisa 22 - Respostas - OK.txt",
+            "size_bytes": 66802,
+            "sha256": "294fa960c0c28b8c502fc970d8300ca9b51f5de29c1cfb11c4c2276cbe419e03"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.23.LABOR_ASSIGNMENT",
+            "file": "Pesquisa 23 - Repostas - OK.txt",
+            "size_bytes": 41542,
+            "sha256": "a61240b1f99a668fb3d58babe3e0b955189e1d1030da88424bbe0ef975eab42d"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.24.CONSTRUCTION",
+            "file": "Pesquisa 24 - Respostas - OK.txt",
+            "size_bytes": 66358,
+            "sha256": "3c2e89d69faff0dc1f0ffad77cabff1bc7e8b991ac329053ae47dc4f927532bf"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.25.PUBLIC_ADMINISTRATION",
+            "file": "Pesquisa 25 - Respostas - OK.txt",
+            "size_bytes": 59135,
+            "sha256": "fcf0bff40bb532231c520c0180644664cc214d6048f51fab548e16df04db20a9"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.26.COOPERATIVES",
+            "file": "Pesquisa 26 - Respostas - OK.txt",
+            "size_bytes": 102441,
+            "sha256": "8cc0654cb4c336ba4e5096dbefb1e0a70918a07a6c5491d21d7884712fdca5fd"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.01",
+            "file": "Pesquisa 01 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 40619,
+            "sha256": "6dd5ed878f7dca2f6cdafd6a6025d78cfc52482125a96b552fa5baaa72cf464d"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.06",
+            "file": "Pesquisa 06 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 63937,
+            "sha256": "534b513352672240399ac0cab8788c5d5a5ba45d42de1393a5e64c175b4ccdb1"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.07",
+            "file": "Pesquisa 07 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 25366,
+            "sha256": "5a1c0ccc8fb153fa3aa046414cc24e2f1f4b91c73887899b68b56997acb07f8f"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.10",
+            "file": "Pesquisa 10 - Respostas - DEFINITIVA.txt",
+            "size_bytes": 76983,
+            "sha256": "225a98b604710d007dd1f433c38111c42d675af1bf544439320fbe27aaf95102"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.27",
+            "file": "Pesquisa 27 - Respostas - OK.txt",
+            "size_bytes": 81667,
+            "sha256": "9e6acf0bed1fc9302877ab85c9c79274983cc292e578b468e7b85802a4767a5f"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.28",
+            "file": "Pesquisa 28 - Respostas - OK.txt",
+            "size_bytes": 77943,
+            "sha256": "fbfb55920a8e10e5b86763ba34fde93b0739584e29ae8067a8c37e68f46ca903"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.30",
+            "file": "Pesquisa 30 - Respostas - OK.txt",
+            "size_bytes": 118234,
+            "sha256": "77dd1f5cfa110b1506ebb4bf371eebcea485e9aa4e89710f7778fdef56de705b"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.31",
+            "file": "Pesquisa 31 - Respotas - OK.txt",
+            "size_bytes": 59691,
+            "sha256": "50994a78c0d2d595095e41642db5733b2f52990d1b3fc6e02d19c089528aaef8"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.32",
+            "file": "Pesquisa 32 - Respostas - OK.txt",
+            "size_bytes": 59341,
+            "sha256": "b51ffd55812766ad0ddc83c85d58b18d9fc4cfeaa01c3682a2609fc77623d9c3"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.33",
+            "file": "Pesquisa 33 - Respostas - OK.txt",
+            "size_bytes": 54901,
+            "sha256": "e924f67dce69d5c7b06c9c02caebf4d39faf92eeaa29b69d0feec2fb8ce85a7f"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.36",
+            "file": "Pesquisa 36 - Respostas - OK.txt",
+            "size_bytes": 115789,
+            "sha256": "a5a6094584ce78663719c916770a368c89219c338a195db897d19f912d576530"
+        },
+        {
+            "source_id": "SOURCE.RESEARCH.38",
+            "file": "Pesquisa 38 - Respostas - OK.txt",
+            "size_bytes": 34078,
+            "sha256": "1e4363815c1d8acd1845949fce5f67a12487b7a2398f87e531d58612a3aa8293"
+        }
+    ],
+    "content_hashes": {
+        "fact_definitions": "5b57f768cc9be3920283d56863c3814cdac4f13692c1a4327b8b3f55b4a9b250",
+        "questions": "76fb21a9fc6fd219544565583cfcd15d754fbfdd8b2edf16423ad3acf27e33f9",
+        "service_catalog": "02f2912dfb560144d69c9cf32923c48d24c42e8ee663b2b57f960cbdaae4396d",
+        "municipal_parameters": "8bac88dc4170d6cde88d9cb82d4a9355620957694058cd170bef4d9ff33762f2",
+        "invariants": "0b598521aed9e0c7a8cedb5d5d7da47c9e76f69d1e45aa0d65fbc0c3f6f59fbe",
+        "scenario_schema": "6f7971220c94b82b9b0259e9ab7362021f095c76830b8a0ead1615ad2f6deb46",
+        "rules": "10d464e4d6dedab9628e7240c95e82acf226a61a6f2a6a3273a3a15ff34f7a8d",
+        "public_annex_catalog": "17edb3c03b9a9618cdcf82b60a0bdd05901b9d563dd55d112844b09cb08b8de6",
+        "federal_obligation_catalog": "9f22ed18e536c18eee00b47140171ab26fe8c44e0f71275207c6b451845afc95",
+        "federal_banking_calendar": "99129cd8b5ba034698cdaefc8cb6241672d83864e1cb8ace80feb926c842bb56",
+        "rtc_rate_catalog": "b5895278d257a2e6b967681570c9a6bfcb792d3afd949c5618419bccd552250c",
+        "rtc_code_catalog": "163f69461b9f6190a85b41607d812f1761fd7167d4148d3e6c18e3ba99d63836",
+        "rtc_transition_catalog": "c82261c3657631785607beb01360d15f14d314d9fee5e71ef5ea85822ba791d4",
+        "iss_currency_catalog": "5dd9e22fb802f8c997f8e58a52332685287ff4db402361a37a2582187da81b2b"
+    },
+    "notice": "Integrated local per-document ISS133 with fresh proof transport134;document fulfillment and other profiles remain independent.",
+    "official_sources": [
+        {
+            "id": "LC214-CONSOLIDATED-CAMARA-2026",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.pdf",
+            "file": "lc214-consolidada-lc227-camara-2026.pdf",
+            "sha256": "0cf36f4433ced108c8072379496b119817549ea0c182b018cad309ffbe1e1442",
+            "version": "consolidated with LC227/2026",
+            "proven_effective_scope": "LC214 arts. 343-346 and transition provisions; individual later amendments require review",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-NT004-LAYOUT",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/anexovi-leiautesrn_rtc_ibscbs-v1-01-03-nt004.xlsx",
+            "file": "anexovi-leiautesrn_rtc_ibscbs-v1-01-03-nt004.xlsx",
+            "sha256": "c32c30a2aac3aaf8eb71a8baf512954aac70867d883343d202d1c1e9b4453651",
+            "version": "1.01.03",
+            "proven_effective_scope": "production baseline from 2026-01-05 per RTC portal, with NT007 tpRetPisCofins",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-NT009-LAYOUT",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-04-00-2013-nt009.xlsx",
+            "file": "anexovi-leiautesrn_rtc_ibscbs-v1-04-00-2013-nt009.xlsx",
+            "sha256": "ba8f9823fbbc454df4dfecb6ac64a75183f080feefba1ebc64b6afac50d6f24a",
+            "version": "1.04.00",
+            "proven_effective_scope": null,
+            "status": "PUBLISHED_NOT_DEPLOYED",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-CINDOP",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovii-indop_ibscbs_v1-02-00.xlsx",
+            "file": "anexovii-indop_ibscbs_v1-02-00.xlsx",
+            "sha256": "b75305109d26f106216a8372d5f9ef589dda78804da5128b34c7712d72740675",
+            "version": "1.02.00",
+            "proven_effective_scope": "official code list, item validity requires version review",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-NBS-ANEXO-B",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/anexo_b-nbs2-lista_servico_nacional-snnfse-v1-01-20260122.xlsx/@@download/file",
+            "file": "anexo-b-servicos-nacionais-v1.01-20260122.xlsx",
+            "sha256": "e74b0be8ad204e458932efb1716225a3fb5703a84e5475ce5c4c6789d1c61b1a",
+            "version": "v1.01-20260122",
+            "proven_effective_scope": null,
+            "status": "CANDIDATE",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-CORRELATION",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+            "file": "anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+            "sha256": "a21be0e86b7ae2c0c1cfec4ef0d398b96520345790b50f79e4c5b7d1dfe32fb3",
+            "version": "1.01.00",
+            "proven_effective_scope": null,
+            "status": "PROVISIONAL_NO_DECISION_AUTHORITY",
+            "superseded_by": null
+        },
+        {
+            "id": "NFE-CCLASSTRIB",
+            "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=D5b4Ov84WDg=",
+            "file": "nfe-cclasstrib-it2025.002-v1.60-20260623.xlsx",
+            "sha256": "1448cb63a41bdb67ea30b4e11f4dc200d9568542c6b9335b6cff87a4fd664654",
+            "version": "IT 2025.002 v1.60",
+            "published_on": "2026-06-23",
+            "proven_effective_scope": "per-row dIniVig/dFimVig; NFS-e applicability per indNFSe",
+            "superseded_by": null
+        },
+        {
+            "id": "NFE-CBS-RATES",
+            "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=LRksVAMl7nQ=",
+            "file": "nfe-cbs-rates-20260512.xlsx",
+            "sha256": "33f17aa3322de841c7cb7bd469a2785d34cea34fadd0571e18bd8f7c88872f3b",
+            "version": "2026-05-12",
+            "proven_effective_scope": "2026 only; 2027 explicitly awaits legislation",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-RTC-XSD",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/nfse-esquemas_xsd-rtc-v1-00-20251210.zip",
+            "file": "nfse-esquemas_xsd-rtc-v1-00-20251210.zip",
+            "sha256": "04662996e290add36f118c4457d8efed17848eb65d64e8b7ab56c6983c2429ad",
+            "version": "2025-12-10",
+            "proven_effective_scope": "NT004 pilot schema; production applicability subject to portal schedule",
+            "superseded_by": null
+        },
+        {
+            "id": "DECREE-12955-CAMARA-2026",
+            "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+            "file": "decreto-12955-camara-2026.html",
+            "sha256": "0bee9333c55e702273f6536737d68506ff58d6dc6be1e39c95aa55e92fc1c01e",
+            "version": "consolidated through 2026-09-25 retrieval",
+            "proven_effective_scope": "arts. 65-74; art. 74 conditions a specific import service tax document on a joint act",
+            "superseded_by": null
+        },
+        {
+            "id": "RFB-SIMPLES-REGULAR-OPTION-MANUAL-20260918",
+            "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual%20op%C3%A7%C3%A3o%20regime%20regular%20IBS%20e%20CBS%20no%20Simples%20Nacional.pdf",
+            "file": "manual-opcao-regime-regular-ibs-cbs-simples-20260918.pdf",
+            "sha256": "b19d49de35ce6bf2a9d446f2c7c204e39f91899e7525e6842d7c982bcc7776cb",
+            "version": "2026-09-18",
+            "retrieved_on": "2026-09-28",
+            "proven_effective_scope": "option procedure for 2027 regular IBS/CBS within Simples; not a source of tax rates",
+            "superseded_by": null
+        },
+        {
+            "id": "CGSN-SIMPLES-OPTIONS-2027-GOVBR-2026",
+            "url": "https://www.gov.br/memp/pt-br/assuntos/noticias/cgsn-atualiza-regras-do-simples-nacional-para-adequacao-a-reforma-tributaria-do-consumo",
+            "file": "cgsn-simples-2027-options-govbr-2026.html",
+            "sha256": "26a26fc6d16f7515464c404390fb31fd7c025e3b1057d6e17510f162814d9a8a",
+            "version": "2026-08 official CGSN 190/191 explanation",
+            "retrieved_on": "2026-09-28",
+            "proven_effective_scope": "2027 second-semester regular IBS/CBS option: filing 01-31 March 2027, cancellation through 31 May 2027",
+            "superseded_by": null
+        },
+        {
+            "id": "LC116-CAMARA-20260928",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html",
+            "file": "lc116-camara-2026-09-28.html",
+            "sha256": "9f3ea2baf131b8f9712267d503a5a2153ec5c9616d8e8bdd002e4797c70b9a90",
+            "version": "consolidated through 2026-09-28 retrieval",
+            "retrieved_on": "2026-09-28",
+            "proven_effective_scope": "LC 116 art. 8-B: 2029-2032 ISS factors applied to municipal rate effective on 2028-12-31",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-PRODUCTION-XSD-20260209",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/nfse-esquemas_xsd-v1-01-20260209.zip",
+            "file": "nfse-esquemas_xsd-v1-01-20260209.zip",
+            "sha256": "e7935cbd9470527c6cc32984c1b2263e614183bf0139ce2733eaaed2de9a8072",
+            "version": "v1.01-20260209",
+            "published_on": null,
+            "retrieved_on": "2026-09-28",
+            "proven_effective_scope": "Listed as current production XSD on the official page updated 2026-08-15; first deployment date not established by that listing",
+            "superseded_by": null
+        },
+        {
+            "id": "NFSE-CONTRIBUTOR-API-MANUAL-OBSERVED-20261001",
+            "file": "nfse-manual-contribuintes-api-v1.2-observed-20261001.pdf",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/manual-contribuintes-emissor-publico-api-sistema-nacional-nfs-e-v1-2-out2025.pdf",
+            "sha256": "ac2f36e34ff565cc36d67c5d67415c33cc09f27b2dea006e8da9bcd2ddce5581",
+            "version": "observed-2026-10-01",
+            "published_on": null,
+            "retrieved_on": "2026-10-01",
+            "proven_effective_scope": "API manual lists DPS ID components and independent municipal/business validation. No proof of first deployment date.",
+            "source_kind": "OFFICIAL_TECHNICAL_MANUAL",
+            "superseded_by": null
+        },
+        {
+            "id": "RFB-RTC-DOCUMENT-SCHEDULE-OBSERVED-20261001",
+            "file": "rfb-rtc-obrigacoes-observed-20261001.html",
+            "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-da-reforma-tributaria",
+            "sha256": "1ec6502ba7247c26d7034544b777f8154b9f11638dc79a65ebd3006e3d9026f1",
+            "version": "observed-2026-10-01",
+            "published_on": "2026-09-18",
+            "retrieved_on": "2026-10-01",
+            "proven_effective_scope": "Official procedural guidance: RTC NFS-e general service schedule 2026-10-01 and specific subitems 2026-12-01; full joint act review pending.",
+            "source_kind": "OFFICIAL_GUIDANCE",
+            "superseded_by": null
+        },
+        {
+            "id": "MF-CGSN194-NOTICE-OBSERVED-20261001",
+            "file": "mf-simples-prazos-2027-observed-20261001.html",
+            "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/setembro/simples-nacional-2027-tem-novos-prazos-para-microempresas-e-empresas-de-pequeno-porte/",
+            "sha256": "bd0b7a81f841fcdcdda3ed9dcd4401144a7750e6b8dc11da0d3141434e4d7c1c",
+            "version": "observed-2026-10-01",
+            "published_on": "2026-09-29",
+            "retrieved_on": "2026-10-01",
+            "proven_effective_scope": "Supersession alert for 2027 first-semester option deadlines; CGSN 194 full act inaccessible. Announced dates are not active normative windows.",
+            "source_kind": "OFFICIAL_GUIDANCE",
+            "superseded_by": null
+        },
+        {
+            "id": "LC214-CONSOLIDATED-CAMARA-OBSERVED-20261001",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+            "file": "lc214-camara-observed-20261001.html",
+            "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+            "version": "consolidated-observed-2026-10-01",
+            "published_on": "2025-01-16",
+            "retrieved_on": "2026-10-01",
+            "source_kind": "OFFICIAL_CONSOLIDATED_ACT",
+            "superseded_by": null,
+            "proven_effective_scope": "LC 214 art. 127 including physical education corporate exception; arts. 344 and 348 reduced transition rates. Observation availability is recorded in the bundle."
+        },
+        {
+            "id": "CTN-CONSOLIDATED-CAMARA-OBSERVED-20261002",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-5172-25-outubro-1966-358971-normaatualizada-pl.html",
+            "file": "ctn-camara-observed-20261002.html",
+            "sha256": "dc32f69ddba5b4c0cdd7952091c74d755c1e0e699a444aa3566819b94422b650",
+            "version": "consolidated-observed-2026-10-02",
+            "published_on": "1966-10-25",
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_CONSOLIDATED_ACT",
+            "superseded_by": null,
+            "proven_effective_scope": "CTN art.14 I-III and paragraphs1-2, supplier eligibility referred to by LC214 art.9 paragraph3; observation availability bound by bundle."
+        },
+        {
+            "id": "CF1988-CONSOLIDATED-CAMARA-OBSERVED-20261002",
+            "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html",
+            "file": "cf1988-camara-observed-20261002.html",
+            "sha256": "654bbf1797b5624339021f53d5a8f612c917135f0c23a232c9bc39ce86828744",
+            "version": "consolidated-observed-2026-10-02",
+            "published_on": "1988-10-05",
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_CONSOLIDATED_ACT",
+            "superseded_by": null,
+            "proven_effective_scope": "CF150 VI b/c and paragraph4; institutional ISS immunity and essential purposes, observed candidate availability."
+        },
+        {
+            "id": "DERE-OBSERVED-6677A3596771",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/01-manual-usuario-dere-declaracao-de-regimes-especificos-v-1-1-0.pdf",
+            "file": "dere-observed-20261002-01-manual-usuario-dere-declaracao-de-regimes-especificos-v-1-1-0.pdf",
+            "sha256": "6677a3596771239a440e8d44b998b27e4be28c332dbb818533f84ff3319a5dba",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-7ADBC82A55F0",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/02-leiautes-da-dere-eventos-v-1-2-0-2.pdf",
+            "file": "dere-observed-20261002-02-leiautes-da-dere-eventos-v-1-2-0-2.pdf",
+            "sha256": "7adbc82a55f0d60dfc2a63771a4c65c67d479e6a50a7821079e73f38b21873c7",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-C750F7D52240",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/06-arquivos-xsd-v-1-2-0.zip",
+            "file": "dere-observed-20261002-06-arquivos-xsd-v-1-2-0.zip",
+            "sha256": "c750f7d522400e5bd93b7ddd1d1d0d8108cd033eb250c1f10011ac57cc732818",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-97A5EBB24674",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/03-leiautes-da-dere-anexo-i-tabelas-v-1-2-0-2.pdf",
+            "file": "dere-supplement-observed-20261002-03-leiautes-da-dere-anexo-i-tabelas-v-1-2-0-2.pdf",
+            "sha256": "97a5ebb246742c38f823316c4beb13f0fd1f4fe3e160ecbb452fa424e678905b",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-B52CB2CF96B1",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/04-leiautes-da-dere-anexo-ii-regras-de-validacao-v-1-2-0-2.pdf",
+            "file": "dere-supplement-observed-20261002-04-leiautes-da-dere-anexo-ii-regras-de-validacao-v-1-2-0-2.pdf",
+            "sha256": "b52cb2cf96b176d303d64aeea0bab16e7d35bcc739478f6fc8a26b0512415feb",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-22498CBC4DD0",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/05-leiautes-da-dere-historico-de-versoes-v-1-2-0.pdf",
+            "file": "dere-supplement-observed-20261002-05-leiautes-da-dere-historico-de-versoes-v-1-2-0.pdf",
+            "sha256": "22498cbc4dd00eb0fd34ea4f74b5817e2d334451e8d88c770b7071f16d3c6bb9",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-89B5C13AD99B",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/07-manual-do-desenvolvedor-v-1-0-2.pdf",
+            "file": "dere-supplement-observed-20261002-07-manual-do-desenvolvedor-v-1-0-2.pdf",
+            "sha256": "89b5c13ad99b24cc17f402cce7532fb95c177f4d77b19c2399977b2eff95e169",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-7390981608C9",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-3",
+            "file": "dere-supplement-observed-20261002-ato-conjunto-3.pdf",
+            "sha256": "7390981608c9d51051ce5165dd9696dde6ac93f9ad8b017c9fc88e69d30792b2",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-67576256EA86",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-rfb_cgibs-no-4-de-30-de-julho-de-2026.pdf",
+            "file": "dere-supplement-observed-20261002-ato-conjunto-rfb_cgibs-no-4-de-30-de-julho-de-2026.pdf",
+            "sha256": "67576256ea863adef5905896d6e7068682d993f3e36641ff16529ab66e4fc79e",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-D17ACEB73154",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-conjunto-rfb_cgibs-no-5-de-12-de-agosto-dee-2026.pdf",
+            "file": "dere-supplement-observed-20261002-ato-conjunto-rfb_cgibs-no-5-de-12-de-agosto-dee-2026.pdf",
+            "sha256": "d17aceb731547f2d3b7eb7cd1cc48713f49daa57f8b73da6fb6952a37b637ea5",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-1C562EF4438E",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/atos-conjuntos/ato-tecnico-conjunto-rfb_sufis_cgibs_diretoria-executiva-no-3-02102026.pdf",
+            "file": "dere-supplement-observed-20261002-ato-tecnico-conjunto-rfb_sufis_cgibs_diretoria-executiva-no-3-02102026.pdf",
+            "sha256": "1c562ef4438e3683715cb6b6146cc2660ff918b06cf7537547ab8fb08feb0426",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE-OBSERVED-D102AD3DF766",
+            "url": "https://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd",
+            "file": "w3c-xmldsig-core-schema-observed-20261002.xsd",
+            "sha256": "d102ad3df7664c307e0c2c776ba4a90513b1969974d8a940bae1a77f9f21e15d",
+            "version": "observed-2026-10-02",
+            "published_on": null,
+            "retrieved_on": "2026-10-02",
+            "source_kind": "OFFICIAL_OBSERVED_DOCUMENT_OR_SCHEMA",
+            "superseded_by": null,
+            "publication_verification": "REVIEW_REQUIRED",
+            "proven_effective_scope": "Observed for local development; mandatory deployment and normative publication require independent qualification."
+        },
+        {
+            "id": "DERE_20261005_ANNEX_I",
+            "file": "dere-observed-20261005-annex-i.pdf",
+            "sha256": "7296b225e15fb4b395a41a9413ada1190cc2229d64334bf78d7b69f0fb8019f9",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202610/03141315-03-leiautes-da-dere-anexo-i-tabelas-v-1-3-0.pdf",
+            "published_on": "2026-10-03",
+            "retrieved_on": "2026-10-05",
+            "publication_verification": "OFFICIAL_RELEASE_NOTICE",
+            "proven_effective_scope": "Technical domain/layout observed; no mandatory contributor start calendar or government reception established."
+        },
+        {
+            "id": "DERE_20261005_EVENTS",
+            "file": "dere-observed-20261005-events.pdf",
+            "sha256": "68a889e5ab109805e660bd5ceb613a339a1d8a43749e26826f99822d480faebd",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202610/03141317-02-leiautes-da-dere-eventos-v-1-3-0.pdf",
+            "published_on": "2026-10-03",
+            "retrieved_on": "2026-10-05",
+            "publication_verification": "OFFICIAL_RELEASE_NOTICE",
+            "proven_effective_scope": "Technical domain/layout observed; no mandatory contributor start calendar or government reception established."
+        },
+        {
+            "id": "DERE_20261005_VALIDATION",
+            "file": "dere-observed-20261005-validation.pdf",
+            "sha256": "639643d2eee1282bd7a8f104c492f74342bd51293845011aae2fb0a64b742d04",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202610/03141313-04-leiautes-da-dere-anexo-ii-regras-de-validacao-v-1-3-0.pdf",
+            "published_on": "2026-10-03",
+            "retrieved_on": "2026-10-05",
+            "publication_verification": "OFFICIAL_RELEASE_NOTICE",
+            "proven_effective_scope": "Technical domain/layout observed; no mandatory contributor start calendar or government reception established."
+        },
+        {
+            "id": "DERE_20261005_MOD",
+            "file": "dere-observed-20261005-mod.pdf",
+            "sha256": "b7756c7b0cec5cff46d77e1b1ea5d657a4e2476fa6033f8192561c17dd70ab2d",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202610/03141320-01-manual-usuario-dere-declaracao-de-regimes-especificos-v-1-3-0.pdf",
+            "published_on": "2026-10-03",
+            "retrieved_on": "2026-10-05",
+            "publication_verification": "OFFICIAL_RELEASE_NOTICE",
+            "proven_effective_scope": "Technical domain/layout observed; no mandatory contributor start calendar or government reception established."
+        },
+        {
+            "id": "DERE_20261005_PILOT_XSD",
+            "file": "dere-observed-20261005-pilot-xsd.zip",
+            "sha256": "fccdaa32da5d529aa66a9e0e3f208ca319ed5380aeee5bc7fcf46167be05644e",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202609/21141947-06-arquivos-xsd-producao-restrita-empresas-piloto-1.zip",
+            "published_on": null,
+            "retrieved_on": "2026-10-05",
+            "publication_verification": "PILOT_RELEASE_DATE_REVIEW_REQUIRED",
+            "proven_effective_scope": "Technical domain/layout observed; no mandatory contributor start calendar or government reception established."
+        },
+        {
+            "id": "DERE_20261005_SPED_INDEX",
+            "file": "dere-observed-20261005-sped-index.html",
+            "sha256": "4b3af37d4126d6763a599f5cdf1b809a9d76d640f4da085d6ea7012ab0d5596b",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1",
+            "retrieved_on": "2026-10-05",
+            "published_on": null,
+            "proven_effective_scope": "Observed official listing/release; archive labels and deployment remain separately qualified."
+        },
+        {
+            "id": "DERE_20261005_CGIBS_INDEX",
+            "file": "dere-observed-20261005-cgibs-index.html",
+            "sha256": "2c8e6d8c3215a12d33bc52df07260a5ae82aa10f8383c75f58487cafa8ee34a4",
+            "url": "https://www.cgibs.gov.br/declaracao-de-regimes-especificos-dere",
+            "retrieved_on": "2026-10-05",
+            "published_on": null,
+            "proven_effective_scope": "Observed official listing/release; archive labels and deployment remain separately qualified."
+        },
+        {
+            "id": "DERE_20261005_PUBLICATION",
+            "file": "dere-observed-20261005-publication.html",
+            "sha256": "1aac423dcf319eb11324c9bbe231a691a347dadd7a426774d505190355a03ad1",
+            "url": "https://www.cgibs.gov.br/dere-cgibs-e-receita-federal-publicam-versao-1-3-0-da-documentacao-tecnica-e-disponibilizam-manual-do-usuario",
+            "retrieved_on": "2026-10-05",
+            "published_on": null,
+            "proven_effective_scope": "Observed official listing/release; archive labels and deployment remain separately qualified."
+        },
+        {
+            "id": "DERE_20261005_SPED_CURRENT_XSD",
+            "file": "dere-observed-20261005-sped-xsd.zip",
+            "sha256": "c750f7d522400e5bd93b7ddd1d1d0d8108cd033eb250c1f10011ac57cc732818",
+            "url": "https://www.gov.br/sped/pt-br/assuntos/documentos-fiscais/dere/manuais-e-documentos-tecnicos/versao-atual-1/06-arquivos-xsd-v-1-2-0.zip/@@download/file",
+            "retrieved_on": "2026-10-05",
+            "published_on": null,
+            "proven_effective_scope": "Observed official listing/release; archive labels and deployment remain separately qualified."
+        },
+        {
+            "id": "COSIF_BCB_SELECTED_20261002",
+            "file": "cosif-bcb-completo-observed-20261002.pdf",
+            "sha256": "9bd7f7bd7483e14e9a23ca2b8805c3ad80bbd199fa8cff1a7d167573bd994dd1",
+            "url": "https://www3.bcb.gov.br/aplica/cosif/completo",
+            "retrieved_on": "2026-10-02",
+            "published_on": null,
+            "publication_verification": "CURRENT_ELENCO_OBSERVED_NO_HISTORICAL_ACCOUNT_APPROVAL",
+            "proven_effective_scope": "Six observed members only; institution applicability and fiscal dates require independent proof."
+        },
+        {
+            "id": "DERE_CGIBS_COMPLETE_XSD_1_3_0_OBSERVED_20261006",
+            "file": "dere-observed-20261006-cgibs-xsd-v1-3-0.zip",
+            "sha256": "3d4de67215335e3b3186e92214ecbb8a55b501e846aba22eff59ca53e582dcdd",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202610/05144621-06-arquivos-xsd-v-1-3-0.zip",
+            "retrieved_on": "2026-10-06",
+            "published_on": null,
+            "publication_verification": "CURRENT_OFFICIAL_LINK_OBSERVED_20261006_NOT_A_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "D2101 v0_0_3 no-movement structure only; other events retain their captured historical schemas."
+        },
+        {
+            "id": "BCB_SGS11_OBSERVED_20261006_202609",
+            "file": "bcb-sgs11-observed-20261006-202609.json",
+            "sha256": "43cffec8577702c1afd462ea51c0d27fd60ed77e3864cc543082ad377761be6a",
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/09/2026&dataFinal=30/09/2026",
+            "retrieved_on": "2026-10-06",
+            "published_on": null,
+            "publication_verification": "OFFICIAL_RESPONSE_OBSERVED_NOT_A_GENERAL_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "Observed September2026 daily SGS11 rates, unit metadata, ISIN or CNPJ identity documentation only; no real position, taxpayer, offer or fund approval."
+        },
+        {
+            "id": "BCB_SGS11_METADATA_OBSERVED_20261006",
+            "file": "bcb-sgs11-metadata-observed-20261006.html",
+            "sha256": "69a10622fb5955b6170481154590b07a63f5cf7a6e273ce235dfc035e2bd2f3b",
+            "url": "https://dadosabertos.bcb.gov.br/pt_BR/dataset/11-taxa-de-juros---selic",
+            "retrieved_on": "2026-10-06",
+            "published_on": null,
+            "publication_verification": "OFFICIAL_RESPONSE_OBSERVED_NOT_A_GENERAL_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "Observed September2026 daily SGS11 rates, unit metadata, ISIN or CNPJ identity documentation only; no real position, taxpayer, offer or fund approval."
+        },
+        {
+            "id": "ANNA_ISIN_IDENTIFIERS_OBSERVED_20261006",
+            "file": "anna-isin-identifiers-observed-20261006.html",
+            "sha256": "f4f5cd4db236f24ad6299ad734017cf92025a6fdedc17cab73460aa17e7579c2",
+            "url": "https://anna-web.org/identifiers/",
+            "retrieved_on": "2026-10-06",
+            "published_on": null,
+            "publication_verification": "OFFICIAL_RESPONSE_OBSERVED_NOT_A_GENERAL_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "Observed September2026 daily SGS11 rates, unit metadata, ISIN or CNPJ identity documentation only; no real position, taxpayer, offer or fund approval."
+        },
+        {
+            "id": "RFB_CNPJ_DV_OBSERVED_20261006",
+            "file": "rfb-cnpj-dv-observed-20261006.pdf",
+            "sha256": "7bb839f6c9beb968bd5bb67d31dd5db090d2333be55815759cfb293e639b4754",
+            "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos/cnpj/manual-dv-cnpj.pdf",
+            "retrieved_on": "2026-10-06",
+            "published_on": null,
+            "publication_verification": "OFFICIAL_RESPONSE_OBSERVED_NOT_A_GENERAL_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "Observed September2026 daily SGS11 rates, unit metadata, ISIN or CNPJ identity documentation only; no real position, taxpayer, offer or fund approval."
+        },
+        {
+            "id": "BCB_SGS11_OBSERVED_20261006_202608",
+            "file": "bcb-sgs11-observed-20261006-202608.json",
+            "sha256": "f368e090a3dc3f468a0dcddc4f758d36a7b94ce2bc963c7c95af5fdfdddd4286",
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/08/2026&dataFinal=31/08/2026",
+            "retrieved_on": "2026-10-06",
+            "published_on": null,
+            "publication_verification": "OFFICIAL_RESPONSE_OBSERVED_NOT_A_GENERAL_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "Observed August2026 daily SGS11 rates for reproducing the previous closing position only;no taxpayer position approval."
+        },
+        {
+            "id": "BCB_SGS11_OBSERVED_20261008_202607",
+            "file": "bcb-sgs11-observed-20261008-202607.csv",
+            "sha256": "3503209c607a75b0b206caeb808f2805d673d1945a5b2a47b368b09f1889d22e",
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=csv&dataInicial=01/07/2026&dataFinal=31/07/2026",
+            "retrieved_on": "2026-10-08",
+            "published_on": null,
+            "publication_verification": "OFFICIAL_RESPONSE_OBSERVED_NOT_A_GENERAL_FISCAL_VALIDITY_DATE",
+            "proven_effective_scope": "Observed July2026 daily SGS11 rates only; synthetic positions and historical recognition assignments do not establish taxpayer approval or prior reception."
+        },
+        {
+            "id": "LC214_PLANALTO_OBSERVED_20261009",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "file": "lc214-planalto-observed-20261009.html",
+            "sha256": "cef6aa83f7c3f8f270bb09ce032aaf3e288ddaa1b636c6e918725490d508df13",
+            "retrieved_on": "2026-10-09",
+            "published_on": null,
+            "publication_verification": "CURRENT_OFFICIAL_TEXT_OBSERVED_SELECTED_PROVISIONS_REVIEWED",
+            "proven_effective_scope": "Selected LC214 art192/art195 and regulation articles286/289 for development research; not an approval of every provision or of an unsupported realization bridge."
+        },
+        {
+            "id": "DECRETO12955_CAMARA_OBSERVED_20261009",
+            "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+            "file": "decreto-12955-camara-observed-20261009.html",
+            "sha256": "0bee9333c55e702273f6536737d68506ff58d6dc6be1e39c95aa55e92fc1c01e",
+            "retrieved_on": "2026-10-09",
+            "published_on": null,
+            "publication_verification": "CURRENT_OFFICIAL_TEXT_OBSERVED_SELECTED_PROVISIONS_REVIEWED",
+            "proven_effective_scope": "Selected LC214 art192/art195 and regulation articles286/289 for development research; not an approval of every provision or of an unsupported realization bridge."
+        },
+        {
+            "id": "NFSE_RESTRICTED_XSD_OBSERVED_20261014",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/esquemas-nfse-rtc-v1-01-20260727.zip",
+            "file": "nfse-restricted-xsd-observed-20261014-20260727.zip",
+            "sha256": "6c7e0510d3ecff4454f291f4e10b742d27a4818f23aab181494f96d0ea79f3dc",
+            "version": "v1.01-20260727-observed-20261014",
+            "observed_at": "2026-10-14T11:34:50.069465+00:00",
+            "published_on": null,
+            "proven_effective_scope": "Preserved restricted XSD for local structural validation only;observation is not a deployment or obligation date."
+        },
+        {
+            "id": "BCB_CURRENCY_CODE_TABLE_OBSERVED_20261014",
+            "url": "https://ptax.bcb.gov.br/ptax_internet/consultarTabelaMoedas.do?method=consultaTabelaMoedas",
+            "file": "bcb-currency-codes-observed-20261014.html",
+            "sha256": "4ef4ecd5574dd880f6ab49fcf20eaaefa8c6084ff2ca3a6463e02dd1c1478f1c",
+            "version": "OBSERVED-2026.10.14-NOT-HISTORICALLY-QUALIFIED",
+            "observed_at": "2026-10-14T19:42:38.923982+00:00",
+            "published_on": null,
+            "proven_effective_scope": "Numeric code mapping observation only;not historical currency validity or fiscal FX origin."
+        },
+        {
+            "id": "CGSN194_NATIVE_VIGENTE_OBSERVED_20261015",
+            "url": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153801/visao/vigente",
+            "file": "cgsn194-native-vigente-observed-20261015.json",
+            "sha256": "038e3259963c9cf492e3dec1f4ddbff50cbf83ccabd3a94ea191b0f56fe82ef7",
+            "version": "NATIVE_JSON_VIGENTE_OBSERVED_2026.10.15",
+            "published_on": "2026-09-28",
+            "effective_from": "2026-09-28",
+            "observed_at": "2026-10-15T11:40:27.560996+00:00",
+            "proven_effective_scope": "H1 2027 regular IBS/CBS election, distinct registration exception and SIMEI exclusion;not government receipt authentication."
+        },
+        {
+            "id": "CGSN186_NATIVE_VIGENTE_OBSERVED_20261015",
+            "url": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/150653/visao/vigente",
+            "file": "cgsn186-native-vigente-observed-20261015.json",
+            "sha256": "31dc79137f5e4d3f67289bd0cd05f7ef72992037bf28dde216fd1085f8453f1d",
+            "version": "NATIVE_JSON_VIGENTE_OBSERVED_2026.10.15",
+            "published_on": "2026-04-17",
+            "effective_from": "2026-04-17",
+            "observed_at": "2026-10-15T11:40:27.560996+00:00",
+            "proven_effective_scope": "H1 2027 regular IBS/CBS election, distinct registration exception and SIMEI exclusion;not government receipt authentication."
+        },
+        {
+            "id": "TEMPORAL86_LC214",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+            "file": "temporal86-lc214.html",
+            "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+            "version": "OBSERVED_2026.10.15",
+            "published_on": "2026-01-16",
+            "effective_from": "2026-01-01",
+            "observed_at": "2026-10-15T12:25:11.404965+00:00",
+            "proven_effective_scope": "Local art10/art11 tax point normalization and art617 amendment review;not future tax rates or prior-debit authentication."
+        },
+        {
+            "id": "TEMPORAL86_CBS_REGULATION",
+            "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+            "file": "temporal86-cbs-regulation.html",
+            "sha256": "8396d56d14fb30a386c7548047701a6c310cb3a60da1a0b6893b6df5b8d90235",
+            "version": "OBSERVED_2026.10.15",
+            "published_on": "2026-04-30",
+            "effective_from": "2026-04-30",
+            "observed_at": "2026-10-15T12:25:11.407569+00:00",
+            "proven_effective_scope": "Local art10/art11 tax point normalization and art617 amendment review;not future tax rates or prior-debit authentication."
+        },
+        {
+            "id": "TEMPORAL86_IBS_REGULATION",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+            "file": "temporal86-ibs-regulation.pdf",
+            "sha256": "9ed7032ef9c25bbee51bdb5e90f60e1ad01a2bf56cb41a28221c3db7f61d419a",
+            "version": "OBSERVED_2026.10.15",
+            "published_on": "2026-04-30",
+            "effective_from": "2026-04-30",
+            "observed_at": "2026-10-15T14:11:36.200607+00:00",
+            "proven_effective_scope": "Local art10/art11 tax point normalization and art617 amendment review;not future tax rates or prior-debit authentication."
+        },
+        {
+            "id": "TEMPORAL86_IBS_AMENDMENT13",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202607/22121010-resolucao-cgibs-n-13-de-22-de-julho-de-2026.pdf",
+            "file": "temporal86-ibs-amendment13.pdf",
+            "sha256": "527f5b01b2c8effd984c0334ab1c3068d3926f4f77f90d023211758ee67f7222",
+            "version": "OBSERVED_2026.10.15",
+            "published_on": "2026-07-22",
+            "effective_from": "2026-07-22",
+            "observed_at": "2026-10-15T14:11:34.725758+00:00",
+            "proven_effective_scope": "Local art10/art11 tax point normalization and art617 amendment review;not future tax rates or prior-debit authentication."
+        },
+        {
+            "id": "ISS_EXPORT96_LC116_OBSERVED",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+            "file": "iss-export96-lc116-observed-20261016.html",
+            "sha256": "3ae4d3fc894ced12874364e366867b736c81369352cbaf97c70d57e534cdf86c",
+            "version": "OBSERVED_2026.10.16",
+            "published_on": null,
+            "effective_from": null,
+            "observed_at": "2026-10-16T14:16:16.333043+00:00",
+            "proven_effective_scope": "Observed LC116 art2 text for local software result-evidence binding only;not historical/municipal applicability,conversion,tax,document acceptance or production."
+        },
+        {
+            "id": "SP98_PN4_2016_OBSERVED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/parecer-normativo-secretaria-municipal-da-fazenda-4-de-10-de-novembro-de-2016/consolidado",
+            "file": "sp98-pn4-2016-observed-20261016.html",
+            "sha256": "066427dc1da3c25fddd1628bc3c168d1805665e113b2d7c5bbb894825e20a274",
+            "version": "OBSERVED_2026.10.16",
+            "published_on": "2016-11-10",
+            "effective_from": null,
+            "observed_at": "2026-10-16T16:28:22.913454+00:00",
+            "proven_effective_scope": "Observed SP municipal PN4/2016 source/details;local documentary conditions only,not complete historical applicability,FX,tax or document approval."
+        },
+        {
+            "id": "SP98_PN4_2016_DETAILS_OBSERVED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/parecer-normativo-secretaria-municipal-da-fazenda-4-de-10-de-novembro-de-2016/detalhe/5dd7ea491411926001a56893",
+            "file": "sp98-pn4-2016-details-observed-20261016.html",
+            "sha256": "b730f3b8d3857b91e00531325f2678513b51812bceeb96665f4c5d048994249a",
+            "version": "OBSERVED_2026.10.16",
+            "published_on": "2016-11-10",
+            "effective_from": null,
+            "observed_at": "2026-10-16T16:28:23.417692+00:00",
+            "proven_effective_scope": "Observed SP municipal PN4/2016 source/details;local documentary conditions only,not complete historical applicability,FX,tax or document approval."
+        },
+        {
+            "id": "NFE_CCLASS170_OBSERVED_20261016",
+            "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=Cd5xq2ZVuEg=",
+            "file": "nfe-cclasstrib-it2025-002-v170-observed-20261016.xlsx",
+            "sha256": "bee3e106d24c06257d31105658679e97e2544dcc3ac61467fbe0ca4f78c6e850",
+            "version": "IT2025.002 v1.70",
+            "published_on": "2026-10-01",
+            "effective_from": null,
+            "observed_at": "2026-10-16T16:56:31.622022+00:00",
+            "proven_effective_scope": "Observed reference170/table/informe/index only;not complete legal applicability,historical exact content before observation,remote deployment,operation classification,tax or XML approval."
+        },
+        {
+            "id": "NFE_IT170_OBSERVED_20261016",
+            "url": "https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=h9o7idH%20OcI=",
+            "file": "nfe-it2025-002-v170-observed-20261016.pdf",
+            "sha256": "cbf61d15fce46101df9c17737a68fc577b058b3b81c0d9b78382f831ed56d83f",
+            "version": "IT2025.002 v1.70",
+            "published_on": "2026-10-01",
+            "effective_from": null,
+            "observed_at": "2026-10-16T16:56:32.620515+00:00",
+            "proven_effective_scope": "Observed reference170/table/informe/index only;not complete legal applicability,historical exact content before observation,remote deployment,operation classification,tax or XML approval."
+        },
+        {
+            "id": "NFE_DIVERSOS101_OBSERVED_20261016",
+            "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=",
+            "file": "nfe-diversos101-observed-20261016.html",
+            "sha256": "7b9e6ec6be4e4219481dabc2246c578200ebc46c4e42f1715d959f9468d240c7",
+            "version": "OBSERVED_2026.10.16",
+            "published_on": null,
+            "effective_from": null,
+            "observed_at": "2026-10-16T16:56:30.410677+00:00",
+            "proven_effective_scope": "Observed reference170/table/informe/index only;not complete legal applicability,historical exact content before observation,remote deployment,operation classification,tax or XML approval."
+        },
+        {
+            "id": "NFE_INFORMES101_OBSERVED_20261016",
+            "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=hXzemuyNHW4=",
+            "file": "nfe-informes101-observed-20261016.html",
+            "sha256": "7cad99b39f7d968f87826fa8d0ff156381e16d165f272c8111253f42b2b72101",
+            "version": "OBSERVED_2026.10.16",
+            "published_on": null,
+            "effective_from": null,
+            "observed_at": "2026-10-16T16:56:31.140869+00:00",
+            "proven_effective_scope": "Observed reference170/table/informe/index only;not complete legal applicability,historical exact content before observation,remote deployment,operation classification,tax or XML approval."
+        },
+        {
+            "id": "DPS104_MUNICIPAL_MANUAL",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/manual-municipios-emissor-publico-api-sistema-nacional-nfs-e-v1-2-out21025.pdf",
+            "file": "identity104-municipal_manual-observed20261016.pdf",
+            "sha256": "3b5e982be9298ecc72ee254e26eb6824dc13d2e05704a83f01aa7a8fd321916e",
+            "version": "OBSERVED_2026.10.16",
+            "observed_at": "2026-10-16T18:55:42.879759+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local composition/reference mapping only;historical source capture,not deployment,cadastral authorization or production approval."
+        },
+        {
+            "id": "DPS104_CONTRIBUTOR_MANUAL",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/manual-contribuintes-emissor-publico-api-sistema-nacional-nfs-e-v1-2-out2025.pdf",
+            "file": "identity104-contributor_manual-observed20261016.pdf",
+            "sha256": "ac2f36e34ff565cc36d67c5d67415c33cc09f27b2dea006e8da9bcd2ddce5581",
+            "version": "OBSERVED_2026.10.16",
+            "observed_at": "2026-10-16T18:41:23.215946+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local composition/reference mapping only;historical source capture,not deployment,cadastral authorization or production approval."
+        },
+        {
+            "id": "DPS104_RESTRICTED_ANNEX",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/anexo_i-sefin_adn-dps_nfse-snnfse-prodrest-v1-01-20260209.xlsx",
+            "file": "identity104-restricted_annex-observed20261016.xlsx",
+            "sha256": "2ae2ac9f91efa9b64f0c9ed97acaf18bb7513b090fae39ba5bda59187e64d9e9",
+            "version": "OBSERVED_2026.10.16",
+            "observed_at": "2026-10-16T18:42:54.613Z",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local composition/reference mapping only;historical source capture,not deployment,cadastral authorization or production approval."
+        },
+        {
+            "id": "DPS104_PRODUCTION_ANNEX_COMPARISON_ONLY",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/anexo_i-sefin_adn-dps_nfse-snnfse-v1-01-20260209.xlsx",
+            "file": "identity104-production_annex_comparison_only-observed20261016.xlsx",
+            "sha256": "de5bc492959eadc8bfa7540e16939995924f2188f743648eaf84d3b31e9eeb7c",
+            "version": "OBSERVED_2026.10.16",
+            "observed_at": "2026-10-16T18:42:54.862Z",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local composition/reference mapping only;historical source capture,not deployment,cadastral authorization or production approval."
+        },
+        {
+            "id": "DPS104_RESTRICTED_XSD",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/esquemas-nfse-rtc-v1-01-20260727.zip",
+            "file": "identity104-restricted_xsd-observed20261016.zip",
+            "sha256": "6c7e0510d3ecff4454f291f4e10b742d27a4818f23aab181494f96d0ea79f3dc",
+            "version": "OBSERVED_2026.10.16",
+            "observed_at": "2026-10-16T18:41:25.259215+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local composition/reference mapping only;historical source capture,not deployment,cadastral authorization or production approval."
+        },
+        {
+            "id": "DATED108_CTN_CONSOLIDATED",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm",
+            "file": "dated108-ctn-consolidated.html",
+            "sha256": "4536a6c7d566d184e188fe6c8fb7afd49ae5d4d48e3b2cd11a6c42b5a8c1bcaf",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T11:59:22.682168+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local material/result/identity binding only;historical legal applicability not approved."
+        },
+        {
+            "id": "DATED108_LC116_CONSOLIDATED",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+            "file": "dated108-lc116-consolidated.html",
+            "sha256": "23e06fe7a1dd75e06df80f1e761794e6aa0186ea53a2609ca2b1adc0545a8785",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T11:59:23.305633+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local material/result/identity binding only;historical legal applicability not approved."
+        },
+        {
+            "id": "DATED108_SP_LAW13701_CONSOLIDATED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-13701-de-24-de-dezembro-de-2003/consolidado",
+            "file": "dated108-sp-law13701-consolidated.html",
+            "sha256": "9966f679d5859fb868d5639bb17e85188198444063b3fb613495e6e5111d4c89",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T11:59:23.994760+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local material/result/identity binding only;historical legal applicability not approved."
+        },
+        {
+            "id": "DATED108_SP_DECREE53151_CONSOLIDATED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/decreto-53151-de-17-de-maio-de-2012/consolidado",
+            "file": "dated108-sp-decree53151-consolidated.html",
+            "sha256": "6ac4319ca9b906af26ff917e02349d8d09725273d6c11990d37d95482d1d67ea",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T11:59:24.710566+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local material/result/identity binding only;historical legal applicability not approved."
+        },
+        {
+            "id": "DATED108_SP_PN4_2016_CONSOLIDATED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/parecer-normativo-secretaria-municipal-da-fazenda-4-de-10-de-novembro-de-2016/consolidado",
+            "file": "dated108-sp-pn4-2016-consolidated.html",
+            "sha256": "066427dc1da3c25fddd1628bc3c168d1805665e113b2d7c5bbb894825e20a274",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T11:59:25.264211+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local material/result/identity binding only;historical legal applicability not approved."
+        },
+        {
+            "id": "PRICE112_SP_LAW13701_CONSOLIDATED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-13701-de-24-de-dezembro-de-2003/consolidado",
+            "file": "price112-sp-law13701-consolidated.html",
+            "sha256": "9966f679d5859fb868d5639bb17e85188198444063b3fb613495e6e5111d4c89",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:21.537661+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW13701_DETAILS",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-13701-de-24-de-dezembro-de-2003/detalhe",
+            "file": "price112-sp-law13701-details.html",
+            "sha256": "6ff5c3bd9918743be3dd2811effee3df00495bcc356dfe5eabb2cedfe492f903",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:22.276001+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_DECREE53151_CONSOLIDATED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/decreto-53151-de-17-de-maio-de-2012/consolidado",
+            "file": "price112-sp-decree53151-consolidated.html",
+            "sha256": "6ac4319ca9b906af26ff917e02349d8d09725273d6c11990d37d95482d1d67ea",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:22.933181+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_DECREE53151_DETAILS",
+            "url": "https://legislacao.prefeitura.sp.gov.br/decreto-53151-de-17-de-maio-de-2012/detalhe",
+            "file": "price112-sp-decree53151-details.html",
+            "sha256": "894682770324e142548326938152510899deaca7640dccc3efa4f0a1d1deed2f",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:23.422614+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_LC116_CONSOLIDATED",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+            "file": "price112-lc116-consolidated.html",
+            "sha256": "745215f7e27a8ebaffb992e6c047eb7e7d0e6c43a69fce52a60074a1a864f47b",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:23.938063+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW14256",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-14256-de-29-de-dezembro-de-2006",
+            "file": "price112-sp-law14256.html",
+            "sha256": "905d6d43ec848ed45eaa05a964e1f84128160f337816164306a83553857767dd",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:24.502724+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW15406",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-15406-de-08-de-julho-de-2011",
+            "file": "price112-sp-law15406.html",
+            "sha256": "43edd3c83b98ddae39023b94891a8ad1f74ab20dd014bce6211ec8e0966e6991",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:25.049689+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW16757",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-16757-de-14-de-novembro-de-2017",
+            "file": "price112-sp-law16757.html",
+            "sha256": "7f3fab0e8e25d006e5e4055e5169582d74bbc044ecd9b6c4e03719ebc030a24f",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:25.517537+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW17719",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-17719-de-26-de-novembro-de-2021",
+            "file": "price112-sp-law17719.html",
+            "sha256": "b734db2982dd0d2df6a5ba4274885cabb37770de701cf98818eea4c626946694",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:26.021150+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW18066",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-18066-de-28-de-dezembro-de-2023",
+            "file": "price112-sp-law18066.html",
+            "sha256": "e540814ab0cd9117d8e1da8708032f849b6f79ad88595ed9b71094e96423e937",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:26.548498+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW18095",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-18095-de-19-de-marco-de-2024",
+            "file": "price112-sp-law18095.html",
+            "sha256": "816341a8d5f354cd088ea54db0cda7ab3bc6892412a6a1d1298e2a062e84103b",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:27.002259+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW18270",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-18270-de-12-de-junho-de-2025",
+            "file": "price112-sp-law18270.html",
+            "sha256": "22c9ba2178a2afdc8b94119ae04ec613769682a005018132fab04c02c53aae8a",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:41:27.467669+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_LAW18066_DETAILS",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-18066-de-28-de-dezembro-de-2023/detalhe",
+            "file": "price112-sp-law18066-details.html",
+            "sha256": "e3f49b8acbe51739c89417206b3146e66850b28cdd65a3d49d3231cbe3e3a41c",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:44:04.307254+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_LC95_CONSOLIDATED",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp95.htm",
+            "file": "price112-lc95-consolidated.html",
+            "sha256": "461011bc915bb6700b802454bd3efc31a9fa978c736af47a882e79f9b0f8dbaf",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T17:44:04.881022+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_ISS_CALCULATION_GUIDE",
+            "url": "https://www2.prefeitura.sp.gov.br/web/fazenda/w/servicos/iss/2478",
+            "file": "price112-sp-iss-calculation-guide.html",
+            "sha256": "9bd45feaf88da5efaff155c24eea67e626858993691fb440827620360f05fe7c",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T18:06:53.003177+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_IN15_2025_CONSOLIDATED",
+            "url": "https://legislacao.prefeitura.sp.gov.br/portaria-15-de-5-de-dezembro-de-2025/consolidado",
+            "file": "price112-sp-in15-2025-consolidated.html",
+            "sha256": "5201d1502ff367cb785aea2e5c740a064789bb4b89a400bc436d40320d11a638",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T18:06:53.914267+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_IN15_2025_DETAILS",
+            "url": "https://legislacao.prefeitura.sp.gov.br/portaria-15-de-5-de-dezembro-de-2025/detalhe",
+            "file": "price112-sp-in15-2025-details.html",
+            "sha256": "52668da86220286281ffbe8ff9bfb5c2b6b0afa77fdceabe87899b9a7cd48a0c",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T18:06:54.348816+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "PRICE112_SP_DTCO_FAQ",
+            "url": "https://prefeitura.sp.gov.br/fazenda/w/servicos/iss/11090",
+            "file": "price112-sp-dtco-faq.html",
+            "sha256": "cac4fe3218966b6a7263e523c436ee5f91475b16c0f379f1cf8cfaaa43770b50",
+            "version": "OBSERVED_2026.10.19",
+            "observed_at": "2026-10-19T18:06:55.384672+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Scoped actual-price composition evidence only;no taxpayer/rate/FX/base or issuance approval."
+        },
+        {
+            "id": "GEOGRAPHIC116_IBGE_STATES",
+            "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados",
+            "file": "geographic116-ibge-estados.json",
+            "sha256": "7ca1368dea3af83cba1af84ae8a7e88f1173c97586831d086cc8b3c1ba9c6596",
+            "version": "OBSERVED_2026.10.20",
+            "observed_at": "2026-10-20T11:46:17.812235+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed reference only,no historical territorial validity or fiscal destination determination"
+        },
+        {
+            "id": "GEOGRAPHIC116_IBGE_MUNICIPALITIES",
+            "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=id",
+            "file": "geographic116-ibge-municipios.json",
+            "sha256": "86ecdccdf97d72e7e5e46f0854cfcea8bacc28154cc1bc4ed0e6110e3a6c9c02",
+            "version": "OBSERVED_2026.10.20",
+            "observed_at": "2026-10-20T11:46:20.034562+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed reference only,no historical territorial validity or fiscal destination determination"
+        },
+        {
+            "id": "GEOGRAPHIC116_IBGE_API_DOCS",
+            "url": "https://servicodados.ibge.gov.br/api/docs/localidades",
+            "file": "geographic116-ibge-api-docs.html",
+            "sha256": "b679b089b03415bbf036519374b5a4f9715a7bbf90fca8edff7c80b5f4cba6b8",
+            "version": "OBSERVED_2026.10.20",
+            "observed_at": "2026-10-20T11:46:18.520671+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed reference only,no historical territorial validity or fiscal destination determination"
+        },
+        {
+            "id": "INPUT119_LC214_OBSERVED117",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+            "file": "input119-lc214-compilado-observed117.html",
+            "sha256": "3ccd180f88a872ff118fc3108fb119837fd2c09101f16d1e032662c22b7140f5",
+            "version": "OBSERVED_2026.10.20_CAPTURE117",
+            "observed_at": "2026-10-20T12:49:04.592626+00:00",
+            "observed_at_raw": "2026-10-20T12:49:02.0276095+00:00",
+            "observation_precision_note": "Conservative microsecond ceiling of preserved capture completion;raw100ns observation retained,not a new capture.",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Articles12,27II,31-36 reference/input consistency only;not historical validity,legal approval or payment."
+        },
+        {
+            "id": "CATALOG126_CINDOP103_XLSX",
+            "file": "catalog126-cindop103-observed20261022.xlsx",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovii-indop_ibscbs_v1-03-00-nt009.xlsx",
+            "sha256": "95f30a44ee94adeea57fb92f3a0337b1e62fdc106f393e73894087889be9e5aa",
+            "observed_at": "2026-10-22T10:51:25.538838+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "CATALOG126_RESTRICTED_CINDOP_XLSX",
+            "file": "catalog126-restricted-cindop-observed20261022.xlsx",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/anexo_c-indop_ibscbs-snnfse-prodrest-v1-01-20260122.xlsx",
+            "sha256": "f13b08dc802e82c3c43d591d06575922095595a17c94e61bc4a37c41633a744b",
+            "observed_at": "2026-10-22T10:51:25.676514+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "CATALOG126_RTC_HTML",
+            "file": "catalog126-rtc-observed20261022.html",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc",
+            "sha256": "01472c05a84612245cfebbfb439cede34afce693832ac84014fb19cdeb81feed",
+            "observed_at": "2026-10-22T10:51:24.943300+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "CATALOG126_RESTRICTED_HTML",
+            "file": "catalog126-restricted-observed20261022.html",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita",
+            "sha256": "c368a73ac1bc04acb652eabe57ce988160ee61292825c9fa1720220008fd9432",
+            "observed_at": "2026-10-22T10:51:25.206933+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "CATALOG126_PRODUCTION_HTML",
+            "file": "catalog126-production-observed20261022.html",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+            "sha256": "d0ec3eddbc646ab3d020fb3dc4a9d88dcad82a2b98a222ce1dbeb51cad01e258",
+            "observed_at": "2026-10-22T10:51:25.405844+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "CATALOG126_NT009_PDF",
+            "file": "catalog126-nt009-observed20261022.pdf",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/nota-tecnica-009-se-cgnfs-e-v-1-01.pdf",
+            "sha256": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+            "observed_at": "2026-10-22T10:51:26.194104+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "CATALOG126_RESTRICTED_LAYOUT_XLSX",
+            "file": "catalog126-restricted-layout-observed20261022.xlsx",
+            "version": "OBSERVED_2026.10.22",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/anexo_i-sefin_adn-dps_nfse-snnfse_prodrest-v1-01-20261020.xlsx",
+            "sha256": "72b05981c8882cdd807f3acf901b669465360f9cf1b9d9e235ac4363dacfb2d8",
+            "observed_at": "2026-10-22T10:51:26.468337+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local reference only;official temporal/environment activation remains unproved."
+        },
+        {
+            "id": "DPS127_RESTRICTED_XSD_OBSERVED20261022",
+            "file": "dps127-restricted-xsd-observed20261022-20261020.zip",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/esquemas_prod_restrita_20261020.zip",
+            "sha256": "25fdcecc651a67a216496ab10d7566631e6ed10f721e37d62c7845dadb0ea267",
+            "observed_at": "2026-10-22T11:13:42.341713+00:00",
+            "version": "OBSERVED20261022-RESTRICTED20261020",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Local structural validation only;not official activation or obligation."
+        },
+        {
+            "id": "IMPORT129_LC214_OBSERVED20261022",
+            "file": "import129-lc214-compilado-observed20261022.html",
+            "version": "OBSERVED20261022",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+            "sha256": "027797fa2a1f5ce9ebe34c7236766be4ef850127beb510eedb3b8315cf18d6ed",
+            "observed_at": "2026-10-22T16:40:39.031505+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed compiled law;art64 text matches preserved119. Local responsibility qualification;no production approval."
+        },
+        {
+            "id": "ISS134_SP_LAW13701_HTML",
+            "file": "iss133-sp-law13701.html",
+            "version": "OBSERVED20261022",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-13701-de-24-de-dezembro-de-2003/consolidado",
+            "sha256": "9966f679d5859fb868d5639bb17e85188198444063b3fb613495e6e5111d4c89",
+            "observed_at": "2026-10-22T18:19:20.748616+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Selected SP2660/1.01 PJ general ISS price/rate context;2026 reviewed material scope,not whole-act approval."
+        },
+        {
+            "id": "ISS134_SP_DECREE53151_HTML",
+            "file": "iss133-sp-decree53151.html",
+            "version": "OBSERVED20261022",
+            "url": "https://legislacao.prefeitura.sp.gov.br/decreto-53151-de-17-de-maio-de-2012/consolidado",
+            "sha256": "dc6899fad522c66b1e3a27d5a32701545abb6bc5516ea501f6c622cac2b1cb29",
+            "observed_at": "2026-10-22T18:19:21.095368+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Selected SP2660/1.01 PJ general ISS price/rate context;2026 reviewed material scope,not whole-act approval."
+        },
+        {
+            "id": "ISS134_SP_IN8_HTML",
+            "file": "iss133-sp-in8.html",
+            "version": "OBSERVED20261022",
+            "url": "https://legislacao.prefeitura.sp.gov.br/instrucao-normativa-secret-mun-de-financas-e-desenv-economico-surem-8-de-21-de-julho-de-2011/consolidado",
+            "sha256": "d7d2e3c03445849f697cac7ada79bf5ccf419bc6ab2f954d8cba1f64d972873e",
+            "observed_at": "2026-10-22T18:19:21.313071+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Selected SP2660/1.01 PJ general ISS price/rate context;2026 reviewed material scope,not whole-act approval."
+        },
+        {
+            "id": "ISS134_SP_ANNEX1_2026_PDF",
+            "file": "iss133-sp-annex1-2026.pdf",
+            "version": "OBSERVED20261022",
+            "url": "https://prefeitura.sp.gov.br/documents/d/fazenda/in-sf-surem_08_2011_anexo_1_com-in-03-26-pdf",
+            "sha256": "a5e03509c3b61e5f583251a335013695b15f86830950a647ccf9aae9fa4478de",
+            "observed_at": "2026-10-22T18:19:21.636555+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Selected SP2660/1.01 PJ general ISS price/rate context;2026 reviewed material scope,not whole-act approval."
+        },
+        {
+            "id": "ISS134_SP_LAW18066_HTML",
+            "file": "iss133-sp-law18066.html",
+            "version": "OBSERVED20261022",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-18066-de-28-de-dezembro-de-2023/consolidado",
+            "sha256": "501bfd9d83e491fdcf731938256afb7c2b91e1972d55388d08c609bf78b3887a",
+            "observed_at": "2026-10-22T18:19:21.831041+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Selected SP2660/1.01 PJ general ISS price/rate context;2026 reviewed material scope,not whole-act approval."
+        },
+        {
+            "id": "ISS140_SP_SC008_2015_PDF",
+            "file": "iss140-sp-sc008-2015.pdf",
+            "version": "OBSERVED_20261027",
+            "url": "https://drive.prefeitura.sp.gov.br/cidade/upload/SC008-2015_1456839085.pdf",
+            "sha256": "05f655b02feaa3a2647e00a164feb3e9d44d65712ec1cf1700381cc35bd9edbe",
+            "observed_at": "2026-10-27T11:59:19.001562+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed currency/date context;case-specific municipal consultation,not general applicability or tax-rate approval."
+        },
+        {
+            "id": "ISS140_CTN_CONSOLIDATED_HTML",
+            "file": "iss140-ctn-consolidated.html",
+            "version": "OBSERVED_20261027",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm",
+            "sha256": "532d816da9dce29fdc7854933c7736681cee647a6e950a499fd8f205d02bff2d",
+            "observed_at": "2026-10-27T11:59:19.394783+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed currency/date context;case-specific municipal consultation,not general applicability or tax-rate approval."
+        },
+        {
+            "id": "ISS140_SP_LAW13701_CONSOLIDATED_HTML",
+            "file": "iss140-sp-law13701-consolidated.html",
+            "version": "OBSERVED_20261027",
+            "url": "https://legislacao.prefeitura.sp.gov.br/lei-13701-de-24-de-dezembro-de-2003/consolidado",
+            "sha256": "9966f679d5859fb868d5639bb17e85188198444063b3fb613495e6e5111d4c89",
+            "observed_at": "2026-10-27T11:59:19.542430+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed currency/date context;case-specific municipal consultation,not general applicability or tax-rate approval."
+        },
+        {
+            "id": "ISS140_USD_20260924_25_JSON",
+            "file": "iss140-usd-20260924-25.json",
+            "version": "OBSERVED_20261027",
+            "url": "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda=%27USD%27&@dataInicial=%2709-24-2026%27&@dataFinalCotacao=%2709-25-2026%27&$format=json",
+            "sha256": "9ccab2212f2ff1d7849245ae7325fae2385d557f676b828a5b63600de33463d6",
+            "observed_at": "2026-10-27T11:59:19.799875+00:00",
+            "published_on": null,
+            "effective_from": null,
+            "proven_effective_scope": "Observed currency/date context;case-specific municipal consultation,not general applicability or tax-rate approval."
+        }
+    ],
+    "predecessor_bundle_id": "CONSUMPTION-PHASE4B-2026.10.26-139-draft1",
+    "production_controls": {
+        "path": "production/phase4b-controls-2026.10.27-140-draft1.json",
+        "sha256": "2eee3d057cf3dcfc19d4bd136dc61895137d2bc87bf9c5d9f636021dd958fd70"
+    },
+    "public_payment_contract": "PUBLIC-DOCUMENT-PAYMENT-139-V1",
+    "iss_currency_contract": "ISS-DOCUMENT-CURRENCY-140-V1"
+}

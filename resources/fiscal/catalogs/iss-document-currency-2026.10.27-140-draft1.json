@@ -1,0 +1,37 @@
+{
+    "catalog_id": "ISS_DOCUMENT_CURRENCY_LOCAL",
+    "version": "2026.10.27-140-draft1",
+    "status": "SANDBOX_CANDIDATE",
+    "policy": {
+        "contract": "ISS-DOCUMENT-CURRENCY-140-V1",
+        "available_at": "2026-10-27T12:05:00+00:00",
+        "municipality": "3550308",
+        "lc116_code": "17.01",
+        "operation_scope": "IMPORTED_CONSULTANCY_COMPLETED_FINAL_REPORT_PREQUALIFIED_LOCAL_CASE",
+        "reference_day": "EXPLICIT_ISS_SUPPLY_DAY",
+        "side": "SALE",
+        "bulletin": "Fechamento",
+        "supported_currency": [
+            "BRL",
+            "USD"
+        ],
+        "previous_day_fallback": false,
+        "sources": {
+            "iss140-sp-sc008-2015.pdf": "05f655b02feaa3a2647e00a164feb3e9d44d65712ec1cf1700381cc35bd9edbe",
+            "iss140-ctn-consolidated.html": "532d816da9dce29fdc7854933c7736681cee647a6e950a499fd8f205d02bff2d",
+            "iss140-sp-law13701-consolidated.html": "9966f679d5859fb868d5639bb17e85188198444063b3fb613495e6e5111d4c89"
+        },
+        "technical_rounding": "HALF_UP_2_FROM_EXACT_PRODUCT_NOT_MUNICIPAL_ROUNDING_APPROVAL",
+        "legal_applicability_approved": false,
+        "complete_document_obligation": false
+    },
+    "quote_source": {
+        "source_id": "BCB_USD_20260924_25_OBSERVED_20261027",
+        "currency": "USD",
+        "raw_json": "{\"@odata.context\":\"https://was-p.bcnet.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata$metadata#_CotacaoMoedaPeriodo\",\"value\":[{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.16760,\"cotacaoVenda\":5.16820,\"dataHoraCotacao\":\"2026-09-24 10:05:12.142503\",\"tipoBoletim\":\"Abertura\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.17100,\"cotacaoVenda\":5.17160,\"dataHoraCotacao\":\"2026-09-24 11:05:11.049556\",\"tipoBoletim\":\"Intermediário\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.18240,\"cotacaoVenda\":5.18300,\"dataHoraCotacao\":\"2026-09-24 12:02:15.561312\",\"tipoBoletim\":\"Intermediário\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.19470,\"cotacaoVenda\":5.19530,\"dataHoraCotacao\":\"2026-09-24 13:03:18.602841\",\"tipoBoletim\":\"Intermediário\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.17890,\"cotacaoVenda\":5.17950,\"dataHoraCotacao\":\"2026-09-24 13:03:18.656275\",\"tipoBoletim\":\"Fechamento\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.19800,\"cotacaoVenda\":5.19860,\"dataHoraCotacao\":\"2026-09-25 10:09:12.64966\",\"tipoBoletim\":\"Abertura\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.19860,\"cotacaoVenda\":5.19920,\"dataHoraCotacao\":\"2026-09-25 11:05:11.950802\",\"tipoBoletim\":\"Intermediário\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.20660,\"cotacaoVenda\":5.20720,\"dataHoraCotacao\":\"2026-09-25 12:06:13.549371\",\"tipoBoletim\":\"Intermediário\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.19060,\"cotacaoVenda\":5.19120,\"dataHoraCotacao\":\"2026-09-25 13:10:17.3478\",\"tipoBoletim\":\"Intermediário\"},{\"paridadeCompra\":1.00000,\"paridadeVenda\":1.00000,\"cotacaoCompra\":5.19850,\"cotacaoVenda\":5.19910,\"dataHoraCotacao\":\"2026-09-25 13:10:17.447657\",\"tipoBoletim\":\"Fechamento\"}]}",
+        "sha256": "9ccab2212f2ff1d7849245ae7325fae2385d557f676b828a5b63600de33463d6",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda=%27USD%27&@dataInicial=%2709-24-2026%27&@dataFinalCotacao=%2709-25-2026%27&$format=json",
+        "observed_at": "2026-10-27T11:59:19.799875+00:00"
+    },
+    "notice": "Prequalified local import consultancy final-report case;no universal export policy,legal-applicability or municipal-rate approval."
+}

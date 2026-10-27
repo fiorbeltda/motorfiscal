@@ -16,6 +16,8 @@ use App\Modules\Fiscal\Core\Decision\FiscalDecisionContext;
 use App\Modules\Fiscal\Core\Facts\FactBag;
 use App\Modules\Fiscal\Core\Facts\FactResolver;
 use App\Modules\Fiscal\Core\Facts\FactResolverPipeline;
+use App\Modules\Fiscal\Core\Facts\FactSourceType;
+use App\Modules\Fiscal\Core\Facts\FactValue;
 use App\Modules\Fiscal\Core\Invariants\FiscalInvariantEngine;
 use App\Modules\Fiscal\Core\Invariants\InvariantSeverity;
 use App\Modules\Fiscal\Core\Precedence\CandidateDecision;
@@ -34,6 +36,7 @@ use App\Modules\Fiscal\Core\Trace\DecisionTrace;
 use App\Modules\Fiscal\FederalWithholding\FederalWithholdingEngine;
 use App\Modules\Fiscal\ISS\InstitutionalIssImmunityQualifier;
 use App\Modules\Fiscal\ISS\IssCalculationEngine;
+use App\Modules\Fiscal\ISS\IssDocumentCurrency140;
 use App\Modules\Fiscal\ISS\IssIncidenceDecision;
 use App\Modules\Fiscal\ISS\IssLocationEngine;
 use App\Modules\Fiscal\ISS\IssLocationStrategy;
@@ -80,6 +83,7 @@ final readonly class DefaultFiscalDecisionEngine implements FiscalDecisionEngine
         private bool $postIssFederalWithholdings = false,
         /** @var array<string, mixed>|null */
         private ?array $institutionalIssImmunity = null,
+        private ?IssDocumentCurrency140 $issDocumentCurrency = null,
     ) {}
 
     public function evaluate(FiscalDecisionInput $input): FiscalEvaluationResult
@@ -115,6 +119,10 @@ final readonly class DefaultFiscalDecisionEngine implements FiscalDecisionEngine
                 ['RULE_BUNDLE_NOT_KNOWN_AT_EXECUTION'],
                 [],
             );
+        }
+        if ($this->issDocumentCurrency !== null && $providedFacts->value('provider.tax_regime') === IssDocumentCurrency140::FOREIGN_REGIME
+            && ($providedFacts->value('operation.service_origin') !== 'FOREIGN' || $providedFacts->value('provider.person_type') !== 'FOREIGN_LEGAL_ENTITY')) {
+            return $this->nonFinalResult($input, DecisionStatus::INVALID, ['ISS_CURRENCY140_FOREIGN_REGIME_PROFILE_CONFLICT'], [], $trace);
         }
         $postIss = $this->postIssIntegrated && $input->context->competenceDate->value() >= '2033-01-01';
         $immuneIss = ! $postIss && $providedFacts->value('iss.evaluate_institutional_immunity') === true;
@@ -605,9 +613,22 @@ final readonly class DefaultFiscalDecisionEngine implements FiscalDecisionEngine
             'treatment' => $treatment->toArray(),
             'detail_groups' => $detailGroups,
         ]);
+        $issCalculationFacts = $facts;
+        if ($this->issDocumentCurrency !== null) {
+            $conversion = $this->issDocumentCurrency->qualify($facts, $input->context->competenceDate->value(),
+                $input->context->knowledgeAt, $location->location->ibgeCode, $service->lc116Code);
+            $trace->add('ISS_DOCUMENT_CURRENCY140', $conversion);
+            if ($conversion['status'] === 'ACTION_REQUIRED') {
+                return $this->nonFinalResult($input, DecisionStatus::ACTION_REQUIRED, [$conversion['reason']], $conversion['missing_facts'], $trace);
+            }
+            if ($conversion['status'] === 'LOCAL_ISS_DOCUMENT_PRICE_CONVERTED') {
+                $issCalculationFacts = $facts->withReplaced(new FactValue('operation.amount', $conversion['converted_price_brl'],
+                    FactSourceType::DERIVED, $input->context->competenceDate, null, $input->context->knowledgeAt));
+            }
+        }
         $calculation = $this->calculationEngine->calculate(
             $service->family,
-            $facts,
+            $issCalculationFacts,
             $rate->rate,
             $formulaId,
             array_map('strval', $formulaArguments),

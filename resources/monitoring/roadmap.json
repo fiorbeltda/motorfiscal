@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas. Desenvolvimento parado a pedido do usuário;checkpoint139 publicado;produção bloqueada.",
+  "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5-7 planejadas. Parada solicitada no aceite140;141 pendente;producao bloqueada.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "summary": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -2209,25 +2209,42 @@
     {
       "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
       "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T11:57:46.670247+00:00",
+      "current_review": "Meta reativada em27/10/2026. Checkpoint139 publicado e132 hashes conferidos;140 em revisão de fontes e integração de câmbio documental,sem resultado fiscal novo antecipado.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:16:13.642394+00:00",
+      "current_review": "140 integrado ao calculadorISS e à projeção parcial:preço e câmbio documental separados doRTC. Primeiro ensaio22/66 aprovado;validação ampliada ativa,sem aceite final antecipado. Escopo local de importação17.01/BRL/USD;demais perfis pendentes;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:24:02.961963+00:00",
+      "current_review": "140 integrado ao calculadorISS e à projeção parcial:preço e câmbio documental separados doRTC. Primeiro ensaio22/66 aprovado;validação ampliada ativa,sem aceite final antecipado. Escopo local de importação17.01/BRL/USD;demais perfis pendentes;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:30:33.966869+00:00",
+      "current_review": "140:preço/câmbioISS separados doRTC em contexto local de importação17.01,com memória e projeçãoDPS parcial.56 testes/154 asserções,CLI repetido,replays armazenados e resultado completo139 preservados;5.940 entradas e134 hashes auditados. Documento completo de importação e demais perfis pendentes;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:35:41.535829+00:00",
+      "current_review": "141 em integração documental de importação:140 preservado e134 hashes conferidos. Fonte técnica atual em revisão;vínculo de fatura,moeda e valoresISS/RTC em desenvolvimento. Nenhum XML141 aprovado;0/8 grupos encerrados."
     }
   ],
-  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
-  "scope_package": "137",
-  "updated_at": "2026-10-26T18:17:17.763423+00:00",
+  "current_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
+  "scope_package": "140",
+  "updated_at": "2026-10-27T09:48:22.438044-03:00",
   "checkpoint_publication": {
-    "commit": "cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
+    "status": "PREPARED_NOT_YET_PUSHED",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-23T15:28:36.615703-03:00",
-    "push_confirmed": true,
-    "remote_sha_confirmed": true,
-    "message": "Atualização - 23/10/2026 15:27 (São Paulo)",
     "development_stopped_by_user": true,
-    "last_full_regression": "136:9569/145843",
-    "current137_scoped_validation": "41tests/118assertions;nativeCLI4XML;PHPStan0;PintPASS",
-    "full137_started": false,
     "phase4b_complete": false,
-    "production_ready": false
+    "production_ready": false,
+    "recorded_at": "2026-10-27T09:48:22.438044-03:00"
   },
   "development_resumed_at": "2026-10-26T18:00:28.276940+00:00",
   "development_state": "STOPPED_BY_USER_REQUEST",

@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-10-27T09:48:22.438044-03:00",
+  "status": "USER_REQUESTED_SAFE_STOP_READY_FOR_COMMIT",
+  "development_state": "STOPPED_BY_USER_REQUEST",
+  "branch": "codex/fiscal-engine-bootstrap",
+  "source_inputs_verified_unchanged": 5940,
+  "runtime_hashes_verified": 134,
+  "directed_tests": {
+    "tests": 56,
+    "assertions": 154,
+    "iss140_tests": 41,
+    "public139_tests": 15
+  },
+  "quality": {
+    "phpstan_global_exit_code": 0,
+    "pint_changed_files": 6,
+    "pint_exit_code": 0
+  },
+  "full140_executed": false,
+  "formal_phase4b_groups_closed": 0,
+  "production_ready": false,
+  "published_compact_evidence": [
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027-currency140/currency140-integration-scoped-validation.json",
+      "sha256": "257490e0dcef384a140ec367eff33922ae14f768481977a2a69f74d951138f18"
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+      "published_path": "docs/fiscal/checkpoints/20261027-currency140/requirements80-current-matrix.json",
+      "sha256": "03ca45e2856464f6c0e2a55158992aa1e5189381e79375fd871f398053b3bfb1"
+    }
+  ],
+  "external141_evidence": [
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-import-document141-20261027-v1\\primary-v2\\captures.json",
+      "sha256": "739ba1374d2f9c48499230e1fa759c15dfcc6f2e33dea8f358447906da58377c",
+      "bytes": 2714
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-import-document141-20261027-v1\\combined-probe-snapshot.json",
+      "sha256": "79797db2e3239e8565b1b157d6f2dbafeef4fd2e9b030ef7e861223ece24f0fc",
+      "bytes": 2032194
+    },
+    {
+      "path": "D:\\ProjetoSaasExports\\phase4b-import-document141-20261027-v1\\preflight140.json",
+      "sha256": "c5569c7320062a2c1ca9134bda7d7f02d4b2926a7706a30efdfd1bbefa24fb67",
+      "bytes": 19331
+    }
+  ],
+  "investigation141": {
+    "runtime_implemented": false,
+    "xml_approved": false,
+    "probe_status": "ACTION_REQUIRED",
+    "finding": "No eligible ordinary imported consultancy RTC classification; historical software rule was not reused. Structured invoice and monetary reconciliation remain pending."
+  },
+  "environment_at_stop": {
+    "app_processes": "Only PHP-FPM master and workers observed via compose top",
+    "console_precheck": "PASS_28",
+    "containers_preserved": true,
+    "console_postcheck": "PASS_28",
+    "http_endpoint_verified": true,
+    "endpoint_development_state": "STOPPED_BY_USER_REQUEST"
+  },
+  "checkpoint_publication": {
+    "status": "PREPARED_NOT_YET_PUSHED",
+    "branch": "codex/fiscal-engine-bootstrap",
+    "development_stopped_by_user": true,
+    "phase4b_complete": false,
+    "production_ready": false,
+    "recorded_at": "2026-10-27T09:48:22.438044-03:00"
+  }
+}

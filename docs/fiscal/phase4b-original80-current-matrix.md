@@ -1,5 +1,9 @@
 # Matriz atual dos80 requisitos originais
 
+Checkpoint de parada solicitado em 2026-10-27T09:48:22.438044-03:00:aceite local140 preservado;141 apenas investigacao externa. Ver `phase4b-checkpoint-stop-20261027-currency140.md`.0/8 grupos encerrados.
+
+Retomada em27/10/2026:140 integrado e validado localmente,56 testes/154 asserções,CLI/replays e resultado139 preservado.5.940 entradas e134 hashes auditados;conversãoISS separada doRTC. Documento completo de importação e demais perfis pendentes;0/8 grupos encerrados. Ver `phase4b-iss-currency140-integration.md`. O checkpoint de parada abaixo é histórico.
+
 Checkpoint solicitado em27/10/2026:desenvolvimento parado no aceite139;85 testes/403 asserções,CLI/XML/XSD e replay137 aprovados. Recibos e matriz80 preservados em `checkpoints/20261027/`;checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.0/8 grupos encerrados.
 
 Atualização em26/10/2026:matriz corrente com aceite dirigido do par139 em

@@ -34,6 +34,7 @@ use App\Modules\Fiscal\Infrastructure\Files\QuestionDefinitionFileLoader;
 use App\Modules\Fiscal\Infrastructure\MunicipalParameters\JsonMunicipalParameterProvider;
 use App\Modules\Fiscal\Infrastructure\Schema\JsonSchemaValidator;
 use App\Modules\Fiscal\ISS\IssCalculationEngine;
+use App\Modules\Fiscal\ISS\IssDocumentCurrency140;
 use App\Modules\Fiscal\ISS\IssLocationEngine;
 use App\Modules\Fiscal\ISS\IssRateEngine;
 use App\Modules\Fiscal\ISS\IssResponsibilityEngine;
@@ -102,6 +103,14 @@ final class FiscalEngineFactory
         if (isset($resourcePaths['public_annex_catalog'])) {
             $documents['public_annex_catalog'] = $this->decode($this->resolveResourcePath($resourceRoot, $resourcePaths['public_annex_catalog']));
         }
+        if (isset($resourcePaths['iss_currency_catalog'])) {
+            $documents['iss_currency_catalog'] = $this->decode($this->resolveResourcePath($resourceRoot, $resourcePaths['iss_currency_catalog']));
+            foreach (IssDocumentCurrency140::policy()['sources'] as $file => $hash) {
+                if (hash_file('sha256', $this->resolveResourcePath($resourceRoot, 'sources/official/'.$file)) !== $hash) {
+                    throw new RuntimeException('ISS currency primary source hash mismatch.');
+                }
+            }
+        }
         if (isset($resourcePaths['federal_obligation_catalog'])) {
             $documents['federal_obligation_catalog'] = $this->decode($this->resolveResourcePath($resourceRoot, $resourcePaths['federal_obligation_catalog']));
         }
@@ -139,6 +148,9 @@ final class FiscalEngineFactory
         }
 
         $bundleId = (string) ($documents['bundle_manifest']['bundle_id'] ?? '');
+        if (isset($documents['iss_currency_catalog'])) {
+            $knowledgeHashes['iss_currency_catalog'] = CanonicalJson::hash($documents['iss_currency_catalog']);
+        }
         $catalogVersions = $documents['bundle_manifest']['catalog_versions'] ?? null;
         if ($bundleId === '' || ! is_array($catalogVersions)) {
             throw new RuntimeException('Bundle manifest is invalid.');
@@ -208,6 +220,10 @@ final class FiscalEngineFactory
                 throw new RuntimeException('Knowledge document hash mismatch: public_annex_catalog');
             }
         }
+        if (isset($documents['iss_currency_catalog'])
+            && ($hashes['iss_currency_catalog'] ?? null) !== CanonicalJson::hash($documents['iss_currency_catalog'])) {
+            throw new RuntimeException('Knowledge document hash mismatch: iss_currency_catalog');
+        }
         if (isset($documents['federal_obligation_catalog'])) {
             $actual = CanonicalJson::hash($documents['federal_obligation_catalog']);
             if (($hashes['federal_obligation_catalog'] ?? null) !== $actual) {
@@ -269,6 +285,17 @@ final class FiscalEngineFactory
         }
 
         $publicAnnex = $documents['public_annex_catalog'] ?? null;
+        $issCurrencyCatalog = $documents['iss_currency_catalog'] ?? null;
+        $selectIssCurrency = match ($manifest['iss_currency_contract'] ?? null) {
+            null => false,
+            IssDocumentCurrency140::CONTRACT => true,
+            default => throw new RuntimeException('Unknown ISS currency contract.'),
+        };
+        if ($selectIssCurrency !== is_array($issCurrencyCatalog)
+            || ($selectIssCurrency && (($issCurrencyCatalog['version'] ?? null) !== ($catalogVersions['iss_currency'] ?? null)
+                || ($manifest['content_hashes']['iss_currency_catalog'] ?? null) !== ($hashes['iss_currency_catalog'] ?? null)))) {
+            throw new RuntimeException('Exact selected ISS currency catalog version and hash required.');
+        }
         $strictPublicPayment = match ($manifest['public_payment_contract'] ?? null) {
             null => false,
             PublicAdministrationRuleSet::DOCUMENT_PAYMENT_CONTRACT => true,
@@ -324,6 +351,7 @@ final class FiscalEngineFactory
             $transitionCatalog?->integratesPostIssPeriod() ?? false,
             $transitionCatalog?->evaluatesPostIssFederalWithholdings() ?? false,
             is_array($rtcCodes['iss_institutional_immunity'] ?? null) ? $rtcCodes['iss_institutional_immunity'] : null,
+            $selectIssCurrency ? new IssDocumentCurrency140($issCurrencyCatalog) : null,
         );
     }
 
@@ -388,7 +416,7 @@ final class FiscalEngineFactory
             throw new RuntimeException('Bundle manifest resource paths must be an object.');
         }
         foreach ($configured as $key => $value) {
-            if (! is_string($key) || (! array_key_exists($key, $paths) && ! in_array($key, ['public_annex_catalog', 'federal_obligation_catalog', 'federal_banking_calendar', 'rtc_rate_catalog', 'rtc_code_catalog', 'rtc_transition_catalog'], true)) || ! is_string($value) || $value === '') {
+            if (! is_string($key) || (! array_key_exists($key, $paths) && ! in_array($key, ['public_annex_catalog', 'federal_obligation_catalog', 'federal_banking_calendar', 'rtc_rate_catalog', 'rtc_code_catalog', 'rtc_transition_catalog', 'iss_currency_catalog'], true)) || ! is_string($value) || $value === '') {
                 throw new RuntimeException('Bundle manifest contains an invalid resource path.');
             }
             $paths[$key] = $value;
@@ -569,7 +597,7 @@ final class FiscalEngineFactory
                 throw new RuntimeException('Bundle manifest content hash mismatch: federal_banking_calendar');
             }
         }
-        foreach (['rtc_rate_catalog', 'rtc_code_catalog', 'rtc_transition_catalog'] as $key) {
+        foreach (['rtc_rate_catalog', 'rtc_code_catalog', 'rtc_transition_catalog', 'iss_currency_catalog'] as $key) {
             if (isset($documents[$key])) {
                 $declared = $declaredHashes[$key] ?? null;
                 $actual = $actualHashes[$key] ?? null;

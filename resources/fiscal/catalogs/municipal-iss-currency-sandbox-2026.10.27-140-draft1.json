@@ -1,0 +1,216 @@
+{
+    "catalog_id": "MUNICIPAL_ANNEX_SERVICES_SANDBOX_FIXTURE",
+    "version": "2026.10.27-140-draft1",
+    "source_type": "FIXTURE",
+    "notice": "Synthetic municipal parameters,including consultancy5% for currency separation tests only;not a qualified municipal tax-rate source.",
+    "parameters": [
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "010101",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "2.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3509502",
+            "ctribnac_code": "120801",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "3.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3552205",
+            "ctribnac_code": "070202",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "CUSTOMER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "171401",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "171901",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "080101",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "080102",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "080201",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040101",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040301",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040302",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040401",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040601",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040701",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040802",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "040803",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "041001",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "041201",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "041601",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "041701",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "041704",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "041901",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "042101",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "250101",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "250202",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "PROVIDER"
+        },
+        {
+            "municipality_ibge": "3550308",
+            "ctribnac_code": "170101",
+            "effective_from": "2026-01-01",
+            "effective_to": null,
+            "rate": "5.00",
+            "responsibility": "CUSTOMER"
+        }
+    ]
+}

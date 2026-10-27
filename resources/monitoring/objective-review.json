@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+  "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
-  "criterion": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+  "criterion": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
   "objectives": [
     {
       "id": "4B.1",
@@ -35,7 +35,7 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
       "current_work": "137 integral segue no mesmo processo,sem resultado terminal.138 externo:duas fontes oficiaisSTF preservadas,observações processuais reproduzidas e16 consequências indevidas recusadas;auditoria independente aprovada. Nenhuma classe138 instalada;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
@@ -45,7 +45,7 @@
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
         "docs/fiscal/phase4b-judicial138-staged-review.md"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada."
     },
     {
       "id": "4B.2",
@@ -53,7 +53,8 @@
         "12 itens originais de incidência/local examinados, com razõesRTC/ISS preservadas por ramo.",
         "Coerência município/UF 116 incorporada ao aceite 119; corpus 370/370 e 1.071 históricos, sem presumir domicílio ou validade histórica.",
         "ConversãoRTC73 e resultadosISS96/98 preservados; a referência geográfica não prova domicílio ou validade histórica.",
-        "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores."
+        "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores.",
+        "140:conversão de preçoISS em importação17.01 local,memória e projeção parcial separadas doRTC;56/154,CLI/replay139 e auditoria aprovados. Documento completo e demais perfis pendentes."
       ],
       "pending": [
         "Qualificar materialidade e local fiscal histórico além da referência geográfica auxiliar.",
@@ -73,16 +74,22 @@
         "phase4b-sp97-municipal-result-preparation.md",
         "phase4b-sp98-current-integration.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
-      "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+      "current_work": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
         "docs/fiscal/phase4b-import129-responsibility.md",
         "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
         "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
-        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada."
     },
     {
       "id": "4B.3",
@@ -106,7 +113,7 @@
         "phase4b-requirements114-temporal-review.md",
         "phase4b-simples78-local-integration.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
@@ -115,7 +122,7 @@
         "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada."
     },
     {
       "id": "4B.4",
@@ -128,7 +135,8 @@
         "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
         "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
         "136:base,alíquotas,débitos eCST próprios noXML por documento,com cálculo fresco e confronto com ponte135;perfil explicitamente não retido.",
-        "139:cinco perfis públicos no parXML/XSD;85 testes/403 asserções,CLI repetido,perguntaSiafi,próprios e replay137 preservados. EscopoBRL delimitado;demais perfis/documentos pendentes."
+        "139:cinco perfis públicos no parXML/XSD;85 testes/403 asserções,CLI repetido,perguntaSiafi,próprios e replay137 preservados. EscopoBRL delimitado;demais perfis/documentos pendentes.",
+        "140:conversão de preçoISS em importação17.01 local,memória e projeção parcial separadas doRTC;56/154,CLI/replay139 e auditoria aprovados. Documento completo e demais perfis pendentes."
       ],
       "pending": [
         "Comprovar autenticidade e materialidade das evidências; guardas e replays não encerram base/cálculo.",
@@ -150,9 +158,9 @@
         "phase4b-iss-fx109-source-scope-review.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
-      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
+      "current_work": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -173,7 +181,13 @@
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-current-matrix.json",
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
-        "docs/fiscal/phase4b-public-payment139-integration.md"
+        "docs/fiscal/phase4b-public-payment139-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json"
       ],
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
@@ -200,8 +214,8 @@
         "phase4b-supplier-credit-period.md",
         "phase4b-cooperative-network-credit-transfer.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
@@ -242,7 +256,7 @@
         "phase4b-catalog101-current-integration.md",
         "phase4b-catalog101-original-scope-review.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-dps127-development-20261022/dps127-scoped-validation.json",
@@ -252,7 +266,7 @@
         "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada."
     },
     {
       "id": "4B.7",
@@ -275,7 +289,8 @@
         "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
         "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
         "136:doisDPS completos XSD com grupo federal próprio e mesma identidade/COMEX/demais nós135;comando anterior preservado.",
-        "139:cinco perfis públicos no parXML/XSD;85 testes/403 asserções,CLI repetido,perguntaSiafi,próprios e replay137 preservados. EscopoBRL delimitado;demais perfis/documentos pendentes."
+        "139:cinco perfis públicos no parXML/XSD;85 testes/403 asserções,CLI repetido,perguntaSiafi,próprios e replay137 preservados. EscopoBRL delimitado;demais perfis/documentos pendentes.",
+        "140:conversão de preçoISS em importação17.01 local,memória e projeção parcial separadas doRTC;56/154,CLI/replay139 e auditoria aprovados. Documento completo e demais perfis pendentes."
       ],
       "pending": [
         "Concluir demais campos/perfisNT009,ajustes,país/moeda e temporalidade,dados municipais quando exigidos e documento definitivo da importação.",
@@ -306,8 +321,8 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
-      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+      "current_work": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -327,9 +342,15 @@
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-current-matrix.json",
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
-        "docs/fiscal/phase4b-public-payment139-integration.md"
+        "docs/fiscal/phase4b-public-payment139-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ]
@@ -355,7 +376,8 @@
         "Base/impostoISS locais por documentoBRL com classificação granular e reexecução106/111.",
         "338 testes/2599 asserções;52 replays locais,84 documentos por oráculo decimal e19 históricos exatos.",
         "Cinco fontes municipais preservadas;auditoria463 conferências/110 hashes;80 revisões preservadas.",
-        "139:cinco perfis públicos no parXML/XSD;85 testes/403 asserções,CLI repetido,perguntaSiafi,próprios e replay137 preservados. EscopoBRL delimitado;demais perfis/documentos pendentes."
+        "139:cinco perfis públicos no parXML/XSD;85 testes/403 asserções,CLI repetido,perguntaSiafi,próprios e replay137 preservados. EscopoBRL delimitado;demais perfis/documentos pendentes.",
+        "140:conversão de preçoISS em importação17.01 local,memória e projeção parcial separadas doRTC;56/154,CLI/replay139 e auditoria aprovados. Documento completo e demais perfis pendentes."
       ],
       "pending": [
         "Desenvolvimento retomado22/10:fechar lacunas funcionais atuais da matriz80,com aceite próprio por corte e preservação do checkpoint122.",
@@ -395,8 +417,8 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
-      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "reviewed_at": "2026-10-27T09:48:22.438044-03:00",
+      "current_work": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -417,9 +439,15 @@
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-current-matrix.json",
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
-        "docs/fiscal/phase4b-public-payment139-integration.md"
+        "docs/fiscal/phase4b-public-payment139-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "current_package_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ]
@@ -7985,30 +8013,49 @@
     {
       "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
       "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T11:57:46.670247+00:00",
+      "current_review": "Meta reativada em27/10/2026. Checkpoint139 publicado e132 hashes conferidos;140 em revisão de fontes e integração de câmbio documental,sem resultado fiscal novo antecipado.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:16:13.642394+00:00",
+      "current_review": "140 integrado ao calculadorISS e à projeção parcial:preço e câmbio documental separados doRTC. Primeiro ensaio22/66 aprovado;validação ampliada ativa,sem aceite final antecipado. Escopo local de importação17.01/BRL/USD;demais perfis pendentes;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:24:02.961963+00:00",
+      "current_review": "140 integrado ao calculadorISS e à projeção parcial:preço e câmbio documental separados doRTC. Primeiro ensaio22/66 aprovado;validação ampliada ativa,sem aceite final antecipado. Escopo local de importação17.01/BRL/USD;demais perfis pendentes;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:30:33.966869+00:00",
+      "current_review": "140:preço/câmbioISS separados doRTC em contexto local de importação17.01,com memória e projeçãoDPS parcial.56 testes/154 asserções,CLI repetido,replays armazenados e resultado completo139 preservados;5.940 entradas e134 hashes auditados. Documento completo de importação e demais perfis pendentes;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:35:41.535829+00:00",
+      "current_review": "141 em integração documental de importação:140 preservado e134 hashes conferidos. Fonte técnica atual em revisão;vínculo de fatura,moeda e valoresISS/RTC em desenvolvimento. Nenhum XML141 aprovado;0/8 grupos encerrados."
     }
   ],
-  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+  "current_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
   "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
-  "scope_package": "137",
+  "scope_package": "140",
   "current_requirements_matrix": {
-    "path": "storage/app/phase4b-retention137-development-20261023/requirements80-current-matrix.json",
-    "sha256": "b092de16a4704c17eedd602e8858446876daed74183d9d2ae8dbc412a118cbc1"
+    "path": "docs/fiscal/checkpoints/20261027-currency140/requirements80-current-matrix.json",
+    "sha256": "03ca45e2856464f6c0e2a55158992aa1e5189381e79375fd871f398053b3bfb1",
+    "requirements": 80,
+    "formal_phase4b_groups_closed": 0
   },
-  "updated_at": "2026-10-26T18:17:17.763423+00:00",
+  "updated_at": "2026-10-27T09:48:22.438044-03:00",
   "checkpoint_publication": {
-    "commit": "cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
+    "status": "PREPARED_NOT_YET_PUSHED",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-23T15:28:36.615703-03:00",
-    "push_confirmed": true,
-    "remote_sha_confirmed": true,
-    "message": "Atualização - 23/10/2026 15:27 (São Paulo)",
     "development_stopped_by_user": true,
-    "last_full_regression": "136:9569/145843",
-    "current137_scoped_validation": "41tests/118assertions;nativeCLI4XML;PHPStan0;PintPASS",
-    "full137_started": false,
     "phase4b_complete": false,
-    "production_ready": false
+    "production_ready": false,
+    "recorded_at": "2026-10-27T09:48:22.438044-03:00"
   },
   "development_resumed_at": "2026-10-26T18:00:28.276940+00:00",
   "development_state": "STOPPED_BY_USER_REQUEST",
