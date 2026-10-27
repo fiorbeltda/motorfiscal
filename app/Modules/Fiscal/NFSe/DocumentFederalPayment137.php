@@ -39,13 +39,15 @@ final readonly class DocumentFederalPayment137
      * @param  array<array-key, mixed>  $policy
      * @return array<string, mixed>
      */
-    public function bind(array $snapshot, array $declarations, array $proofs, array $policy, string $resourceRoot): array
+    public function bind(array $snapshot, array $declarations, array $proofs, array $policy, string $resourceRoot, ?DocumentFederalPayment139 $publicContract = null): array
     {
-        if (CanonicalJson::encode($policy) !== CanonicalJson::encode(self::policy())) {
+        $expectedPolicy = $publicContract === null ? self::policy() : DocumentFederalPayment139::policy();
+        $availableAt = $expectedPolicy['available_at'];
+        if (CanonicalJson::encode($policy) !== CanonicalJson::encode($expectedPolicy)) {
             return $this->stop('EXACT_POLICY_REQUIRED');
         }
         $known = $this->instant($snapshot['input']['knowledge_at'] ?? null);
-        if ($known === null || $known < new DateTimeImmutable(self::AVAILABLE_AT)) {
+        if ($known === null || $known < new DateTimeImmutable($availableAt)) {
             return $this->stop('SOURCE_NOT_YET_KNOWN');
         }
         if (! array_is_list($proofs) || count($proofs) !== 2) {
@@ -58,6 +60,13 @@ final readonly class DocumentFederalPayment137
         }
         $factory = new FiscalEngineFactory;
         $knowledge = $snapshot['knowledge']; // The prior projector has independently captured and compared this complete knowledge.
+        if ($publicContract !== null) {
+            try {
+                $knowledge = $publicContract->captureKnowledge($resourceRoot);
+            } catch (Throwable $e) {
+                return [...$this->stop('EXACT_CURRENT_FEDERAL_KNOWLEDGE_REQUIRED'), 'upstream_error' => $e->getMessage()];
+            }
+        }
         $rtc = array_values(array_filter($snapshot['result']['trace'], static fn (array $t): bool => $t['type'] === 'CONSUMPTION_REFORM'))[0]['payload'];
         $iss = array_values(array_filter($rtc['trace'], static fn (array $t): bool => $t['stage'] === 'PARTIAL_EXPORT_DOCUMENT_ISS134'))[0];
         $ownDocuments = array_column($iss['documents'], null, 'role');
@@ -87,7 +96,7 @@ final readonly class DocumentFederalPayment137
                 return $this->stop('UNIQUE_PAYMENT_PER_DOCUMENT_REQUIRED');
             }
             $proof = $matches[0];
-            if (! $this->captured($proof, $known) || isset($ids[$proof['evidence_id']])) {
+            if (! $this->captured($proof, $known, $expectedPolicy['contract'], $availableAt) || isset($ids[$proof['evidence_id']])) {
                 return $this->stop('CURRENT_DISTINCT_PAYMENT_CAPTURES_REQUIRED');
             }
             $ids[$proof['evidence_id']] = true;
@@ -180,7 +189,7 @@ final readonly class DocumentFederalPayment137
                     return $this->stop('CAPTURED_FEDERAL_FACTS_CANNOT_REWRITE_BOUND_MONEY_PARTIES_OR_EVENTS');
                 }
             }
-            $input = ['scenario_id' => 'STAGED-FEDERAL137-'.$role.'-'.$payment['reference'], 'competence_date' => $context['iss_supply_on'],
+            $input = ['scenario_id' => ($publicContract === null ? 'STAGED-FEDERAL137-' : 'STAGED-FEDERAL139-').$role.'-'.$payment['reference'], 'competence_date' => $context['iss_supply_on'],
                 'knowledge_at' => $known->format('Y-m-d\TH:i:s.uP'), 'rule_bundle_id' => $knowledge['rule_bundle_id'],
                 'catalog_versions' => $knowledge['catalog_versions'], 'facts' => [...$fixed, ...$extra]];
             try {
@@ -195,6 +204,12 @@ final readonly class DocumentFederalPayment137
             }
             $federal = $first['decision']['federal_withholdings'] ?? null;
             if (! is_array($federal) || ($federal['status'] ?? null) !== 'RESOLVED') {
+                if ($publicContract !== null) {
+                    return [...$this->stop('FINAL_DOCUMENT_FEDERAL_ASSESSMENT_REQUIRED'), 'role' => $role,
+                        'upstream_status' => $first['status'], 'missing_facts' => $first['missing_facts'],
+                        'questions' => $first['questions'], 'reason_codes' => $first['reason_codes'], 'trace' => $first['trace']];
+                }
+
                 return [...$this->stop('FINAL_DOCUMENT_FEDERAL_ASSESSMENT_REQUIRED'), 'upstream' => $federal];
             }
             $fields = (new FederalRetention137)->project($federal, $policy['retention_projection'], $known, $resourceRoot);
@@ -254,14 +269,14 @@ final readonly class DocumentFederalPayment137
     /**
      * @param  array<array-key, mixed>  $p
      */
-    private function captured(array $p, DateTimeImmutable $known): bool
+    private function captured(array $p, DateTimeImmutable $known, string $contract, string $availableAt): bool
     {
         if (! $this->keys($p, ['contract', 'evidence_id', 'observed_at', 'valid_from', 'valid_to', 'revoked_at', 'superseded_at', 'value', 'origin', 'source_hash'])
-            || $p['contract'] !== self::CONTRACT || ! $this->reference($p['evidence_id']) || ! is_array($p['value'])) {
+            || $p['contract'] !== $contract || ! $this->reference($p['evidence_id']) || ! is_array($p['value'])) {
             return false;
         }
         $observed = $this->instant($p['observed_at']);
-        if ($observed === null || $observed > $known || $observed < new DateTimeImmutable(self::AVAILABLE_AT)) {
+        if ($observed === null || $observed > $known || $observed < new DateTimeImmutable($availableAt)) {
             return false;
         }
         foreach (['revoked_at', 'superseded_at'] as $key) {

@@ -20,10 +20,10 @@ function payment137Bank(array $value): array
     return ['reference' => 'SYNTHETIC-BANK-STATEMENT-137', 'media_type' => 'application/json', 'content' => $content, 'content_sha256' => hash('sha256', $content)];
 }
 
-function retention137Fixture(): array
+function retention137Fixture(?string $knowledgeAt = null, ?string $issuedAt = null): array
 {
-    $known = (new DateTimeImmutable(DocumentFederalPayment137::AVAILABLE_AT))->modify('+5 seconds');
-    $issued = DocumentFederalPayment137::AVAILABLE_AT;
+    $known = $knowledgeAt === null ? (new DateTimeImmutable(DocumentFederalPayment137::AVAILABLE_AT))->modify('+5 seconds') : new DateTimeImmutable($knowledgeAt);
+    $issued = $issuedAt ?? DocumentFederalPayment137::AVAILABLE_AT;
     $case = own135PairFixture(knowledgeAt: $known->format('Y-m-d\TH:i:s.uP'), identityOverrides: [
         'RTC_FOREIGN' => ['issued_at' => $issued, 'series' => '1', 'number' => '1373'],
         'RTC_DOMESTIC' => ['issued_at' => $issued, 'series' => '1', 'number' => '1374']]);

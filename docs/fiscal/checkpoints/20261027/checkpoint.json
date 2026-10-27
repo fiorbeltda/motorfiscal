@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-10-27T07:22:46.587785-03:00",
+  "status": "USER_REQUESTED_SAFE_STOP_READY_FOR_COMMIT",
+  "development_state": "STOPPED_BY_USER_REQUEST",
+  "branch": "codex/fiscal-engine-bootstrap",
+  "source_inputs_verified_unchanged": 5926,
+  "runtime_hashes_verified": 132,
+  "directed_tests": {
+    "tests": 85,
+    "assertions": 403,
+    "files": 4,
+    "process_receipt": "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\pair-tests-process-v1\\validation.json",
+    "stdout_sha256": "d42eecbd09333e7672ff6bad15e1845492f7efb015c2cfd5787c05fb9e671a28"
+  },
+  "last_full137": {
+    "tests": 9585,
+    "assertions": 145896
+  },
+  "native": {
+    "complete_pair_canonical_hash": "d07c45e0ee79667eb30a8c27df61f08607f930ca3e24bc32aa29cc7305000af3",
+    "distinct_document_roles": 2,
+    "invalid_contract_hash_no_output_directory": true,
+    "legacy137_complete_result_unchanged": true,
+    "municipal_irrf": "30.78",
+    "municipal_pcc": "0.00",
+    "own_cofins": "18.68",
+    "own_pis": "4.05",
+    "production_ready": false,
+    "repeated_real_cli_runs": 2,
+    "status": "PUBLIC139_COMPLETE_PAIR_NATIVE_CLI_REPEATED_AND_LEGACY137_REPLAY_PRESERVED",
+    "xml_files_verified": 4
+  },
+  "production_ready": false,
+  "formal_phase4b_groups_closed": 0,
+  "new_fx_work": "READ_ONLY_INVESTIGATION_NO_NEW_RUNTIME_IMPLEMENTATION",
+  "environment_at_stop": {
+    "docker_daemon": "UNAVAILABLE",
+    "container_validation_repeated": false,
+    "http_endpoint_rechecked": false,
+    "console_check": "HOST_PHP_28_CHECKS_PASS",
+    "prior_container_and_http_checks": "RECORDED_20261026_AT_139_ACCEPTANCE"
+  },
+  "published_compact_evidence": [
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027/public139-pair-integration-scoped-validation.json",
+      "sha256": "38975a4e969afe345b627c32e17279a282b9687060e870474f2b2d5cdc592097",
+      "bytes": 22519
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-integration-scoped-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027/public139-integration-scoped-validation.json",
+      "sha256": "f433b34cf08355ca666982a6602f86562f9a8bf11c11a6e803274109ae128ce3",
+      "bytes": 23299
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
+      "published_path": "docs/fiscal/checkpoints/20261027/requirements80-pair-current-matrix.json",
+      "sha256": "482e0cc3933dc02c5fdf1ec7daabe1dad0aa859fc424cfb47d49163d540ffbec",
+      "bytes": 254495
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-full-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027/retention137-full-validation.json",
+      "sha256": "84ad1d283f5d575482984f6e3b302be52f662c96b4dd3f42a90cc1af34b05542",
+      "bytes": 25401
+    }
+  ],
+  "bulk_evidence_preserved_on_D": "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1",
+  "publication_status": "PENDING_COMMIT_AND_PUSH"
+}

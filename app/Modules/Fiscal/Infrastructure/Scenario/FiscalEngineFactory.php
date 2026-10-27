@@ -269,7 +269,16 @@ final class FiscalEngineFactory
         }
 
         $publicAnnex = $documents['public_annex_catalog'] ?? null;
-        $publicRuleSet = is_array($publicAnnex) ? new PublicAdministrationRuleSet(new PublicAnnexCatalog($publicAnnex)) : null;
+        $strictPublicPayment = match ($manifest['public_payment_contract'] ?? null) {
+            null => false,
+            PublicAdministrationRuleSet::DOCUMENT_PAYMENT_CONTRACT => true,
+            default => throw new RuntimeException('Unknown public document payment contract.'),
+        };
+        if ($strictPublicPayment && ! is_array($publicAnnex)) {
+            throw new RuntimeException('Public document payment contract requires the public Annex I catalog.');
+        }
+        $publicRuleSet = is_array($publicAnnex) ? new PublicAdministrationRuleSet(new PublicAnnexCatalog($publicAnnex),
+            strictDocumentPaymentContract: $strictPublicPayment) : null;
         $obligationCatalog = $documents['federal_obligation_catalog'] ?? null;
         $bankingCalendar = $documents['federal_banking_calendar'] ?? null;
         $obligationProjector = is_array($obligationCatalog) ? new FederalObligationProjector($obligationCatalog,

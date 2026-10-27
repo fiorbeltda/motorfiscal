@@ -1,5 +1,15 @@
 # Matriz atual dos80 requisitos originais
 
+Checkpoint solicitado em27/10/2026:desenvolvimento parado no aceite139;85 testes/403 asserções,CLI/XML/XSD e replay137 aprovados. Recibos e matriz80 preservados em `checkpoints/20261027/`;publicação em preparação.0/8 grupos encerrados.
+
+Atualização em26/10/2026:matriz corrente com aceite dirigido do par139 em
+`storage/app/phase4b-public139-development-20261026/requirements80-pair-current-matrix.json`,
+com80 revisões próprias preservadas.139:cinco perfis públicos,perguntaSiafi,
+85 testes/403 asserções,CLI repetido e par137 preservado;nenhum grupo formalmente
+encerrado. A integral137 anterior passou9.585 testes/145.896 asserções.
+O aceite139 não substitui a auditoria individual dos80 requisitos.
+Ver `phase4b-public-payment139-integration.md`.
+
 Checkpoint solicitado em 2026-10-23T18:26:42.172423+00:00: desenvolvimento parado após auditoria escopada137. 41 testes/118 asserções;CLI real repetido,4 XML/XSD idênticos,PHPStan global0 ePint aprovados. 5.916 entradas preservadas no ensaio nativo e130 hashes de runtime auditados. Recibo `storage/app/phase4b-retention137-development-20261023/retention137-integration-scoped-validation.json`, SHA256 `2c5f1c7013451ddd7522bf3fd8b90964a70857ced1418e1023ef47c190ef6398`. Regressão integral137 não iniciada. Última integral136:9.569 testes/145.843 asserções. 0/8 grupos encerrados;produção bloqueada.
 
 Atualização em 2026-10-23T17:53:57.848470+00:00: regressão136 terminal às14:42:49 deSãoPaulo, 9.569 testes/145.843 asserções, exit0; 5.907 entradas intactas, 124 hashes auditados. Recibo `storage/app/phase4b-own136-development-20261023/own136-full-validation.json`, SHA256 `67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2`. 137 continua noD:, vínculo por documento auditado com42 recusas; país do cliente, crédito contábil e partes explícitos. ComposiçãoXML e proveniênciaNT007 ainda pendentes; 0/8 grupos encerrados.

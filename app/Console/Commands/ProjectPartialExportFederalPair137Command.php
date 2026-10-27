@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Modules\Fiscal\NFSe\PartialExportFederalPair137;
+use App\Modules\Fiscal\NFSe\PartialExportFederalPair139;
 use RuntimeException;
 use Throwable;
 
@@ -13,7 +14,8 @@ final class ProjectPartialExportFederalPair137Command extends FiscalJsonCommand
     protected $signature = 'fiscal:dps:project-export-pair-withholdings
         {snapshot : Complete integrated nonfinal134 snapshot}
         {declarations : Own-tax,COMEX,documentary,payment and own-selection declarations137}
-        {--output-dir= : New directory for two validated unsigned sandbox DPS documents and report}';
+        {--output-dir= : New directory for two validated unsigned sandbox DPS documents and report}
+        {--public-payment-contract= : Explicit139 payment contract; omission preserves archived137 replay}';
 
     protected $description = 'Replay a partial-export pair and bind own contributions and fresh per-document federal withholdings';
 
@@ -28,7 +30,12 @@ final class ProjectPartialExportFederalPair137Command extends FiscalJsonCommand
                 throw new RuntimeException('Exact137 declaration groups required.');
             }
             $prior = array_diff_key($declarations, ['payment_proofs' => true, 'own_selection_proofs' => true]);
-            $report = (new PartialExportFederalPair137)->project($snapshot, $prior,
+            $projector = match ($this->option('public-payment-contract')) {
+                null => new PartialExportFederalPair137,
+                '139' => new PartialExportFederalPair139,
+                default => throw new RuntimeException('Unknown public payment contract selection.'),
+            };
+            $report = $projector->project($snapshot, $prior,
                 $declarations['payment_proofs'], $declarations['own_selection_proofs'], resource_path('fiscal'));
             if ($report['status'] !== 'LOCAL_OWN_AND_WITHHELD_PAIR_XML_XSD_VALIDATED') {
                 $this->outputJson($report);

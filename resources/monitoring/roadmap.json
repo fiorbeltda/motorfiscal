@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-23T15:28:36.615703-03:00",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas.137 escopado validado,integral não iniciada por parada solicitada;produção bloqueada.",
+  "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas. Desenvolvimento parado a pedido do usuário;checkpoint139 em publicação;produção bloqueada.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
+      "summary": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -2161,11 +2161,55 @@
         "full137_started": false,
         "phase4b_complete": false
       }
+    },
+    {
+      "reviewed_at": "2026-10-23T15:28:36.615703-03:00",
+      "current_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-26T18:00:28.276940+00:00",
+      "current_review": "Retomada em26/10:checkpoint137 publicado echeckout limpo conferidos. Docker desligado;recuperação do ambiente em andamento. Integral137 ainda não iniciada. Última integral136:9.569 testes/145.843 asserções;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T18:06:52.889601+00:00",
+      "current_review": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T18:17:17.763423+00:00",
+      "current_review": "137 integral segue no mesmo processo,sem resultado terminal.138 externo:duas fontes oficiaisSTF preservadas,observações processuais reproduzidas e16 consequências indevidas recusadas;auditoria independente aprovada. Nenhuma classe138 instalada;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:12:59.914340+00:00",
+      "current_review": "137 integral auditada:9.585 testes/145.896 asserções;5.917 entradas intactas.139:duas falhas públicas reproduzidas (Siafi ausente e zero PCC sem centavos);correção versionada em desenvolvimento.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:20:21.073658+00:00",
+      "current_review": "137 integral auditada: 9.585 testes/145.896 asserções. Produtor139 integrado: Siafi material gera pergunta e zero PCC tem centavos; 63 testes/253 asserções, qualidade e dois replays históricos aprovados. Par completo139 pendente; 0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:23:05.882296+00:00",
+      "current_review": "139: seleção de conhecimento federal separada do snapshot ISS/RTC e ligada ao coordenador do par completo; implementação em validação dirigida, sem aceite antecipado. Produtor139 e integral137 preservados;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:27:04.728697+00:00",
+      "current_review": "139: seleção de conhecimento federal separada do snapshot ISS/RTC e ligada ao coordenador do par completo; implementação em validação dirigida, sem aceite antecipado. Produtor139 e integral137 preservados;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:30:29.249548+00:00",
+      "current_review": "139: seleção de conhecimento federal separada do snapshot ISS/RTC e ligada ao coordenador do par completo; implementação em validação dirigida, sem aceite antecipado. Produtor139 e integral137 preservados;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:33:56.187324+00:00",
+      "current_review": "139: CLI nativo repetido com quatroXML/XSD idênticos e resultado completo137 preservado. Testes dirigidos seguem ativos sobre5.926 entradas;auditoria final pendente.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-26T19:38:06.779374+00:00",
+      "current_review": "139 integrado ao par documental: cinco perfis públicos, perguntaSiafi e alternativas de retenção por componente;85 testes/403 asserções aprovados. CLI repetido com quatroXML/XSD idênticos e par137 preservado;5.926 entradas auditadas.0/8 grupos encerrados;produção bloqueada."
     }
   ],
-  "current_review": "Parada solicitada pelo usuário em ponto seguro.137 integrado e auditado:41 testes/118 asserções,CLI repetido com4 XML,XSD,PHPStan global0 ePint aprovados. Integral137 não iniciada;última integral136:9.569 testes/145.843 asserções.0/8 grupos encerrados;produção bloqueada.",
+  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
   "scope_package": "137",
-  "updated_at": "2026-10-23T15:28:36.615703-03:00",
+  "updated_at": "2026-10-26T18:17:17.763423+00:00",
   "checkpoint_publication": {
     "commit": "cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
     "url": "https://github.com/fiorbeltda/motorfiscal/commit/cca43e890935b68a5bb90ca6cd2bcb943bd9d80a",
@@ -2181,8 +2225,8 @@
     "phase4b_complete": false,
     "production_ready": false
   },
-  "development_resumed_at": "2026-10-23T12:48:09.183500+00:00",
-  "development_state": "STOPPED_BY_USER_SCOPED137_VALIDATED_FULL_PENDING",
+  "development_resumed_at": "2026-10-26T18:00:28.276940+00:00",
+  "development_state": "STOPPED_BY_USER_REQUEST",
   "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
   "uncommitted_development": true
 }

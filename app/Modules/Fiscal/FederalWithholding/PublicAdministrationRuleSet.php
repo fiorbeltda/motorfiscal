@@ -9,9 +9,12 @@ use App\Modules\Fiscal\Core\Shared\DecimalValue;
 
 final readonly class PublicAdministrationRuleSet
 {
+    public const DOCUMENT_PAYMENT_CONTRACT = 'PUBLIC-DOCUMENT-PAYMENT-139-V1';
+
     public function __construct(
         private PublicAnnexCatalog $catalog,
         private PublicPaymentBaseResolver $baseResolver = new PublicPaymentBaseResolver,
+        private bool $strictDocumentPaymentContract = false,
     ) {}
 
     /** @return array{irrf: FederalWithholdingDecision, pcc: PccWithholdingResult} */
@@ -259,6 +262,13 @@ final readonly class PublicAdministrationRuleSet
             }
             $lineCalculations[] = $lineResult;
         }
+        if ($this->strictDocumentPaymentContract
+            && $total->compareTo(DecimalValue::fromString('0')) > 0
+            && $total->compareTo(DecimalValue::fromString('10.00')) < 0
+            && ! $facts->has('payer.siafi_electronic_collection')) {
+            return $this->unresolved(FederalWithholdingStatus::ACTION_REQUIRED,
+                'PUBLIC_SIAFI_COLLECTION_STATUS_REQUIRED', ['payer.siafi_electronic_collection']);
+        }
         $threshold = $facts->value('payer.siafi_electronic_collection') !== true
             && $total->compareTo(DecimalValue::fromString('10.00')) < 0;
         $details = [
@@ -335,7 +345,8 @@ final readonly class PublicAdministrationRuleSet
             'pcc' => new PccWithholdingResult(
                 $threshold ? 'DISPENSED_THRESHOLD' : (! $withholdContributions ? 'NOT_APPLICABLE'
                     : ($contributionTotal->compareTo(DecimalValue::fromString('0')) === 0 ? 'NO_WITHHOLDING_COMPONENTS' : 'WITHHOLD')),
-                $decisions, (string) $facts->value('payment.gross_amount'), $contributionTotal->value(),
+                $decisions, (string) $facts->value('payment.gross_amount'),
+                $this->strictDocumentPaymentContract ? $contributionTotal->rounded(2)->value() : $contributionTotal->value(),
                 DecimalValue::fromString((string) $facts->value('payment.gross_amount'))->minus($contributionTotal)->rounded(2)->value(),
                 $threshold || ! $withholdContributions || $componentExceptions !== [] ? null : ($federal ? ($row['revenue_code'] ?? null) : '4085'),
                 substr($date, 0, 7), 'PUBLIC_PAYMENT_DUE_RULE_REQUIRES_VERSION',

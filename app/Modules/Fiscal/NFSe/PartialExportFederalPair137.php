@@ -26,12 +26,19 @@ final readonly class PartialExportFederalPair137
      * @param  array<array-key, mixed>  $ownSelections
      * @return array<string, mixed>
      */
-    public function project(array $snapshot, array $declarations, array $payments, array $ownSelections, string $root): array
+    public function project(array $snapshot, array $declarations, array $payments, array $ownSelections, string $root, ?DocumentFederalPayment139 $publicContract = null): array
     {
         try {
             $known = new DateTimeImmutable($snapshot['input']['knowledge_at']);
             $this->require($known >= new DateTimeImmutable(self::AVAILABLE_AT), 'POLICY_NOT_YET_KNOWN');
-            $payment = (new DocumentFederalPayment137)->bind($snapshot, $declarations, $payments, DocumentFederalPayment137::policy(), $root);
+            $payment = $publicContract === null
+                ? (new DocumentFederalPayment137)->bind($snapshot, $declarations, $payments, DocumentFederalPayment137::policy(), $root)
+                : $publicContract->bind($snapshot, $declarations, $payments, DocumentFederalPayment139::policy(), $root);
+            if ($publicContract !== null && $payment['status'] !== 'STAGED_PER_DOCUMENT_FEDERAL_PAYMENTS_BOUND') {
+                return ['status' => 'ACTION_REQUIRED', 'reason' => 'PAIR139_PAYMENT_BINDING_REQUIRED:'.($payment['reason'] ?? ''),
+                    'records' => [], 'missing_facts' => $payment['missing_facts'] ?? [], 'questions' => $payment['questions'] ?? [],
+                    'upstream' => $payment, 'eligible_for_integration' => false, 'production_ready' => false];
+            }
             $this->require($payment['status'] === 'STAGED_PER_DOCUMENT_FEDERAL_PAYMENTS_BOUND', 'PAYMENT_BINDING_REQUIRED:'.($payment['reason'] ?? ''));
             $pair = (new PartialExportDpsPair135)->project($snapshot, $declarations, $root);
             $rtc = array_values(array_filter($snapshot['result']['trace'], static fn (array $t): bool => $t['type'] === 'CONSUMPTION_REFORM'))[0]['payload'];
