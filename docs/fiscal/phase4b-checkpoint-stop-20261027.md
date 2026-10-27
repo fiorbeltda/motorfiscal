@@ -27,3 +27,7 @@ parado a pedido do usuário;fases5–7 continuam planejadas e produção bloquea
 Na retomada,continuar os demais perfis/documentos/eventos,base/preço/câmbio e
 pagamentos fora da liquidação integral separada emBRL,além do alcance material
 judicial138,sem reduzir os80 requisitos originais.
+
+Publicação principal confirmada em 2026-10-27T07:25:31.998107-03:00: [99f9257](https://github.com/fiorbeltda/motorfiscal/commit/99f92575cfd09669c5f32c12caf1ce76e79cca38).
+A atualização imediata do acompanhamento registra esse commit verificado;
+o desenvolvimento permanece parado a pedido do usuário.

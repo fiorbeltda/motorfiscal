@@ -67,5 +67,9 @@
     }
   ],
   "bulk_evidence_preserved_on_D": "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1",
-  "publication_status": "PENDING_COMMIT_AND_PUSH"
+  "publication_status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+  "published_at": "2026-10-27T07:25:31.998107-03:00",
+  "primary_commit": "99f92575cfd09669c5f32c12caf1ce76e79cca38",
+  "primary_commit_url": "https://github.com/fiorbeltda/motorfiscal/commit/99f92575cfd09669c5f32c12caf1ce76e79cca38",
+  "publication_followup": "This metadata is recorded immediately after the verified primary push."
 }

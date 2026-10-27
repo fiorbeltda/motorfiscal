@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas. Desenvolvimento parado a pedido do usuário;checkpoint139 em publicação;produção bloqueada.",
+  "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5–7 planejadas. Desenvolvimento parado a pedido do usuário;checkpoint139 publicado;produção bloqueada.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "summary": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -2205,9 +2205,13 @@
     {
       "reviewed_at": "2026-10-26T19:38:06.779374+00:00",
       "current_review": "139 integrado ao par documental: cinco perfis públicos, perguntaSiafi e alternativas de retenção por componente;85 testes/403 asserções aprovados. CLI repetido com quatroXML/XSD idênticos e par137 preservado;5.926 entradas auditadas.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+      "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
     }
   ],
-  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
   "scope_package": "137",
   "updated_at": "2026-10-26T18:17:17.763423+00:00",
   "checkpoint_publication": {

@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+  "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
-  "criterion": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+  "criterion": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
   "objectives": [
     {
       "id": "4B.1",
@@ -35,7 +35,7 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
       "current_work": "137 integral segue no mesmo processo,sem resultado terminal.138 externo:duas fontes oficiaisSTF preservadas,observações processuais reproduzidas e16 consequências indevidas recusadas;auditoria independente aprovada. Nenhuma classe138 instalada;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
@@ -45,7 +45,7 @@
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
         "docs/fiscal/phase4b-judicial138-staged-review.md"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.2",
@@ -73,7 +73,7 @@
         "phase4b-sp97-municipal-result-preparation.md",
         "phase4b-sp98-current-integration.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
@@ -82,7 +82,7 @@
         "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.3",
@@ -106,7 +106,7 @@
         "phase4b-requirements114-temporal-review.md",
         "phase4b-simples78-local-integration.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
@@ -115,7 +115,7 @@
         "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.4",
@@ -150,9 +150,9 @@
         "phase4b-iss-fx109-source-scope-review.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
-      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
+      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -200,8 +200,8 @@
         "phase4b-supplier-credit-period.md",
         "phase4b-cooperative-network-credit-transfer.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
@@ -242,7 +242,7 @@
         "phase4b-catalog101-current-integration.md",
         "phase4b-catalog101-original-scope-review.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
       "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
       "current_work_evidence": [
         "storage/app/phase4b-dps127-development-20261022/dps127-scoped-validation.json",
@@ -252,7 +252,7 @@
         "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
         "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada."
     },
     {
       "id": "4B.7",
@@ -306,8 +306,8 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
-      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -329,7 +329,7 @@
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
         "docs/fiscal/phase4b-public-payment139-integration.md"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ]
@@ -395,8 +395,8 @@
         "phase4b-dated108-current-integration.md",
         "phase4b-price110-local-component.md"
       ],
-      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
-      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "reviewed_at": "2026-10-27T07:25:31.998107-03:00",
+      "current_work": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "current_work_evidence": [
         "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
         "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -419,7 +419,7 @@
         "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
         "docs/fiscal/phase4b-public-payment139-integration.md"
       ],
-      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+      "current_package_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ]
@@ -7981,9 +7981,13 @@
     {
       "reviewed_at": "2026-10-26T19:38:06.779374+00:00",
       "current_review": "139 integrado ao par documental: cinco perfis públicos, perguntaSiafi e alternativas de retenção por componente;85 testes/403 asserções aprovados. CLI repetido com quatroXML/XSD idênticos e par137 preservado;5.926 entradas auditadas.0/8 grupos encerrados;produção bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T07:22:46.587785-03:00",
+      "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados."
     }
   ],
-  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite dirigido139:85 testes/403 asserções,quatroXML/XSD idênticos e par137 preservado.5.926 entradas e132 hashes de runtime conferidos. Publicação do checkpoint em preparação;0/8 grupos encerrados.",
+  "current_review": "Parada solicitada pelo usuário em27/10/2026,no aceite139. Checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.85 testes/403 asserções,quatroXML/XSD e par137 preservados;0/8 grupos encerrados;produção bloqueada.",
   "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
   "scope_package": "137",
   "current_requirements_matrix": {

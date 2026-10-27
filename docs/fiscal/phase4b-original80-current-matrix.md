@@ -1,6 +1,6 @@
 # Matriz atual dos80 requisitos originais
 
-Checkpoint solicitado em27/10/2026:desenvolvimento parado no aceite139;85 testes/403 asserções,CLI/XML/XSD e replay137 aprovados. Recibos e matriz80 preservados em `checkpoints/20261027/`;publicação em preparação.0/8 grupos encerrados.
+Checkpoint solicitado em27/10/2026:desenvolvimento parado no aceite139;85 testes/403 asserções,CLI/XML/XSD e replay137 aprovados. Recibos e matriz80 preservados em `checkpoints/20261027/`;checkpoint principal99f9257 publicado noGitHub,comSHA remoto confirmado.0/8 grupos encerrados.
 
 Atualização em26/10/2026:matriz corrente com aceite dirigido do par139 em
 `storage/app/phase4b-public139-development-20261026/requirements80-pair-current-matrix.json`,
