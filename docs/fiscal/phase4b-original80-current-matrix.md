@@ -1,5 +1,11 @@
 # Matriz atual dos80 requisitos originais
 
+Checkpoint de parada solicitado em 2026-10-27T13:14:31.903760-03:00:task143 concluida e auditada (45/195,CLI e141 hashes).141/142 preservados;Fase4B permanece em andamento. Ver `phase4b-checkpoint-stop-20261027-import143.md`.0/8 grupos formalmente encerrados.
+
+142 integrado em27/10/2026:54 testes/123 assercoes,modeloNT009 parcial e recusa real doXSD auditados;5.952 entradas/138 hashes. Ver `phase4b-import142-nt009-field-model.md`. Desenvolvimento ativo;identidade/partes/DPS completo seguinte;80 requisitos/0 grupos encerrados.
+
+Desenvolvimento retomado e141 integrado em27/10/2026:74 testes/150 assercoes,CLI repetido e conciliacao monetaria documental local auditados;5.948 entradas/136 hashes. Ver `phase4b-import141-monetary-integration.md`. Modelo documental completo seguinte;80 requisitos/0 grupos encerrados. Paradas abaixo sao historicas.
+
 Checkpoint de parada solicitado em 2026-10-27T09:48:22.438044-03:00:aceite local140 preservado;141 apenas investigacao externa. Ver `phase4b-checkpoint-stop-20261027-currency140.md`.0/8 grupos encerrados.
 
 Retomada em27/10/2026:140 integrado e validado localmente,56 testes/154 asserções,CLI/replays e resultado139 preservado.5.940 entradas e134 hashes auditados;conversãoISS separada doRTC. Documento completo de importação e demais perfis pendentes;0/8 grupos encerrados. Ver `phase4b-iss-currency140-integration.md`. O checkpoint de parada abaixo é histórico.

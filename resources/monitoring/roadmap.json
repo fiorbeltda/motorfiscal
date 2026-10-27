@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-27T09:49:46.389874-03:00",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5-7 planejadas. Parada solicitada no aceite140;141 pendente;producao bloqueada.",
+  "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
+  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5-7 planejadas. Task143 concluida;parada solicitada echeckpoint em publicacao.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
+      "summary": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -2233,25 +2233,50 @@
     {
       "reviewed_at": "2026-10-27T12:35:41.535829+00:00",
       "current_review": "141 em integração documental de importação:140 preservado e134 hashes conferidos. Fonte técnica atual em revisão;vínculo de fatura,moeda e valoresISS/RTC em desenvolvimento. Nenhum XML141 aprovado;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T09:49:46.389874-03:00",
+      "current_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:51:11.026995+00:00",
+      "current_review": "Retomada autorizada pelo usuario em27/10:checkpoint140 publicado e134 hashes conferidos.141 em desenvolvimento para consultoria importada,fatura e conciliacaoISS/RTC.0/8 grupos encerrados;producao bloqueada."
+    },
+    {
+      "reviewed_at": "2026-10-27T12:57:28.537050+00:00",
+      "current_review": "141 integrado em validacao:regra explicita de consultoria importada preserva98 regras anteriores;fatura normalizada vincula precoUSD,ISS5199,10,RTC5179,50,ajuste-19,60 e base4440,44.67 testes/143 assercoes ePHPStan0 observados;CLI e auditoria final em andamento.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T13:04:02.973121+00:00",
+      "current_review": "141 validado localmente:classificacao explicita e conciliacao de fatura normalizada comISS/RTC,74 testes/150 assercoes,PHPStan0/Pint4,CLI repetido e3 recusas.5.948 entradas e136 hashes auditados;98 regras anteriores preservadas. Modelo documental completo seguinte;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T13:08:39.597674+00:00",
+      "current_review": "142 em validacao:camposNT009 de fatura,COMEX e ajuste cambial modelados separadamente;faceta numerica nao reescreve identificador original. Gate inspecionaXSD oficial e recusa aprovacaoXML incompativel. Aceite141 preservado,0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T13:15:20.041726+00:00",
+      "current_review": "142 validado localmente:camposNT009 de fatura/COMEX/ajuste,identidade numerica original preservada e recusa real doXSD incompativel.54 testes/123 assercoes,PHPStan0/Pint4,CLI repetido e2 recusas;5.952 entradas/138 hashes auditados.141 preservado;identidade/DPS completo seguinte;0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-10-27T13:17:09.201850+00:00",
+      "current_review": "143 retomado:142 auditado e138 hashes conferidos. AnexoVI atual em revisao para integrar identidade,partes eDPS completa do perfil de importacao. Nenhum candidato143 aprovado;0/8 grupos encerrados."
     }
   ],
-  "current_review": "Parada solicitada pelo usuario no aceite local140:56 testes/154 assercoes,CLI/replays e resultado139 preservados;5.940 entradas e134 hashes reconferidos.141 permanece investigacao externa,sem novo runtime ou XML aprovado.0/8 grupos encerrados;producao bloqueada.",
-  "scope_package": "140",
-  "updated_at": "2026-10-27T09:49:46.389874-03:00",
+  "current_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+  "scope_package": "143",
+  "updated_at": "2026-10-27T13:14:31.903760-03:00",
   "checkpoint_publication": {
-    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
-    "commit": "1fbe4998c03b7e72ef370dff26aaf09188f09cd0",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/1fbe4998c03b7e72ef370dff26aaf09188f09cd0",
+    "status": "PREPARED_NOT_YET_PUSHED",
+    "recorded_at": "2026-10-27T13:14:31.903760-03:00",
     "branch": "codex/fiscal-engine-bootstrap",
-    "published_at": "2026-10-27T09:49:46.389874-03:00",
-    "push_confirmed": true,
-    "remote_sha_confirmed": true,
     "development_stopped_by_user": true,
+    "task143_complete_for_declared_local_scope": true,
     "phase4b_complete": false,
     "production_ready": false
   },
-  "development_resumed_at": "2026-10-26T18:00:28.276940+00:00",
+  "development_resumed_at": "2026-10-27T12:51:11.026995+00:00",
   "development_state": "STOPPED_BY_USER_REQUEST",
   "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
-  "uncommitted_development": false
+  "uncommitted_development": true
 }

@@ -1,0 +1,99 @@
+{
+  "recorded_at": "2026-10-27T13:14:31.903760-03:00",
+  "status": "USER_REQUESTED_SAFE_STOP_AFTER_TERMINAL_AUDITED_TASK143",
+  "development_state": "STOPPED_BY_USER_REQUEST",
+  "task_scope": "Complete local DPS assembly for explicit ordinary import141/142 profile;official XSD/application refusals preserved.",
+  "phase4b_complete": false,
+  "original_requirements": 80,
+  "formal_groups_closed": 0,
+  "production_ready": false,
+  "directed_tests": {
+    "tests": 45,
+    "assertions": 195,
+    "import143_tests": 24,
+    "import142_tests": 21
+  },
+  "quality": {
+    "phpstan_global_exit_code": 0,
+    "pint_changed_files": 5,
+    "pint_exit_code": 0
+  },
+  "native": {
+    "status": "143_COMPLETE_LOCAL_PROFILE_DPS_NATIVE_REPEATED_AND_THREE_REFUSALS_AUDITED",
+    "observed_at": "2026-10-27T13:32:36.647141+00:00",
+    "cli_repetitions": 2,
+    "negative_cases": 3,
+    "expected_nonacceptance_exit_code": 1,
+    "complete_snapshot_replay_matches": true,
+    "candidate_xml_sha256": "00524724a4d3b0aab020224ac1e7469849c12c6311e9c82bb812526314600b1b",
+    "table_structure_conforms": true,
+    "official_xsd_status": "INVALID",
+    "application_rejection_code": "E9996",
+    "common_header_facets_valid": true,
+    "xml_generated": true,
+    "signed": false,
+    "transmitted": false,
+    "document_obligation_complete": false,
+    "production_ready": false,
+    "input_hashes_verified_host_and_container": {
+      "comext.json": "b8c067f90e16845dd82996ab2a87ab987e5738db42ec79ea4b8de19b34a7533c",
+      "evidence.json": "e1d8f8c3aedbfcc13e2d505a476cff9a6fff2c4e1c079a953d3a867000d6ba2c",
+      "identity.json": "17e735e00fef5910762c52ca5c471c0b07d5c3b117b289625d1785da20b461e0",
+      "invoice.json": "b25ec604c2c4f85a79b3e37c21ca695095b7d69f568420efcf3b0d7f4c3f2745",
+      "production-identity.json": "46ce0d1e57ae5bb52fe7378acea5a729887f7e75642e0bc4035884f77ac7b7c9",
+      "snapshot.json": "65f3042bed0b8ff635003f13856e8e4c9edc5a3f60418b7bfe1b9eb03f41edc1",
+      "tampered-snapshot.json": "76f0b656607e942de59e681f5bbeb2be78441291a3d42b3f2c3043c10a1fad16",
+      "wrong-identity.json": "204c1093edd8582d419f1d3c9678fc6d51f349d72251945f8ed000eef47847f7"
+    }
+  },
+  "runtime_hashes_reverified": 141,
+  "source_inputs_verified_at143_audit": 5958,
+  "source_input_audit_receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import143-development-20261027\\import143-integration-scoped-validation.json",
+  "source_input_audit_receipt_sha256": "2282f0128916d13d54f26ba70d701e5196893e35701c9649ded7d5f93e4f37d4",
+  "published_compact_evidence": [
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\import141-integration-scoped-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027-import143/import141-integration-scoped-validation.json",
+      "sha256": "ca4e3050dd4f61033dffa964acb4e043e80ac876ec8742dd636dfe6809d63307",
+      "bytes": 27912
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\import142-integration-scoped-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027-import143/import142-integration-scoped-validation.json",
+      "sha256": "50b2a42c65b236ecab41da4dee6cd1f2acf03e54700214043380336276c62c37",
+      "bytes": 29843
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import143-development-20261027\\import143-integration-scoped-validation.json",
+      "published_path": "docs/fiscal/checkpoints/20261027-import143/import143-integration-scoped-validation.json",
+      "sha256": "2282f0128916d13d54f26ba70d701e5196893e35701c9649ded7d5f93e4f37d4",
+      "bytes": 30771
+    },
+    {
+      "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import143-development-20261027\\requirements80-current-matrix.json",
+      "published_path": "docs/fiscal/checkpoints/20261027-import143/requirements80-current-matrix.json",
+      "sha256": "659392fafac2720e94e80be190766574aa87131768a19f5636b21f63cdcafcca",
+      "bytes": 268223
+    }
+  ],
+  "environment_at_stop": {
+    "app_processes": "Only PHP-FPM master and two workers observed through compose top;no fiscal/test CLI running",
+    "containers_recreated": false,
+    "database_preserved": true,
+    "final_console_check": "PASS_28",
+    "http_endpoint_verified": true,
+    "endpoint_development_state": "STOPPED_BY_USER_REQUEST",
+    "task143_milestones_complete": true
+  },
+  "checkpoint_publication": {
+    "status": "PREPARED_NOT_YET_PUSHED",
+    "recorded_at": "2026-10-27T13:14:31.903760-03:00",
+    "branch": "codex/fiscal-engine-bootstrap",
+    "development_stopped_by_user": true,
+    "task143_complete_for_declared_local_scope": true,
+    "phase4b_complete": false,
+    "production_ready": false
+  },
+  "source_inputs_reverified_at_stop": 5958,
+  "input_reverification_at": "2026-10-27T13:15:42.237287-03:00"
+}
