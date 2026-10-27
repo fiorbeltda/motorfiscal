@@ -13,3 +13,5 @@ O candidato143 e inteiro para o perfil local delimitado;nao encerra todas as imp
 Copias compactas de recibos141/142/143 e matriz80 em `checkpoints/20261027-import143/`,byte a byte iguais aos originais. Logs,snapshots,XML e pesquisas permanecem noD:com hashes nos recibos. Nenhuma task ou suite foi interrompida;compose top mostrou apenasPHP-FPM noapp. Banco e conteineres preservados.
 
 Retomada:revisar os80 requisitos individualmente e priorizar lacunas funcionais nos demais perfis/grupos. Fases3/4A encerradas emSandbox,4B em andamento,5-7 planejadas;0/8 grupos4B encerrados.
+
+Publicado em 2026-10-27T13:17:06.511146-03:00: [0de41db](https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae),mensagem `Atualização - 27/10/2026 13:16 (São Paulo)`,SHA remoto confirmado. Console atualizado imediatamente apos o push. BytesHTML oficiais preservados integralmente;arquivos de autoria passaram no git diff --check.

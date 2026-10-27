@@ -86,14 +86,20 @@
     "task143_milestones_complete": true
   },
   "checkpoint_publication": {
-    "status": "PREPARED_NOT_YET_PUSHED",
-    "recorded_at": "2026-10-27T13:14:31.903760-03:00",
+    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+    "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
     "branch": "codex/fiscal-engine-bootstrap",
+    "message": "Atualização - 27/10/2026 13:16 (São Paulo)",
+    "published_at": "2026-10-27T13:17:06.511146-03:00",
+    "push_confirmed": true,
+    "remote_sha_confirmed": true,
     "development_stopped_by_user": true,
     "task143_complete_for_declared_local_scope": true,
     "phase4b_complete": false,
     "production_ready": false
   },
   "source_inputs_reverified_at_stop": 5958,
-  "input_reverification_at": "2026-10-27T13:15:42.237287-03:00"
+  "input_reverification_at": "2026-10-27T13:15:42.237287-03:00",
+  "publication_followup": "Console publication metadata recorded immediately after verified primary push;followup commit contains this update."
 }

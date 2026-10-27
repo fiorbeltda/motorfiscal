@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T13:14:31.903760-03:00",
+  "updated_at": "2026-10-27T13:17:06.511146-03:00",
   "title": "143 concluido: checkpoint de parada segura",
   "state": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
   "criterion": "Quatro marcos da task143 concluidos e auditados. A Fase4B inteira nao foi declarada concluida;sem percentual global estimado.",
@@ -24,7 +24,7 @@
   "finished": [
     "143:57 campos,identidade/partes/endereco eDPS local completa do perfil141/142.",
     "45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas;141/142 preservados.",
-    "5.958 entradas/141 hashes auditados;recusasXSD eE9996 preservadas;task encerrada em ponto seguro."
+    "5.958 entradas/141 hashes reconferidos;checkpoint143 publicado eSHA remoto confirmado."
   ],
   "pending": [
     "Retomar a revisao individual dos80 requisitos e priorizar lacunas dos demais perfis/grupos.",
@@ -13511,7 +13511,7 @@
     "finished": [
       "143:57 campos,identidade/partes/endereco eDPS local completa do perfil141/142.",
       "45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas;141/142 preservados.",
-      "5.958 entradas/141 hashes auditados;recusasXSD eE9996 preservadas;task encerrada em ponto seguro."
+      "5.958 entradas/141 hashes reconferidos;checkpoint143 publicado eSHA remoto confirmado."
     ],
     "pending": [
       "Retomar a revisao individual dos80 requisitos e priorizar lacunas dos demais perfis/grupos.",
@@ -13523,9 +13523,14 @@
   },
   "scope_package": "143",
   "checkpoint_publication": {
-    "status": "PREPARED_NOT_YET_PUSHED",
-    "recorded_at": "2026-10-27T13:14:31.903760-03:00",
+    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+    "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
     "branch": "codex/fiscal-engine-bootstrap",
+    "message": "Atualização - 27/10/2026 13:16 (São Paulo)",
+    "published_at": "2026-10-27T13:17:06.511146-03:00",
+    "push_confirmed": true,
+    "remote_sha_confirmed": true,
     "development_stopped_by_user": true,
     "task143_complete_for_declared_local_scope": true,
     "phase4b_complete": false,
@@ -13533,7 +13538,7 @@
   },
   "development_resumed_at": "2026-10-27T12:51:11.026995+00:00",
   "scope_note": "137 em regressão integral.4/5 marcos locais,não percentual funcional4B.80 requisitos originais preservados.",
-  "uncommitted_development": true,
+  "uncommitted_development": false,
   "active_validation": {
     "status": "TERMINAL_AUDITED",
     "live_process": false,

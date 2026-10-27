@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
+  "reviewed_at": "2026-10-27T13:17:06.511146-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
   "criterion": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
   "objectives": [
@@ -8132,11 +8132,16 @@
     "requirements": 80,
     "formal_phase4b_groups_closed": 0
   },
-  "updated_at": "2026-10-27T13:14:31.903760-03:00",
+  "updated_at": "2026-10-27T13:17:06.511146-03:00",
   "checkpoint_publication": {
-    "status": "PREPARED_NOT_YET_PUSHED",
-    "recorded_at": "2026-10-27T13:14:31.903760-03:00",
+    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+    "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
+    "url": "https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
     "branch": "codex/fiscal-engine-bootstrap",
+    "message": "Atualização - 27/10/2026 13:16 (São Paulo)",
+    "published_at": "2026-10-27T13:17:06.511146-03:00",
+    "push_confirmed": true,
+    "remote_sha_confirmed": true,
     "development_stopped_by_user": true,
     "task143_complete_for_declared_local_scope": true,
     "phase4b_complete": false,
@@ -8145,5 +8150,5 @@
   "development_resumed_at": "2026-10-27T12:51:11.026995+00:00",
   "development_state": "STOPPED_BY_USER_REQUEST",
   "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
-  "uncommitted_development": true
+  "uncommitted_development": false
 }
