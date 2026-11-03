@@ -1,0 +1,166 @@
+{
+  "task": "A152",
+  "scope": "Centralized acquirer headquarters locality; external credit prohibition predicate consumed only",
+  "active_matrix_oracles": [
+    {
+      "case": "FIXED_COMMUNICATION",
+      "party": "ACQUIRER151",
+      "matrix": "HQ151",
+      "active_establishments": 2,
+      "destination": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "two_regular_regimes_and_external_nonprohibition_predicates_checked": true,
+      "independent_date_and_canonical_hash_checks": true
+    },
+    {
+      "case": "MOVABLE_RENTAL",
+      "party": "ACQUIRER151",
+      "matrix": "HQ151",
+      "active_establishments": 2,
+      "destination": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "two_regular_regimes_and_external_nonprohibition_predicates_checked": true,
+      "independent_date_and_canonical_hash_checks": true
+    },
+    {
+      "case": "RESIDUAL_SERVICE",
+      "party": "ACQUIRER151",
+      "matrix": "HQ151",
+      "active_establishments": 2,
+      "destination": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "two_regular_regimes_and_external_nonprohibition_predicates_checked": true,
+      "independent_date_and_canonical_hash_checks": true
+    },
+    {
+      "case": "PERSONAL_REMOTE",
+      "party": "ACQUIRER151",
+      "matrix": "HQ151",
+      "active_establishments": 2,
+      "destination": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "two_regular_regimes_and_external_nonprohibition_predicates_checked": true,
+      "independent_date_and_canonical_hash_checks": true
+    },
+    {
+      "case": "MATRIX_ROLE_MOVED_TO_RJ",
+      "party": "ACQUIRER151",
+      "matrix": "BRANCH151",
+      "active_establishments": 2,
+      "destination": {
+        "uf": "RJ",
+        "municipality_ibge": "3304557"
+      },
+      "two_regular_regimes_and_external_nonprohibition_predicates_checked": true,
+      "independent_date_and_canonical_hash_checks": true
+    }
+  ],
+  "directed_includes_A149_A150_A151_do_not_add": {
+    "file": "agent-a-A152-directed-v2.junit.xml",
+    "tests": 185,
+    "assertions": 722,
+    "sha256": "02525a5f6f83143d47b749bc09f5e4b9999b25cea3345ba25f99af51c1346e73"
+  },
+  "regression_includes_directed_do_not_add": {
+    "file": "agent-a-A152-regression-v1.junit.xml",
+    "tests": 439,
+    "assertions": 1582,
+    "sha256": "d80778f1541bf1e57b8e0c11ea92dd988c7a015cf5f74ed042418ad537c8d44d"
+  },
+  "native_clis_identical_and_whole_replay": true,
+  "legacy_A149_A150_A151_cli_bytes_unchanged": true,
+  "missing_external_credit_qualification_expected_exit": 1,
+  "phpstan_global_exit": 0,
+  "pint_six_php_files_exit": 0,
+  "sources": [
+    {
+      "name": "LC214",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+      "status": 200,
+      "observed_at": "2026-11-03T12:34:52.664411+00:00",
+      "bytes": 3095827,
+      "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+      "matches_A145": true
+    },
+    {
+      "name": "CBS",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+      "status": 200,
+      "observed_at": "2026-11-03T12:34:52.990838+00:00",
+      "bytes": 3144950,
+      "sha256": "8396d56d14fb30a386c7548047701a6c310cb3a60da1a0b6893b6df5b8d90235",
+      "matches_A145": true
+    }
+  ],
+  "files": [
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php",
+      "sha256": "7fb7003e973a84547f0a3fdbe554bd36db6ed8fdcf581eb848b19616dff25ca8"
+    },
+    {
+      "path": "app/Console/Commands/QualifyEntityDomicile151Command.php",
+      "sha256": "05c5e187e23424d8cbea575ddeb8ac7149ecd7652b3103e621c423e72794a771"
+    },
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php",
+      "sha256": "cd19044c1b973ed273f5f92a40481afef6f09551274fcd58d1ce5fbae4dd4d4d"
+    },
+    {
+      "path": "app/Console/Commands/QualifyServiceLocality149Command.php",
+      "sha256": "7e40ee584f1ed94c080a3827cf3c05c9a2a18a9b7ddf8c8415293cb0355371f4"
+    },
+    {
+      "path": "scripts/agent_a/centralized152_fixture.php",
+      "sha256": "245f5e3f8d070b23dcd138af8a0b39c06c255be6828de2da7aa9bc193d06c587"
+    },
+    {
+      "path": "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+      "sha256": "c3958203741ad1e8e9ea2c010498b497d74d858b62ba24e3ce0e5da5d986a4e9"
+    },
+    {
+      "path": "scripts/agent_a/verify152.py",
+      "sha256": "722d2428611efc399f4abcd3449771f93d2c1f9f3554652e66dc6a27c33f5f5c"
+    }
+  ],
+  "external_credit_predicates_synthetic": true,
+  "B_received": false,
+  "credit_right_determined": false,
+  "classification_catalog_integration": "PENDING_AGENT_B",
+  "whole_requirement_accepted": false,
+  "full_regression_executed": false,
+  "production_ready": false,
+  "matrix_console_proposal": {
+    "writer": "B",
+    "applied": false,
+    "formal_A_groups_closed": 0,
+    "phase_4B_closed": false,
+    "requirement_ids": [
+      "4B.2.4",
+      "4B.2.5",
+      "4B.2.7",
+      "4B.2.10",
+      "4B.3.2",
+      "4B.3.9"
+    ],
+    "classification": "PARCIAL_COM_ACEITE_ESCOPADO_A152",
+    "completed": [
+      "Matriz única e estabelecimentos ativos vinculados",
+      "Regime regular dos dois tributos e predicado externo de vedação",
+      "Ligação opcional em comunicação fixa e serviço pessoal remoto"
+    ],
+    "pending": [
+      "Integração da qualificação real de crédito de B",
+      "Pessoas físicas/não cadastrados e demais contextos",
+      "Classificações/documentos de B e regressão integral integrada"
+    ],
+    "next_step": "Qualificar domicílio de pessoa física e critérios para não cadastrados sem presumir endereço"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "task": "A145",
+  "status": "DIRECTED_LOCAL_COMBINED_SUPPLIES_VERIFIED_NOT_FULL_REQUIREMENT_ACCEPTANCE",
+  "cli_output_sha256": "89131f2e7c800efa953ecc555018eabd32e598d7b72c94ac1963732a13f02db4",
+  "cli_exit_codes": {
+    "first": 0,
+    "invalid_sum": 1,
+    "second": 0
+  },
+  "whole_report_replay": true,
+  "identical_cli_runs": true,
+  "decimal_oracles": [
+    {
+      "supply": "education",
+      "tax": "IBS_STATE",
+      "base": "1000.00",
+      "standard_percent": "0.10",
+      "factor": "0.40",
+      "expected": "0.40",
+      "actual": "0.40"
+    },
+    {
+      "supply": "education",
+      "tax": "IBS_MUNICIPAL",
+      "base": "1000.00",
+      "standard_percent": "0.00",
+      "factor": "0.40",
+      "expected": "0.00",
+      "actual": "0.00"
+    },
+    {
+      "supply": "education",
+      "tax": "CBS",
+      "base": "1000.00",
+      "standard_percent": "0.90",
+      "factor": "0.40",
+      "expected": "3.60",
+      "actual": "3.60"
+    },
+    {
+      "supply": "software",
+      "tax": "IBS_STATE",
+      "base": "1000.00",
+      "standard_percent": "0.10",
+      "factor": "1",
+      "expected": "1.00",
+      "actual": "1.00"
+    },
+    {
+      "supply": "software",
+      "tax": "IBS_MUNICIPAL",
+      "base": "1000.00",
+      "standard_percent": "0.00",
+      "factor": "1",
+      "expected": "0.00",
+      "actual": "0.00"
+    },
+    {
+      "supply": "software",
+      "tax": "CBS",
+      "base": "1000.00",
+      "standard_percent": "0.90",
+      "factor": "1",
+      "expected": "9.00",
+      "actual": "9.00"
+    }
+  ],
+  "suites_separately_reported_not_summed": [
+    {
+      "file": "storage/app/agent-a-A144-baseline.junit.xml",
+      "tests": 125,
+      "assertions": 429,
+      "sha256": "39cb805883f240f31a201905d7044d7ac7764125d248d07c0d9c3e52f6259124"
+    },
+    {
+      "file": "storage/app/agent-a-A145-final.junit.xml",
+      "tests": 24,
+      "assertions": 96,
+      "sha256": "549249c9c0039d27781975392c8739558e548c220aab37813533b933eea42020"
+    }
+  ],
+  "official_sources": [
+    {
+      "id": "LC214",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+      "http_status": 200,
+      "observed_at": "2026-11-03T11:18:56.3963464+00:00",
+      "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+      "bytes": 3095827,
+      "path": "D:\\ProjetoSaasExports\\agent-a-A145-combined-supplies-20261103-v1\\LC214.html"
+    },
+    {
+      "id": "CBS",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+      "http_status": 200,
+      "observed_at": "2026-11-03T11:18:56.9921044+00:00",
+      "sha256": "8396d56d14fb30a386c7548047701a6c310cb3a60da1a0b6893b6df5b8d90235",
+      "bytes": 3144950,
+      "path": "D:\\ProjetoSaasExports\\agent-a-A145-combined-supplies-20261103-v1\\CBS.html"
+    }
+  ],
+  "formal_groups_closed": 0,
+  "full_regression_executed": false,
+  "combined_document_projection": "PENDING_AGENT_B_INTEGRATION",
+  "production_ready": false
+}

@@ -1,0 +1,80 @@
+{
+  "task": "A149",
+  "scope": "4B.2 material locality of eight special service families",
+  "family_rule_results": [
+    {
+      "category": "IMMOVABLE_RELATED",
+      "article": "LC214 art.11 II",
+      "role": "PROPERTY_LOCATION",
+      "replay": true
+    },
+    {
+      "category": "PERSONAL_PRESENTIAL",
+      "article": "LC214 art.11 III",
+      "role": "PERSONAL_PERFORMANCE",
+      "replay": true
+    },
+    {
+      "category": "EVENT_ORGANIZATION",
+      "article": "LC214 art.11 IV",
+      "role": "EVENT_LOCATION",
+      "replay": true
+    },
+    {
+      "category": "MOVABLE_PHYSICAL_SERVICE",
+      "article": "LC214 art.11 V",
+      "role": "PHYSICAL_PERFORMANCE",
+      "replay": true
+    },
+    {
+      "category": "PORT_SERVICE",
+      "article": "LC214 art.11 V",
+      "role": "PORT_LOCATION",
+      "replay": true
+    },
+    {
+      "category": "PASSENGER_TRANSPORT",
+      "article": "LC214 art.11 VI",
+      "role": "TRANSPORT_START",
+      "replay": true
+    },
+    {
+      "category": "CARGO_TRANSPORT",
+      "article": "LC214 art.11 VII",
+      "role": "DOCUMENTED_DELIVERY",
+      "replay": true
+    },
+    {
+      "category": "FIXED_COMMUNICATION",
+      "article": "LC214 art.11 IX",
+      "role": "TERMINAL_INSTALLATION",
+      "replay": true
+    }
+  ],
+  "tests": 30,
+  "assertions": 144,
+  "junit_sha256": "b14080416cc28a71af7f8c2219ed1f7bf3cc6eefcf044b8198708d527a3cf7ca",
+  "identical_cli_runs": true,
+  "python_canonical_record_and_report_hashes_verified": true,
+  "primary_source": {
+    "id": "LC214",
+    "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+    "http_status": 200,
+    "observed_at": "2026-11-03T11:18:56.3963464+00:00",
+    "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+    "bytes": 3095827,
+    "path": "D:\\ProjetoSaasExports\\agent-a-A145-combined-supplies-20261103-v1\\LC214.html"
+  },
+  "quality_exit_codes": {
+    "phpstan": 0,
+    "pint": 0
+  },
+  "implementation_sha256": "a0aa799215a670680e187e587bd57cf578dd690c100743aeb156ae3b400d6965",
+  "command_sha256": "503eda37383266ab0f35421eac5f54f25d83249e29d8b7377797b80e13bffee8",
+  "cli_sha256": "50de18d808202240e41a124b42483b3c8163e751cc6a7aa4b9af8f8db27229a9",
+  "classification_catalog_integration": "PENDING_AGENT_B",
+  "whole_requirement_accepted": false,
+  "source_record_authenticity_proven": false,
+  "full_regression_executed": false,
+  "production_ready": false
+}

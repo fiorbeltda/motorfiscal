@@ -1,0 +1,59 @@
+{
+  "task": "A148",
+  "scope": "4B.3 party and collection reference integrity; no settlement or legal-rule change",
+  "code_before_sha256": "b61a942a099453314ca660a36238062d2b140cf134a093106588dffbd8cc190e",
+  "code_after_sha256": "396b0353224cc2feb2d2d61549602c3765f7dc92079b086783f97a1244407c77",
+  "native_fields_corrected_in_both_runners": [
+    "rtc.payment_instrument_evidence_id",
+    "rtc.payment_transaction_id",
+    "rtc.supplier_id",
+    "rtc.acquirer_id"
+  ],
+  "before_characterization": {
+    "file": "agent-a-A148-before.junit.xml",
+    "tests": 25,
+    "failures": 23,
+    "errors": 0,
+    "assertions": 34,
+    "sha256": "2f3ca42e98e315fec32ae09cb2e5f55e50b41d1f1d449362b3803bf02fbd89e5"
+  },
+  "directed_suite": {
+    "file": "agent-a-A148-final.junit.xml",
+    "tests": 33,
+    "failures": 0,
+    "errors": 0,
+    "assertions": 125,
+    "sha256": "cfa2077aabbf2ed53ebabe20076887b4c48ad260d3afc71b0c66dcbb18c2a02e"
+  },
+  "regression_includes_directed_do_not_add": {
+    "file": "agent-a-A148-regression.junit.xml",
+    "tests": 254,
+    "failures": 0,
+    "errors": 0,
+    "assertions": 860,
+    "sha256": "024c78a2bcc0b6470542948393b01da7f950f78235742f53b0a72df3f22113ac"
+  },
+  "previous_valid_cli_bytes_unchanged": true,
+  "previous_valid_snapshot_replay": true,
+  "negative_cli_status": "ACTION_REQUIRED",
+  "negative_cli_exit": 0,
+  "negative_cli_exit_note": "Existing fiscal:rtc:run uses status, not exit0, to distinguish ACTION_REQUIRED from VALID.",
+  "quality_exit_codes": {
+    "phpstan": 0,
+    "pint": 0
+  },
+  "artifact_sha256": {
+    "probe-before.json": "f157c9c39346cad4d819a951ca3667a7dbe2db45d5c049df2b2a402a75e7f335",
+    "probe-after.json": "8cae344de9bda9154435905784aecc430d7a6fb902a01b1ea476f198e057d81e",
+    "cli-valid-before.json": "58e5251ec451dd0e5dad396bd9bb8cb3ad86ee172cfb8e82dccbb7548bf06e4e",
+    "cli-valid-after.json": "58e5251ec451dd0e5dad396bd9bb8cb3ad86ee172cfb8e82dccbb7548bf06e4e",
+    "cli-invalid-reference.json": "950de3bfbb9d347f323dee4cc551a55ee5cabfd3611ebab855bd752c2d3eaca0",
+    "cli-baseline-replay.json": "c1ddb4d401d41c3b654ce5f334877bc06dbe7389e66b034f59ad844d57eb5d11",
+    "phpstan-final.log": "8b345516493ebd625b84758ae0cec94f1ecee65572b4c93fe37cfab96d35b3ea",
+    "pint-final.log": "0a30c86d0b8a9116383d2eed258b90a30e87db850ebcb8a731c4c0833b6a3669"
+  },
+  "global_contracts_edited": false,
+  "whole_requirement_accepted": false,
+  "full_regression_executed": false,
+  "production_ready": false
+}

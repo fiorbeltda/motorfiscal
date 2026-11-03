@@ -1,0 +1,220 @@
+{
+  "task": "A153",
+  "scope": "Personal consumer domicile, selected unregistered criteria and proven declared-address fallback",
+  "independent_oracles": [
+    {
+      "case": "home",
+      "method": "REGISTERED_NATURAL_PERSON",
+      "domicile_basis": "PERMANENT_HOME",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "no-home",
+      "method": "REGISTERED_NATURAL_PERSON",
+      "domicile_basis": "MAIN_ECONOMIC_RELATIONS",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "RJ",
+        "municipality_ibge": "3304557"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "multiple-homes",
+      "method": "REGISTERED_NATURAL_PERSON",
+      "domicile_basis": "MAIN_ECONOMIC_RELATIONS",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "RJ",
+        "municipality_ibge": "3304557"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "combined",
+      "method": "UNREGISTERED_COMBINED_CRITERIA",
+      "domicile_basis": "SELECTED_NONCONFLICTING_CRITERIA",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "geo-combined",
+      "method": "UNREGISTERED_COMBINED_CRITERIA",
+      "domicile_basis": "SELECTED_NONCONFLICTING_CRITERIA",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "fallback",
+      "method": "UNREGISTERED_DECLARED_FALLBACK",
+      "domicile_basis": "DECLARED_ADDRESS_PROVEN_IMPOSSIBILITY",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "conflicting-fallback",
+      "method": "UNREGISTERED_DECLARED_FALLBACK",
+      "domicile_basis": "DECLARED_ADDRESS_PROVEN_IMPOSSIBILITY",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "foreign-recipient",
+      "method": "REGISTERED_NATURAL_PERSON",
+      "domicile_basis": "PERMANENT_HOME",
+      "party": "RECIPIENT151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "nononerous",
+      "method": "REGISTERED_NATURAL_PERSON",
+      "domicile_basis": "PERMANENT_HOME",
+      "party": "RECIPIENT151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    },
+    {
+      "case": "unregistered-business",
+      "method": "UNREGISTERED_COMBINED_CRITERIA",
+      "domicile_basis": "SELECTED_NONCONFLICTING_CRITERIA",
+      "party": "ACQUIRER151",
+      "locality": {
+        "uf": "SP",
+        "municipality_ibge": "3550308"
+      },
+      "independent_address_dates_choice_or_impossibility_and_hashes_checked": true
+    }
+  ],
+  "directed_includes_A149_A152_do_not_add": {
+    "file": "agent-a-A153-directed-v2.junit.xml",
+    "tests": 254,
+    "assertions": 947,
+    "sha256": "5488c5cf29ae79c06c84c3658df1660cf91ab896a16d5141281171764cdcd8ee"
+  },
+  "regression_includes_directed_do_not_add": {
+    "file": "agent-a-A153-regression-v1.junit.xml",
+    "tests": 508,
+    "assertions": 1807,
+    "sha256": "b60322fbe842c00af306342dda98e224babe00e0241cc42f43162507b0f22ae8"
+  },
+  "native_clis_identical_and_replayed": true,
+  "legacy_A149_A152_six_cli_bytes_unchanged": true,
+  "expected_missing_impossibility_exit": 1,
+  "phpstan_global_exit": 0,
+  "pint_seven_php_files_exit": 0,
+  "sources": [
+    {
+      "name": "LC214",
+      "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+      "status": 200,
+      "observed_at": "2026-11-03T16:47:36.062375+00:00",
+      "bytes": 3095827,
+      "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+      "matches_A145_A152": true
+    },
+    {
+      "name": "CBS",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html",
+      "status": 200,
+      "observed_at": "2026-11-03T16:47:36.417371+00:00",
+      "bytes": 3144950,
+      "sha256": "8396d56d14fb30a386c7548047701a6c310cb3a60da1a0b6893b6df5b8d90235",
+      "matches_A145_A152": true
+    }
+  ],
+  "files": [
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php",
+      "sha256": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957"
+    },
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php",
+      "sha256": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183"
+    },
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php",
+      "sha256": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+    },
+    {
+      "path": "app/Console/Commands/QualifyEntityDomicile151Command.php",
+      "sha256": "1a1903b04948398f7dbbe2bae6bc921109a935b6b8f5bd7e889f848bed4548f8"
+    },
+    {
+      "path": "app/Console/Commands/QualifyServiceLocality149Command.php",
+      "sha256": "cd0e72913c35a3b6dc6762fd0afb72de99394d65d727ffec961bc03e3fb92f54"
+    },
+    {
+      "path": "scripts/agent_a/party153_fixture.php",
+      "sha256": "92bf7d222a7287832fd973f532575eab01ced740c028aa616a3aa2b90a3e3707"
+    },
+    {
+      "path": "tests/Fiscal/Integration/PartyDomicile153Test.php",
+      "sha256": "ba5936b60c82d0c410146613a4a26902b8c52dd9a3aea9433ebb3ad84f70622c"
+    },
+    {
+      "path": "scripts/agent_a/verify153.py",
+      "sha256": "15ef94a07c7017bad4454429c87e903a9bee2cd54f8748f73b1c036e5e185ae3"
+    }
+  ],
+  "official_registry_queried": false,
+  "source_record_authenticity_proven": false,
+  "B_received": false,
+  "classification_catalog_integration": "PENDING_AGENT_B",
+  "whole_requirement_accepted": false,
+  "full_regression_executed": false,
+  "production_ready": false,
+  "matrix_console_proposal": {
+    "writer": "B",
+    "applied": false,
+    "formal_A_groups_closed": 0,
+    "requirement_ids": [
+      "4B.2.4",
+      "4B.2.5",
+      "4B.2.6",
+      "4B.2.7",
+      "4B.2.10",
+      "4B.3.2"
+    ],
+    "classification": "PARCIAL_COM_ACEITE_ESCOPADO_A153",
+    "phase_4B_closed": false,
+    "completed": [
+      "PF consumidora: residência/relevância econômica confrontadas com cadastro",
+      "Não cadastrados: escolha de critérios vinculados e não conflitantes",
+      "Endereço declarado apenas com impossibilidade comprovada"
+    ],
+    "pending": [
+      "PF em contexto de atividade econômica/estabelecimento",
+      "Integração de classificação/projeção e dados reais de B",
+      "Cobertura integral dos 44 e regressão final integrada"
+    ],
+    "next_step": "Qualificar o estabelecimento da pessoa física em atividade econômica e revisar as lacunas independentes restantes de A"
+  }
+}

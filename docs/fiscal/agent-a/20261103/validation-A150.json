@@ -1,0 +1,58 @@
+{
+  "task": "A150",
+  "scope": "4B.2 locality/4B.4 precision; property largest municipal area and road exact territory weights",
+  "fraction_oracles": [
+    {
+      "case": "property",
+      "winner": "3550308",
+      "winning_area_exact": "121/2",
+      "whole_supply_share": "1",
+      "area_aggregated_before_selection": true
+    },
+    {
+      "case": "road",
+      "municipal_weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "state_weights": {
+        "RJ": "1/3",
+        "SP": "2/3"
+      },
+      "sums_separately_equal_one": true,
+      "no_rounded_percent": true
+    },
+    {
+      "case": "property_high_precision",
+      "winner": "3550308",
+      "winning_area_exact": "200000000000000000001/100000000000000000000",
+      "whole_supply_share": "1",
+      "area_aggregated_before_selection": true
+    }
+  ],
+  "directed_includes_A149_do_not_add": {
+    "file": "agent-a-A150-directed-v2.junit.xml",
+    "tests": 55,
+    "assertions": 246,
+    "sha256": "9532d706e7635034cfc9e0aa1b58e970c449ca5ae61cb60c6aab9e1ae6b201a3"
+  },
+  "regression_includes_directed_do_not_add": {
+    "file": "agent-a-A150-regression-v3.junit.xml",
+    "tests": 309,
+    "assertions": 1106,
+    "sha256": "ba4074679d6566a210ae31d9f775d9f07ceac6d493cdfaf9abe26e26b589915c"
+  },
+  "legacy_A149_cli_bytes_unchanged": true,
+  "native_road_cli_identical": true,
+  "native_whole_report_replay": true,
+  "phpstan_global_exit": 0,
+  "pint_four_php_files_exit": 0,
+  "code_before_sha256": "a0aa799215a670680e187e587bd57cf578dd690c100743aeb156ae3b400d6965",
+  "code_after_sha256": "a9871fb9c338d3891de155b51f70d2e7aabf64e5899a37bb18b45b163319c460",
+  "source_record_authenticity_proven": false,
+  "classification_catalog_integration": "PENDING_AGENT_B",
+  "whole_requirement_accepted": false,
+  "full_regression_executed": false,
+  "production_ready": false
+}

@@ -1,0 +1,140 @@
+{
+  "task": "A151",
+  "scope": "4B.2.4/2.5/2.7/2.10 and 4B.3.2; registered entity actual supplied establishment",
+  "party_establishment_oracles": [
+    {
+      "case": "domestic",
+      "party": "ACQUIRER151",
+      "basis": "ACQUIRER_DOMICILE",
+      "supplied_establishment": "BRANCH151",
+      "destination": "RJ/3304557",
+      "SP_headquarters_not_substituted": true,
+      "record_dates_and_independent_canonical_hashes": true
+    },
+    {
+      "case": "foreign-acquirer",
+      "party": "RECIPIENT151",
+      "basis": "RECIPIENT_DOMICILE",
+      "supplied_establishment": "BRANCH151",
+      "destination": "RJ/3304557",
+      "SP_headquarters_not_substituted": true,
+      "record_dates_and_independent_canonical_hashes": true
+    },
+    {
+      "case": "nononerous",
+      "party": "RECIPIENT151",
+      "basis": "RECIPIENT_DOMICILE",
+      "supplied_establishment": "BRANCH151",
+      "destination": "RJ/3304557",
+      "SP_headquarters_not_substituted": true,
+      "record_dates_and_independent_canonical_hashes": true
+    },
+    {
+      "case": "unincorporated",
+      "party": "ACQUIRER151",
+      "basis": "ACQUIRER_DOMICILE",
+      "supplied_establishment": "BRANCH151",
+      "destination": "RJ/3304557",
+      "SP_headquarters_not_substituted": true,
+      "record_dates_and_independent_canonical_hashes": true
+    },
+    {
+      "case": "remote-personal",
+      "party": "ACQUIRER151",
+      "basis": "ACQUIRER_DOMICILE",
+      "supplied_establishment": "BRANCH151",
+      "destination": "RJ/3304557",
+      "SP_headquarters_not_substituted": true,
+      "record_dates_and_independent_canonical_hashes": true
+    }
+  ],
+  "directed": {
+    "file": "agent-a-A151-directed-v3.junit.xml",
+    "tests": 120,
+    "assertions": 483,
+    "sha256": "5a1bc5630022c4b2a133d9035415a19244b40300a3f849ba5cded64aa2b2f35b"
+  },
+  "regression_includes_directed_do_not_add": {
+    "file": "agent-a-A151-regression-v2.junit.xml",
+    "tests": 374,
+    "assertions": 1343,
+    "sha256": "d1b4d873ec1a9bae3af47fdc27af675ebbdc3cac90885cfdd8a7e1a5e5ea6ae6"
+  },
+  "native_cli_identical": true,
+  "native_whole_report_replay": true,
+  "expected_refusal_exit": 1,
+  "source": {
+    "bytes": 3095827,
+    "matches_A145": true,
+    "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+    "status": 200,
+    "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+    "observed_at": "2026-11-03T12:22:14.9193747+00:00"
+  },
+  "phpstan_global_exit": 0,
+  "pint_six_php_files_exit": 0,
+  "service_linkage_cli_identical_and_replayed": true,
+  "legacy_A149_A150_cli_bytes_unchanged": true,
+  "files": [
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php",
+      "sha256": "9b6dbefd06eef1ee1ed9e139fbf6e77f07fcf83d6e0211459d0250b61285dc5e"
+    },
+    {
+      "path": "app/Console/Commands/QualifyEntityDomicile151Command.php",
+      "sha256": "09e416320c2db04b0b392f4c83d5fa201d633f7b871d07082005197a88ca9758"
+    },
+    {
+      "path": "scripts/agent_a/domicile151_fixture.php",
+      "sha256": "b5d356f678a5195b477e308ec61f186de1ab2313ffb91233a4ea7e15de018895"
+    },
+    {
+      "path": "tests/Fiscal/Integration/EntityDomicile151Test.php",
+      "sha256": "e5203f98fb807a4b568ddc5590db6fbf6efc998e4d77ae23ed124e795b80e273"
+    },
+    {
+      "path": "scripts/agent_a/verify151.py",
+      "sha256": "5073395f17bac67160dfd1473bd85246ce296b51c0b1767acb2f0fbac75c6492"
+    },
+    {
+      "path": "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php",
+      "sha256": "552dcdb4b13a4e77b90a492ba0b75c3e1d5ebd5d437100a4e2fc7bf4731d7ec2"
+    },
+    {
+      "path": "app/Console/Commands/QualifyServiceLocality149Command.php",
+      "sha256": "12e9a76dccb0359f2b4b1acb5394fd4a947322cc80d009d8cf564899cbdff16a"
+    }
+  ],
+  "source_record_authenticity_proven": false,
+  "official_registry_queried": false,
+  "classification_catalog_integration": "PENDING_AGENT_B",
+  "whole_requirement_accepted": false,
+  "full_regression_executed": false,
+  "production_ready": false,
+  "matrix_console_proposal": {
+    "writer": "B",
+    "applied": false,
+    "B_received": false,
+    "requirement_ids": [
+      "4B.2.4",
+      "4B.2.5",
+      "4B.2.7",
+      "4B.2.10",
+      "4B.3.2"
+    ],
+    "classification": "PARCIAL_COM_ACEITE_ESCOPADO_A151",
+    "completed": [
+      "Parte aplicável por onerosidade/residência",
+      "Estabelecimento atendido vinculado ao cadastro",
+      "Serviço pessoal remoto integrado opcionalmente no qualificador A149"
+    ],
+    "pending": [
+      "Pessoas físicas e não cadastrados",
+      "Centralização e vários estabelecimentos atendidos",
+      "Classificação/projeção de B e regressão integral integrada"
+    ],
+    "next_step": "Qualificar a exceção material de contratação centralizada sem determinar direitos de crédito",
+    "formal_A_groups_closed": 0,
+    "phase_4B_closed": false
+  }
+}

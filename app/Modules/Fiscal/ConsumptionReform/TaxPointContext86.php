@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Modules\Fiscal\ConsumptionReform;
 
 use DateTimeImmutable;
+use Throwable;
 
 /** Source-bound selection of a relevant date. Prior-debit proof and document settlement are separate gates. */
 final readonly class TaxPointContext86
@@ -52,8 +53,8 @@ final readonly class TaxPointContext86
         }
         foreach (['revoked_at', 'superseded_at'] as $key) {
             if (isset($policy[$key])) {
-                $instant = is_string($policy[$key]) ? DateTimeImmutable::createFromFormat('!Y-m-d\TH:i:sP', $policy[$key]) : false;
-                if ($instant === false || $instant->format('Y-m-d\TH:i:sP') !== $policy[$key]) {
+                $instant = $this->lifecycleInstant($policy[$key]);
+                if ($instant === null) {
                     return $this->stop('RTC_TAX_POINT_POLICY_LIFECYCLE_INVALID');
                 }
                 if ($knownAt >= $instant) {
@@ -63,6 +64,23 @@ final readonly class TaxPointContext86
         }
 
         return ['status' => 'RESOLVED', 'source_hashes' => $hashes];
+    }
+
+    private function lifecycleInstant(mixed $value): ?DateTimeImmutable
+    {
+        // PHP instants preserve microseconds. Reject extra precision rather than silently truncating it.
+        if (! is_string($value)
+            || preg_match('/\A[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\.[0-9]{1,6})?(?:Z|[+-](?:[01][0-9]|2[0-3]):[0-5][0-9])\z/', $value) !== 1
+            || str_ends_with($value, '-00:00')) {
+            return null;
+        }
+        try {
+            $instant = new DateTimeImmutable($value);
+
+            return DateTimeImmutable::getLastErrors() === false ? $instant : null;
+        } catch (Throwable) {
+            return null;
+        }
     }
 
     /**

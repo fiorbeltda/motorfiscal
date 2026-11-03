@@ -1,0 +1,104 @@
+{
+  "task": "A147",
+  "scope": "4B.1.6/4B.1.7/4B.1.8; precision and validation of existing lifecycle instants",
+  "code_before_sha256": "489444d2c3a2d46b637e371200941b72085d53c42b4991ef510273a11add9d8a",
+  "code_after_sha256": "a106b2360be23169deb6fff076b4b3576e5e8a27bffe58d566de862cc2825e0d",
+  "changed_native_observations": 6,
+  "datetime_oracles": [
+    {
+      "field": "revoked_at",
+      "cutoff": "2026-10-15T23:00:00.000001+00:00",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "RESOLVED",
+      "observed": "RESOLVED"
+    },
+    {
+      "field": "revoked_at",
+      "cutoff": "2026-10-15T23:00:00+00:00",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "ACTION_REQUIRED",
+      "observed": "ACTION_REQUIRED"
+    },
+    {
+      "field": "revoked_at",
+      "cutoff": "2026-10-15T20:00:00.000001-03:00",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "RESOLVED",
+      "observed": "RESOLVED"
+    },
+    {
+      "field": "revoked_at",
+      "cutoff": "2026-10-15T23:00:00.000001Z",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "RESOLVED",
+      "observed": "RESOLVED"
+    },
+    {
+      "field": "superseded_at",
+      "cutoff": "2026-10-15T23:00:00.000001+00:00",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "RESOLVED",
+      "observed": "RESOLVED"
+    },
+    {
+      "field": "superseded_at",
+      "cutoff": "2026-10-15T23:00:00+00:00",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "ACTION_REQUIRED",
+      "observed": "ACTION_REQUIRED"
+    },
+    {
+      "field": "superseded_at",
+      "cutoff": "2026-10-15T20:00:00.000001-03:00",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "RESOLVED",
+      "observed": "RESOLVED"
+    },
+    {
+      "field": "superseded_at",
+      "cutoff": "2026-10-15T23:00:00.000001Z",
+      "known": "2026-10-15T23:00:00+00:00",
+      "independent_datetime_expected": "RESOLVED",
+      "observed": "RESOLVED"
+    }
+  ],
+  "before_characterization": {
+    "file": "agent-a-A147-before.junit.xml",
+    "tests": 33,
+    "failures": 17,
+    "errors": 1,
+    "assertions": 79,
+    "sha256": "05ecaa103aa36c253d0e1d9a6a6bfee39bf87f872aaa41640fd4bcde17f9d812"
+  },
+  "directed_suite": {
+    "file": "agent-a-A147-final.junit.xml",
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "assertions": 125,
+    "sha256": "53232a3ae97825c35b14cffffcc32d27dcc9e2b4757c9b3c9c1466e2b11d21f7"
+  },
+  "regression_includes_directed_do_not_add": {
+    "file": "agent-a-A147-regression.junit.xml",
+    "tests": 221,
+    "failures": 0,
+    "errors": 0,
+    "assertions": 735,
+    "sha256": "19850a67ea627575d519c84d5c255a131c6dc5e80bfe5601f872b50cbaa01a8b"
+  },
+  "quality_exit_codes": {
+    "pint": 0,
+    "phpstan": 0
+  },
+  "unchanged_native_cli_sha256": "8f4e056a1a7da94b74e1023805b7a3ada1ae8fb81e45d96021d4a2c113846d26",
+  "baseline_snapshot_replay": true,
+  "checkpoint143_runtime_differences": [
+    "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php"
+  ],
+  "synthetic_lifecycle_not_official_revocation": true,
+  "whole_requirement_accepted": false,
+  "full_regression_executed": false,
+  "global_console_edited": false,
+  "B_received": false,
+  "production_ready": false
+}

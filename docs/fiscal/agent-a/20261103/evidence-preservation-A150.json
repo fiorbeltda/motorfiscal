@@ -1,0 +1,24 @@
+{
+  "task": "A150",
+  "scope": "A-owned evidence writers only",
+  "status": "IMMUTABLE_RECEIPT_CONTROLS_VERIFIED",
+  "verified_controls": [
+    "exclusive creation",
+    "identical JSON recheck without rewrite",
+    "existing CRLF bytes preserved",
+    "changed value refused",
+    "changed numeric type refused"
+  ],
+  "A150_receipt_sha256_preserved": "828be72879e081d26dd3ec42bd1dae4c4813cd80a4c3c3561a17055428f1ad5a",
+  "fiscal_acceptance_changed": false,
+  "not_added_to_php_test_counts": true,
+  "script_sha256": {
+    "scripts/agent_a/evidence_io.py": "cd84a341a7ec8e2415ffdc8954dde83618a0db5355ed6126beb38d4325cf13ba",
+    "scripts/agent_a/verify145.py": "2e031be23ece9e9299d86b78976b1e81a47c2890b0f0ad910a8f42bb7ac7fe0e",
+    "scripts/agent_a/verify146.py": "9b70a1bd8a43aa0f74af360f4a2764914e1638b15764b4430fa2a20965132070",
+    "scripts/agent_a/verify147.py": "7eb9f25a5e19789c0ca979176364b53b4a020b9e9681e6c5e065dd7181bd6ab8",
+    "scripts/agent_a/verify148.py": "1016383ae81f1521a723b452f1ff34814e729c727a3cd70c49b4cca954048e42",
+    "scripts/agent_a/verify149.py": "60605cf5e2b4ed6e84ddbc37b819769d3db1689df1945b1f41d197d302383ae2",
+    "scripts/agent_a/verify150.py": "f90d4de0013a43ce699b7ef53d20cea0e624a1bba2e9fc74bcf7704e1e9720e9"
+  }
+}

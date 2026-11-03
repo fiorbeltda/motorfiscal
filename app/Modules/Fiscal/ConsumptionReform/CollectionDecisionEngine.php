@@ -13,6 +13,12 @@ final readonly class CollectionDecisionEngine
     {
         $method = (string) $facts->value('rtc.collection_method');
         if ($method === 'SUPPLIER') {
+            $missing = $this->unprovenIdentifiers($facts, ['rtc.supplier_id']);
+            if ($missing !== []) {
+                return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_COLLECTION_PARTY_IDENTIFIER_UNPROVEN',
+                    'missing_facts' => $missing];
+            }
+
             return ['status' => 'RESOLVED', 'method' => $method, 'collector' => $facts->value('rtc.supplier_id'),
                 'extinction_status' => 'NOT_ASSESSED', 'source_article' => 'LC214 art. 27, II'];
         }
@@ -20,12 +26,20 @@ final readonly class CollectionDecisionEngine
             return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_COLLECTION_STRATEGY_NOT_MATERIALIZED:'.$method,
                 'missing_facts' => []];
         }
+        $missing = $this->unprovenIdentifiers($facts, $method === 'ACQUIRER'
+            ? ['rtc.supplier_id', 'rtc.acquirer_id'] : ['rtc.supplier_id']);
+        if ($missing !== []) {
+            return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_COLLECTION_PARTY_IDENTIFIER_UNPROVEN',
+                'missing_facts' => $missing];
+        }
         if ($facts->value('rtc.collection_legal_basis') === null) {
             return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_COLLECTION_BASIS_MISSING',
                 'missing_facts' => ['rtc.collection_legal_basis']];
         }
         $missing = $facts->missing(['rtc.payment_instrument_split_capable', 'rtc.payment_instrument_evidence_id',
             'rtc.payment_transaction_id']);
+        $missing = array_values(array_unique([...$missing, ...$this->unprovenIdentifiers($facts,
+            ['rtc.payment_instrument_evidence_id', 'rtc.payment_transaction_id'])]));
         if ($missing !== []) {
             return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_PAYMENT_INSTRUMENT_UNPROVEN', 'missing_facts' => $missing];
         }
@@ -53,7 +67,7 @@ final readonly class CollectionDecisionEngine
             return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_SPLIT_OFFICIAL_DEPLOYMENT_NOT_PROVEN',
                 'missing_facts' => []];
         }
-        if ($facts->value('rtc.split_deployment_evidence_id') === null) {
+        if ($this->unprovenIdentifiers($facts, ['rtc.split_deployment_evidence_id']) !== []) {
             return ['status' => 'ACTION_REQUIRED', 'reason' => 'RTC_SPLIT_DEPLOYMENT_UNPROVEN',
                 'missing_facts' => ['rtc.split_deployment_evidence_id']];
         }
@@ -63,5 +77,23 @@ final readonly class CollectionDecisionEngine
             'payment_transaction_id' => $facts->value('rtc.payment_transaction_id'),
             'instrument_evidence_id' => $facts->value('rtc.payment_instrument_evidence_id'),
             'deployment_evidence_id' => $facts->value('rtc.split_deployment_evidence_id')];
+    }
+
+    /** @param list<string> $keys
+     * @return list<string>
+     */
+    private function unprovenIdentifiers(FactBag $facts, array $keys): array
+    {
+        $missing = [];
+        foreach ($keys as $key) {
+            $value = $facts->value($key);
+            if (! is_string($value) || $value === '' || trim($value) !== $value
+                || preg_match('//u', $value) !== 1
+                || preg_match('/[\x00-\x1f\x7f]|\A\p{Z}|\p{Z}\z/u', $value) === 1) {
+                $missing[] = $key;
+            }
+        }
+
+        return $missing;
     }
 }
