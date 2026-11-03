@@ -1,0 +1,20 @@
+{
+  "task": "B12",
+  "agent": "B",
+  "recorded_at": "2026-11-03T18:50:00-03:00",
+  "status": "B12_FIVE_CANDIDATES_VERIFIED_INTEGRAL_IN_B_SCOPE",
+  "requirements": ["4B.6.7", "4B.6.8", "4B.7.3", "4B.8.2", "4B.8.4"],
+  "formal_completion_approved": false,
+  "group_closure_approved": false,
+  "files_created": {"tests/Fiscal/Unit/CandidateAcceptanceB12Test.php": "d39bcced960c0e9363c5d7c8ab1f999707e77c850d79082a0150c2c911d50d0f", "docs/fiscal/phase4b-b12-candidate-verification.md": "see diff"},
+  "evidence": {
+    "4B.6.8": "Todas as correlacoes de todas as versoes rtc-codes-* e da edicao B01 sao OFFICIAL_CORRELATION com decision_authority=false.",
+    "4B.6.7": "Todas as regras sao ENGINE_DECISION_RULE sem decision_authority; correlacoes sem campos de regra; varredura estatica de app/: apenas a referencia B01 (sem autoridade) le 'correlations'.",
+    "4B.7.3": "identity104-municipal_manual-observed20261016.pdf SHA-256 3b5e982be9298ecc72ee254e26eb6824dc13d2e05704a83f01aa7a8fd321916e igual ao original K: registrado (phase4b-requirements123-document-review.md).",
+    "4B.8.2": "Bundle CONSUMPTION-PHASE4B-2026.10.27-141-draft1 carregado nativamente; cenario de saude presencial decidido (cClassTrib 200029).",
+    "4B.8.4": "13 recursos do bundle vinculados por hash canonico; catalogos rtc_* com versao no nome e no conteudo; adulteracao muda o hash."
+  },
+  "tests": {"command": "E:\\tools\\php85.cmd -d memory_limit=512M vendor\\bin\\pest tests/Fiscal/Unit/CandidateAcceptanceB12Test.php", "tests": 6, "assertions": 160891, "result": "PASS", "pint": "passed", "is_full_regression": false},
+  "acceptance_effect": "Os 5 itens passam a IMPLEMENTADO_E_VALIDADO_INTEGRALMENTE no escopo B, sujeitos a revisao na integracao A+B; grupos continuam abertos.",
+  "limits": ["Grupos 4B.6/4B.7/4B.8 nao encerrados", "Fase 4B nao concluida", "Sem commit/push"]
+}

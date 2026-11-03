@@ -1,5 +1,37 @@
 # Fase 4B — IBS/CBS e reforma do consumo
 
+B22 em03/11/2026 (Agente B):catálogo de créditos presumidos completo (arts.168–171,309/311/312,380,381,444,447,449,450,462,465,467). Desenvolvimento independente do B esgotado;pendentes:entregas do A (H1–H5),34 pastas,XSD NT009,parâmetros oficiais e autorização de integraçãoA+B.0/8 grupos encerrados.
+
+Rodada B17–B21 em03/11/2026 (Agente B):créditos presumidos com trechos vigentes (arts.168–171,444,447,449,465),ciclo completo de crédito com conservação de valor,oráculo independente de cClassTrib v1.70/NBS v1.01 e teste de aceite da correção do parâmetro sintético (pendente do A). 36 itens B:5 integrais e6 Sandbox aceitos;25 parciais com dependência explícita. Regressão parcial sem falhas de código.0/8 grupos encerrados.
+
+B16 em03/11/2026 (Agente B):matriz de períodos 2026–2033 (oficial disponível,recusa explícita,sintético identificado);75/230. O seletor de alíquotas (arquivo do A) não distingue linha sintética de oficial:sugestão de correção encaminhada.0/8 grupos encerrados.
+
+B15 em03/11/2026 (Agente B):política de anulação/preservação de crédito (arts.49–52) revalidada no texto vigente:só exportações e art.9º IV/VI preservam crédito em imunidade;isenção e demais imunidades anulam proporcionalmente.0/8 grupos encerrados.
+
+B14 em03/11/2026 (Agente B):plano local de utilização de créditos — ordem do art.53,segregação IBS/CBS,prazo de5 anos,valor nominal e intransferibilidade salvo sucessão;15/35. Não extingue débitos;não integrado.0/8 grupos encerrados.
+
+B13 em03/11/2026 (Agente B):vedações legais de crédito do adquirente por regime da LC214,com trechos literais vigentes e exceções (plano de saúde coletivo de empregados,SAF,serviços financeiros dos arts.194–198);31/136. Não concede crédito;não integrado.0/8 grupos encerrados.
+
+B12 em03/11/2026 (Agente B):5 itens B verificados e aceitos integralmente no escopo B (4B.6.7,4B.6.8,4B.7.3,4B.8.2,4B.8.4),sujeitos a revisão na integração;31 itens B parciais.0/8 grupos encerrados.
+
+B10/B11 em03/11/2026 (Agente B):modelo de aceite em dois eixos aplicado aos80 itens (nenhum aceito);ciclo local de estorno/glosa de crédito com causa legal,registro no período,saldo e trace (31/149). Acréscimos dependem da Selic oficial;integração ao fluxo depende do A.0/8 grupos encerrados.
+
+B07 validada em03/11/2026 (Agente B),em blocos após interrupção por memória:807 testes/68.046 asserções sem falhas;40 regras da Q-B06-1 caracterizadas e320 casos prontos aguardando a implementação do A. Gate desligado.0/8 grupos encerrados.
+
+B09 em03/11/2026 (Agente B):invariantes de crédito (crédito=entrada−ajustes,half-up,excesso recusado,monotonia,IBS/CBS independentes,vínculo do documento) provadas em480 combinações com oráculo bcmath;9/2.714. Sem alteração de código de produção.0/8 grupos encerrados.
+
+B07/B08 em03/11/2026 (Agente B):especificação da decisãoQ-B06-1 (alternativa B) e 360 testes preparados para o A;validação completa interrompida por falta de memória (337 aprovados,sem resultado terminal). Matriz de aceite individual dos36 itens B registrada,nenhum aprovado.0/8 grupos encerrados.
+
+B05/B06 em03/11/2026 (Agente B):decisões do usuário aplicadas (A é o escritor único do ConsumptionReformEngine;B02 só após testes). XSD da Produção Restrita revalidado;inventário de evidências para regressão integral;83 regrasENGINE com análise documental (37/6 resolvidas,40 dependentes deQ-B06-1). Nenhuma regra alterada.0/8 grupos encerrados.
+
+B04 em03/11/2026 (Agente B):relatório de revisão das99 regrasENGINE contra a correlação oficial (4/26/57/12),sem alterar regras;26 divergências concentradas em variantes de redução/imunidade/cooperativa/presença que a correlação não carrega. Ver `phase4b-b04-engine-rule-correlation.md`.0/8 grupos encerrados.
+
+B03 em03/11/2026 (Agente B):fontes oficiais de 4B.7 revalidadas byte a byte (Anexo VI1.04.01,NT009 1.01,Anexo VII1.03.00);ZIP XSD do portal indisponível para download automatizado (HTML/403);NT010 NFS-e Via preservada,sem impacto nos perfis DPS. Ver `phase4b-b03-official-source-revalidation.md`.0/8 grupos encerrados.
+
+B02 em03/11/2026 (Agente B):modo opcional `explainZero` no CreditDecisionEngine distingue negação final,crédito contingente,entrada zero,estorno integral e arredondamento;saída padrão inalterada (5.832 combinações iguais ao HEAD),714/64.514 com suites de crédito. Ativação integrada pendente. Ver `phase4b-b02-credit-zero-semantics.md`.0/8 grupos encerrados.
+
+Retomada em03/11/2026 com dois agentes (A:4B.1–4B.4;B:4B.5–4B.8 e consolidação),clones exclusivos em`87d22e7`,sem commit. Runtime nesta máquina:PHP8.5.12 nativo (Docker/WSL2 indisponíveis por VT-x desabilitado na BIOS). Linha de base dirigidaB:5.499 aprovados/62 falhas,todas de ambiente. B01:AnexoVIII1.02.00 preservado e materializado sem autoridade (251 correlações,18/87). Página oficialRTC em03/11 ainda sem XSD com camposNT009. Ver `phase4b-b01-anexoviii-correlation.md`.0/8 grupos encerrados;produção bloqueada.
+
 Checkpoint de parada solicitado em 2026-10-27T13:14:31.903760-03:00:task143 concluida e auditada (45/195,CLI e141 hashes).141/142 preservados;Fase4B permanece em andamento. Ver `phase4b-checkpoint-stop-20261027-import143.md`.0/8 grupos formalmente encerrados.
 
 142 integrado em27/10/2026:54 testes/123 assercoes,modeloNT009 parcial e recusa real doXSD auditados;5.952 entradas/138 hashes. Ver `phase4b-import142-nt009-field-model.md`. Desenvolvimento ativo;identidade/partes/DPS completo seguinte;80 requisitos/0 grupos encerrados.

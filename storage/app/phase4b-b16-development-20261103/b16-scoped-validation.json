@@ -1,0 +1,14 @@
+{
+  "task": "B16",
+  "agent": "B",
+  "recorded_at": "2026-11-03T21:10:00-03:00",
+  "status": "B16_PERIOD_SCENARIO_MATRIX_2026_2033_VALIDATED_SYNTHETIC_GAP_HANDED_TO_A",
+  "requirements": ["4B.8.12", "4B.8.5"],
+  "formal_completion_approved": false,
+  "official_source": {"file": "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm", "sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c", "articles": ["343", "344", "346", "347"]},
+  "files_created": {"tests/Fiscal/Unit/PeriodScenarioMatrixB16Test.php": "345262d48ac88ca009807f535fd0c3a08928a767ed5b8d414cae8c53d61a506a"},
+  "coverage": {"years": "2026-2033", "taxes": ["IBS_STATE", "IBS_MUNICIPAL", "CBS"], "dates_per_year": 3, "official_resolved": "2026 (0.10/0.00/0.90) e IBS 2027-2028 (0.05/0.05)", "explicit_refusal": "CBS 2027+ (art.347: aliquota de referencia do Senado) e IBS 2029+", "boundaries": "2026-12-31/2027-01-01", "lifecycle": ["publicacao", "revogacao", "conflito"]},
+  "finding_for_agent_a": "TemporalRateCatalog::resolve seleciona linha ACTIVE sintetica como oficial; sugerido campo source_kind/synthetic com recusa fora de contexto de teste.",
+  "tests": {"tests": 75, "assertions": 230, "result": "PASS", "pint": "passed", "is_full_regression": false},
+  "limits": ["Corpus de periodos so para aliquotas; familias de servico e documentos pendentes", "0/8 grupos encerrados", "Sem commit/push"]
+}

@@ -1,0 +1,28 @@
+{
+  "task": "B07",
+  "agent": "B",
+  "recorded_at": "2026-11-03T17:10:00-03:00",
+  "status": "B07_Q_B06_1_SPEC_GATE_AND_TESTS_VALIDATED_AWAITING_AGENT_A_IMPLEMENTATION",
+  "user_decision": "Q-B06-1 alternativa B aprovada com criterios adicionais (03/11/2026); A implementa a selecao de aliquota em ConsumptionReformEngine.php; B especifica, prepara testes e valida.",
+  "requirements": ["4B.6.6", "4B.6.9", "4B.8.3"],
+  "formal_completion_approved": false,
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/AnnexStandardQualificationPolicyB07.php": "e4a726cbb443871d00eac1ea93fc25d80f36fca7fe5a67b6122644f6b5e79dfa",
+    "tests/Fiscal/Unit/AnnexStandardQualificationPolicyB07Test.php": "a3a26e9c14d4eed984d83c21bcb3024c879e6523ccd0e4908d98abbacbad8f58",
+    "tests/Fiscal/Integration/AnnexStandardQualificationB07Test.php": "020e5d80e95fecd1dc94877b448f6d7b443b7e97e2cb52be2bd4fba8bcbeceeb",
+    "tests/Fiscal/Support/b07/AnnexStandardSpecB07.php": "fcfd60251db4e126e3c8ffaed62f40b3b70460086aae3bee5d5bb803ff39fbdf",
+    "docs/fiscal/phase4b-b07-annex-standard-qualification-spec.md": "d2dae8e05d3d4ff7220bbc4fabf0247b0b49336e13fc8cb20307649376999379"
+  },
+  "handoff": "E:/dev/motorfiscal-agente-b-evidence/handoff/B07-especificacao-Q-B06-1-para-A.md",
+  "gate_enabled_in_any_catalog": false,
+  "historical_gap_characterized": {"rules": 40, "result": "STANDARD declarado com descricao do anexo confirmada resolve 000001 em todas as 40 regras (bundle 141)"},
+  "validation": {
+    "reason_for_chunks": "Execucao unica anterior encerrada pelo sistema por falta de memoria; reexecutada em blocos com autorizacao do usuario.",
+    "chunk1_b_units": {"tests": 60, "assertions": 56977, "skipped": 0, "result": "PASS", "junit_sha256": "5e61db20e607e35f209a21ac254ed02d5d82a94ac201e086192a41dcb398c902"},
+    "chunk2_b07_integration": {"tests": 42, "assertions": 322, "skipped_pending_agent_a": 320, "result": "PASS", "junit_sha256": "45d993a52a6e6960c564bfcfc2a4448e1b345a2ca87853bbd7594657574a9afa"},
+    "chunk3_existing_credit_annex": {"tests": 705, "assertions": 10747, "skipped": 0, "result": "PASS", "junit_sha256": "eef4b4346290954dc161480e5c9fdd2bcc86712fc7fde460a4dfcbbb93e60db6"},
+    "runtime": "PHP 8.5.12 NTS Windows, memory_limit 256M/512M",
+    "is_full_regression": false
+  },
+  "limits": ["As 40 regras so serao tecnicamente resolvidas apos implementacao do A e execucao dos 320 casos", "B02 e B07 desligados", "0/8 grupos encerrados", "Sem commit/push"]
+}

@@ -1,0 +1,3172 @@
+{
+  "version": "anexoviii-correlation-1.02.00-b01",
+  "status": "SANDBOX_REFERENCE_NOT_ACTIVATED",
+  "kind": "OFFICIAL_CORRELATION_REFERENCE",
+  "decision_authority": false,
+  "bundle_bound": false,
+  "source": {
+    "file": "anexo_viii-tabela-correlacao-v01-02-00-20261026.xlsx",
+    "sha256": "12cc80bc92687856b47e961b98cdbaa3f8cae568c099b3ef71994e73482ac7d0",
+    "bytes": 151656,
+    "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexo_viii-tabela-correlacao-v01-02-00-20261026.xlsx",
+    "publisher": "Portal Nacional da NFS-e (gov.br/nfse) - documentacao tecnica RTC",
+    "page": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc",
+    "page_listing_title": "Anexo VIII versao 1.02.00 (26/10/2026) - Correlacao entre Item de Serv., NBS, cClassTrib e cIndOp (AnexoVII)",
+    "version": "1.02.00",
+    "version_basis": "PAGE_TITLE_AND_FILENAME_NO_INTERNAL_VERSION_CELL",
+    "published_on": "2026-10-26",
+    "page_updated_at": "2026-10-26T15:52:00-03:00",
+    "retrieved_at": "2026-11-03T12:04:30+00:00",
+    "available_at": "2026-11-03T12:04:30+00:00",
+    "page_notice": "Anexo VIII listado como trabalho inicial, sem regras de negocio baseadas nele nos ambientes indicados.",
+    "sheets": [
+      "tabela geral",
+      "REGRA OP NAO ONE_EXT",
+      "Planilha2"
+    ]
+  },
+  "previous": {
+    "file": "anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+    "sha256": "a21be0e86b7ae2c0c1cfec4ef0d398b96520345790b50f79e4c5b7d1dfe32fb3",
+    "version": "1.01.00",
+    "retrieved_on": "2026-09-25",
+    "revalidated_on": "2026-11-03",
+    "revalidation": "BYTES_EQUAL_CURRENT_OFFICIAL_DOWNLOAD",
+    "page_label_ambiguity": "Na pagina de 26/10/2026 o titulo '1.01.00' aponta para ..._v1-00-00.xlsx e o titulo '1.00.00' aponta para ..._v1-01-00.xlsx (este arquivo). Nenhuma das planilhas declara versao internamente. Rotulo historico 1.01.00 preservado; ambiguidade registrada, nao resolvida."
+  },
+  "extraction_rule": "Aba 'tabela geral'; linhas com NBS (col C), INDOP (col G) e cClassTrib (col I) preenchidos; cIndOp com zeros a esquerda ate 6 digitos; sem heranca de celulas vazias.",
+  "header": [
+    "Item LC 116",
+    "Descrição Item",
+    "NBS",
+    "DESCRIÇÃO NBS",
+    "COD_ATIV_SN",
+    "DESCRIÇÃO ATIV_SN",
+    "INDOP",
+    "Local incidência IBS",
+    "cClassTrib",
+    "nome cClassTrib"
+  ],
+  "structural_changes_from_previous": {
+    "header_previous": [
+      "Item LC 116",
+      "Descrição Item",
+      "NBS",
+      "DESCRIÇÃO NBS",
+      "PS ONEROSA? (S/N)",
+      "ADQ EXTERIOR? (S/N)",
+      "INDOP",
+      "Local incidência IBS",
+      "cClassTrib",
+      "nome cClassTrib"
+    ],
+    "changed_columns": [
+      {
+        "column": 5,
+        "previous": "PS ONEROSA? (S/N)",
+        "current": "COD_ATIV_SN"
+      },
+      {
+        "column": 6,
+        "previous": "ADQ EXTERIOR? (S/N)",
+        "current": "DESCRIÇÃO ATIV_SN"
+      }
+    ],
+    "sheets_previous": [
+      "REGRA inc. X",
+      "tabela geral",
+      "Planilha2"
+    ]
+  },
+  "counts": {
+    "data_rows": 1661,
+    "complete_correlations": 251,
+    "incomplete_nonempty_rows_not_filled": 1358,
+    "previous_data_rows": 1521,
+    "previous_complete_correlations": 200,
+    "previous_incomplete_nonempty_rows_not_filled": 1321
+  },
+  "diff_vs_previous": {
+    "key": [
+      "lc116_code",
+      "nbs",
+      "cindop",
+      "cclasstrib"
+    ],
+    "added": [
+      [
+        "",
+        "1.0102.11.00",
+        "020202",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.11.00",
+        "020202",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.35.20",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.35.20",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.35.30",
+        "020202",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.35.30",
+        "020202",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.69.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.69.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.80.00",
+        "020202",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.80.00",
+        "020202",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.90.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0102.90.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0103.20.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0103.30.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0103.41.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0104.00.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.11.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.12.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.21.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.40.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.50.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.60.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0105.90.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0106.11.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0106.19.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0106.21.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0106.22.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0106.60.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0107.30.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0107.30.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0107.40.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0107.90.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "",
+        "1.0602.31.00",
+        "050101",
+        "000001"
+      ],
+      [
+        "",
+        "1.0702.00.00",
+        "070101",
+        "000001"
+      ],
+      [
+        "",
+        "1.0905.30.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "",
+        "1.0905.80.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "",
+        "1.0905.90.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "",
+        "1.1002.20.00",
+        "020101",
+        "200027"
+      ],
+      [
+        "",
+        "1.1403.21.10",
+        "020201",
+        "200052"
+      ],
+      [
+        "",
+        "1.1403.30.00",
+        "020201",
+        "200052"
+      ],
+      [
+        "",
+        "1.1404.49.00",
+        "050101",
+        "200038"
+      ],
+      [
+        "",
+        "1.1405.90.00",
+        "050101",
+        "000001"
+      ],
+      [
+        "",
+        "1.1410.90.00",
+        "050101",
+        "200038"
+      ],
+      [
+        "",
+        "1.1415.00.00",
+        "100301",
+        "200052"
+      ],
+      [
+        "",
+        "1.1415.00.00",
+        "100301",
+        "200052"
+      ],
+      [
+        "",
+        "1.2406.90.00",
+        "020202",
+        "000001"
+      ],
+      [
+        "03.04",
+        "1.1001.12.10",
+        "020401",
+        "200027"
+      ],
+      [
+        "05.04",
+        "1.1405.22.00",
+        "050101",
+        "200038"
+      ],
+      [
+        "05.09",
+        "1.1405.50.00",
+        "100301",
+        "011005"
+      ],
+      [
+        "07.09",
+        "1.2406.10.00",
+        "020202",
+        "000001"
+      ],
+      [
+        "07.17",
+        "1.0105.11.00",
+        "020202",
+        "200046"
+      ],
+      [
+        "07.18",
+        "1.2406.90.00",
+        "020202",
+        "000001"
+      ],
+      [
+        "07.21",
+        "1.1404.19.00",
+        "020202",
+        "000001"
+      ],
+      [
+        "10.01",
+        "1.0906.11.00",
+        "100301",
+        "010002"
+      ],
+      [
+        "10.02",
+        "1.0905.11.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "10.06",
+        "1.0607.00.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "12.11",
+        "1.2505.20.00",
+        "030101",
+        "200042"
+      ],
+      [
+        "15.03",
+        "1.1101.90.00",
+        "010101",
+        "000001"
+      ],
+      [
+        "15.04",
+        "1.1301.30.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "15.05",
+        "1.1806.10.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "15.06",
+        "1.1301.30.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "15.10",
+        "1.1806.20.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "15.13",
+        "1.0905.60.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "15.16",
+        "1.0901.90.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "17.09",
+        "1.1404.41.00",
+        "050101",
+        "000001"
+      ],
+      [
+        "25.03",
+        "1.2603.00.00",
+        "100301",
+        "011001"
+      ],
+      [
+        "99.03.01",
+        "1.1002.10.00",
+        "020101",
+        "200027"
+      ],
+      [
+        "99.03.02",
+        "1.1002.10.00",
+        "020101",
+        "200027"
+      ],
+      [
+        "99.03.03",
+        "1.1002.10.00",
+        "020101",
+        "200027"
+      ],
+      [
+        "99.03.04",
+        "1.1002.10.00",
+        "020101",
+        "200027"
+      ],
+      [
+        "99.03.05",
+        "1.1002.10.00",
+        "020101",
+        "200027"
+      ],
+      [
+        "99.05.01",
+        "1.1001.90.00",
+        "020201",
+        "200046"
+      ]
+    ],
+    "removed": [
+      [
+        "",
+        "1.1002.20.00",
+        "020201",
+        "200027"
+      ],
+      [
+        "",
+        "1.1805.40.00",
+        "100301",
+        "200051"
+      ],
+      [
+        "03.04",
+        "1.1001.12.10",
+        "020201",
+        "200027"
+      ],
+      [
+        "05.04",
+        "1.1405.90.00",
+        "050101",
+        "000001"
+      ],
+      [
+        "05.09",
+        "1.1405.50.00",
+        "100301",
+        "820003"
+      ],
+      [
+        "07.09",
+        "1.2406.10.00",
+        "020201",
+        "000001"
+      ],
+      [
+        "07.17",
+        "1.0105.11.00",
+        "020201",
+        "200046"
+      ],
+      [
+        "07.18",
+        "1.2406.90.00",
+        "020201",
+        "000001"
+      ],
+      [
+        "07.21",
+        "1.1404.19.00",
+        "020201",
+        "000001"
+      ],
+      [
+        "10.01",
+        "1.0906.11.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "10.02",
+        "1.0607.00.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "10.06",
+        "1.0502.29.00",
+        "100301",
+        "000001"
+      ],
+      [
+        "15.03",
+        "1.1101.90.00",
+        "010101",
+        "820007"
+      ],
+      [
+        "15.04",
+        "1.1301.30.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "15.05",
+        "1.1806.10.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "15.06",
+        "1.1301.30.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "15.10",
+        "1.1806.20.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "15.13",
+        "1.0905.60.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "15.16",
+        "1.0901.90.00",
+        "100301",
+        "820007"
+      ],
+      [
+        "25.03",
+        "1.2603.00.00",
+        "100301",
+        "820002"
+      ],
+      [
+        "99.03.01",
+        "1.1002.10.00",
+        "020201",
+        "200027"
+      ]
+    ],
+    "unchanged": 179
+  },
+  "correlations": [
+    {
+      "row": 2,
+      "lc116_code": "01.01",
+      "nbs": "1.1502.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 15,
+      "lc116_code": "01.02",
+      "nbs": "1.1502.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 20,
+      "lc116_code": "01.03",
+      "nbs": "1.1506.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 27,
+      "lc116_code": "01.04",
+      "nbs": "1.1502.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 32,
+      "lc116_code": "01.05",
+      "nbs": "1.1103.21.00",
+      "cindop": "100501",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 39,
+      "lc116_code": "01.06",
+      "nbs": "1.1501.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 49,
+      "lc116_code": "01.07",
+      "nbs": "1.1501.30.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 55,
+      "lc116_code": "01.08",
+      "nbs": "1.1502.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 57,
+      "lc116_code": "01.09",
+      "nbs": "1.1703.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 65,
+      "lc116_code": "02.01",
+      "nbs": "1.1201.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 101,
+      "lc116_code": "03.02",
+      "nbs": "1.1103.33.00",
+      "cindop": "100501",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 106,
+      "lc116_code": "03.03",
+      "nbs": "1.1805.31.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 111,
+      "lc116_code": "03.04",
+      "nbs": "1.1001.12.10",
+      "cindop": "020401",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 112,
+      "lc116_code": "03.05",
+      "nbs": "1.0105.70.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 118,
+      "lc116_code": "04.01",
+      "nbs": "1.2301.22.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200029",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 192,
+      "lc116_code": "04.22",
+      "nbs": "1.0910.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 194,
+      "lc116_code": "04.23",
+      "nbs": "1.0910.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 196,
+      "lc116_code": "05.01",
+      "nbs": "1.1405.12.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 198,
+      "lc116_code": "",
+      "nbs": "1.1405.22.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200038",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 200,
+      "lc116_code": "",
+      "nbs": "1.1405.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 202,
+      "lc116_code": "",
+      "nbs": "1.1410.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200038",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 205,
+      "lc116_code": "05.02",
+      "nbs": "1.1405.11.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 209,
+      "lc116_code": "05.03",
+      "nbs": "1.1405.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 211,
+      "lc116_code": "05.04",
+      "nbs": "1.1405.22.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200038",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 213,
+      "lc116_code": "",
+      "nbs": "1.1405.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 215,
+      "lc116_code": "05.05",
+      "nbs": "1.1405.40.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 216,
+      "lc116_code": "05.06",
+      "nbs": "1.1405.40.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 218,
+      "lc116_code": "05.07",
+      "nbs": "1.1405.12.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 220,
+      "lc116_code": "",
+      "nbs": "1.1405.22.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200038",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 222,
+      "lc116_code": "05.08",
+      "nbs": "1.1405.60.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 224,
+      "lc116_code": "05.09",
+      "nbs": "1.1405.50.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "011005",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 226,
+      "lc116_code": "06.01",
+      "nbs": "1.2602.10.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 230,
+      "lc116_code": "06.02",
+      "nbs": "1.2602.20.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 236,
+      "lc116_code": "06.03",
+      "nbs": "1.2602.30.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 238,
+      "lc116_code": "06.04",
+      "nbs": "1.2205.12.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200041",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 240,
+      "lc116_code": "",
+      "nbs": "1.2505.90.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 245,
+      "lc116_code": "06.05",
+      "nbs": "1.2602.30.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 249,
+      "lc116_code": "06.06",
+      "nbs": "1.2602.90.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 251,
+      "lc116_code": "07.01",
+      "nbs": "1.1402.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 287,
+      "lc116_code": "07.02",
+      "nbs": "1.0101.11.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 299,
+      "lc116_code": "",
+      "nbs": "1.0102.11.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 313,
+      "lc116_code": "",
+      "nbs": "1.0102.35.20",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 316,
+      "lc116_code": "",
+      "nbs": "1.0102.35.30",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 334,
+      "lc116_code": "",
+      "nbs": "1.0102.69.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 337,
+      "lc116_code": "",
+      "nbs": "1.0102.80.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 339,
+      "lc116_code": "",
+      "nbs": "1.0102.90.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 343,
+      "lc116_code": "",
+      "nbs": "1.0103.20.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 347,
+      "lc116_code": "",
+      "nbs": "1.0103.30.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 351,
+      "lc116_code": "",
+      "nbs": "1.0103.41.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 355,
+      "lc116_code": "",
+      "nbs": "1.0104.00.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 359,
+      "lc116_code": "",
+      "nbs": "1.0105.11.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 363,
+      "lc116_code": "",
+      "nbs": "1.0105.12.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 367,
+      "lc116_code": "",
+      "nbs": "1.0105.21.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 373,
+      "lc116_code": "",
+      "nbs": "1.0105.40.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 377,
+      "lc116_code": "",
+      "nbs": "1.0105.50.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 381,
+      "lc116_code": "",
+      "nbs": "1.0105.60.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 385,
+      "lc116_code": "",
+      "nbs": "1.0105.90.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 389,
+      "lc116_code": "",
+      "nbs": "1.0106.11.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 393,
+      "lc116_code": "",
+      "nbs": "1.0106.19.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 397,
+      "lc116_code": "",
+      "nbs": "1.0106.21.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 401,
+      "lc116_code": "",
+      "nbs": "1.0106.22.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 405,
+      "lc116_code": "",
+      "nbs": "1.0106.60.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 407,
+      "lc116_code": "",
+      "nbs": "1.0107.30.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 411,
+      "lc116_code": "",
+      "nbs": "1.0107.40.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 419,
+      "lc116_code": "07.03",
+      "nbs": "1.1402.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 430,
+      "lc116_code": "07.04",
+      "nbs": "1.0103.10.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 434,
+      "lc116_code": "07.05",
+      "nbs": "1.0101.11.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 446,
+      "lc116_code": "",
+      "nbs": "1.0102.11.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 460,
+      "lc116_code": "",
+      "nbs": "1.0102.35.20",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 463,
+      "lc116_code": "",
+      "nbs": "1.0102.35.30",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 481,
+      "lc116_code": "",
+      "nbs": "1.0102.69.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 484,
+      "lc116_code": "",
+      "nbs": "1.0102.80.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 486,
+      "lc116_code": "",
+      "nbs": "1.0102.90.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 490,
+      "lc116_code": "",
+      "nbs": "1.0107.30.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 494,
+      "lc116_code": "",
+      "nbs": "1.0107.90.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 496,
+      "lc116_code": "07.06",
+      "nbs": "1.0106.50.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 504,
+      "lc116_code": "07.07",
+      "nbs": "1.0107.40.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 506,
+      "lc116_code": "07.08",
+      "nbs": "1.0107.90.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 508,
+      "lc116_code": "07.09",
+      "nbs": "1.2406.10.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 544,
+      "lc116_code": "07.10",
+      "nbs": "1.1803.10.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 552,
+      "lc116_code": "",
+      "nbs": "1.2406.90.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 556,
+      "lc116_code": "07.11",
+      "nbs": "1.1409.11.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 561,
+      "lc116_code": "07.12",
+      "nbs": "1.2405.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 566,
+      "lc116_code": "07.13",
+      "nbs": "1.1803.21.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 568,
+      "lc116_code": "07.16",
+      "nbs": "1.1105.41.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 569,
+      "lc116_code": "",
+      "nbs": "1.1901.10.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200038",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 573,
+      "lc116_code": "",
+      "nbs": "1.0602.31.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 575,
+      "lc116_code": "07.17",
+      "nbs": "1.0105.11.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 577,
+      "lc116_code": "07.18",
+      "nbs": "1.2406.90.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 579,
+      "lc116_code": "07.19",
+      "nbs": "1.1402.15.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 583,
+      "lc116_code": "",
+      "nbs": "1.1403.21.10",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 587,
+      "lc116_code": "",
+      "nbs": "1.1403.30.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 591,
+      "lc116_code": "07.20",
+      "nbs": "1.1404.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 597,
+      "lc116_code": "07.21",
+      "nbs": "1.1404.19.00",
+      "cindop": "020202",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 600,
+      "lc116_code": "07.22",
+      "nbs": "1.1901.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 601,
+      "lc116_code": "08.01",
+      "nbs": "1.2201.11.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200028",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 626,
+      "lc116_code": "",
+      "nbs": "1.2204.20.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200028",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 638,
+      "lc116_code": "08.02",
+      "nbs": "1.2205.11.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 641,
+      "lc116_code": "",
+      "nbs": "1.2205.13.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200028",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 653,
+      "lc116_code": "09.01",
+      "nbs": "1.0303.11.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200048",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 662,
+      "lc116_code": "09.02",
+      "nbs": "1.0401.17.10",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200051",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 683,
+      "lc116_code": "09.03",
+      "nbs": "1.1805.50.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200051",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 686,
+      "lc116_code": "10.01",
+      "nbs": "1.0906.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "010002",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 692,
+      "lc116_code": "10.02",
+      "nbs": "1.0905.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 695,
+      "lc116_code": "10.03",
+      "nbs": "1.2501.40.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 697,
+      "lc116_code": "10.04",
+      "nbs": "1.0905.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 698,
+      "lc116_code": "10.05",
+      "nbs": "1.1001.21.00",
+      "cindop": "020301",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 700,
+      "lc116_code": "",
+      "nbs": "1.0201.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 704,
+      "lc116_code": "10.06",
+      "nbs": "1.0607.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 705,
+      "lc116_code": "10.07",
+      "nbs": "1.1704.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 707,
+      "lc116_code": "10.08",
+      "nbs": "1.1406.20.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 708,
+      "lc116_code": "10.09",
+      "nbs": "1.0201.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 709,
+      "lc116_code": "10.10",
+      "nbs": "1.0201.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 710,
+      "lc116_code": "11.01",
+      "nbs": "1.0604.30.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 716,
+      "lc116_code": "11.02",
+      "nbs": "1.1802.50.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 722,
+      "lc116_code": "11.03",
+      "nbs": "1.1802.50.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 725,
+      "lc116_code": "11.04",
+      "nbs": "1.0601.10.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 751,
+      "lc116_code": "11.05",
+      "nbs": "1.1802.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 752,
+      "lc116_code": "12.01",
+      "nbs": "1.2502.20.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 754,
+      "lc116_code": "12.02",
+      "nbs": "1.2501.50.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 758,
+      "lc116_code": "12.03",
+      "nbs": "1.2502.20.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 760,
+      "lc116_code": "12.04",
+      "nbs": "1.2502.90.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 762,
+      "lc116_code": "12.05",
+      "nbs": "1.2504.21.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200048",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 766,
+      "lc116_code": "12.06",
+      "nbs": "1.2508.00.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 768,
+      "lc116_code": "12.07",
+      "nbs": "1.2502.20.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do Evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 772,
+      "lc116_code": "12.08",
+      "nbs": "1.1806.61.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 778,
+      "lc116_code": "12.09",
+      "nbs": "1.2505.90.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 782,
+      "lc116_code": "12.10",
+      "nbs": "1.2508.00.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 786,
+      "lc116_code": "12.11",
+      "nbs": "1.2505.20.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200042",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 796,
+      "lc116_code": "12.12",
+      "nbs": "1.2503.10.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 802,
+      "lc116_code": "12.13",
+      "nbs": "1.2501.21.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 813,
+      "lc116_code": "12.14",
+      "nbs": "1.2502.90.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 819,
+      "lc116_code": "12.15",
+      "nbs": "1.2502.90.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do evento",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 823,
+      "lc116_code": "12.16",
+      "nbs": "1.2501.50.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 828,
+      "lc116_code": "12.17",
+      "nbs": "1.2508.00.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 830,
+      "lc116_code": "13.02",
+      "nbs": "1.2501.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 839,
+      "lc116_code": "13.03",
+      "nbs": "1.1408.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 862,
+      "lc116_code": "13.04",
+      "nbs": "1.1806.51.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 863,
+      "lc116_code": "13.05",
+      "nbs": "1.2101.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 866,
+      "lc116_code": "14.01",
+      "nbs": "1.2001.10.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 884,
+      "lc116_code": "",
+      "nbs": "1.2001.35.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200044",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 886,
+      "lc116_code": "",
+      "nbs": "1.2001.39.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 900,
+      "lc116_code": "",
+      "nbs": "1.2001.83.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200044",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 902,
+      "lc116_code": "",
+      "nbs": "1.2001.89.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 916,
+      "lc116_code": "14.02",
+      "nbs": "1.2001.10.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 934,
+      "lc116_code": "",
+      "nbs": "1.2001.35.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200044",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 936,
+      "lc116_code": "",
+      "nbs": "1.2001.39.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 950,
+      "lc116_code": "",
+      "nbs": "1.2001.83.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200044",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 952,
+      "lc116_code": "",
+      "nbs": "1.2001.89.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 964,
+      "lc116_code": "14.03",
+      "nbs": "1.2001.31.10",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 968,
+      "lc116_code": "14.04",
+      "nbs": "1.2002.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 970,
+      "lc116_code": "14.05",
+      "nbs": "1.1804.00.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 974,
+      "lc116_code": "14.06",
+      "nbs": "1.0106.12.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1016,
+      "lc116_code": "14.07",
+      "nbs": "1.2606.00.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1018,
+      "lc116_code": "14.08",
+      "nbs": "1.2101.22.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1020,
+      "lc116_code": "14.09",
+      "nbs": "1.2604.00.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1024,
+      "lc116_code": "14.10",
+      "nbs": "1.2601.10.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1034,
+      "lc116_code": "14.11",
+      "nbs": "1.2002.40.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1036,
+      "lc116_code": "14.12",
+      "nbs": "1.2001.31.10",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1038,
+      "lc116_code": "14.13",
+      "nbs": "1.0107.50.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1040,
+      "lc116_code": "14.14",
+      "nbs": "1.0604.40.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1044,
+      "lc116_code": "15.01",
+      "nbs": "1.0901.40.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1050,
+      "lc116_code": "15.02",
+      "nbs": "1.0901.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1053,
+      "lc116_code": "15.03",
+      "nbs": "1.1101.90.00",
+      "cindop": "010101",
+      "ibs_incidence_place": "local da entrega ou disponibilização",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1056,
+      "lc116_code": "15.04",
+      "nbs": "1.1301.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1058,
+      "lc116_code": "15.05",
+      "nbs": "1.1806.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1060,
+      "lc116_code": "15.06",
+      "nbs": "1.1301.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1061,
+      "lc116_code": "",
+      "nbs": "1.0702.00.00",
+      "cindop": "070101",
+      "ibs_incidence_place": "local da prestação",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1062,
+      "lc116_code": "",
+      "nbs": "1.0905.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1063,
+      "lc116_code": "",
+      "nbs": "1.0905.80.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1064,
+      "lc116_code": "",
+      "nbs": "1.0905.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1066,
+      "lc116_code": "15.07",
+      "nbs": "1.0901.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1068,
+      "lc116_code": "15.08",
+      "nbs": "1.0901.33.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1074,
+      "lc116_code": "15.09",
+      "nbs": "1.0901.51.11",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1113,
+      "lc116_code": "15.10",
+      "nbs": "1.1806.20.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1116,
+      "lc116_code": "15.11",
+      "nbs": "1.0901.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1117,
+      "lc116_code": "15.12",
+      "nbs": "1.0905.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1118,
+      "lc116_code": "15.13",
+      "nbs": "1.0905.60.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1120,
+      "lc116_code": "15.14",
+      "nbs": "1.0901.40.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1122,
+      "lc116_code": "15.15",
+      "nbs": "1.0901.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1126,
+      "lc116_code": "15.16",
+      "nbs": "1.0901.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1128,
+      "lc116_code": "15.17",
+      "nbs": "1.0901.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1129,
+      "lc116_code": "15.18",
+      "nbs": "1.0901.31.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "820007",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1132,
+      "lc116_code": "16.01",
+      "nbs": "1.0401.11.19",
+      "cindop": "060101",
+      "ibs_incidence_place": "local de início do transporte",
+      "cclasstrib": "400001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1139,
+      "lc116_code": "16.02",
+      "nbs": "1.0401.21.90",
+      "cindop": "060101",
+      "ibs_incidence_place": "local do início do transporte",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1216,
+      "lc116_code": "17.01",
+      "nbs": "1.0608.40.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1239,
+      "lc116_code": "17.02",
+      "nbs": "1.1411.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1246,
+      "lc116_code": "17.03",
+      "nbs": "1.1401.29.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1248,
+      "lc116_code": "17.04",
+      "nbs": "1.1801.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1250,
+      "lc116_code": "17.05",
+      "nbs": "1.1801.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1253,
+      "lc116_code": "17.06",
+      "nbs": "1.1406.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1257,
+      "lc116_code": "17.08",
+      "nbs": "1.1110.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1258,
+      "lc116_code": "17.09",
+      "nbs": "1.1404.41.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1268,
+      "lc116_code": "",
+      "nbs": "1.1404.49.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200038",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1270,
+      "lc116_code": "17.10",
+      "nbs": "1.1806.61.00",
+      "cindop": "040101",
+      "ibs_incidence_place": "local do evento",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1273,
+      "lc116_code": "17.11",
+      "nbs": "1.1806.63.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1280,
+      "lc116_code": "17.12",
+      "nbs": "1.1001.11.00",
+      "cindop": "020301",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1282,
+      "lc116_code": "",
+      "nbs": "1.1401.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1284,
+      "lc116_code": "17.13",
+      "nbs": "1.1806.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1285,
+      "lc116_code": "17.14",
+      "nbs": "1.1301.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1290,
+      "lc116_code": "17.15",
+      "nbs": "1.1301.40.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1291,
+      "lc116_code": "17.16",
+      "nbs": "1.1302.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1293,
+      "lc116_code": "17.17",
+      "nbs": "1.1806.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1294,
+      "lc116_code": "17.18",
+      "nbs": "1.0906.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1295,
+      "lc116_code": "17.19",
+      "nbs": "1.1302.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1301,
+      "lc116_code": "17.20",
+      "nbs": "1.0905.50.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1305,
+      "lc116_code": "17.21",
+      "nbs": "1.1415.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1306,
+      "lc116_code": "17.22",
+      "nbs": "1.1806.20.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1307,
+      "lc116_code": "17.23",
+      "nbs": "1.0908.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1308,
+      "lc116_code": "17.24",
+      "nbs": "1.2205.14.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1311,
+      "lc116_code": "17.25",
+      "nbs": "1.1406.33.00",
+      "cindop": "100101",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1314,
+      "lc116_code": "18.01",
+      "nbs": "1.0906.20.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1315,
+      "lc116_code": "19.01",
+      "nbs": "1.0905.11.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1316,
+      "lc116_code": "20.01",
+      "nbs": "1.0401.21.20",
+      "cindop": "050201",
+      "ibs_incidence_place": "local da prestação (porto)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1333,
+      "lc116_code": "20.02",
+      "nbs": "1.0601.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1340,
+      "lc116_code": "20.03",
+      "nbs": "1.0601.90.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1344,
+      "lc116_code": "21.01",
+      "nbs": "1.1304.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1347,
+      "lc116_code": "22.01",
+      "nbs": "1.0604.21.00",
+      "cindop": "080101",
+      "ibs_incidence_place": "via explorada",
+      "cclasstrib": "820006",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1349,
+      "lc116_code": "23.01",
+      "nbs": "1.1409.21.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1357,
+      "lc116_code": "24.01",
+      "nbs": "1.2606.00.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1360,
+      "lc116_code": "25.01",
+      "nbs": "1.1405.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1362,
+      "lc116_code": "25.02",
+      "nbs": "1.1405.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1364,
+      "lc116_code": "25.03",
+      "nbs": "1.2603.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "011001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1366,
+      "lc116_code": "25.04",
+      "nbs": "1.2603.00.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1367,
+      "lc116_code": "25.05",
+      "nbs": "1.2603.00.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1368,
+      "lc116_code": "26.01",
+      "nbs": "1.0501.15.00",
+      "cindop": "070101",
+      "ibs_incidence_place": "local da prestação",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1374,
+      "lc116_code": "27.01",
+      "nbs": "1.2304.11.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1383,
+      "lc116_code": "28.01",
+      "nbs": "1.1404.14.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1386,
+      "lc116_code": "29.01",
+      "nbs": "1.1705.10.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1389,
+      "lc116_code": "",
+      "nbs": "1.1415.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1390,
+      "lc116_code": "30.01",
+      "nbs": "1.1415.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1392,
+      "lc116_code": "31.01",
+      "nbs": "1.1415.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1393,
+      "lc116_code": "32.01",
+      "nbs": "1.1409.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1394,
+      "lc116_code": "33.01",
+      "nbs": "1.0204.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1396,
+      "lc116_code": "34.01",
+      "nbs": "1.1802.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1397,
+      "lc116_code": "35.01",
+      "nbs": "1.1401.31.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1403,
+      "lc116_code": "36.01",
+      "nbs": "1.1404.30.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1404,
+      "lc116_code": "37.01",
+      "nbs": "1.1806.81.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1410,
+      "lc116_code": "38.01",
+      "nbs": "1.2504.11.00",
+      "cindop": "030101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1414,
+      "lc116_code": "",
+      "nbs": "1.1415.00.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200052",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1415,
+      "lc116_code": "39.01",
+      "nbs": "1.2002.20.00",
+      "cindop": "050101",
+      "ibs_incidence_place": "local da prestação no estabelecimento do fornecedor (prestador)",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1419,
+      "lc116_code": "40.01",
+      "nbs": "1.1109.90.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1422,
+      "lc116_code": "99.02.01",
+      "nbs": "1.1103.10.00",
+      "cindop": "100301",
+      "ibs_incidence_place": "Domicílio principal do adquirente",
+      "cclasstrib": "200039",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1504,
+      "lc116_code": "99.03.01",
+      "nbs": "1.1002.10.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1508,
+      "lc116_code": "",
+      "nbs": "1.1002.20.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1514,
+      "lc116_code": "99.03.02",
+      "nbs": "1.1002.10.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1520,
+      "lc116_code": "99.03.03",
+      "nbs": "1.1002.10.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1526,
+      "lc116_code": "99.03.04",
+      "nbs": "1.1002.10.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1529,
+      "lc116_code": "99.03.05",
+      "nbs": "1.1002.10.00",
+      "cindop": "020101",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200027",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1532,
+      "lc116_code": "99.04.01",
+      "nbs": "1.1101.11.00",
+      "cindop": "010101",
+      "ibs_incidence_place": "local da entrega ou da disponibilização",
+      "cclasstrib": "000001",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    },
+    {
+      "row": 1612,
+      "lc116_code": "99.05.01",
+      "nbs": "1.1001.90.00",
+      "cindop": "020201",
+      "ibs_incidence_place": "local do imóvel",
+      "cclasstrib": "200046",
+      "kind": "OFFICIAL_CORRELATION",
+      "decision_authority": false
+    }
+  ]
+}

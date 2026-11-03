@@ -1,0 +1,19 @@
+{
+  "task": "B11",
+  "agent": "B",
+  "recorded_at": "2026-11-03T18:20:00-03:00",
+  "status": "B11_CREDIT_ADJUSTMENT_CYCLE_LOCAL_VALIDATED_NOT_INTEGRATED",
+  "requirements": ["4B.5.4", "4B.5.5", "4B.5.9"],
+  "formal_completion_approved": false,
+  "official_sources": {"lc214_planalto": {"sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c", "articles": ["29 §§2-4", "45 §§1-2", "47 §§6-7", "341 XV", "447 §2", "465 §2", "130 (glosa medica, fora do escopo)"]}},
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/CreditAdjustmentCycleB11.php": "9f8665aff15642f1bd30f91d1c360fb0fa2ed2eb53b71962910945250166e56b",
+    "tests/Fiscal/Unit/CreditAdjustmentCycleB11Test.php": "c0b03ea7f78ddcc89b781ff25a6ecbefbd39b486df3d7e06b2ec91738bd8ab2d",
+    "docs/fiscal/phase4b-b11-credit-adjustment-cycle.md": "see diff"
+  },
+  "engineering_interpretations": ["Associacao tipo REVERSAL/DISALLOWANCE x causa", "Glosa de credito modelada como anulacao por apropriacao indevida (LC214 usa 'glosa' so no art.130)"],
+  "external_dependencies": ["Serie Selic oficial e data de pagamento para valor dos acrescimos", "Regulamento para proporcao do ativo imobilizado (art.47 §7)", "Revisao juridica: acrescimos em registro tardio de estorno do art.47 §6"],
+  "integrated_in_engine": false,
+  "tests": {"command": "E:\\tools\\php85.cmd -d memory_limit=256M vendor\\bin\\pest tests/Fiscal/Unit/CreditAdjustmentCycleB11Test.php", "tests": 31, "assertions": 149, "result": "PASS", "independent_oracle": "bcmath ledger (16 combinacoes)", "phpstan": "no errors", "pint": "passed", "is_full_regression": false},
+  "limits": ["Nao calcula acrescimos", "Nao comprova pagamento/extincao", "Nao integrado ao fluxo do motor", "0/8 grupos encerrados", "Sem commit/push"]
+}

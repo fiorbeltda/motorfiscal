@@ -1,0 +1,15 @@
+{
+  "task": "B10",
+  "agent": "B",
+  "recorded_at": "2026-11-03T17:45:00-03:00",
+  "status": "B10_TWO_AXIS_ACCEPTANCE_MODEL_APPLIED_NO_ITEM_ACCEPTED",
+  "user_decision": "Plano de 03/11/2026: aceite Sandbox condicionado para dependencias externas, sem reduzir os 80 requisitos.",
+  "requirements": ["4B.8.1"],
+  "formal_completion_approved": false,
+  "model_step_matrix": {"path": "storage/app/phase4b-b10-development-20261103/model-step/requirements80-current-matrix.json", "sha256": "3567b28d680de1cf746824d3d84d91b0d2d40365a207e899db1b73feecfc13bf", "derived_from_sha256": "61e26f25f28e93e0550f5e145f5ef362a340cfd3463e2c1d501b1cdac3d42054"},
+  "tool": "E:/dev/motorfiscal-agente-b-evidence/tools/apply_acceptance_model_b10.py",
+  "counts": {"A_pending_integration": 44, "B_partial": 31, "B_candidates_require_verification": 5, "sandbox_accepted": 0, "integral": 0},
+  "candidates": ["4B.6.7", "4B.6.8", "4B.7.3", "4B.8.2", "4B.8.4"],
+  "tests": {"note": "corte documental", "is_full_regression": false},
+  "limits": ["Nenhum aceite atribuido", "0/8 grupos encerrados", "Sem commit/push"]
+}

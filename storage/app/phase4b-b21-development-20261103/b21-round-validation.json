@@ -1,0 +1,13 @@
+{
+  "task": "B21",
+  "agent": "B",
+  "recorded_at": "2026-11-03T14:25:00-03:00",
+  "status": "B21_INDEPENDENT_ROUND_CLASSIFIED_REGRESSION_PARTIAL",
+  "round_deliveries": ["B17 presumidos (arts.168-171,444,447,449,465)", "B18 ciclo completo de credito", "B19 aceite da correcao do seletor sintetico (pendente A)", "B20 oraculo cClassTrib v1.70 e NBS v1.01", "B14 refund_prohibited (arts.452/468)", "Reverificacao das fontes oficiais 4B.7 (sem novidades)", "Analise de reconstrucao das 34 pastas (inviavel)"],
+  "model_step_matrix": {"path": "storage/app/phase4b-b21-development-20261103/model-step/requirements80-current-matrix.json", "sha256": "b935a4b6844a6b6f5e5395759e883183df6a907b7950b8e0cbc1273963cd7554"},
+  "b_counts": {"integral": 5, "sandbox_external_dependency": 6, "partial_b_possible": 1, "partial_depends_on_a": 17, "depends_on_official_publication": 4, "depends_on_evidence_or_environment": 3},
+  "regression": {"kind": "PARCIAL_COM_EXCLUSOES", "files_run": 223, "files_excluded": 41, "unique_cases": 9478, "passed": 8644, "failed": 513, "failed_environment_missing_storage": 513, "failed_code": 0, "skipped_pending_agent_a": 321, "assertions_passed": 326594, "summary": "E:/dev/motorfiscal-agente-b-evidence/regression-20261103/regression-summary.json"},
+  "official_sources_rechecked_20261103": {"rtc_page_updated_at": "2026-10-26T15:52:00-03:00", "prodrest_page_updated_at": "2026-10-20T18:10:00-03:00", "nt009_xsd_published": false},
+  "evidence_reconstruction": "Inviavel: geradores dependem de outras pastas ausentes e escrevem em resources/; nao executados.",
+  "limits": ["0/8 grupos encerrados", "Regressao integral nao executada", "Sem commit/push"]
+}

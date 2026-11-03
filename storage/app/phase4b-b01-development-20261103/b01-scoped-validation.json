@@ -1,0 +1,96 @@
+{
+  "task": "B01",
+  "agent": "B",
+  "recorded_at": "2026-11-03T12:40:00-03:00",
+  "status": "B01_ANEXOVIII_1_02_00_REFERENCE_SCOPED_VALIDATED_NOT_ACTIVATED",
+  "base": {
+    "remote": "https://github.com/fiorbeltda/motorfiscal.git",
+    "branch": "codex/fiscal-engine-bootstrap",
+    "sha": "87d22e70787b128a97e5aed4b175a39e619798af",
+    "checkout": "E:/dev/motorfiscal-agente-b",
+    "initial_status_clean": true
+  },
+  "requirements": ["4B.6.1", "4B.6.5", "4B.6.8", "4B.8.4"],
+  "formal_completion_approved": false,
+  "runtime": {
+    "php": "8.5.12 NTS x64 Windows (windows.php.net sha256 2a36a2edcb7a5b9252f638fd5e4cf84d7f6e066092654220dc0b63e5cf4e9723)",
+    "wrapper": "E:/tools/php85.cmd (OPENSSL_CONF por processo)",
+    "container": false,
+    "container_unavailable_reason": "WSL2/Docker indisponivel: VirtualizationFirmwareEnabled=False (VT-x desabilitado na BIOS)"
+  },
+  "official_sources": [
+    {
+      "page": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc",
+      "publisher": "Portal Nacional da NFS-e (gov.br/nfse)",
+      "page_updated_at": "2026-10-26T15:52:00-03:00",
+      "consulted_on": "2026-11-03",
+      "file": "anexo_viii-tabela-correlacao-v01-02-00-20261026.xlsx",
+      "listed_version": "1.02.00",
+      "listed_date": "2026-10-26",
+      "bytes": 151656,
+      "sha256": "12cc80bc92687856b47e961b98cdbaa3f8cae568c099b3ef71994e73482ac7d0",
+      "retrieved_at": "2026-11-03T12:04:30Z",
+      "authority": "PROVISIONAL_NO_DECISION_AUTHORITY"
+    },
+    {
+      "file": "anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+      "sha256": "a21be0e86b7ae2c0c1cfec4ef0d398b96520345790b50f79e4c5b7d1dfe32fb3",
+      "revalidation": "BYTES_EQUAL_PRESERVED_COPY"
+    },
+    {
+      "file": "anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-00-00.xlsx",
+      "sha256": "86c3e30fef9186472a4b4eabae79d471aaa62699497d200f478c7fa95ef326bf",
+      "note": "Baixado apenas para registrar a ambiguidade titulo/arquivo; nao preservado no repositorio."
+    }
+  ],
+  "observations": {
+    "xsd_packages_listed": ["nfse-esquemas_xsd-rtc-v1-00-20251210.zip"],
+    "nt009_fields_in_official_xsd": "NAO_PUBLICADO_EM_2026-11-03",
+    "new_documents_since_checkpoint143_not_yet_materialized": ["Anexo VIII 1.02.00 (materializado neste corte)", "NT 010 v1.00 (NFS-e Via/Manifestacao do Adquirente; nao analisada neste corte)"]
+  },
+  "files_created": {
+    "resources/fiscal/sources/official/anexo_viii-tabela-correlacao-v01-02-00-20261026.xlsx": "12cc80bc92687856b47e961b98cdbaa3f8cae568c099b3ef71994e73482ac7d0",
+    "resources/fiscal/catalogs/rtc-correlation-anexoviii-v1.02.00-b01.json": "3835aa14055984229f7f07ef84c2dc1963a4827e9a6a9b2cde0bef5501cca3d3",
+    "scripts/materialize_phase4b_b01_anexoviii_correlation.py": "43f30c94b9ee3c93deb011b075921fe5ca5fcc0157f1b55b1f1d7456d7ebf37d",
+    "app/Modules/Fiscal/ConsumptionReform/AnexoViiiCorrelationReferenceB01.php": "c18f06ef00e90052ea0db6c2907de8eecb2883a03d56c5baddc9449148873233",
+    "tests/Fiscal/Unit/AnexoViiiCorrelationReferenceB01Test.php": "8146884b55c799ad07758a4abaac4cdc5ba15f7066540ad6c4b699baea1f4bba",
+    "docs/fiscal/phase4b-b01-anexoviii-correlation.md": "see git diff"
+  },
+  "files_modified": [],
+  "catalog_canonical_hash": "839607a105cd8cf22c85c9f090a1d7aacf3591c908a3e4b8d24dad88f63e4a48",
+  "counts": {
+    "complete_correlations": 251,
+    "incomplete_nonempty_rows_not_filled": 1358,
+    "previous_complete_correlations": 200,
+    "previous_incomplete_nonempty_rows_not_filled": 1321,
+    "added": 72,
+    "removed": 21,
+    "unchanged": 179
+  },
+  "tests": {
+    "command": "E:\\tools\\php85.cmd vendor\\bin\\pest tests/Fiscal/Unit/AnexoViiiCorrelationReferenceB01Test.php",
+    "tests": 18,
+    "assertions": 87,
+    "result": "PASS",
+    "independent_oracle": "PHP ZipArchive/SimpleXML reader of the official XLSX (no openpyxl)",
+    "pint": "passed (2 files)",
+    "phpstan": "no errors (new class)",
+    "generator_deterministic": true,
+    "is_full_regression": false
+  },
+  "b0_environment_baseline": {
+    "directed_b_files": 60,
+    "passed": 5499,
+    "failed": 62,
+    "assertions": 82223,
+    "failures_attributed_to_code": 0,
+    "failure_causes": {"missing_untracked_storage_evidence(CatalogReference101Test)": 60, "openssl_conf_not_set(fixed_by_wrapper)": 2},
+    "log": "E:/dev/motorfiscal-agente-b-evidence/b0-baseline-20261103/pest.log"
+  },
+  "limits": [
+    "Correlacao oficial provisoria; decision_authority=false em todas as linhas.",
+    "Catalogo nao ligado a bundle; catalogo ativo 141 continua em 1.01.00.",
+    "Nenhum grupo encerrado; Fase 4B em andamento; producao nao liberada.",
+    "Sem commit/push."
+  ]
+}

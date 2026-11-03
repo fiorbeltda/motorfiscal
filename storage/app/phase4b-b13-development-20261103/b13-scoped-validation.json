@@ -1,0 +1,16 @@
+{
+  "task": "B13",
+  "agent": "B",
+  "recorded_at": "2026-11-03T19:30:00-03:00",
+  "status": "B13_ACQUIRER_CREDIT_PROHIBITION_CATALOGUE_SOURCE_BOUND_VALIDATED_NOT_INTEGRATED",
+  "requirements": ["4B.5.7"],
+  "formal_completion_approved": false,
+  "official_source": {"file": "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm", "sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c", "excerpts_verified": 16, "superseded_redaction_detected_and_replaced": "art. 238 paragrafo unico (LC 227/2026: §3º do art. 57)"},
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/AcquirerCreditProhibitionCatalogB13.php": "1cec61ded2c7da4e16a583d571bc4672e2e8835b070d14f7b011cbc52504c1e2",
+    "tests/Fiscal/Unit/AcquirerCreditProhibitionCatalogB13Test.php": "e8860ff9ef207ee029a9a703366326ecc512d98a39dbef32334261460c44ffbd",
+    "docs/fiscal/phase4b-b13-acquirer-credit-prohibitions.md": "see diff"
+  },
+  "tests": {"command": "E:\\tools\\php85.cmd -d memory_limit=256M vendor\\bin\\pest tests/Fiscal/Unit/AcquirerCreditProhibitionCatalogB13Test.php", "tests": 31, "assertions": 136, "result": "PASS", "phpstan": "no errors", "pint": "passed", "is_full_regression": false},
+  "limits": ["Nao integrado ao fluxo do motor", "Paragrafos do art.180 e arts.485-487 nao modelados", "Nao concede credito", "0/8 grupos encerrados", "Sem commit/push"]
+}

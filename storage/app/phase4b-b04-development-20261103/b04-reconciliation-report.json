@@ -1,0 +1,2645 @@
+{
+    "status": "REPORTED",
+    "reason": "B04_REVIEW_REPORT_ONLY",
+    "report": {
+        "version": "engine-rule-correlation-reconciliation-b04",
+        "rules": 99,
+        "editions": [
+            "1.01.00",
+            "1.02.00"
+        ],
+        "totals": {
+            "1.01.00": {
+                "CONVERGENT_LITERAL_ROW_EXISTS": 4,
+                "DIVERGENT_NO_LITERAL_MATCH": 26,
+                "NOT_COMPARABLE_NO_NBS_PREFIX": 12,
+                "NO_OFFICIAL_ROW_IN_PREFIX": 57
+            },
+            "1.02.00": {
+                "CONVERGENT_LITERAL_ROW_EXISTS": 4,
+                "DIVERGENT_NO_LITERAL_MATCH": 26,
+                "NOT_COMPARABLE_NO_NBS_PREFIX": 12,
+                "NO_OFFICIAL_ROW_IN_PREFIX": 57
+            }
+        },
+        "items": [
+            {
+                "rule": "RTC.CLASSIFICATION.ACCOUNTANT.DIGITAL.REDUCED_30-1",
+                "cclasstrib": "200052",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ACCOUNTANT.DIGITAL.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ACCOUNTANT.REMOTE.REDUCED_30-1",
+                "cclasstrib": "200052",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ACCOUNTANT.REMOTE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040101.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.21.00",
+                    "1.2301.22.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040101.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.21.00",
+                    "1.2301.22.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040101.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.21.00",
+                    "1.2301.22.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040101.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.21.00",
+                    "1.2301.22.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040301.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.1"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040301.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.1"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040301.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.1"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040301.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.1"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040302.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.93.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040302.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.93.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040302.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.93.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040302.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.93.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040401.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040401.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040401.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040401.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040601.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.91.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040601.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.91.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040601.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.91.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040601.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.91.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040701.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040701.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040701.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040701.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040802.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.92.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040802.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.92.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040802.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.92.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040802.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.92.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040803.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040803.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040803.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.040803.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041001.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041001.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041001.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041001.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.99.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041201.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.23.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041201.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.23.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041201.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.23.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041201.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.23.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041601.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.98.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041601.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.98.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041601.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.98.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041601.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.98.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041701.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041701.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041701.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041701.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041704.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041704.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041704.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041704.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2302"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041901.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.95.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041901.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.95.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041901.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.95.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.041901.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.95.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.042101.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.96.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.042101.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.96.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.042101.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.96.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.042101.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2301.96.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200028",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.COOPERATIVE.ZERO",
+                "cclasstrib": "200020",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.IMMUNITY.410006",
+                "cclasstrib": "410006",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.IMMUNITY.410007",
+                "cclasstrib": "410007",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200028",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.COOPERATIVE.ZERO",
+                "cclasstrib": "200020",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.IMMUNITY.410006",
+                "cclasstrib": "410006",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.IMMUNITY.410007",
+                "cclasstrib": "410007",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2201"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080102.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200028",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2204"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080102.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2204"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080102.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200028",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2204"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080102.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2204"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080201.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200028",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2202",
+                    "1.2203",
+                    "1.2205.13.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 1,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080201.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2202",
+                    "1.2203",
+                    "1.2205.13.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080201.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200028",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2202",
+                    "1.2203",
+                    "1.2205.13.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "CONVERGENT_LITERAL_ROW_EXISTS",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 1,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.080201.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2202",
+                    "1.2203",
+                    "1.2205.13.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 1,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250101.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250101.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250101.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250101.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250202.ACQUIRER_DOMICILE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250202.ACQUIRER_DOMICILE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 1
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 1
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250202.PERSON_PRESENCE.REDUCED_60-1",
+                "cclasstrib": "200029",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.ANNEX.250202.PERSON_PRESENCE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "030101",
+                    "030102"
+                ],
+                "nbs_prefixes": [
+                    "1.2603.00.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "DIVERGENT_NO_LITERAL_MATCH",
+                        "rows_in_prefix": 3,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 2,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.IMPORTED_SAAS.RECIPIENT_DESTINATION.SANDBOX-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100302"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.IMPORTED_SAAS.RESIDUAL.SANDBOX-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.IMPORTED_STRATEGIC_CONSULTANCY141.STANDARD",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [
+                    "1.1401.11.00"
+                ],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NO_OFFICIAL_ROW_IN_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.LAWYER.DIGITAL.REDUCED_30-1",
+                "cclasstrib": "200052",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.LAWYER.DIGITAL.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.LAWYER.REMOTE.REDUCED_30-1",
+                "cclasstrib": "200052",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.LAWYER.REMOTE.STANDARD-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.SAAS.RECIPIENT_DESTINATION.SANDBOX-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100302"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            },
+            {
+                "rule": "RTC.CLASSIFICATION.SAAS.RESIDUAL.SANDBOX-1",
+                "cclasstrib": "000001",
+                "cindops": [
+                    "100301"
+                ],
+                "nbs_prefixes": [],
+                "editions": {
+                    "1.01.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    },
+                    "1.02.00": {
+                        "status": "NOT_COMPARABLE_NO_NBS_PREFIX",
+                        "rows_in_prefix": 0,
+                        "matching_rows": 0,
+                        "cclasstrib_only_rows": 0,
+                        "cindop_only_rows": 0
+                    }
+                }
+            }
+        ]
+    },
+    "report_hash": "293055a25b637effffb3a74ef06127537a1d3b2b6ef8e36c4f02860ea67fbe45",
+    "decision_authority": false,
+    "rules_changed": false,
+    "correlations_changed": false,
+    "rule_confirmed_by_convergence": false,
+    "rule_invalidated_by_divergence": false,
+    "production_ready": false,
+    "inputs": {
+        "active_catalog": "resources/fiscal/catalogs/rtc-codes-2026.10.27-141-draft1.json",
+        "active_catalog_sha256": "de143137f207ffbd904eb8831f89018533e20df9fa75f662311dea8ef3f021b2",
+        "b01_catalog_sha256": "3835aa14055984229f7f07ef84c2dc1963a4827e9a6a9b2cde0bef5501cca3d3"
+    }
+}

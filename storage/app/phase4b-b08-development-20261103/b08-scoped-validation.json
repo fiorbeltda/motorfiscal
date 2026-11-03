@@ -1,0 +1,19 @@
+{
+  "task": "B08",
+  "agent": "B",
+  "recorded_at": "2026-11-03T16:00:00-03:00",
+  "status": "B08_ACCEPTANCE_MATRIX_B_36_ITEMS_RECORDED_NONE_APPROVED",
+  "requirements": ["4B.8.1"],
+  "formal_completion_approved": false,
+  "source_matrix": {"path": "storage/app/phase4b-b06-development-20261103/requirements80-current-matrix.json", "sha256": "01b8f515dfe237f5910e2f17ed9db44612e5084d697601845b55cc2f06c6b8c1"},
+  "files_created": {
+    "scripts/build_phase4b_b08_acceptance_matrix.py": "6f5f049c553772f7c9684c9070dc449dbf3088bba0e57f5f4d936970a54324fe",
+    "storage/app/phase4b-b08-development-20261103/b08-acceptance-matrix-b.json": "e363804b6336a6aaae02cd4302abcb2010a09bbc3e3ce29442b6f3f9b4f8aef9",
+    "docs/fiscal/phase4b-b08-acceptance-matrix-b.md": "85db857fe210ad3d9b58562be57c55786df0250d2411730133a90a868a8e680f"
+  },
+  "b07_status": {"consolidated": false, "reason": "Validacao completa interrompida pelo sistema por falta de memoria: 337 aprovados, 0 falhas, sem resultado terminal; reexecucao aguarda autorizacao do usuario."},
+  "items": 36,
+  "approved_items": 0,
+  "tests": {"note": "corte documental sem execucao PHP (memoria baixa)", "is_full_regression": false},
+  "limits": ["Nenhum item aprovado", "0/8 grupos encerrados", "Sem commit/push"]
+}

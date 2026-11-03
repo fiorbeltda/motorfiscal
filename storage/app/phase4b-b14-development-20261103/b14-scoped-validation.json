@@ -1,0 +1,16 @@
+{
+  "task": "B14",
+  "agent": "B",
+  "recorded_at": "2026-11-03T20:00:00-03:00",
+  "status": "B14_CREDIT_UTILIZATION_PLANNER_LOCAL_VALIDATED_NOT_INTEGRATED",
+  "requirements": ["4B.5.2"],
+  "formal_completion_approved": false,
+  "official_source": {"file": "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm", "sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c", "articles": ["47 §1 I", "53 I-III e §§1-2", "54", "55"]},
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/CreditUtilizationPlannerB14.php": "7397538415f3e73a483049e1512eb17d8ee15c54ac11e31839b23227ba774867",
+    "tests/Fiscal/Unit/CreditUtilizationPlannerB14Test.php": "ffdfbe517ae598eb209e48c25b030c7048cc96afb16ae361247986c2d1604a5d"
+  },
+  "engineering_interpretations": ["Consumo do credito mais antigo primeiro (lei nao ordena creditos)"],
+  "tests": {"tests": 15, "assertions": 35, "result": "PASS", "phpstan": "no errors", "pint": "passed", "is_full_regression": false},
+  "limits": ["Plano local; nao extingue debitos nem comprova compensacao oficial", "Nao integrado ao fluxo", "0/8 grupos encerrados", "Sem commit/push"]
+}

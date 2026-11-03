@@ -1,0 +1,27 @@
+{
+  "task": "B06",
+  "agent": "B",
+  "recorded_at": "2026-11-03T15:15:00-03:00",
+  "status": "B06_RULE_DOCUMENTATION_ANALYSIS_83_RULES_ONE_LEGAL_QUESTION",
+  "requirements": ["4B.6.6", "4B.6.7", "4B.6.9"],
+  "formal_completion_approved": false,
+  "official_sources": {
+    "lc214_planalto": {"url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm", "retrieved_at": "2026-11-03T12:44:32Z", "sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c", "preserved": "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm", "annex_ii_nbs_equal_catalog": true, "annex_iii_nbs_equal_catalog": true},
+    "lc214_camara_consolidated": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+    "cclasstrib": "IT2025.002 v1.70 (bee3e106d24c06257d31105658679e97e2544dcc3ac61467fbe0ca4f78c6e850)",
+    "cindop": "1.03.00 (95f30a44ee94adeea57fb92f3a0337b1e62fdc106f393e73894087889be9e5aa)",
+    "nbs": "v1.01-20260122 (e74b0be8ad204e458932efb1716225a3fb5703a84e5475ce5c4c6789d1c61b1a)"
+  },
+  "files_created": {
+    "scripts/analyze_phase4b_b06_rule_documentation.py": "8e78e80cb1fcc38593a35fb282c55ee78d42362b726705ce5b7730457abee8c8",
+    "storage/app/phase4b-b06-development-20261103/b06-rule-documentation-analysis.json": "71ef597b6239e0f430ae7159199524074238864197a3e925fae3f11fa143704a",
+    "tests/Fiscal/Unit/RuleDocumentationAnalysisB06Test.php": "051cd150726be7ebcb5be77ca3106aa6aba69793e1755483c1d79a1d8deb24ec",
+    "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c",
+    "docs/fiscal/phase4b-b06-rule-documentation-analysis.md": "see diff"
+  },
+  "summary": {"targets": 83, "RESOLVIDA_DOCUMENTALMENTE": 37, "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS": 6, "CONTROVERSA_INTERPRETACAO_JURIDICA": 40},
+  "controversial_questions": [{"id": "Q-B06-1", "rules": 40, "topic": "STANDARD declarado para NBS dos Anexos II/III sem qualificacao negativa", "recommended": "B"}],
+  "analyzer_defect_found_and_fixed": "C5 ignorava legal_basis (regra IMPORTED_STRATEGIC_CONSULTANCY141.STANDARD)",
+  "tests": {"tests": 2, "assertions": 327, "result": "PASS", "generator_deterministic": true, "is_full_regression": false},
+  "limits": ["Nenhuma regra alterada/aprovada/ativada", "Resolucao documental nao e parecer juridico nem ativacao oficial", "0/8 grupos encerrados", "Sem commit/push"]
+}

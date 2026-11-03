@@ -1,0 +1,4079 @@
+{
+  "version": "rule-documentation-analysis-b06",
+  "targets": 83,
+  "summary": {
+    "CONTROVERSA_INTERPRETACAO_JURIDICA": 40,
+    "RESOLVIDA_DOCUMENTALMENTE": 37,
+    "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS": 6
+  },
+  "sources": {
+    "active_catalog": "resources/fiscal/catalogs/rtc-codes-2026.10.27-141-draft1.json",
+    "active_catalog_sha256": "de143137f207ffbd904eb8831f89018533e20df9fa75f662311dea8ef3f021b2",
+    "cclasstrib": "IT2025.002 v1.70",
+    "cindop": "1.03.00",
+    "nbs": "v1.01-20260122",
+    "annex_source_id": "LC214-CONSOLIDATED-CAMARA-OBSERVED-20261001",
+    "annex_source_hash": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+    "b01_sha256": "3835aa14055984229f7f07ef84c2dc1963a4827e9a6a9b2cde0bef5501cca3d3",
+    "b04_sha256": "6e7bc4b6194e4f183a462198ddc73d924a81d93bf8804f095bbb4c3c9a59c2ad"
+  },
+  "decision_authority": false,
+  "rules_changed": false,
+  "results": [
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040101.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "040101",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.21.00",
+        "1.2301.22.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "04.01",
+          "rows_same_item": [
+            [
+              "1.2301.22.00",
+              "030101",
+              "200029"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "04.01",
+          "rows_same_item": [
+            [
+              "1.2301.22.00",
+              "030101",
+              "200029"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040101.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "040101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.21.00",
+        "1.2301.22.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "04.01",
+          "rows_same_item": [
+            [
+              "1.2301.22.00",
+              "030101",
+              "200029"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "04.01",
+          "rows_same_item": [
+            [
+              "1.2301.22.00",
+              "030101",
+              "200029"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040101.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "040101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.21.00",
+        "1.2301.22.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "04.01",
+          "rows_same_item": [
+            [
+              "1.2301.22.00",
+              "030101",
+              "200029"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "04.01",
+          "rows_same_item": [
+            [
+              "1.2301.22.00",
+              "030101",
+              "200029"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040301.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040301",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.1"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_MAIS_AMPLO_QUE_O_ITEM;QUALIFICADOR_EXIGE_NBS_DO_ITEM",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040301.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040301",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.1"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040301.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040301",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.1"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_MAIS_AMPLO_QUE_O_ITEM;QUALIFICADOR_EXIGE_NBS_DO_ITEM",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040301.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040301",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.1"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040302.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040302",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.93.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040302.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040302",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.93.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040302.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040302",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.93.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040302.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040302",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.93.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.03",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040401.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040401",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040401.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040401",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040401.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040401",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040401.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040401",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.04",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040601.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040601",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.91.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040601.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040601",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.91.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040601.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040601",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.91.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040601.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040601",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.91.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.06",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040701.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040701",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040701.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040701",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040701.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040701",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040701.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040701",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.07",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040802.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040802",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.92.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040802.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040802",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.92.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040802.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040802",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.92.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040802.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040802",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.92.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040803.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040803",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040803.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040803",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040803.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040803",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.040803.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "040803",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.08",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041001.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041001",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041001.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041001",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041001.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041001",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041001.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041001",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.99.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.10",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041201.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041201",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.23.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041201.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041201",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.23.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041201.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041201",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.23.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041201.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041201",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.23.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.12",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041601.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041601",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.98.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041601.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041601",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.98.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041601.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041601",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.98.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041601.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041601",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.98.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.16",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041701.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041701",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041701.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041701",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041701.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041701",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041701.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041701",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041704.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041704",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041704.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041704",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041704.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041704",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041704.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041704",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2302"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.17",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041901.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041901",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.95.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041901.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041901",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.95.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041901.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041901",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.95.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.041901.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "041901",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.95.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.19",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.042101.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "042101",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.96.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.042101.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "042101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2301.96.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.042101.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "042101",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.96.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.042101.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "042101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2301.96.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "04.21",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "200028",
+      "cclasstrib_name": "Fornecimento dos serviços de educação (Anexo II)",
+      "cclasstrib_legal_reference": "Art. 129",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_MAIS_AMPLO_QUE_O_ITEM;QUALIFICADOR_EXIGE_NBS_DO_ITEM",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.COOPERATIVE.ZERO",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "200020",
+      "cclasstrib_name": "Operação praticada por sociedades cooperativas optantes por regime específico do IBS e CBS",
+      "cclasstrib_legal_reference": "Art. 271",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art.271 I/II",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "CONDICIONADA_A_FATO_SUBJETIVO:REGIME_ESPECIFICO_COOPERATIVA_ART271"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS",
+      "proposed_treatment": "Manter; exigir prova do fato subjetivo antes do uso (ja exigida pelo qualificador correspondente)."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.IMMUNITY.410006",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "410006",
+      "cclasstrib_name": "Fornecimentos realizados por entidades religiosas e templos de qualquer culto",
+      "cclasstrib_legal_reference": "Art. 9º, II",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art.9 II/III; CTN art.14",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "CONDICIONADA_A_FATO_SUBJETIVO:IMUNIDADE_SUBJETIVA_ART9_II"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS",
+      "proposed_treatment": "Manter; exigir prova do fato subjetivo antes do uso (ja exigida pelo qualificador correspondente)."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.ACQUIRER_DOMICILE.STANDARD-1.IMMUNITY.410007",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "410007",
+      "cclasstrib_name": "Fornecimentos realizados por partidos políticos, entidades sindicais e instituições de educação e de assistência social",
+      "cclasstrib_legal_reference": "Art. 9º, III",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art.9 II/III; CTN art.14",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "CONDICIONADA_A_FATO_SUBJETIVO:IMUNIDADE_SUBJETIVA_ART9_III"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS",
+      "proposed_treatment": "Manter; exigir prova do fato subjetivo antes do uso (ja exigida pelo qualificador correspondente)."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.COOPERATIVE.ZERO",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "200020",
+      "cclasstrib_name": "Operação praticada por sociedades cooperativas optantes por regime específico do IBS e CBS",
+      "cclasstrib_legal_reference": "Art. 271",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art.271 I/II",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "CONDICIONADA_A_FATO_SUBJETIVO:REGIME_ESPECIFICO_COOPERATIVA_ART271"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS",
+      "proposed_treatment": "Manter; exigir prova do fato subjetivo antes do uso (ja exigida pelo qualificador correspondente)."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.IMMUNITY.410006",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "410006",
+      "cclasstrib_name": "Fornecimentos realizados por entidades religiosas e templos de qualquer culto",
+      "cclasstrib_legal_reference": "Art. 9º, II",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art.9 II/III; CTN art.14",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "CONDICIONADA_A_FATO_SUBJETIVO:IMUNIDADE_SUBJETIVA_ART9_II"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS",
+      "proposed_treatment": "Manter; exigir prova do fato subjetivo antes do uso (ja exigida pelo qualificador correspondente)."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080101.PERSON_PRESENCE.STANDARD-1.IMMUNITY.410007",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080101",
+      "cclasstrib": "410007",
+      "cclasstrib_name": "Fornecimentos realizados por partidos políticos, entidades sindicais e instituições de educação e de assistência social",
+      "cclasstrib_legal_reference": "Art. 9º, III",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2201"
+      ],
+      "source_article": "LC214 art.9 II/III; CTN art.14",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "CONDICIONADA_A_FATO_SUBJETIVO:IMUNIDADE_SUBJETIVA_ART9_III"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "VARIANTE_DOCUMENTADA_DO_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [
+            [
+              "1.2201.11.00",
+              "030101",
+              "200028"
+            ]
+          ],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE_CONDICIONADA_A_FATOS",
+      "proposed_treatment": "Manter; exigir prova do fato subjetivo antes do uso (ja exigida pelo qualificador correspondente)."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080102.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080102",
+      "cclasstrib": "200028",
+      "cclasstrib_name": "Fornecimento dos serviços de educação (Anexo II)",
+      "cclasstrib_legal_reference": "Art. 129",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2204"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080102.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080102",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2204"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080102.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080102",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2204"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080201.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080201",
+      "cclasstrib": "200028",
+      "cclasstrib_name": "Fornecimento dos serviços de educação (Anexo II)",
+      "cclasstrib_legal_reference": "Art. 129",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2202",
+        "1.2203",
+        "1.2205.13.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_MAIS_AMPLO_QUE_O_ITEM;QUALIFICADOR_EXIGE_NBS_DO_ITEM",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.02",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.02",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080201.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080201",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2202",
+        "1.2203",
+        "1.2205.13.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.02",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.02",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.080201.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "080201",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2202",
+        "1.2203",
+        "1.2205.13.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.02",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "08.02",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 1
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250101.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250101",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250101.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250101.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250101",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250101.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.01",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250202.ACQUIRER_DOMICILE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250202",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250202.ACQUIRER_DOMICILE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250202",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250202.PERSON_PRESENCE.REDUCED_60-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250202",
+      "cclasstrib": "200029",
+      "cclasstrib_name": "Fornecimento dos serviços de saúde humana (Anexo III)",
+      "cclasstrib_legal_reference": "Art. 130",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": "PREFIXO_DENTRO_DO_ITEM_DO_ANEXO",
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true,
+        "C6_nbs_no_anexo_lc214": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.ANNEX.250202.PERSON_PRESENCE.STANDARD-1",
+      "b04_status_1_02_00": "DIVERGENT_NO_LITERAL_MATCH",
+      "ctribnac": "250202",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "030101",
+        "030102"
+      ],
+      "destination_basis": "PERSON_PRESENCE",
+      "destination_legal_basis": "Art. 11, III (prestacao fisica/fruicao presencial)",
+      "nbs_prefixes": [
+        "1.2603.00.00"
+      ],
+      "source_article": "LC214 art. 11; arts. 129-130",
+      "legal_basis": null,
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [
+        "PADRAO_DECLARADO_PARA_NBS_DE_ANEXO"
+      ],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "25.02",
+          "rows_same_item": [],
+          "rows_other_items": 3,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "CONTROVERSA_INTERPRETACAO_JURIDICA",
+      "proposed_treatment": "Manter pendente de validacao juridica; nao ativar automaticamente."
+    },
+    {
+      "rule": "RTC.CLASSIFICATION.IMPORTED_STRATEGIC_CONSULTANCY141.STANDARD",
+      "b04_status_1_02_00": "NO_OFFICIAL_ROW_IN_PREFIX",
+      "ctribnac": "170101",
+      "cclasstrib": "000001",
+      "cclasstrib_name": "Situações tributadas integralmente pelo IBS e CBS.",
+      "cclasstrib_legal_reference": "",
+      "cindops": [
+        "100301"
+      ],
+      "destination_basis": "ACQUIRER_DOMICILE",
+      "destination_legal_basis": "Art. 11, X, a, 1 (domicilio do adquirente)",
+      "nbs_prefixes": [
+        "1.1401.11.00"
+      ],
+      "source_article": null,
+      "legal_basis": "LC214 consolidated LC227: art11 X a1; art64 paragraphs1 II and5 II-IV b,V. Explicit ordinary onerous strategic consultancy delivered digitally, Brazilian acquirer; no professional reduction inferred.",
+      "annex": null,
+      "checks": {
+        "C1_cclasstrib_oficial": true,
+        "C2_cindop_oficial": true,
+        "C3_base_de_destino_coerente": true,
+        "C4_nbs_existente": true,
+        "C5_fundamento_coerente_com_cclasstrib": true
+      },
+      "flags": [],
+      "correlation_by_item": {
+        "1.01.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "17.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        },
+        "1.02.00": {
+          "status": "SEM_LINHA_OFICIAL_PARA_O_ITEM",
+          "lc116_item": "17.01",
+          "rows_same_item": [],
+          "rows_other_items": 0,
+          "rows_without_item_literal": 0
+        }
+      },
+      "classification": "RESOLVIDA_DOCUMENTALMENTE",
+      "proposed_treatment": "Manter como ENGINE_DECISION_RULE SANDBOX com fundamentos registrados; sem ativacao oficial presumida."
+    }
+  ]
+}

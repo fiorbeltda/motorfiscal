@@ -1,0 +1,27 @@
+{
+  "task": "B03",
+  "agent": "B",
+  "recorded_at": "2026-11-03T13:55:00-03:00",
+  "status": "B03_OFFICIAL_SOURCES_REVALIDATED_NT010_QUALIFIED_NOT_APPLICABLE_TO_CURRENT_PROFILES",
+  "requirements": ["4B.7.2", "4B.7.4", "4B.6.2"],
+  "formal_completion_approved": false,
+  "page": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc",
+  "page_updated_at": "2026-10-26T15:52:00-03:00",
+  "consulted_on": "2026-11-03",
+  "revalidated_equal": {
+    "anexovi-leiautesrn_rtc_ibscbs-v1-04-01-nt009.xlsx": "103a150dd6f56ec8edcaa3a453b59a1b0e096d7cd5025d7bd06a387f141ddf39",
+    "nota-tecnica-009-se-cgnfs-e-v-1-01.pdf": "cc86c9402e317e84eb3a9f48bbd5e0b8e3dcd84f2645700190c84d45bf1ea58e",
+    "anexovii-indop_ibscbs_v1-03-00-nt009.xlsx": "95f30a44ee94adeea57fb92f3a0337b1e62fdc106f393e73894087889be9e5aa"
+  },
+  "not_obtained": {
+    "nfse-esquemas_xsd-rtc-v1-00-20251210.zip": {"response": "HTML 200 then HEAD 403 Forbidden", "html_sha256": "9cda61fd261753e78296efc09b377cf06f0286e980ddc133330d220561721a6e", "change_claimed": false}
+  },
+  "new_source_preserved": {
+    "resources/fiscal/sources/official/nt-010-se-cgnfse-leiaute-nfse-via-v-1.00.pdf": {"sha256": "18cd169f76f7f94975f031d7d14d39baa67c42714d2f031c2b62d791589af104", "bytes": 425218, "document_date": "2026-09-11", "url": "https://www.gov.br/nfse/pt-br/nfs-e-via/documentacao-tecnica/notas-tecnicas/nt-010-se-cgnfse-leiaute-nfse-via-v-1.00.pdf"}
+  },
+  "nt010_applicability": "NFS-e Via only; motor does not project NFS-e Via nor ADN events; no impact on current DPS profiles",
+  "nt010_internal_inconsistencies": ["CNPJCPF tamanho '11 ou 14' vs '11-14'", "cMotivo tamanho 1 com dominio 99"],
+  "code_changed": false,
+  "tests": {"tests": 0, "assertions": 0, "note": "corte de fontes; sem codigo"},
+  "evidence_dir": "E:/dev/motorfiscal-agente-b-evidence/b03-nt010-20261103"
+}

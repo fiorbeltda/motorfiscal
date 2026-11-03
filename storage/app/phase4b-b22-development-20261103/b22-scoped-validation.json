@@ -1,0 +1,19 @@
+{
+  "task": "B22",
+  "agent": "B",
+  "recorded_at": "2026-11-03T14:55:00-03:00",
+  "status": "B22_PRESUMED_CREDIT_CATALOGUE_COMPLETE_INDEPENDENT_WORK_EXHAUSTED",
+  "requirements": ["4B.5.1"],
+  "formal_completion_approved": false,
+  "change": "B17 estendido com arts.309/311, 312, 380, 381, 450, 462 e 467; todas as hipoteses de credito presumido da LC214 catalogadas com trechos vigentes.",
+  "files_modified_in_round": {
+    "app/Modules/Fiscal/ConsumptionReform/PresumedCreditCatalogB17.php": "4ae9a70688ee2dc5dea5e95c208957fbf7760a92120936ce6b359227f6ea27c5",
+    "tests/Fiscal/Unit/PresumedCreditCatalogB17Test.php": "777a9b7261e04550d0e56e8f0532185b79781bf1ebbf69e27a915b1c0c11e853"
+  },
+  "engineering_interpretations": ["Art.311 §3: reducao de 20% do percentual inicial por ano (2029=80%,2030=60%,2031=40%,2032=20%)"],
+  "model_step_matrix": {"path": "storage/app/phase4b-b22-development-20261103/model-step/requirements80-current-matrix.json", "sha256": "78903d7ea43bcca3b5c13829b1d61fdce639464d2142ee74f493c47991fed4ff"},
+  "b_counts": {"integral": 5, "sandbox_external_dependency": 6, "partial_b_possible": 0, "partial_depends_on_a": 18, "depends_on_official_publication": 4, "depends_on_evidence_or_environment": 3},
+  "tests": {"b17": {"tests": 44, "assertions": 141}, "with_b18": {"tests": 47, "assertions": 157}, "result": "PASS", "phpstan": "no errors", "pint": "passed", "is_full_regression": false},
+  "declaration": "DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES",
+  "limits": ["0/8 grupos encerrados", "Fase 4B nao concluida", "Sem commit/push"]
+}

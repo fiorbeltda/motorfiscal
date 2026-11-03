@@ -1,0 +1,23 @@
+{
+  "task": "B04",
+  "agent": "B",
+  "recorded_at": "2026-11-03T14:30:00-03:00",
+  "status": "B04_ENGINE_RULE_CORRELATION_REVIEW_REPORT_VALIDATED_NO_AUTHORITY_CHANGE",
+  "requirements": ["4B.6.6", "4B.6.7", "4B.6.9"],
+  "formal_completion_approved": false,
+  "inputs": {
+    "active_catalog": "resources/fiscal/catalogs/rtc-codes-2026.10.27-141-draft1.json",
+    "b01_catalog_sha256": "3835aa14055984229f7f07ef84c2dc1963a4827e9a6a9b2cde0bef5501cca3d3"
+  },
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/EngineRuleCorrelationReconcilerB04.php": "0c1c101220aa161c4a2655e27ac8387967e91a1f3dd27ab1b6043fc33884b377",
+    "tests/Fiscal/Unit/EngineRuleCorrelationReconcilerB04Test.php": "35376a5faee274438b150d9c9abf68b01b532ed320d4ef0b6b3cdd32913a9833",
+    "scripts/report_phase4b_b04_engine_rule_correlation.php": "4ec2ac5950b10d801f9330b3fb66d79e9ad7b03580faa9c1d4bf61df59c416e4",
+    "storage/app/phase4b-b04-development-20261103/b04-reconciliation-report.json": "6e7bc4b6194e4f183a462198ddc73d924a81d93bf8804f095bbb4c3c9a59c2ad",
+    "docs/fiscal/phase4b-b04-engine-rule-correlation.md": "see diff"
+  },
+  "report_hash": "293055a25b637effffb3a74ef06127537a1d3b2b6ef8e36c4f02860ea67fbe45",
+  "totals_both_editions": {"CONVERGENT_LITERAL_ROW_EXISTS": 4, "DIVERGENT_NO_LITERAL_MATCH": 26, "NO_OFFICIAL_ROW_IN_PREFIX": 57, "NOT_COMPARABLE_NO_NBS_PREFIX": 12},
+  "tests": {"b04_tests": 7, "combined_b01_b02_b04": {"tests": 37, "assertions": 53910, "result": "PASS"}, "independent_oracle": "python oracle_b04.py: 198 pairs MATCH", "pint": "passed", "phpstan": "no errors", "is_full_regression": false},
+  "limits": ["Relatorio de revisao sem autoridade", "Nenhuma regra/correlacao alterada", "0/8 grupos encerrados", "Sem commit/push"]
+}

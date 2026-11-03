@@ -1,0 +1,631 @@
+{
+  "version": "acceptance-matrix-b-b08",
+  "source_matrix": "storage/app/phase4b-b06-development-20261103/requirements80-current-matrix.json",
+  "source_matrix_sha256": "01b8f515dfe237f5910e2f17ed9db44612e5084d697601845b55cc2f06c6b8c1",
+  "items": [
+    {
+      "id": "4B.5.1",
+      "requirement": "direito a crédito",
+      "acceptance_criterion": "Direito a credito decidido por perfil (regular, Simples, uso pessoal, importacao, presumidos/especificos) com documento vinculado e fundamento legal por perfil; positivos e negativos por familia.",
+      "historical_coverage": "ALLOWED with linked document,regular regime and input treatment;personal-use denial.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Complete material eligibility,presumed/special credits and remaining profiles;asserted document validity is not authentication.",
+      "primary_dependency": "FONTE_E_IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Pesquisar fonte oficial por perfil e implementar em cortes pequenos.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.2",
+      "requirement": "apropriação",
+      "acceptance_criterion": "Apropriacao ponta a ponta: elegibilidade -> registro -> consumo do credito no periodo, com proveniencia e condicoes do art.47/48 dependentes de implantacao separadas.",
+      "historical_coverage": "Operation credit differs from monthly prequalified ledger and appropriation fields.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "End-to-end appropriation and material provenance,art48 deployment-dependent conditions and complete lifecycle remain unproved.",
+      "primary_dependency": "FONTE_OFICIAL_IMPLANTACAO",
+      "external_dependency_note": null,
+      "next_action": "Separar condicoes dependentes de implantacao oficial; nao presumir.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.3",
+      "requirement": "condicionantes",
+      "acceptance_criterion": "Condicionantes (documento valido, extincao do debito anterior, tratamento do insumo) com causa explicita por resultado e perguntas de correcao.",
+      "historical_coverage": "Conditional status for invalid document/unextinguished debt;explicit missing evidence refusals.",
+      "evidence_packages": [
+        "B02"
+      ],
+      "b_cuts_20261103": [
+        "B02"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "Concluir condicionantes de elegibilidade,extinção e exceções por perfil. Tipos aninhados,documentos em branco e perguntas de correção foram tratados na122.",
+      "primary_dependency": "INTEGRACAO_A_B02",
+      "external_dependency_note": null,
+      "next_action": "Aguardar patch do A (B02) e validar.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.4",
+      "requirement": "estorno",
+      "acceptance_criterion": "Estorno com evento causal/documental, limite ao disponivel e ciclo (registro, reversao) por contexto exigido.",
+      "historical_coverage": "Reversal arithmetic and negative/excess guards observed in ordinary/import routes.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Concluir evento causal/documental e ciclo de estorno nos contextos exigidos. Tipos,evidência e identidade de linha já têm guarda estrutural e perguntas.",
+      "primary_dependency": "IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Candidato a proximo corte B independente.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.5",
+      "requirement": "glosa",
+      "acceptance_criterion": "Glosa com evidencia, ciclo material e integracao a decisao/memoria; distinta de estorno.",
+      "historical_coverage": "DISALLOWANCE arithmetic exists;empty evidence still accepted.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Concluir o ciclo material de glosa e sua integração. Evidência vazia e entrada inválida já são recusadas,não se confundindo correção estrutural com encerramento do ciclo.",
+      "primary_dependency": "IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Candidato a proximo corte B independente.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.6",
+      "requirement": "crédito em importação",
+      "acceptance_criterion": "Credito em importacao com documento definitivo, prova do pagamento/extincao e vinculo DI/DUIMP-documento fiscal.",
+      "historical_coverage": "New synthetic119 treatment records reach import ALLOWED,DENIED,CONDITIONAL and document/extinction-link guards.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Definitive import documents,material claimant/payment proofs and full integration;old fixtures without treatment stop earlier.",
+      "primary_dependency": "DADO_E_FONTE_EXTERNA",
+      "external_dependency_note": null,
+      "next_action": "Definir com o usuario as provas de importacao aceitas (DI/DUIMP, pagamento).",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.7",
+      "requirement": "operações sem crédito",
+      "acceptance_criterion": "Operacoes sem credito: todas as exclusoes legais com fonte e testes; NOT_ASSESSED distinto de DENIED.",
+      "historical_coverage": "Personal/nonregular claimants denied;output credit not assessed,not synonymous with denied credit.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "All statutory exclusions/exceptions and specific profiles,with source-bound proof.",
+      "primary_dependency": "FONTE_E_IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Pesquisar fonte oficial por perfil e implementar em cortes pequenos.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.8",
+      "requirement": "benefícios que preservam ou anulam crédito",
+      "acceptance_criterion": "Beneficios que preservam ou anulam credito (imunidade, isencao, aliquota zero, diferimento, suspensao, reducoes) com fonte e livros.",
+      "historical_coverage": "Input immunity/exemption/zero/deferral/suspension separated;output period proportional annulment and zero/reduced/export preservation observed.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Complete benefits and regimes,material books and linkage,not just arithmetic assertions.",
+      "primary_dependency": "FONTE_E_IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Pesquisar fonte oficial por perfil e implementar em cortes pequenos.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.9",
+      "requirement": "ligação entre documento fiscal e crédito",
+      "acceptance_criterion": "Vinculo documento fiscal <-> credito em todos os perfis exigidos, com recusa de documento em branco/divergente.",
+      "historical_coverage": "Treatment,credit and import document links checked;whitespace document with matching rows still ALLOWED.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Concluir vinculação documento/crédito e ciclo completo nos perfis exigidos. Documento em branco já é recusado;qualificação funcional local não exige autenticação remota fora do escopo.",
+      "primary_dependency": "IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Candidato a proximo corte B independente.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.5.10",
+      "requirement": "nunca tratar todo resultado zero como equivalente",
+      "acceptance_criterion": "Todo resultado zero tem causa e semantica distintas em todas as rotas e periodos ativos.",
+      "historical_coverage": "DENIED,CONDITIONAL,NOT_ASSESSED_ON_OUTPUT and asymmetric IBS/CBS statuses remain distinct.",
+      "evidence_packages": [
+        "B02",
+        "B05"
+      ],
+      "b_cuts_20261103": [
+        "B02",
+        "B05"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "Verify semantic invariants across every remaining route and period;current witnesses do not prove total coverage.",
+      "primary_dependency": "INTEGRACAO_A_B02",
+      "external_dependency_note": null,
+      "next_action": "Aguardar patch do A (B02) e validar.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.1",
+      "requirement": "Materializar e versionar:",
+      "acceptance_criterion": "Catalogos materializados e versionados com fonte/hash e vigencia por ambiente oficial qualificada.",
+      "historical_coverage": "Selected catalog materialization/version artifacts and original sources examined independently.",
+      "evidence_packages": [
+        "126",
+        "127",
+        "128",
+        "B01"
+      ],
+      "b_cuts_20261103": [
+        "B01"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "Concluir qualificação oficial por vigência/ambiente e todos os mapeamentos obrigatórios.126–128 materializam a referência local1.03.00 e separam oAnexoC;isso não ativa ambientes oficiais.",
+      "primary_dependency": "FONTE_OFICIAL_VIGENCIA",
+      "external_dependency_note": "Vigencia/ambiente oficial dos catalogos nao comprovados; Anexo VIII segue sem regras de negocio no portal.",
+      "next_action": "Qualificar vigencia/ambiente por fonte oficial antes de ativar.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.2",
+      "requirement": "cIndOp",
+      "acceptance_criterion": "cIndOp com edicoes versionadas, selecao por ambiente e conciliacao com Anexo C.",
+      "historical_coverage": "Installed1.02.00 has all39 literal rows;fresh1.03.00 has40 rows,one new code,two columns and8 shared-cell changes.",
+      "evidence_packages": [
+        "126",
+        "127",
+        "128",
+        "B03"
+      ],
+      "b_cuts_20261103": [
+        "B03"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "Referência localRTC1.03.00 instalada em126–128,com40 linhas e fonte vinculada;122 preserva1.02.00. Restam vigências oficiais,seleção por ambiente,conciliação doAnexoC e classificação aplicável às famílias restantes.",
+      "primary_dependency": "FONTE_OFICIAL_VIGENCIA",
+      "external_dependency_note": "Vigencia/selecao por ambiente oficial do cIndOp nao comprovada por fonte oficial.",
+      "next_action": "Qualificar vigencia/ambiente por fonte oficial antes de ativar.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.3",
+      "requirement": "cClassTrib",
+      "acceptance_criterion": "cClassTrib oficial versionado, com selecao aplicavel por perfil sem autoridade automatica.",
+      "historical_coverage": "173 cClass rows and18 CST rows match preserved official1.70 source;dates,indicators and hashes retained.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Reference artifact delivered;not automatic tax treatment selection or legal approval for every profile.",
+      "primary_dependency": "IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Candidato a proximo corte B independente.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.4",
+      "requirement": "NBS",
+      "acceptance_criterion": "NBS oficial materializada com aplicabilidade temporal e classificacao de negocio por familia.",
+      "historical_coverage": "All1208 literal NBS entries preserved,including101 numeric source keys represented explicitly as strings.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Materialization delivered;complete remaining business classification and temporal applicability independently.",
+      "primary_dependency": "IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Candidato a proximo corte B independente.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.5",
+      "requirement": "correlação oficial quando existir",
+      "acceptance_criterion": "Correlacao oficial preservada por edicao (1.01.00, 1.02.00) sem autoridade decisoria.",
+      "historical_coverage": "All200 complete literal correlations retained;1321 nonempty incomplete rows not filled or inherited.",
+      "evidence_packages": [
+        "B01"
+      ],
+      "b_cuts_20261103": [
+        "B01"
+      ],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Official provisional source is reference only;no automatic tax-decision authority.",
+      "primary_dependency": "NENHUMA_ALEM_DE_VIGENCIA",
+      "external_dependency_note": null,
+      "next_action": "Manter edicoes; vigencia oficial do Anexo VIII nao declarada pelo portal.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.6",
+      "requirement": "regra decisória do motor quando não existir correlação oficial",
+      "acceptance_criterion": "Toda ENGINE_DECISION_RULE com fundamento verificavel; controversias decididas e implementadas.",
+      "historical_coverage": "98 separately versioned ENGINE_DECISION_RULE entries;current122 positive classification names its actual rule.",
+      "evidence_packages": [
+        "B04",
+        "B06"
+      ],
+      "b_cuts_20261103": [
+        "B04",
+        "B06"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "Complete candidate legal/temporal and required-family coverage;98 candidate entries do not prove every mandatory mapping.",
+      "primary_dependency": "INTEGRACAO_A_B07",
+      "external_dependency_note": null,
+      "next_action": "Aguardar implementacao do A (Q-B06-1) e executar os 320 casos B07.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.7",
+      "requirement": "Distinguir obrigatoriamente:",
+      "acceptance_criterion": "Separacao estrutural OFFICIAL_CORRELATION x ENGINE_DECISION_RULE mantida em todas as versoes e mutacoes.",
+      "historical_coverage": "Official correlations and engine decisions are separate structures with distinct categories and authority flags.",
+      "evidence_packages": [
+        "B04",
+        "B06"
+      ],
+      "b_cuts_20261103": [
+        "B04",
+        "B06"
+      ],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Structural distinction delivered;continue enforcing it in future versions and mutations.",
+      "primary_dependency": "NENHUMA",
+      "external_dependency_note": null,
+      "next_action": "Manter invariante nos proximos cortes.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.8",
+      "requirement": "OFFICIAL_CORRELATION",
+      "acceptance_criterion": "Toda correlacao com kind OFFICIAL_CORRELATION e decision_authority=false, em todas as edicoes.",
+      "historical_coverage": "Every literal correlation is OFFICIAL_CORRELATION with decision_authority=false.",
+      "evidence_packages": [
+        "B01"
+      ],
+      "b_cuts_20261103": [
+        "B01"
+      ],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Category delivered;provisional source does not become a business rule.",
+      "primary_dependency": "NENHUMA",
+      "external_dependency_note": null,
+      "next_action": "Manter invariante nos proximos cortes.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.9",
+      "requirement": "ENGINE_DECISION_RULE",
+      "acceptance_criterion": "Toda regra do motor com kind ENGINE_DECISION_RULE e validacao por perfil.",
+      "historical_coverage": "All98 rules are ENGINE_DECISION_RULE;fresh122 native classification records that source kind.",
+      "evidence_packages": [
+        "B04",
+        "B06"
+      ],
+      "b_cuts_20261103": [
+        "B04",
+        "B06"
+      ],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Category delivered;candidate rules still need scoped validation for unfinished profiles.",
+      "primary_dependency": "INTEGRACAO_A_B07",
+      "external_dependency_note": null,
+      "next_action": "Aguardar implementacao do A (Q-B06-1) e executar os 320 casos B07.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.6.10",
+      "requirement": "A Pesquisa 34 não contém resposta extensa. Obtenha o artefato oficial atual do cClassTrib, preserve o arquivo localmente e registre hash, versão e vigência. Não invente o catálogo",
+      "acceptance_criterion": "Artefato oficial atual do cClassTrib preservado com hash, versao e vigencia; revalidacao periodica.",
+      "historical_coverage": "Official current index and XLSX recaptured21Oct;1.70 bytes match preserved source,hash/version/publication and per-row validity retained.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Source acquisition/version/validity recording delivered;not remote deployment or universal legal applicability.",
+      "primary_dependency": "REVALIDACAO_PERIODICA",
+      "external_dependency_note": null,
+      "next_action": "Revalidar bytes no portal a cada corte.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.7.1",
+      "requirement": "Expandir a projeção da DPS/NFS-e com os campos IBS/CBS, sem assinar ou transmitir",
+      "acceptance_criterion": "Projecao DPS/NFS-e com campos IBS/CBS para todos os perfis exigidos, valida no XSD oficial vigente, sem assinar/transmitir.",
+      "historical_coverage": "Three current122 integrated routes produced six deterministic,unsigned XSD-valid XMLs and three production refusals;five issuer RTC fields separated from national enrichment.",
+      "evidence_packages": [
+        "126",
+        "127",
+        "128",
+        "130",
+        "131-draft2",
+        "132",
+        "133",
+        "134",
+        "135-pair",
+        "136-own-federal",
+        "136-full",
+        "137-full",
+        "139-producer",
+        "139-pair",
+        "140-iss-currency",
+        "141-import-monetary",
+        "142-import-nt009-fields",
+        "143-complete-local-import-dps-profile"
+      ],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "143 montaDPS local completa do perfil de importacao141/142 com identidade/partes/endereco,camposNT009 e valores declarados reconciliados. XSD oficial observado rejeita estruturaNT009 eRN230 E9996 rejeita emitente tomador,apesar da exigenciaRN231 E0027. Concluir compatibilidade/aplicabilidade,demais perfis/qualificacoes e requisitos originais;sem encerramento formal ou producao.",
+      "primary_dependency": "XSD_OFICIAL_NT009_NAO_PUBLICADO",
+      "external_dependency_note": "XSD oficial com campos NT009 nao publicado na pagina RTC em 2026-11-03 (unico pacote: nfse-esquemas_xsd-rtc-v1-00-20251210.zip).",
+      "next_action": "Monitorar publicacao do XSD oficial com campos NT009; nao adaptar schema.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.7.2",
+      "requirement": "Usar a documentação técnica oficial e o manual localizado em:",
+      "acceptance_criterion": "Uso da documentacao tecnica oficial vigente, com revalidacao de bytes das fontes.",
+      "historical_coverage": "Exact municipal manual,official versioned source archives and source-bound restricted schema selection inspected;current122 local CLI results captured.",
+      "evidence_packages": [
+        "143-complete-local-import-dps-profile",
+        "B03"
+      ],
+      "b_cuts_20261103": [
+        "B03"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "143 montaDPS local completa do perfil de importacao141/142 com identidade/partes/endereco,camposNT009 e valores declarados reconciliados. XSD oficial observado rejeita estruturaNT009 eRN230 E9996 rejeita emitente tomador,apesar da exigenciaRN231 E0027. Concluir compatibilidade/aplicabilidade,demais perfis/qualificacoes e requisitos originais;sem encerramento formal ou producao.",
+      "primary_dependency": "REVALIDACAO_PERIODICA",
+      "external_dependency_note": null,
+      "next_action": "Revalidar bytes no portal a cada corte.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.7.3",
+      "requirement": "K:\\GERAL\\TI\\Projeto - SAAS\\Motor Fiscal\\Pesquisas Definitivas\\Manual Municípios Emissor Público API - Sistema Nacional NFS-e v1.2 out21025.pdf",
+      "acceptance_criterion": "Manual municipal consultado e preservado (SHA-256).",
+      "historical_coverage": "Original K: manual equals preserved official copy by SHA256;all six pages read and visually inspected,including internal1.0/17-03-2025 versus filename1.2.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Source consultation fulfilled;this does not satisfy the separate complete DPS/NFSe implementation requirement.",
+      "primary_dependency": "NENHUMA",
+      "external_dependency_note": null,
+      "next_action": "Manter invariante nos proximos cortes.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.7.4",
+      "requirement": "Toda mudança de schema deve ser versionada",
+      "acceptance_criterion": "Toda mudanca de schema versionada com hash e fonte; schema oficial nunca adulterado.",
+      "historical_coverage": "All106 current RTC catalog schema declarations bind explicit versions and hashes;three distinct source identities,unique roots and closed includes/imports preserved.",
+      "evidence_packages": [
+        "126",
+        "127",
+        "128",
+        "143-complete-local-import-dps-profile",
+        "B03",
+        "B05"
+      ],
+      "b_cuts_20261103": [
+        "B03",
+        "B05"
+      ],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "143 montaDPS local completa do perfil de importacao141/142 com identidade/partes/endereco,camposNT009 e valores declarados reconciliados. XSD oficial observado rejeita estruturaNT009 eRN230 E9996 rejeita emitente tomador,apesar da exigenciaRN231 E0027. Concluir compatibilidade/aplicabilidade,demais perfis/qualificacoes e requisitos originais;sem encerramento formal ou producao.",
+      "primary_dependency": "XSD_OFICIAL_NT009_NAO_PUBLICADO",
+      "external_dependency_note": "XSD oficial com campos NT009 nao publicado em2026-11-03;ZIP XSD do portal nao obtido por download automatizado (HTML/403).",
+      "next_action": "Monitorar publicacao do XSD oficial com campos NT009; nao adaptar schema.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.1",
+      "requirement": "A Fase 4B deve produzir:",
+      "acceptance_criterion": "Todos os requisitos funcionais da Fase 4B com aceite individual comprovado.",
+      "historical_coverage": "All12 acceptance items examined individually;aggregate completion remains unproven.",
+      "evidence_packages": [
+        "B05"
+      ],
+      "b_cuts_20261103": [
+        "B05"
+      ],
+      "classification": "PARCIAL",
+      "remaining_gap": "Finish every mandatory functional requirement;counts and artifact presence do not close Phase4B.",
+      "primary_dependency": "INTEGRACAO_A_B_E_REGRESSAO",
+      "external_dependency_note": null,
+      "next_action": "Integracao A+B autorizada + regressao integral final.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.2",
+      "requirement": "bundle próprio",
+      "acceptance_criterion": "Bundle proprio versionado carregado nativamente.",
+      "historical_coverage": "Own122 versioned sandbox bundle loaded natively and equal to qualified captured knowledge.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Artifact delivered;this does not approve all rules,profiles or production.",
+      "primary_dependency": "NENHUMA",
+      "external_dependency_note": null,
+      "next_action": "Manter invariante nos proximos cortes.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.3",
+      "requirement": "facts e perguntas próprios",
+      "acceptance_criterion": "Facts e perguntas proprios cobrindo os perfis exigidos, incluindo os fatos B07.",
+      "historical_coverage": "364 unique fact definitions and359 unique mapped questions loaded;current credit corrections preserve typed own replays.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Artifact delivered;new mandatory profiles still need adequate facts/questions and tests.",
+      "primary_dependency": "INTEGRACAO_A_B07",
+      "external_dependency_note": null,
+      "next_action": "Aguardar implementacao do A (Q-B06-1) e executar os 320 casos B07.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.4",
+      "requirement": "catálogos versionados",
+      "acceptance_criterion": "Catalogos versionados com hash de conteudo vinculado ao manifesto.",
+      "historical_coverage": "Selected rate/code/transition catalogs have explicit versions and manifest-bound content hashes.",
+      "evidence_packages": [
+        "B01"
+      ],
+      "b_cuts_20261103": [
+        "B01"
+      ],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Versioned artifacts delivered;catalog source qualification/correlation completeness belongs to unfinished4B.6.",
+      "primary_dependency": "NENHUMA",
+      "external_dependency_note": null,
+      "next_action": "Manter invariante nos proximos cortes.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.5",
+      "requirement": "regras temporais",
+      "acceptance_criterion": "Regras temporais versionadas; parametros futuros indisponiveis recusados explicitamente.",
+      "historical_coverage": "Eight current transition selections,explicit phases/factors and unpublished-row refusal;year is not the sole selector.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Temporal artifacts delivered,not acceptance of every temporal species or unavailable future parameter.",
+      "primary_dependency": "PARAMETROS_FUTUROS_OFICIAIS",
+      "external_dependency_note": null,
+      "next_action": "Aguardar parametros oficiais futuros; manter recusas explicitas.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.6",
+      "requirement": "cálculo separado de IBS e CBS",
+      "acceptance_criterion": "Calculo separado IBS estadual, IBS municipal e CBS em todos os perfis.",
+      "historical_coverage": "Two positive2026 profiles independently reconcile separate IBS-state,IBS-municipal,CBS andISS amounts.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Separation delivered;not proof that every required calculation/profile is complete.",
+      "primary_dependency": "EVIDENCIA_A",
+      "external_dependency_note": null,
+      "next_action": "Receber relatorio de integracao do A.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.7",
+      "requirement": "convivência explícita com tributos antigos",
+      "acceptance_criterion": "Convivencia com tributos antigos por familia e periodo de transicao.",
+      "historical_coverage": "Positive122 software witness separately evaluatesISS,IRRF,PIS,Cofins,CSLL andIBS/CBS;2026 metadata explicitly declares coexistence.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "2026 witness does not close all intermediate/final temporal legacy profiles or outstanding cross-year obligations.",
+      "primary_dependency": "EVIDENCIA_A",
+      "external_dependency_note": null,
+      "next_action": "Receber relatorio de integracao do A.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.8",
+      "requirement": "trace",
+      "acceptance_criterion": "Trace nao vazio e replay deterministico por familia.",
+      "historical_coverage": "18 native assessments produce nonempty traces;whole typed outputs and16 period plus2 coexistence replays observed.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Trace artifact delivered;family completeness still needs its own acceptance matrix.",
+      "primary_dependency": "REGRESSAO_INTEGRAL",
+      "external_dependency_note": null,
+      "next_action": "Recuperar as 34 pastas da maquina antiga e rodar a regressao integral apos integracao A+B.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.9",
+      "requirement": "decisão",
+      "acceptance_criterion": "Decisao deterministica com hash e replay; recusas futuras explicitas.",
+      "historical_coverage": "Positive2026 decisions and explicit future ACTION_REQUIRED outcomes have deterministic whole-result hashes/replays.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Decision artifact delivered;refusal is not positive future calculation or posting authorization.",
+      "primary_dependency": "REGRESSAO_INTEGRAL",
+      "external_dependency_note": null,
+      "next_action": "Recuperar as 34 pastas da maquina antiga e rodar a regressao integral apos integracao A+B.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.10",
+      "requirement": "projeção documental",
+      "acceptance_criterion": "Projecao documental exigida para todos os perfis.",
+      "historical_coverage": "Current2026 decisions contain RTC issuer projection;prior123 preserves six unsigned local XSD-valid XML witnesses.",
+      "evidence_packages": [
+        "126",
+        "127",
+        "128",
+        "130",
+        "140-iss-currency",
+        "141-import-monetary",
+        "142-import-nt009-fields",
+        "143-complete-local-import-dps-profile"
+      ],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "143 montaDPS local completa do perfil de importacao141/142 com identidade/partes/endereco,camposNT009 e valores declarados reconciliados. XSD oficial observado rejeita estruturaNT009 eRN230 E9996 rejeita emitente tomador,apesar da exigenciaRN231 E0027. Concluir compatibilidade/aplicabilidade,demais perfis/qualificacoes e requisitos originais;sem encerramento formal ou producao.",
+      "primary_dependency": "XSD_OFICIAL_NT009_NAO_PUBLICADO",
+      "external_dependency_note": "Projecao 143 depende do XSD oficial NT009 nao publicado.",
+      "next_action": "Monitorar publicacao do XSD oficial com campos NT009; nao adaptar schema.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.11",
+      "requirement": "invariantes",
+      "acceptance_criterion": "Invariantes por familia/periodo com mutacoes positivas e negativas.",
+      "historical_coverage": "18 selected required-path invariants exercised with36 active/inactive-period mutations and declaredISS-immune-rate exemption.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "remaining_gap": "Required-path invariants delivered;this is not an exhaustive arithmetic/property matrix for every family or Phase7.",
+      "primary_dependency": "IMPLEMENTACAO_B",
+      "external_dependency_note": null,
+      "next_action": "Candidato a proximo corte B independente.",
+      "formal_completion_approved": false
+    },
+    {
+      "id": "4B.8.12",
+      "requirement": "cenários de 2026, 2027, transição e regime final",
+      "acceptance_criterion": "Cenarios 2026, 2027, transicao e regime final por familia, com dados ausentes, conflitos e versoes fora de vigencia.",
+      "historical_coverage": "Current122 health witnesses cover2026..2033 with exact own replays;future parameter/ISS-reference refusals are explicit.",
+      "evidence_packages": [],
+      "b_cuts_20261103": [],
+      "classification": "PARCIAL",
+      "remaining_gap": "Complete expected-results matrix across required families,missing data,conflicts and out-of-validity versions;refusals do not prove positive future calculation.",
+      "primary_dependency": "PARAMETROS_FUTUROS_OFICIAIS",
+      "external_dependency_note": null,
+      "next_action": "Aguardar parametros oficiais futuros; manter recusas explicitas.",
+      "formal_completion_approved": false
+    }
+  ],
+  "by_primary_dependency": {
+    "DADO_E_FONTE_EXTERNA": 1,
+    "EVIDENCIA_A": 2,
+    "FONTE_E_IMPLEMENTACAO_B": 3,
+    "FONTE_OFICIAL_IMPLANTACAO": 1,
+    "FONTE_OFICIAL_VIGENCIA": 2,
+    "IMPLEMENTACAO_B": 6,
+    "INTEGRACAO_A_B02": 2,
+    "INTEGRACAO_A_B07": 3,
+    "INTEGRACAO_A_B_E_REGRESSAO": 1,
+    "NENHUMA": 5,
+    "NENHUMA_ALEM_DE_VIGENCIA": 1,
+    "PARAMETROS_FUTUROS_OFICIAIS": 2,
+    "REGRESSAO_INTEGRAL": 2,
+    "REVALIDACAO_PERIODICA": 2,
+    "XSD_OFICIAL_NT009_NAO_PUBLICADO": 3
+  },
+  "approved_items": 0,
+  "b_complete": false
+}

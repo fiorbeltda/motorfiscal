@@ -1,0 +1,14 @@
+{
+  "task": "B15",
+  "agent": "B",
+  "recorded_at": "2026-11-03T20:40:00-03:00",
+  "status": "B15_CREDIT_BENEFIT_POLICY_REVALIDATED_AGAINST_CURRENT_LAW",
+  "requirements": ["4B.5.8"],
+  "formal_completion_approved": false,
+  "finding": "Politica supplier_credit_period (arts.51-52) ja implementada; revalidada contra o texto vigente do Planalto: so exportacoes e art.9 IV/VI preservam credito em imunidade; isencao e demais imunidades anulam proporcionalmente; aliquota zero preserva. Nenhuma alteracao de politica.",
+  "official_source": {"file": "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm", "sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c", "excerpts": ["art.49 caput e paragrafo unico", "art.51 caput, §1 e §2", "art.52", "art.9 IV", "art.9 VI"]},
+  "files_created": {"tests/Fiscal/Unit/CreditBenefitPolicyRevalidationB15Test.php": "4cde6e44db192bc88ab5a261d44ab4b206c8825b16bcf9df605ac80582fccda9"},
+  "tests": {"tests": 9, "assertions": 23, "result": "PASS", "pint": "passed", "is_full_regression": false},
+  "remaining_for_4B.5.8": ["Livros materiais e vinculo documental dos beneficios", "Integracao com o fluxo e perfis restantes"],
+  "limits": ["Sem alteracao de codigo de producao", "0/8 grupos encerrados", "Sem commit/push"]
+}

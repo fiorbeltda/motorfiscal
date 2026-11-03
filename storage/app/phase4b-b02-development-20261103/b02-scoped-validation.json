@@ -1,0 +1,26 @@
+{
+  "task": "B02",
+  "agent": "B",
+  "recorded_at": "2026-11-03T13:30:00-03:00",
+  "status": "B02_CREDIT_ZERO_SEMANTICS_OPT_IN_VALIDATED_NOT_ACTIVATED",
+  "base": {"sha": "87d22e70787b128a97e5aed4b175a39e619798af", "plus_local": ["B01"], "checkout": "E:/dev/motorfiscal-agente-b"},
+  "requirements": ["4B.5.10", "4B.5.3"],
+  "formal_completion_approved": false,
+  "defect_observed_at_head": "CONDITIONAL/0.00 sem motivo identico para documento invalido e tributo anterior nao extinto; DENIED por uso pessoal sem motivo.",
+  "files_modified": {
+    "app/Modules/Fiscal/ConsumptionReform/CreditDecisionEngine.php": {"before": "da1f00e2d212cadd180a221b6fce2ca0e63d095cbb4f4d2b0ea04bdf2d43725a", "after": "393add0e4925c98b93c32f06f546e2f184075131584e82e31847abde1c3e3ff5"}
+  },
+  "files_created": {
+    "tests/Fiscal/Unit/CreditZeroSemanticsB02Test.php": "63de1e3667b65b846d32a17efabc5c2158c65e182d491adf53f6982dedc0ef5a",
+    "tests/Fiscal/Support/b02/CreditDecisionEngine.base-87d22e7.php.txt": "da1f00e2d212cadd180a221b6fce2ca0e63d095cbb4f4d2b0ea04bdf2d43725a",
+    "docs/fiscal/phase4b-b02-credit-zero-semantics.md": "see diff"
+  },
+  "default_behavior_changed": false,
+  "tests": {
+    "b02": {"tests": 12, "combination_space": 5832, "result": "PASS"},
+    "with_existing_credit_suites": {"command": "E:\\tools\\php85.cmd vendor\\bin\\pest <B02 + 10 credit suites>", "tests": 714, "assertions": 64514, "result": "PASS"},
+    "pint": "passed", "phpstan": "no errors", "is_full_regression": false
+  },
+  "activation": {"activated": false, "caller": "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php (transversal)", "requires": "escritor unico definido pelo usuario + nova versao de catalogo/bundle (saida de credito integra hash da decisao)"},
+  "limits": ["Nenhuma regra legal nova", "Comportamento integrado inalterado", "0/8 grupos encerrados", "Sem commit/push"]
+}

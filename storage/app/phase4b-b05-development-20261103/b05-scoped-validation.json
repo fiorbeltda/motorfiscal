@@ -1,0 +1,23 @@
+{
+  "task": "B05",
+  "agent": "B",
+  "recorded_at": "2026-11-03T15:10:00-03:00",
+  "status": "B05_HANDOFF_B02_SPEC_XSD_REVALIDATED_EVIDENCE_INVENTORY",
+  "user_decisions_applied": ["ConsumptionReformEngine.php: escritor unico = Agente A", "B02 habilitado so apos implementacao e testes", "Sem commit/push"],
+  "requirements": ["4B.7.4", "4B.8.1", "4B.5.10"],
+  "formal_completion_approved": false,
+  "xsd": {
+    "producao_restrita": {"url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/esquemas_prod_restrita_20261020.zip", "listed_title": "NFSe-ESQUEMAS_XSD-PRODREST-v1.01-20261020", "page_updated_at": "2026-10-20T18:10:00-03:00", "downloaded_sha256": "25fdcecc651a67a216496ab10d7566631e6ed10f721e37d62c7845dadb0ea267", "equals_preserved": "resources/fiscal/sources/official/dps127-restricted-xsd-observed20261022-20261020.zip", "nt009_fields_declared": false},
+    "rtc_nt004": {"url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita/nfse-esquemas_xsd-rtc-v1-00-20251210.zip", "downloaded": false, "preserved_sha256": "04662996e290add36f118c4457d8efed17848eb65d64e8b7ab56c6983c2429ad", "requested_from_user": true}
+  },
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/CreditZeroSemanticsPolicyB02.php": "e5972c93bc223f894bd3ddbe973bb51c09d47402447e3c47484c3c5c0b9df728",
+    "tests/Fiscal/Unit/CreditZeroSemanticsPolicyB02Test.php": "fd1d8e43f0bd2d4982a84de015e4a35b9e7f175cb7f20e497580f70b2e74a2ae",
+    "storage/app/phase4b-b05-development-20261103/evidence-inventory-full-regression.json": "ed27a93ad65c7155bb1cde0826096520b292076e812cb2e2fdb5629684919472",
+    "docs/fiscal/phase4b-b05-evidence-and-xsd-request.md": "see diff"
+  },
+  "handoff_package": ["E:/dev/motorfiscal-agente-b-evidence/handoff/B02-especificacao-integracao-para-A.md", "E:/dev/motorfiscal-agente-b-evidence/handoff/pedido-relatorio-integracao-A.md"],
+  "evidence_inventory": {"missing_entries": 44, "indispensable_for_full_regression": 34, "traceability_receipts_missing": 7},
+  "tests": {"policy_b02": {"tests": 7, "assertions": 7, "result": "PASS"}, "pint": "passed", "phpstan": "no errors", "is_full_regression": false},
+  "limits": ["B02 nao habilitado", "Regressao integral nao declarada", "0/8 grupos encerrados", "Sem commit/push"]
+}

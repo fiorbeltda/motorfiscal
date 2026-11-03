@@ -1,0 +1,930 @@
+{
+  "generated_for": "B05",
+  "repo_head": "87d22e70787b128a97e5aed4b175a39e619798af",
+  "missing_storage_entries": 44,
+  "indispensable": 34,
+  "items": [
+    {
+      "path": "storage/app/accepted",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/accepted",
+        "D:/ProjetoSaasExports/preserved-storage-app/accepted (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/check_fiscal_console.php"
+      ],
+      "files_named_in_code": [
+        "test-development-validation.json",
+        "test-production.log"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/bad",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/bad",
+        "D:/ProjetoSaasExports/preserved-storage-app/bad (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/check_fiscal_console.php"
+      ],
+      "files_named_in_code": [
+        "bad-development-validation.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "c8e1753f39e043f7d660d1f290d926016410de2559945848ba3af56246b32cf6"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "cfc5f04cc9f3f5c9e3d70d2b739f54eea6b01c1d08957777182eab9ffff591fc"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "6b719311a07fddf690c24ddbc2fe1d3de8b55ea4bfd33588af915dd13cec9150"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "118112059b8d5e9a0d9fdc174e1b6f78218107f21d2bb4862070c2c8e16454ca"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "91d29b16796d29837c8af15d8265f41face8d4c9aa950583122c272e9da5814e"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations.json",
+          "sha256": "c8e1753f39e043f7d660d1f290d926016410de2559945848ba3af56246b32cf6"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations.json",
+          "sha256": "cfc5f04cc9f3f5c9e3d70d2b739f54eea6b01c1d08957777182eab9ffff591fc"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations.json",
+          "sha256": "6b719311a07fddf690c24ddbc2fe1d3de8b55ea4bfd33588af915dd13cec9150"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations.json",
+          "sha256": "118112059b8d5e9a0d9fdc174e1b6f78218107f21d2bb4862070c2c8e16454ca"
+        },
+        {
+          "recorded_in": "tests/Fixtures/price110-native112/012-currency-brl.json",
+          "sha256": "844914527bd33b3d551b262545f192b1ce69c9ca97583422b16d2aaab1db0b5f"
+        }
+      ],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/failed",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/failed",
+        "D:/ProjetoSaasExports/preserved-storage-app/failed (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/check_fiscal_console.php"
+      ],
+      "files_named_in_code": [
+        "failed-development-validation.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-advance88-cli-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-advance88-cli-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-advance88-cli-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/prepare_phase4b_advance91_scenarios.php",
+        "tests/Fiscal/Integration/RtcSnapshotBody91Test.php"
+      ],
+      "files_named_in_code": [
+        "multiple-selected-rtc-snapshot.json",
+        "past-payment-without-completed-supply-rtc-snapshot.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-advance88-preparation-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-advance88-preparation-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-advance88-preparation-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/AdvanceOrigin88EngineTest.php",
+        "tests/Fiscal/Unit/AdvanceContext88Test.php",
+        "tests/Fiscal/Unit/AdvanceOrigin88Test.php"
+      ],
+      "files_named_in_code": [
+        "advance-origin-cases.json",
+        "advance88-case-manifest-v2.json",
+        "scenarios-v2/past-payment-without-completed-supply.json"
+      ],
+      "files_named_count": 3,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-advance91-integration-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-advance91-integration-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-advance91-integration-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/prepare_phase4b_advance91_scenarios.php",
+        "tests/Fiscal/Integration/RecordedAdvance91EngineTest.php",
+        "tests/Fiscal/Integration/RecordedAdvanceComponents91Test.php",
+        "tests/Fiscal/Integration/RecordedAdvancePolicy91Test.php"
+      ],
+      "files_named_in_code": [
+        "advance91-case-manifest-v2.json",
+        "native89-installed.php"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 60,
+      "recorded_hashes": [
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "f23e6d1aa5085325a4f5c2d2e25b69bf70296d23c05561b7f59c46eed266b2e3"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "095883251b0ff3c032dc415777d5b39c39ac89daba4cf7da1488df45e581bcf1"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "5064785ccf91295bbc626d9a43cf32e1e406c7da46fb1a2e4bcdac321e895605"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "4c3062f9d37f36182729194b816a463828280ddd7498e520b6965fc87e19137c"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "f26507b55d6836b4b48b333618b8364eda51aa950fd5e6c26a301a466b3b2b9a"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "e032f218f6b84451c1322c2fb5e2cf669d498f848cc3305e0bbac135b6e4c4bc"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "c9a11001e0c1a1a6575b148b5f251b31b23c54e8237e3201cadfe2dd3031f119"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "f653add77e61ed42263f2a514cab1aedde0df1096f37ca1c1878b716f61e45b3"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "f043f8bfe2d6bdfc588ab798464567e107422dda5dd4341a6450b37fbdc79ad6"
+        },
+        {
+          "recorded_in": "tests/Fixtures/catalog101-scenario-expectations-v2.json",
+          "sha256": "c2f68e5350c70783aa53dbced45c035405582380cdd518561d8d2f0dd063bbb2"
+        }
+      ],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-54-preparation-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-54-preparation-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-54-preparation-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DerePublicOfferMonthlyCommand55Test.php",
+        "tests/Fiscal/Unit/DerePublicOfferActiveBusiness60Test.php",
+        "tests/Fiscal/Unit/DerePublicOfferDebtReturn54Test.php",
+        "tests/Fiscal/Unit/DerePublicOfferNegativeBaseSettlement54Test.php"
+      ],
+      "files_named_in_code": [
+        "financial-snapshot.json",
+        "public-settlement-native-result.json",
+        "synthetic-d9121-context.json"
+      ],
+      "files_named_count": 3,
+      "baseline_failures_attributed": 34,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-55-command-integration-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-55-command-integration-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-55-command-integration-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DerePublicOfferMonthlyCommand55Test.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-57-no-movement-preparation-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-57-no-movement-preparation-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-57-no-movement-preparation-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DerePublicOfferNoMovementReturn57Test.php"
+      ],
+      "files_named_in_code": [
+        "qualified-both-codes-no-movement-settlement.json",
+        "qualified-direct-only-no-movement-settlement.json",
+        "qualified-fund-only-no-movement-settlement.json"
+      ],
+      "files_named_count": 3,
+      "baseline_failures_attributed": 12,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-58-no-movement-integration-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-58-no-movement-integration-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-58-no-movement-integration-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DerePublicOfferNoMovementMonthly58Test.php",
+        "tests/Fiscal/Unit/DerePublicOfferNoMovementSettlement58Test.php"
+      ],
+      "files_named_in_code": [
+        "qualified-both-codes-no-movement-settlement.json",
+        "qualified-both-codes-request.json",
+        "qualified-direct-only-no-movement-settlement.json",
+        "qualified-direct-only-request.json",
+        "qualified-fund-only-no-movement-settlement.json",
+        "qualified-fund-only-request.json"
+      ],
+      "files_named_count": 6,
+      "baseline_failures_attributed": 42,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-59-version-preparation-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-59-version-preparation-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-59-version-preparation-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DerePublicOfferEventVersions60Test.php"
+      ],
+      "files_named_in_code": [
+        "version-native-v2-result.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 12,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-61-version-integration-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-61-version-integration-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-61-version-integration-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DerePublicOfferVersionMonthly61Test.php",
+        "tests/Fiscal/Unit/DerePublicOfferVersionSettlement61Test.php"
+      ],
+      "files_named_in_code": [
+        "command-request.json",
+        "native-version-settlement.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 15,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-62-period-preparation-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-62-period-preparation-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-62-period-preparation-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DerePublicOfferPeriodState63Test.php"
+      ],
+      "files_named_in_code": [
+        "period-native-v2-result.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-dere9121-63-period-integration-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dere9121-63-period-integration-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dere9121-63-period-integration-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DerePublicOfferPeriodMonthly63Test.php",
+        "tests/Fiscal/Unit/DerePublicOfferPeriodSettlement63Test.php"
+      ],
+      "files_named_in_code": [
+        "command-request.json",
+        "native-period-settlement.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 14,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-document74-integrated-projection-20261014",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-document74-integrated-projection-20261014",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-document74-integrated-projection-20261014 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document74_comext.php",
+        "scripts/exercise_phase4b_document74_integrated_projection.php"
+      ],
+      "files_named_in_code": [
+        "integrated-federal-1.xml"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-document74-primary-research-20261014",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-document74-primary-research-20261014",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-document74-primary-research-20261014 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document74_comext.php",
+        "scripts/exercise_phase4b_document74_integrated_projection.php",
+        "scripts/exercise_phase4b_document74_series.php"
+      ],
+      "files_named_in_code": [
+        "restricted-xsd-0.zip"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-document75-foreign-party-native-v3-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-document75-foreign-party-native-v3-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-document75-foreign-party-native-v3-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document75_foreign_party.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-dps-integrated-20261001-2-snapshot.json",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-dps-integrated-20261001-2-snapshot.json",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-dps-integrated-20261001-2-snapshot.json (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document74_integrated_projection.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-education-20261001-5-snapshot.json",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-education-20261001-5-snapshot.json",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-education-20261001-5-snapshot.json (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document74_integrated_projection.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-fx70-origin-preparation-20261014",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-fx70-origin-preparation-20261014",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-fx70-origin-preparation-20261014 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/ImportFxMaterialOrigin70Test.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-import-fx68-integration-20261013",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-import-fx68-integration-20261013",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-import-fx68-integration-20261013 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/ImportFxEngine68Test.php",
+        "tests/Fiscal/Unit/ImportFxExactToken71Test.php",
+        "tests/Fiscal/Unit/ImportFxQuoteConverter68Test.php",
+        "tests/Fiscal/Unit/ImportFxTransaction68Test.php"
+      ],
+      "files_named_in_code": [
+        "fx-permanent-inputs.json",
+        "scenario-manifest-v3.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 14,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-integrated-education-presential-20261001-6-snapshot.json",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-integrated-education-presential-20261001-6-snapshot.json",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-integrated-education-presential-20261001-6-snapshot.json (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document74_integrated_projection.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-international76-gap-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-international76-gap-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-international76-gap-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DpsForeignAcquirerCandidate76Test.php"
+      ],
+      "files_named_in_code": [
+        "foreign-buyer-domestic-consumption-identity.json",
+        "foreign-buyer-domestic-consumption-snapshot.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-negative-base49-preparation-20261009",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-negative-base49-preparation-20261009",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-negative-base49-preparation-20261009 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereNegativeBaseClosingOptions50Test.php",
+        "tests/Fiscal/Unit/DereNegativeBaseClosingVersions49Test.php"
+      ],
+      "files_named_in_code": [
+        "synthetic-return.xml",
+        "synthetic-version-chain-input.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-negative-base50-closing-draft-20261009",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-negative-base50-closing-draft-20261009",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-negative-base50-closing-draft-20261009 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DereNegativeBaseMonthlyCommand50Test.php",
+        "tests/Fiscal/Integration/DereNegativeBaseMonthlyCommand53Test.php",
+        "tests/Fiscal/Integration/DerePublicOfferMonthlyCommand55Test.php",
+        "tests/Fiscal/Unit/DereFinancialCurrentComposition51Test.php"
+      ],
+      "files_named_in_code": [
+        "command-financial-snapshot.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 7,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-negative-base51-current-bases-preparation-20261009",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-negative-base51-current-bases-preparation-20261009",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-negative-base51-current-bases-preparation-20261009 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereFinancialNegativeBaseSettlement52Test.php"
+      ],
+      "files_named_in_code": [
+        "composition-native-result.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 11,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-negative-base52-settlement-draft-20261009",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-negative-base52-settlement-draft-20261009",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-negative-base52-settlement-draft-20261009 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DereNegativeBaseMonthlyCommand53Test.php"
+      ],
+      "files_named_in_code": [
+        "command-financial-snapshot.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-negative-base53-command-integration-20261009",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-negative-base53-command-integration-20261009",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-negative-base53-command-integration-20261009 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DereNegativeBaseMonthlyCommand53Test.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-partial-export-fx73-preparation-20261014",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-partial-export-fx73-preparation-20261014",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-partial-export-fx73-preparation-20261014 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/PartialExportFxEngine73Test.php",
+        "tests/Fiscal/Unit/PartialExportFxTransaction73Test.php"
+      ],
+      "files_named_in_code": [
+        "export-integrated-case-manifest.json",
+        "partial-export-transaction-native-result.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 12,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-private-consolidation48-draft-20261009-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-private-consolidation48-draft-20261009-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-private-consolidation48-draft-20261009-28 (se migrada)"
+      ],
+      "compose_read_only_bind": true,
+      "referenced_by": [
+        "tests/Fiscal/Integration/DereNegativeBaseMonthlyCommand50Test.php",
+        "tests/Fiscal/Unit/DereNegativeBaseClosingOptions50Test.php",
+        "tests/Fiscal/Unit/DereSecuritiesPrivateConsolidation48BaseTest.php",
+        "tests/Fiscal/Unit/DereSecuritiesPrivateConsolidation48MonthlyTest.php",
+        "tests/Fiscal/Unit/TvmConsolidatedHistoryScopeGuards48AdditionalTest.php",
+        "tests/Fiscal/Unit/TvmPrivateBookGuards48Test.php",
+        "tests/Fiscal/Unit/TvmPrivateSourcePolicySelection48Test.php"
+      ],
+      "files_named_in_code": [
+        "first-gain-snapshot.json",
+        "private-cases.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [
+        {
+          "recorded_in": "storage/app/evidence-storage-index-20261021.json",
+          "sha256": "0c0c8925a9dcf976bfdf2281484eba3da225697f069db3e995f0a68d62e79aac"
+        }
+      ],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-base-draft-20261006-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-base-draft-20261006-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-base-draft-20261006-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Support/TvmBookFixtures.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-consolidated-expansion47-draft-20261009-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-consolidated-expansion47-draft-20261009-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-consolidated-expansion47-draft-20261009-28 (se migrada)"
+      ],
+      "compose_read_only_bind": true,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereSecuritiesConsolidation47HistoricalTest.php",
+        "tests/Fiscal/Unit/DereSecuritiesConsolidation48RegressionTest.php"
+      ],
+      "files_named_in_code": [
+        "expanded-realization-corpus.json",
+        "expansion-cases.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [
+        {
+          "recorded_in": "storage/app/evidence-storage-index-20261021.json",
+          "sha256": "17d9dcad9ae510bcd13680405fd00f8eb79703902b13d797381dbdc4fbe200fd"
+        }
+      ],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-consolidation-preparation-20261009-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-consolidation-preparation-20261009-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-consolidation-preparation-20261009-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereSecuritiesConsolidation46KnowledgeTest.php",
+        "tests/Fiscal/Unit/DereSecuritiesConsolidation47KnowledgeTest.php",
+        "tests/Fiscal/Unit/DereSecuritiesConsolidationKnowledgeTest.php"
+      ],
+      "files_named_in_code": [
+        "requirements-evidence-matrix.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-created-rounding-closing-draft-20261008-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-created-rounding-closing-draft-20261008-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-created-rounding-closing-draft-20261008-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereSecuritiesCreatedRoundingClosingTest.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-history-draft-20261006-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-history-draft-20261006-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-history-draft-20261006-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/FinancialSecuritiesRecognitionHistoryTest.php"
+      ],
+      "files_named_in_code": [
+        "previous-private-august-snapshot.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-negative-history-draft-20261007-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-negative-history-draft-20261007-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-negative-history-draft-20261007-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereSecuritiesNegativeHistoryTest.php"
+      ],
+      "files_named_in_code": [
+        "prior-negative-snapshot.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-public-deferral-draft-20261008-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-public-deferral-draft-20261008-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-public-deferral-draft-20261008-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/FinancialPublicDeferralHistoryTest.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-shared-asset-sources-draft-20261009-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-shared-asset-sources-draft-20261009-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-shared-asset-sources-draft-20261009-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/DereDebtCompetencePolicySelectionTest.php"
+      ],
+      "files_named_in_code": [
+        "positive-source-snapshot.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-realization-third-sale-rounding-draft-20261008-28",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-realization-third-sale-rounding-draft-20261008-28",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-realization-third-sale-rounding-draft-20261008-28 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/check_phase4b_third_sale_openings.php"
+      ],
+      "files_named_in_code": [],
+      "files_named_count": 0,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": false
+    },
+    {
+      "path": "storage/app/phase4b-schema74-cli-corpus-v2-20261014",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-schema74-cli-corpus-v2-20261014",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-schema74-cli-corpus-v2-20261014 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "scripts/exercise_phase4b_document75_foreign_party.php",
+        "tests/Fiscal/Unit/DpsForeignPartyProjector75Test.php"
+      ],
+      "files_named_in_code": [
+        "cli-corpus-validation.json",
+        "federal-1.xml"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-simples78-cli-v2-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-simples78-cli-v2-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-simples78-cli-v2-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/SimplesRegularElectionEngine78Test.php"
+      ],
+      "files_named_in_code": [
+        "simples78-cli-corpus-validation.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-simples78-integration-preparation-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-simples78-integration-preparation-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-simples78-integration-preparation-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/SimplesRegularElection78Test.php",
+        "tests/Fiscal/Unit/SimplesTemporalCatalog78Test.php"
+      ],
+      "files_named_in_code": [
+        "component-cases.json",
+        "component-policy.json"
+      ],
+      "files_named_count": 2,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-temporal86-integration-preparation-20261015",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-temporal86-integration-preparation-20261015",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-temporal86-integration-preparation-20261015 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Integration/TemporalEvents86Test.php",
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TemporalComponents86Test.php"
+      ],
+      "files_named_in_code": [
+        "temporal86-case-manifest-v2.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    },
+    {
+      "path": "storage/app/phase4b-variable-yield-20261006-27",
+      "historical_locations": [
+        "C:/xampp/htdocs/projeto-saas-motor/storage/app/phase4b-variable-yield-20261006-27",
+        "D:/ProjetoSaasExports/preserved-storage-app/phase4b-variable-yield-20261006-27 (se migrada)"
+      ],
+      "compose_read_only_bind": false,
+      "referenced_by": [
+        "tests/Fiscal/Unit/FinancialSecuritiesRecognitionHistoryTest.php"
+      ],
+      "files_named_in_code": [
+        "constant-snapshot.json"
+      ],
+      "files_named_count": 1,
+      "baseline_failures_attributed": 0,
+      "recorded_hashes": [],
+      "indispensable_for_full_regression": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "B09",
+  "agent": "B",
+  "recorded_at": "2026-11-03T16:30:00-03:00",
+  "status": "B09_CREDIT_INVARIANTS_VALIDATED_NO_PRODUCTION_CODE_CHANGE",
+  "requirements": ["4B.8.11", "4B.5.4", "4B.5.5", "4B.5.9"],
+  "formal_completion_approved": false,
+  "files_created": {
+    "tests/Fiscal/Unit/CreditInvariantsB09Test.php": "4c0de468de705c2a2b63fb2b7aeef5399671a41ca9f6d2436d5ba776b6fdce19",
+    "docs/fiscal/phase4b-b09-credit-invariants.md": "see diff"
+  },
+  "files_formatted": {"tests/Fiscal/Support/b07/AnnexStandardSpecB07.php": "fcfd60251db4e126e3c8ffaed62f40b3b70460086aae3bee5d5bb803ff39fbdf"},
+  "production_code_changed": false,
+  "tests": {"command": "E:\\tools\\php85.cmd -d memory_limit=256M vendor\\bin\\pest tests/Fiscal/Unit/CreditInvariantsB09Test.php", "tests": 9, "assertions": 2714, "combination_space": 480, "result": "PASS", "independent_oracle": "bcmath half-up", "pint": "passed", "is_full_regression": false},
+  "limits": ["Ciclo material de estorno/glosa pendente", "0/8 grupos encerrados", "Sem commit/push"]
+}

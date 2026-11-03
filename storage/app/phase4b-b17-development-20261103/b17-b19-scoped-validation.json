@@ -1,0 +1,75 @@
+{
+  "task": "B17-B19",
+  "agent": "B",
+  "recorded_at": "2026-11-03T13:50:00-03:00",
+  "status": "B17_B19_PRESUMED_CREDITS_LIFECYCLE_AND_SYNTHETIC_ACCEPTANCE_VALIDATED",
+  "requirements": [
+    "4B.5.1",
+    "4B.5.2",
+    "4B.8.11",
+    "4B.8.12"
+  ],
+  "formal_completion_approved": false,
+  "official_source": {
+    "sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c",
+    "articles": [
+      "168",
+      "169",
+      "170",
+      "171",
+      "309",
+      "311",
+      "312",
+      "380",
+      "381",
+      "444",
+      "447",
+      "449",
+      "450",
+      "452",
+      "462",
+      "465",
+      "467",
+      "468"
+    ]
+  },
+  "files_created": {
+    "app/Modules/Fiscal/ConsumptionReform/PresumedCreditCatalogB17.php": "4ae9a70688ee2dc5dea5e95c208957fbf7760a92120936ce6b359227f6ea27c5",
+    "tests/Fiscal/Unit/PresumedCreditCatalogB17Test.php": "777a9b7261e04550d0e56e8f0532185b79781bf1ebbf69e27a915b1c0c11e853",
+    "tests/Fiscal/Unit/CreditLifecycleB18Test.php": "f0ea4d560b0d79fe12b6935c5cba8fac74e5d36d9f1ec300d752163b43de5334",
+    "tests/Fiscal/Unit/SyntheticRateAcceptanceB19Test.php": "4e1c9b4d3dec4bf20acd082e8571a160ebebb8fee05495ff99e9d072551dc818",
+    "docs/fiscal/phase4b-b17-b19-presumed-credits-lifecycle.md": "see diff"
+  },
+  "files_modified": {
+    "app/Modules/Fiscal/ConsumptionReform/CreditUtilizationPlannerB14.php": {
+      "before": "7397538415f3e73a483049e1512eb17d8ee15c54ac11e31839b23227ba774867",
+      "after": "43bb0cf9505f7c1a8974009aed5ceed97adc56b08c3f04eeadae5944763f1226",
+      "change": "refund_prohibited (arts.452/468)"
+    }
+  },
+  "tests": {
+    "b17": {
+      "tests": 44,
+      "assertions": 141,
+      "note": "todas as hipoteses de credito presumido da LC214 catalogadas (arts.168-171,309/311/312,380,381,444,447,449,450,462,465,467)"
+    },
+    "b18_with_b14": {
+      "tests": 18,
+      "assertions": 51
+    },
+    "b19": {
+      "passed": 1,
+      "skipped_pending_agent_a": 1
+    },
+    "result": "PASS",
+    "phpstan": "no errors",
+    "pint": "passed",
+    "is_full_regression": false
+  },
+  "limits": [
+    "Percentuais/fatores dos arts.168,169,171,312,380,381 dependem de ato, formula externa ou dado legado",
+    "Percentuais dos arts.168/169/171 dependem de ato/aliquota de referencia",
+    "Nao integrado ao fluxo",
+    "Sem commit/push"
+  ]
+}
