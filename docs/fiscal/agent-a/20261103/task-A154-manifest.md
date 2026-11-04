@@ -61,3 +61,26 @@ Ponto de retomada: A153 validado em 508 testes/1.807 asserções na regressão
 dirigida acumulada, com recibo e pacote final preservados; A154 é planejamento
 pendente. Não interpretar esta pausa como aceite dos 44 requisitos ou da fase.
 Retomar apenas após nova solicitação do usuário.
+
+## Retomada autorizada em 04/11/2026
+
+HEAD conferido `6c0f81bffb9923f36d00dcfb9eec5d0fd138bd9f`, árvore limpa.
+A publicação posterior de A144–A153 está concluída e não altera o registro da
+pausa acima. Usuário autorizou retomar o desenvolvimento; sem nova publicação.
+Docker inicialmente desligado: iniciado o Desktop existente por Win32_Process,
+sem recriar contêiner, imagem ou volumes. Conferir prontidão antes da suíte.
+O plano será a união deduplicada dos testes indexados e suplementos diretamente
+relacionados aos contratos de A. Erros de fixture serão conservados, não pulados.
+Artefato externo suplementar: `existing-tests-observed.json`, com casos reais e
+mensagens extraídas do JUnit, e `console-check-v1.log`/`console-endpoint-v1.log`.
+Esses arquivos fazem parte da revisão A154, sem alteração do painel global.
+
+### Ajuste após falha terminal v1
+
+A união v1 terminou com exit1 por esgotar 128MiB em CanonicalJson; JUnit vazio,
+logo sem contagem terminal confiável. Preservar log, exit e JUnit vazio.
+Reexecutar a mesma seleção/hashes com `php -d memory_limit=1G`, apenas no
+processo CLI, sem mudar php.ini/configuração/infraestrutura. Novos artefatos:
+`test-command-v2.json`, `own44-v2.log`, `own44-v2-exit.json`,
+`agent-a-A154-existing44-v2.junit.xml`. A revisão usa só a execução terminal v2,
+mantendo v1 como tentativa abortada; não somar contagens.

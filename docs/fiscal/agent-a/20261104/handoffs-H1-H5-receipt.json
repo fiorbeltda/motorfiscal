@@ -1,0 +1,259 @@
+{
+  "task": "A155",
+  "observed_at": "2026-11-04T11:41:29.361385+00:00",
+  "request": "Complete H1-H5 while main development stays paused",
+  "remote": "https://github.com/fiorbeltda/motorfiscal.git",
+  "branch": "codex/fiscal-engine-bootstrap",
+  "base": "e3a632bb186eec18682af5c8898c10e8610f3808",
+  "clone": "D:\\ProjetoSaasWorkspaces\\agente-a-fase4b-20261103",
+  "published_A144_A153": "6c0f81bffb9923f36d00dcfb9eec5d0fd138bd9f",
+  "central_files_before_sha256": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "5e56a176dd9f3ab01472aa0376f0b799f4a1929bb98a42e07c23aae548adde99",
+    "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "852366a29e759bf48c3f48d8615043070c81834b0e23ffefe0afa4492207251c"
+  },
+  "current_production_sha256": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+    "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6",
+    "app/Modules/Fiscal/ConsumptionReform/CreditIntegration155.php": "08056a1f61eaed2eaa6ffa47080e344d10955a9944907345f588b017149db41b",
+    "app/Modules/Fiscal/ConsumptionReform/PeriodCreditAssessment155.php": "2de1166a75b27adb10511b39ef6f111be63e62e5a54ab4cb0cdec0a283339e47",
+    "app/Console/Commands/AssessPeriodCredit155Command.php": "7ed14b6d1628e2b5f021022858d58e7a005830e320780d9211cedc71aa071f32"
+  },
+  "B_components_unchanged": {
+    "app/Modules/Fiscal/ConsumptionReform/CreditDecisionEngine.php": "393add0e4925c98b93c32f06f546e2f184075131584e82e31847abde1c3e3ff5",
+    "app/Modules/Fiscal/ConsumptionReform/CreditZeroSemanticsPolicyB02.php": "e5972c93bc223f894bd3ddbe973bb51c09d47402447e3c47484c3c5c0b9df728",
+    "app/Modules/Fiscal/ConsumptionReform/AnnexStandardQualificationPolicyB07.php": "e4a726cbb443871d00eac1ea93fc25d80f36fca7fe5a67b6122644f6b5e79dfa",
+    "app/Modules/Fiscal/ConsumptionReform/CreditAdjustmentCycleB11.php": "9f8665aff15642f1bd30f91d1c360fb0fa2ed2eb53b71962910945250166e56b",
+    "app/Modules/Fiscal/ConsumptionReform/AcquirerCreditProhibitionCatalogB13.php": "1cec61ded2c7da4e16a583d571bc4672e2e8835b070d14f7b011cbc52504c1e2",
+    "app/Modules/Fiscal/ConsumptionReform/CreditUtilizationPlannerB14.php": "43bb0cf9505f7c1a8974009aed5ceed97adc56b08c3f04eeadae5944763f1226",
+    "app/Modules/Fiscal/ConsumptionReform/PresumedCreditCatalogB17.php": "4ae9a70688ee2dc5dea5e95c208957fbf7760a92120936ce6b359227f6ea27c5"
+  },
+  "handoffs": {
+    "H1": "IMPLEMENTED_AND_LOCALLY_VERIFIED_B02_GATED_BOTH_CREDIT_BRANCHES",
+    "H2": "IMPLEMENTED_AND_LOCALLY_VERIFIED_320_CASES_EACH_RUNNER",
+    "H3": "IMPLEMENTED_B13_B17_OPERATION_FLOW_AND_B11_B14_PERIOD_ENTRYPOINT",
+    "H4": "IMPLEMENTED_SYNTHETIC_MARKERS_REJECTED_B19_GREEN",
+    "H5": "LOCAL_REPORT_PATCH_AND_SOURCE_PACKAGE_DELIVERED"
+  },
+  "activation": "B must create/validate NEW catalog and bundle versions with gates/facts/questions; no installed accepted resource edited by A.",
+  "suites_separately_reported_not_summed": {
+    "smoke-v1": {
+      "path": "storage/app/agent-a-A155-smoke-v1.junit.xml",
+      "sha256": "805f75860b2b07895fa90100e0ac9390794d7a775e0dcab0260b5217a688858d",
+      "name": "CLI Arguments",
+      "tests": "47",
+      "assertions": "215",
+      "errors": "1",
+      "failures": "0",
+      "skipped": "0",
+      "time": "13.274329"
+    },
+    "directed-v1": {
+      "path": "storage/app/agent-a-A155-directed-v1.junit.xml",
+      "sha256": "60feadca470ffe1bddcdafb84f9202e243a525d9a217beb6d11685dd212eebfa",
+      "name": "CLI Arguments",
+      "tests": "701",
+      "assertions": "1447",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "149.594243"
+    },
+    "regression-v1": {
+      "path": "storage/app/agent-a-A155-regression-v1.junit.xml",
+      "sha256": "ac12898da67210c26c7d22bbab5a7cbde44634da7b7c3daf0e6c959aceab1086",
+      "name": "CLI Arguments",
+      "tests": "1745",
+      "assertions": "69745",
+      "errors": "0",
+      "failures": "4",
+      "skipped": "0",
+      "time": "584.002774"
+    },
+    "regression-v2": {
+      "path": "storage/app/agent-a-A155-regression-v2.junit.xml",
+      "sha256": "329c5e1897a98580ca7b907f3dc016f5852ff364412e52a0a869f67eb507aaf1",
+      "name": "CLI Arguments",
+      "tests": "1745",
+      "assertions": "69745",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "667.414382"
+    },
+    "regression-v3": {
+      "path": "storage/app/agent-a-A155-regression-v3.junit.xml",
+      "sha256": "6d1b36bf9731a35608d1d40e6fdd7cca6d3f58b292e806903ad72a90b1de705a",
+      "name": "CLI Arguments",
+      "tests": "1747",
+      "assertions": "69752",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "563.687414"
+    },
+    "B-contract-status-v1": {
+      "path": "storage/app/agent-a-A155-B-contract-status-v1.junit.xml",
+      "sha256": "49f53a8012e6eb535eb7d1f8d2f83d1f8afbd7ea2b115325cb81bb0e62572fa9",
+      "name": "CLI Arguments",
+      "tests": "437",
+      "assertions": "550",
+      "errors": "0",
+      "failures": "1",
+      "skipped": "320",
+      "time": "1110.777513"
+    },
+    "A-compatibility-v1": {
+      "path": "storage/app/agent-a-A155-A-compatibility-v1.junit.xml",
+      "sha256": "d018b32726da56df881c4ca8338612a52f044f0e5c6eaa2a90bdb74864669d4e",
+      "name": "CLI Arguments",
+      "tests": "508",
+      "assertions": "1807",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "87.896323"
+    },
+    "A-compatibility-v2": {
+      "path": "storage/app/agent-a-A155-A-compatibility-v2.junit.xml",
+      "sha256": "fb962aaca28dd00399dbff85692f38a99210c6f36a0dd8a2136c3faa32220f87",
+      "name": "CLI Arguments",
+      "tests": "508",
+      "assertions": "1807",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "86.627470"
+    }
+  },
+  "suite_note": "smoke-v1 CLI test was misplaced in Unit; moved to Laravel Integration. directed-v1 preceded the prior-utilization guard. regression-v1 had four ordering assertions corrected to select by credit_id; v2 is green; v3 additionally preserves the B13 signed result and accepts meaningful B07 reference spaces. Final source and selection: regression-v3.",
+  "quality": {
+    "phpstan": "GLOBAL_LEVEL8_NO_ERRORS",
+    "pint": "8_PHP_FILES_PASS",
+    "console": "28_CHECKS_PASS"
+  },
+  "native_decimal_oracles": {
+    "cases": [
+      {
+        "case": "unused",
+        "command": [
+          "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+          "exec",
+          "motorfiscal-agente-a-20261103",
+          "php",
+          "artisan",
+          "fiscal:rtc:assess-period-credit",
+          "storage/app/agent-a-A155/unused.json"
+        ],
+        "exit_code": 0,
+        "byte_identical_repeated_cli": true,
+        "output_sha256": "460b6cbe5dc0c49c82c07d437698b1b7d0c7f547fbde54d826e004e9e30a94a6",
+        "independent_decimal_conservation_per_tax": true
+      },
+      {
+        "case": "part-used",
+        "command": [
+          "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+          "exec",
+          "motorfiscal-agente-a-20261103",
+          "php",
+          "artisan",
+          "fiscal:rtc:assess-period-credit",
+          "storage/app/agent-a-A155/part-used.json"
+        ],
+        "exit_code": 0,
+        "byte_identical_repeated_cli": true,
+        "output_sha256": "5486c23e5b43d9c03305bba71efc09f84e1b4c86e3e988cc175f82df8a32582f",
+        "independent_decimal_conservation_per_tax": true
+      },
+      {
+        "case": "fully-used",
+        "command": [
+          "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+          "exec",
+          "motorfiscal-agente-a-20261103",
+          "php",
+          "artisan",
+          "fiscal:rtc:assess-period-credit",
+          "storage/app/agent-a-A155/fully-used.json"
+        ],
+        "exit_code": 0,
+        "byte_identical_repeated_cli": true,
+        "output_sha256": "ea4342ec4513311382f06a216eb84fcad5f0c328b8533e8ed8263608bd857192",
+        "independent_decimal_conservation_per_tax": true
+      }
+    ],
+    "refusal": {
+      "command": [
+        "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+        "exec",
+        "motorfiscal-agente-a-20261103",
+        "php",
+        "artisan",
+        "fiscal:rtc:assess-period-credit",
+        "storage/app/agent-a-A155/incomplete.json"
+      ],
+      "exit_code": 1,
+      "reason": "RTC_PERIOD_CREDIT_COMPLETE_LEDGER_REQUIRED"
+    },
+    "synthetic_input_not_external_authentication": true
+  },
+  "official_source": {
+    "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+    "observed_at": "2026-11-04T11:03:05.454049+00:00",
+    "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+    "bytes": 3095827,
+    "headers": {
+      "server": "envoy",
+      "date": "Wed, 04 Nov 2026 11:02:56 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "3095827",
+      "accept-ranges": "bytes",
+      "vary": "Accept-Encoding",
+      "access-control-allow-origin": "*",
+      "x-envoy-upstream-service-time": "20",
+      "connection": "close"
+    },
+    "planalto_web_observation": "Access denied via web tool; unchanged preserved B snapshot retained, not replaced.",
+    "B_planalto_sha256": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c",
+    "scope": "Revalidate primary LC214 wording for existing B contracts; no new tax rate or benefit invented."
+  },
+  "B_characterization_change": "B-characterization-change.json",
+  "A44_report": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json",
+  "console_proposal_for_B": {
+    "applied": false,
+    "verified_after_application": false,
+    "summary": "A155 implements H1-H4 and delivers H5; regular A154 development paused.",
+    "deliveries": [
+      "B02 and Q-B06-1 caller integration",
+      "B13/B17 operation flow, B11/B14 period entrypoint and synthetic-rate rejection",
+      "44-item evidence report, source patch and package"
+    ],
+    "pending": [
+      "B creates and validates new gated catalog/bundle versions",
+      "B updates B16 characterization, scopes B02/B07 no-gate assertions to historical catalogs and consolidates matrix/console",
+      "Remaining A44 scope and final full integrated regression remain open"
+    ],
+    "A_group_states": {
+      "4B.1": "PARTIAL",
+      "4B.2": "PARTIAL",
+      "4B.3": "PARTIAL",
+      "4B.4": "PARTIAL"
+    },
+    "B_group_states": "CONSOLIDATE_BY_B_FROM_ACTUAL_INTEGRATION_EVIDENCE",
+    "production_ready": false
+  },
+  "A154_state": "PAUSED_USER_REQUEST_EXIT130_NO_ACCEPTANCE",
+  "git_publication": "PRECOMMIT_CUT_LOCAL_COMMIT_AUTHORIZED_AFTER_VALIDATION_NO_PUSH_AUTHORIZATION",
+  "B_received": false,
+  "global_matrix_edited": false,
+  "global_console_edited": false,
+  "phase4b_complete": false,
+  "production_ready": false,
+  "known_limits": [
+    "A44 groups remain partial; this is not final full integrated regression.",
+    "B07 installed-bundle cases remain pending until B activation; 640 own in-memory test cases exercise the implementation.",
+    "B16 old synthetic acceptance characterization must be updated by B; its failure is preserved.",
+    "B17 qualification remains distinct from appropriation; synthetic parameter stays nonofficial.",
+    "Period assessment consumes a complete supplied ledger; it never posts, refunds, extinguishes or authenticates government records."
+  ]
+}

@@ -17,6 +17,7 @@ final readonly class TemporalRateCatalog
     public function resolve(string $tax, ?string $jurisdiction, LocalDate $on, DateTimeImmutable $knownAt): array
     {
         $matches = [];
+        $nonOfficial = false;
         foreach ($this->catalog['rates'] ?? [] as $row) {
             if (($row['tax'] ?? null) !== $tax || ($row['jurisdiction'] ?? null) !== $jurisdiction) {
                 continue;
@@ -36,16 +37,24 @@ final readonly class TemporalRateCatalog
             if (($row['status'] ?? null) !== 'ACTIVE' || ! preg_match('/^\d+(?:\.\d+)?$/', (string) ($row['percent'] ?? ''))) {
                 continue;
             }
+            if ((array_key_exists('source_kind', $row) && $row['source_kind'] !== 'OFFICIAL')
+                || (array_key_exists('synthetic', $row) && $row['synthetic'] !== false)) {
+                $nonOfficial = true;
+
+                continue;
+            }
             $matches[] = $row;
         }
         if (count($matches) > 1) {
             return ['status' => 'CONFLICT', 'reason' => 'RTC_RATE_CONFLICT:'.$tax];
         }
         if ($matches === []) {
-            return ['status' => 'NOT_FOUND', 'reason' => 'RTC_RATE_NOT_PROVEN:'.$tax];
+            return ['status' => 'NOT_FOUND', 'reason' => 'RTC_RATE_NOT_PROVEN:'.$tax,
+                ...($nonOfficial ? ['official' => false] : [])];
         }
 
-        return ['status' => 'RESOLVED', 'row' => $matches[0], 'reason' => 'RTC_RATE_RESOLVED'];
+        return ['status' => 'RESOLVED', 'row' => $matches[0], 'reason' => 'RTC_RATE_RESOLVED',
+            ...(array_key_exists('source_kind', $matches[0]) ? ['official' => true] : [])];
     }
 
     /** @return array<string, mixed> */

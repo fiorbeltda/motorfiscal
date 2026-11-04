@@ -206,7 +206,12 @@ final readonly class ConsumptionReformEngine
         if ($facts->value('rtc.credit_context') === 'INPUT' && isset($this->codes['input_credit_treatment'])
             && $facts->value('rtc.acquirer_regime') === 'REGULAR'
             && ! ($kind === 'FINANCIAL' && isset($this->codes['financial_operation']['credit']))) {
-            $inputCreditTreatment = (new InputCreditTreatmentQualifier)->resolve($facts, $on, $knownAt, $this->codes['input_credit_treatment']);
+            $ordinaryCreditFacts = (new CreditIntegration155)->ordinaryFacts($facts, $this->codes);
+            if ($ordinaryCreditFacts !== $facts) {
+                $trace[] = ['stage' => 'PRESUMED_CREDIT_SEPARATE_REQUEST155',
+                    'ordinary_qualifier_assesses_presumed' => false, 'original_request_preserved' => true];
+            }
+            $inputCreditTreatment = (new InputCreditTreatmentQualifier)->resolve($ordinaryCreditFacts, $on, $knownAt, $this->codes['input_credit_treatment']);
             $trace[] = ['stage' => 'INPUT_CREDIT_TREATMENT', ...$inputCreditTreatment];
             if ($inputCreditTreatment['status'] !== 'RESOLVED') {
                 return $this->stop($inputCreditTreatment['status'], [$inputCreditTreatment['reason']], $inputCreditTreatment['missing_facts'], $trace);
@@ -722,6 +727,13 @@ final readonly class ConsumptionReformEngine
         $trace[] = ['stage' => 'DESTINATION', 'basis' => $basis, 'state' => $state, 'municipality' => $municipality];
 
         $treatment = (string) $facts->value('rtc.tax_treatment');
+        $annexStandard = $this->qualifyAnnexStandard155($facts);
+        if ($annexStandard !== null) {
+            $trace[] = ['stage' => $annexStandard['reason'], ...$annexStandard];
+            if ($annexStandard['status'] !== 'RESOLVED') {
+                return $this->stop($annexStandard['status'], [$annexStandard['reason']], $annexStandard['missing_facts'], $trace);
+            }
+        }
         $professionalReduction = null;
         $annexReduction = null;
         $institutionalImmunity = null;
@@ -1082,7 +1094,10 @@ final readonly class ConsumptionReformEngine
                 'ibs_state' => $ibsState, 'ibs_municipal' => $ibsMunicipal, 'cbs' => $cbs,
                 'rate_sources' => [$stateRow['source_id'], $municipalRow['source_id'], $cbsRow['source_id']]];
             if ($this->transitions->qualifiesImportCredits() && $facts->value('rtc.credit_context') === 'INPUT') {
-                $importCredit = (new CreditDecisionEngine)->resolve($facts, 'IMPORT', true, $inputCreditTreatment);
+                $importCredit = (new CreditIntegration155)->resolve($facts, 'IMPORT', true, $inputCreditTreatment, $this->codes, $on);
+                if (isset($importCredit['integration155'])) {
+                    $trace[] = ['stage' => 'CREDIT_INTEGRATION155', ...$importCredit['integration155']];
+                }
                 if ($importCredit['status'] !== 'RESOLVED') {
                     $creditMissing = $creditInput122
                         ? (new CreditInput122)->correctionFacts($importCredit['reason'], $importCredit['missing_facts'])
@@ -1092,7 +1107,7 @@ final readonly class ConsumptionReformEngine
                             'missing_facts' => $creditMissing, 'credit_granted' => false];
                     }
 
-                    return $this->stop('ACTION_REQUIRED', [$importCredit['reason']], $creditMissing, $trace);
+                    return $this->stop($importCredit['status'], [$importCredit['reason']], $creditMissing, $trace);
                 }
                 $trace[] = ['stage' => 'IMPORT_CREDIT', 'source_article' => $importCredit['source_article'] ?? null,
                     'source_hash' => $this->transitions->sourceHash(),
@@ -1158,8 +1173,11 @@ final readonly class ConsumptionReformEngine
 
             return $this->stop('ACTION_REQUIRED', ['RTC_IMPORT_DOCUMENT_OBLIGATION_NOT_PROVEN'], [], $trace);
         }
-        $credit = (new CreditDecisionEngine)->resolve($facts, $market, treatmentDecision: $inputCreditTreatment);
-        if ($credit['status'] === 'ACTION_REQUIRED') {
+        $credit = (new CreditIntegration155)->resolve($facts, $market, false, $inputCreditTreatment, $this->codes, $on);
+        if (isset($credit['integration155'])) {
+            $trace[] = ['stage' => 'CREDIT_INTEGRATION155', ...$credit['integration155']];
+        }
+        if ($credit['status'] !== 'RESOLVED') {
             $creditMissing = $creditInput122
                 ? (new CreditInput122)->correctionFacts($credit['reason'], $credit['missing_facts'])
                 : $credit['missing_facts'];
@@ -1168,7 +1186,7 @@ final readonly class ConsumptionReformEngine
                     'missing_facts' => $creditMissing, 'credit_granted' => false];
             }
 
-            return $this->stop('ACTION_REQUIRED', [$credit['reason']], $creditMissing, $trace);
+            return $this->stop($credit['status'], [$credit['reason']], $creditMissing, $trace);
         }
         $collection = (string) $facts->value('rtc.collection_method');
         $collectionDecision = null;
@@ -1273,6 +1291,9 @@ final readonly class ConsumptionReformEngine
             'catalog_versions' => ['rates' => $this->rates->metadata()['version'], 'codes' => $this->codes['version'] ?? null,
                 'transition' => $this->transitions->version()],
         ];
+        if (isset($credit['integration155'])) {
+            $decision['credit_integration155'] = $credit['integration155'];
+        }
         if ($platformDecision !== null) {
             $decision['platform_responsibility'] = $platformDecision;
         }
@@ -1356,6 +1377,80 @@ final readonly class ConsumptionReformEngine
     private function tax(DecimalValue $base, string $percent): string
     {
         return $base->multipliedBy(DecimalValue::fromString($percent))->dividedBy(DecimalValue::fromString('100'), 10)->rounded(2)->value();
+    }
+
+    /** @return array<string, mixed>|null */
+    private function qualifyAnnexStandard155(FactBag $facts): ?array
+    {
+        if (! array_key_exists(AnnexStandardQualificationPolicyB07::KEY, $this->codes)) {
+            return null;
+        }
+        $out = static fn (string $status, string $reason, array $missing = []): array => [
+            'status' => $status, 'reason' => $reason, 'missing_facts' => $missing];
+        if (! AnnexStandardQualificationPolicyB07::required($this->codes)) {
+            return $out('INVALID', 'RTC_ANNEX_STANDARD_POLICY_INVALID');
+        }
+        if ($facts->value('rtc.tax_treatment') !== 'STANDARD') {
+            return null;
+        }
+        $nbs = $facts->value('rtc.service_nbs_code');
+        $family = false;
+        foreach ($this->codes['engine_decision_rules'] ?? [] as $rule) {
+            if (isset($rule['annex_service_category'])
+                && ($rule['canonical_service_id'] ?? null) === $facts->value('service.canonical_id')
+                && ($rule['market'] ?? null) === $facts->value('rtc.market')) {
+                $family = true;
+            }
+        }
+        if ($nbs === null) {
+            return $family ? $out('ACTION_REQUIRED', 'RTC_ANNEX_SERVICE_NBS_REQUIRED', ['rtc.service_nbs_code']) : null;
+        }
+        $listed = false;
+        foreach ($this->codes['annex_service_reduction']['annexes'] ?? [] as $annex) {
+            foreach ($annex['items'] ?? [] as $item) {
+                if (is_string($nbs) && is_string($item['nbs'] ?? null) && $item['nbs'] !== '' && str_starts_with($nbs, $item['nbs'])) {
+                    $listed = true;
+                }
+            }
+        }
+        if (! $listed) {
+            return null;
+        }
+        if ($facts->value('rtc.annex_service_description_confirmed') === true) {
+            return $out('INVALID', 'RTC_ANNEX_STANDARD_CONTRADICTS_CONFIRMED_DESCRIPTION');
+        }
+        $keys = AnnexStandardQualificationPolicyB07::POLICY['required_facts'];
+        $missing = $facts->missing($keys);
+        foreach (['rtc.annex_service_description_confirmed', 'rtc.annex_nbs_classification_confirmed'] as $key) {
+            if (! is_bool($facts->value($key))) {
+                $missing[] = $key;
+            }
+        }
+        foreach (['rtc.annex_noncorrespondence_evidence_id', 'rtc.service_nbs_evidence_id'] as $key) {
+            $value = $facts->value($key);
+            if (! is_string($value) || preg_match('/\A[\p{Z}\s]*\z/u', $value) !== 0 || preg_match('/\p{C}/u', $value) !== 0) {
+                $missing[] = $key;
+            }
+        }
+        if (! is_string($facts->value('rtc.annex_noncorrespondence_justification'))) {
+            $missing[] = 'rtc.annex_noncorrespondence_justification';
+        }
+        if ($missing !== []) {
+            return $out('ACTION_REQUIRED', 'RTC_ANNEX_NONCORRESPONDENCE_PROOF_MISSING', array_values(array_unique($missing)));
+        }
+        $justification = $facts->value('rtc.annex_noncorrespondence_justification');
+        if (preg_match('/\A[\p{Z}\p{C}\s]*\z/u', $justification) !== 0) {
+            return $out('ACTION_REQUIRED', 'RTC_ANNEX_NONCORRESPONDENCE_JUSTIFICATION_INSUFFICIENT', ['rtc.annex_noncorrespondence_justification']);
+        }
+        if ($facts->value('rtc.annex_nbs_classification_confirmed') === false) {
+            return $out('ACTION_REQUIRED', 'RTC_ANNEX_NBS_RECLASSIFICATION_REQUIRED', ['rtc.annex_nbs_classification_confirmed']);
+        }
+
+        return $out('RESOLVED', 'RTC_ANNEX_NONCORRESPONDENCE_QUALIFIED') + [
+            'nbs' => $nbs, 'justification' => $justification,
+            'evidence_id' => $facts->value('rtc.annex_noncorrespondence_evidence_id'),
+            'nbs_evidence_id' => $facts->value('rtc.service_nbs_evidence_id'),
+            'source_hash' => $this->codes['annex_service_reduction']['source_hash'] ?? null];
     }
 
     /** @return array<string, mixed>|null */

@@ -1,0 +1,531 @@
+{
+  "task": "A154",
+  "created_at": "2026-11-04T10:29:13.828860+00:00",
+  "base": "6c0f81bffb9923f36d00dcfb9eec5d0fd138bd9f",
+  "scope": "UNIAO_DIRIGIDA_A44_NAO_REGRESSAO_INTEGRAL",
+  "requirements": [
+    {
+      "id": "4B.1.1",
+      "requirement": "fases de 2026 a 2033",
+      "tests": [
+        "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php"
+      ]
+    },
+    {
+      "id": "4B.1.2",
+      "requirement": "alíquotas de teste",
+      "tests": [
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.1.3",
+      "requirement": "redução/extinção gradual dos tributos atuais",
+      "tests": [
+        "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+        "tests/Fiscal/Unit/IssTransitionRateEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.1.4",
+      "requirement": "convivência ISS/ICMS/PIS/Cofins com IBS/CBS",
+      "tests": [
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php"
+      ]
+    },
+    {
+      "id": "4B.1.5",
+      "requirement": "data relevante de cada decisão",
+      "tests": [
+        "tests/Fiscal/Integration/AdvanceOrigin88EngineTest.php",
+        "tests/Fiscal/Integration/RecordedAdvance91EngineTest.php",
+        "tests/Fiscal/Integration/RecordedAdvanceComponents91Test.php",
+        "tests/Fiscal/Integration/RecordedAdvancePolicy91Test.php",
+        "tests/Fiscal/Integration/TaxPointLifecycle147IntegrationTest.php",
+        "tests/Fiscal/Integration/TemporalEvents86Test.php",
+        "tests/Fiscal/Unit/AdvanceContext88Test.php",
+        "tests/Fiscal/Unit/AdvanceOrigin88Test.php",
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TemporalComponents86Test.php"
+      ]
+    },
+    {
+      "id": "4B.1.6",
+      "requirement": "vigências, publicação, revogação e supersessão",
+      "tests": [
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ]
+    },
+    {
+      "id": "4B.1.7",
+      "requirement": "bloqueio de regras futuras ou vencidas",
+      "tests": [
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ]
+    },
+    {
+      "id": "4B.1.8",
+      "requirement": "não usar “ano” como único seletor temporal",
+      "tests": [
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TaxTemporalResolverTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.1",
+      "requirement": "operações onerosas",
+      "tests": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.2",
+      "requirement": "operações não onerosas previstas",
+      "tests": [
+        "tests/Fiscal/Unit/AcquiredPersonalUseTest.php",
+        "tests/Fiscal/Unit/DonationNominalCalculationTest.php",
+        "tests/Fiscal/Unit/DonationQualificationTest.php",
+        "tests/Fiscal/Unit/PersonalUseSupplyOriginTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.3",
+      "requirement": "fornecimento de serviços",
+      "tests": [
+        "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php",
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.4",
+      "requirement": "local da operação",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/Geographic116DocumentPricesTest.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php"
+      ]
+    },
+    {
+      "id": "4B.2.5",
+      "requirement": "destino",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.6",
+      "requirement": "B2B/B2C",
+      "tests": [
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.7",
+      "requirement": "presencial/remoto/digital",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.8",
+      "requirement": "importação",
+      "tests": [
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/ImportDpsModel143Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.9",
+      "requirement": "exportação",
+      "tests": [
+        "tests/Fiscal/Integration/ExportIssResults96Test.php",
+        "tests/Fiscal/Integration/PartialExportDpsPair135Test.php"
+      ]
+    },
+    {
+      "id": "4B.2.10",
+      "requirement": "estabelecimento",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.11",
+      "requirement": "residência/domicílio",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.2.12",
+      "requirement": "intermediários e plataformas quando aplicável",
+      "tests": [
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.1",
+      "requirement": "fornecedor",
+      "tests": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.2",
+      "requirement": "adquirente",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.3",
+      "requirement": "destinatário",
+      "tests": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.4",
+      "requirement": "importador",
+      "tests": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ImportResponsibility129Test.php"
+      ]
+    },
+    {
+      "id": "4B.3.5",
+      "requirement": "plataforma",
+      "tests": [
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.6",
+      "requirement": "responsável tributário",
+      "tests": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.7",
+      "requirement": "split payment",
+      "tests": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ]
+    },
+    {
+      "id": "4B.3.8",
+      "requirement": "recolhimento pelo adquirente",
+      "tests": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.3.9",
+      "requirement": "regimes públicos ou especiais",
+      "tests": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/SimplesRegularElectionEngine78Test.php",
+        "tests/Fiscal/Unit/GovernmentPurchaseQualifierTest.php",
+        "tests/Fiscal/Unit/SimplesTemporalCatalog78Test.php"
+      ]
+    },
+    {
+      "id": "4B.3.10",
+      "requirement": "identificação separada de contribuinte e responsável",
+      "tests": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.1",
+      "requirement": "base de cálculo",
+      "tests": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php"
+      ]
+    },
+    {
+      "id": "4B.4.2",
+      "requirement": "exclusões",
+      "tests": [
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PublicPayment139Test.php",
+        "tests/Fiscal/Unit/LegacyExclusionWindow135Test.php"
+      ]
+    },
+    {
+      "id": "4B.4.3",
+      "requirement": "descontos",
+      "tests": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.4",
+      "requirement": "acréscimos",
+      "tests": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php"
+      ]
+    },
+    {
+      "id": "4B.4.5",
+      "requirement": "reembolsos",
+      "tests": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.6",
+      "requirement": "operações combinadas",
+      "tests": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PrincipalAccessoryAssessment146Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.7",
+      "requirement": "alíquotas padrão",
+      "tests": [
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.8",
+      "requirement": "alíquotas reduzidas",
+      "tests": [
+        "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php",
+        "tests/Fiscal/Unit/AnnexServiceReductionTest.php",
+        "tests/Fiscal/Unit/ProfessionalReductionTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.9",
+      "requirement": "redução de base",
+      "tests": [
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.10",
+      "requirement": "regimes específicos",
+      "tests": [
+        "tests/Fiscal/Integration/FinancialScopeIntegrationTest.php",
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php",
+        "tests/Fiscal/Unit/FinancialOperationEngineTest.php",
+        "tests/Fiscal/Unit/FinancialRegimeQualifierTest.php",
+        "tests/Fiscal/Unit/FinancialTaxEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.11",
+      "requirement": "arredondamento",
+      "tests": [
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php",
+        "tests/Fiscal/Unit/MaterialInput119ContractTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.12",
+      "requirement": "IBS estadual e municipal separados",
+      "tests": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.13",
+      "requirement": "CBS separada",
+      "tests": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ]
+    },
+    {
+      "id": "4B.4.14",
+      "requirement": "memória de cálculo auditável",
+      "tests": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php"
+      ]
+    }
+  ],
+  "unique_test_files": 52,
+  "test_hashes": {
+    "tests/Fiscal/Integration/AdvanceOrigin88EngineTest.php": "cb93d016bda4af26e3d814916a77f81d38e4d084d6a3a5008bb241086c29182b",
+    "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php": "672de0fd3208a5a9fa41fc3c08f727751162d8f2558bdf8764d8f7bec2a7fbf1",
+    "tests/Fiscal/Integration/CentralizedDomicile152Test.php": "c3958203741ad1e8e9ea2c010498b497d74d858b62ba24e3ce0e5da5d986a4e9",
+    "tests/Fiscal/Integration/CollectionEvidence148Test.php": "e160389f23b2716dff43014d7b6efa4cadc109c68fb4892a5cbc7f8b3af0d650",
+    "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php": "1d5c3e2acea7524822a6d4dc9f001a31dd0907711f00d69e310702def8848a23",
+    "tests/Fiscal/Integration/EntityDomicile151Test.php": "e5203f98fb807a4b568ddc5590db6fbf6efc998e4d77ae23ed124e795b80e273",
+    "tests/Fiscal/Integration/ExportIssResults96Test.php": "6286f1483c4bf56690c7eaea774edb6aff48d48e95e1408feea6282e13dcf61e",
+    "tests/Fiscal/Integration/FinancialScopeIntegrationTest.php": "ac5cc203e612e7849ddf2203fd639704602d62e3f1746f68eaa726f8d111ae5c",
+    "tests/Fiscal/Integration/Geographic116DocumentPricesTest.php": "7b2b23bc33a47b447dfbbff793951e0fa3ebd192528678014ec4fbd3fff09edc",
+    "tests/Fiscal/Integration/ImportDocumentMoney141Test.php": "2db00a3bf05997ba07f3d6da929fed9fd37cd5adb64d1ba73b99b727d1e09bd6",
+    "tests/Fiscal/Integration/ImportDpsModel143Test.php": "dc363a9ba0d1db037648de2bbc0e001a2c529323ab27c1c9f60329142e6fee2e",
+    "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php": "41d6bbc2543386b644afec2100dbb40db45914ff846fa100a8d1f446055194c2",
+    "tests/Fiscal/Integration/IssTransitionIntegrationTest.php": "8f2bc6a44016d4f8d781d1dd6e067822bb8a343c09919c089411d74ba66998bc",
+    "tests/Fiscal/Integration/MaterialInput119Test.php": "2eac8aed2077c846c0bb521e900486e208010d2ea5007141571a4fb5ade8ce3e",
+    "tests/Fiscal/Integration/PartialExportDpsPair135Test.php": "7afa789b677924abbde20c2efe1e10aeecfab32b41a018d81bcd9810f88b26ac",
+    "tests/Fiscal/Integration/PartyDomicile153Test.php": "ba5936b60c82d0c410146613a4a26902b8c52dd9a3aea9433ebb3ad84f70622c",
+    "tests/Fiscal/Integration/PostIssIntegrationTest.php": "4d57214dbedb35befa97a02def8dd8edd1eb3e2541e21df1b737230004f4def1",
+    "tests/Fiscal/Integration/PrincipalAccessoryAssessment146Test.php": "cbd6ae9a6b22b37f5810f72ed9852c7b829897512113efcfa56684027631e768",
+    "tests/Fiscal/Integration/PublicPayment139Test.php": "08edb5e079e80f25078642bb717a2e43840a6ade5d63b60a0476dc8d42e47949",
+    "tests/Fiscal/Integration/RecordedAdvance91EngineTest.php": "e28f749f697c748d4ff28e24690f3ccb7cf738732fcbcb623b300dff637d5bff",
+    "tests/Fiscal/Integration/RecordedAdvanceComponents91Test.php": "acb06641b6c96cbbd290856f2ae8fb0248994a6728a3ee7efde741a4934d3c60",
+    "tests/Fiscal/Integration/RecordedAdvancePolicy91Test.php": "a432461b6e86eacae4cbc5c3ba608f49cda89465b82cc5b9306222e5cbce663a",
+    "tests/Fiscal/Integration/ServiceLocality149Test.php": "f26726ad65b672c85b123c5cc643a2455d41d1bcd1b97a800f03a360714c2302",
+    "tests/Fiscal/Integration/SimplesRegularElectionEngine78Test.php": "cbbc128996f33c00f1ca8c18ed766f66a28843d1d636a5e6fbe860f80672a589",
+    "tests/Fiscal/Integration/TaxPointLifecycle147IntegrationTest.php": "3517810cbdf07acdce1eab7a5390820b2f2725ac9030864d7f0e09cb05f0ec5e",
+    "tests/Fiscal/Integration/TemporalEvents86Test.php": "f8bea1803101191bce90b2e2106b6934d8606399aaeff08d53139568aa8bb8bd",
+    "tests/Fiscal/Integration/TerritorialLocality150Test.php": "44d1cf96326ce0c2e179dee4b8fe2562cb9c36cd11066c884605c2d7a0ac590b",
+    "tests/Fiscal/Unit/AcquiredPersonalUseTest.php": "dea70335c546da8d7f828b161fbbd066f5b47cbfc689a31bfa5711966f6293eb",
+    "tests/Fiscal/Unit/AdvanceContext88Test.php": "740c6f1191f18b0c5b620943beda217dd65427fc2d6a64a7fa8143c9767600ed",
+    "tests/Fiscal/Unit/AdvanceOrigin88Test.php": "0c199d15678a273b3c0f9d6dd1b4fc90d060f96141f28aa1a81598c894cc949c",
+    "tests/Fiscal/Unit/AnnexServiceReductionTest.php": "fc9008e1baf85c6d86f681e404fdf1a7e4de2df8568c43c23090ceab31ceb2e3",
+    "tests/Fiscal/Unit/ConsumptionReformEngineTest.php": "f75857443baca50dd63b75ac78082cf6333e61b7a2e643db378839b119498757",
+    "tests/Fiscal/Unit/DonationNominalCalculationTest.php": "d1fe16c5243766c90fa7ce5a1a91a4c8d6e6154a10683447449d57abbf9b4dfd",
+    "tests/Fiscal/Unit/DonationQualificationTest.php": "f5db1bf6fa2378384d2cd8728baeebf87768a748d9b8cd1a40140e797c40803b",
+    "tests/Fiscal/Unit/FinancialBaseEngineTest.php": "c5cb9e7a4a605f49422ba53bf2da429a0929919ebedfcd525e91620d32e159cf",
+    "tests/Fiscal/Unit/FinancialOperationEngineTest.php": "10c4e1af4b511500d22993b7707b65092fbde14dd79c85ecae3338f36d1d1f78",
+    "tests/Fiscal/Unit/FinancialRegimeQualifierTest.php": "e4a0edfe2e6ed0ae8b6f1de516e958240c07f5f506cf0885781863889d970c47",
+    "tests/Fiscal/Unit/FinancialTaxEngineTest.php": "05ddb074fe3368568f7c796d9791f7ad0d9c53feae5f324400e760eab6eb4201",
+    "tests/Fiscal/Unit/GovernmentPurchaseQualifierTest.php": "4a502013a22b3ad5cf4c3eac9961a2de80f5523f5ac9a4260dd5454db7a05f7c",
+    "tests/Fiscal/Unit/ImportResponsibility129Test.php": "95c58aab9d023b98edf61b2289fcabf0450764db21e0c81fdf2c590792bb4fb9",
+    "tests/Fiscal/Unit/IssTransitionRateEngineTest.php": "f4b32e407e1e35e13584595932d2c4a849007f6dfdfddda5a3af08636c779393",
+    "tests/Fiscal/Unit/LegacyExclusionWindow135Test.php": "e2b5deddca0f26c210dea8ce3bacc83e9486231721d794ba4930686823c212cf",
+    "tests/Fiscal/Unit/MaterialInput119ContractTest.php": "6c2c0f19f1e5b2ce7a97babfdbf3beabcadecb0c6f670d48b4f073b9e7a01524",
+    "tests/Fiscal/Unit/PersonalUseSupplyOriginTest.php": "8e2025dfa375b6a9e5fed9250e873a9de5713b4f1434c924b0a9541524c82f58",
+    "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php": "f1728f51a2ff103fb2fe7149a3836b633e42c7e7e5460a59239b21a7bb678593",
+    "tests/Fiscal/Unit/ProfessionalReductionTest.php": "d06d1201ce06115b13610dbc1ff10f2320140702b7443615f9ddf32cb09ae2dd",
+    "tests/Fiscal/Unit/SimplesTemporalCatalog78Test.php": "f0393e75f5711d79a0cb55c60c576a51b1a4d811d68b26f033333b92d99cc9a7",
+    "tests/Fiscal/Unit/TaxPointContext86Test.php": "0f49aca22e4abf45ab2de3a6a731da494fbf0d9c27dfbe2396f796c9ab640d8e",
+    "tests/Fiscal/Unit/TaxPointLifecycle147Test.php": "0936418724d0b9f9c087810ee262890805c76f20f20265cceba857b9e980a353",
+    "tests/Fiscal/Unit/TaxTemporalResolverTest.php": "80725318485109add908d165647168990a5970e19665da9ab11580b97aaa31b8",
+    "tests/Fiscal/Unit/TemporalComponents86Test.php": "e36eb23c5623914fd46503ca47bb35d930f37d7d176b1438e6148359ccf760b8",
+    "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php": "1bb624627a67f4fe806fa17c8860be9f3bbde0ab4fa97ee7347a4cb4393bb58c"
+  },
+  "command": [
+    "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+    "exec",
+    "motorfiscal-agente-a-20261103",
+    "php",
+    "vendor/bin/pest",
+    "tests/Fiscal/Integration/AdvanceOrigin88EngineTest.php",
+    "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php",
+    "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+    "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+    "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+    "tests/Fiscal/Integration/EntityDomicile151Test.php",
+    "tests/Fiscal/Integration/ExportIssResults96Test.php",
+    "tests/Fiscal/Integration/FinancialScopeIntegrationTest.php",
+    "tests/Fiscal/Integration/Geographic116DocumentPricesTest.php",
+    "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+    "tests/Fiscal/Integration/ImportDpsModel143Test.php",
+    "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+    "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+    "tests/Fiscal/Integration/MaterialInput119Test.php",
+    "tests/Fiscal/Integration/PartialExportDpsPair135Test.php",
+    "tests/Fiscal/Integration/PartyDomicile153Test.php",
+    "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+    "tests/Fiscal/Integration/PrincipalAccessoryAssessment146Test.php",
+    "tests/Fiscal/Integration/PublicPayment139Test.php",
+    "tests/Fiscal/Integration/RecordedAdvance91EngineTest.php",
+    "tests/Fiscal/Integration/RecordedAdvanceComponents91Test.php",
+    "tests/Fiscal/Integration/RecordedAdvancePolicy91Test.php",
+    "tests/Fiscal/Integration/ServiceLocality149Test.php",
+    "tests/Fiscal/Integration/SimplesRegularElectionEngine78Test.php",
+    "tests/Fiscal/Integration/TaxPointLifecycle147IntegrationTest.php",
+    "tests/Fiscal/Integration/TemporalEvents86Test.php",
+    "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+    "tests/Fiscal/Unit/AcquiredPersonalUseTest.php",
+    "tests/Fiscal/Unit/AdvanceContext88Test.php",
+    "tests/Fiscal/Unit/AdvanceOrigin88Test.php",
+    "tests/Fiscal/Unit/AnnexServiceReductionTest.php",
+    "tests/Fiscal/Unit/ConsumptionReformEngineTest.php",
+    "tests/Fiscal/Unit/DonationNominalCalculationTest.php",
+    "tests/Fiscal/Unit/DonationQualificationTest.php",
+    "tests/Fiscal/Unit/FinancialBaseEngineTest.php",
+    "tests/Fiscal/Unit/FinancialOperationEngineTest.php",
+    "tests/Fiscal/Unit/FinancialRegimeQualifierTest.php",
+    "tests/Fiscal/Unit/FinancialTaxEngineTest.php",
+    "tests/Fiscal/Unit/GovernmentPurchaseQualifierTest.php",
+    "tests/Fiscal/Unit/ImportResponsibility129Test.php",
+    "tests/Fiscal/Unit/IssTransitionRateEngineTest.php",
+    "tests/Fiscal/Unit/LegacyExclusionWindow135Test.php",
+    "tests/Fiscal/Unit/MaterialInput119ContractTest.php",
+    "tests/Fiscal/Unit/PersonalUseSupplyOriginTest.php",
+    "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php",
+    "tests/Fiscal/Unit/ProfessionalReductionTest.php",
+    "tests/Fiscal/Unit/SimplesTemporalCatalog78Test.php",
+    "tests/Fiscal/Unit/TaxPointContext86Test.php",
+    "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+    "tests/Fiscal/Unit/TaxTemporalResolverTest.php",
+    "tests/Fiscal/Unit/TemporalComponents86Test.php",
+    "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php",
+    "--compact",
+    "--log-junit",
+    "storage/app/agent-a-A154-existing44-v1.junit.xml"
+  ],
+  "acceptance_rule": "Passing tests establish only their inspected behaviors, never automatic whole-item acceptance.",
+  "global_matrix_edited": false,
+  "B_received": false
+}

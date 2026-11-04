@@ -1,0 +1,1328 @@
+{
+  "task": "A155/H5",
+  "observed_at": "2026-11-04T11:41:29.294917+00:00",
+  "basis": "A144-A153 published scoped evidence plus explicit requirement review; A154 remains paused and has no accepted suite.",
+  "requirements": [
+    {
+      "id": "4B.1.1",
+      "requirement": "fases de 2026 a 2033",
+      "classification": "PARCIAL",
+      "observed_scope": "Seleção de fases e recusa de taxas não comprovadas; rota pós-ISS presente.",
+      "remaining": "Completar matriz de ramos/eventos por período 2026–2033; separar parâmetros externos de implementação.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6",
+        "app/Modules/Fiscal/ConsumptionReform/TransitionCatalog.php": "d2f0bab70ebedf25187184c8b5db0f9dec863b612a7119df70b07a51e1430906"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.2",
+      "requirement": "alíquotas de teste",
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "observed_scope": "Cálculo nominal de teste 2026 separado e dispensa condicionada; financeiro também calcula débitos nominais.",
+      "remaining": "Aferir aplicabilidade e condições de todos os perfis 2026 exigidos; prova de SaaS/financeiro não cobre famílias restantes.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": true,
+      "A155_evidence": [
+        "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+        "regression-v3"
+      ],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.3",
+      "requirement": "redução/extinção gradual dos tributos atuais",
+      "classification": "PARCIAL",
+      "observed_scope": "Fatores ISS 2029–2032 e extinção 2033 implementados; teste injeta referência municipal.",
+      "remaining": "Taxa municipal de 2028 no teste é sintética; tratamento especial e eventos cruzados permanecem pendentes. Metadado ICMS não é cálculo ICMS.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TransitionCatalog.php": "d2f0bab70ebedf25187184c8b5db0f9dec863b612a7119df70b07a51e1430906"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+        "tests/Fiscal/Unit/IssTransitionRateEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/IssTransitionIntegrationTest.php",
+        "tests/Fiscal/Unit/IssTransitionRateEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.4",
+      "requirement": "convivência ISS/ICMS/PIS/Cofins com IBS/CBS",
+      "classification": "PARCIAL",
+      "observed_scope": "Runner integrado preserva ISS/retenções e encaminha pós-ISS ao RTC.",
+      "remaining": "Demonstrar coexistência por família/período; eventos de tributos legados cruzando 2033 recebem pergunta, não cálculo concluído.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TransitionCatalog.php": "d2f0bab70ebedf25187184c8b5db0f9dec863b612a7119df70b07a51e1430906"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.5",
+      "requirement": "data relevante de cada decisão",
+      "classification": "PARCIAL",
+      "observed_scope": "Contratos 86/88/91 distinguem datas relevantes e conhecimento; guardas próprias para reconciliação.",
+      "remaining": "Fixtures históricas 86/88/91 ausentes impedem parte da reexecução; eventos públicos/cancelados/especiais e liquidação ainda precisam prova.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/SupplyDateEvidenceResolver83.php": "c1a9b93f9d1b32d70c261db9ec686d81512d79e807ace24dcb6f7993069878fb",
+        "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php": "a106b2360be23169deb6fff076b4b3576e5e8a27bffe58d566de862cc2825e0d",
+        "app/Modules/Fiscal/ConsumptionReform/TaxPointEventPlanner85.php": "8926b3527af51f9debcb03efebc3b3103472d99837c617bf69ece674db6ca3ca"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/TemporalEvents86Test.php",
+        "tests/Fiscal/Unit/TaxPointContext86Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Integration/TemporalEvents86Test.php",
+        "tests/Fiscal/Unit/TaxPointContext86Test.php"
+      ],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.6",
+      "requirement": "vigências, publicação, revogação e supersessão",
+      "classification": "PARCIAL",
+      "observed_scope": "A147 valida instantes estritos e fronteiras de publicação/revogação/supersessão; lifecycle114 mantém implantação qualificada.",
+      "remaining": "Não há prova de lifecycle em todos os ramos/regras; recuperar fixtures históricas e concluir cenários faltantes.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php": "a106b2360be23169deb6fff076b4b3576e5e8a27bffe58d566de862cc2825e0d",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6",
+        "app/Modules/Fiscal/ConsumptionReform/TransitionCatalog.php": "d2f0bab70ebedf25187184c8b5db0f9dec863b612a7119df70b07a51e1430906"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A147.json": "3b0e26537a8e2bb38fe8313a5c0844a98b666322ee587d54dbb7b7c1607303ec"
+      },
+      "A155_touches_this_A_requirement": true,
+      "A155_evidence": [
+        "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+        "regression-v3"
+      ],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.7",
+      "requirement": "bloqueio de regras futuras ou vencidas",
+      "classification": "PARCIAL",
+      "observed_scope": "Recusa futura/vencida e conflitos nos catálogos e políticas inspecionados, incluindo ciclo A147.",
+      "remaining": "Cobertura integral dos ramos/eventos não demonstrada; não confundir ativação de teste com implantação oficial.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php": "a106b2360be23169deb6fff076b4b3576e5e8a27bffe58d566de862cc2825e0d",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6",
+        "app/Modules/Fiscal/ConsumptionReform/TransitionCatalog.php": "d2f0bab70ebedf25187184c8b5db0f9dec863b612a7119df70b07a51e1430906"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A147.json": "3b0e26537a8e2bb38fe8313a5c0844a98b666322ee587d54dbb7b7c1607303ec"
+      },
+      "A155_touches_this_A_requirement": true,
+      "A155_evidence": [
+        "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+        "regression-v3"
+      ],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.1.8",
+      "requirement": "não usar “ano” como único seletor temporal",
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "observed_scope": "Seletores usam operação/competência/conhecimento e eventos, inclusive instantes dentro do mesmo ano.",
+      "remaining": "Prova transversal de todas as decisões ainda incompleta; suítes temporais históricas dependem de fixtures ausentes.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php": "a106b2360be23169deb6fff076b4b3576e5e8a27bffe58d566de862cc2825e0d",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/TaxPointContext86Test.php",
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TaxTemporalResolverTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/TaxPointLifecycle147Test.php",
+        "tests/Fiscal/Unit/TaxTemporalResolverTest.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/TaxPointContext86Test.php"
+      ],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A147.json": "3b0e26537a8e2bb38fe8313a5c0844a98b666322ee587d54dbb7b7c1607303ec"
+      },
+      "A155_touches_this_A_requirement": true,
+      "A155_evidence": [
+        "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+        "regression-v3"
+      ],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.1",
+      "requirement": "operações onerosas",
+      "classification": "PARCIAL",
+      "observed_scope": "SaaS oneroso e composição A145/A146 com decisão por fornecimento.",
+      "remaining": "Faltam famílias/condições exigidas além dos perfis domésticos BRL já comprovados.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.2",
+      "requirement": "operações não onerosas previstas",
+      "classification": "PARCIAL",
+      "observed_scope": "Doação/uso pessoal têm qualificadores e origem/valor material em contratos próprios.",
+      "remaining": "Não basta fixture antiga recusada: comprovar rota corrente positiva de cada espécie não onerosa e seus efeitos de cálculo.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/DonationQualifier.php": "d36d65f78c879bff066831efed455640e6492ed62eb34fa7b2cedd3a5b8425f4",
+        "app/Modules/Fiscal/ConsumptionReform/PersonalUseRecipientQualifier.php": "7fc70e24a84bf034fc09c02c4072f28ec4a61313fdbaeadba92c6810500e4fb9"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/AcquiredPersonalUseTest.php",
+        "tests/Fiscal/Unit/DonationQualificationTest.php",
+        "tests/Fiscal/Unit/PersonalUseSupplyOriginTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/AcquiredPersonalUseTest.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/DonationQualificationTest.php",
+        "tests/Fiscal/Unit/PersonalUseSupplyOriginTest.php"
+      ],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.3",
+      "requirement": "fornecimento de serviços",
+      "classification": "PARCIAL",
+      "observed_scope": "A149 qualifica oito famílias locais; A151–153 ampliam domicílio e pessoal remoto.",
+      "remaining": "Qualificador local não entrega incidência/cálculo de todas as famílias. Integração classificatória/documental depende de B.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php",
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php",
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f",
+        "docs/fiscal/agent-a/20261103/validation-A149.json": "58e36b0b25d3e3b0075880af32e0bd5a5f950b50f4ed6af6b2c60ea349dc7f69"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.4",
+      "requirement": "local da operação",
+      "classification": "PARCIAL",
+      "observed_scope": "Localidade vinculada a operação e sujeitos; A150 trata imóvel e via; A151–153 domicílio material.",
+      "remaining": "PF empresarial e demais contextos materiais precisam qualificação; compor resultado com runner/classificação sem escolha implícita.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/ObservedGeographicReference115.php": "47628b051bd70021e95aa1e4df1354c7dcd7ad352fc508d1792f84e8c30eb6a7",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957",
+        "app/Modules/Fiscal/ConsumptionReform/PresenceDestinationQualifier.php": "6bd2c737066eb7cd6834b120890d418cf61756f6b8068c94ff73a453ae9c5f45",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A149.json": "58e36b0b25d3e3b0075880af32e0bd5a5f950b50f4ed6af6b2c60ea349dc7f69",
+        "docs/fiscal/agent-a/20261103/validation-A150.json": "828be72879e081d26dd3ec42bd1dae4c4813cd80a4c3c3561a17055428f1ad5a",
+        "docs/fiscal/agent-a/20261103/validation-A151.json": "04b4a19a58f81213cd423cb5197e5d3749b015024bee458f5b52ebf0c2256c66",
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95",
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.5",
+      "requirement": "destino",
+      "classification": "PARCIAL",
+      "observed_scope": "Destino distingue adquirente e destinatário, residência/onerosidade e centralização qualificada.",
+      "remaining": "Faltam integração e casos restantes por família/evento; autenticação externa não é requisito implícito de todo ensaio Sandbox.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/ObservedGeographicReference115.php": "47628b051bd70021e95aa1e4df1354c7dcd7ad352fc508d1792f84e8c30eb6a7",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957",
+        "app/Modules/Fiscal/ConsumptionReform/PresenceDestinationQualifier.php": "6bd2c737066eb7cd6834b120890d418cf61756f6b8068c94ff73a453ae9c5f45",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A149.json": "58e36b0b25d3e3b0075880af32e0bd5a5f950b50f4ed6af6b2c60ea349dc7f69",
+        "docs/fiscal/agent-a/20261103/validation-A150.json": "828be72879e081d26dd3ec42bd1dae4c4813cd80a4c3c3561a17055428f1ad5a",
+        "docs/fiscal/agent-a/20261103/validation-A151.json": "04b4a19a58f81213cd423cb5197e5d3749b015024bee458f5b52ebf0c2256c66",
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95",
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.6",
+      "requirement": "B2B/B2C",
+      "classification": "PARCIAL",
+      "observed_scope": "Rótulo B2B/B2C complementado por identificação e domicílio de não cadastrado/PF A153.",
+      "remaining": "Falta prova de tratamento completo por família e regime; não inferir consumidor ou estabelecimento pelo rótulo.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.7",
+      "requirement": "presencial/remoto/digital",
+      "classification": "PARCIAL",
+      "observed_scope": "A149 separa prestação material e A153 pessoal remoto; presença não equivale automaticamente a destino.",
+      "remaining": "Integrar todas as famílias presenciais/remotas/digitais com incidência e cálculo aplicáveis.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957",
+        "app/Modules/Fiscal/ConsumptionReform/PresenceDestinationQualifier.php": "6bd2c737066eb7cd6834b120890d418cf61756f6b8068c94ff73a453ae9c5f45",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Integration/ServiceLocality149Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A149.json": "58e36b0b25d3e3b0075880af32e0bd5a5f950b50f4ed6af6b2c60ea349dc7f69",
+        "docs/fiscal/agent-a/20261103/validation-A151.json": "04b4a19a58f81213cd423cb5197e5d3749b015024bee458f5b52ebf0c2256c66",
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95",
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.8",
+      "requirement": "importação",
+      "classification": "PARCIAL",
+      "observed_scope": "129 separa papéis na importação digital; 141 reconcilia BRL; 143 monta candidato local delimitado.",
+      "remaining": "Outros perfis/bases/eventos faltam. Rejeição XSD histórica é limite de B preservado, não novo defeito de cálculo presumido.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ImportFxTransactionQualifier.php": "63b2c20e122d4bd2d707a4683b521856807d37527089ce9e2101f533234d572c",
+        "app/Modules/Fiscal/ConsumptionReform/ImportResponsibility129.php": "cffd5e2086d4ef294c5040087e05b782b1da50c088ce7bfbee99cc5baff50ce6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/ImportDpsModel143Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/ImportDpsModel143Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.9",
+      "requirement": "exportação",
+      "classification": "PARCIAL",
+      "observed_scope": "Qualificação de consumo no exterior e exportação parcial; resultados ISS96 e par135 possuem testes.",
+      "remaining": "Reexecutar e classificar cada resultado atual; concluir demais serviços, base/preço ISS e câmbio sem generalizar o perfil parcial.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/CurrentPartialExportIss96.php": "a5cbd6d9168514216f3c54455a2730147ba596d690b902214f0897cffe491e2d",
+        "app/Modules/Fiscal/ConsumptionReform/PartialExportDocumentPrices112.php": "dc9cd75496354ee3accd50c77f1dddb9cd7dfa29a8bb73bd57b69c94dc52f868"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/ExportIssResults96Test.php",
+        "tests/Fiscal/Integration/PartialExportDpsPair135Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/PartialExportDpsPair135Test.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Integration/ExportIssResults96Test.php"
+      ],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.10",
+      "requirement": "estabelecimento",
+      "classification": "PARCIAL",
+      "observed_scope": "A151 seleciona estabelecimento efetivamente atendido; A152 exige matriz única e cobertura de centralização.",
+      "remaining": "PF empresarial/estabelecimento e cenários restantes ainda abertos; integração real do predicado externo de crédito pertence a B.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957",
+        "app/Modules/Fiscal/ConsumptionReform/PresenceDestinationQualifier.php": "6bd2c737066eb7cd6834b120890d418cf61756f6b8068c94ff73a453ae9c5f45",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A151.json": "04b4a19a58f81213cd423cb5197e5d3749b015024bee458f5b52ebf0c2256c66",
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95",
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.11",
+      "requirement": "residência/domicílio",
+      "classification": "PARCIAL",
+      "observed_scope": "A153 comprova habitação/relevância, critérios escolhidos e alternativa com impossibilidade; A151–152 tratam entidades.",
+      "remaining": "H5 inclui os vínculos A151–A153 ausentes neste ID do índice A144. Restam PF empresarial e integração; A154 continua pausada.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A151.json": "04b4a19a58f81213cd423cb5197e5d3749b015024bee458f5b52ebf0c2256c66",
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95",
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.2.12",
+      "requirement": "intermediários e plataformas quando aplicável",
+      "classification": "PARCIAL",
+      "observed_scope": "Plataforma distingue exclusão payment-only, gatilhos domésticos e fornecedor estrangeiro.",
+      "remaining": "Concluir opções art22 e consequências de pagamento/documento; referência declarada não autentica notificação oficial.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/PlatformResponsibilityEngine.php": "6bb58f027bbe5221ab5ee1e9ea3f55320a7ab7791b7afcd0d3777a116fdda351"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.1",
+      "requirement": "fornecedor",
+      "classification": "PARCIAL",
+      "observed_scope": "Papéis do fornecedor preservados; A148 recusa identidades/referências inexatas.",
+      "remaining": "Qualificar condição de contribuinte/regime nas famílias restantes, sem tratar ID como situação cadastral.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CollectionDecisionEngine.php": "396b0353224cc2feb2d2d61549602c3765f7dc92079b086783f97a1244407c77",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A148.json": "203e2de7306797fffc0208724240e66c45671a84e46cfb2556990582b5a0c513"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.2",
+      "requirement": "adquirente",
+      "classification": "PARCIAL",
+      "observed_scope": "Adquirente separado do destinatário e pagador elegível; domicílio A151–153 e guardas A148.",
+      "remaining": "Exercício da opção, vínculos operação/débito e liquidação faltam; qualificação local não comprova pagamento.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CollectionBasisReference119.php": "65d74cca67da7d05881313741447e495685ebdcb1da26e704b649e2765024209",
+        "app/Modules/Fiscal/ConsumptionReform/CollectionDecisionEngine.php": "396b0353224cc2feb2d2d61549602c3765f7dc92079b086783f97a1244407c77",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/PartyDomicile153.php": "e0d78fb134f727cafbfed77731eeb9beca712e4914eda1e99bedfb1c786e1957",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/EntityDomicile151Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PartyDomicile153Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A148.json": "203e2de7306797fffc0208724240e66c45671a84e46cfb2556990582b5a0c513",
+        "docs/fiscal/agent-a/20261103/validation-A151.json": "04b4a19a58f81213cd423cb5197e5d3749b015024bee458f5b52ebf0c2256c66",
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95",
+        "docs/fiscal/agent-a/20261103/validation-A153.json": "64a3323b1f4c25f964cdf8b1f11b2f407cf8fad41aaae18e09e230cb2d38ad81"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.3",
+      "requirement": "destinatário",
+      "classification": "PARCIAL",
+      "observed_scope": "129 usa destinatário BR quando cabível; A153 exige critérios próprios quando distinto do adquirente.",
+      "remaining": "Integrar domicílio/identidade material por família; endereço do arranjo do adquirente não substitui destinatário.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ImportResponsibility129.php": "cffd5e2086d4ef294c5040087e05b782b1da50c088ce7bfbee99cc5baff50ce6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.4",
+      "requirement": "importador",
+      "classification": "PARCIAL",
+      "observed_scope": "Importador vinculado a adquirente/destinatário e bases art64§5 V/VI; inconsistências recusadas.",
+      "remaining": "Demais condições materiais e perfis de importação faltam; crédito/documento externos ficam separados no handoff.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ImportResponsibility129.php": "cffd5e2086d4ef294c5040087e05b782b1da50c088ce7bfbee99cc5baff50ce6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ImportResponsibility129Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/ImportResponsibility129Test.php"
+      ],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.5",
+      "requirement": "plataforma",
+      "classification": "PARCIAL",
+      "observed_scope": "Responsabilidade de plataforma qualificada separada do contribuinte na importação.",
+      "remaining": "Opções art22, diferenças de referência e consequências da cobrança/documentos ainda incompletas.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/PlatformResponsibilityEngine.php": "6bb58f027bbe5221ab5ee1e9ea3f55320a7ab7791b7afcd0d3777a116fdda351"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.6",
+      "requirement": "responsável tributário",
+      "classification": "PARCIAL",
+      "observed_scope": "129 distingue solidariedade estrangeira e plataforma com fundamento explícito.",
+      "remaining": "Demais hipóteses de responsabilidade e ciclo de obrigação até pagamento/extinção precisam contratos/provas.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ImportResponsibility129.php": "cffd5e2086d4ef294c5040087e05b782b1da50c088ce7bfbee99cc5baff50ce6",
+        "app/Modules/Fiscal/ConsumptionReform/PlatformResponsibilityEngine.php": "6bb58f027bbe5221ab5ee1e9ea3f55320a7ab7791b7afcd0d3777a116fdda351"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/PlatformResponsibilityEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.7",
+      "requirement": "split payment",
+      "classification": "PARCIAL",
+      "observed_scope": "Ciclo114 e A148 bloqueiam split sem implantação e referências qualificadas.",
+      "remaining": "Lacuna funcional: segregação padrão/simplificada, parcelas e reconciliação débito/liquidação. Guardas não são implementação desse ciclo.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CollectionDecisionEngine.php": "396b0353224cc2feb2d2d61549602c3765f7dc92079b086783f97a1244407c77",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TransitionCatalog.php": "d2f0bab70ebedf25187184c8b5db0f9dec863b612a7119df70b07a51e1430906"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php",
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/TransitionDeploymentLifecycle114Test.php"
+      ],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A148.json": "203e2de7306797fffc0208724240e66c45671a84e46cfb2556990582b5a0c513"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.8",
+      "requirement": "recolhimento pelo adquirente",
+      "classification": "PARCIAL",
+      "observed_scope": "Elegibilidade art36 e instrumento incompatível com split qualificados com referências estritas.",
+      "remaining": "Lacuna funcional: exercício da opção e vínculo comprovável do pagamento com débito/extinção.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CollectionBasisReference119.php": "65d74cca67da7d05881313741447e495685ebdcb1da26e704b649e2765024209",
+        "app/Modules/Fiscal/ConsumptionReform/CollectionDecisionEngine.php": "396b0353224cc2feb2d2d61549602c3765f7dc92079b086783f97a1244407c77",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A148.json": "203e2de7306797fffc0208724240e66c45671a84e46cfb2556990582b5a0c513"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.9",
+      "requirement": "regimes públicos ou especiais",
+      "classification": "PARCIAL",
+      "observed_scope": "Compra pública e opção regular Simples possuem componentes; A152 exige regime regular na centralização.",
+      "remaining": "Consórcio público, perfis especiais exigidos e integração Simples/MEI continuam abertos; não delegar escopo mínimo à fase5.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "666fe67a9bf04f67e85ecf1281c658c0f210cb658e5f641b6e93df99cd320183",
+        "app/Modules/Fiscal/ConsumptionReform/GovernmentPurchaseQualifier.php": "93a6061df10f94a991539fc83a40b2004b864f172a723fbdc6a60b15090d97b8",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4",
+        "app/Modules/Fiscal/ConsumptionReform/SimplesRegularElectionQualifier78.php": "79a24fbbc4cab18383895a8d0104ff41798aab20fd8c6adb42d8ab5f0cc12015"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Integration/SimplesRegularElectionEngine78Test.php",
+        "tests/Fiscal/Unit/GovernmentPurchaseQualifierTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CentralizedDomicile152Test.php",
+        "tests/Fiscal/Unit/GovernmentPurchaseQualifierTest.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Integration/SimplesRegularElectionEngine78Test.php"
+      ],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A152.json": "549e0f7c2f4ddcb44bd252d6ef725245f8a4f604845f9328fb79da34edc37a95"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.3.10",
+      "requirement": "identificação separada de contribuinte e responsável",
+      "classification": "PARCIAL",
+      "observed_scope": "Contribuinte, responsável e pagador elegível são campos distintos em importação/plataforma/cobrança.",
+      "remaining": "Comprovar consistência nos demais perfis e eventos; ciclo de extinção ainda não entregue.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CollectionDecisionEngine.php": "396b0353224cc2feb2d2d61549602c3765f7dc92079b086783f97a1244407c77",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ImportResponsibility129.php": "cffd5e2086d4ef294c5040087e05b782b1da50c088ce7bfbee99cc5baff50ce6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CollectionEvidence148Test.php",
+        "tests/Fiscal/Integration/ImportResponsibility129IntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A148.json": "203e2de7306797fffc0208724240e66c45671a84e46cfb2556990582b5a0c513"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.1",
+      "requirement": "base de cálculo",
+      "classification": "PARCIAL",
+      "observed_scope": "Base ordinária qualifica ajustes e importação141; composição A145/A146 preserva bases por fornecimento.",
+      "remaining": "Demais regimes e eventos precisam bases próprias. Par143 delimitado não encerra requisito.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/OrdinaryAdjustmentInput119.php": "5457c8e10134f5b4e94cc2f8691914c03a031866fc89c69eacef5b0c30f358ec"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.2",
+      "requirement": "exclusões",
+      "classification": "PARCIAL",
+      "observed_scope": "Exclusões documentadas e janela135; tipos/linhas/identidades estritos119.",
+      "remaining": "Qualificação material por regime/perfil/evento ainda incompleta; descontos/reembolsos não são exclusão irrestrita.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/LegacyExclusionWindow135.php": "afa5a4fea7308516dedeffe516d989da1ae9c2119dd530bf8d4e1565c622b3f1",
+        "app/Modules/Fiscal/ConsumptionReform/OrdinaryAdjustmentInput119.php": "5457c8e10134f5b4e94cc2f8691914c03a031866fc89c69eacef5b0c30f358ec"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PublicPayment139Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/PublicPayment139Test.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.3",
+      "requirement": "descontos",
+      "classification": "PARCIAL",
+      "observed_scope": "Desconto incondicional exige prova; desconto condicionado não reduz automaticamente a base.",
+      "remaining": "Completar espécies/perfis e compatibilidade com preço documental ISS por evento.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/OrdinaryAdjustmentInput119.php": "5457c8e10134f5b4e94cc2f8691914c03a031866fc89c69eacef5b0c30f358ec"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.4",
+      "requirement": "acréscimos",
+      "classification": "PARCIAL",
+      "observed_scope": "Acréscimos com decimal exato, referência material e linhas únicas119.",
+      "remaining": "Ramos restantes/eventos ainda não têm prova completa do vínculo e inclusão de acréscimos.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/OrdinaryAdjustmentInput119.php": "5457c8e10134f5b4e94cc2f8691914c03a031866fc89c69eacef5b0c30f358ec"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.5",
+      "requirement": "reembolsos",
+      "classification": "PARCIAL",
+      "observed_scope": "Reembolso exige terceiro/documento/evidência; entradas vazias e monetários inexatos recusados.",
+      "remaining": "Qualificação causal de cada espécie/perfil não é provada só pela presença dos identificadores.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/OrdinaryAdjustmentInput119.php": "5457c8e10134f5b4e94cc2f8691914c03a031866fc89c69eacef5b0c30f358ec"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.6",
+      "requirement": "operações combinadas",
+      "classification": "PARCIAL",
+      "observed_scope": "A145/A146 tratam independentes e principal/acessório sem dupla tributação ou preço inventado.",
+      "remaining": "Perfis importação/exportação/eventos aplicáveis e projeção de B faltam; componente doméstico BRL não é alcance universal.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PrincipalAccessoryAssessment146Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PrincipalAccessoryAssessment146Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f",
+        "docs/fiscal/agent-a/20261103/validation-A146.json": "299957ed8c6563a42e0a3afddc549abd66aae3d76c539d2d2a49e540bf17764e"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.7",
+      "requirement": "alíquotas padrão",
+      "classification": "PARCIAL",
+      "observed_scope": "Catálogo temporal seleciona taxas por tributo/local/data/conhecimento e recusa parâmetro não comprovado.",
+      "remaining": "Demais períodos/jurisdições dependem de parâmetros oficiais; completar ramos sem inventar taxa futura.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": true,
+      "A155_evidence": [
+        "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+        "regression-v3"
+      ],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.8",
+      "requirement": "alíquotas reduzidas",
+      "classification": "PARCIAL",
+      "observed_scope": "Profissional e anexo têm qualificadores independentes da classificação; teste integrado existe.",
+      "remaining": "Benefícios/perfis restantes precisam materialidade e incidência temporal; não generalizar redução de uma profissão.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/AnnexServiceReductionQualifier.php": "8cb4067fdc7fb6e544ad01868a4c9a04d13c0fd274fc8eef5eca2ba4365cbca7",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ProfessionalReductionQualifier.php": "50b549164ee7dfc0d140ae469bca0a40074c635b6d572f7c38ef3985aa267e76"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php",
+        "tests/Fiscal/Unit/ProfessionalReductionTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/AnnexServiceIntegratedTest.php"
+      ],
+      "not_executed_in_A155": [
+        "tests/Fiscal/Unit/ProfessionalReductionTest.php"
+      ],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": true,
+      "A155_evidence": [
+        "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+        "regression-v3"
+      ],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.9",
+      "requirement": "redução de base",
+      "classification": "LACUNA_REAL",
+      "observed_scope": "FinancialBaseEngine deduz despesas elegíveis; isso não comprova benefício de redução de base.",
+      "remaining": "Nenhum contrato específico de redução legal de base identificado no módulo RTC inspecionado. Qualificar hipótese oficial e implementar prova própria.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/FinancialBaseEngine.php": "a3f27a337c29ebbcf6baaa2ab03413875a7c7e8fcb94370ec3bb1f21a4e93de8"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.10",
+      "requirement": "regimes específicos",
+      "classification": "PARCIAL",
+      "observed_scope": "Qualificador financeiro e bases192/193, débitos e testes de escopo integrado estão presentes.",
+      "remaining": "Confirmar resultado corrente do runner antes de repetir lacuna histórica; famílias específicas restantes e integração final não completas.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/FinancialBaseEngine.php": "a3f27a337c29ebbcf6baaa2ab03413875a7c7e8fcb94370ec3bb1f21a4e93de8",
+        "app/Modules/Fiscal/ConsumptionReform/FinancialRegimeQualifier.php": "5d68e48ea0967b917d571105d12bb2ff6eca0402710046fedf89b5e47c579854"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {},
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.11",
+      "requirement": "arredondamento",
+      "classification": "PARCIAL",
+      "observed_scope": "Decimais exatos119, frações A150 e arredondamento financeiro por componente, inclusive meio centavo.",
+      "remaining": "Matriz por moeda/perfil/evento ainda incompleta; divisão territorial exata não prova arredondamento monetário.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/AdvanceTaxReconciler84.php": "3d3c445ed75a12fa38dfa9a884d1d7dedf388cfcdc1c59918a05fbc3f0bef8e3",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php",
+        "tests/Fiscal/Unit/MaterialInput119ContractTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/FinancialBaseEngineTest.php",
+        "tests/Fiscal/Unit/MaterialInput119ContractTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A150.json": "828be72879e081d26dd3ec42bd1dae4c4813cd80a4c3c3561a17055428f1ad5a"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.12",
+      "requirement": "IBS estadual e municipal separados",
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "observed_scope": "Campos IBS estadual/municipal separados; composições A145 e territorial A150 preservam separação.",
+      "remaining": "Faltam casos materiais municipais não zero e períodos/jurisdições qualificados; não substituir por taxa futura sintética.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f",
+        "docs/fiscal/agent-a/20261103/validation-A150.json": "828be72879e081d26dd3ec42bd1dae4c4813cd80a4c3c3561a17055428f1ad5a"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.13",
+      "requirement": "CBS separada",
+      "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+      "observed_scope": "CBS preservada separadamente em cálculo, composição e débitos financeiros.",
+      "remaining": "Prova integral de benefícios/regimes/eventos e parâmetros posteriores não concluída; efeitos de crédito pertencem a B.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/TemporalRateCatalog.php": "97fe78a2e9a572a087c2b94d0159950c4575873c8565c76b147ba7e53da2bfe6"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/PostIssIntegrationTest.php",
+        "tests/Fiscal/Unit/ConsumptionReformEngineTest.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    },
+    {
+      "id": "4B.4.14",
+      "requirement": "memória de cálculo auditável",
+      "classification": "PARCIAL",
+      "observed_scope": "Memórias, hashes, origem por linha e replay próprios; A153 tem oráculo independente e saídas legadas preservadas.",
+      "remaining": "Cobertura auditável por família/evento/documento restante; hashes não suprem erro de conteúdo ou ausência de cenário.",
+      "code_current_sha256": {
+        "app/Modules/Fiscal/ConsumptionReform/AdvanceTaxReconciler84.php": "3d3c445ed75a12fa38dfa9a884d1d7dedf388cfcdc1c59918a05fbc3f0bef8e3",
+        "app/Modules/Fiscal/ConsumptionReform/CombinedSupplyAssessment145.php": "1c1dc32d590c2b222aa44d7ddf39bded59176edc5444eb7d1b7d2e6827ee7b01",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "cd7f46b2b508c800e51a33215aa66348f9c8f23fcf49a5efd2d5f149f0a247ab",
+        "app/Modules/Fiscal/ConsumptionReform/OrdinaryAdjustmentInput119.php": "5457c8e10134f5b4e94cc2f8691914c03a031866fc89c69eacef5b0c30f358ec",
+        "app/Modules/Fiscal/ConsumptionReform/ServiceLocality149.php": "a5a2d546369166fccc9f6c3834a12569d844cf41fdfbf43cf8c776e105930eb4"
+      },
+      "existing_test_paths": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php"
+      ],
+      "freshly_executed_current_test_paths_not_whole_item_acceptance": [
+        "tests/Fiscal/Integration/CombinedSupplyAssessment145Test.php",
+        "tests/Fiscal/Integration/ImportDocumentMoney141Test.php",
+        "tests/Fiscal/Integration/MaterialInput119Test.php",
+        "tests/Fiscal/Integration/TerritorialLocality150Test.php"
+      ],
+      "not_executed_in_A155": [],
+      "historical_scoped_receipts": {
+        "docs/fiscal/agent-a/20261103/validation-A145.json": "35dc314581fc40a2112d3e2bbd4f0945856a703e69024116fcb987ca0013b39f",
+        "docs/fiscal/agent-a/20261103/validation-A150.json": "828be72879e081d26dd3ec42bd1dae4c4813cd80a4c3c3561a17055428f1ad5a"
+      },
+      "A155_touches_this_A_requirement": false,
+      "A155_evidence": [],
+      "whole_item_accepted": false,
+      "formal_group_closed": false
+    }
+  ],
+  "groups": {
+    "4B.1": 8,
+    "4B.2": 12,
+    "4B.3": 10,
+    "4B.4": 14
+  },
+  "B_may_consolidate_observed_partial_evidence": true,
+  "phase4b_closed": false
+}
