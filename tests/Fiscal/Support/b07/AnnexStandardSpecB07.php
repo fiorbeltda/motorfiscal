@@ -162,6 +162,13 @@ function b07Expected(string $ruleId, string $case): array
 /** @return array<string, mixed> */
 function b07Run(array $scenario, string $bundle = B07_BUNDLE_141): array
 {
+    if ($bundle !== B07_BUNDLE_141) {
+        // Same facts, replayed on the selected bundle: identity, catalog versions and its knowledge date.
+        $manifest = json_decode((string) file_get_contents(B07_ROOT.'/resources/fiscal/'.$bundle), true, 512, JSON_THROW_ON_ERROR);
+        $scenario['rule_bundle_id'] = $manifest['bundle_id'];
+        $scenario['catalog_versions'] = $manifest['catalog_versions'];
+        $scenario['knowledge_at'] = max($scenario['knowledge_at'], $manifest['knowledge_available_at']);
+    }
     $tmp = tempnam(sys_get_temp_dir(), 'b07');
     file_put_contents($tmp, json_encode($scenario, JSON_THROW_ON_ERROR));
     try {
@@ -172,4 +179,20 @@ function b07Run(array $scenario, string $bundle = B07_BUNDLE_141): array
     } finally {
         unlink($tmp);
     }
+}
+
+/**
+ * RTC outcome of an integrated run. A VALID qualification is reported in decision.consumption_reform; a blocked one
+ * (ACTION_REQUIRED/INVALID) stops the integrated decision, which then carries the RTC status and reason codes.
+ *
+ * @return array{status: string|null, reasons: list<string>, decision: array<string, mixed>|null}
+ */
+function b07Outcome(array $result): array
+{
+    $rtc = $result['decision']['consumption_reform'] ?? null;
+    if (is_array($rtc)) {
+        return ['status' => $rtc['status'] ?? null, 'reasons' => $rtc['reasons'] ?? [], 'decision' => $rtc['decision'] ?? null];
+    }
+
+    return ['status' => $result['status'] ?? null, 'reasons' => $result['reason_codes'] ?? [], 'decision' => null];
 }

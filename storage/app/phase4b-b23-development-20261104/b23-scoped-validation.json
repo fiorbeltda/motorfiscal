@@ -1,0 +1,123 @@
+{
+  "task": "B23",
+  "agent": "B",
+  "observed_at": "2026-11-04T12:30:00-03:00",
+  "base": {
+    "remote": "https://github.com/fiorbeltda/motorfiscal",
+    "branch": "codex/fiscal-engine-bootstrap",
+    "head": "213f2c5520b22370682e0e87ca3d9a4a0c39796d",
+    "a_commit": "213f2c5",
+    "published": false
+  },
+  "inputs": {
+    "a_report_h5": {
+      "path": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json",
+      "sha256": "7f7abafa1f4393c355a7a995a634141e3e703ee1f0187b50e06b776f206e963d"
+    },
+    "a_receipt": {
+      "path": "docs/fiscal/agent-a/20261104/handoffs-H1-H5-receipt.json",
+      "sha256": "704d4a67890fc655fb816199acd6b6b22ef8a80bc56752fa841372dfc7638559"
+    },
+    "prev_matrix": {
+      "path": "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json",
+      "sha256": "3496eeba14f613fada8bea7c1404658b856fccd764b818f9f98ed29208ad0556"
+    }
+  },
+  "bundle": {
+    "bundle_id": "CONSUMPTION-PHASE4B-2026.11.04-b23-draft1",
+    "predecessor": "CONSUMPTION-PHASE4B-2026.10.27-141-draft1",
+    "gates": [
+      "credit_zero_semantics_b02",
+      "annex_standard_qualification_b07",
+      "credit_integration_a155"
+    ],
+    "facts_added": 11,
+    "questions_added": 11,
+    "historical_bundles_changed": 0
+  },
+  "validation": {
+    "touched_suites": {
+      "files": [
+        "AnnexStandardQualificationPolicyB07Test",
+        "CreditZeroSemanticsPolicyB02Test",
+        "PeriodScenarioMatrixB16Test",
+        "SyntheticRateAcceptanceB19Test",
+        "HandoffActivationB23Test",
+        "HandoffIntegration155Test"
+      ],
+      "tests": 806,
+      "assertions": 1831,
+      "failed": 0,
+      "skipped": 0,
+      "junit": "E:\\dev\\motorfiscal-agente-b-evidence\\b23\\rerun-touched.junit.xml",
+      "junit_sha256": "f355d483d3016dd31f65187af2706c0854c45a77876d41652d7f8649433f6dfe"
+    },
+    "b07_installed_bundle": {
+      "tests": 362,
+      "assertions": 1163,
+      "failed": 0,
+      "decision_cases": 320
+    },
+    "b23_activation": {
+      "tests": 33,
+      "assertions": 186,
+      "failed": 0,
+      "equivalence_scenarios": 14,
+      "runners": 2,
+      "expected_differences": [
+        "decision.catalog_versions.codes",
+        "QUESTION_UNMAPPED eliminated by B23 questions"
+      ]
+    },
+    "regression": {
+      "scope": "236 arquivos (todos menos os 41 excluidos por fixtures ausentes)",
+      "cases": 10588,
+      "passed": 10074,
+      "failed": 514,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513,
+        "B07_HISTORICAL_GATE_ASSERTION": 1
+      },
+      "after_fix": "assercao B07 restrita ao acervo historico; reexecutada nas suites tocadas (806/806)",
+      "baseline_20261103": {
+        "cases": 9478,
+        "passed": 8644,
+        "failed_environment": 513,
+        "skipped": 321
+      },
+      "full_suite": false,
+      "classification": "PARCIAL (testes obrigatorios excluidos)",
+      "junit": "E:\\dev\\motorfiscal-agente-b-evidence\\b23\\regression-main.junit.xml",
+      "junit_sha256": "17db902fea7cd32f040c8ec6a05b208b6ac8ff2fd023f08477c8e93110028423"
+    },
+    "static": {
+      "pint": "passed",
+      "phpstan": "No errors"
+    }
+  },
+  "artifacts": {
+    "scripts/fork_phase4b_b23_handoff_activation_bundle.py": "9706cd20022f5388358d7fec3cae11a0a043b5bb247cff389213978052f66905",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.04-b23-draft1.json": "91153349ad151ff53e90b3363f9b019a8de584a4cec8774ba1c5a85cf018cf55",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.04-b23-draft1.json": "e4f47ae8a56283611546dbd76f3bb71a67b64fcd2c910d1246036a1f46cbe710",
+    "resources/fiscal/facts/consumption-phase4b-2026.11.04-b23-draft1.json": "d1251f967aa81956306da776bf9016060a5decc83ef0eb7a20284f7de9bfccf9",
+    "resources/fiscal/questions/consumption-integrated-2026.11.04-b23-draft1.json": "fa79301c6f516b9a961389db715952d7d0226019bf2b3695bb17117a2724db5b",
+    "resources/fiscal/production/phase4b-controls-2026.11.04-b23-draft1.json": "785b24172cef773cd6560f63061e25c8fa42dc31a8cc5e43f0037abf21217d5c",
+    "tests/Fiscal/Integration/HandoffActivationB23Test.php": "e880b7f505fc7035ded62195f3248744c688f194de290268de1736c3a1f92abf",
+    "tests/Fiscal/Integration/AnnexStandardQualificationB07Test.php": "460c64964a88d3e679975bb2b8b66c0cc2a271343fcc07a050264c1574e744e9",
+    "tests/Fiscal/Support/b07/AnnexStandardSpecB07.php": "bd5935f6074a8e6ada144cf8e467a24db979556800605a5791db1966b0e8c35f",
+    "tests/Fiscal/Unit/AnnexStandardQualificationPolicyB07Test.php": "f8659b7abdb98db8f49b44e08af0bb3bd77ce284f86bba0036f3c21c932306df",
+    "tests/Fiscal/Unit/CreditZeroSemanticsPolicyB02Test.php": "c21844a20228f6b3093defa70abe399dbfb8b0f7318250c5b6d9924589320c2a",
+    "tests/Fiscal/Unit/PeriodScenarioMatrixB16Test.php": "66133de1e593bbc5ec10765f5e3a0b10b0ac61c954fe4a9b3cd4be97f409587d",
+    "docs/fiscal/phase4b-b23-handoff-activation.md": "9deaa18dfc9d75e9e49d231cb36e6716a41c8918391efe1609528736d1d3e345",
+    "storage/app/phase4b-b23-development-20261104/model-step/requirements80-current-matrix.json": "8770b3a232646011f3db3b5fc8180ba3eb387c19f3d1fcdff6e99175998a777c"
+  },
+  "not_done": [
+    "commit/push (aguarda ordem do usuario)",
+    "regressao integral (34 pastas ausentes)",
+    "validacao externa"
+  ],
+  "groups_closed": 0,
+  "phase4b_complete": false,
+  "production_ready": false
+}

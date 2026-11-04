@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-11-03T15:00:00-03:00",
+  "reviewed_at": "2026-11-04T12:30:00-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
-  "criterion": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+  "criterion": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
   "objectives": [
     {
       "id": "4B.1",
@@ -230,7 +230,8 @@
         "B14:plano local de utilizacao de creditos (arts.47 §1 I,53,54,55);15/35;nao integrado.",
         "B15:politica de anulacao/preservacao (arts.49-52) revalidada no texto vigente do Planalto (9/23).",
         "B21:5.1 parcial (presumidos restantes);5.2-5.10 parciais dependentes do A;ciclos locais B11/B14/B17/B18 validados.",
-        "B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141);4B.5.1 passa a depender so da integracao (A) e de atos externos."
+        "B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141);4B.5.1 passa a depender so da integracao (A) e de atos externos.",
+        "B23:B02,B13,B17 e apuracao B11->B14 ativos no bundle B23;4B.5.3/5.7/5.10 integrais,4B.5.1/5.2/5.4/5.5 Sandbox."
       ],
       "pending": [
         "Concluir apropriação,estorno/glosa e ciclos materiais por perfil. Contratos estruturais/perguntas122 preservados na retomada22/10.",
@@ -250,14 +251,15 @@
         "phase4b-b11-credit-adjustment-cycle.md",
         "phase4b-b13-acquirer-credit-prohibitions.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md",
-        "phase4b-b17-b19-presumed-credits-lifecycle.md"
+        "phase4b-b17-b19-presumed-credits-lifecycle.md",
+        "phase4b-b23-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-03T15:00:00-03:00",
-      "current_package_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
-      "current_work": "B22 validado localmente;ver recibo.",
+      "reviewed_at": "2026-11-04T12:30:00-03:00",
+      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+      "current_work": "B23 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
-        "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json"
+        "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+        "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
       ],
       "historical_current_work_before_b02": {
         "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
@@ -331,6 +333,14 @@
             "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
             "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
           ]
+        },
+        {
+          "before": "B23",
+          "current_work": "B22 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
+            "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json"
+          ]
         }
       ]
     },
@@ -348,7 +358,8 @@
         "B07:especificacao Q-B06-1 aprovada (alternativa B) com gate desligado;40 regras caracterizadas e320 casos prontos aguardando o A.",
         "Aceite 03/11 (dois eixos):8 PARCIAL,2 candidatos (4B.6.7,4B.6.8) exigem verificacao.",
         "B12:4B.6.7 e4B.6.8 validados integralmente no escopo B (sujeitos a revisao na integracao).",
-        "B21:6.7/6.8 integrais;6.3,6.4,6.5,6.10 Sandbox aceitos (validacao externa pendente);6.1/6.2 dependem de vigencia oficial;6.6/6.9 dependem do A."
+        "B21:6.7/6.8 integrais;6.3,6.4,6.5,6.10 Sandbox aceitos (validacao externa pendente);6.1/6.2 dependem de vigencia oficial;6.6/6.9 dependem do A.",
+        "B23:Q-B06-1 ativa (320 casos B07);4B.6.6 e 4B.6.9 integrais."
       ],
       "pending": [
         "Qualificar vigência e seleção dos ambientes oficiais;resolver divergências entreRTC1.03.00 eAnexoC sem fundir tabelas.126 usa referência local;122 preserva1.02.00.",
@@ -379,15 +390,16 @@
         "phase4b-b07-annex-standard-qualification-spec.md",
         "phase4b-b10-acceptance-model.md",
         "phase4b-b12-candidate-verification.md",
-        "phase4b-b17-b19-presumed-credits-lifecycle.md"
+        "phase4b-b17-b19-presumed-credits-lifecycle.md",
+        "phase4b-b23-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-03T15:00:00-03:00",
-      "current_work": "B21 validado localmente;ver recibo.",
+      "reviewed_at": "2026-11-04T12:30:00-03:00",
+      "current_work": "B23 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
-        "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
+        "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+        "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
       "historical_current_work_before_b01": {
         "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
         "current_work_evidence": [
@@ -446,6 +458,14 @@
           "current_work_evidence": [
             "storage/app/phase4b-b12-development-20261103/b12-scoped-validation.json",
             "storage/app/phase4b-b12-development-20261103/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B23",
+          "current_work": "B21 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
+            "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
           ]
         }
       ]
@@ -516,13 +536,13 @@
         "phase4b-b12-candidate-verification.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md"
       ],
-      "reviewed_at": "2026-11-03T15:00:00-03:00",
+      "reviewed_at": "2026-11-04T12:30:00-03:00",
       "current_work": "B21 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
         "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ],
@@ -640,7 +660,8 @@
         "Aceite 03/11 (dois eixos):10 PARCIAL,2 candidatos (4B.8.2,4B.8.4).",
         "B12:4B.8.2 e4B.8.4 validados integralmente no escopo B.",
         "B16:matriz de cenarios 2026-2033 (oficial/recusa/sintetico) 75/230;aliquotas revalidadas no Planalto;lacuna do parametro sintetico enviada ao A.",
-        "B21:8.2/8.4 integrais;8.1/8.8/8.9 dependem de evidencia/regressao;8.10 de publicacao;demais dependem do A."
+        "B21:8.2/8.4 integrais;8.1/8.8/8.9 dependem de evidencia/regressao;8.10 de publicacao;demais dependem do A.",
+        "B23:fatos/perguntas A155 no bundle (4B.8.3 integral);H4 recusa taxa sintetica (4B.8.5 Sandbox)."
       ],
       "pending": [
         "Desenvolvimento retomado22/10:fechar lacunas funcionais atuais da matriz80,com aceite próprio por corte e preservação do checkpoint122.",
@@ -685,15 +706,16 @@
         "phase4b-b07-annex-standard-qualification-spec.md",
         "phase4b-b10-acceptance-model.md",
         "phase4b-b12-candidate-verification.md",
-        "phase4b-b17-b19-presumed-credits-lifecycle.md"
+        "phase4b-b17-b19-presumed-credits-lifecycle.md",
+        "phase4b-b23-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-03T15:00:00-03:00",
-      "current_work": "B21 validado localmente;ver recibo.",
+      "reviewed_at": "2026-11-04T12:30:00-03:00",
+      "current_work": "B23 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
-        "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
+        "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+        "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ],
@@ -798,6 +820,14 @@
           "current_work_evidence": [
             "storage/app/phase4b-b16-development-20261103/b16-scoped-validation.json",
             "storage/app/phase4b-b16-development-20261103/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B23",
+          "current_work": "B21 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
+            "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
           ]
         }
       ]
@@ -8487,18 +8517,22 @@
     {
       "reviewed_at": "2026-11-03T14:30:00-03:00",
       "current_review": "Agente B,03/11/2026,sem commit.Rodada B17-B21:creditos presumidos,ciclo completo de credito,oraculo cClassTrib/NBS,aceite do seletor sintetico.36 itens B:5 integrais,6 Sandbox com dependencia externa,1 parcial com trabalho B,17 dependentes do A,4 de publicacao oficial,3 de evidencia.Regressao parcial:8.644 aprovados,513 falhas de ambiente,0 de codigo.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-03T15:00:00-03:00",
+      "current_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados."
     }
   ],
-  "current_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+  "current_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
   "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
-  "scope_package": "B22",
+  "scope_package": "B23",
   "current_requirements_matrix": {
-    "path": "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json",
-    "sha256": "3496eeba14f613fada8bea7c1404658b856fccd764b818f9f98ed29208ad0556",
+    "path": "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json",
+    "sha256": "9094d746ff2d1c78031a42513328b8fab6760731941fa0e22bc570aac0ddd67b",
     "requirements": 80,
     "formal_phase4b_groups_closed": 0
   },
-  "updated_at": "2026-11-03T15:00:00-03:00",
+  "updated_at": "2026-11-04T12:30:00-03:00",
   "checkpoint_publication": {
     "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
     "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",

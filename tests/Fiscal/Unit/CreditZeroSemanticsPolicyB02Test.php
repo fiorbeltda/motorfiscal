@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use App\Modules\Fiscal\ConsumptionReform\CreditZeroSemanticsPolicyB02;
 
-it('stays disabled for every catalog published up to checkpoint 143', function (): void {
+it('stays disabled in every historical catalog and is enabled only from the B23 version', function (): void {
     $enabled = [];
     foreach (glob(dirname(__DIR__, 3).'/resources/fiscal/catalogs/rtc-codes-*.json') as $file) {
         $codes = json_decode((string) file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
@@ -12,7 +12,8 @@ it('stays disabled for every catalog published up to checkpoint 143', function (
             $enabled[] = basename($file);
         }
     }
-    expect($enabled)->toBe([]);
+    // Accepted catalogs up to 141 keep their replays/hashes; B23 is the first explicitly gated version (A155/H1).
+    expect($enabled)->toBe(['rtc-codes-2026.11.04-b23-draft1.json']);
 });
 
 it('enables only with the exact policy block', function (mixed $policy, bool $expected): void {

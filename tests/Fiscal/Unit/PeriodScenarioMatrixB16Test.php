@@ -80,14 +80,20 @@ it('switches exactly at the period boundary and respects knowledge and lifecycle
     expect((new TemporalRateCatalog($dup))->resolve('CBS', 'BR', LocalDate::fromString('2026-06-30'), $known)['status'])->toBe('CONFLICT');
 });
 
-it('characterizes the synthetic-parameter gap: an ACTIVE synthetic row is selected like an official one', function () use ($known): void {
+it('refuses an ACTIVE synthetic row as an official rate after the A155 fix (H4)', function () use ($known): void {
     $data = b16Catalog();
     $data['rates'][] = ['tax' => 'CBS', 'jurisdiction' => 'BR', 'percent' => '8.80', 'valid_from' => '2027-01-01', 'valid_to' => '2027-12-31',
         'published_at' => '2026-11-01T00:00:00+00:00', 'status' => 'ACTIVE', 'source_id' => 'SYNTHETIC.TEST.B16', 'source_hash' => str_repeat('0', 64),
         'synthetic' => true];
     $result = (new TemporalRateCatalog($data))->resolve('CBS', 'BR', LocalDate::fromString('2027-06-30'), $known);
-    // Current behavior (Agent A file): no distinction between synthetic and official rows. The synthetic
-    // marker survives only in the returned row; callers must not treat it as an official rate (handoff to A).
-    expect($result['status'])->toBe('RESOLVED')->and($result['row']['source_id'])->toBe('SYNTHETIC.TEST.B16')
-        ->and($result['row']['synthetic'])->toBeTrue();
+    // Historical gap (until 213f2c5): the synthetic row was RESOLVED like an official one. A155/H4 now skips it;
+    // the period stays without a proven rate and the response flags the refused row as non-official.
+    expect($result['status'])->toBe('NOT_FOUND')->and($result['reason'])->toBe('RTC_RATE_NOT_PROVEN:CBS')
+        ->and($result['official'])->toBeFalse()->and($result)->not->toHaveKey('row');
+    // The same row marked as official is still resolved, and catalogs without markers keep their legacy bytes.
+    $official = $data;
+    $official['rates'][array_key_last($official['rates'])] = [...$data['rates'][array_key_last($data['rates'])], 'synthetic' => false, 'source_kind' => 'OFFICIAL'];
+    $resolved = (new TemporalRateCatalog($official))->resolve('CBS', 'BR', LocalDate::fromString('2027-06-30'), $known);
+    expect($resolved['status'])->toBe('RESOLVED')->and($resolved['official'])->toBeTrue();
+    expect((new TemporalRateCatalog(b16Catalog()))->resolve('CBS', 'BR', LocalDate::fromString('2026-06-30'), $known))->not->toHaveKey('official');
 });

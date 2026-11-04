@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-11-03T15:00:00-03:00",
-  "title": "B22:catalogo completo de creditos presumidos;desenvolvimento independente do B esgotado",
-  "state": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
-  "criterion": "4 marcos do corte B22 concluidos. Nao e percentual funcional4B;0/8 grupos encerrados.",
+  "updated_at": "2026-11-04T12:30:00-03:00",
+  "title": "B23:integracao A+B — handoffs H1-H5 do A ativados no bundle B23",
+  "state": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+  "criterion": "4 marcos do corte B23 concluidos. Nao e percentual funcional4B;0/8 grupos encerrados.",
   "milestones": [
     {
-      "title": "Ler hipoteses restantes",
+      "title": "Conferir entrega A155",
       "complete": true
     },
     {
-      "title": "Catalogar com trechos vigentes",
+      "title": "Criar bundle B23 com gates",
       "complete": true
     },
     {
-      "title": "Testar e qualificar dependencias",
+      "title": "Validar 320 casos B07 e equivalencia",
       "complete": true
     },
     {
-      "title": "Registrar matriz80/console (B)",
+      "title": "Regressao e consolidacao matriz80/console",
       "complete": true
     }
   ],
   "finished": [
-    "B22:catalogo completo de creditos presumidos (44/141).",
-    "B21:regressao parcial sem falhas de codigo (8.644 aprovados).",
-    "Pacote de transferencia ao Agente A verificado em checkout limpo."
+    "B23:bundle com gates B02/B07/A155 e 11 fatos/perguntas.",
+    "320 casos B07 e equivalencia com o candidato do A aprovados.",
+    "Relatorio H5 do A consolidado na matriz 80."
   ],
   "pending": [
-    "Agente A:H1 B02,H2 Q-B06-1,H3 integracao de creditos,H4 parametro sintetico,H5 relatorio.",
-    "Usuario:34 pastas,ZIP XSD NT004,autorizacao de integracao A+B.",
-    "Externo:XSD NT009,vigencias,aliquotas futuras,Selic,regulamentos."
+    "Agente A:4B.2.8 importacao definitiva,livros,familias de calculo/invariantes (7 itens B dependem disso);lacuna 4B.4.9.",
+    "Usuario:34 pastas de evidencia,ZIP XSD NT004,ordem de commit/push.",
+    "Externo:XSD NT009,vigencias,aliquotas futuras,Selic,atos conjuntos anuais."
   ],
-  "next_step": "Integracao A+B apos entregas do A e autorizacao do usuario.",
+  "next_step": "Publicar B23 (com ordem do usuario) e encaminhar ao A os 7 itens B ainda dependentes.",
   "evidence": [
     "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
     "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -142,7 +142,10 @@
     "docs/fiscal/phase4b-b17-b19-presumed-credits-lifecycle.md",
     "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
     "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json",
-    "docs/fiscal/phase4b-b17-b19-presumed-credits-lifecycle.md"
+    "docs/fiscal/phase4b-b17-b19-presumed-credits-lifecycle.md",
+    "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+    "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json",
+    "docs/fiscal/phase4b-b23-handoff-activation.md"
   ],
   "history": [
     {
@@ -19364,23 +19367,372 @@
         "direct_channel": false,
         "a_evidence_received": false
       }
+    },
+    {
+      "updated_at": "2026-11-03T15:00:00-03:00",
+      "title": "B22:catalogo completo de creditos presumidos;desenvolvimento independente do B esgotado",
+      "state": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+      "criterion": "4 marcos do corte B22 concluidos. Nao e percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Ler hipoteses restantes",
+          "complete": true
+        },
+        {
+          "title": "Catalogar com trechos vigentes",
+          "complete": true
+        },
+        {
+          "title": "Testar e qualificar dependencias",
+          "complete": true
+        },
+        {
+          "title": "Registrar matriz80/console (B)",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "B22:catalogo completo de creditos presumidos (44/141).",
+        "B21:regressao parcial sem falhas de codigo (8.644 aprovados).",
+        "Pacote de transferencia ao Agente A verificado em checkout limpo."
+      ],
+      "pending": [
+        "Agente A:H1 B02,H2 Q-B06-1,H3 integracao de creditos,H4 parametro sintetico,H5 relatorio.",
+        "Usuario:34 pastas,ZIP XSD NT004,autorizacao de integracao A+B.",
+        "Externo:XSD NT009,vigencias,aliquotas futuras,Selic,regulamentos."
+      ],
+      "next_step": "Integracao A+B apos entregas do A e autorizacao do usuario.",
+      "evidence": [
+        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+        "storage/app/phase4b-pair135-development-20261023/checkpoint-external-inventory.json",
+        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+        "D:/ProjetoSaasExports/phase4b-own-federal136-20261023-v1/staged-audit-v1.json",
+        "D:/ProjetoSaasExports/storage-relocation135-20261023-v1/docker-d-readonly-validation.json",
+        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-own-federal136-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\draft-audit-v1.json",
+        "docs/fiscal/phase4b-retention137-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\requirements80-full-matrix.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\composition-audit-v1.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\primary-review-v5.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\integration-start-v3.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\development-attempts-v3.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\requirements80-current-matrix.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\checkpoint-stop-scoped137-validation.json",
+        "D:/ProjetoSaasExports/resume137-20261026-v1/preflight-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\full-suite-v1\\process.json",
+        "D:\\ProjetoSaasExports\\phase4b-judicial138-20261026-v1\\audit-v1.json",
+        "docs/fiscal/phase4b-judicial138-staged-review.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-full-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\siafi-probe-validation.json",
+        "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\municipal-money-source.json",
+        "docs/fiscal/phase4b-public-payment139-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-integration-scoped-validation.json",
+        "docs/fiscal/phase4b-public-payment139-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-current-matrix.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
+        "docs/fiscal/phase4b-public-payment139-integration.md",
+        "docs/fiscal/checkpoints/20261027/checkpoint.json",
+        "D:\\ProjetoSaasExports\\phase4b-document-currency140-20261027-v1\\resume139-preflight.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-iss-currency140-integration.md",
+        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json",
+        "docs/fiscal/checkpoints/20261027-currency140/checkpoint.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\import141-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-import141-monetary-integration.md",
+        "D:/ProjetoSaasExports/phase4b-import-document141-20261027-v1/schema-coverage-v1.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\import142-integration-scoped-validation.json",
+        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-import142-nt009-field-model.md",
+        "D:/ProjetoSaasExports/phase4b-import-nt009142-20261027-v1/primary-review-v1.json",
+        "docs/fiscal/checkpoints/20261027-import143/import141-integration-scoped-validation.json",
+        "docs/fiscal/checkpoints/20261027-import143/import142-integration-scoped-validation.json",
+        "docs/fiscal/checkpoints/20261027-import143/import143-integration-scoped-validation.json",
+        "docs/fiscal/checkpoints/20261027-import143/requirements80-current-matrix.json",
+        "docs/fiscal/checkpoints/20261027-import143/checkpoint.json",
+        "docs/fiscal/phase4b-import143-complete-local-dps.md",
+        "storage/app/phase4b-b01-development-20261103/b01-scoped-validation.json",
+        "storage/app/phase4b-b01-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b01-anexoviii-correlation.md",
+        "storage/app/phase4b-b02-development-20261103/b02-scoped-validation.json",
+        "storage/app/phase4b-b02-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b02-credit-zero-semantics.md",
+        "storage/app/phase4b-b03-development-20261103/b03-scoped-validation.json",
+        "storage/app/phase4b-b03-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b03-official-source-revalidation.md",
+        "storage/app/phase4b-b04-development-20261103/b04-scoped-validation.json",
+        "storage/app/phase4b-b04-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b04-engine-rule-correlation.md",
+        "storage/app/phase4b-b05-development-20261103/b05-scoped-validation.json",
+        "storage/app/phase4b-b05-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b05-evidence-and-xsd-request.md",
+        "storage/app/phase4b-b06-development-20261103/b06-scoped-validation.json",
+        "storage/app/phase4b-b06-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b06-rule-documentation-analysis.md",
+        "storage/app/phase4b-b08-development-20261103/b08-scoped-validation.json",
+        "storage/app/phase4b-b08-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b08-acceptance-matrix-b.md",
+        "storage/app/phase4b-b09-development-20261103/b09-scoped-validation.json",
+        "storage/app/phase4b-b09-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b09-credit-invariants.md",
+        "storage/app/phase4b-b07-development-20261103/b07-scoped-validation.json",
+        "storage/app/phase4b-b07-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b07-annex-standard-qualification-spec.md",
+        "storage/app/phase4b-b10-development-20261103/b10-scoped-validation.json",
+        "storage/app/phase4b-b10-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b10-acceptance-model.md",
+        "storage/app/phase4b-b11-development-20261103/b11-scoped-validation.json",
+        "storage/app/phase4b-b11-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b11-credit-adjustment-cycle.md",
+        "storage/app/phase4b-b12-development-20261103/b12-scoped-validation.json",
+        "storage/app/phase4b-b12-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b12-candidate-verification.md",
+        "storage/app/phase4b-b13-development-20261103/b13-scoped-validation.json",
+        "storage/app/phase4b-b13-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b13-acquirer-credit-prohibitions.md",
+        "storage/app/phase4b-b14-development-20261103/b14-scoped-validation.json",
+        "storage/app/phase4b-b14-development-20261103/requirements80-current-matrix.json",
+        "storage/app/phase4b-b15-development-20261103/b15-scoped-validation.json",
+        "storage/app/phase4b-b15-development-20261103/requirements80-current-matrix.json",
+        "storage/app/phase4b-b16-development-20261103/b16-scoped-validation.json",
+        "storage/app/phase4b-b16-development-20261103/requirements80-current-matrix.json",
+        "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
+        "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b17-b19-presumed-credits-lifecycle.md",
+        "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
+        "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json",
+        "docs/fiscal/phase4b-b17-b19-presumed-credits-lifecycle.md"
+      ],
+      "focus": {
+        "summary": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+        "finished": [
+          "B22:catalogo completo de creditos presumidos (44/141).",
+          "B21:regressao parcial sem falhas de codigo (8.644 aprovados).",
+          "Pacote de transferencia ao Agente A verificado em checkout limpo."
+        ],
+        "pending": [
+          "Agente A:H1 B02,H2 Q-B06-1,H3 integracao de creditos,H4 parametro sintetico,H5 relatorio.",
+          "Usuario:34 pastas,ZIP XSD NT004,autorizacao de integracao A+B.",
+          "Externo:XSD NT009,vigencias,aliquotas futuras,Selic,regulamentos."
+        ],
+        "next_step": "Integracao A+B apos entregas do A e autorizacao do usuario."
+      },
+      "scope_package": "B22",
+      "checkpoint_publication": {
+        "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+        "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
+        "url": "https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "message": "Atualização - 27/10/2026 13:16 (São Paulo)",
+        "published_at": "2026-10-27T13:17:06.511146-03:00",
+        "push_confirmed": true,
+        "remote_sha_confirmed": true,
+        "development_stopped_by_user": true,
+        "task143_complete_for_declared_local_scope": true,
+        "phase4b_complete": false,
+        "production_ready": false
+      },
+      "development_resumed_at": "2026-11-03T08:30:00-03:00",
+      "scope_note": "Execucao com dois agentes:A 4B.1-4B.4,B 4B.5-4B.8 e consolidacao.80 requisitos originais preservados.",
+      "uncommitted_development": true,
+      "active_validation": {
+        "status": "TERMINAL_AUDITED",
+        "live_process": false,
+        "tests": 44,
+        "assertions": 141,
+        "full_suite": false,
+        "receipt": "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
+        "receipt_sha256": "460547f62557fdc114134dae30c1fc6785465182cca65b87a190c0ca7948ac78",
+        "observed_at": "2026-11-03T15:00:00-03:00"
+      },
+      "stop_requested_at": "2026-10-27T13:14:31.903760-03:00",
+      "development_state": "ACTIVE_LOCAL_DEVELOPMENT_TWO_AGENTS",
+      "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
+      "active_maintenance": {
+        "process_session": 94599,
+        "status": "TERMINAL_PASS",
+        "preserved_rootfs": "D:/ProjetoSaasExports/container-preservation135-20261023-v1",
+        "copied_historical_files": 349,
+        "temporary_entries_preserved": 5478,
+        "applied_mounts_verified": true,
+        "receipt": "storage/app/evidence-storage-index-20261023.json"
+      },
+      "parallel_preparation": {
+        "package": "138",
+        "status": "EXTERNAL_JUDICIAL_OBSERVATION_AUDITED_MATERIAL_EFFECTS_UNRESOLVED",
+        "installed": false,
+        "official_sources": 2,
+        "negative_controls": 16,
+        "audit_path": "D:\\ProjetoSaasExports\\phase4b-judicial138-20261026-v1\\audit-v1.json",
+        "audit_sha256": "4d2eb13acf37e2fc33cc48882998684e5189012b1775019aa0a690045c2bacb0",
+        "general_temporal_effects_qualified": false
+      },
+      "last_full_validation": {
+        "status": "TERMINAL_AUDITED",
+        "started_at": "2026-10-26T18:06:43.718436+00:00",
+        "host_docker_pid": 316,
+        "container_name": "phase4b-retention137-full-suite-v1",
+        "container_id": "e56d042dc2af3b1c2c397af7fd5a2ca20f95ef7adecb3f9d9c8d0b863d866f43",
+        "linux_host_php_pid": 1775,
+        "container_php_pid": 1,
+        "frozen_inputs": 5917,
+        "command": [
+          "D:/Docker/DockerDesktop/resources/bin/docker.exe",
+          "compose",
+          "run",
+          "--rm",
+          "--no-deps",
+          "-T",
+          "--pull",
+          "never",
+          "--name",
+          "phase4b-retention137-full-suite-v1",
+          "--volume",
+          "D:/ProjetoSaasExports/phase4b-retention137-20261023-v1/full-suite-v1/tmp:/tmp",
+          "app",
+          "php",
+          "-d",
+          "memory_limit=512M",
+          "vendor/bin/pest",
+          "--compact",
+          "--colors=never",
+          "--do-not-cache-result",
+          "--cache-directory=/tmp/phase4b-retention137-full-pest-cache"
+        ],
+        "same_app_runtime_verified": true,
+        "bulk_temporary_evidence_on_D": true,
+        "phase4b_complete": false,
+        "exec_session": 82441,
+        "terminal_result_observed": true,
+        "observed_at": "2026-10-26T19:12:59.914340+00:00",
+        "tests": 9585,
+        "assertions": 145896,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-full-validation.json"
+      },
+      "parallel_preparation139": {
+        "status": "PUBLIC139_COMPLETE_PAIR_CLI_AND_DIRECTED_REGRESSION_VALIDATED_NOT_PHASE_CLOSURE",
+        "installed_producer": true,
+        "document_pair_installed": true,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
+        "receipt_sha256": "38975a4e969afe345b627c32e17279a282b9687060e870474f2b2d5cdc592097",
+        "production_ready": false
+      },
+      "checkpoint_20261027": {
+        "recorded_at": "2026-10-27T07:22:46.587785-03:00",
+        "status": "USER_REQUESTED_SAFE_STOP_READY_FOR_COMMIT",
+        "development_state": "STOPPED_BY_USER_REQUEST",
+        "branch": "codex/fiscal-engine-bootstrap",
+        "source_inputs_verified_unchanged": 5926,
+        "runtime_hashes_verified": 132,
+        "directed_tests": {
+          "tests": 85,
+          "assertions": 403,
+          "files": 4,
+          "process_receipt": "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\pair-tests-process-v1\\validation.json",
+          "stdout_sha256": "d42eecbd09333e7672ff6bad15e1845492f7efb015c2cfd5787c05fb9e671a28"
+        },
+        "last_full137": {
+          "tests": 9585,
+          "assertions": 145896
+        },
+        "native": {
+          "complete_pair_canonical_hash": "d07c45e0ee79667eb30a8c27df61f08607f930ca3e24bc32aa29cc7305000af3",
+          "distinct_document_roles": 2,
+          "invalid_contract_hash_no_output_directory": true,
+          "legacy137_complete_result_unchanged": true,
+          "municipal_irrf": "30.78",
+          "municipal_pcc": "0.00",
+          "own_cofins": "18.68",
+          "own_pis": "4.05",
+          "production_ready": false,
+          "repeated_real_cli_runs": 2,
+          "status": "PUBLIC139_COMPLETE_PAIR_NATIVE_CLI_REPEATED_AND_LEGACY137_REPLAY_PRESERVED",
+          "xml_files_verified": 4
+        },
+        "production_ready": false,
+        "formal_phase4b_groups_closed": 0,
+        "new_fx_work": "READ_ONLY_INVESTIGATION_NO_NEW_RUNTIME_IMPLEMENTATION",
+        "environment_at_stop": {
+          "docker_daemon": "UNAVAILABLE",
+          "container_validation_repeated": false,
+          "http_endpoint_rechecked": false,
+          "console_check": "HOST_PHP_28_CHECKS_PASS",
+          "prior_container_and_http_checks": "RECORDED_20261026_AT_139_ACCEPTANCE"
+        },
+        "published_compact_evidence": [
+          {
+            "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
+            "published_path": "docs/fiscal/checkpoints/20261027/public139-pair-integration-scoped-validation.json",
+            "sha256": "38975a4e969afe345b627c32e17279a282b9687060e870474f2b2d5cdc592097",
+            "bytes": 22519
+          },
+          {
+            "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-integration-scoped-validation.json",
+            "published_path": "docs/fiscal/checkpoints/20261027/public139-integration-scoped-validation.json",
+            "sha256": "f433b34cf08355ca666982a6602f86562f9a8bf11c11a6e803274109ae128ce3",
+            "bytes": 23299
+          },
+          {
+            "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
+            "published_path": "docs/fiscal/checkpoints/20261027/requirements80-pair-current-matrix.json",
+            "sha256": "482e0cc3933dc02c5fdf1ec7daabe1dad0aa859fc424cfb47d49163d540ffbec",
+            "bytes": 254495
+          },
+          {
+            "original_path": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-full-validation.json",
+            "published_path": "docs/fiscal/checkpoints/20261027/retention137-full-validation.json",
+            "sha256": "84ad1d283f5d575482984f6e3b302be52f662c96b4dd3f42a90cc1af34b05542",
+            "bytes": 25401
+          }
+        ],
+        "bulk_evidence_preserved_on_D": "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1",
+        "publication_status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
+        "published_at": "2026-10-27T07:25:31.998107-03:00",
+        "primary_commit": "99f92575cfd09669c5f32c12caf1ce76e79cca38",
+        "primary_commit_url": "https://github.com/fiorbeltda/motorfiscal/commit/99f92575cfd09669c5f32c12caf1ce76e79cca38",
+        "publication_followup": "This metadata is recorded immediately after the verified primary push."
+      },
+      "currency140": {
+        "status": "CURRENCY140_ISS_PRICE_INTEGRATED_CLI_AND_DIRECTED_VALIDATED_NOT_COMPLETE_IMPORT_DOCUMENT",
+        "installed": true,
+        "complete_import_document": false,
+        "production_ready": false,
+        "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json"
+      },
+      "two_agent_execution": {
+        "A": "4B.1-4B.4 (44)",
+        "B": "4B.5-4B.8 (36) + consolidacao local",
+        "direct_channel": false,
+        "a_evidence_received": false
+      }
     }
   ],
   "focus": {
-    "summary": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados.",
+    "summary": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
     "finished": [
-      "B22:catalogo completo de creditos presumidos (44/141).",
-      "B21:regressao parcial sem falhas de codigo (8.644 aprovados).",
-      "Pacote de transferencia ao Agente A verificado em checkout limpo."
+      "B23:bundle com gates B02/B07/A155 e 11 fatos/perguntas.",
+      "320 casos B07 e equivalencia com o candidato do A aprovados.",
+      "Relatorio H5 do A consolidado na matriz 80."
     ],
     "pending": [
-      "Agente A:H1 B02,H2 Q-B06-1,H3 integracao de creditos,H4 parametro sintetico,H5 relatorio.",
-      "Usuario:34 pastas,ZIP XSD NT004,autorizacao de integracao A+B.",
-      "Externo:XSD NT009,vigencias,aliquotas futuras,Selic,regulamentos."
+      "Agente A:4B.2.8 importacao definitiva,livros,familias de calculo/invariantes (7 itens B dependem disso);lacuna 4B.4.9.",
+      "Usuario:34 pastas de evidencia,ZIP XSD NT004,ordem de commit/push.",
+      "Externo:XSD NT009,vigencias,aliquotas futuras,Selic,atos conjuntos anuais."
     ],
-    "next_step": "Integracao A+B apos entregas do A e autorizacao do usuario."
+    "next_step": "Publicar B23 (com ordem do usuario) e encaminhar ao A os 7 itens B ainda dependentes."
   },
-  "scope_package": "B22",
+  "scope_package": "B23",
   "checkpoint_publication": {
     "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
     "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
@@ -19401,12 +19753,12 @@
   "active_validation": {
     "status": "TERMINAL_AUDITED",
     "live_process": false,
-    "tests": 44,
-    "assertions": 141,
+    "tests": 806,
+    "assertions": 1831,
     "full_suite": false,
-    "receipt": "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
-    "receipt_sha256": "460547f62557fdc114134dae30c1fc6785465182cca65b87a190c0ca7948ac78",
-    "observed_at": "2026-11-03T15:00:00-03:00"
+    "receipt": "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+    "receipt_sha256": "64bf4643451686779de8c6d45047a92fedd53dd55032a558c2737868acd1f4e9",
+    "observed_at": "2026-11-04T12:30:00-03:00"
   },
   "stop_requested_at": "2026-10-27T13:14:31.903760-03:00",
   "development_state": "ACTIVE_LOCAL_DEVELOPMENT_TWO_AGENTS",

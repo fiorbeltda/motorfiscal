@@ -32,8 +32,15 @@ it('targets exactly the 40 rules of question Q-B06-1, each with a reduced twin r
     }
 });
 
-it('keeps the B07 gate disabled in every published catalog', function (): void {
-    expect(b07EnabledBundle())->toBeNull();
+it('keeps the B07 gate out of every historical bundle; B23 is the first gated version', function (): void {
+    $gated = [];
+    foreach (glob(B07_ROOT.'/resources/fiscal/catalogs/rtc-codes-*.json') as $file) {
+        if (AnnexStandardQualificationPolicyB07::required(json_decode((string) file_get_contents($file), true, 512, JSON_THROW_ON_ERROR))) {
+            $gated[] = basename($file);
+        }
+    }
+    expect($gated)->toBe(['rtc-codes-2026.11.04-b23-draft1.json'])
+        ->and(b07EnabledBundle())->toBe('bundles/consumption-phase4b-2026.11.04-b23-draft1.json');
 });
 
 it('characterizes the historical gap on bundle 141: each rule is reachable and accepts a contradictory standard declaration', function (string $id): void {
@@ -53,13 +60,13 @@ it('characterizes the historical gap on bundle 141: each rule is reachable and a
 it('applies the approved decision table once the Agent A implementation and a gated bundle exist', function (string $id, string $case): void {
     $bundle = b07EnabledBundle();
     if ($bundle === null) {
-        $this->markTestSkipped('B07 aguardando implementação do Agente A e bundle com o gate annex_standard_qualification_b07.');
+        throw new RuntimeException('Bundle com o gate annex_standard_qualification_b07 ausente.');
     }
     $expected = b07Expected($id, $case);
     $scenario = b07Scenario($id, $case);
-    $actual = b07Run($scenario, $bundle)['decision']['consumption_reform'] ?? [];
+    $actual = b07Outcome(b07Run($scenario, $bundle));
     if ($expected['status'] === 'HISTORICAL') {
-        $historical = b07Run($scenario)['decision']['consumption_reform'] ?? [];
+        $historical = b07Outcome(b07Run($scenario));
         expect($actual['status'] ?? null)->toBe($historical['status'] ?? null)
             ->and($actual['reasons'] ?? null)->toBe($historical['reasons'] ?? null);
 
@@ -71,6 +78,9 @@ it('applies the approved decision table once the Agent A implementation and a ga
     }
     if ($expected['cclasstrib'] !== null) {
         expect($actual['decision']['classification']['cclasstrib'])->toBe($expected['cclasstrib']);
+    } else {
+        // A blocked RTC qualification never emits a tax classification (no STANDARD/REDUCED by default).
+        expect($actual['decision'])->toBeNull();
     }
 })->with(function (): array {
     $cases = [];
