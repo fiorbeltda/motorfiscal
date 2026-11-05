@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Modules\Fiscal\ConsumptionReform;
 
 use App\Modules\Fiscal\Core\Facts\FactBag;
+use App\Modules\Fiscal\Core\Shared\CanonicalJson;
 use App\Modules\Fiscal\Core\Shared\DecimalValue;
 use App\Modules\Fiscal\Core\Shared\LocalDate;
 use DateTimeImmutable;
@@ -16,6 +17,56 @@ final readonly class ConsumptionReformEngine
 
     /** @return array<string, mixed> */
     public function evaluate(FactBag $facts, LocalDate $competence, DateTimeImmutable $knownAt): array
+    {
+        $key = TemporalRateCatalog::EVIDENCE_KEY;
+        $rateEvidence = $this->rates->syntheticEvidenceRequested() || array_key_exists($key, $this->codes);
+        if ($rateEvidence || $this->syntheticDocumentaryEvidence156($facts)) {
+            if ($rateEvidence && (! $this->rates->syntheticEvidence() || ! is_array($this->codes[$key] ?? null)
+                || CanonicalJson::hash($this->codes[$key])
+                    !== CanonicalJson::hash(TemporalRateCatalog::EVIDENCE_POLICY))) {
+                return $this->stop('INVALID', ['RTC_SYNTHETIC_EVIDENCE_POLICY_INVALID'], [], []);
+            }
+            $candidate = $this->evaluateQualified($facts, $competence, $knownAt);
+            $trace = $candidate['trace'];
+            $trace[] = ['stage' => 'SYNTHETIC_ARITHMETIC156', 'source_kind' => 'SYNTHETIC_TEST', 'official' => false,
+                'candidate_status' => $candidate['status'], 'candidate_reasons' => $candidate['reason_codes'],
+                'candidate_decision' => $candidate['decision'], 'document_approved' => false, 'posted' => false];
+
+            $reasons = array_map(static fn (string $reason): string => $reason, array_values($candidate['reason_codes']));
+
+            return $this->stop('ACTION_REQUIRED', ['RTC_SYNTHETIC_TEST_ONLY', ...$reasons], $candidate['missing_facts'], $trace)
+                + ['official' => false, 'source_kind' => 'SYNTHETIC_TEST'];
+        }
+
+        return $this->evaluateQualified($facts, $competence, $knownAt);
+    }
+
+    private function syntheticDocumentaryEvidence156(FactBag $facts): bool
+    {
+        $keys = CreditEvidence156::enabled($this->codes)
+            ? ['rtc.credit_book_entries', 'rtc.import_definitive_credit_records'] : [];
+        if (is_array($this->codes[LegalBaseReduction156::KEY] ?? null)
+            && CanonicalJson::hash($this->codes[LegalBaseReduction156::KEY]) === CanonicalJson::hash(LegalBaseReduction156::POLICY)) {
+            $keys[] = 'rtc.legal_base_reduction_records';
+        }
+        foreach ($keys as $key) {
+            $records = $facts->value($key);
+            if (! is_array($records)) {
+                continue;
+            }
+            foreach ($records as $envelope) {
+                if (is_array($envelope) && is_array($envelope['record'] ?? null)
+                    && ($envelope['record']['source_kind'] ?? null) === 'SYNTHETIC_TEST') {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    /** @return array<string, mixed> */
+    private function evaluateQualified(FactBag $facts, LocalDate $competence, DateTimeImmutable $knownAt): array
     {
         $trace = [['stage' => 'TEMPORAL', 'competence_date' => $competence->value(), 'known_at' => $knownAt->format(DATE_ATOM)]];
         if (DocumentIssIntegration134::required($this->codes)) {
@@ -169,6 +220,17 @@ final readonly class ConsumptionReformEngine
         $consideration = (string) $facts->value('rtc.consideration');
         $market = (string) $facts->value('rtc.market');
         $regime = (string) $facts->value('rtc.supplier_regime');
+        $creditEvidence156 = null;
+        if (array_key_exists(CreditEvidence156::KEY, $this->codes)) {
+            if (! CreditEvidence156::enabled($this->codes)) {
+                return $this->stop('INVALID', ['RTC_CREDIT_EVIDENCE_POLICY_INVALID'], [], $trace);
+            }
+            $creditEvidence156 = (new CreditEvidence156)->qualify($facts, $market, $knownAt);
+            $trace[] = ['stage' => 'CREDIT_DOCUMENT_BOOK156', ...$creditEvidence156];
+            if ($creditEvidence156['status'] !== 'RESOLVED') {
+                return $this->stop($creditEvidence156['status'], [$creditEvidence156['reason']], $creditEvidence156['missing_facts'], $trace);
+            }
+        }
         $supplierCreditPeriod = null;
         if ($facts->value('rtc.assess_supplier_credit_period') === true) {
             $supplierCreditPeriod = (new SupplierCreditPeriodEngine)->resolve($facts, $on, $knownAt,
@@ -991,6 +1053,30 @@ final readonly class ConsumptionReformEngine
                 'evidence_id' => $facts->value('rtc.import_allocation_evidence_id') ?? $facts->value('rtc.domestic_consumption_evidence_id')];
         }
         $trace[] = ['stage' => 'BASE', 'gross' => $gross->value(), 'adjustments' => $adjustments, 'taxable_base' => $base->value()];
+        if (array_key_exists(LegalBaseReduction156::KEY, $this->codes)) {
+            if (! is_array($this->codes[LegalBaseReduction156::KEY])
+                || CanonicalJson::hash($this->codes[LegalBaseReduction156::KEY])
+                    !== CanonicalJson::hash(LegalBaseReduction156::POLICY)) {
+                return $this->stop('INVALID', ['RTC_LEGAL_BASE_REDUCTION_POLICY_INVALID'], [], $trace);
+            }
+            if (($classificationRule['legal_base_reduction_family'] ?? null) === 'INTERNATIONAL_PASSENGER_TRANSPORT'
+                && ! $facts->has('rtc.legal_base_reduction_records')) {
+                return $this->stop('ACTION_REQUIRED', ['RTC_LEGAL_BASE_REDUCTION_RECORD_REQUIRED'], ['rtc.legal_base_reduction_records'], $trace);
+            }
+            if ($facts->has('rtc.legal_base_reduction_records')) {
+                if ($rateReduction !== null || $annexReduction !== null || $institutionalImmunity !== null
+                    || $personalUseRecipient || $market !== 'DOMESTIC' || $advanceOrigin !== null || $taxPoint !== null
+                    || ($classificationRule['legal_base_reduction_family'] ?? null) !== 'INTERNATIONAL_PASSENGER_TRANSPORT') {
+                    return $this->stop('ACTION_REQUIRED', ['RTC_LEGAL_BASE_REDUCTION_COMBINATION_UNPROVEN'], [], $trace);
+                }
+                $reduction156 = (new LegalBaseReduction156)->resolve($facts->canonicalValues(), $base->value(), $knownAt);
+                $trace[] = ['stage' => 'LEGAL_BASE_REDUCTION156', ...$reduction156];
+                if ($reduction156['status'] !== 'RESOLVED') {
+                    return $this->stop($reduction156['status'], [$reduction156['reason']], $reduction156['missing_facts'], $trace);
+                }
+                $base = DecimalValue::fromString($reduction156['taxable_base']);
+            }
+        }
 
         if ($advanceOrigin !== null) {
             if ($adjustments !== [] || $base->compareTo($gross) !== 0 || $rateReduction !== null
@@ -1095,6 +1181,9 @@ final readonly class ConsumptionReformEngine
                 'rate_sources' => [$stateRow['source_id'], $municipalRow['source_id'], $cbsRow['source_id']]];
             if ($this->transitions->qualifiesImportCredits() && $facts->value('rtc.credit_context') === 'INPUT') {
                 $importCredit = (new CreditIntegration155)->resolve($facts, 'IMPORT', true, $inputCreditTreatment, $this->codes, $on);
+                if ($creditEvidence156 !== null && isset($creditEvidence156['import'])) {
+                    $importCredit['document_evidence156'] = $creditEvidence156['import'];
+                }
                 if (isset($importCredit['integration155'])) {
                     $trace[] = ['stage' => 'CREDIT_INTEGRATION155', ...$importCredit['integration155']];
                 }
@@ -1113,6 +1202,7 @@ final readonly class ConsumptionReformEngine
                     'source_hash' => $this->transitions->sourceHash(),
                     'fiscal_document_id' => $facts->value('rtc.import_credit_fiscal_document_id'),
                     'extinction_evidence_id' => $facts->value('rtc.import_credit_extinction_evidence_id'),
+                    ...($creditEvidence156 === null ? [] : ['document_evidence156' => $creditEvidence156]),
                     'ibs' => $importCredit['ibs'], 'cbs' => $importCredit['cbs']];
             }
             $expectedCollector = $facts->value('rtc.acquirer_country') === 'BR' ? 'ACQUIRER' : 'RECIPIENT';

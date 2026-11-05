@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-11-05T11:34:01.261351+00:00",
+  "applied": false,
+  "canonical_writer": "B",
+  "task": "A156/H6-H10",
+  "state": "ENTREGA_LOCAL_VALIDADA_AGUARDA_INTEGRACAO_B",
+  "focus": {
+    "summary": "A156 entrega contratos/evidências H6-H10 com limites e revisão44; sem encerramento da fase.",
+    "delivered": [
+      "H6/H7: documento definitivo, pagamentos datados e vínculo ao livro sob novo gate.",
+      "H8/H9: memória segregada, matriz temporal sintética, oráculos e suplemento monetário legado.",
+      "H10: redução legal art12§8 e revisão individual44 com fontes/hashes."
+    ],
+    "pending": [
+      "B criar nova versão, perguntas e classificação própria, validar e consolidar.",
+      "Documento de importação compatível e parâmetros futuros não comprovados no acervo.",
+      "Demais lacunas funcionais dos44 e famílias sem prova integral, conforme relatório."
+    ],
+    "next": "B validar a versão instalada e atualizar a matriz80, preservando as aceitações históricas."
+  },
+  "progress_criterion": "Cinco pedidos têm entregas locais e limites documentados; não equivale à conclusão integral dos requisitos.",
+  "global_percent": null,
+  "formal_groups_closed": 0,
+  "production_ready": false,
+  "requirements44_counts": {
+    "PARCIAL": 40,
+    "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL": 4
+  },
+  "current_source_validation": {
+    "tests": 844,
+    "assertions": 2198,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "sha256": "d8c1fbaf460f40948c66f3c81555af6a3a055877fa837775ff3099e532a41891"
+  },
+  "broad_regression_is_partial": true,
+  "historical_B23_publication_text_to_refresh": "B23 foi publicado em 1fa9969; arquivar o texto sem commit sem apagar o histórico.",
+  "observed_console_http_status": 200,
+  "observed_phases": [
+    {
+      "id": "base",
+      "state": "IMPLEMENTED"
+    },
+    {
+      "id": "3",
+      "state": "CLOSED"
+    },
+    {
+      "id": "4A",
+      "state": "CLOSED"
+    },
+    {
+      "id": "4B",
+      "state": "IN_PROGRESS"
+    },
+    {
+      "id": "5",
+      "state": "PLANNED"
+    },
+    {
+      "id": "6",
+      "state": "PLANNED"
+    },
+    {
+      "id": "7",
+      "state": "PLANNED"
+    }
+  ],
+  "receipt": "handoffs-H6-H10-receipt.json",
+  "requirements": "requirements44-handoff-H10.json"
+}

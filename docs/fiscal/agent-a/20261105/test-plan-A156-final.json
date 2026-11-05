@@ -1,0 +1,17 @@
+{
+  "scope": "CURRENT_SOURCE_DIRECTED_FINAL_GUARD_AND_B23_H1_H5",
+  "tests": [
+    "tests/Fiscal/Integration/ArithmeticEvidence156Test.php",
+    "tests/Fiscal/Integration/BaseReductionMissing156Test.php",
+    "tests/Fiscal/Integration/CreditEvidence156Test.php",
+    "tests/Fiscal/Integration/FinancialEvidence156Test.php",
+    "tests/Fiscal/Integration/LegacyCoexistence156Test.php",
+    "tests/Fiscal/Integration/LegalBaseReduction156Test.php",
+    "tests/Fiscal/Integration/SyntheticDocumentEvidence156Test.php",
+    "tests/Fiscal/Integration/HandoffActivationB23Test.php",
+    "tests/Fiscal/Integration/HandoffIntegration155Test.php",
+    "tests/Fiscal/Unit/SyntheticRateAcceptanceB19Test.php"
+  ],
+  "broad_prior_cut": "test-plan-A156-v2.json",
+  "final_delta": "Require a record rather than silently using full base in a newly activated passenger family; existing B23 has no such gate."
+}
