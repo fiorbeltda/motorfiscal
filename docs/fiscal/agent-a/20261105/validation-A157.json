@@ -1,0 +1,94 @@
+{
+  "task": "A157",
+  "created_at": "2026-11-05T17:12:29.384403+00:00",
+  "base": "f501885153d64f77ea8a7571fa680d5c9f43e970",
+  "branch": "codex/fiscal-engine-bootstrap",
+  "state": "LOCAL_SCOPED_IMPLEMENTATION_VALIDATED",
+  "requirements": [
+    {
+      "id": "4B.3.8",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Exercício por recolhimento, dívida/recebimento/excedente e transferência por operação/tributo, inclusive baixas intermediárias.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    },
+    {
+      "id": "4B.3.2",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Adquirente regular e pagador vinculados a instrumento, transação e documento.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    },
+    {
+      "id": "4B.3.10",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Fornecedor/contribuinte, adquirente/pagador e beneficiário do excedente preservados separadamente.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    },
+    {
+      "id": "4B.4.14",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Memória monetária, comprovantes explícitos, input_hash/report_hash e replay recalculado.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    }
+  ],
+  "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+    "sha256": "dc87a43e7a4c293bc3c47817754286438db33a7c42472eb0400258e7707a2bde",
+    "observed_at": "2026-11-05T16:45:04.787920+00:00",
+    "bytes": 3095827
+  },
+  "source_files_sha256": {
+    "app/Modules/Fiscal/ConsumptionReform/AcquirerCollection157.php": "ba787715533865e43f9d5cef7b6d565db68de86f633d7595dd28922d7c981681",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "6e3bdd5d6a7038e5dfcec87507d4c216492a3f656265445934410381570142b2",
+    "app/Console/Commands/ReconcileAcquirerCollection157Command.php": "ec80ca58c28e3237718fa77e58a94b5b0e5a6ceb194c86f7d4cb9b9b83b73678",
+    "tests/Fiscal/Unit/AcquirerCollection157Test.php": "ad78dd3cce8c705697a9e865af7ddc5f472e303ee49552271a800235bbf23515",
+    "tests/Fiscal/Integration/AcquirerCollection157IntegrationTest.php": "517a725a45e2ca55f7ac23ed36b6f1b5b1e1edaaefcfe727fb396a32f8a4b48e",
+    "scripts/agent_a/collection157_fixture.php": "6f48762981aa71c3c3c08ea6267afb0e1a857ad6e33f48d3c5b84cff7d211e1e",
+    "scripts/agent_a/verify157.py": "2d46a2243fa3212924a2540a7bef1c0c98cdeb1fd058c1c48eb971de6d31bdbf",
+    "docs/fiscal/agent-a/20261105/task-A157-manifest.md": "898ad5aa4fb1ccc845d3366c87af0ee2d646b81454ca0536c93d26cc7fc98435",
+    "docs/fiscal/agent-a/20261105/collection157-results.md": "73ad6698bdd271e9288cb069ff581c1b1ad9254c90f84875680dfdd0664d621c",
+    "docs/fiscal/agent-a/20261105/handoff-A157-to-B.md": "45e0ec540beaaac2ae376b189df84c16660a3e3a9833372ae185e3fc8acc7a04"
+  },
+  "tests": {
+    "tests": 526,
+    "assertions": 1923,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "sha256": "ec526d96750b100bf6d481095c1e7cb9b310d85bc120bb010aceeb75a13ad8e6"
+  },
+  "own_test_subset_not_additional": {
+    "tests": 58,
+    "assertions": 196
+  },
+  "scope": "PARTIAL_DIRECTED_REGRESSION_14_FILES_NOT_INTEGRAL",
+  "test_command_receipt": "D:\\ProjetoSaasExports\\agent-a-A157-acquirer-collection-20261105-v1\\regression-v1-command.json",
+  "native": {
+    "positive_cases": 19,
+    "repetitions": 2,
+    "independent_decimal_checks": 190,
+    "expected_refusal_exit_code": 1,
+    "receipt": "D:\\ProjetoSaasExports\\agent-a-A157-acquirer-collection-20261105-v1\\native-decimal-v1.json",
+    "sha256": "33f0aacb3d760f521e04d591641fbf06af08dd13567f16686bb3adf7a3c33e42"
+  },
+  "quality": {
+    "phpstan_global_level8": "PASS",
+    "pint_files": 6,
+    "pint": "PASS",
+    "console_checks": 28,
+    "console_http_status": 200
+  },
+  "resources_or_B_files_edited": false,
+  "monitoring_edited": false,
+  "B_received": false,
+  "B_activation_performed": false,
+  "groups_closed_by_this_task": 0,
+  "phase_complete": false,
+  "production_ready": false,
+  "commit_performed": false,
+  "push_performed": false,
+  "evidence_directory": "D:\\ProjetoSaasExports\\agent-a-A157-acquirer-collection-20261105-v1"
+}

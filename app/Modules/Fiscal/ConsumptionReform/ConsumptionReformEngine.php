@@ -43,6 +43,14 @@ final readonly class ConsumptionReformEngine
 
     private function syntheticDocumentaryEvidence156(FactBag $facts): bool
     {
+        if (is_array($this->codes[AcquirerCollection157::KEY] ?? null)
+            && CanonicalJson::hash($this->codes[AcquirerCollection157::KEY]) === CanonicalJson::hash(AcquirerCollection157::POLICY)) {
+            foreach ($facts->value('rtc.acquirer_collection_ledger') ?? [] as $ledger) {
+                if (is_array($ledger) && ($ledger['source_kind'] ?? null) === 'SYNTHETIC_TEST') {
+                    return true;
+                }
+            }
+        }
         $keys = CreditEvidence156::enabled($this->codes)
             ? ['rtc.credit_book_entries', 'rtc.import_definitive_credit_records'] : [];
         if (is_array($this->codes[LegalBaseReduction156::KEY] ?? null)
@@ -1312,6 +1320,44 @@ final readonly class ConsumptionReformEngine
         }
         $dispensed = $date < '2027-01-01' && $facts->value('rtc.accessory_obligations_fulfilled') === true;
         $ibsTotal = DecimalValue::fromString($ibsState)->plus(DecimalValue::fromString($ibsMunicipal))->rounded(2)->value();
+        $collection157 = null;
+        if (array_key_exists(AcquirerCollection157::KEY, $this->codes)) {
+            if (! is_array($this->codes[AcquirerCollection157::KEY])
+                || CanonicalJson::hash($this->codes[AcquirerCollection157::KEY]) !== CanonicalJson::hash(AcquirerCollection157::POLICY)) {
+                return $this->stop('INVALID', ['RTC_ACQUIRER_COLLECTION_POLICY_INVALID'], [], $trace);
+            }
+            if ($collection === 'ACQUIRER') {
+                $basis157 = (new CollectionBasisReference119)->qualify('ACQUIRER', $facts->value('rtc.collection_legal_basis'));
+                if ($basis157['status'] !== 'RESOLVED') {
+                    return $this->stop($basis157['status'], [$basis157['reason']], ['rtc.collection_legal_basis'], $trace);
+                }
+                $ledgers = $facts->value('rtc.acquirer_collection_ledger');
+                if (! is_array($ledgers) || ! array_is_list($ledgers) || count($ledgers) !== 1 || ! is_array($ledgers[0])) {
+                    return $this->stop('ACTION_REQUIRED', ['RTC_ACQUIRER_COLLECTION_LEDGER_REQUIRED'], ['rtc.acquirer_collection_ledger'], $trace);
+                }
+                $ledger = $ledgers[0];
+                foreach (['document_id', 'supplier_id', 'acquirer_id', 'payment_transaction_id', 'acquirer_regime'] as $key) {
+                    if (($ledger[$key] ?? null) !== $facts->value('rtc.'.$key)) {
+                        return $this->stop('ACTION_REQUIRED', ['RTC_ACQUIRER_COLLECTION_FACT_CONFLICT'], ['rtc.acquirer_collection_ledger'], $trace);
+                    }
+                }
+                if (($ledger['operation_date'] ?? null) !== $date
+                    || ($ledger['instrument_evidence_id'] ?? null) !== $facts->value('rtc.payment_instrument_evidence_id')
+                    || ($ledger['instrument_split_capable'] ?? null) !== $facts->value('rtc.payment_instrument_split_capable')
+                    || ! is_array($ledger['debits'] ?? null)
+                    || CanonicalJson::hash($ledger['debits']) !== CanonicalJson::hash(['IBS' => $dispensed ? '0.00' : $ibsTotal, 'CBS' => $dispensed ? '0.00' : $cbs])) {
+                    return $this->stop('ACTION_REQUIRED', ['RTC_ACQUIRER_COLLECTION_DEBIT_OR_INSTRUMENT_CONFLICT'], ['rtc.acquirer_collection_ledger'], $trace);
+                }
+                $collection157 = (new AcquirerCollection157)->reconcile($ledger);
+                $trace[] = ['stage' => 'ACQUIRER_COLLECTION157', ...$collection157];
+                if ($collection157['status'] !== 'LOCAL_ACQUIRER_COLLECTION_RECONCILED') {
+                    return $this->stop('ACTION_REQUIRED', [$collection157['reason']], $collection157['missing_facts'], $trace);
+                }
+                if (new DateTimeImmutable($ledger['known_at']) != $knownAt) {
+                    return $this->stop('ACTION_REQUIRED', ['RTC_ACQUIRER_COLLECTION_KNOWLEDGE_CONFLICT'], ['rtc.acquirer_collection_ledger'], $trace);
+                }
+            }
+        }
         $issuerFields = [
             'IBSCBS.finNFSe' => '0',
             'IBSCBS.indDest' => $facts->value('rtc.acquirer_id') === $facts->value('rtc.recipient_id') ? '0' : '1',
@@ -1383,6 +1429,9 @@ final readonly class ConsumptionReformEngine
         ];
         if (isset($credit['integration155'])) {
             $decision['credit_integration155'] = $credit['integration155'];
+        }
+        if ($collection157 !== null) {
+            $decision['collection']['reconciliation157'] = $collection157;
         }
         if ($platformDecision !== null) {
             $decision['platform_responsibility'] = $platformDecision;

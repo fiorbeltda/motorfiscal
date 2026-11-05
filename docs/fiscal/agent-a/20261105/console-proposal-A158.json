@@ -1,0 +1,25 @@
+{
+  "proposal_only": true,
+  "writer": "AGENT_B",
+  "task": "A158",
+  "state": "PAUSED_AT_USER_REQUEST",
+  "date": "2026-11-05",
+  "focus": "Desenvolvimento do ciclo de split payment, requisito 4B.3.7",
+  "observed": [
+    "A157 local preservada; H6-H10 publicados em f501885",
+    "Aritmética, transações e livro de conciliação:153 testes/397 asserções aprovados; sem posting ou apropriação de crédito",
+    "CLI ledger v2:13 casos repetidos/478 comparativos Decimal aprovados; PHPStan/Pint e regressão dirigida928 testes/2160 asserções aprovados; pausa solicitada pelo usuário"
+  ],
+  "remaining": [
+    "Arredondamento/proporcionalidade residual do cronograma, revisões fiscais e prazos com calendário",
+    "Modelo legal simplificado com parâmetros qualificados",
+    "Integração gated, validação final e dependências de ativação por B"
+  ],
+  "next": "Após retomada: implementar revisões/calendário e simplificado, integrar o motor e verificar os44 requisitos; ver resume-after-A158-pause.md",
+  "formal_groups_closed": 0,
+  "production_released": false,
+  "global_percentage": null,
+  "phases": {"3": "CLOSED", "4A": "CLOSED", "4B": "IN_PROGRESS", "5": "PLANNED", "6": "PLANNED", "7": "PLANNED"},
+  "requirements": {"4B.3.7": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE"},
+  "evidence_directory": "D:/ProjetoSaasExports/agent-a-A158-split-payment-20261105-v1"
+}

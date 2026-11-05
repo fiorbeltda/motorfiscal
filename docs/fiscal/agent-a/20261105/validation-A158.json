@@ -1,0 +1,76 @@
+{
+  "task": "A158",
+  "state": "PAUSED_AT_USER_REQUEST",
+  "checkpoint": "LEDGER_V1",
+  "observed_at": "2026-11-05T18:15:33.113735+00:00",
+  "base": "f501885153d64f77ea8a7571fa680d5c9f43e970",
+  "regression_scope": "PARTIAL",
+  "tests": {
+    "ledger-own-v2": {
+      "tests": 153,
+      "assertions": 397,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "454f8b34cfc341b5c8abe1b9ec7e461eddd6d8fcfb720b3b2a1f50405a9698d8"
+    },
+    "compatibility-ledger-v2": {
+      "tests": 928,
+      "assertions": 2160,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "aa46cc3c3c0bc418d0df18c6d08b387a1f3633729ad7153cb970c8c4560a25bd"
+    }
+  },
+  "overlap_note": "153 own tests are included in928 compatibility tests; do not add counts",
+  "native_oracle": {
+    "cases": 13,
+    "decimal_checks": 478,
+    "byte_identical_repeats": 13
+  },
+  "static_analysis": {
+    "PHPStan_global_level8": "PASS",
+    "Pint_9_PHP_files": "PASS"
+  },
+  "requirements_baseline": {
+    "path": "docs/fiscal/agent-a/20261105/requirements44-handoff-H10.json",
+    "sha256": "2a0ab2ce830d82095edbf48cfed9d930ec24b3891d6a4d2b9ce23e55894975cb",
+    "original_ids": 44
+  },
+  "classification_changes": {},
+  "formal_groups_closed": 0,
+  "production_released": false,
+  "remaining": [
+    "fiscal input revisions/platform resets",
+    "multiple boleto payments/future uninitiated installment transactions",
+    "qualified residual allocation criteria",
+    "qualified calendars/reporting windows/deadline assessment",
+    "qualified legal simplified model",
+    "gated engine integration/final validation/handoff",
+    "remaining original44 requirements and A154 audit"
+  ],
+  "source_hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/SplitPayment158.php": "11a84c7fa1c283866b8325af924c316e660f31375ac67189b85924eab8fdb614",
+    "app/Modules/Fiscal/ConsumptionReform/SplitTransaction158.php": "dd86f4c9996562344181fb31b71fd5700ef3813b2768209795e8ec6d04bef6f2",
+    "app/Modules/Fiscal/ConsumptionReform/SplitLedger158.php": "63f6fcc040a4a8e799f9c21fc203e79e5f53c5444a743bcc9547e69a63acc529",
+    "app/Console/Commands/AssessSplitPayment158Command.php": "72e57f1dd904a3824bf122e34aced3fd1c4e7f6f01f74feeea40ab7357aac6f1",
+    "scripts/agent_a/split158_fixture.php": "b60980dcf0c9c60a9c028ec23fd0c4a27505ca079d5b796324959310288279f5",
+    "scripts/agent_a/verify158.py": "ded0dc9fc95722d243fae5ef87b86e87afd0fae5705708f5764feaef6395a44f",
+    "tests/Fiscal/Unit/SplitPayment158Test.php": "e1099139a7800b3d37978b63d5922fa8a4fda1b76d70631d7ff16e685c0e74bc",
+    "tests/Fiscal/Unit/SplitTransaction158Test.php": "7f7ad29569db5a149ff8f539ee12bcfed9695d0c6e7f852a0d5a1a85671a8051",
+    "tests/Fiscal/Unit/SplitLedger158Test.php": "21391cbacdfce0ef28f1dffc0de8ff2bf496618611941236a1e9afbc6de4fc92",
+    "tests/Fiscal/Integration/SplitPayment158IntegrationTest.php": "ffb14590d465cfb9c482cae3063e199d553c409d3af62ff2a820e2f582a8ba6c",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "6e3bdd5d6a7038e5dfcec87507d4c216492a3f656265445934410381570142b2",
+    "docs/fiscal/agent-a/20261105/task-A158-manifest.md": "a466812d68318e6ca05f926f0976b7db2927632cc6da919e0778e33693614b1b",
+    "docs/fiscal/agent-a/20261105/split158-results.md": "992a0aa4311943a68f1969386c6bff4329dfce7c07b435725dc2f1f89ea297f1",
+    "docs/fiscal/agent-a/20261105/split158-source-review.md": "75e1b3e386f414a8500e72bf335b8d04770c39d8f1b3bd3306c2ca47227854c2",
+    "docs/fiscal/agent-a/20261105/console-proposal-A158.json": "8e088cc92ad3d2a30b555a75f56ba31b31f6b0eddc8ee376381827c415f7347f",
+    "docs/fiscal/agent-a/20261105/resume-after-A158-pause.md": "46f0328f00d65aeb354d0c5618a6d31092995cadd7aecd6f59b5b364231cf432"
+  },
+  "previous_checkpoint": "transaction-checkpoint-v1.json",
+  "draft_source_cut": "ledger-draft-source-cut-v1",
+  "commit_authorized_by_user": true,
+  "push_requested_in_pause_order": false,
+  "external_checkpoint": "D:\\ProjetoSaasExports\\agent-a-A158-split-payment-20261105-v1\\ledger-checkpoint-v1.json"
+}

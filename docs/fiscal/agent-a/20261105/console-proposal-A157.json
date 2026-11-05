@@ -1,0 +1,56 @@
+{
+  "task": "A157",
+  "created_at": "2026-11-05T17:12:29.384403+00:00",
+  "applied": false,
+  "canonical_writer": "B",
+  "state": "LOCAL_SCOPED_VALIDATION_COMPLETE",
+  "focus": {
+    "summary": "A157 reconcilia recolhimento pelo adquirente em BRL sem posting ou crédito automático.",
+    "delivered": [
+      "API/CLI e integração em gate novo, sem alterar recursos aceitos.",
+      "526/1923 dirigidos;19 casos CLI repetidos e190 oráculos Decimal.",
+      "Handoff de ledger e classificação parcial dos quatro IDs."
+    ],
+    "pending": [
+      "Nova versão/fato/pergunta e revisão instalada por B.",
+      "Calendário oficial para a data de transferência e perfis não abrangidos.",
+      "Split payment e demais lacunas dos44 continuam trabalho de A."
+    ],
+    "next": "A continua com ciclo split payment e B pode revisar o contrato A157 quando compartilhado."
+  },
+  "global_percent": null,
+  "phase4b_complete": false,
+  "production_ready": false,
+  "requirements": [
+    {
+      "id": "4B.3.8",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Exercício por recolhimento, dívida/recebimento/excedente e transferência por operação/tributo, inclusive baixas intermediárias.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    },
+    {
+      "id": "4B.3.2",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Adquirente regular e pagador vinculados a instrumento, transação e documento.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    },
+    {
+      "id": "4B.3.10",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Fornecedor/contribuinte, adquirente/pagador e beneficiário do excedente preservados separadamente.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    },
+    {
+      "id": "4B.4.14",
+      "classification": "PARCIAL",
+      "implemented_and_proven_scoped_behavior": "Memória monetária, comprovantes explícitos, input_hash/report_hash e replay recalculado.",
+      "remaining": "Ativação em nova versão por B, integração/revisão e demais perfis do requisito; prazo de excedente depende de calendário oficial qualificado.",
+      "whole_item_accepted": false
+    }
+  ],
+  "receipt": "validation-A157.json",
+  "historical_acceptances_preserved": true
+}
