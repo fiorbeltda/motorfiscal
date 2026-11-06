@@ -345,6 +345,20 @@ final readonly class ConsumptionReformEngine
                     'triggers' => $platformDecision['triggers'] ?? [],
                     'qualification_evidence_id' => $facts->value('rtc.platform_qualification_evidence_id')];
             }
+            if (array_key_exists(PlatformConsequencesB29::KEY, $this->codes)) {
+                if (! PlatformConsequencesB29::enabled($this->codes)) {
+                    return $this->stop('INVALID', ['RTC_PLATFORM_B29_POLICY_INVALID'], [], $trace);
+                }
+                if ($facts->value('rtc.platform_id') !== null) {
+                    $platformB29 = (new PlatformConsequencesB29)->resolve($facts, $platformDecision,
+                        $this->transitions->splitOperational(LocalDate::fromString($date), $knownAt));
+                    $trace[] = ['stage' => 'PLATFORM_CONSEQUENCES_B29', ...$platformB29];
+                    if ($platformB29['status'] !== 'RESOLVED') {
+                        return $this->stop($platformB29['status'], [$platformB29['reason']], $platformB29['missing_facts'], $trace);
+                    }
+                    $platformDecision['consequences_b29'] = $platformB29;
+                }
+            }
         }
         $personalBelowMarketCandidate = $this->transitions->qualifiesEmployeeBelowMarket()
             && $consideration === 'ONEROUS'
@@ -357,8 +371,21 @@ final readonly class ConsumptionReformEngine
         if ($consideration === 'NON_ONEROUS' && $facts->value('rtc.non_onerous_legal_basis') === null) {
             return $this->stop('ACTION_REQUIRED', ['RTC_NON_ONEROUS_HYPOTHESIS_UNPROVEN'], ['rtc.non_onerous_legal_basis'], $trace);
         }
+        $speciesB28 = null;
+        if (array_key_exists(NonOnerousSpeciesB28::KEY, $this->codes)) {
+            if (! NonOnerousSpeciesB28::enabled($this->codes)) {
+                return $this->stop('INVALID', ['RTC_NON_ONEROUS_B28_POLICY_INVALID'], [], $trace);
+            }
+            if (NonOnerousSpeciesB28::covers($facts->value('rtc.non_onerous_legal_basis'))) {
+                $speciesB28 = (new NonOnerousSpeciesB28)->resolve($facts, $consideration, $market, $regime);
+                $trace[] = ['stage' => 'NON_ONEROUS_SPECIES_B28', ...$speciesB28];
+                if ($speciesB28['status'] !== 'RESOLVED') {
+                    return $this->stop($speciesB28['status'], [$speciesB28['reason']], $speciesB28['missing_facts'], $trace);
+                }
+            }
+        }
         $personalUseRecipient = false;
-        if ($consideration === 'NON_ONEROUS' || $personalBelowMarketCandidate) {
+        if (($consideration === 'NON_ONEROUS' || $personalBelowMarketCandidate) && $speciesB28 === null) {
             if ($market !== 'DOMESTIC' || $regime !== 'REGULAR') {
                 return $this->stop('ACTION_REQUIRED', ['RTC_NON_ONEROUS_STRATEGY_NOT_MATERIALIZED'], [], $trace);
             }
@@ -747,6 +774,16 @@ final readonly class ConsumptionReformEngine
         if ($municipality === null || $state === null || $facts->value('rtc.destination_evidence_id') === null) {
             return $this->stop('ACTION_REQUIRED', ['RTC_DESTINATION_UNPROVEN'], ['rtc.destination_state', 'rtc.destination_municipality_ibge', 'rtc.destination_evidence_id'], $trace);
         }
+        if (array_key_exists(DestinationDomicileReportB27::KEY, $this->codes)) {
+            if (! DestinationDomicileReportB27::enabled($this->codes)) {
+                return $this->stop('INVALID', ['RTC_DESTINATION_DOMICILE_REPORT_POLICY_INVALID'], [], $trace);
+            }
+            $domicileReport = (new DestinationDomicileReportB27)->resolve($facts, $basis, $date, $this->codes);
+            $trace[] = ['stage' => 'DESTINATION_DOMICILE_REPORT_B27', ...$domicileReport];
+            if ($domicileReport['status'] !== 'RESOLVED') {
+                return $this->stop($domicileReport['status'], [$domicileReport['reason']], $domicileReport['missing_facts'], $trace);
+            }
+        }
         $presenceDestination = null;
         $geographicStop = $this->geographicReference($facts, $on, $knownAt, 'ORDINARY_OR_IMPORT', $trace);
         if ($geographicStop !== null) {
@@ -968,6 +1005,16 @@ final readonly class ConsumptionReformEngine
                     ? 'RTC_PERSONAL_USE_PRICE_NOT_BELOW_MARKET' : 'RTC_EMPLOYEE_PRICE_NOT_BELOW_MARKET'], [], $trace);
             }
         }
+        if ($speciesB28 !== null) {
+            $marketValue = DecimalValue::fromString((string) $facts->value('rtc.market_value_brl'));
+            $zero = DecimalValue::fromString('0');
+            if ($consideration === 'NON_ONEROUS' && $gross->compareTo($zero) !== 0) {
+                return $this->stop('INVALID', ['RTC_NON_ONEROUS_CONSIDERATION_AMOUNT_CONFLICT'], [], $trace);
+            }
+            if ($consideration === 'ONEROUS' && ($gross->compareTo($zero) <= 0 || $gross->compareTo($marketValue) >= 0)) {
+                return $this->stop('INVALID', ['RTC_RELATED_PARTY_PRICE_NOT_BELOW_MARKET'], [], $trace);
+            }
+        }
         if ($facts->value('operation.amount') !== null
             && $gross->compareTo(DecimalValue::fromString((string) $facts->value('operation.amount'))) !== 0
             && ! $facts->has('rtc.operation_amount_reconciliation_id')) {
@@ -979,6 +1026,14 @@ final readonly class ConsumptionReformEngine
             return $this->stop('INVALID', ['RTC_ADJUSTMENTS_INVALID'], [], $trace);
         }
         $legacyExclusions = 0;
+        $baseB30 = null;
+        if (array_key_exists(BaseCompositionB30::KEY, $this->codes)) {
+            if (! BaseCompositionB30::enabled($this->codes)) {
+                return $this->stop('INVALID', ['RTC_BASE_COMPOSITION_B30_POLICY_INVALID'], [], $trace);
+            }
+            $baseB30 = new BaseCompositionB30;
+        }
+        $typedB30 = [];
         foreach ($adjustments as $adjustment) {
             if (! is_array($adjustment) || ! isset($adjustment['kind'], $adjustment['amount'], $adjustment['evidence_id'])) {
                 return $this->stop('ACTION_REQUIRED', ['RTC_ADJUSTMENT_EVIDENCE_MISSING'], [], $trace);
@@ -986,6 +1041,22 @@ final readonly class ConsumptionReformEngine
             $amount = DecimalValue::fromString((string) $adjustment['amount']);
             if ($amount->isNegative()) {
                 return $this->stop('INVALID', ['RTC_NEGATIVE_ADJUSTMENT'], [], $trace);
+            }
+            if ($baseB30 !== null && $adjustment['kind'] === 'UNCONDITIONAL_DISCOUNT' && $baseB30->loyaltyConflict($adjustment)) {
+                return $this->stop('INVALID', ['RTC_LOYALTY_DISCOUNT_NOT_SUPPLIER_NON_ONEROUS'], [], $trace);
+            }
+            if ($baseB30 !== null && BaseCompositionB30::handles($adjustment['kind'])) {
+                $typed = $baseB30->classify($adjustment);
+                if (isset($typed['error'])) {
+                    return $this->stop('INVALID', [$typed['error']], [], $trace);
+                }
+                $base = match ($typed['effect']) {
+                    'PLUS' => $base->plus($amount), 'MINUS' => $base->minus($amount), default => $base,
+                };
+                $typedB30[] = ['kind' => $adjustment['kind'], 'amount' => $amount->rounded(2)->value(),
+                    'effect' => $typed['effect'], 'source_article' => $typed['source_article'], 'evidence_id' => $adjustment['evidence_id']];
+
+                continue;
             }
             $base = match ($adjustment['kind']) {
                 'INCLUDED_CHARGE' => $base->plus($amount),
@@ -997,7 +1068,9 @@ final readonly class ConsumptionReformEngine
             }
             if ($adjustment['kind'] === 'LEGACY_TAX_EXCLUSION') {
                 $legacyExclusions++;
-                $allowedLegacyTaxes = $date < '2033-01-01' ? ['ISS', 'ICMS', 'PIS', 'COFINS'] : [];
+                $allowedLegacyTaxes = CalculatorReconciliationB31::enabled($this->codes)
+                    ? CalculatorReconciliationB31::legacyAllowed($date)
+                    : ($date < '2033-01-01' ? ['ISS', 'ICMS', 'PIS', 'COFINS'] : []);
                 if (! in_array($adjustment['tax'] ?? null, $allowedLegacyTaxes, true)) {
                     return $this->stop('INVALID', ['RTC_LEGACY_TAX_EXCLUSION_INVALID'], [], $trace);
                 }
@@ -1015,6 +1088,13 @@ final readonly class ConsumptionReformEngine
         }
         if ($facts->value('rtc.legacy_tax_inclusion') === 'INCLUDED' && $legacyExclusions === 0) {
             return $this->stop('ACTION_REQUIRED', ['RTC_LEGACY_TAX_EXCLUSIONS_MISSING'], ['rtc.base_adjustments'], $trace);
+        }
+        if ($baseB30 !== null) {
+            if ($base->isNegative()) {
+                return $this->stop('INVALID', ['RTC_NEGATIVE_BASE_AFTER_ADJUSTMENTS'], [], $trace);
+            }
+            $trace[] = ['stage' => 'BASE_COMPOSITION_B30', 'source_article' => 'LC214 art. 12, §§1º-3º',
+                'typed_adjustments' => $typedB30, 'base_after_adjustments' => $base->rounded(2)->value()];
         }
         if ($facts->value('rtc.legacy_tax_inclusion') === 'EXCLUDED' && $legacyExclusions > 0) {
             return $this->stop('INVALID', ['RTC_LEGACY_TAX_EXCLUSION_DOUBLE_COUNT'], [], $trace);
@@ -1034,7 +1114,7 @@ final readonly class ConsumptionReformEngine
                 'source_article' => 'LC214 art. 130, parágrafo único', 'source_hash' => $annexReduction['source_hash']];
             $trace[] = ['stage' => 'MEDICAL_AUDIT_BASE_EXCLUSION', ...$adjustments[array_key_last($adjustments)]];
         }
-        if ($personalUseRecipient) {
+        if ($personalUseRecipient || $speciesB28 !== null) {
             if ($adjustments !== []) {
                 return $this->stop('ACTION_REQUIRED', ['RTC_NON_ONEROUS_ADJUSTMENTS_NOT_MATERIALIZED'], [], $trace);
             }
@@ -1042,7 +1122,8 @@ final readonly class ConsumptionReformEngine
             if ($base->compareTo(DecimalValue::fromString('0')) <= 0) {
                 return $this->stop('INVALID', ['RTC_NON_ONEROUS_MARKET_VALUE_INVALID'], [], $trace);
             }
-            $marketTrace = ['stage' => 'NON_ONEROUS_MARKET_BASE', 'source_article' => 'LC214 art. 5º, §9º; art. 12, §4º',
+            $marketTrace = ['stage' => 'NON_ONEROUS_MARKET_BASE',
+                'source_article' => $speciesB28['source_article'] ?? 'LC214 art. 5º, §9º; art. 12, §4º',
                 'market_value_brl' => $base->rounded(2)->value(), 'evidence_id' => $facts->value('rtc.market_value_evidence_id')];
             if ($this->transitions->qualifiesEmployeeBelowMarket()) {
                 $marketTrace['consideration'] = $consideration;
@@ -1073,7 +1154,7 @@ final readonly class ConsumptionReformEngine
             }
             if ($facts->has('rtc.legal_base_reduction_records')) {
                 if ($rateReduction !== null || $annexReduction !== null || $institutionalImmunity !== null
-                    || $personalUseRecipient || $market !== 'DOMESTIC' || $advanceOrigin !== null || $taxPoint !== null
+                    || $personalUseRecipient || $speciesB28 !== null || $market !== 'DOMESTIC' || $advanceOrigin !== null || $taxPoint !== null
                     || ($classificationRule['legal_base_reduction_family'] ?? null) !== 'INTERNATIONAL_PASSENGER_TRANSPORT') {
                     return $this->stop('ACTION_REQUIRED', ['RTC_LEGAL_BASE_REDUCTION_COMBINATION_UNPROVEN'], [], $trace);
                 }
@@ -1162,15 +1243,48 @@ final readonly class ConsumptionReformEngine
                 'effective_rates' => [$stateRow['percent'], $municipalRow['percent'], $cbsRow['percent']],
                 'policy' => 'EXACT_RATE_MULTIPLICATION_THEN_HALF_UP_AMOUNT_2'];
         }
+        if (array_key_exists(TaxInclusivePriceB32::KEY, $this->codes)) {
+            if (! TaxInclusivePriceB32::enabled($this->codes)) {
+                return $this->stop('INVALID', ['RTC_TAX_INCLUSIVE_B32_POLICY_INVALID'], [], $trace);
+            }
+            if ($facts->value('rtc.price_includes_ibs_cbs') === true) {
+                if ($personalUseRecipient || $speciesB28 !== null || $market !== 'DOMESTIC') {
+                    return $this->stop('ACTION_REQUIRED', ['RTC_TAX_INCLUSIVE_COMBINATION_NOT_MATERIALIZED'], [], $trace);
+                }
+                $inclusive = (new TaxInclusivePriceB32)->resolve($base->rounded(2)->value(),
+                    [(string) $stateRow['percent'], (string) $municipalRow['percent'], (string) $cbsRow['percent']],
+                    fn (DecimalValue $candidate, string $percent): string => $this->tax($candidate, $percent));
+                $trace[] = ['stage' => 'TAX_INCLUSIVE_PRICE_B32', ...$inclusive];
+                if ($inclusive['status'] !== 'RESOLVED') {
+                    return $this->stop($inclusive['status'], [$inclusive['reason']], [], $trace);
+                }
+                $base = DecimalValue::fromString($inclusive['taxable_base']);
+            }
+        }
         $ibsState = $this->tax($base, (string) $stateRow['percent']);
         $ibsMunicipal = $this->tax($base, (string) $municipalRow['percent']);
         $cbs = $this->tax($base, (string) $cbsRow['percent']);
-        if ($personalUseRecipient) {
-            $trace[] = ['stage' => 'NON_ONEROUS_NOMINAL_CALCULATION', 'source_article' => 'LC214 art. 5º, §9º',
+        $nonOnerousDocumentB28 = null;
+        if ($personalUseRecipient || $speciesB28 !== null) {
+            $trace[] = ['stage' => 'NON_ONEROUS_NOMINAL_CALCULATION',
+                'source_article' => $speciesB28 === null ? 'LC214 art. 5º, §9º' : $speciesB28['source_article'],
                 'ibs_state' => $ibsState, 'ibs_municipal' => $ibsMunicipal, 'cbs' => $cbs,
                 'rate_sources' => [$stateRow['source_id'], $municipalRow['source_id'], $cbsRow['source_id']]];
-
-            return $this->stop('ACTION_REQUIRED', ['RTC_NON_ONEROUS_DOCUMENT_NOT_MATERIALIZED'], [], $trace);
+            if (! NonOnerousSpeciesB28::enabled($this->codes)) {
+                return $this->stop('ACTION_REQUIRED', ['RTC_NON_ONEROUS_DOCUMENT_NOT_MATERIALIZED'], [], $trace);
+            }
+            if ($class !== '000001') {
+                return $this->stop('ACTION_REQUIRED', ['RTC_NON_ONEROUS_DOCUMENT_CLASS_NOT_REGULAR'], [], $trace);
+            }
+            // Candidate only: NT009 (indDoacao) states market-value NFS-e with regular taxation for donations with
+            // counter-benefit; B28 applies the same pattern to the other taxed species, pending review.
+            $nonOnerousDocumentB28 = ['species' => $speciesB28['species'] ?? $facts->value('rtc.non_onerous_legal_basis'),
+                'source_article' => $speciesB28['source_article'] ?? 'LC214 art. 5º, I e §9º',
+                'base' => 'MARKET_VALUE', 'market_value_brl' => $base->value(), 'cclasstrib' => $class, 'ind_doacao' => null,
+                'document_candidate' => NonOnerousSpeciesB28::POLICY['document_candidate'],
+                'review_status' => NonOnerousSpeciesB28::POLICY['review_status'],
+                'layout_reference' => 'NT009 Anexo VI leiaute DPS, campo indDoacao (doação com contraprestação)'];
+            $trace[] = ['stage' => 'NON_ONEROUS_DOCUMENT_CANDIDATE_B28', ...$nonOnerousDocumentB28];
         }
         $layouts = array_values(array_filter($this->codes['document_layouts'] ?? [],
             static fn (array $layout): bool => ($layout['status'] ?? null) === 'ACTIVE'
@@ -1427,6 +1541,27 @@ final readonly class ConsumptionReformEngine
             'catalog_versions' => ['rates' => $this->rates->metadata()['version'], 'codes' => $this->codes['version'] ?? null,
                 'transition' => $this->transitions->version()],
         ];
+        if ($nonOnerousDocumentB28 !== null) {
+            $decision['non_onerous_b28'] = $nonOnerousDocumentB28;
+        }
+        if (array_key_exists(CalculatorReconciliationB31::KEY, $this->codes)) {
+            if (! CalculatorReconciliationB31::enabled($this->codes)) {
+                return $this->stop('INVALID', ['RTC_CALCULATOR_B31_POLICY_INVALID'], [], $trace);
+            }
+            $calculator = (new CalculatorReconciliationB31)->reconcile($facts, ['vIBSUF' => $ibsState,
+                'vIBSMun' => $ibsMunicipal, 'vIBSTot' => $ibsTotal, 'vCBS' => $cbs]);
+            $trace[] = ['stage' => 'CALCULATOR_RECONCILIATION_B31', ...$calculator];
+            if ($calculator['status'] !== 'RESOLVED') {
+                $rejections = is_array($calculator['rejection_codes'] ?? null)
+                    ? array_values(array_filter($calculator['rejection_codes'], 'is_string')) : [];
+
+                return $this->stop($calculator['status'], [$calculator['reason'], ...$rejections], $calculator['missing_facts'], $trace);
+            }
+            $decision['calculator_b31'] = $calculator;
+        }
+        if (isset($platformDecision['consequences_b29'])) {
+            $decision['platform_b29'] = $platformDecision['consequences_b29'];
+        }
         if (isset($credit['integration155'])) {
             $decision['credit_integration155'] = $credit['integration155'];
         }

@@ -12,8 +12,11 @@ it('stays disabled in every historical catalog and is enabled only from the B23 
             $enabled[] = basename($file);
         }
     }
-    // Accepted catalogs up to 141 keep their replays/hashes; B23 is the first explicitly gated version (A155/H1).
-    expect($enabled)->toBe(['rtc-codes-2026.11.04-b23-draft1.json']);
+    // Accepted catalogs up to 141 keep their replays/hashes; B23 is the first explicitly gated version and every
+    // later versioned catalog (B24+) inherits the gate.
+    $later = array_values(array_filter(array_map('basename', glob(dirname(__DIR__, 3).'/resources/fiscal/catalogs/rtc-codes-*.json')),
+        fn (string $name): bool => strcmp($name, 'rtc-codes-2026.11.04-b23-draft1.json') >= 0));
+    expect($enabled)->toBe($later)->and($enabled[0])->toBe('rtc-codes-2026.11.04-b23-draft1.json');
 });
 
 it('enables only with the exact policy block', function (mixed $policy, bool $expected): void {

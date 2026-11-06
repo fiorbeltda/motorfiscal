@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-11-04T12:30:00-03:00",
+  "reviewed_at": "2026-11-06T09:30:00-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
-  "criterion": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+  "criterion": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
   "objectives": [
     {
       "id": "4B.1",
@@ -55,7 +55,8 @@
         "ConversãoRTC73 e resultadosISS96/98 preservados; a referência geográfica não prova domicílio ou validade histórica.",
         "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores.",
         "140:conversão de preçoISS em importação17.01 local,memória e projeção parcial separadas doRTC;56/154,CLI/replay139 e auditoria aprovados. Documento completo e demais perfis pendentes.",
-        "141:classificacao explicita de consultoria importada e fatura normalizada reconciliada comISS/RTC e exclusoes declaradas;74/150 eCLI validados. Documento completo e demais perfis pendentes."
+        "141:classificacao explicita de consultoria importada e fatura normalizada reconciliada comISS/RTC e exclusoes declaradas;74/150 eCLI validados. Documento completo e demais perfis pendentes.",
+        "B26-B29:PF art.105,destino por relatorio,nao onerosas (art.5 II/IV) e plataformas (art.22);4B.2.11/4B.2.12 Sandbox."
       ],
       "pending": [
         "Qualificar materialidade e local fiscal histórico além da referência geográfica auxiliar.",
@@ -73,28 +74,39 @@
         "phase4b-iss-export95-preparation.md",
         "phase4b-export-iss96-live-integration.md",
         "phase4b-sp97-municipal-result-preparation.md",
-        "phase4b-sp98-current-integration.md"
+        "phase4b-sp98-current-integration.md",
+        "phase4b-b29-platforms.md"
       ],
       "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
-      "current_work": "141 validado localmente:classificacao explicita e conciliacao de fatura normalizada comISS/RTC,74 testes/150 assercoes,PHPStan0/Pint4,CLI repetido e3 recusas.5.948 entradas e136 hashes auditados;98 regras anteriores preservadas. Modelo documental completo seguinte;0/8 grupos encerrados.",
+      "current_work": "B26-B29 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
-        "docs/fiscal/phase4b-import129-responsibility.md",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
-        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
-        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
-        "docs/fiscal/phase4b-iss-currency140-integration.md",
-        "docs/fiscal/phase4b-iss-currency140-integration.md",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
-        "docs/fiscal/phase4b-iss-currency140-integration.md",
-        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\import141-integration-scoped-validation.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\requirements80-current-matrix.json",
-        "docs/fiscal/phase4b-import141-monetary-integration.md",
-        "D:/ProjetoSaasExports/phase4b-import-document141-20261027-v1/schema-coverage-v1.json"
+        "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+        "storage/app/phase4b-b29-development-20261105/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+      "historical_current_work_by_task": [
+        {
+          "before": "B26-B29",
+          "current_work": "141 validado localmente:classificacao explicita e conciliacao de fatura normalizada comISS/RTC,74 testes/150 assercoes,PHPStan0/Pint4,CLI repetido e3 recusas.5.948 entradas e136 hashes auditados;98 regras anteriores preservadas. Modelo documental completo seguinte;0/8 grupos encerrados.",
+          "current_work_evidence": [
+            "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
+            "docs/fiscal/phase4b-import129-responsibility.md",
+            "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+            "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+            "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+            "docs/fiscal/phase4b-iss-currency140-integration.md",
+            "docs/fiscal/phase4b-iss-currency140-integration.md",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+            "docs/fiscal/phase4b-iss-currency140-integration.md",
+            "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\import141-integration-scoped-validation.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\requirements80-current-matrix.json",
+            "docs/fiscal/phase4b-import141-monetary-integration.md",
+            "D:/ProjetoSaasExports/phase4b-import-document141-20261027-v1/schema-coverage-v1.json"
+          ]
+        }
+      ]
     },
     {
       "id": "4B.3",
@@ -104,7 +116,10 @@
         "119 aceita: referências vinculadas ao método ordinário; inconsistências 117 recusadas nos dois executores, sem comprovar pagamento ou extinção.",
         "129:contribuinte adquirenteBR/destinatárioBR e responsabilidade do fornecedor/plataforma separados;fundamentos incompatíveis recusados nos dois executores.",
         "130:candidato local pelo tomador,com fornecedor estrangeiro/COMEX/NBS,consumindo o snapshot129 real replayado;sem promover resultado fiscal não final.",
-        "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados."
+        "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados.",
+        "B25:ciclo de liquidacao (arts.32-34,36);4B.3.7/4B.3.8 Sandbox aceitos,validacao externa pendente.",
+        "B29:4B.3.5 Sandbox (opcoes e consequencias do art.22).",
+        "B33:A157 ativado em bundle novo;B25 retirado por duplicar A157/A158;4B.3.7/4B.3.8 voltam a PARCIAL."
       ],
       "pending": [
         "Concluir split, liquidação, responsabilidades gerais e opções das plataformas, além das referências já qualificadas.",
@@ -116,18 +131,47 @@
         "phase4b-material-input119-targeted.md",
         "phase4b-requirements117-subjects-review.md",
         "phase4b-requirements114-temporal-review.md",
-        "phase4b-simples78-local-integration.md"
+        "phase4b-simples78-local-integration.md",
+        "phase4b-b25-settlement-cycle.md",
+        "phase4b-b29-platforms.md",
+        "phase4b-b25-settlement-cycle.md"
       ],
       "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
-      "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
+      "current_work": "B33 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
-        "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/phpstan-v1/execution.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
-        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
-        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+        "storage/app/phase4b-b33-development-20261106/b33-scoped-validation.json",
+        "storage/app/phase4b-b33-development-20261106/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+      "historical_current_work_by_task": [
+        {
+          "before": "B25",
+          "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
+          "current_work_evidence": [
+            "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/directed-v1/execution.json",
+            "D:/ProjetoSaasExports/phase4b-values132-20261022-v1/phpstan-v1/execution.json",
+            "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+            "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+            "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json"
+          ]
+        },
+        {
+          "before": "B26-B29",
+          "current_work": "B25 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b25-development-20261105/b25-scoped-validation.json",
+            "storage/app/phase4b-b25-development-20261105/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B33",
+          "current_work": "B26-B29 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+            "storage/app/phase4b-b29-development-20261105/requirements80-current-matrix.json"
+          ]
+        }
+      ]
     },
     {
       "id": "4B.4",
@@ -144,7 +188,10 @@
         "140:conversão de preçoISS em importação17.01 local,memória e projeção parcial separadas doRTC;56/154,CLI/replay139 e auditoria aprovados. Documento completo e demais perfis pendentes.",
         "141:classificacao explicita de consultoria importada e fatura normalizada reconciliada comISS/RTC e exclusoes declaradas;74/150 eCLI validados. Documento completo e demais perfis pendentes.",
         "142:camposNT009 de fatura/COMEX/ajuste e gate doXSD observados;54/123 eCLI validados. Modelo completo de identidade/partes/DPS e demais perfis pendentes.",
-        "143:montagemDPS local completa do perfil141/142 validada por45/195,CLI repetido,3 recusas,PHPStan0/Pint5 e auditoria. Outros perfis e aceite oficial seguem pendentes."
+        "143:montagemDPS local completa do perfil141/142 validada por45/195,CLI repetido,3 recusas,PHPStan0/Pint5 e auditoria. Outros perfis e aceite oficial seguem pendentes.",
+        "B24:4B.4.9 art.12 par.8 fora do escopo NFS-e (222001 so BP-e/CT-e OS).",
+        "B30-B31:4B.4.3/4.4 integrais no escopo,4B.4.11 Sandbox,vBC corrigida (PIS/Cofins so ate 2026).",
+        "B32:preco com tributos embutidos;4B.4.2 integral."
       ],
       "pending": [
         "Comprovar autenticidade e materialidade das evidências; guardas e replays não encerram base/cálculo.",
@@ -164,55 +211,84 @@
         "phase4b-financial-scope-integration.md",
         "phase4b-temporal86-local-integration.md",
         "phase4b-iss-fx109-source-scope-review.md",
-        "phase4b-price110-local-component.md"
+        "phase4b-price110-local-component.md",
+        "phase4b-b24-handoff-activation.md",
+        "phase4b-b30-b31-base-rounding.md",
+        "phase4b-b30-b31-base-rounding.md"
       ],
       "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
       "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
-      "current_work": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+      "current_work": "B32 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
-        "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
-        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
-        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
-        "docs/fiscal/phase4b-retention137-staged-review.md",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
-        "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json",
-        "docs/fiscal/phase4b-judicial138-staged-review.md",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-full-validation.json",
-        "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\siafi-probe-validation.json",
-        "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\municipal-money-source.json",
-        "docs/fiscal/phase4b-public-payment139-integration.md",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-integration-scoped-validation.json",
-        "docs/fiscal/phase4b-public-payment139-integration.md",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-current-matrix.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
-        "docs/fiscal/phase4b-public-payment139-integration.md",
-        "docs/fiscal/phase4b-iss-currency140-integration.md",
-        "docs/fiscal/phase4b-iss-currency140-integration.md",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
-        "docs/fiscal/phase4b-iss-currency140-integration.md",
-        "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\import141-integration-scoped-validation.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\requirements80-current-matrix.json",
-        "docs/fiscal/phase4b-import141-monetary-integration.md",
-        "D:/ProjetoSaasExports/phase4b-import-document141-20261027-v1/schema-coverage-v1.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\import142-integration-scoped-validation.json",
-        "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\requirements80-current-matrix.json",
-        "docs/fiscal/phase4b-import142-nt009-field-model.md",
-        "D:/ProjetoSaasExports/phase4b-import-nt009142-20261027-v1/primary-review-v1.json",
-        "docs/fiscal/checkpoints/20261027-import143/import141-integration-scoped-validation.json",
-        "docs/fiscal/checkpoints/20261027-import143/import142-integration-scoped-validation.json",
-        "docs/fiscal/checkpoints/20261027-import143/import143-integration-scoped-validation.json",
-        "docs/fiscal/checkpoints/20261027-import143/requirements80-current-matrix.json",
-        "docs/fiscal/checkpoints/20261027-import143/checkpoint.json",
-        "docs/fiscal/phase4b-import143-complete-local-dps.md"
+        "storage/app/phase4b-b32-development-20261105/b32-scoped-validation.json",
+        "storage/app/phase4b-b32-development-20261105/requirements80-current-matrix.json"
       ],
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
+      ],
+      "historical_current_work_by_task": [
+        {
+          "before": "B24",
+          "current_work": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+          "current_work_evidence": [
+            "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
+            "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
+            "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+            "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+            "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+            "docs/fiscal/phase4b-retention137-staged-review.md",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-own136-development-20261023\\own136-full-validation.json",
+            "D:\\ProjetoSaasExports\\phase4b-retention137-20261023-v1\\document-audit-v4.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-integration-scoped-validation.json",
+            "docs/fiscal/phase4b-judicial138-staged-review.md",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-retention137-development-20261023\\retention137-full-validation.json",
+            "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\siafi-probe-validation.json",
+            "D:\\ProjetoSaasExports\\phase4b-public-payment139-20261026-v1\\municipal-money-source.json",
+            "docs/fiscal/phase4b-public-payment139-integration.md",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-integration-scoped-validation.json",
+            "docs/fiscal/phase4b-public-payment139-integration.md",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-current-matrix.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\public139-pair-integration-scoped-validation.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-public139-development-20261026\\requirements80-pair-current-matrix.json",
+            "docs/fiscal/phase4b-public-payment139-integration.md",
+            "docs/fiscal/phase4b-iss-currency140-integration.md",
+            "docs/fiscal/phase4b-iss-currency140-integration.md",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\requirements80-current-matrix.json",
+            "docs/fiscal/phase4b-iss-currency140-integration.md",
+            "D:/ProjetoSaasExports/phase4b-document-currency140-20261027-v1/source-scope-review-v1.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\import141-integration-scoped-validation.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import141-development-20261027\\requirements80-current-matrix.json",
+            "docs/fiscal/phase4b-import141-monetary-integration.md",
+            "D:/ProjetoSaasExports/phase4b-import-document141-20261027-v1/schema-coverage-v1.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\import142-integration-scoped-validation.json",
+            "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-import142-development-20261027\\requirements80-current-matrix.json",
+            "docs/fiscal/phase4b-import142-nt009-field-model.md",
+            "D:/ProjetoSaasExports/phase4b-import-nt009142-20261027-v1/primary-review-v1.json",
+            "docs/fiscal/checkpoints/20261027-import143/import141-integration-scoped-validation.json",
+            "docs/fiscal/checkpoints/20261027-import143/import142-integration-scoped-validation.json",
+            "docs/fiscal/checkpoints/20261027-import143/import143-integration-scoped-validation.json",
+            "docs/fiscal/checkpoints/20261027-import143/requirements80-current-matrix.json",
+            "docs/fiscal/checkpoints/20261027-import143/checkpoint.json",
+            "docs/fiscal/phase4b-import143-complete-local-dps.md"
+          ]
+        },
+        {
+          "before": "B30-B31",
+          "current_work": "B24 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b24-development-20261105/b24-scoped-validation.json",
+            "storage/app/phase4b-b24-development-20261105/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B32",
+          "current_work": "B30-B31 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+            "storage/app/phase4b-b31-development-20261105/requirements80-current-matrix.json"
+          ]
+        }
       ]
     },
     {
@@ -231,7 +307,8 @@
         "B15:politica de anulacao/preservacao (arts.49-52) revalidada no texto vigente do Planalto (9/23).",
         "B21:5.1 parcial (presumidos restantes);5.2-5.10 parciais dependentes do A;ciclos locais B11/B14/B17/B18 validados.",
         "B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141);4B.5.1 passa a depender so da integracao (A) e de atos externos.",
-        "B23:B02,B13,B17 e apuracao B11->B14 ativos no bundle B23;4B.5.3/5.7/5.10 integrais,4B.5.1/5.2/5.4/5.5 Sandbox."
+        "B23:B02,B13,B17 e apuracao B11->B14 ativos no bundle B23;4B.5.3/5.7/5.10 integrais,4B.5.1/5.2/5.4/5.5 Sandbox.",
+        "B24:credit_evidence_a156 ativo;4B.5.6 Sandbox (documento oficial de importacao pendente);4B.5.8/5.9 parciais com trabalho proprio."
       ],
       "pending": [
         "Concluir apropriação,estorno/glosa e ciclos materiais por perfil. Contratos estruturais/perguntas122 preservados na retomada22/10.",
@@ -252,14 +329,15 @@
         "phase4b-b13-acquirer-credit-prohibitions.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md",
-        "phase4b-b23-handoff-activation.md"
+        "phase4b-b23-handoff-activation.md",
+        "phase4b-b24-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-04T12:30:00-03:00",
-      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
-      "current_work": "B23 validado localmente;ver recibo.",
+      "reviewed_at": "2026-11-06T09:30:00-03:00",
+      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+      "current_work": "B24 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
-        "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
+        "storage/app/phase4b-b24-development-20261105/b24-scoped-validation.json",
+        "storage/app/phase4b-b24-development-20261105/requirements80-current-matrix.json"
       ],
       "historical_current_work_before_b02": {
         "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
@@ -341,6 +419,14 @@
             "storage/app/phase4b-b22-development-20261103/b22-scoped-validation.json",
             "storage/app/phase4b-b22-development-20261103/requirements80-current-matrix.json"
           ]
+        },
+        {
+          "before": "B24",
+          "current_work": "B23 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+            "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
+          ]
         }
       ]
     },
@@ -393,13 +479,13 @@
         "phase4b-b17-b19-presumed-credits-lifecycle.md",
         "phase4b-b23-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-04T12:30:00-03:00",
+      "reviewed_at": "2026-11-06T09:30:00-03:00",
       "current_work": "B23 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
         "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "historical_current_work_before_b01": {
         "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
         "current_work_evidence": [
@@ -536,13 +622,13 @@
         "phase4b-b12-candidate-verification.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md"
       ],
-      "reviewed_at": "2026-11-04T12:30:00-03:00",
+      "reviewed_at": "2026-11-06T09:30:00-03:00",
       "current_work": "B21 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
         "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ],
@@ -661,7 +747,8 @@
         "B12:4B.8.2 e4B.8.4 validados integralmente no escopo B.",
         "B16:matriz de cenarios 2026-2033 (oficial/recusa/sintetico) 75/230;aliquotas revalidadas no Planalto;lacuna do parametro sintetico enviada ao A.",
         "B21:8.2/8.4 integrais;8.1/8.8/8.9 dependem de evidencia/regressao;8.10 de publicacao;demais dependem do A.",
-        "B23:fatos/perguntas A155 no bundle (4B.8.3 integral);H4 recusa taxa sintetica (4B.8.5 Sandbox)."
+        "B23:fatos/perguntas A155 no bundle (4B.8.3 integral);H4 recusa taxa sintetica (4B.8.5 Sandbox).",
+        "B24:4B.8.6/8.7/8.11/8.12 parciais com trabalho proprio;aliquotas 2027+ aguardam atos oficiais."
       ],
       "pending": [
         "Desenvolvimento retomado22/10:fechar lacunas funcionais atuais da matriz80,com aceite próprio por corte e preservação do checkpoint122.",
@@ -707,15 +794,16 @@
         "phase4b-b10-acceptance-model.md",
         "phase4b-b12-candidate-verification.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md",
-        "phase4b-b23-handoff-activation.md"
+        "phase4b-b23-handoff-activation.md",
+        "phase4b-b24-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-04T12:30:00-03:00",
-      "current_work": "B23 validado localmente;ver recibo.",
+      "reviewed_at": "2026-11-06T09:30:00-03:00",
+      "current_work": "B24 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
-        "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
+        "storage/app/phase4b-b24-development-20261105/b24-scoped-validation.json",
+        "storage/app/phase4b-b24-development-20261105/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ],
@@ -828,6 +916,14 @@
           "current_work_evidence": [
             "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
             "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B24",
+          "current_work": "B23 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
+            "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
           ]
         }
       ]
@@ -8521,18 +8617,42 @@
     {
       "reviewed_at": "2026-11-03T15:00:00-03:00",
       "current_review": "Agente B,03/11/2026,sem commit.B22:todas as hipoteses de credito presumido da LC214 catalogadas (44/141).36 itens B:5 integrais,6 Sandbox aceitos,18 dependentes do A,4 de publicacao oficial,3 de evidencia;0 com trabalho B pendente.DESENVOLVIMENTO INDEPENDENTE DO AGENTE B ESGOTADO — INTEGRACAO E DEPENDENCIAS EXTERNAS PENDENTES.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-04T12:30:00-03:00",
+      "current_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-05T10:20:00-03:00",
+      "current_review": "Agente B,05/11/2026,sem commit.B24:bundle 2026.11.05-b24-draft1 ativa credit_evidence_a156 (commit f501885 do A):livro fiscal exigido para todo credito INPUT/pool e documento definitivo+pagamentos na importacao.H8/H9 nao ativados (modo teste);H10 fora do escopo NFS-e (222001 indNFSe=0).36 itens B:11 integrais,12 Sandbox,6 parciais com trabalho proprio,4 publicacao oficial,3 evidencia.44 itens A (H10):40 parciais,4 sem evidencia integral;passam ao B.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-05T13:45:00-03:00",
+      "current_review": "Agente B (assumindo o A),05/11/2026,sem commit.B25:SettlementCycleB25 no bundle 2026.11.05-b25-draft1:split padrao com/sem consulta,parcelas proporcionais,simplificado so com ato oficial declarado,recolhimento pelo adquirente com extincao dos debitos.4B.3.7 e 4B.3.8 Sandbox aceitos (validacao externa pendente).Itens A:38 parciais,4 sem evidencia integral,2 Sandbox.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-05T14:15:00-03:00",
+      "current_review": "Agente B (assumindo o A),05/11/2026,sem commit.B26 PF do art.105 pelo estabelecimento;B27 destino do motor vinculado ao relatorio de domicilio;B28 art.5 II/IV e documento candidato a valor de mercado;B29 consequencias do art.22.Bundle 2026.11.05-b29-draft1.Regressao:2181 aprovados.Itens A:35 parciais,4 sem evidencia integral,5 Sandbox.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-05T15:40:00-03:00",
+      "current_review": "Agente B (assumindo o A),05/11/2026,sem commit.B30 ajustes tipados do art.12 par.1-3;B31 Calculadora (margem R$0,01) e correcao da vBC (PIS/Cofins so ate 2026).Bundle 2026.11.05-b31-draft1.Regressao:2216 aprovados.Itens A:32 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 6 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 2 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-05T15:55:00-03:00",
+      "current_review": "Agente B,05/11/2026,sem commit.B32 retira IBS/CBS embutidos com base exata em centavos.4B.4.2 integral no escopo.Itens A:31 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 6 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
     }
   ],
-  "current_review": "Agente B,04/11/2026,sem commit.B23:bundle 2026.11.04-b23-draft1 ativa B02,B07 e A155 (commit 213f2c5 do A);320 casos B07 aprovados;bundle instalado identico ao candidato do A.36 itens B:11 integrais,11 Sandbox aceitos,7 dependentes do A,4 de publicacao oficial,3 de evidencia.44 itens A consolidados do relatorio H5 (39 parciais,4 sem evidencia integral,1 lacuna real).Regressao parcial:10.074 aprovados,513 falhas de ambiente,0 pendentes.0/8 grupos encerrados.",
+  "current_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
   "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
-  "scope_package": "B23",
+  "scope_package": "B33",
   "current_requirements_matrix": {
-    "path": "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json",
-    "sha256": "9094d746ff2d1c78031a42513328b8fab6760731941fa0e22bc570aac0ddd67b",
+    "path": "storage/app/phase4b-b33-development-20261106/requirements80-current-matrix.json",
+    "sha256": "57529cf3c947ba6d7d3f4591831083321287ec1f8dc3db5c967b871909080fa0",
     "requirements": 80,
     "formal_phase4b_groups_closed": 0
   },
-  "updated_at": "2026-11-04T12:30:00-03:00",
+  "updated_at": "2026-11-06T09:30:00-03:00",
   "checkpoint_publication": {
     "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
     "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",

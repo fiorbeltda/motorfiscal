@@ -1,0 +1,43 @@
+{
+  "task": "B24",
+  "created_at": "2026-11-05T10:20:00-03:00",
+  "base_commit": "f501885153d64f77ea8a7571fa680d5c9f43e970",
+  "runs": [
+    {
+      "name": "A156 novos (7 arquivos)",
+      "tests": 125,
+      "assertions": 627,
+      "failures": 0
+    },
+    {
+      "name": "B07-B23 + 155 + motor (22 arquivos)",
+      "tests": 1404,
+      "assertions": 223122,
+      "failures": 0
+    },
+    {
+      "name": "HandoffActivationB24Test",
+      "tests": 13,
+      "assertions": 208,
+      "failures": 0
+    }
+  ],
+  "regression": "PARCIAL (sem os 41 arquivos de fixtures ausentes)",
+  "hashes": {
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.05-b24-draft1.json": "862b2022da447c356ace0be1720e7505cf9e9ae6446438f298f70514f198d954",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.05-b24-draft1.json": "783fc581cd9c4fe1da9684798fc8e4ad79c7664ccb4e4a551c2cd1019c26721d",
+    "resources/fiscal/facts/consumption-phase4b-2026.11.05-b24-draft1.json": "db7e651bd608f1b2e47d2e63398ea138321a5ac860aea4c35af92031f144dd4b",
+    "resources/fiscal/questions/consumption-integrated-2026.11.05-b24-draft1.json": "6a1eba047e668bd85a64af090480f14669feb7ca5bf09cb6e3f7721732d9f0cd",
+    "resources/fiscal/production/phase4b-controls-2026.11.05-b24-draft1.json": "26fe63b513f6d63ba7f7c5ba0e0b213c310cdfc7d3b8a047a7b60366968e4d6b",
+    "scripts/fork_phase4b_b24_handoff_activation_bundle.py": "fa60c47b2f63dcb1dbf0c0eb67150d4c8396008a072934bc6117cdebd086caba",
+    "tests/Fiscal/Integration/HandoffActivationB24Test.php": "0edf96315c14e695dbad9ad43fd54e23235575a6adc42d185b9aef3d74bb21a7",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "74ece65b1011629eba3650c443c1e7236da4286db4c9930d0e0455373f4c8a19",
+    "app/Modules/Fiscal/ConsumptionReform/CreditEvidence156.php": "b8faf52f167a9b84a21311511d02721354662a05a6f29f720322c956869570e4"
+  },
+  "not_activated": {
+    "synthetic_evidence_a156": "modo de teste",
+    "legal_base_reduction_a156": "222001 indNFSe=0, fora do escopo NFS-e"
+  },
+  "phase4b_complete": false,
+  "production_ready": false
+}

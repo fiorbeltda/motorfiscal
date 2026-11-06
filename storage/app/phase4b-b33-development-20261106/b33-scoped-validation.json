@@ -1,0 +1,43 @@
+{
+  "task": "B33",
+  "created_at": "2026-11-06T09:30:00-03:00",
+  "base_commit": "1f56dfa",
+  "sources": [
+    "LC214 arts.27, 31-36 (snapshot Camara SHA256 dc87a43e...)",
+    "docs/fiscal/agent-a/20261105/handoff-A157-to-B.md"
+  ],
+  "runs": [
+    {
+      "name": "B33 ativacao",
+      "tests": 5,
+      "assertions": 90
+    },
+    {
+      "name": "Regressao ampla 258 arquivos",
+      "tests": 11022,
+      "passed": 10506,
+      "failed": 516,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513,
+        "ENVIRONMENT_OPENSSL_CONF_MISSING": 3
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "ef81cfeac205aeebedfab9d37899865c5d864cc52552d5bf27c8059186c5cd85",
+    "app/Modules/Fiscal/ConsumptionReform/AcquirerCollection157.php": "ba787715533865e43f9d5cef7b6d565db68de86f633d7595dd28922d7c981681",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.06-b33-draft1.json": "7ecc1e1c27b4f2a9571bf286c92e29dac34bd273270136a1f71cf8067e9d9b01",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.06-b33-draft1.json": "33c9b1ea8138d09c0c2144124a78fdf61c42bc70c946606aba7f382bd376628c",
+    "scripts/fork_phase4b_b33_acquirer_collection_bundle.py": "06877ed926bdc847e1e630c94a59b1a752c915ac04f96d275afd1595387d2a28",
+    "tests/Fiscal/Integration/HandoffActivationB33Test.php": "d56fc81b364cc2315c76a992694dc64cbf240c24655efc41422ec762b9da93c9",
+    "docs/fiscal/phase4b-b25-settlement-cycle.md": "311b171f77b8a8f8a220d2cf1342898fdde7f656aa7c593d68458f82d9c2dd41"
+  },
+  "superseded": "SettlementCycleB25 movido para E:/dev/motorfiscal-agente-b-evidence/superseded-b25-settlement-20261106",
+  "phase4b_complete": false,
+  "production_ready": false
+}

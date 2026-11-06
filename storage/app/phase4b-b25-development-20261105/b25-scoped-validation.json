@@ -1,0 +1,42 @@
+{
+  "task": "B25",
+  "created_at": "2026-11-05T13:45:00-03:00",
+  "sources": [
+    "LC214 arts. 27, 31-36 (redacao LC 227/2026), resources/fiscal/sources/official/lc214-camara-observed-20261001.html"
+  ],
+  "runs": [
+    {
+      "name": "SettlementCycleB25Test",
+      "tests": 22,
+      "assertions": 120,
+      "failures": 0
+    },
+    {
+      "name": "Regressao ampla 35 arquivos (B, 155, 156, B24, cobranca, motor)",
+      "tests": 1866,
+      "assertions": 228899,
+      "failures": 0,
+      "note": "3 testes de gate ajustados para aceitar B23 e sucessores; reexecutados: 374 aprovados"
+    }
+  ],
+  "static": {
+    "phpstan_level8": "sem erros",
+    "pint": "aprovado"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/SettlementCycleB25.php": "e48caae02b576e387c6221c74fceb3376c62acbedde01d8c8f52d95f7ee2d864",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "430b00aa35bc9fe795355bc6007a18d00b821ee0f31b3a619c244bb81d1f2b50",
+    "tests/Fiscal/Integration/SettlementCycleB25Test.php": "9d500c7f53f607956cb23362e149275f590a7d4cf590bd41242161eecf1f102e",
+    "scripts/fork_phase4b_b25_settlement_cycle_bundle.py": "916cf2b6042a6b458293210626750a3e9f9b059d2f93d5695247737d7bdc928d",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.05-b25-draft1.json": "41a99df6eb4541d3fccbcac34c04f82ef9cb9e323ccabdc90c54a7a2e79cf540",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.05-b25-draft1.json": "9440a98d6cbf9f7c889e7dbb2507d49f6863521cdf8d792c3e9c3111d49df909"
+  },
+  "external_pending": [
+    "implantacao oficial do split",
+    "percentuais do simplificado (CGIBS/RFB)",
+    "sistema de consulta",
+    "acompanhamento art.36 par.4"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

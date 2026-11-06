@@ -39,7 +39,10 @@ it('keeps the B07 gate out of every historical bundle; B23 is the first gated ve
             $gated[] = basename($file);
         }
     }
-    expect($gated)->toBe(['rtc-codes-2026.11.04-b23-draft1.json'])
+    $later = array_values(array_filter(array_map('basename', glob(B07_ROOT.'/resources/fiscal/catalogs/rtc-codes-*.json')),
+        fn (string $name): bool => strcmp($name, 'rtc-codes-2026.11.04-b23-draft1.json') >= 0));
+    // B23 is the first gated version; later versioned catalogs (B24+) inherit the gate.
+    expect($gated)->toBe($later)->and($gated[0])->toBe('rtc-codes-2026.11.04-b23-draft1.json')
         ->and(b07EnabledBundle())->toBe('bundles/consumption-phase4b-2026.11.04-b23-draft1.json');
 });
 

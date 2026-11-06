@@ -1,0 +1,20 @@
+{
+  "task": "B32",
+  "created_at": "2026-11-05T15:55:00-03:00",
+  "runs": [
+    {
+      "name": "TaxInclusivePriceB32Test",
+      "tests": 3,
+      "assertions": 1009,
+      "failures": 0
+    }
+  ],
+  "note": "Regressao ampla roda junto com o proximo bloco.",
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/TaxInclusivePriceB32.php": "a022db8354a20d036273d252a2aa5c58ef1591172d1643ead57c74eb28f5fe93",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "081a0a60f5ec621e5d790ab895f7784294852cee183d5f19d5f430ebf34cef58",
+    "tests/Fiscal/Integration/TaxInclusivePriceB32Test.php": "3dcc353e0eb658b27a940fa2cafe8fbf85f3e2d7617dcfea0d666f202cf5a16b",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.05-b32-draft1.json": "4e7e24afd069473b266ea5683b521e9808cb74e43779e3e6372172d608c6c9c2"
+  },
+  "phase4b_complete": false
+}

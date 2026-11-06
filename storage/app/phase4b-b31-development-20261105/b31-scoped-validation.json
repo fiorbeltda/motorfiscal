@@ -1,0 +1,38 @@
+{
+  "task": "B30-B31",
+  "created_at": "2026-11-05T15:40:00-03:00",
+  "sources": [
+    "LC214 art.12 (LC 227/2026)",
+    "NT009 Anexo VI RN DPS (vBC, E1556/E1568/E1572/E1582)"
+  ],
+  "runs": [
+    {
+      "name": "B30",
+      "tests": 17
+    },
+    {
+      "name": "B31",
+      "tests": 5
+    },
+    {
+      "name": "Regressao ampla 56 arquivos",
+      "tests": 2216,
+      "assertions": 236056,
+      "failures": 0
+    }
+  ],
+  "static": {
+    "phpstan_level8": "sem erros",
+    "pint": "aprovado"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/BaseCompositionB30.php": "b24a33307b6b66095d0117d925cb3eda999056ea84575e951f072b82df6fbbc3",
+    "app/Modules/Fiscal/ConsumptionReform/CalculatorReconciliationB31.php": "2334a1e135b79a9729c5096a88af0632238a37991bfc960e5c2ed4bf7cecfc4e",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "c5839dfe00c78b5f62c1d2d6b57a1a67e4265a241d7423aa4f58c64644b87d57",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.05-b31-draft1.json": "b698a395660ff92d814855f21730abcbd90df12c7063d80b33fc67167655f73e",
+    "tests/Fiscal/Integration/BaseCompositionB30Test.php": "fc9b3af2c59136b5deae713411b3bdb529931c1e5eec814fcd047cbd5347c587",
+    "tests/Fiscal/Integration/CalculatorReconciliationB31Test.php": "3147e91f5cd47920a100037b13933f58d463b2aca775bcd17268ab1d13adbee9"
+  },
+  "phase4b_complete": false,
+  "production_ready": false
+}

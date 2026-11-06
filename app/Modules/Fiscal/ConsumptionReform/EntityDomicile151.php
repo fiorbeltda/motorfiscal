@@ -21,6 +21,9 @@ final readonly class EntityDomicile151
 
     public const PARTY_CONTRACT = 'RTC-MATERIAL-PARTY-DOMICILE-2026.11.03-A153';
 
+    /** Decreto 12.955/2026 art. 105 §4-A (Decreto 13.075/2026): CNPJ for natural-person taxpayers from this date. */
+    public const NATURAL_PERSON105_CNPJ_FROM = '2027-01-01';
+
     /** @param array<string, mixed> $geography
      * @param  array<string, mixed>  $geographyPolicy
      */
@@ -105,7 +108,20 @@ final readonly class EntityDomicile151
         if (($registry['regularly_registered'] ?? null) !== true || ($registry['unique_registration'] ?? null) !== true) {
             return $this->stop('UNREGISTERED_DOMICILE_SEPARATE_QUALIFICATION_REQUIRED', ['registry_evidence.record.regularly_registered']);
         }
-        if (! in_array($registry['party_kind'] ?? null, ['LEGAL_ENTITY', 'UNINCORPORATED_ENTITY'], true)) {
+        // B26: Decreto 12.955/2026 art. 107, I — the natural person of art. 105 (IBS/CBS taxpayer or responsible)
+        // has, as principal domicile, each establishment supplied, as legal entities do. CNPJ registration of that
+        // person is mandatory from 2027-01-01 (art. 105 §4-A, Decreto 13.075/2026). Other natural persons keep A153.
+        $naturalPerson105 = ($registry['party_kind'] ?? null) === 'NATURAL_PERSON'
+            && ($registry['natural_person_subject_to_registration105'] ?? null) === true;
+        if ($naturalPerson105) {
+            if (! in_array($registry['natural_person105_role'] ?? null, ['TAXPAYER', 'RESPONSIBLE'], true)
+                || ! $this->id($registry['natural_person105_activity_evidence_id'] ?? null)) {
+                return $this->stop('NATURAL_PERSON105_CONDITION_UNPROVEN', ['registry_evidence.record.natural_person105_role']);
+            }
+            if ($on >= self::NATURAL_PERSON105_CNPJ_FROM && ($registry['registration_scheme'] ?? null) !== 'CNPJ') {
+                return $this->stop('NATURAL_PERSON105_CNPJ_REGISTRATION_REQUIRED', ['registry_evidence.record.registration_scheme']);
+            }
+        } elseif (! in_array($registry['party_kind'] ?? null, ['LEGAL_ENTITY', 'UNINCORPORATED_ENTITY'], true)) {
             return $this->stop('NATURAL_PERSON_SEPARATE_QUALIFICATION_REQUIRED', ['registry_evidence.record.party_kind']);
         }
         $delivery = $this->record($input['supply_establishment_evidence'] ?? null, $input, $known, $on);
@@ -152,7 +168,14 @@ final readonly class EntityDomicile151
         }
         $report = ['contract' => self::CONTRACT, 'status' => 'LOCAL_ENTITY_DOMICILE_QUALIFIED',
             'reason' => 'DOMICILE151_REGISTERED_ACTUAL_SUPPLY_ESTABLISHMENT_BOUND',
-            'source_article' => $article.'; §3 I b', 'destination_basis' => $basis,
+            'source_article' => $article.'; §3 I b'.($naturalPerson105 ? '; Decreto 12.955/2026 arts. 105-107, I' : ''),
+            'destination_basis' => $basis,
+            ...($naturalPerson105 ? ['natural_person105' => ['role' => $registry['natural_person105_role'],
+                'registration_scheme' => $registry['registration_scheme'] ?? null,
+                'cnpj_mandatory_on_operation_date' => $on >= self::NATURAL_PERSON105_CNPJ_FROM,
+                'cbs_regulation_source' => ['url' => 'https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html',
+                    'sha256' => '8396d56d14fb30a386c7548047701a6c310cb3a60da1a0b6893b6df5b8d90235',
+                    'source_article' => 'Decreto12955 art.105 caput e §4-A (Decreto13075/2026), art.106, art.107 I']]] : []),
             'selected_party_id' => $party, 'selected_establishment_id' => $selected['id'],
             'headquarters_selected' => $selected['headquarters'],
             'locality' => ['uf' => $selected['uf'], 'municipality_ibge' => $selected['municipality_ibge']],

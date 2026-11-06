@@ -1,0 +1,55 @@
+{
+  "task": "B26-B29",
+  "created_at": "2026-11-05T14:15:00-03:00",
+  "sources": [
+    "Decreto 12.955/2026 (redacao Decreto 13.075/2026) arts.105-107, sha256 8396d56d...",
+    "LC214 arts.5,6,11 par.3,12,22 (LC 227/2026)",
+    "NT009 Anexo VI campo indDoacao",
+    "Tabela cClassTrib v1.70 (410001, 000001)"
+  ],
+  "runs": [
+    {
+      "name": "B26",
+      "tests": 7
+    },
+    {
+      "name": "B27",
+      "tests": 9
+    },
+    {
+      "name": "B28",
+      "tests": 11
+    },
+    {
+      "name": "B29 + PlatformResponsibility",
+      "tests": 13
+    },
+    {
+      "name": "Regressao ampla 52 arquivos",
+      "tests": 2181,
+      "assertions": 233109,
+      "failures": 0
+    }
+  ],
+  "static": {
+    "phpstan_level8": "sem erros",
+    "pint": "aprovado"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/EntityDomicile151.php": "6622ec2c538c6a38bf8bad3fba7d11118e65f0aa36ed4988c856efe880ca8d7c",
+    "app/Modules/Fiscal/ConsumptionReform/DestinationDomicileReportB27.php": "905efce90cf721c17dea87f71656046eccae05ec9cae7f53bcb5d4ed677ba33a",
+    "app/Modules/Fiscal/ConsumptionReform/NonOnerousSpeciesB28.php": "66f39677bc31ccade60176ab2265881db8340bf1d072d2ecb7be3d49e56557f2",
+    "app/Modules/Fiscal/ConsumptionReform/PlatformConsequencesB29.php": "0cef1b1823aff4af7ab0696b42e16eec5df4075dc45e209003f9ad0fea258007",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "adefda06c6d3d888d51af5341b74b5da74f975e5ad801d5e4cff63be272a3f0e",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.05-b29-draft1.json": "562a00b8f1def058c6493a477f7c573e7f5553d09719a5a3e6b24d1b739cc464",
+    "tests/Fiscal/Integration/NaturalPersonEstablishmentB26Test.php": "a73abea8dd2c9c171e79ad43e9bdd77bfe878ac82207e3d9d3062552fb2379c9",
+    "tests/Fiscal/Integration/DestinationDomicileReportB27Test.php": "3d6b5f9605c6d9ac0a32e8ed6d3531ac5c6acc2ef219dd53770fb096b603bfc2",
+    "tests/Fiscal/Integration/NonOnerousSpeciesB28Test.php": "7236dc86c32e8663841e2588e26400debdb406e636314973483072bd9f727092",
+    "tests/Fiscal/Integration/PlatformConsequencesB29Test.php": "85c8071a120a53a49983f996fdf21aafee4942997e7c9b5451d0f6290c904eab"
+  },
+  "user_review_pending": [
+    "Documento NFS-e candidato para nao onerosas tributadas (B28)"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}
