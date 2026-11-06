@@ -1,0 +1,47 @@
+{
+  "task": "B38",
+  "created_at": "2026-11-06T18:30:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 arts. 237 e 240, Planalto compilado observado 03/11/2026 (SHA256 0a0d190b...)",
+    "cClassTrib oficial 011003 (CST 011, indNFSe 1, reducao 60/60)"
+  ],
+  "runs": [
+    {
+      "name": "B38 intermediacao de planos de saude",
+      "tests": 4
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (motor + HealthPlanIntermediationB38)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "4ab459cf31edd860af72671db710bebc5b2d49edc0ec4b9dda3521940553beb2",
+    "app/Modules/Fiscal/ConsumptionReform/HealthPlanIntermediationB38.php": "ef36e3725a64a0b0f492084c206567f86e71806189dc0a5640e02d0bf5340b16",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.06-b38-draft1.json": "c43e43e4f1969de4473f07637564ef1b3af8b02d18a47e551f924c527accc5e3",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.06-b38-draft1.json": "303aeb27883733a9e31b45292a4f3c21b57794d3874f64295898b328252f6df4",
+    "scripts/fork_phase4b_b38_health_plan_intermediation_bundle.py": "133a2f8155f9a08f185f82b521640f2f1c467aecdc41dbb5d8cb40daaf6941b6",
+    "tests/Fiscal/Integration/HealthPlanIntermediationB38Test.php": "cbce1c3f289ba8d10e7dd3bd683ae0948f2a3883c6af2cb6d0e62b60e6c67090",
+    "docs/fiscal/phase4b-b38-health-plan-intermediation.md": "76dd2feb1b18303541220ec7f38b6fffd887da612e14dad2907bf16a7ef99bd2"
+  },
+  "not_invented": [
+    "aliquotas de referencia de 2027+ nao publicadas: rota recusada"
+  ],
+  "review_points": [
+    "NBS 1.0906.12 e 1.0910.20 para corretagem de planos"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

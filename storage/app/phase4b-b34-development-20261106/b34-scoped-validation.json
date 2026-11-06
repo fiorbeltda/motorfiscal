@@ -1,0 +1,50 @@
+{
+  "task": "B34",
+  "created_at": "2026-11-06T13:30:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 arts.31-35 (snapshot Camara SHA256 dc87a43e...)",
+    "Manual de Operacoes split payment (hash f5b03d94...) e manual de tempos (hash 13685b4d...) via A158",
+    "docs/fiscal/agent-a/20261105/resume-after-A158-pause.md"
+  ],
+  "runs": [
+    {
+      "name": "B34 integracao + ativacao",
+      "tests": 18
+    },
+    {
+      "name": "Regressao ampla 260 arquivos",
+      "tests": 11040,
+      "passed": 10527,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (motor + SplitPaymentIntegrationB34)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "3337b7fb3b1581d27a96e9a82a02af8c4cbacf5a43a5c867ce8b17ff679a4078",
+    "app/Modules/Fiscal/ConsumptionReform/SplitPaymentIntegrationB34.php": "1e487fabcbf56cd4bfba4f2f1b343463e9aaeac4a581e4eff2e0913ffd0dfd47",
+    "app/Modules/Fiscal/ConsumptionReform/SplitLedger158.php": "63f6fcc040a4a8e799f9c21fc203e79e5f53c5444a743bcc9547e69a63acc529",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.06-b34-draft1.json": "7875d41e5294d767b43937d1e15c1b1b7bbf20f887dd3980b9e5f2fb4d6172f5",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.06-b34-draft1.json": "85d194bb9c2c080087f9a5bf551fe5607820116e489eee4ea510a4715715cd72",
+    "scripts/fork_phase4b_b34_split_payment_bundle.py": "a3e1d945494532f2ba2389c23d0cb7a49a0cc2d6af588d16ef5e8c33c9a04e08",
+    "scripts/agent_b/split158_engine_fixture.php": "2bcc01b40158bea6ed494780098859df8233435b1cca265867e3db0e96a19a06",
+    "tests/Fiscal/Integration/SplitPaymentIntegrationB34Test.php": "2209db8b94376dc3675cadbc7ace382a1c3aecd651f4d42f89bd25d763926278",
+    "tests/Fiscal/Integration/HandoffActivationB34Test.php": "5acc2ea41515344d765928f970f7fbf024fe295c2e9bea3d51674ef006bedbf9",
+    "docs/fiscal/phase4b-b34-split-payment.md": "e159cd9a0d5e4428eca416936f5fd39b41dc9435096d6afb6e40dde6cab2b938"
+  },
+  "not_invented": [
+    "split_deployments vazio no bundle instalado",
+    "sem percentual do simplificado",
+    "sem calendario de repasse"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

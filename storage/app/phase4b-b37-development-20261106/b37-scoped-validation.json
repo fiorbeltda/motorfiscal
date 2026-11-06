@@ -1,0 +1,50 @@
+{
+  "task": "B37",
+  "created_at": "2026-11-06T18:00:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 arts. 251-265, Planalto compilado observado 03/11/2026 (SHA256 0a0d190b...)",
+    "cClassTrib oficiais 200027 (70%) e 200046 (50%); cTribNac 990101 da NFS-e Nacional"
+  ],
+  "runs": [
+    {
+      "name": "B37 bens imoveis",
+      "tests": 16
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (motor + RealEstateRegimeB37)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "4ab459cf31edd860af72671db710bebc5b2d49edc0ec4b9dda3521940553beb2",
+    "app/Modules/Fiscal/ConsumptionReform/RealEstateRegimeB37.php": "c37c2e8aef724545ee7cbadbf0d907f5cd6fac90c656efbe993e43cff30d7a9f",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.06-b37-draft1.json": "4f1e9b7b27c405e391897a251613c57922289ed3809f4f595e2065a21c969a8a",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.06-b37-draft1.json": "0a1f1b9ca9d2da8a353acf8d7e4c7aa3e7d1fbf9d3d674f5b5f3683c3893cd43",
+    "scripts/fork_phase4b_b37_real_estate_bundle.py": "9e5e5a9ae9409f1a7c59713c10dd2de9cd99aa26129866cfe6a08305f31bb4c4",
+    "scripts/agent_b/real_estate_b37_fixture.php": "9bb3909b516c763d476cc0d6f5173bf0fa97646550984129507b55830afa9e81",
+    "tests/Fiscal/Integration/RealEstateRegimeB37Test.php": "5cd191391e1a8a82aa898a503ec65f4c8cb393f8e288f290e7a4328f30ac0455",
+    "docs/fiscal/phase4b-b37-real-estate.md": "207ec29bfcf81e7978bc65d43fd58c09d6d75ca767c6c95144a0eccdff29d7fe"
+  },
+  "not_invented": [
+    "valor do redutor social atualizado pelo IPCA e informado com fonte, nunca estimado",
+    "aliquotas 2027+ dependem de atos oficiais"
+  ],
+  "review_points": [
+    "cTribNac 990101 para locacao",
+    "alienacao/incorporacao/construcao fora desta etapa"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

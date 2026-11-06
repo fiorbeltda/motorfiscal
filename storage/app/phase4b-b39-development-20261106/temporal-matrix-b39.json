@@ -1,0 +1,639 @@
+{
+    "task": "B39",
+    "bundle": "bundles\/consumption-phase4b-2026.11.06-b38-draft1.json",
+    "years": [
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030",
+        "2031",
+        "2032",
+        "2033"
+    ],
+    "actual": {
+        "SAAS_STANDARD": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "1000.00",
+                "cbs": "9.00",
+                "ibs": "1.00",
+                "cbs_rate": "0.90"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            }
+        ],
+        "HOTEL_B35": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "1000.00",
+                "cbs": "5.40",
+                "ibs": "0.60",
+                "cbs_rate": "0.54"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            }
+        ],
+        "TRAVEL_AGENCY_B36": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "350.00",
+                "cbs": "1.89",
+                "ibs": "0.21",
+                "cbs_rate": "0.54"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            }
+        ],
+        "REAL_ESTATE_LEASE_B37": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "700.00",
+                "cbs": "1.89",
+                "ibs": "0.21",
+                "cbs_rate": "0.27"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_CINDOP126_OUTSIDE_LOCAL_COVERAGE"
+                ]
+            }
+        ],
+        "HEALTH_PLAN_BROKER_B38": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "1000.00",
+                "cbs": "3.60",
+                "ibs": "0.40",
+                "cbs_rate": "0.36"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            }
+        ]
+    },
+    "next_blocker_synthetic": {
+        "SAAS_STANDARD": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "1000.00",
+                "cbs": "9.00",
+                "ibs": "1.00",
+                "cbs_rate": "0.90"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            }
+        ],
+        "HOTEL_B35": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "1000.00",
+                "cbs": "5.40",
+                "ibs": "0.60",
+                "cbs_rate": "0.54"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            }
+        ],
+        "TRAVEL_AGENCY_B36": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "350.00",
+                "cbs": "1.89",
+                "ibs": "0.21",
+                "cbs_rate": "0.54"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            }
+        ],
+        "REAL_ESTATE_LEASE_B37": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "700.00",
+                "cbs": "1.89",
+                "ibs": "0.21",
+                "cbs_rate": "0.27"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:CBS"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_RATE_NOT_PROVEN:IBS_STATE"
+                ]
+            }
+        ],
+        "HEALTH_PLAN_BROKER_B38": [
+            {
+                "year": "2026",
+                "status": "VALID",
+                "reasons": [
+                    "RTC_2026_COLLECTION_DISPENSED"
+                ],
+                "taxable_base": "1000.00",
+                "cbs": "3.60",
+                "ibs": "0.40",
+                "cbs_rate": "0.36"
+            },
+            {
+                "year": "2027",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2028",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2029",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2030",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2031",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2032",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            },
+            {
+                "year": "2033",
+                "status": "ACTION_REQUIRED",
+                "reasons": [
+                    "RTC_UNIFORM_NATIONAL_REFERENCE_RATE_ROUTE_NOT_MATERIALIZED"
+                ]
+            }
+        ]
+    },
+    "note": "Cada ano avaliado 30 dias depois da operação. next_blocker_synthetic remove em memória a referência cIndOp local de 2026 só para revelar o bloqueio seguinte; não tem efeito legal."
+}

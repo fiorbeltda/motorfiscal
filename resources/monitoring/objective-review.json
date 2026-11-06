@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-11-06T09:30:00-03:00",
+  "reviewed_at": "2026-11-06T20:00:00-03:00",
   "baseline_bundle": "CONSUMPTION-PHASE4B-2026.10.21-122-draft1",
-  "criterion": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+  "criterion": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
   "objectives": [
     {
       "id": "4B.1",
@@ -9,7 +9,8 @@
         "Seleção temporal e bloqueio de versões indisponíveis;IBS estadual/municipal eCBS segregados.",
         "Antecipações88/91 e documentos108 aceitos localmente;datasISS próprias preservadas,sem reescreverRTC.",
         "Oito requisitos temporais examinados; correções split 114 e recusas temporais 116 preservadas na regressão integral 119 aprovada.",
-        "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados."
+        "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados.",
+        "B39:matriz 2026-2033 por familia;2027+ recusado sem estimativa."
       ],
       "pending": [
         "Qualificar materialidade, datas e regimes restantes, preservando os eventos e as recusas temporais já aceitos.",
@@ -33,19 +34,30 @@
         "phase4b-iss-date106-result-composition.md",
         "phase4b-identity107-dated-preparation.md",
         "phase4b-dated108-current-integration.md",
-        "phase4b-price110-local-component.md"
+        "phase4b-price110-local-component.md",
+        "phase4b-b39-temporal-matrix.md"
       ],
       "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
-      "current_work": "137 integral segue no mesmo processo,sem resultado terminal.138 externo:duas fontes oficiaisSTF preservadas,observações processuais reproduzidas e16 consequências indevidas recusadas;auditoria independente aprovada. Nenhuma classe138 instalada;0/8 grupos encerrados.",
+      "current_work": "B39 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
-        "docs/fiscal/phase4b-schedule131-primary-act.md",
-        "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
-        "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
-        "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
-        "docs/fiscal/phase4b-judicial138-staged-review.md"
+        "storage/app/phase4b-b39-development-20261106/b39-scoped-validation.json",
+        "storage/app/phase4b-b39-development-20261106/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados."
+      "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+      "historical_current_work_by_task": [
+        {
+          "before": "B39",
+          "current_work": "137 integral segue no mesmo processo,sem resultado terminal.138 externo:duas fontes oficiaisSTF preservadas,observações processuais reproduzidas e16 consequências indevidas recusadas;auditoria independente aprovada. Nenhuma classe138 instalada;0/8 grupos encerrados.",
+          "current_work_evidence": [
+            "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
+            "docs/fiscal/phase4b-schedule131-primary-act.md",
+            "storage/app/phase4b-pair135-development-20261023/checkpoint-stop-validation-pending.json",
+            "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+            "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+            "docs/fiscal/phase4b-judicial138-staged-review.md"
+          ]
+        }
+      ]
     },
     {
       "id": "4B.2",
@@ -119,7 +131,8 @@
         "131:cronograma doAto4 integrado,com exceções por perfil/Simples e regime do contribuinte brasileiro;pergunta de destinatário e históricos preservados.",
         "B25:ciclo de liquidacao (arts.32-34,36);4B.3.7/4B.3.8 Sandbox aceitos,validacao externa pendente.",
         "B29:4B.3.5 Sandbox (opcoes e consequencias do art.22).",
-        "B33:A157 ativado em bundle novo;B25 retirado por duplicar A157/A158;4B.3.7/4B.3.8 voltam a PARCIAL."
+        "B33:A157 ativado em bundle novo;B25 retirado por duplicar A157/A158;4B.3.7/4B.3.8 voltam a PARCIAL.",
+        "B34:livro do split (A158) integrado ao motor atras de gate proprio;4B.3.7 continua PARCIAL."
       ],
       "pending": [
         "Concluir split, liquidação, responsabilidades gerais e opções das plataformas, além das referências já qualificadas.",
@@ -134,13 +147,14 @@
         "phase4b-simples78-local-integration.md",
         "phase4b-b25-settlement-cycle.md",
         "phase4b-b29-platforms.md",
-        "phase4b-b25-settlement-cycle.md"
+        "phase4b-b25-settlement-cycle.md",
+        "phase4b-b34-split-payment.md"
       ],
       "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
-      "current_work": "B33 validado localmente;ver recibo.",
+      "current_work": "B34 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b33-development-20261106/b33-scoped-validation.json",
-        "storage/app/phase4b-b33-development-20261106/requirements80-current-matrix.json"
+        "storage/app/phase4b-b34-development-20261106/b34-scoped-validation.json",
+        "storage/app/phase4b-b34-development-20261106/requirements80-current-matrix.json"
       ],
       "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
       "historical_current_work_by_task": [
@@ -170,6 +184,14 @@
             "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
             "storage/app/phase4b-b29-development-20261105/requirements80-current-matrix.json"
           ]
+        },
+        {
+          "before": "B34",
+          "current_work": "B33 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b33-development-20261106/b33-scoped-validation.json",
+            "storage/app/phase4b-b33-development-20261106/requirements80-current-matrix.json"
+          ]
         }
       ]
     },
@@ -191,7 +213,13 @@
         "143:montagemDPS local completa do perfil141/142 validada por45/195,CLI repetido,3 recusas,PHPStan0/Pint5 e auditoria. Outros perfis e aceite oficial seguem pendentes.",
         "B24:4B.4.9 art.12 par.8 fora do escopo NFS-e (222001 so BP-e/CT-e OS).",
         "B30-B31:4B.4.3/4.4 integrais no escopo,4B.4.11 Sandbox,vBC corrigida (PIS/Cofins so ate 2026).",
-        "B32:preco com tributos embutidos;4B.4.2 integral."
+        "B32:preco com tributos embutidos;4B.4.2 integral.",
+        "B35:regime especifico de hotelaria/parques materializado;4B.4.10 continua PARCIAL.",
+        "B36:regime especifico das agencias de turismo materializado;4B.4.10 continua PARCIAL.",
+        "B37:regime especifico de bens imoveis em NFS-e materializado;4B.4.10 continua PARCIAL.",
+        "B38:intermediacao de planos de saude materializada;4B.4.10 continua PARCIAL.",
+        "B40:apuracao periodica de planos de saude e prognosticos;4B.4.10 continua PARCIAL.",
+        "B41:operacoes combinadas com regimes especificos;4B.4.6 continua PARCIAL."
       ],
       "pending": [
         "Comprovar autenticidade e materialidade das evidências; guardas e replays não encerram base/cálculo.",
@@ -214,14 +242,20 @@
         "phase4b-price110-local-component.md",
         "phase4b-b24-handoff-activation.md",
         "phase4b-b30-b31-base-rounding.md",
-        "phase4b-b30-b31-base-rounding.md"
+        "phase4b-b30-b31-base-rounding.md",
+        "phase4b-b35-hospitality.md",
+        "phase4b-b36-travel-agency.md",
+        "phase4b-b37-real-estate.md",
+        "phase4b-b38-health-plan-intermediation.md",
+        "phase4b-b40-period-regimes.md",
+        "phase4b-b41-combined-regimes.md"
       ],
       "reviewed_at": "2026-10-27T13:14:31.903760-03:00",
       "current_package_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
-      "current_work": "B32 validado localmente;ver recibo.",
+      "current_work": "B41 validado localmente;ver recibo.",
       "current_work_evidence": [
-        "storage/app/phase4b-b32-development-20261105/b32-scoped-validation.json",
-        "storage/app/phase4b-b32-development-20261105/requirements80-current-matrix.json"
+        "storage/app/phase4b-b41-development-20261106/b41-scoped-validation.json",
+        "storage/app/phase4b-b41-development-20261106/requirements80-current-matrix.json"
       ],
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
@@ -288,6 +322,54 @@
             "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
             "storage/app/phase4b-b31-development-20261105/requirements80-current-matrix.json"
           ]
+        },
+        {
+          "before": "B35",
+          "current_work": "B32 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b32-development-20261105/b32-scoped-validation.json",
+            "storage/app/phase4b-b32-development-20261105/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B36",
+          "current_work": "B35 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b35-development-20261106/b35-scoped-validation.json",
+            "storage/app/phase4b-b35-development-20261106/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B37",
+          "current_work": "B36 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b36-development-20261106/b36-scoped-validation.json",
+            "storage/app/phase4b-b36-development-20261106/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B38",
+          "current_work": "B37 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b37-development-20261106/b37-scoped-validation.json",
+            "storage/app/phase4b-b37-development-20261106/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B40",
+          "current_work": "B38 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b38-development-20261106/b38-scoped-validation.json",
+            "storage/app/phase4b-b38-development-20261106/requirements80-current-matrix.json"
+          ]
+        },
+        {
+          "before": "B41",
+          "current_work": "B40 validado localmente;ver recibo.",
+          "current_work_evidence": [
+            "storage/app/phase4b-b40-development-20261106/b40-scoped-validation.json",
+            "storage/app/phase4b-b40-development-20261106/requirements80-current-matrix.json"
+          ]
         }
       ]
     },
@@ -332,8 +414,8 @@
         "phase4b-b23-handoff-activation.md",
         "phase4b-b24-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-06T09:30:00-03:00",
-      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+      "reviewed_at": "2026-11-06T20:00:00-03:00",
+      "current_package_review": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "current_work": "B24 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b24-development-20261105/b24-scoped-validation.json",
@@ -479,13 +561,13 @@
         "phase4b-b17-b19-presumed-credits-lifecycle.md",
         "phase4b-b23-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-06T09:30:00-03:00",
+      "reviewed_at": "2026-11-06T20:00:00-03:00",
       "current_work": "B23 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b23-development-20261104/b23-scoped-validation.json",
         "storage/app/phase4b-b23-development-20261104/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "historical_current_work_before_b01": {
         "current_work": "Retomada137 em26/10:ambiente recuperado e351 arquivos/amostras preservados conferidos. Integral137 em execução no mesmo runtime,com5.917 entradas congeladas etemporários noD:. Resultado terminal pendente. Última integral136:9.569/145.843;0/8 grupos encerrados.",
         "current_work_evidence": [
@@ -622,13 +704,13 @@
         "phase4b-b12-candidate-verification.md",
         "phase4b-b17-b19-presumed-credits-lifecycle.md"
       ],
-      "reviewed_at": "2026-11-06T09:30:00-03:00",
+      "reviewed_at": "2026-11-06T20:00:00-03:00",
       "current_work": "B21 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b21-development-20261103/b21-round-validation.json",
         "storage/app/phase4b-b21-development-20261103/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ],
@@ -797,13 +879,13 @@
         "phase4b-b23-handoff-activation.md",
         "phase4b-b24-handoff-activation.md"
       ],
-      "reviewed_at": "2026-11-06T09:30:00-03:00",
+      "reviewed_at": "2026-11-06T20:00:00-03:00",
       "current_work": "B24 validado localmente;ver recibo.",
       "current_work_evidence": [
         "storage/app/phase4b-b24-development-20261105/b24-scoped-validation.json",
         "storage/app/phase4b-b24-development-20261105/requirements80-current-matrix.json"
       ],
-      "current_package_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+      "current_package_review": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
       "historical_finished_before_public139_pair": [
         "139: contrato público e perguntas integrados;63 testes/253 asserções,dois replays preservados;par documental pendente."
       ],
@@ -8641,18 +8723,50 @@
     {
       "reviewed_at": "2026-11-05T15:55:00-03:00",
       "current_review": "Agente B,05/11/2026,sem commit.B32 retira IBS/CBS embutidos com base exata em centavos.4B.4.2 integral no escopo.Itens A:31 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 6 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T09:30:00-03:00",
+      "current_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T13:30:00-03:00",
+      "current_review": "Agente B,06/11/2026.SplitLedger158 do A158 ligado a decisao do motor atras do gate split_payment_a158;bundle 2026.11.06-b34-draft1.Implantacao oficial nao inventada.Regressao:10527 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T15:30:00-03:00",
+      "current_review": "Agente B,06/11/2026.Hotelaria/parques no motor:reducao 40%,cClassTrib 200048,credito vedado ao adquirente;bundle 2026.11.06-b35-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T17:30:00-03:00",
+      "current_review": "Agente B,06/11/2026.Agencias de turismo no motor:base art. 289,reducao 40%,cClassTrib 200051;bundle 2026.11.06-b36-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T18:00:00-03:00",
+      "current_review": "Agente B,06/11/2026.Bens imoveis em NFS-e no motor:locacao 70% (200027),administracao/intermediacao 50% (200046);bundle 2026.11.06-b37-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T18:30:00-03:00",
+      "current_review": "Agente B,06/11/2026.Intermediacao de planos de saude no motor:reducao 60% sobre aliquota de referencia,cClassTrib 011003;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T19:00:00-03:00",
+      "current_review": "Agente B,06/11/2026.Matriz familia x ano 2026-2033:2026 calculado,2027+ recusado com motivo exato;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
+    },
+    {
+      "reviewed_at": "2026-11-06T19:30:00-03:00",
+      "current_review": "Agente B,06/11/2026.Apuracao periodica de planos de saude e prognosticos em componente proprio;bundle componente sem bundle.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados."
     }
   ],
-  "current_review": "Agente B,06/11/2026.Integrado o commit 1f56dfa do A;SettlementCycleB25 retirado por duplicar A157/A158;bundle 2026.11.06-b33-draft1 ativa o A157.Regressao:10506 aprovados,516 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+  "current_review": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
   "active_development_bundle": "CONSUMPTION-PHASE4B-2026.10.22-134-draft1",
-  "scope_package": "B33",
+  "scope_package": "B41",
   "current_requirements_matrix": {
-    "path": "storage/app/phase4b-b33-development-20261106/requirements80-current-matrix.json",
-    "sha256": "57529cf3c947ba6d7d3f4591831083321287ec1f8dc3db5c967b871909080fa0",
+    "path": "storage/app/phase4b-b41-development-20261106/requirements80-current-matrix.json",
+    "sha256": "6cd08aded6d83919f0b903d0a0271f215195155392b65a01578d46172ee3244d",
     "requirements": 80,
     "formal_phase4b_groups_closed": 0
   },
-  "updated_at": "2026-11-06T09:30:00-03:00",
+  "updated_at": "2026-11-06T20:00:00-03:00",
   "checkpoint_publication": {
     "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
     "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",

@@ -1,0 +1,44 @@
+{
+  "task": "B40",
+  "created_at": "2026-11-06T19:30:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 arts. 234-247, Planalto compilado observado 03/11/2026 (SHA256 0a0d190b...)",
+    "cClassTrib 820001/820003/820004 (CST 820, indNFSe 1)"
+  ],
+  "runs": [
+    {
+      "name": "B40 apuracao periodica",
+      "tests": 12
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (PeriodRegimeAssessmentB40)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/PeriodRegimeAssessmentB40.php": "edb212023e4e49f529f9e8c7a30f7eaa994b69f444a75cc1ef91c83d018f6607",
+    "tests/Fiscal/Unit/PeriodRegimeAssessmentB40Test.php": "04f052859c63dc28eea5089f35d2a3801591d0b127f7624d0852ae082396e1de",
+    "docs/fiscal/phase4b-b40-period-regimes.md": "cdb85c98c809b3eaf460f9cc695ded5678af6883548486b878981b62b9ee536d"
+  },
+  "not_invented": [
+    "aliquotas de referencia sao entrada com fonte",
+    "base negativa recusada (sem tratamento legal nos arts. 234-247)"
+  ],
+  "review_points": [
+    "planos funerarios (art. 236) sem cClassTrib de documento proprio"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

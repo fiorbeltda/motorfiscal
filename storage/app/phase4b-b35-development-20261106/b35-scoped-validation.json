@@ -1,0 +1,51 @@
+{
+  "task": "B35",
+  "created_at": "2026-11-06T15:30:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 arts. 277-283, Planalto compilado observado 03/11/2026 (SHA256 0a0d190b...)",
+    "Tabela cClassTrib oficial no catalogo: 200048 (CST 200, indNFSe 1, reducao 40/40)"
+  ],
+  "runs": [
+    {
+      "name": "B35 regime de hotelaria/parques",
+      "tests": 15
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (motor + HospitalityRegimeB35)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "4ab459cf31edd860af72671db710bebc5b2d49edc0ec4b9dda3521940553beb2",
+    "app/Modules/Fiscal/ConsumptionReform/HospitalityRegimeB35.php": "6eedac98446e09230cc0f23f20e4a487f2cc7af5ab5393cd75b5c5f62d6c1989",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.06-b35-draft1.json": "6dbfe6c26cde8d92739fb66ee7ac3ad5f1a9501d7d292c175f851c6be4fa1b1a",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.06-b35-draft1.json": "0de321580abf180bad4c37ce30d568cbf1c7a959233da0c311954d1eca58d6aa",
+    "resources/fiscal/sources/official/lc214-planalto-observed-20261103.htm": "0a0d190bc39689f50b199646b51dd84d01f6d7392c179287b46909c3d4f4673c",
+    "scripts/fork_phase4b_b35_hospitality_bundle.py": "fbabe4d3f5d4fc0955c08500ea704cfdc530070ccccfe6a5e9c273489a9aada3",
+    "scripts/agent_b/hospitality_b35_fixture.php": "9442499646fff799d3b5ac32fb21c6f5aed7bd82a121ef8f9e6580056bfe66dd",
+    "tests/Fiscal/Integration/HospitalityRegimeB35Test.php": "f0bc7e03acff6647c2e4bf2dd749612b845fbdbbb842752aa43bd15d160f516d",
+    "docs/fiscal/phase4b-b35-hospitality.md": "a66663ed291b236e36f7f291261cd52e4b4826b79727f9b588e15d73f1c9cc3a"
+  },
+  "not_invented": [
+    "parametro municipal de ISS da hospedagem ausente: fluxo integrado para em MUNICIPAL_PARAMETERS_NOT_COVERED",
+    "aliquotas 2027+ dependem de atos oficiais"
+  ],
+  "review_points": [
+    "cIndOp da hospedagem pelo art. 11 III",
+    "NBS 1.0304 fora ate revisao"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

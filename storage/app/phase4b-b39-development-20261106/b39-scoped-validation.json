@@ -1,0 +1,45 @@
+{
+  "task": "B39",
+  "created_at": "2026-11-06T19:00:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "Bundle CONSUMPTION-PHASE4B-2026.11.06-b38-draft1",
+    "Catalogo de taxas rtc-rates-2026.09.25-1"
+  ],
+  "runs": [
+    {
+      "name": "B39 matriz 2026-2033",
+      "tests": 3
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (fixture + teste)"
+  },
+  "hashes": {
+    "scripts/agent_b/temporal_matrix_b39_fixture.php": "c2930ee4076e020b22aaf4d28502f049901dc3bc2cf12664939a7b1d1689c87e",
+    "tests/Fiscal/Integration/TemporalMatrixB39Test.php": "51a54a44f12550b357636bb98b3d55fdabb99fe3433f0250b595190b0e9c937e",
+    "storage/app/phase4b-b39-development-20261106/temporal-matrix-b39.json": "3c988848e51d1cacb49d400ed47541af189aad9924585c967917a773e98fba3e",
+    "docs/fiscal/phase4b-b39-temporal-matrix.md": "a51b017a8726079b0ce14d77f35542e7b53f451ddaaea95835dafd47a4e0bb21"
+  },
+  "not_invented": [
+    "nenhuma celula 2027+ calculada",
+    "extensao sintetica so em memoria para revelar o bloqueio seguinte"
+  ],
+  "review_points": [
+    "tabela cIndOp vigente para 2027+"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

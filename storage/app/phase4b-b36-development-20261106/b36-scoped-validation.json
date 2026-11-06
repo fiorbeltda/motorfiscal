@@ -1,0 +1,49 @@
+{
+  "task": "B36",
+  "created_at": "2026-11-06T17:30:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 arts. 288-291, Planalto compilado observado 03/11/2026 (SHA256 0a0d190b...)",
+    "cClassTrib oficial 200051 (CST 200, indNFSe 1, reducao 40/40)"
+  ],
+  "runs": [
+    {
+      "name": "B36 agencias de turismo",
+      "tests": 12
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (motor + TravelAgencyRegimeB36)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "4ab459cf31edd860af72671db710bebc5b2d49edc0ec4b9dda3521940553beb2",
+    "app/Modules/Fiscal/ConsumptionReform/TravelAgencyRegimeB36.php": "36604ad736a69a8c846ae1eac3b658d955dd61c5ff3549ce493fbe99b42d18fd",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.06-b36-draft1.json": "566556056773f75e9ea0c355e83c8cb10976b3764ff3716dda33c11bd4867da0",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.06-b36-draft1.json": "54a9c50127fe1d7f52affb00dea4f625466272fda33e3754fa776ea6120e7199",
+    "scripts/fork_phase4b_b36_travel_agency_bundle.py": "ab9ffe862f876ae37b0c4b0ad99515da5855a4730a20744a01ca56bca4566a62",
+    "scripts/agent_b/travel_agency_b36_fixture.php": "62b1a6bcb100b28bd7bd4035fc0cf70e93acb640b87d2b0be7bd27cdedc7c8be",
+    "tests/Fiscal/Integration/TravelAgencyRegimeB36Test.php": "defbbaa7d6f0f48de553f6f8696522e48afeee2a719104a0d29517f57e78832b",
+    "docs/fiscal/phase4b-b36-travel-agency.md": "fa6113eb72547ff9618855783f1731829afd102af9851544b0e945d464b9758a"
+  },
+  "not_invented": [
+    "aliquotas 2027+ dependem de atos oficiais"
+  ],
+  "review_points": [
+    "operadoras de turismo (NBS 1.1805.40), guias e promocao fora",
+    "venda presencial no balcao"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

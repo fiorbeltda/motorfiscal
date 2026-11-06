@@ -1,0 +1,44 @@
+{
+  "task": "B41",
+  "created_at": "2026-11-06T20:00:00-03:00",
+  "base_commit": "994f67b",
+  "sources": [
+    "LC214 art. 280 par. unico; arts. 277-291 (via B35/B36)",
+    "Bundle CONSUMPTION-PHASE4B-2026.11.06-b38-draft1"
+  ],
+  "runs": [
+    {
+      "name": "B41 operacoes combinadas",
+      "tests": 3
+    },
+    {
+      "name": "Regressao ampla 267 arquivos",
+      "tests": 11105,
+      "passed": 10592,
+      "failed": 513,
+      "skipped": 0,
+      "failure_causes": {
+        "ENVIRONMENT_MISSING_STORAGE_EVIDENCE": 513
+      },
+      "non_environment_failures": 0
+    }
+  ],
+  "static": {
+    "pint": "aprovado",
+    "phpstan": "aprovado (CombinedRegimeSuppliesB41)"
+  },
+  "hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/CombinedRegimeSuppliesB41.php": "c5575908e8723daffb05eca2a87cd85163dc1720f38542c7cc711b4490192944",
+    "tests/Fiscal/Integration/CombinedRegimeSuppliesB41Test.php": "d8de6bf25249ac74e090ab9443cfc698392d01a6932b600021c34c600f376bd5",
+    "docs/fiscal/phase4b-b41-combined-regimes.md": "1672c9abf1c71dfade30be1f4dbe1eb5fd64adc12e6617dfbabf1d529750ece3"
+  },
+  "not_invented": [
+    "sem aliquota media",
+    "ISS nao avaliado (sem parametro municipal qualificado)"
+  ],
+  "review_points": [
+    "ISS dos servicos de hospedagem/agencia/imoveis no catalogo municipal"
+  ],
+  "phase4b_complete": false,
+  "production_ready": false
+}

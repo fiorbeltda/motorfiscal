@@ -51,6 +51,9 @@ final readonly class ConsumptionReformEngine
                 }
             }
         }
+        if (SplitPaymentIntegrationB34::synthetic($this->codes, $facts)) {
+            return true;
+        }
         $keys = CreditEvidence156::enabled($this->codes)
             ? ['rtc.credit_book_entries', 'rtc.import_definitive_credit_records'] : [];
         if (is_array($this->codes[LegalBaseReduction156::KEY] ?? null)
@@ -659,7 +662,8 @@ final readonly class ConsumptionReformEngine
         if ($kind === 'SPECIFIC_REGIME' && $facts->value('rtc.specific_regime_rule_id') === null) {
             return $this->stop('ACTION_REQUIRED', ['RTC_SPECIFIC_REGIME_RULE_MISSING'], ['rtc.specific_regime_rule_id'], $trace);
         }
-        if (in_array($kind, ['FINANCIAL', 'REAL_ESTATE', 'SPECIFIC_REGIME'], true)) {
+        if (in_array($kind, ['FINANCIAL', 'REAL_ESTATE', 'SPECIFIC_REGIME'], true)
+            && ! ($kind === 'REAL_ESTATE' && RealEstateRegimeB37::claims($this->codes, $facts))) {
             return $this->stop('ACTION_REQUIRED', ['RTC_SPECIFIC_REGIME_STRATEGY_NOT_MATERIALIZED:'.$kind], [], $trace);
         }
         if ($facts->value('customer.person_type') === 'PUBLIC_ADMINISTRATION') {
@@ -845,6 +849,10 @@ final readonly class ConsumptionReformEngine
         $annexReduction = null;
         $institutionalImmunity = null;
         $cooperativeZero = null;
+        $hospitality = null;
+        $travelAgency = null;
+        $realEstate = null;
+        $healthBroker = null;
         if ($treatment === 'IMMUNE' && isset($this->codes['institutional_immunity'])) {
             if ($market !== 'DOMESTIC' || $regime !== 'REGULAR' || $consideration !== 'ONEROUS') {
                 return $this->stop('ACTION_REQUIRED', ['RTC_INSTITUTIONAL_IMMUNITY_OTHER_OPERATION_NOT_MATERIALIZED'], [], $trace);
@@ -876,6 +884,32 @@ final readonly class ConsumptionReformEngine
             if ($cooperativeZero['status'] !== 'RESOLVED') {
                 return $this->stop($cooperativeZero['status'], [$cooperativeZero['reason']], $cooperativeZero['missing_facts'], $trace);
             }
+        } elseif ($treatment === HospitalityRegimeB35::TREATMENT && $facts->value('rtc.specific_regime') === HospitalityRegimeB35::SPECIFIC_REGIME
+            && array_key_exists(HospitalityRegimeB35::KEY, $this->codes)) {
+            $hospitality = (new HospitalityRegimeB35)->resolve($facts, $on, $knownAt, $this->codes);
+            $trace[] = ['stage' => 'HOSPITALITY_REGIME_B35', ...$hospitality];
+            if ($hospitality['status'] !== 'RESOLVED') {
+                return $this->stop($hospitality['status'], [$hospitality['reason']], $hospitality['missing_facts'], $trace);
+            }
+        } elseif (HealthPlanIntermediationB38::claims($this->codes, $facts)) {
+            $healthBroker = (new HealthPlanIntermediationB38)->resolve($facts, $on, $knownAt, $this->codes);
+            $trace[] = ['stage' => 'HEALTH_PLAN_INTERMEDIATION_B38', ...$healthBroker];
+            if ($healthBroker['status'] !== 'RESOLVED') {
+                return $this->stop($healthBroker['status'], [$healthBroker['reason']], $healthBroker['missing_facts'], $trace);
+            }
+        } elseif (RealEstateRegimeB37::claims($this->codes, $facts)) {
+            $realEstate = (new RealEstateRegimeB37)->resolve($facts, $on, $knownAt, $this->codes);
+            $trace[] = ['stage' => 'REAL_ESTATE_REGIME_B37', ...$realEstate];
+            if ($realEstate['status'] !== 'RESOLVED') {
+                return $this->stop($realEstate['status'], [$realEstate['reason']], $realEstate['missing_facts'], $trace);
+            }
+        } elseif ($treatment === TravelAgencyRegimeB36::TREATMENT && $facts->value('rtc.specific_regime') === TravelAgencyRegimeB36::SPECIFIC_REGIME
+            && array_key_exists(TravelAgencyRegimeB36::KEY, $this->codes)) {
+            $travelAgency = (new TravelAgencyRegimeB36)->resolve($facts, $on, $knownAt, $this->codes);
+            $trace[] = ['stage' => 'TRAVEL_AGENCY_REGIME_B36', ...$travelAgency];
+            if ($travelAgency['status'] !== 'RESOLVED') {
+                return $this->stop($travelAgency['status'], [$travelAgency['reason']], $travelAgency['missing_facts'], $trace);
+            }
         } elseif ($treatment !== 'STANDARD') {
             if ($facts->value('rtc.treatment_rule_id') === null || $facts->value('rtc.treatment_evidence_id') === null) {
                 return $this->stop('ACTION_REQUIRED', ['RTC_TREATMENT_UNPROVEN'], ['rtc.treatment_rule_id', 'rtc.treatment_evidence_id'], $trace);
@@ -892,7 +926,7 @@ final readonly class ConsumptionReformEngine
             }
             $cooperativeZero['credit_transfer'] = $transfer;
         }
-        $rateReduction = $professionalReduction ?? $annexReduction ?? $cooperativeZero;
+        $rateReduction = $professionalReduction ?? $annexReduction ?? $cooperativeZero ?? $hospitality ?? $travelAgency ?? $realEstate ?? $healthBroker;
         $eligibleRules = [];
         foreach ($this->codes['engine_decision_rules'] ?? [] as $id => $rule) {
             $canonicalService = $rule['canonical_service_id'] ?? null;
@@ -908,6 +942,7 @@ final readonly class ConsumptionReformEngine
                 && (! isset($rule['immunity_cclasstrib']) || $rule['immunity_cclasstrib'] === ($institutionalImmunity['cclasstrib'] ?? null))
                 && (! isset($rule['professional_category']) || $rule['professional_category'] === $facts->value('rtc.professional_category'))
                 && (! isset($rule['annex_service_category']) || $rule['annex_service_category'] === $facts->value('rtc.annex_service_category'))
+                && (! isset($rule['specific_regime']) || $rule['specific_regime'] === $facts->value('rtc.specific_regime'))
                 && (! isset($rule['presence_cindop']) || $rule['presence_cindop'] === ($presenceDestination['cindop'] ?? null))
                 && (isset($rule['delivery_modes']) ? in_array($facts->value('rtc.delivery_mode'), $rule['delivery_modes'], true)
                     : ($rule['delivery_mode'] ?? null) === $facts->value('rtc.delivery_mode'))
@@ -1165,6 +1200,34 @@ final readonly class ConsumptionReformEngine
                 }
                 $base = DecimalValue::fromString($reduction156['taxable_base']);
             }
+        }
+
+        if ($travelAgency !== null) {
+            if ($adjustments !== [] || $base->compareTo($gross) !== 0 || $market !== 'DOMESTIC'
+                || $advanceOrigin !== null || $taxPoint !== null) {
+                return $this->stop('ACTION_REQUIRED', ['RTC_TRAVEL_AGENCY_BASE_COMBINATION_UNPROVEN'], [], $trace);
+            }
+            $agencyBase = (new TravelAgencyRegimeB36)->settle($facts, $gross->value());
+            $trace[] = ['stage' => 'TRAVEL_AGENCY_BASE_B36', ...$agencyBase];
+            if ($agencyBase['status'] !== 'RESOLVED') {
+                return $this->stop($agencyBase['status'], [$agencyBase['reason']], $agencyBase['missing_facts'], $trace);
+            }
+            $base = DecimalValue::fromString($agencyBase['taxable_base']);
+            $rateReduction['base_settlement'] = $agencyBase;
+        }
+
+        if ($realEstate !== null && $realEstate['activity'] === 'LEASE') {
+            if ($adjustments !== [] || $base->compareTo($gross) !== 0 || $market !== 'DOMESTIC'
+                || $advanceOrigin !== null || $taxPoint !== null) {
+                return $this->stop('ACTION_REQUIRED', ['RTC_REAL_ESTATE_BASE_COMBINATION_UNPROVEN'], [], $trace);
+            }
+            $leaseBase = (new RealEstateRegimeB37)->settle($facts, $gross->value());
+            $trace[] = ['stage' => 'REAL_ESTATE_LEASE_BASE_B37', ...$leaseBase];
+            if ($leaseBase['status'] !== 'RESOLVED') {
+                return $this->stop($leaseBase['status'], [$leaseBase['reason']], $leaseBase['missing_facts'], $trace);
+            }
+            $base = DecimalValue::fromString($leaseBase['taxable_base']);
+            $rateReduction['base_settlement'] = $leaseBase;
         }
 
         if ($advanceOrigin !== null) {
@@ -1472,6 +1535,23 @@ final readonly class ConsumptionReformEngine
                 }
             }
         }
+        $split158 = null;
+        if (SplitPaymentIntegrationB34::present($this->codes)) {
+            if (! SplitPaymentIntegrationB34::valid($this->codes)) {
+                return $this->stop('INVALID', ['RTC_SPLIT_LEDGER_POLICY_INVALID'], [], $trace);
+            }
+            if ($collection === 'SPLIT_PAYMENT' && $collectionDecision !== null) {
+                $integration = (new SplitPaymentIntegrationB34)->integrate($facts, $date,
+                    ['IBS' => $dispensed ? '0.00' : $ibsTotal, 'CBS' => $dispensed ? '0.00' : $cbs], $knownAt);
+                if ($integration['status'] !== 'RESOLVED') {
+                    return $this->stop('ACTION_REQUIRED', [$integration['reason']], $integration['missing_facts'], $trace);
+                }
+                $split158 = $integration['report'];
+                $trace[] = ['stage' => 'SPLIT_LEDGER158', 'status' => $split158['status'], 'report_hash' => $split158['report_hash'],
+                    'schedule_status' => $split158['schedule_status'], 'extinction_status' => $split158['extinction_status'],
+                    'deployment_proven' => false, 'posted' => false];
+            }
+        }
         $issuerFields = [
             'IBSCBS.finNFSe' => '0',
             'IBSCBS.indDest' => $facts->value('rtc.acquirer_id') === $facts->value('rtc.recipient_id') ? '0' : '1',
@@ -1567,6 +1647,9 @@ final readonly class ConsumptionReformEngine
         }
         if ($collection157 !== null) {
             $decision['collection']['reconciliation157'] = $collection157;
+        }
+        if ($split158 !== null) {
+            $decision['collection']['split_ledger158'] = $split158;
         }
         if ($platformDecision !== null) {
             $decision['platform_responsibility'] = $platformDecision;
