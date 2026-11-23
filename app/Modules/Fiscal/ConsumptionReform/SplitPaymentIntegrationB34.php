@@ -30,6 +30,16 @@ final readonly class SplitPaymentIntegrationB34
         'operations_manual_hash' => SplitPayment158::OPERATIONS_MANUAL_HASH,
         'times_manual_hash' => SplitTransaction158::TIMES_MANUAL_HASH, 'posting' => false];
 
+    public const SCHEDULE_POLICY = [...self::POLICY, 'version' => 'A159', 'integration' => 'A159',
+        'ledger_contract' => SplitLedger158::SCHEDULE_CONTRACT,
+        'planned_installment_contract' => SplitPlannedInstallment159::CONTRACT];
+
+    public const LIFECYCLE_POLICY = [...self::SCHEDULE_POLICY, 'version' => 'A160', 'integration' => 'A160',
+        'ledger_contract' => SplitLedger158::LIFECYCLE_CONTRACT, 'transaction_contract' => SplitTransaction158::HISTORY_CONTRACT];
+
+    public const PAYMENTS_POLICY = [...self::LIFECYCLE_POLICY, 'version' => 'A161', 'integration' => 'A161',
+        'ledger_contract' => SplitLedger158::PAYMENTS_CONTRACT, 'boleto_payments_contract' => SplitBoletoPayments161::CONTRACT];
+
     /** @param array<string, mixed> $codes */
     public static function present(array $codes): bool
     {
@@ -39,7 +49,8 @@ final readonly class SplitPaymentIntegrationB34
     /** @param array<string, mixed> $codes */
     public static function valid(array $codes): bool
     {
-        return is_array($codes[self::KEY] ?? null) && CanonicalJson::hash($codes[self::KEY]) === CanonicalJson::hash(self::POLICY);
+        return is_array($codes[self::KEY] ?? null) && in_array(CanonicalJson::hash($codes[self::KEY]),
+            [CanonicalJson::hash(self::POLICY), CanonicalJson::hash(self::SCHEDULE_POLICY), CanonicalJson::hash(self::LIFECYCLE_POLICY), CanonicalJson::hash(self::PAYMENTS_POLICY)], true);
     }
 
     /** @param array<string, mixed> $codes */
@@ -61,13 +72,17 @@ final readonly class SplitPaymentIntegrationB34
      * @param  array{IBS: string, CBS: string}  $debits  calculated liability of the decided operation
      * @return array{status: 'RESOLVED', missing_facts: list<string>, report: array<string, mixed>}|array{status: 'ACTION_REQUIRED', reason: string, missing_facts: list<string>}
      */
-    public function integrate(FactBag $facts, string $operationDate, array $debits, DateTimeImmutable $knownAt): array
+    public function integrate(FactBag $facts, string $operationDate, array $debits, DateTimeImmutable $knownAt, string $contract = SplitLedger158::CONTRACT): array
     {
         $ledgers = $facts->value(self::FACT);
         if (! is_array($ledgers) || ! array_is_list($ledgers) || count($ledgers) !== 1 || ! is_array($ledgers[0])) {
             return $this->refuse('RTC_SPLIT_LEDGER_REQUIRED');
         }
         $ledger = $ledgers[0];
+        if (! in_array($contract, [SplitLedger158::CONTRACT, SplitLedger158::SCHEDULE_CONTRACT, SplitLedger158::LIFECYCLE_CONTRACT, SplitLedger158::PAYMENTS_CONTRACT], true)
+            || ($ledger['contract'] ?? null) !== $contract) {
+            return $this->refuse('RTC_SPLIT_LEDGER_CONTRACT_CONFLICT');
+        }
         foreach (['document_id', 'supplier_id', 'acquirer_id'] as $key) {
             if (($ledger[$key] ?? null) !== $facts->value('rtc.'.$key)) {
                 return $this->refuse('RTC_SPLIT_LEDGER_FACT_CONFLICT');
@@ -79,6 +94,10 @@ final readonly class SplitPaymentIntegrationB34
             if (! is_array($transaction) || ! $this->sameDay($transaction['operation_at'] ?? null, $operationDate)) {
                 return $this->refuse('RTC_SPLIT_LEDGER_OPERATION_DATE_CONFLICT');
             }
+            if (($transaction['contract'] ?? null) === SplitPlannedInstallment159::CONTRACT
+                && ($transaction['transaction_id'] ?? null) === $facts->value('rtc.payment_transaction_id')) {
+                return $this->refuse('RTC_SPLIT_LEDGER_ANCHOR_NOT_INITIATED');
+            }
             $ids[] = $transaction['transaction_id'] ?? null;
         }
         if (! in_array($facts->value('rtc.payment_transaction_id'), $ids, true)) {
@@ -87,7 +106,13 @@ final readonly class SplitPaymentIntegrationB34
         if (! is_array($ledger['debits'] ?? null) || CanonicalJson::hash($ledger['debits']) !== CanonicalJson::hash($debits)) {
             return $this->refuse('RTC_SPLIT_LEDGER_DEBIT_CONFLICT');
         }
-        $report = (new SplitLedger158)->reconcile($ledger);
+        $service = new SplitLedger158;
+        $report = match ($contract) {
+            SplitLedger158::PAYMENTS_CONTRACT => $service->reconcilePayments($ledger),
+            SplitLedger158::LIFECYCLE_CONTRACT => $service->reconcileLifecycle($ledger),
+            SplitLedger158::SCHEDULE_CONTRACT => $service->reconcileSchedule($ledger),
+            default => $service->reconcile($ledger),
+        };
         if ($report['status'] !== 'LOCAL_SPLIT_LEDGER_RECONCILED') {
             return $this->refuse((string) $report['reason']);
         }

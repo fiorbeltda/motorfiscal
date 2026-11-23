@@ -1,5 +1,19 @@
 # Fase 4B — IBS/CBS e reforma do consumo
 
+A164:devolucoes padrao/fallback e adquirente com marcos IBS/CBS e alocacoes conservadas;557 testes/1689 assercoes,Pint,PHPStan0,12 modosCLI/replays,32 comparacoes Decimal e7 oraculos de datas aprovados emPHP8.5 local.0/8 grupos encerrados. Ver `phase4b-a164-refund-clocks-and-allocations.md`.
+
+A163:calendarios por finalidade/tributo e prazos de informe/repasse/excedente simplificado vinculados ao livro;514 testes/1569 assercoes,Pint,PHPStan0,10 modosCLI/replays,20 comparacoes Decimal e3 oraculos de datas aprovados localmente.0/8 grupos encerrados. Ver `phase4b-a163-qualified-split-deadlines.md`.
+
+A162 em23/11/2026 (frente1):modelo legal simplificado do art33 ativado com parametros qualificados e livro por prioridades;449 testes/1419 assercoes,PHPStan0,Pint,7 modosCLI/replays e20 comparacoes Decimal aprovados localmente.A159-A161 preservados.Catalogos oficiais sem entradas presumidas;seguem calendarios/prazos e demais pacotes dos44 requisitos.0/8 grupos encerrados;producao nao liberada.Ver `phase4b-a162-legal-simplified-split.md`.
+
+A161 em23/11/2026 (frente1):multiplos pagamentos por boleto e informes por pagamento integrados sem duplicar parcelas;359/1252,PHPStan0,Pint,5 modosCLI/replays e12 comparacoes Decimal aprovados localmente. A159/A160 preservados. Seguem modelo simplificado,prazos e demais pacotes dos44 requisitos.0/8 grupos encerrados;producao nao liberada. Ver `phase4b-a161-multiple-boleto-payments.md`.
+
+A160 em23/11/2026 (frente1):historico fiscal/reset explicito integrado ao bundle proprio eCLI;317 testes/1149 assercoes,Pint,PHPStan global serial,replays e6 comparacoes Decimal aprovados emPHP8.5 local. Console28/HTTP200;A159 preservado. Segue A161 multiplos pagamentos de boleto;44 requisitos mantidos em auditoria propria.0/8 grupos encerrados;producao nao liberada. Ver `phase4b-a160-split-fiscal-revisions.md`.
+
+A159 em23/11/2026 (frente1):cronograma do split com parcelas futuras nao iniciadas integrado ao bundle proprio derivado doB38 eCLI.276 testes/1066 assercoes,PHPStan0,Pint,replay e6 comparacoes Decimal aprovados emPHP8.5 local. Docker indisponivel;revisoes/reset e multiplos pagamentos do mesmo boleto continuam pendentes. Ver `phase4b-a159-future-split-installments.md` e `agent-a/20261123/validation-A159.json`.0/8 grupos encerrados;producao nao liberada.
+
+Registros abaixo sao historicos dos respectivos cortes.
+
 B22 em03/11/2026 (Agente B):catálogo de créditos presumidos completo (arts.168–171,309/311/312,380,381,444,447,449,450,462,465,467). Desenvolvimento independente do B esgotado;pendentes:entregas do A (H1–H5),34 pastas,XSD NT009,parâmetros oficiais e autorização de integraçãoA+B.0/8 grupos encerrados.
 
 Rodada B17–B21 em03/11/2026 (Agente B):créditos presumidos com trechos vigentes (arts.168–171,444,447,449,465),ciclo completo de crédito com conservação de valor,oráculo independente de cClassTrib v1.70/NBS v1.01 e teste de aceite da correção do parâmetro sintético (pendente do A). 36 itens B:5 integrais e6 Sandbox aceitos;25 parciais com dependência explícita. Regressão parcial sem falhas de código.0/8 grupos encerrados.

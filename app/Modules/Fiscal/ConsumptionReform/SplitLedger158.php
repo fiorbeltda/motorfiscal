@@ -16,13 +16,51 @@ final readonly class SplitLedger158
 {
     public const CONTRACT = 'RTC-SPLIT-LEDGER-A158-V1';
 
+    public const SCHEDULE_CONTRACT = 'RTC-SPLIT-LEDGER-A159-V1';
+
+    public const LIFECYCLE_CONTRACT = 'RTC-SPLIT-LEDGER-A160-V1';
+
+    public const PAYMENTS_CONTRACT = 'RTC-SPLIT-LEDGER-A161-V1';
+
     /** @param array<string, mixed> $input
      * @return array<string, mixed>
      */
     public function reconcile(array $input): array
     {
+        return $this->assess($input, false);
+    }
+
+    /** @param array<string, mixed> $input
+     * @return array<string, mixed>
+     */
+    public function reconcileSchedule(array $input): array
+    {
+        return $this->assess($input, true);
+    }
+
+    /** @param array<string, mixed> $input
+     * @return array<string, mixed>
+     */
+    public function reconcileLifecycle(array $input): array
+    {
+        return $this->assess($input, true, true);
+    }
+
+    /** @param array<string, mixed> $input
+     * @return array<string, mixed>
+     */
+    public function reconcilePayments(array $input): array
+    {
+        return $this->assess($input, true, true, true);
+    }
+
+    /** @param array<string, mixed> $input
+     * @return array<string, mixed>
+     */
+    private function assess(array $input, bool $scheduled, bool $history = false, bool $multiple = false): array
+    {
         try {
-            return $this->calculate($input);
+            return $this->calculate($input, $scheduled, $history, $multiple);
         } catch (InvalidArgumentException $exception) {
             return ['status' => 'ACTION_REQUIRED', 'reason' => $exception->getMessage(),
                 'missing_facts' => ['rtc.split_payment_ledger'], 'official' => false,
@@ -37,12 +75,35 @@ final readonly class SplitLedger158
             && CanonicalJson::hash($this->reconcile($report['input'])) === CanonicalJson::hash($report);
     }
 
+    /** @param array<string, mixed> $report */
+    public function replaySchedule(array $report): bool
+    {
+        return is_array($report['input'] ?? null)
+            && CanonicalJson::hash($this->reconcileSchedule($report['input'])) === CanonicalJson::hash($report);
+    }
+
+    /** @param array<string, mixed> $report */
+    public function replayLifecycle(array $report): bool
+    {
+        return is_array($report['input'] ?? null)
+            && CanonicalJson::hash($this->reconcileLifecycle($report['input'])) === CanonicalJson::hash($report);
+    }
+
+    /** @param array<string, mixed> $report */
+    public function replayPayments(array $report): bool
+    {
+        return is_array($report['input'] ?? null)
+            && CanonicalJson::hash($this->reconcilePayments($report['input'])) === CanonicalJson::hash($report);
+    }
+
     /** @param array<string, mixed> $input
      * @return array<string, mixed>
      */
-    private function calculate(array $input): array
+    private function calculate(array $input, bool $scheduled, bool $revisions, bool $multiple): array
     {
-        $this->require(($input['contract'] ?? null) === self::CONTRACT && ($input['currency'] ?? null) === 'BRL', 'A158_LEDGER_CONTRACT_BRL_REQUIRED');
+        $contract = $multiple ? self::PAYMENTS_CONTRACT : ($revisions ? self::LIFECYCLE_CONTRACT : ($scheduled ? self::SCHEDULE_CONTRACT : self::CONTRACT));
+        $this->require(($input['contract'] ?? null) === $contract
+            && ($input['currency'] ?? null) === 'BRL', 'A158_LEDGER_CONTRACT_BRL_REQUIRED');
         $this->require(in_array($input['source_kind'] ?? null, ['SYNTHETIC_TEST', 'DOCUMENTARY_INPUT'], true), 'A158_LEDGER_PROVENANCE_REQUIRED');
         $this->proof($input);
         $body = $input;
@@ -77,6 +138,7 @@ final readonly class SplitLedger158
                 'split_applied' => $this->zero(), 'other_applied' => $this->zero(), 'excess' => $this->zero(), 'transferred' => $this->zero()];
         }
         $transactions = [];
+        $boletoPayments = [];
         $transactionReports = [];
         $numbers = [];
         $settlementReceipts = [];
@@ -88,9 +150,22 @@ final readonly class SplitLedger158
             $this->bind($transaction, $input);
             $this->require(($transaction['source_kind'] ?? null) === $input['source_kind']
                 && $this->instant($transaction['known_at'] ?? null) == $known, 'A158_LEDGER_TRANSACTION_KNOWLEDGE_CONFLICT');
-            $assessment = (new SplitTransaction158)->assess($transaction);
-            $this->require($assessment['status'] === 'LOCAL_SPLIT_TRANSACTION_ASSESSED', 'A158_LEDGER_TRANSACTION_REFUSED');
-            if ($assessment['segregation'] !== null) {
+            $planned = $scheduled && ($transaction['contract'] ?? null) === SplitPlannedInstallment159::CONTRACT;
+            $revised = $revisions && ($transaction['contract'] ?? null) === SplitTransaction158::HISTORY_CONTRACT;
+            $boleto = $multiple && ($transaction['contract'] ?? null) === SplitBoletoPayments161::CONTRACT;
+            $assessment = $boleto ? (new SplitBoletoPayments161)->assess($transaction)
+                : ($planned ? (new SplitPlannedInstallment159)->assess($transaction)
+                    : ($revised ? (new SplitTransaction158)->assessHistory($transaction) : (new SplitTransaction158)->assess($transaction)));
+            $expected = $boleto ? 'LOCAL_SPLIT_BOLETO_PAYMENTS_ASSESSED' : ($planned ? 'LOCAL_SPLIT_INSTALLMENT_PLANNED' : 'LOCAL_SPLIT_TRANSACTION_ASSESSED');
+            $this->require($assessment['status'] === $expected, 'A158_LEDGER_TRANSACTION_REFUSED');
+            if ($boleto) {
+                foreach ($assessment['payment_records'] as $payment) {
+                    $this->unique($payment['transaction']['settlement']['receipt_id'], $settlementReceipts);
+                    $key = '#'.CanonicalJson::hash([$transaction['transaction_id'], $payment['payment_id']]);
+                    $this->require(! isset($boletoPayments[$key]), 'A161_DUPLICATE_LEDGER_PAYMENT');
+                    $boletoPayments[$key] = ['input' => $payment['transaction'], 'assessment' => $payment['assessment']];
+                }
+            } elseif ($assessment['segregation'] !== null) {
                 $this->unique($transaction['settlement']['receipt_id'], $settlementReceipts);
             }
             $id = $transaction['transaction_id'];
@@ -132,21 +207,36 @@ final readonly class SplitLedger158
             $this->require($this->identifier($id) && ! isset($reports['#'.$id]), 'A158_LEDGER_REPORT_ID_CONFLICT');
             $this->unique($report['authority_acknowledgement_id'] ?? null, $acks);
             $sent = $this->instant($report['sent_at'] ?? null);
+            $paymentReferences = $multiple && array_key_exists('payment_references', $report);
+            $this->require(! $paymentReferences || ! array_key_exists('transaction_ids', $report), 'A161_AMBIGUOUS_REPORT_REFERENCES');
+            $references = $paymentReferences ? $report['payment_references'] : ($report['transaction_ids'] ?? null);
             $this->require($sent <= $known && $this->identifier($report['receiver_psp_id'] ?? null)
                 && $this->date($report['reference_date'] ?? null)
                 && $report['reference_date'] <= $sent->setTimezone(new DateTimeZone('-03:00'))->format('Y-m-d')
-                && is_array($report['transaction_ids'] ?? null) && array_is_list($report['transaction_ids'])
-                && $report['transaction_ids'] !== [], 'A158_LEDGER_REPORT_SCOPE_REQUIRED');
+                && is_array($references) && array_is_list($references)
+                && $references !== [], 'A158_LEDGER_REPORT_SCOPE_REQUIRED');
             $own = ['IBS' => $this->zero(), 'CBS' => $this->zero()];
-            foreach ($report['transaction_ids'] as $transactionId) {
-                $this->require($this->identifier($transactionId) && isset($transactions['#'.$transactionId])
-                    && ! isset($reportedTransactions['#'.$transactionId]), 'A158_LEDGER_REPORT_TRANSACTION_CONFLICT');
-                $record = $transactions['#'.$transactionId];
+            foreach ($references as $reference) {
+                if ($paymentReferences) {
+                    $this->require(is_array($reference) && count($reference) === 2
+                        && $this->identifier($reference['transaction_id'] ?? null)
+                        && $this->identifier($reference['payment_id'] ?? null), 'A161_REPORT_PAYMENT_REFERENCE_REQUIRED');
+                    $key = '#'.CanonicalJson::hash([$reference['transaction_id'], $reference['payment_id']]);
+                    $this->require(isset($boletoPayments[$key]), 'A161_REPORT_PAYMENT_UNKNOWN');
+                    $record = $boletoPayments[$key];
+                    $reportKey = 'PAY:'.$key;
+                } else {
+                    $this->require($this->identifier($reference) && isset($transactions['#'.$reference]), 'A158_LEDGER_REPORT_TRANSACTION_CONFLICT');
+                    $record = $transactions['#'.$reference];
+                    $this->require($record['assessment']['status'] !== 'LOCAL_SPLIT_BOLETO_PAYMENTS_ASSESSED', 'A161_REPORT_MUST_IDENTIFY_PAYMENT');
+                    $reportKey = 'TX:'.$reference;
+                }
+                $this->require(! isset($reportedTransactions[$reportKey]), 'A158_LEDGER_REPORT_TRANSACTION_CONFLICT');
                 $this->require($record['assessment']['segregation'] !== null
                     && $record['input']['receiver_psp_id'] === $report['receiver_psp_id']
                     && $record['input']['arrangement'] === ($report['arrangement'] ?? null)
                     && $this->instant($record['assessment']['settled_at']) <= $sent, 'A158_LEDGER_REPORT_BEFORE_OR_OUTSIDE_SETTLEMENT');
-                $reportedTransactions['#'.$transactionId] = true;
+                $reportedTransactions[$reportKey] = true;
                 foreach (['IBS', 'CBS'] as $tax) {
                     $own[$tax] = $own[$tax]->plus($record['assessment']['segregation']['taxes'][$tax]['segregated']);
                 }
@@ -314,6 +404,15 @@ final readonly class SplitLedger158
             'psp_role' => 'OPERATIONAL_SEGREGATION_AND_REMITTANCE', 'psp_role_creates_underlying_taxpayer_status' => false,
             'credit_appropriated' => false, 'official' => false, 'authenticated' => false, 'deployment_proven' => false,
             'posted' => false, 'payment_performed' => false];
+        if ($scheduled) {
+            $report['planned_installment_count'] = count(array_filter($transactionReports,
+                static fn (array $item): bool => $item['status'] === 'LOCAL_SPLIT_INSTALLMENT_PLANNED'));
+            $report['initiated_transaction_count'] = $count - $report['planned_installment_count'];
+        }
+        if ($multiple) {
+            $report['financial_payment_count'] = count($boletoPayments) + count(array_filter($transactionReports,
+                static fn (array $item): bool => $item['status'] === 'LOCAL_SPLIT_TRANSACTION_ASSESSED' && $item['segregation'] !== null));
+        }
         $report['report_hash'] = CanonicalJson::hash($report);
 
         return $report;

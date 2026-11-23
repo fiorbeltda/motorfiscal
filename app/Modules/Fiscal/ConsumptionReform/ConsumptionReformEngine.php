@@ -54,6 +54,15 @@ final readonly class ConsumptionReformEngine
         if (SplitPaymentIntegrationB34::synthetic($this->codes, $facts)) {
             return true;
         }
+        if (SimplifiedSplitIntegration162::synthetic($this->codes, $facts)) {
+            return true;
+        }
+        if (SplitDeadlineIntegration163::synthetic($this->codes, $facts)) {
+            return true;
+        }
+        if (RefundIntegration164::synthetic($this->codes, $facts)) {
+            return true;
+        }
         $keys = CreditEvidence156::enabled($this->codes)
             ? ['rtc.credit_book_entries', 'rtc.import_definitive_credit_records'] : [];
         if (is_array($this->codes[LegalBaseReduction156::KEY] ?? null)
@@ -80,6 +89,23 @@ final readonly class ConsumptionReformEngine
     private function evaluateQualified(FactBag $facts, LocalDate $competence, DateTimeImmutable $knownAt): array
     {
         $trace = [['stage' => 'TEMPORAL', 'competence_date' => $competence->value(), 'known_at' => $knownAt->format(DATE_ATOM)]];
+        $simplifiedRequested162 = SimplifiedSplitIntegration162::requested($facts);
+        if (array_key_exists(CrossBorderTaxPoint165::KEY, $this->codes)
+            && (! is_array($this->codes[CrossBorderTaxPoint165::KEY]) || ! CrossBorderTaxPoint165::valid($this->codes[CrossBorderTaxPoint165::KEY]))) {
+            return $this->stop('INVALID', ['RTC_CROSS_BORDER_TAX_POINT_POLICY_INVALID'], [], $trace);
+        }
+        if ((array_key_exists(RefundIntegration164::KEY, $this->codes) || $facts->value(RefundIntegration164::FACT) !== null)
+            && ! RefundIntegration164::valid($this->codes)) {
+            return $this->stop('INVALID', ['RTC_REFUND_POLICY_INVALID_OR_NOT_ENABLED'], [], $trace);
+        }
+        if ((array_key_exists(SplitDeadlineIntegration163::KEY, $this->codes) || $facts->value(SplitDeadlineIntegration163::FACT) !== null)
+            && ! SplitDeadlineIntegration163::valid($this->codes)) {
+            return $this->stop('INVALID', ['RTC_SPLIT_DEADLINE_POLICY_INVALID_OR_NOT_ENABLED'], [], $trace);
+        }
+        if (($simplifiedRequested162 || array_key_exists(SimplifiedSplitIntegration162::KEY, $this->codes))
+            && ! SimplifiedSplitIntegration162::valid($this->codes)) {
+            return $this->stop('INVALID', ['RTC_SIMPLIFIED_SPLIT_POLICY_INVALID_OR_NOT_ENABLED'], [], $trace);
+        }
         if (DocumentIssIntegration134::required($this->codes)) {
             $issPolicy = (new DocumentIssIntegration134)->qualifyPolicy($this->codes, $knownAt);
             $trace[] = ['stage' => 'DOCUMENT_ISS_POLICY134', ...$issPolicy];
@@ -175,7 +201,10 @@ final readonly class ConsumptionReformEngine
             if ($policy === null) {
                 return $this->stop('ACTION_REQUIRED', ['RTC_TAX_POINT_POLICY_NOT_MATERIALIZED'], [], $trace);
             }
-            $taxPoint = (new TaxPointContext86)->qualify($facts->canonicalValues(), $knownAt, $policy);
+            $context86 = new TaxPointContext86;
+            $taxPoint = in_array($facts->value('rtc.market'), ['IMPORT', 'EXPORT'], true) && isset($this->codes[CrossBorderTaxPoint165::KEY])
+                ? $context86->qualifyCrossBorder165($facts->canonicalValues(), $knownAt, $policy, $this->codes[CrossBorderTaxPoint165::KEY])
+                : $context86->qualify($facts->canonicalValues(), $knownAt, $policy);
             $trace[] = ['stage' => 'TAX_POINT_EVENTS', ...$taxPoint];
             if ($taxPoint['status'] !== 'RESOLVED') {
                 return $this->stop('ACTION_REQUIRED', [$taxPoint['reason']], $taxPoint['missing_facts'], $trace);
@@ -1475,7 +1504,8 @@ final readonly class ConsumptionReformEngine
         }
         if ($this->transitions->qualifiesCollectionMethods()) {
             $collectionDecision = (new CollectionDecisionEngine)->resolve($facts, $market,
-                $this->transitions->splitOperational($on, $knownAt));
+                $simplifiedRequested162 ? SimplifiedSplitIntegration162::deployed($this->codes, $facts, $date, $knownAt)
+                    : $this->transitions->splitOperational($on, $knownAt));
             if ($collectionDecision['status'] !== 'RESOLVED') {
                 return $this->stop($collectionDecision['status'], [$collectionDecision['reason']],
                     $collectionDecision['missing_facts'], $trace);
@@ -1540,9 +1570,10 @@ final readonly class ConsumptionReformEngine
             if (! SplitPaymentIntegrationB34::valid($this->codes)) {
                 return $this->stop('INVALID', ['RTC_SPLIT_LEDGER_POLICY_INVALID'], [], $trace);
             }
-            if ($collection === 'SPLIT_PAYMENT' && $collectionDecision !== null) {
+            if ($collection === 'SPLIT_PAYMENT' && $collectionDecision !== null && ! $simplifiedRequested162) {
                 $integration = (new SplitPaymentIntegrationB34)->integrate($facts, $date,
-                    ['IBS' => $dispensed ? '0.00' : $ibsTotal, 'CBS' => $dispensed ? '0.00' : $cbs], $knownAt);
+                    ['IBS' => $dispensed ? '0.00' : $ibsTotal, 'CBS' => $dispensed ? '0.00' : $cbs], $knownAt,
+                    $this->codes[SplitPaymentIntegrationB34::KEY]['ledger_contract']);
                 if ($integration['status'] !== 'RESOLVED') {
                     return $this->stop('ACTION_REQUIRED', [$integration['reason']], $integration['missing_facts'], $trace);
                 }
@@ -1551,6 +1582,36 @@ final readonly class ConsumptionReformEngine
                     'schedule_status' => $split158['schedule_status'], 'extinction_status' => $split158['extinction_status'],
                     'deployment_proven' => false, 'posted' => false];
             }
+        }
+        $simplified162 = null;
+        if ($simplifiedRequested162) {
+            $integration = (new SimplifiedSplitIntegration162)->integrate($this->codes, $facts, $date, $knownAt,
+                ['IBS' => $ibsTotal, 'CBS' => $cbs]);
+            if ($integration['status'] !== 'RESOLVED') {
+                return $this->stop('ACTION_REQUIRED', [$integration['reason']], $integration['missing_facts'], $trace);
+            }
+            $simplified162 = $integration['report'];
+            $trace[] = ['stage' => 'SIMPLIFIED_SPLIT162', 'status' => $simplified162['calculation']['status'],
+                'report_hash' => $simplified162['calculation']['report_hash'], 'posted' => false];
+        }
+        $deadlines163 = null;
+        if ($facts->value(SplitDeadlineIntegration163::FACT) !== null) {
+            $integration = (new SplitDeadlineIntegration163)->integrate($this->codes, $facts, $knownAt, $split158, $simplified162);
+            if ($integration['status'] !== 'RESOLVED') {
+                return $this->stop('ACTION_REQUIRED', [$integration['reason']], $integration['missing_facts'], $trace);
+            }
+            $deadlines163 = $integration['report'];
+            $trace[] = ['stage' => 'SPLIT_DEADLINES163', 'coverage' => $deadlines163['coverage'],
+                'assessment_count' => count($deadlines163['assessments']), 'posted' => false];
+        }
+        $refund164 = null;
+        if ($facts->value(RefundIntegration164::FACT) !== null) {
+            $integration = (new RefundIntegration164)->integrate($this->codes, $facts, $knownAt, $split158, $collection157);
+            if ($integration['status'] !== 'RESOLVED') {
+                return $this->stop('ACTION_REQUIRED', [$integration['reason']], $integration['missing_facts'], $trace);
+            }
+            $refund164 = $integration['report'];
+            $trace[] = ['stage' => 'REFUND_DEADLINES164', 'coverage' => $refund164['coverage'], 'report_hash' => $refund164['report_hash'], 'posted' => false];
         }
         $issuerFields = [
             'IBSCBS.finNFSe' => '0',
@@ -1650,6 +1711,16 @@ final readonly class ConsumptionReformEngine
         }
         if ($split158 !== null) {
             $decision['collection']['split_ledger158'] = $split158;
+        }
+        if ($simplified162 !== null) {
+            $decision['collection']['procedure'] = 'SIMPLIFIED';
+            $decision['collection']['simplified_split162'] = $simplified162;
+        }
+        if ($deadlines163 !== null) {
+            $decision['collection']['deadlines163'] = $deadlines163;
+        }
+        if ($refund164 !== null) {
+            $decision['collection']['refund_deadlines164'] = $refund164;
         }
         if ($platformDecision !== null) {
             $decision['platform_responsibility'] = $platformDecision;
