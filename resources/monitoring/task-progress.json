@@ -1,33 +1,33 @@
 {
-  "updated_at": "2026-11-06T20:00:00-03:00",
-  "title": "B41:operacao combinada com regimes especificos diferentes",
-  "state": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
-  "criterion": "3 marcos do corte B41 concluidos. Nao e percentual funcional4B;0/8 grupos encerrados.",
+  "updated_at": "2026-11-23T16:09:15.255603-03:00",
+  "title": "Frente 1: parada segura e checkpoint Git A159-A165",
+  "state": "Desenvolvimento interrompido por solicitacao do usuario;checkpointA159-A165 preparado para commit na branch codex/frente-1-incidencia-calculo.A159-A164:557 testes/1689 assercoes revalidados;legado temporal:52/161.A165 permanece draft sem validacao funcional.0/8 grupos encerrados.",
+  "criterion": "Checkpoint de desenvolvimento interrompido;validacoes dirigidas nao comprovam conclusao funcionalA165 ou da frente inteira.",
   "milestones": [
     {
-      "title": "Componente",
-      "complete": true
+      "title": "Revisar contratos e fontes de fornecimentos/eventos",
+      "complete": false
     },
     {
-      "title": "Testes",
-      "complete": true
+      "title": "Implementar composicao e reconciliacao por fornecimento",
+      "complete": false
     },
     {
-      "title": "Regressao e consolidacao",
-      "complete": true
+      "title": "Ativar e validar bundle/CLI e cenarios integrados",
+      "complete": false
     }
   ],
   "finished": [
-    "CombinedRegimeSuppliesB41 com um documento por fornecimento.",
-    "Totais sem aliquota misturada.",
-    "Regressao ampla 10592 aprovados."
+    "A159-A164 preservados com557/1689 revalidados na arvore atual.",
+    "52 testes/161 assercoes do legado temporal e sintaxe de49 arquivosPHP aprovados.",
+    "DraftA165 e ponto de retomada preservados;commit solicitado na branch propria."
   ],
   "pending": [
-    "Proprio:combinados de importacao/exportacao/eventos.",
-    "Proprio:cooperativas e SAF.",
-    "Externo:parametros municipais de ISS qualificados."
+    "A165 ainda sem testes funcionais e sem aceite de pacote.",
+    "Demais pacotes e auditoria individual dos44 requisitos.",
+    "Integracoes externas,Docker e regressao integral final pendentes."
   ],
-  "next_step": "Commit/push da rodada B34-B41 e revisao juridica dos pontos marcados.",
+  "next_step": "Desenvolvimento permanece parado;retomar somente quando solicitado,conforme checkpoint-A165-paused.json.",
   "evidence": [
     "storage/app/phase4b-pair135-development-20261023/pair135-directed-validation.json",
     "D:/ProjetoSaasExports/phase4b-pair135-20261023-v1/full-suite-v1/process.json",
@@ -183,7 +183,30 @@
     "docs/fiscal/phase4b-b40-period-regimes.md",
     "storage/app/phase4b-b41-development-20261106/b41-scoped-validation.json",
     "storage/app/phase4b-b41-development-20261106/requirements80-current-matrix.json",
-    "docs/fiscal/phase4b-b41-combined-regimes.md"
+    "docs/fiscal/phase4b-b41-combined-regimes.md",
+    "docs/fiscal/agent-a/20261123/validation-A159.json",
+    "docs/fiscal/phase4b-a159-future-split-installments.md",
+    "docs/fiscal/agent-a/20261123/validation-A160.json",
+    "docs/fiscal/phase4b-a160-split-fiscal-revisions.md",
+    "docs/fiscal/agent-a/20261123/requirements44-current.json",
+    "docs/fiscal/agent-a/20261123/validation-A161.json",
+    "docs/fiscal/phase4b-a161-multiple-boleto-payments.md",
+    "docs/fiscal/agent-a/20261123/validation-A162.json",
+    "docs/fiscal/phase4b-a162-legal-simplified-split.md",
+    "docs/fiscal/agent-a/20261123/validation-A163.json",
+    "docs/fiscal/phase4b-a163-qualified-split-deadlines.md",
+    "D:/ProjetoSaasExports/front1-a163-20261123-final-v2/validation-a163.json",
+    "D:/ProjetoSaasExports/front1-a163-20261123-source-v1/phpstan-observation.json",
+    "D:/ProjetoSaasExports/front1-a163-20261123-source-v1/console-observation.json",
+    "docs/fiscal/agent-a/20261123/validation-A164.json",
+    "docs/fiscal/phase4b-a164-refund-clocks-and-allocations.md",
+    "docs/fiscal/agent-a/20261123/integration-dependencies-A164.json",
+    "D:/ProjetoSaasExports/front1-a164-20261123-final-v1/validation-a164.json",
+    "D:\\ProjetoSaasExports\\front1-a164-20261123-source-v1\\phpstan-observation.json",
+    "D:/ProjetoSaasExports/front1-a164-20261123-source-v1/console-observation.json",
+    "docs/fiscal/agent-a/20261123/checkpoint-A165-paused.json",
+    "docs/fiscal/agent-a/20261123/checkpoint-stop-git-20261123.md",
+    "docs/fiscal/agent-a/20261123/validation-stop-git-20261123.json"
   ],
   "history": [
     {
@@ -24915,52 +24938,348 @@
         "direct_channel": false,
         "a_evidence_received": false
       }
+    },
+    {
+      "updated_at": "2026-11-06T20:00:00-03:00",
+      "title": "B41:operacao combinada com regimes especificos diferentes",
+      "state": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+      "criterion": "3 marcos do corte B41 concluidos. Nao e percentual funcional4B;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Componente",
+          "complete": true
+        },
+        {
+          "title": "Testes",
+          "complete": true
+        },
+        {
+          "title": "Regressao e consolidacao",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "CombinedRegimeSuppliesB41 com um documento por fornecimento.",
+        "Totais sem aliquota misturada.",
+        "Regressao ampla 10592 aprovados."
+      ],
+      "pending": [
+        "Proprio:combinados de importacao/exportacao/eventos.",
+        "Proprio:cooperativas e SAF.",
+        "Externo:parametros municipais de ISS qualificados."
+      ],
+      "next_step": "Commit/push da rodada B34-B41 e revisao juridica dos pontos marcados."
+    },
+    {
+      "updated_at": "2026-11-23T08:57:16.346991-03:00",
+      "title": "Frente 1 A159: parcelas futuras do split implementadas",
+      "state": "A159 concluido no escopo de cronograma futuro:bundle proprio eCLI;276 testes/1066 assercoes,PHPStan0,Pint,replay,6 comparacoes Decimal,console28 eHTTP200. Validacao PHP8.5 local;Docker indisponivel;0/8 grupos encerrados.",
+      "criterion": "Contrato versionado, ativacao, testes positivos/negativos, replay e oraculo de valores. Apenas incremento A159;0/8 grupos encerrados.",
+      "milestones": [
+        {
+          "title": "Contrato e cronograma futuro",
+          "complete": true
+        },
+        {
+          "title": "Bundle e integracao",
+          "complete": true
+        },
+        {
+          "title": "Validacao e evidencias",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "Cronograma completo com parcelas futuras sem liquidacao ficticia;contrato anterior preservado.",
+        "Bundle A159 derivado do B38 e CLI schedule executados.",
+        "276 testes/1066 assercoes;PHPStan0,Pint,replay e6 comparacoes Decimal aprovados."
+      ],
+      "pending": [
+        "Revisoes fiscais/reset e pagamentos multiplos do mesmo boleto.",
+        "Demais pacotes e44 requisitos da frente1;0/8 grupos encerrados.",
+        "Regressao integral final e validacao em conteiner permanecem pendentes;Docker indisponivel."
+      ],
+      "next_step": "Proximo incremento da frente1:revisoes fiscais e reset de retornos,seguido de multiplos pagamentos por boleto."
+    },
+    {
+      "updated_at": "2026-11-23T09:34:45.760983-03:00",
+      "title": "Frente 1 A160: revisoes fiscais e reset do split",
+      "state": "A160:revisoes fiscais/reset integrados no bundle eCLI;317 testes/1149 assercoes,Pint,PHPStan global serial,replays/oraculo aprovados emPHP8.5 local.Console28/HTTP200;0/8 grupos encerrados.",
+      "criterion": "Historico fiscal versionado,reset explicito,ativacao em bundle proprio e provas temporais;sem encerramento global.",
+      "milestones": [
+        {
+          "title": "Historico e reset",
+          "complete": true
+        },
+        {
+          "title": "Bundle/CLI/motor",
+          "complete": true
+        },
+        {
+          "title": "Testes,replay e evidencias",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "A159:cronograma futuro preservado.",
+        "A160:revisoes fiscais/reset explicitos selecionados por congelamento;contratos antigos preservados.",
+        "317 testes/1149 assercoes,Pint,PHPStan0,3 modosCLI repetidos e6 comparacoes Decimal aprovados."
+      ],
+      "pending": [
+        "Multiplos pagamentos por boleto.",
+        "Demais pacotes e revisao individual dos44 requisitos.",
+        "Docker indisponivel;regressao integral final pendente."
+      ],
+      "next_step": "Iniciar multiplos pagamentos de boleto."
+    },
+    {
+      "updated_at": "2026-11-23T09:50:22.407456-03:00",
+      "title": "Frente 1 A161: multiplos pagamentos de boleto",
+      "state": "A161:multiplos pagamentos de boleto integrados,sem duplicar parcela;359 testes/1252 assercoes,Pint,PHPStan0 eCLI/replays aprovados. 12 comparacoes Decimal;console28/HTTP200;0/8 grupos encerrados.",
+      "criterion": "Uma parcela no cronograma,varios pagamentos com recibos e congelamentos distintos;informes sem ambiguidades. A161 em desenvolvimento.",
+      "milestones": [
+        {
+          "title": "Componente e livro por pagamento",
+          "complete": true
+        },
+        {
+          "title": "Bundle e ativacaoCLI/motor",
+          "complete": true
+        },
+        {
+          "title": "Regressao,replays e evidencias",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "A159/A160 preservados:parcelas futuras e revisoes/reset.",
+        "A161:pagamentos distintos do mesmo boleto e informes por pagamento,com bundle eCLI/motor.",
+        "359 testes/1252 assercoes;PHPStan0,Pint,5 modosCLI repetidos e12 comparacoes Decimal."
+      ],
+      "pending": [
+        "Modelo legal simplificado e calendarios/prazos qualificados.",
+        "Demais pacotes e fechamento individual dos44 requisitos.",
+        "Docker indisponivel;regressao integral final pendente."
+      ],
+      "next_step": "Desenvolver modelo legal simplificado do split com parametros qualificados,sem inventar percentual oficial."
+    },
+    {
+      "updated_at": "2026-11-23T13:35:31.728166-03:00",
+      "title": "Frente 1 A162: modelo legal simplificado do split",
+      "state": "A162:modelo legal simplificado ativado com parametros explicitos e livro por prioridades;449 testes/1419 assercoes,Pint,PHPStan0,7 modosCLI/replays e20 comparacoes Decimal aprovados. console28/HTTP200;0/8 grupos encerrados.",
+      "criterion": "Calculo,qualificacao temporal/setorial/opcao,prioridades de apuracao e conservacao aprovados no escopoA162;nao encerra split nem os44 requisitos.",
+      "milestones": [
+        {
+          "title": "Qualificar fonte e contratos",
+          "complete": true
+        },
+        {
+          "title": "Implementar calculo e livro de apuracao",
+          "complete": true
+        },
+        {
+          "title": "Ativar e validar bundle/CLI/motor",
+          "complete": true
+        }
+      ],
+      "finished": [
+        "A159-A161 preservados e fonte vigente do art33 recapturada por bytes.",
+        "A162:calculo,livro por prioridade,aplicacoes e excedentes separados de propostas;bundle/fatos/perguntas/CLI/motor ativados.",
+        "449/1419,PHPStan0,Pint,7 modosCLI repetidos e20 comparacoes Decimal aprovados."
+      ],
+      "pending": [
+        "Calendarios/prazos qualificados do split e recolhimento.",
+        "Demais pacotes e auditoria individual dos44 requisitos.",
+        "Percentuais/implantacao oficiais nao qualificados;Docker e regressao integral final pendentes."
+      ],
+      "next_step": "Implementar calendarios e prazos com fontes e cobertura explicitamente qualificados."
+    },
+    {
+      "task": "A163",
+      "updated_at": "2026-11-23T16:53:09.993279+00:00",
+      "state": "A163:calendarios/relogios/bundle/CLI/motor implementados;validacao cumulativa em execucao,sem resultado final antecipado.",
+      "focus": {
+        "summary": "A163:calendarios/relogios/bundle/CLI/motor implementados;validacao cumulativa em execucao,sem resultado final antecipado.",
+        "finished": [
+          "Calendario diario por finalidade/tributo e tres relogios implementados.",
+          "BundleA163,fatos/perguntas,CLI e integracao aos registros validados implementados."
+        ],
+        "pending": [
+          "Regressao cumulativa final em execucao.",
+          "Calendarios oficiais,demais relogios e pacotes dos44 requisitos.",
+          "Docker/regressao integral final pendentes."
+        ],
+        "next_step": "Concluir regressao dirigida cumulativa,replays/oraculos e analise estatica global."
+      },
+      "previous_active_validation": {
+        "status": "TERMINAL_AUDITED",
+        "live_process": false,
+        "tests": 11105,
+        "assertions": 354884,
+        "full_suite": false,
+        "receipt": "storage/app/phase4b-b41-development-20261106/b41-scoped-validation.json",
+        "receipt_sha256": "1f3750896fdcfad195512aa55deba00e64a578dc7b983e6837ff51433001f2ca",
+        "observed_at": "2026-11-06T20:00:00-03:00"
+      }
+    },
+    {
+      "before": "A164",
+      "updated_at": "2026-11-23T16:56:45.348046+00:00",
+      "focus": {
+        "summary": "A163:calendarios por finalidade/tributo e prazos de informe/repasse/excedente simplificado vinculados ao livro;514 testes/1569 assercoes,Pint,PHPStan0,10 modosCLI/replays,20 comparacoes Decimal e3 oraculos de datas aprovados localmente.0/8 grupos encerrados.",
+        "finished": [
+          "Calendario diario explicito e tres relogios com fontes e marcos registrados.",
+          "BundleA163,fato/pergunta,CLI e motor vinculados a recibos/eventos validados.",
+          "514/1569,Pint,PHPStan0,10 modosCLI/replays e23 comparacoes independentes aprovados emPHP8.5 local."
+        ],
+        "pending": [
+          "Qualificar calendarios oficiais e prazos fallback/adquirente;exclusoesANS e pedidos anteriores ao informe.",
+          "Continuar demais pacotes e auditoria individual dos44 requisitos.",
+          "Parametros/implantacao oficiais,Docker e regressao integral final pendentes."
+        ],
+        "next_step": "A164:qualificar calendarios oficiais e marcos de devolucao padrao/fallback e pelo adquirente;preservar contratos A159-A163."
+      },
+      "active_validation": {
+        "status": "TERMINAL_PASS",
+        "live_process": false,
+        "tests": 514,
+        "assertions": 1569,
+        "full_suite": false,
+        "receipt": "docs/fiscal/agent-a/20261123/validation-A163.json",
+        "receipt_sha256": "cfc3e562818eee457ce50dc820ca031cf42d15d102462e23926e30947812c700",
+        "observed_at": "2026-11-23T16:56:45.348046+00:00"
+      }
+    },
+    {
+      "before": "A164_terminal",
+      "updated_at": "2026-11-23T17:11:01.416075+00:00",
+      "focus": {
+        "finished": [
+          "A159-A163 preservados;514/1569 na ultima validacao."
+        ],
+        "pending": [
+          "Prazos padrao/fallback e pelo adquirente com marcos documentais.",
+          "Calendarios oficiais por finalidade e demais pacotes dos44 requisitos.",
+          "Docker/regressao integral final pendentes."
+        ],
+        "next_step": "Concluir regressao cumulativa e fontes visuais/PHPStan;distinguir calendario de expediente de calendario bancario.",
+        "summary": "A164:contratos/bundle/CLI/motor implementados;43 testes/122 assercoes proprios aprovados.Regressao cumulativa em execucao,sem resultado antecipado."
+      },
+      "active_validation": {
+        "status": "TERMINAL_PASS",
+        "live_process": false,
+        "tests": 514,
+        "assertions": 1569,
+        "full_suite": false,
+        "receipt": "docs/fiscal/agent-a/20261123/validation-A163.json",
+        "receipt_sha256": "cfc3e562818eee457ce50dc820ca031cf42d15d102462e23926e30947812c700",
+        "observed_at": "2026-11-23T16:56:45.348046+00:00"
+      }
+    },
+    {
+      "before": "A165",
+      "updated_at": "2026-11-23T17:15:39.307984+00:00",
+      "focus": {
+        "summary": "A164:devolucoes padrao/fallback e adquirente com marcos IBS/CBS e alocacoes conservadas;557 testes/1689 assercoes,Pint,PHPStan0,12 modosCLI/replays,32 comparacoes Decimal e7 oraculos de datas aprovados emPHP8.5 local.0/8 grupos encerrados.",
+        "finished": [
+          "A159-A163 preservados;marcos dos regulamentos IBS/CBS capturados e conferidos.",
+          "A164:alocacoes por excedente/pagamento,contagem normal/atraso e cobertura integral/selecionada ativadas em bundle/CLI/motor.",
+          "557/1689,Pint,PHPStan0,12 modosCLI/replays e39 comparacoes independentes aprovados localmente."
+        ],
+        "pending": [
+          "Calendario oficial de expediente e integracaoA164.I1;exclusoesANS preservadas como pendencia.",
+          "Operacoes combinadas importacao/exportacao/eventos e demais pacotes dos44 requisitos.",
+          "Parametros/implantacao oficiais,Docker e regressao integral final pendentes."
+        ],
+        "next_step": "A165:expandir operacoes combinadas com importacao/exportacao/eventos,reconciliacao de valores e decisoes por fornecimento;seguir roteiro da pessoa1 sem esperar novo catalogo da frente2."
+      },
+      "active_validation": {
+        "status": "TERMINAL_PASS",
+        "live_process": false,
+        "tests": 557,
+        "assertions": 1689,
+        "full_suite": false,
+        "receipt": "docs/fiscal/agent-a/20261123/validation-A164.json",
+        "receipt_sha256": "548fcc3732a47a5e7aa9d899ed25cba316ae71d6c137fcde0c094ff337cfff47",
+        "observed_at": "2026-11-23T17:15:39.307984+00:00"
+      }
+    },
+    {
+      "before": "A165_user_pause",
+      "updated_at": "2026-11-23T17:18:29.592247+00:00",
+      "focus": {
+        "finished": [
+          "A159-A164 preservados;dependencia de calendarioA164.I1 documentada."
+        ],
+        "pending": [
+          "Importacao/exportacao/eventos e reconciliacao por fornecimento.",
+          "Demais perfis,temporalidade/base e auditoria dos44 requisitos.",
+          "Integracoes externas,Docker/regressao integral final pendentes."
+        ],
+        "next_step": "Executar os fluxos atuais de importacao/exportacao e identificar seus resultados e dependencias por linha.",
+        "summary": "A165 em desenvolvimento:mapear e ampliar decisao por fornecimento;A164 preservada com557/1689 validados."
+      }
+    },
+    {
+      "before": "USER_STOP_AND_GIT_CHECKPOINT",
+      "updated_at": "2026-11-23T17:26:21.863142+00:00",
+      "state": "Pausado por solicitacao do usuario.A165 em desenvolvimento,sem validacao terminal;ultimo aceite localA164:557 testes/1689 assercoes,PHPStan0/Pint.0/8 grupos encerrados.",
+      "current_review": null,
+      "focus": {
+        "summary": "Pausado por solicitacao do usuario.A165 em desenvolvimento,sem validacao terminal;ultimo aceite localA164:557 testes/1689 assercoes,PHPStan0/Pint.0/8 grupos encerrados.",
+        "finished": [
+          "A164 e anteriores preservados;ultimo recibo validado557/1689.",
+          "DraftA165 de composicao/eventos,bundle eCLI preservado com hashes no checkpoint."
+        ],
+        "pending": [
+          "Testes,formatacao e PHPStan terminal daA165 ainda pendentes.",
+          "Qualificar fixtures atuais de importacao/exportacao/eventos e verificar ativacao do draft.",
+          "Demais pacotes e auditoria dos44 requisitos,integracoes externas e regressao integral final pendentes."
+        ],
+        "next_step": "Ao retomar,seguir checkpoint-A165-paused.json;nenhum processo de desenvolvimento ativo."
+      }
     }
   ],
   "focus": {
-    "summary": "Agente B,06/11/2026.Operacao combinada com fornecimentos em regimes diferentes decididos por fornecimento;bundle 2026.11.06-b38-draft1.Regressao:10592 aprovados,513 falhas (0 fora de ambiente).Itens A:33 PARCIAL, 4 IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL, 4 FUNCIONAL_SANDBOX_COM_DEPENDENCIA_EXTERNA, 3 INTEGRALMENTE_IMPLEMENTADO_E_VALIDADO_NO_ESCOPO.0/8 grupos encerrados.",
+    "summary": "Desenvolvimento interrompido por solicitacao do usuario;checkpointA159-A165 preparado para commit na branch codex/frente-1-incidencia-calculo.A159-A164:557 testes/1689 assercoes revalidados;legado temporal:52/161.A165 permanece draft sem validacao funcional.0/8 grupos encerrados.",
     "finished": [
-      "CombinedRegimeSuppliesB41 com um documento por fornecimento.",
-      "Totais sem aliquota misturada.",
-      "Regressao ampla 10592 aprovados."
+      "A159-A164 preservados com557/1689 revalidados na arvore atual.",
+      "52 testes/161 assercoes do legado temporal e sintaxe de49 arquivosPHP aprovados.",
+      "DraftA165 e ponto de retomada preservados;commit solicitado na branch propria."
     ],
     "pending": [
-      "Proprio:combinados de importacao/exportacao/eventos.",
-      "Proprio:cooperativas e SAF.",
-      "Externo:parametros municipais de ISS qualificados."
+      "A165 ainda sem testes funcionais e sem aceite de pacote.",
+      "Demais pacotes e auditoria individual dos44 requisitos.",
+      "Integracoes externas,Docker e regressao integral final pendentes."
     ],
-    "next_step": "Commit/push da rodada B34-B41 e revisao juridica dos pontos marcados."
+    "next_step": "Desenvolvimento permanece parado;retomar somente quando solicitado,conforme checkpoint-A165-paused.json."
   },
-  "scope_package": "B41",
+  "scope_package": "A165",
   "checkpoint_publication": {
-    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
-    "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
-    "branch": "codex/fiscal-engine-bootstrap",
-    "message": "Atualização - 27/10/2026 13:16 (São Paulo)",
-    "published_at": "2026-10-27T13:17:06.511146-03:00",
-    "push_confirmed": true,
-    "remote_sha_confirmed": true,
-    "development_stopped_by_user": true,
-    "task143_complete_for_declared_local_scope": true,
-    "phase4b_complete": false,
-    "production_ready": false
+    "requested_at": "2026-11-23T16:09:15.255603-03:00",
+    "repository": "https://github.com/fiorbeltda/motorfiscal",
+    "branch": "codex/frente-1-incidencia-calculo",
+    "checkpoint": "A159-A164 validados;A165 draft preservado",
+    "commit_title": "Codex: salva progresso A159-A165 em ponto seguro de pausa",
+    "commit_date_policy": "Git metadata with current America/Sao_Paulo date;configured repository author",
+    "development_state": "PAUSED_BY_USER_REQUEST",
+    "verification_receipt_external": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\git-publication.json",
+    "worktree_state_source": "Git HEAD,git status and remote branch ref;not a persisted precommit boolean"
   },
   "development_resumed_at": "2026-11-03T08:30:00-03:00",
-  "scope_note": "Execucao com dois agentes:A 4B.1-4B.4,B 4B.5-4B.8 e consolidacao.80 requisitos originais preservados.",
-  "uncommitted_development": true,
+  "scope_note": "Frente1:44 requisitos originais preservados;A159-A164 incrementais;objetivo integral em andamento.",
   "active_validation": {
-    "status": "TERMINAL_AUDITED",
+    "status": "TERMINAL_PASS_DIRECTED_REGRESSIONS",
     "live_process": false,
-    "tests": 11105,
-    "assertions": 354884,
+    "validated_scope": "A159-A164 and legacy TaxPoint86/147;A165 functional scope NOT validated",
+    "receipt": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\validation-a164.json",
+    "tests": 609,
+    "assertions": 1850,
     "full_suite": false,
-    "receipt": "storage/app/phase4b-b41-development-20261106/b41-scoped-validation.json",
-    "receipt_sha256": "1f3750896fdcfad195512aa55deba00e64a578dc7b983e6837ff51433001f2ca",
-    "observed_at": "2026-11-06T20:00:00-03:00"
+    "checkpoint_receipt": "docs/fiscal/agent-a/20261123/validation-stop-git-20261123.json"
   },
-  "stop_requested_at": "2026-10-27T13:14:31.903760-03:00",
-  "development_state": "ACTIVE_LOCAL_DEVELOPMENT_TWO_AGENTS",
+  "stop_requested_at": "2026-11-23T17:26:21.863142+00:00",
+  "development_state": "PAUSED_BY_USER_REQUEST",
   "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
   "active_maintenance": {
     "process_session": 94599,
@@ -25114,9 +25433,54 @@
     "receipt": "C:\\xampp\\htdocs\\projeto-saas-motor\\storage\\app\\phase4b-currency140-development-20261027\\currency140-integration-scoped-validation.json"
   },
   "two_agent_execution": {
-    "A": "4B.1-4B.4 (44)",
-    "B": "4B.5-4B.8 (36) + consolidacao local",
+    "A": "4B.1-4B.4 (44),frente1 na branch codex/frente-1-incidencia-calculo",
+    "B": "4B.5-4B.8 (36),frente2 independente",
     "direct_channel": false,
-    "a_evidence_received": false
+    "a_evidence_received": true
+  },
+  "a159": {
+    "status": "FUTURE_INSTALLMENT_SCHEDULE_VALIDATED_HOST",
+    "bundle": "resources/fiscal/bundles/consumption-phase4b-2026.11.23-a159-draft1.json",
+    "receipt": "docs/fiscal/agent-a/20261123/validation-A159.json",
+    "requirement": "4B.3.7",
+    "requirement_closed": false,
+    "production_ready": false
+  },
+  "a161": {
+    "status": "MULTIPLE_BOLETO_PAYMENTS_AND_PAYMENT_REFERENCES_VALIDATED_HOST",
+    "receipt": "docs/fiscal/agent-a/20261123/validation-A161.json",
+    "bundle": "resources/fiscal/bundles/consumption-phase4b-2026.11.23-a161-draft1.json",
+    "requirement": "4B.3.7",
+    "requirement_closed": false,
+    "production_ready": false
+  },
+  "a162": {
+    "status": "LEGAL_SIMPLIFIED_SPLIT_MODEL_VALIDATED_HOST",
+    "bundle": "resources/fiscal/bundles/consumption-phase4b-2026.11.23-a162-draft1.json",
+    "receipt": "docs/fiscal/agent-a/20261123/validation-A162.json",
+    "requirement": "4B.3.7",
+    "requirement_closed": false,
+    "production_ready": false
+  },
+  "a163": {
+    "status": "LOCAL_SCOPE_VALIDATED",
+    "receipt": "docs/fiscal/agent-a/20261123/validation-A163.json",
+    "bundle": "CONSUMPTION-PHASE4B-2026.11.23-a163-draft1",
+    "whole_front_complete": false,
+    "console_status": "HTTP200_CONSOLE28",
+    "groups_reviewed": 8
+  },
+  "a164": {
+    "status": "LOCAL_SCOPE_VALIDATED",
+    "receipt": "docs/fiscal/agent-a/20261123/validation-A164.json",
+    "bundle": "CONSUMPTION-PHASE4B-2026.11.23-a164-draft1",
+    "whole_front_complete": false,
+    "console_status": "HTTP200_CONSOLE28",
+    "groups_reviewed": 8
+  },
+  "a165": {
+    "status": "PAUSED_DRAFT_NOT_VALIDATED",
+    "checkpoint": "docs/fiscal/agent-a/20261123/checkpoint-A165-paused.json",
+    "active_process": false
   }
 }

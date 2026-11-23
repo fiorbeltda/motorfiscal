@@ -27,6 +27,25 @@ final readonly class TaxPointContext86
         return $this->qualifyOperation($facts, $knownAt, $policy);
     }
 
+    /** Additive cross-border entry point; does not relabel a foreign operation as domestic.
+     * @param  array<string, mixed>  $facts
+     * @param  array<string, mixed>  $policy
+     * @param  array<string, mixed>  $crossBorderPolicy
+     * @return array<string, mixed>
+     */
+    public function qualifyCrossBorder165(array $facts, DateTimeImmutable $knownAt, array $policy, array $crossBorderPolicy): array
+    {
+        if (! CrossBorderTaxPoint165::valid($crossBorderPolicy)) {
+            return $this->stop('RTC_CROSS_BORDER_TAX_POINT_POLICY_INVALID');
+        }
+        $availability = $this->policyAvailability($knownAt, $policy);
+        if ($availability['status'] !== 'RESOLVED') {
+            return $availability;
+        }
+
+        return $this->qualifyOperation($facts, $knownAt, $policy, true);
+    }
+
     /**
      * @param  array<string, mixed>  $policy
      * @return array<string, mixed>
@@ -88,7 +107,7 @@ final readonly class TaxPointContext86
      * @param  array<string, mixed>  $policy
      * @return array<string, mixed>
      */
-    private function qualifyOperation(array $facts, DateTimeImmutable $knownAt, array $policy): array
+    private function qualifyOperation(array $facts, DateTimeImmutable $knownAt, array $policy, bool $crossBorder165 = false): array
     {
         $hashes = $this->policyAvailability($knownAt, $policy)['source_hashes'];
         $contexts = $facts['rtc.tax_point_contexts'] ?? null;
@@ -103,8 +122,23 @@ final readonly class TaxPointContext86
             return $this->stop('RTC_TAX_POINT_OPERATION_DOCUMENT_CONFLICT');
         }
         // No branch may use a plain-rate event plan to bypass a special incidence, regime or credit qualification.
-        foreach (['rtc.market' => 'DOMESTIC', 'rtc.supplier_regime' => 'REGULAR', 'rtc.consideration' => 'ONEROUS',
-            'rtc.tax_treatment' => 'STANDARD', 'rtc.credit_context' => 'OUTPUT', 'rtc.collection_method' => 'SUPPLIER'] as $key => $value) {
+        $expected = ['rtc.market' => 'DOMESTIC', 'rtc.supplier_regime' => 'REGULAR', 'rtc.consideration' => 'ONEROUS',
+            'rtc.tax_treatment' => 'STANDARD', 'rtc.credit_context' => 'OUTPUT', 'rtc.collection_method' => 'SUPPLIER'];
+        if ($crossBorder165) {
+            if (! in_array($facts['rtc.market'] ?? null, ['IMPORT', 'EXPORT'], true)) {
+                return $this->stop('RTC_CROSS_BORDER_MARKET_REQUIRED');
+            }
+            $expected['rtc.market'] = $facts['rtc.market'];
+            if ($facts['rtc.market'] === 'IMPORT') {
+                $expected['rtc.supplier_regime'] = 'FOREIGN';
+                $expected['rtc.collection_method'] = ($facts['rtc.acquirer_country'] ?? null) === 'BR' ? 'ACQUIRER' : 'RECIPIENT';
+                if (! in_array($facts['rtc.credit_context'] ?? null, ['INPUT', 'OUTPUT'], true)) {
+                    return $this->stop('RTC_CROSS_BORDER_CREDIT_CONTEXT_REQUIRED');
+                }
+                $expected['rtc.credit_context'] = $facts['rtc.credit_context'];
+            }
+        }
+        foreach ($expected as $key => $value) {
             if (($facts[$key] ?? null) !== $value) {
                 return $this->stop('RTC_TAX_POINT_CONTEXT_REQUIRES_SEPARATE_TREATMENT');
             }

@@ -1,6 +1,6 @@
 {
-  "reviewed_at": "2026-10-27T13:17:06.511146-03:00",
-  "scope_note": "3/4A encerradas emSandbox;4B parcial,0/8 grupos encerrados;5-7 planejadas. Task143 concluida,checkpoint publicado eparada solicitada.",
+  "reviewed_at": "2026-11-23T16:09:15.255603-03:00",
+  "scope_note": "3/4A encerradas;4B em andamento,0/8 grupos;5-7 planejadas.Frente1 parada por solicitacao do usuario;A165 draft nao validado;producao nao liberada.",
   "phases": [
     {
       "id": "base",
@@ -37,7 +37,7 @@
       "id": "4B",
       "label": "Fase 4B",
       "title": "IBS / CBS e reforma do consumo",
-      "summary": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+      "summary": "Desenvolvimento interrompido por solicitacao do usuario;checkpointA159-A165 preparado para commit na branch codex/frente-1-incidencia-calculo.A159-A164:557 testes/1689 assercoes revalidados;legado temporal:52/161.A165 permanece draft sem validacao funcional.0/8 grupos encerrados.",
       "source": "docs/fiscal/phase4b-status.md",
       "objectives": [
         {
@@ -72,7 +72,8 @@
           "id": "4B.8",
           "title": "Aceitação, corpus e invariantes"
         }
-      ]
+      ],
+      "state": "IN_PROGRESS"
     },
     {
       "id": "5",
@@ -2261,27 +2262,49 @@
     {
       "reviewed_at": "2026-10-27T13:17:09.201850+00:00",
       "current_review": "143 retomado:142 auditado e138 hashes conferidos. AnexoVI atual em revisao para integrar identidade,partes eDPS completa do perfil de importacao. Nenhum candidato143 aprovado;0/8 grupos encerrados."
+    },
+    {
+      "before": "A163",
+      "reviewed_at": "2026-11-23T13:35:31.728166-03:00",
+      "current_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
+      "scope_package": "143",
+      "development_state": "STOPPED_BY_USER_REQUEST"
+    },
+    {
+      "before": "A164",
+      "reviewed_at": "2026-11-23T16:56:45.348046+00:00",
+      "current_review": "A163:calendarios por finalidade/tributo e prazos de informe/repasse/excedente simplificado vinculados ao livro;514 testes/1569 assercoes,Pint,PHPStan0,10 modosCLI/replays,20 comparacoes Decimal e3 oraculos de datas aprovados localmente.0/8 grupos encerrados.",
+      "scope_package": "A163"
+    },
+    {
+      "before": "A165_user_pause",
+      "reviewed_at": "2026-11-23T17:15:39.307984+00:00",
+      "current_review": "A164:devolucoes padrao/fallback e adquirente com marcos IBS/CBS e alocacoes conservadas;557 testes/1689 assercoes,Pint,PHPStan0,12 modosCLI/replays,32 comparacoes Decimal e7 oraculos de datas aprovados emPHP8.5 local.0/8 grupos encerrados.",
+      "scope_package": "A164"
+    },
+    {
+      "before": "USER_STOP_AND_GIT_CHECKPOINT",
+      "updated_at": "2026-11-23T17:26:21.863142+00:00",
+      "state": null,
+      "current_review": "Pausado por solicitacao do usuario.A165 em desenvolvimento,sem validacao terminal;ultimo aceite localA164:557 testes/1689 assercoes,PHPStan0/Pint.0/8 grupos encerrados.",
+      "focus": null
     }
   ],
-  "current_review": "Parada solicitada apos concluir a task143:montagemDPS local completa do perfil141/142,45 testes/195 assercoes,PHPStan0/Pint5,CLI repetido e3 recusas auditados.5.958 entradas/141 hashes conferidos;nenhuma suite ativa. Recusas oficiais preservadas;Fase4B em andamento,0/8 grupos encerrados.",
-  "scope_package": "143",
-  "updated_at": "2026-10-27T13:17:06.511146-03:00",
+  "current_review": "Desenvolvimento interrompido por solicitacao do usuario;checkpointA159-A165 preparado para commit na branch codex/frente-1-incidencia-calculo.A159-A164:557 testes/1689 assercoes revalidados;legado temporal:52/161.A165 permanece draft sem validacao funcional.0/8 grupos encerrados.",
+  "scope_package": "A165",
+  "updated_at": "2026-11-23T16:09:15.255603-03:00",
   "checkpoint_publication": {
-    "status": "PRIMARY_COMMIT_PUBLISHED_REMOTE_VERIFIED",
-    "commit": "0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
-    "url": "https://github.com/fiorbeltda/motorfiscal/commit/0de41db4fc00addf3afdd490bf1fa2ae531b17ae",
-    "branch": "codex/fiscal-engine-bootstrap",
-    "message": "Atualização - 27/10/2026 13:16 (São Paulo)",
-    "published_at": "2026-10-27T13:17:06.511146-03:00",
-    "push_confirmed": true,
-    "remote_sha_confirmed": true,
-    "development_stopped_by_user": true,
-    "task143_complete_for_declared_local_scope": true,
-    "phase4b_complete": false,
-    "production_ready": false
+    "requested_at": "2026-11-23T16:09:15.255603-03:00",
+    "repository": "https://github.com/fiorbeltda/motorfiscal",
+    "branch": "codex/frente-1-incidencia-calculo",
+    "checkpoint": "A159-A164 validados;A165 draft preservado",
+    "commit_title": "Codex: salva progresso A159-A165 em ponto seguro de pausa",
+    "commit_date_policy": "Git metadata with current America/Sao_Paulo date;configured repository author",
+    "development_state": "PAUSED_BY_USER_REQUEST",
+    "verification_receipt_external": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\git-publication.json",
+    "worktree_state_source": "Git HEAD,git status and remote branch ref;not a persisted precommit boolean"
   },
   "development_resumed_at": "2026-10-27T12:51:11.026995+00:00",
-  "development_state": "STOPPED_BY_USER_REQUEST",
-  "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime.",
-  "uncommitted_development": false
+  "development_state": "PAUSED_BY_USER_REQUEST",
+  "checkpoint_integrity_note": "Aceite histórico122 preservado:4 diferenças já publicadas em22/10. Última integral136 auditada separadamente;checkpoint137 verifica130 hashes de runtime."
 }

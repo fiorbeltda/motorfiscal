@@ -15,6 +15,8 @@ final readonly class SplitTransaction158
 {
     public const CONTRACT = 'RTC-SPLIT-TRANSACTION-A158-V1';
 
+    public const HISTORY_CONTRACT = 'RTC-SPLIT-TRANSACTION-A160-V1';
+
     public const TIMES_MANUAL_HASH = '13685b4d1a2f486cd092efb34c83e741b4300edf9692b09ffb6ce0f27036bdf1';
 
     /** @param array<string, mixed> $input
@@ -22,8 +24,24 @@ final readonly class SplitTransaction158
      */
     public function assess(array $input): array
     {
+        return $this->assessVersion($input, false);
+    }
+
+    /** @param array<string, mixed> $input
+     * @return array<string, mixed>
+     */
+    public function assessHistory(array $input): array
+    {
+        return $this->assessVersion($input, true);
+    }
+
+    /** @param array<string, mixed> $input
+     * @return array<string, mixed>
+     */
+    private function assessVersion(array $input, bool $history): array
+    {
         try {
-            return $this->qualify($input);
+            return $this->qualify($input, $history);
         } catch (InvalidArgumentException $exception) {
             return ['status' => 'ACTION_REQUIRED', 'reason' => $exception->getMessage(),
                 'missing_facts' => ['rtc.split_payment_transaction'], 'official' => false,
@@ -38,12 +56,19 @@ final readonly class SplitTransaction158
             && CanonicalJson::hash($this->assess($report['input'])) === CanonicalJson::hash($report);
     }
 
+    /** @param array<string, mixed> $report */
+    public function replayHistory(array $report): bool
+    {
+        return is_array($report['input'] ?? null)
+            && CanonicalJson::hash($this->assessHistory($report['input'])) === CanonicalJson::hash($report);
+    }
+
     /** @param array<string, mixed> $input
      * @return array<string, mixed>
      */
-    private function qualify(array $input): array
+    private function qualify(array $input, bool $history): array
     {
-        $this->require(($input['contract'] ?? null) === self::CONTRACT, 'A158_TRANSACTION_CONTRACT_REQUIRED');
+        $this->require(($input['contract'] ?? null) === ($history ? self::HISTORY_CONTRACT : self::CONTRACT), 'A158_TRANSACTION_CONTRACT_REQUIRED');
         $this->require(($input['operations_manual_hash'] ?? null) === SplitPayment158::OPERATIONS_MANUAL_HASH
             && ($input['times_manual_hash'] ?? null) === self::TIMES_MANUAL_HASH, 'A158_TRANSACTION_MANUALS_REQUIRED');
         $this->require(($input['procedure'] ?? null) === 'STANDARD' && ($input['currency'] ?? null) === 'BRL', 'A158_STANDARD_BRL_REQUIRED');
@@ -61,7 +86,7 @@ final readonly class SplitTransaction158
         $issued = $this->instant($input['document_issued_at'] ?? null);
         $this->require($operation <= $known && $issued <= $known && $initiated <= $known, 'A158_TRANSACTION_FUTURE_EVENT');
         $this->require(($input['platform_history_complete'] ?? null) === true
-            && ($input['fiscal_inputs_unchanged'] ?? null) === true, 'A158_COMPLETE_STABLE_INPUT_HISTORY_REQUIRED');
+            && ($history || ($input['fiscal_inputs_unchanged'] ?? null) === true), 'A158_COMPLETE_STABLE_INPUT_HISTORY_REQUIRED');
         $arrangement = $input['arrangement'] ?? null;
         $receiver = in_array($arrangement, ['BOLETO', 'PIX_DYNAMIC', 'PIX_AUTOMATIC'], true);
         $this->require($receiver || in_array($arrangement, ['PIX_STATIC', 'TED', 'TEF'], true), 'A158_TRANSACTION_ARRANGEMENT_UNSUPPORTED');
@@ -138,6 +163,9 @@ final readonly class SplitTransaction158
             $this->require($initiated <= $advanceAt && $advanceAt <= $known, 'A158_ADVANCE_DATE_CONFLICT');
             $this->money($advance['amount'] ?? null);
         }
+        $historyEnd = $settled !== null && $closed !== null ? min($settled, $closed) : ($settled ?? $closed);
+        $fiscalHistory = $history ? (new SplitFiscalHistory160)->qualify($input, $freeze ?? $known, $known, $initiated, $historyEnd)
+            : ['revisions' => [], 'active' => '', 'trace' => []];
         $messages = $input['platform_returns'] ?? null;
         $this->require(is_array($messages) && array_is_list($messages), 'A158_PLATFORM_RETURN_HISTORY_REQUIRED');
         $ordered = [];
@@ -157,13 +185,19 @@ final readonly class SplitTransaction158
         $upwardDeadline = $initiated->setTimezone(new DateTimeZone('-03:00'))->modify('+1 day')->setTime(0, 30);
         $trace = [];
         foreach ($ordered as $message) {
-            $this->require(($message['document_id'] ?? null) === $input['document_id']
+            $revisionKey = $history && is_string($message['fiscal_input_version'] ?? null) ? '#'.$message['fiscal_input_version'] : null;
+            $revision = $revisionKey === null ? null : ($fiscalHistory['revisions'][$revisionKey] ?? null);
+            if ($history) {
+                $this->require(is_array($revision), 'A160_RETURN_REVISION_UNKNOWN');
+            }
+            $this->require(($message['document_id'] ?? null) === ($revision['document_id'] ?? $input['document_id'])
                 && ($message['transaction_id'] ?? null) === $input['transaction_id']
-                && ($message['fiscal_input_version'] ?? null) === $input['fiscal_input_version']
+                && ($history || ($message['fiscal_input_version'] ?? null) === $input['fiscal_input_version'])
                 && $this->identifier($message['evidence_id'] ?? null), 'A158_PLATFORM_RETURN_BINDING_CONFLICT');
             $this->hash($message['source_hash'] ?? null);
             $available = $this->instant($message['available_at'] ?? null);
-            $this->require($available >= $lastAvailable && $available >= $linked && $available <= $known
+            $revisionAt = $history ? max($this->instant($revision['effective_at'] ?? null), $this->instant($revision['document_linked_at'] ?? null)) : $linked;
+            $this->require($available >= $lastAvailable && $available >= $revisionAt && $available <= $known
                 && ($closed === null || $available <= $closed), 'A158_PLATFORM_RETURN_WINDOW_CONFLICT');
             $lastAvailable = $available;
             $processed = ($message['processed_at'] ?? null) === null ? null : $this->instant($message['processed_at']);
@@ -172,17 +206,24 @@ final readonly class SplitTransaction158
             $kind = $message['kind'] ?? null;
             $this->require(in_array($tax, ['IBS', 'CBS'], true) && in_array($kind, ['CORRECTED', 'OUTSTANDING'], true), 'A158_PLATFORM_RETURN_TYPE_CONFLICT');
             $amount = $this->money($message['amount'] ?? null);
+            $baseline = $history ? (string) $this->money($revision['taxes'][$tax] ?? null) : $informed[$tax];
+            $openKey = $history ? $message['fiscal_input_version'].':'.$tax : $tax;
             if ($kind === 'CORRECTED') {
-                $this->require($amount->compareTo($informed[$tax]) <= 0 || $available <= $upwardDeadline, 'A158_UPWARD_CORRECTION_OUTSIDE_WINDOW');
+                $this->require($amount->compareTo($baseline) <= 0 || $available <= $upwardDeadline, 'A158_UPWARD_CORRECTION_OUTSIDE_WINDOW');
             } else {
-                $this->require(! isset($previousOpen[$tax]) || $amount->compareTo($previousOpen[$tax]) <= 0, 'A158_OUTSTANDING_MUST_NOT_INCREASE');
-                $previousOpen[$tax] = $amount;
+                $this->require(! isset($previousOpen[$openKey]) || $amount->compareTo($previousOpen[$openKey]) <= 0, 'A158_OUTSTANDING_MUST_NOT_INCREASE');
+                $previousOpen[$openKey] = $amount;
             }
-            $usable = $freeze !== null && $processed !== null && $processed <= $freeze;
+            $stale = $history && $message['fiscal_input_version'] !== $fiscalHistory['active'];
+            $usable = ! $stale && $freeze !== null && $processed !== null && $processed <= $freeze;
             if ($usable) {
                 $selected[$tax][$kind] = ['amount' => (string) $amount, 'message_id' => $message['id']];
             }
             $trace[] = ['id' => $message['id'], 'sequence' => $message['sequence'], 'usable_at_freeze' => $usable];
+            if ($history) {
+                $trace[array_key_last($trace)]['inactive_revision_at_freeze'] = $stale;
+                $trace[array_key_last($trace)]['fiscal_input_version'] = $message['fiscal_input_version'];
+            }
         }
         $segregation = null;
         $net = null;
@@ -214,6 +255,10 @@ final readonly class SplitTransaction158
             'advance_is_settlement' => false, 'installment_scope' => 'ONE_TRANSACTION_NOT_COMPLETE_SCHEDULE',
             'remittance_status' => 'NOT_RECONCILED', 'extinction_proven' => false, 'deployment_proven' => false,
             'official' => false, 'authenticated' => false, 'posted' => false, 'payment_performed' => false];
+        if ($history) {
+            $report['active_fiscal_revision'] = $fiscalHistory['active'];
+            $report['fiscal_revision_trace'] = $fiscalHistory['trace'];
+        }
         $report['report_hash'] = CanonicalJson::hash($report);
 
         return $report;

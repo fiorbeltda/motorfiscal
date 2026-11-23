@@ -1,0 +1,1553 @@
+{
+  "scope": "FRONT1_ORIGINAL44_PRESERVED",
+  "base": "f8f22d8",
+  "source_matrix": "storage/app/phase4b-b41-development-20261106/requirements80-current-matrix.json",
+  "requirements": [
+    {
+      "id": "4B.1.1",
+      "group": "4B.1",
+      "requirement": "fases de 2026 a 2033",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Seleção de fases e recusa de taxas não comprovadas; rota pós-ISS presente.",
+          "remaining": "Completar matriz de ramos/eventos por período 2026–2033; separar parâmetros externos de implementação.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B39",
+          "path": "storage/app/phase4b-b39-development-20261106/b39-scoped-validation.json",
+          "sha256": "5751e56e53df3df5a1be9a340c7dd5af11bbca2e4388b9dfed4b367d1b822249",
+          "status": "B39_TEMPORAL_MATRIX_2026_2033"
+        }
+      ],
+      "baseline_gap": "Separate missing external parameters from code gaps;finish branch-by-period integrated matrix and cross-year events,not merely catalog rows.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.2",
+      "group": "4B.1",
+      "requirement": "alíquotas de teste",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+          "observed_scope": "Cálculo nominal de teste 2026 separado e dispensa condicionada; financeiro também calcula débitos nominais.",
+          "remaining": "Aferir aplicabilidade e condições de todos os perfis 2026 exigidos; prova de SaaS/financeiro não cobre famílias restantes.",
+          "A155_touches": true,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "This proves the2026 test-rate mechanism,not universal legal applicability,all collection conditions or the temporal group closure.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.3",
+      "group": "4B.1",
+      "requirement": "redução/extinção gradual dos tributos atuais",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Fatores ISS 2029–2032 e extinção 2033 implementados; teste injeta referência municipal.",
+          "remaining": "Taxa municipal de 2028 no teste é sintética; tratamento especial e eventos cruzados permanecem pendentes. Metadado ICMS não é cálculo ICMS.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Future real frozen municipal parameter is not available by assumption;do not invent it. Finish applicable profile/cross-period treatment and distinguish ICMS factor metadata from a full ICMS calculation.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.4",
+      "group": "4B.1",
+      "requirement": "convivência ISS/ICMS/PIS/Cofins com IBS/CBS",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Runner integrado preserva ISS/retenções e encaminha pós-ISS ao RTC.",
+          "remaining": "Demonstrar coexistência por família/período; eventos de tributos legados cruzando 2033 recebem pergunta, não cálculo concluído.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete family/period evidence for actual legacy coexistence. A test-supplied2033 rate/layout proves architecture,not a published future rate or approved document.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.5",
+      "group": "4B.1",
+      "requirement": "data relevante de cada decisão",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Contratos 86/88/91 distinguem datas relevantes e conhecimento; guardas próprias para reconciliação.",
+          "remaining": "Fixtures históricas 86/88/91 ausentes impedem parte da reexecução; eventos públicos/cancelados/especiais e liquidação ainda precisam prova.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "131-draft2",
+          "path": "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
+          "sha256": "83b8afac8e2c590ffb5986a988ba16c8eb5a9d464fbe750064317397b31b9348",
+          "status": "SCOPED131_SCHEDULE_VALIDATED_NOT_PHASE_CLOSURE"
+        }
+      ],
+      "baseline_gap": "131 separa a data do fato que seleciona o cronograma documental da disponibilidade de conhecimento da política;32 linhas/exceções doAto4 vinculadas,sem alterar as datas próprias dos tributos. Complete remaining public/cancelled/special-event and settlement paths;do not replace every tax date with one global operation date.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.6",
+      "group": "4B.1",
+      "requirement": "vigências, publicação, revogação e supersessão",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "A147 valida instantes estritos e fronteiras de publicação/revogação/supersessão; lifecycle114 mantém implantação qualificada.",
+          "remaining": "Não há prova de lifecycle em todos os ramos/regras; recuperar fixtures históricas e concluir cenários faltantes.",
+          "A155_touches": true,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "131-draft2",
+          "path": "storage/app/phase4b-schedule131-development-20261022/schedule131-draft2-scoped-validation.json",
+          "sha256": "83b8afac8e2c590ffb5986a988ba16c8eb5a9d464fbe750064317397b31b9348",
+          "status": "SCOPED131_SCHEDULE_VALIDATED_NOT_PHASE_CLOSURE"
+        }
+      ],
+      "baseline_gap": "131 qualifica publicação/vigência doAto4 por seu texto integral e mantém os drafts anteriores;isso não encerra revogações/supersessões de todas as regras. Concluir os contratos temporais das demais rotas,eventos e ativações necessárias. A falha local de ciclo114 não está mais aberta;implantação oficial do split não é presumida.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.7",
+      "group": "4B.1",
+      "requirement": "bloqueio de regras futuras ou vencidas",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Recusa futura/vencida e conflitos nos catálogos e políticas inspecionados, incluindo ciclo A147.",
+          "remaining": "Cobertura integral dos ramos/eventos não demonstrada; não confundir ativação de teste com implantação oficial.",
+          "A155_touches": true,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Concluir os contratos temporais das demais rotas,eventos e ativações necessárias. A falha local de ciclo114 não está mais aberta;implantação oficial do split não é presumida.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.1.8",
+      "group": "4B.1",
+      "requirement": "não usar “ano” como único seletor temporal",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+          "observed_scope": "Seletores usam operação/competência/conhecimento e eventos, inclusive instantes dentro do mesmo ano.",
+          "remaining": "Prova transversal de todas as decisões ainda incompleta; suítes temporais históricas dependem de fixtures ausentes.",
+          "A155_touches": true,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Evidence establishes non-year-only selection in inspected contracts;remaining routes and event-date proofs still need whole-scope acceptance.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.1",
+      "group": "4B.2",
+      "requirement": "operações onerosas",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "SaaS oneroso e composição A145/A146 com decisão por fornecimento.",
+          "remaining": "Faltam famílias/condições exigidas além dos perfis domésticos BRL já comprovados.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete other required service families,combined operations and documents;one SaaS route is not universal onerous incidence.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.2",
+      "group": "4B.2",
+      "requirement": "operações não onerosas previstas",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Doação/uso pessoal têm qualificadores e origem/valor material em contratos próprios.",
+          "remaining": "Não basta fixture antiga recusada: comprovar rota corrente positiva de cada espécie não onerosa e seus efeitos de cálculo.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B26-B29",
+          "path": "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+          "sha256": "365bd6bed10c6180904d227a51b2557a4260a1141d6f37b0a4687fef2f13cd20",
+          "status": "B26_B29_DOMICILE_NONONEROUS_PLATFORM_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Do not remove newer guards to make old fixtures positive. Complete documented current origin/market-value routes and non-onerous documents.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.3",
+      "group": "4B.2",
+      "requirement": "fornecimento de serviços",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "A149 qualifica oito famílias locais; A151–153 ampliam domicílio e pessoal remoto.",
+          "remaining": "Qualificador local não entrega incidência/cálculo de todas as famílias. Integração classificatória/documental depende de B.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Catalog presence alone does not prove all service families. Extend source-bound branch coverage and legal classification without generic default.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.4",
+      "group": "4B.2",
+      "requirement": "local da operação",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Localidade vinculada a operação e sujeitos; A150 trata imóvel e via; A151–153 domicílio material.",
+          "remaining": "PF empresarial e demais contextos materiais precisam qualificação; compor resultado com runner/classificação sem escolha implícita.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B26-B29",
+          "path": "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+          "sha256": "365bd6bed10c6180904d227a51b2557a4260a1141d6f37b0a4687fef2f13cd20",
+          "status": "B26_B29_DOMICILE_NONONEROUS_PLATFORM_IN_VERSIONED_BUNDLES"
+        },
+        {
+          "package": "B37",
+          "path": "storage/app/phase4b-b37-development-20261106/b37-scoped-validation.json",
+          "sha256": "591cf7cc78acc88008515dde2af16759a8ce0e3a8f46afeedf01e9ca3507f5dd",
+          "status": "B37_REAL_ESTATE_REGIME_MATERIALIZED"
+        }
+      ],
+      "baseline_gap": "Concluir local fiscal,estabelecimento/domicílio e aplicabilidade histórica por operação. Coerência auxiliarUF/município foi corrigida;ausência em snapshot não prova inexistência jurídica histórica.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.5",
+      "group": "4B.2",
+      "requirement": "destino",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Destino distingue adquirente e destinatário, residência/onerosidade e centralização qualificada.",
+          "remaining": "Faltam integração e casos restantes por família/evento; autenticação externa não é requisito implícito de todo ensaio Sandbox.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Concluir local fiscal,estabelecimento/domicílio e aplicabilidade histórica por operação. Coerência auxiliarUF/município foi corrigida;ausência em snapshot não prova inexistência jurídica histórica.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.6",
+      "group": "4B.2",
+      "requirement": "B2B/B2C",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Rótulo B2B/B2C complementado por identificação e domicílio de não cadastrado/PF A153.",
+          "remaining": "Falta prova de tratamento completo por família e regime; não inferir consumidor ou estabelecimento pelo rótulo.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Finish material identity/domestic consumer evidence and family-specific destination,not just labels.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.7",
+      "group": "4B.2",
+      "requirement": "presencial/remoto/digital",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "A149 separa prestação material e A153 pessoal remoto; presença não equivale automaticamente a destino.",
+          "remaining": "Integrar todas as famílias presenciais/remotas/digitais com incidência e cálculo aplicáveis.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete other art11 special localities and material presence proofs;delivery mode alone is not legal location.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.8",
+      "group": "4B.2",
+      "requirement": "importação",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "129 separa papéis na importação digital; 141 reconcilia BRL; 143 monta candidato local delimitado.",
+          "remaining": "Outros perfis/bases/eventos faltam. Rejeição XSD histórica é limite de B preservado, não novo defeito de cálculo presumido.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "140-iss-currency",
+          "path": "storage/app/phase4b-currency140-development-20261027/currency140-integration-scoped-validation.json",
+          "sha256": "257490e0dcef384a140ec367eff33922ae14f768481977a2a69f74d951138f18",
+          "status": "CURRENCY140_ISS_PRICE_INTEGRATED_CLI_AND_DIRECTED_VALIDATED_NOT_COMPLETE_IMPORT_DOCUMENT"
+        },
+        {
+          "package": "141-import-monetary",
+          "path": "storage/app/phase4b-import141-development-20261027/import141-integration-scoped-validation.json",
+          "sha256": "ca4e3050dd4f61033dffa964acb4e043e80ac876ec8742dd636dfe6809d63307",
+          "status": "IMPORT141_EXPLICIT_CLASSIFICATION_AND_NORMALIZED_INVOICE_MONETARY_RECONCILIATION_SCOPED_VALIDATED"
+        }
+      ],
+      "baseline_gap": "141 integra classificacao explicita de consultoria importada e conciliacao de fatura normalizada comISS/RTC e exclusoes declaradas. Documento completo,camposNT009 ausentes noXSD observado,demais servicos/eventos/moedas/perfis e requisitos originais permanecem pendentes;0/8 grupos encerrados.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.9",
+      "group": "4B.2",
+      "requirement": "exportação",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Qualificação de consumo no exterior e exportação parcial; resultados ISS96 e par135 possuem testes.",
+          "remaining": "Reexecutar e classificar cada resultado atual; concluir demais serviços, base/preço ISS e câmbio sem generalizar o perfil parcial.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Do not call every old fixture refusal an implementation defect. Complete current partial document pair,ISS classification/base/FX and other export service profiles.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.10",
+      "group": "4B.2",
+      "requirement": "estabelecimento",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "A151 seleciona estabelecimento efetivamente atendido; A152 exige matriz única e cobertura de centralização.",
+          "remaining": "PF empresarial/estabelecimento e cenários restantes ainda abertos; integração real do predicado externo de crédito pertence a B.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B26-B29",
+          "path": "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+          "sha256": "365bd6bed10c6180904d227a51b2557a4260a1141d6f37b0a4687fef2f13cd20",
+          "status": "B26_B29_DOMICILE_NONONEROUS_PLATFORM_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Equality of claims is not establishment authentication or historic territorial existence;complete source/operation-bound evidence.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.11",
+      "group": "4B.2",
+      "requirement": "residência/domicílio",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "A153 comprova habitação/relevância, critérios escolhidos e alternativa com impossibilidade; A151–152 tratam entidades.",
+          "remaining": "H5 inclui os vínculos A151–A153 ausentes neste ID do índice A144. Restam PF empresarial e integração; A154 continua pausada.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B26-B29",
+          "path": "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+          "sha256": "365bd6bed10c6180904d227a51b2557a4260a1141d6f37b0a4687fef2f13cd20",
+          "status": "B26_B29_DOMICILE_NONONEROUS_PLATFORM_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Tie domicile to actual parties/establishment and dates;official geography does not establish taxpayer domicile.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.2.12",
+      "group": "4B.2",
+      "requirement": "intermediários e plataformas quando aplicável",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Plataforma distingue exclusão payment-only, gatilhos domésticos e fornecedor estrangeiro.",
+          "remaining": "Concluir opções art22 e consequências de pagamento/documento; referência declarada não autentica notificação oficial.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B26-B29",
+          "path": "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+          "sha256": "365bd6bed10c6180904d227a51b2557a4260a1141d6f37b0a4687fef2f13cd20",
+          "status": "B26_B29_DOMICILE_NONONEROUS_PLATFORM_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "This cut did not freshly execute the platform-specific corpus. Qualification ID/booleans are not authenticated government notice;complete applicable material/document paths.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.1",
+      "group": "4B.3",
+      "requirement": "fornecedor",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Papéis do fornecedor preservados; A148 recusa identidades/referências inexatas.",
+          "remaining": "Qualificar condição de contribuinte/regime nas famílias restantes, sem tratar ID como situação cadastral.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Qualify taxpayer status and registration materially,non-taxpayer entities and remaining regime families;an internal identity is not authenticated registration.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.2",
+      "group": "4B.3",
+      "requirement": "adquirente",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Adquirente separado do destinatário e pagador elegível; domicílio A151–153 e guardas A148.",
+          "remaining": "Exercício da opção, vínculos operação/débito e liquidação faltam; qualificação local não comprova pagamento.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B25",
+          "path": "storage/app/phase4b-b25-development-20261105/b25-scoped-validation.json",
+          "sha256": "a70db83391a214a2b7a9756117e2291541cbaed5146cda2fc97928c14d70f178",
+          "status": "B25_SETTLEMENT_CYCLE_ACTIVATED_IN_VERSIONED_BUNDLE"
+        },
+        {
+          "package": "B33",
+          "path": "storage/app/phase4b-b33-development-20261106/b33-scoped-validation.json",
+          "sha256": "280152362c39465f49df052ed2d776d3a8ee5c47472cacbd1c504241dfec113f",
+          "status": "B33_A157_ACTIVATED_B25_WITHDRAWN"
+        }
+      ],
+      "baseline_gap": "Concluir o exercício da opção de recolhimento,vínculo operação/débito e consequências de liquidação nos perfis exigidos. A referência de fundamento estrutural já foi corrigida,sem comprovar extinção.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.3",
+      "group": "4B.3",
+      "requirement": "destinatário",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "129 usa destinatário BR quando cabível; A153 exige critérios próprios quando distinto do adquirente.",
+          "remaining": "Integrar domicílio/identidade material por família; endereço do arranjo do adquirente não substitui destinatário.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete material identity,domicile and location proof across required profiles;identifier fields alone do not prove domicile.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.4",
+      "group": "4B.3",
+      "requirement": "importador",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Importador vinculado a adquirente/destinatário e bases art64§5 V/VI; inconsistências recusadas.",
+          "remaining": "Demais condições materiais e perfis de importação faltam; crédito/documento externos ficam separados no handoff.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "129",
+          "path": "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
+          "sha256": "6739e92d0e62b445ca107e93fdb18f4afd31bda39f910b09159eb86726e71913",
+          "status": "SCOPED129_VALIDATED_NOT_FULL_PHASE_ACCEPTANCE"
+        }
+      ],
+      "baseline_gap": "129 vincula o contribuinte adquirenteBR ou destinatárioBR ao importador e valida referências específicas art64§5ºV/VI. Restam cadastro/condições materiais,documentos completos,crédito e perfis/bases/alíquotas exigidos;sem inventar parâmetros indisponíveis.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.5",
+      "group": "4B.3",
+      "requirement": "plataforma",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Responsabilidade de plataforma qualificada separada do contribuinte na importação.",
+          "remaining": "Opções art22, diferenças de referência e consequências da cobrança/documentos ainda incompletas.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B26-B29",
+          "path": "storage/app/phase4b-b29-development-20261105/b29-scoped-validation.json",
+          "sha256": "365bd6bed10c6180904d227a51b2557a4260a1141d6f37b0a4687fef2f13cd20",
+          "status": "B26_B29_DOMICILE_NONONEROUS_PLATFORM_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Complete article22 options,document/payment consequences,reference-rate differences and material authentication;regulation is not proof of remote deployment.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.6",
+      "group": "4B.3",
+      "requirement": "responsável tributário",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "129 distingue solidariedade estrangeira e plataforma com fundamento explícito.",
+          "remaining": "Demais hipóteses de responsabilidade e ciclo de obrigação até pagamento/extinção precisam contratos/provas.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "129",
+          "path": "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
+          "sha256": "6739e92d0e62b445ca107e93fdb18f4afd31bda39f910b09159eb86726e71913",
+          "status": "SCOPED129_VALIDATED_NOT_FULL_PHASE_ACCEPTANCE"
+        },
+        {
+          "package": "B25",
+          "path": "storage/app/phase4b-b25-development-20261105/b25-scoped-validation.json",
+          "sha256": "a70db83391a214a2b7a9756117e2291541cbaed5146cda2fc97928c14d70f178",
+          "status": "B25_SETTLEMENT_CYCLE_ACTIVATED_IN_VERSIONED_BUNDLE"
+        }
+      ],
+      "baseline_gap": "129 separa contribuinte e responsabilidade solidária condicional do fornecedor estrangeiro,com plataforma previamente qualificada preservada. Concluir as demais hipóteses/condições,efeitos documentais e de pagamento;identificação e fundamento não provam extinção.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.7",
+      "group": "4B.3",
+      "requirement": "split payment",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Ciclo114 e A148 bloqueiam split sem implantação e referências qualificadas.",
+          "remaining": "Lacuna funcional: segregação padrão/simplificada, parcelas e reconciliação débito/liquidação. Guardas não são implementação desse ciclo.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B25",
+          "path": "storage/app/phase4b-b25-development-20261105/b25-scoped-validation.json",
+          "sha256": "a70db83391a214a2b7a9756117e2291541cbaed5146cda2fc97928c14d70f178",
+          "status": "B25_SETTLEMENT_CYCLE_ACTIVATED_IN_VERSIONED_BUNDLE"
+        },
+        {
+          "package": "B33",
+          "path": "storage/app/phase4b-b33-development-20261106/b33-scoped-validation.json",
+          "sha256": "280152362c39465f49df052ed2d776d3a8ee5c47472cacbd1c504241dfec113f",
+          "status": "B33_A157_ACTIVATED_B25_WITHDRAWN"
+        },
+        {
+          "package": "B34",
+          "path": "storage/app/phase4b-b34-development-20261106/b34-scoped-validation.json",
+          "sha256": "ff5556a7ac5950d522015145df79e2e98b01f458535cbbabbada2dbdf358f036",
+          "status": "B34_A158_SPLIT_LEDGER_INTEGRATED"
+        }
+      ],
+      "baseline_gap": "Complete standard/simplified segregation,installments,operation/debt links and settlement reconciliation with qualified deployment/parameters;do not turn eligibility into extinction.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": [
+        {
+          "task": "A159",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A159.json",
+          "scope": "future installment schedule with CLI and installed bundle;276/1066 host directed validation"
+        },
+        {
+          "task": "A160",
+          "scope": "fiscal revisions and explicit resets qualified;317/1149 directed regression",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A160.json"
+        },
+        {
+          "task": "A161",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A161.json",
+          "scope": "multiple boleto payments and payment-specific reports;installed bundle,CLI,engine and local directed validation"
+        },
+        {
+          "task": "A162",
+          "scope": "legal simplified split calculation and priority period ledger;installed bundle,facts,questions,CLI,engine,449/1419 directed validation",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A162.json"
+        },
+        {
+          "task": "A163",
+          "scope": "purpose-qualified daily calendars and three bound clocks;514/1569 cumulative tests;explicit request coverage only",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A163.json"
+        },
+        {
+          "task": "A164",
+          "scope": "IBS/CBS fallback/acquirer refund clocks and monetary allocations over replayed collection contexts;557/1689 cumulative tests",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A164.json"
+        }
+      ],
+      "current_known_remaining": [
+        "Qualified official normal-expedient calendars;integrationA164.I1",
+        "Final functional scope audit;operational ANS exclusions remain for split"
+      ],
+      "external_dependencies": [
+        "Qualify official percentage/rounding/applicability,mandatory act and simplified deployment from primary sources before official use;empty catalogs are guarded.",
+        "Qualify official calendars separately by purpose,tax,authority and coverage;current catalog empty.",
+        "docs/fiscal/agent-a/20261123/integration-dependencies-A164.json"
+      ]
+    },
+    {
+      "id": "4B.3.8",
+      "group": "4B.3",
+      "requirement": "recolhimento pelo adquirente",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Elegibilidade art36 e instrumento incompatível com split qualificados com referências estritas.",
+          "remaining": "Lacuna funcional: exercício da opção e vínculo comprovável do pagamento com débito/extinção.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B25",
+          "path": "storage/app/phase4b-b25-development-20261105/b25-scoped-validation.json",
+          "sha256": "a70db83391a214a2b7a9756117e2291541cbaed5146cda2fc97928c14d70f178",
+          "status": "B25_SETTLEMENT_CYCLE_ACTIVATED_IN_VERSIONED_BUNDLE"
+        },
+        {
+          "package": "B33",
+          "path": "storage/app/phase4b-b33-development-20261106/b33-scoped-validation.json",
+          "sha256": "280152362c39465f49df052ed2d776d3a8ee5c47472cacbd1c504241dfec113f",
+          "status": "B33_A157_ACTIVATED_B25_WITHDRAWN"
+        }
+      ],
+      "baseline_gap": "Concluir o exercício da opção de recolhimento,vínculo operação/débito e consequências de liquidação nos perfis exigidos. A referência de fundamento estrutural já foi corrigida,sem comprovar extinção.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": [
+        {
+          "task": "A164",
+          "scope": "IBS/CBS fallback/acquirer refund clocks and monetary allocations over replayed collection contexts;557/1689 cumulative tests",
+          "receipt": "docs/fiscal/agent-a/20261123/validation-A164.json"
+        }
+      ],
+      "current_known_remaining": [
+        "Qualified official normal-expedient calendars;integrationA164.I1",
+        "Final functional scope audit;operational ANS exclusions remain for split"
+      ],
+      "external_dependencies": [
+        "docs/fiscal/agent-a/20261123/integration-dependencies-A164.json"
+      ]
+    },
+    {
+      "id": "4B.3.9",
+      "group": "4B.3",
+      "requirement": "regimes públicos ou especiais",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Compra pública e opção regular Simples possuem componentes; A152 exige regime regular na centralização.",
+          "remaining": "Consórcio público, perfis especiais exigidos e integração Simples/MEI continuam abertos; não delegar escopo mínimo à fase5.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete public-law consortium and required special profiles,qualified redactor/destination parameters and Simples/MEI/document integration;do not defer minimum4B scope to phase5.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.3.10",
+      "group": "4B.3",
+      "requirement": "identificação separada de contribuinte e responsável",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Contribuinte, responsável e pagador elegível são campos distintos em importação/plataforma/cobrança.",
+          "remaining": "Comprovar consistência nos demais perfis e eventos; ciclo de extinção ainda não entregue.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "129",
+          "path": "storage/app/phase4b-import129-development-20261022/import129-scoped-validation.json",
+          "sha256": "6739e92d0e62b445ca107e93fdb18f4afd31bda39f910b09159eb86726e71913",
+          "status": "SCOPED129_VALIDATED_NOT_FULL_PHASE_ACCEPTANCE"
+        }
+      ],
+      "baseline_gap": "129 integra papéis separados na importação digital qualificada,com recusa de contribuinte declarado conflitante e fundamento incompatível. Completar documentos,condições materiais e consistência de papéis nos demais perfis;rota declarada não é pagamento efetivo.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.1",
+      "group": "4B.4",
+      "requirement": "base de cálculo",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Base ordinária qualifica ajustes e importação141; composição A145/A146 preserva bases por fornecimento.",
+          "remaining": "Demais regimes e eventos precisam bases próprias. Par143 delimitado não encerra requisito.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "135-own",
+          "path": "storage/app/phase4b-own135-development-20261023/own135-local-validation.json",
+          "sha256": "614b762403d90705e5dd0a763d64ebebc06cd6a9431ac621a2976593abf6ec2a",
+          "status": "LOCAL_SOFTWARE_OWN_REVENUE_V2_VALIDATED_NOT_FULL_PAIR"
+        },
+        {
+          "package": "140-iss-currency",
+          "path": "storage/app/phase4b-currency140-development-20261027/currency140-integration-scoped-validation.json",
+          "sha256": "257490e0dcef384a140ec367eff33922ae14f768481977a2a69f74d951138f18",
+          "status": "CURRENCY140_ISS_PRICE_INTEGRATED_CLI_AND_DIRECTED_VALIDATED_NOT_COMPLETE_IMPORT_DOCUMENT"
+        },
+        {
+          "package": "141-import-monetary",
+          "path": "storage/app/phase4b-import141-development-20261027/import141-integration-scoped-validation.json",
+          "sha256": "ca4e3050dd4f61033dffa964acb4e043e80ac876ec8742dd636dfe6809d63307",
+          "status": "IMPORT141_EXPLICIT_CLASSIFICATION_AND_NORMALIZED_INVOICE_MONETARY_RECONCILIATION_SCOPED_VALIDATED"
+        },
+        {
+          "package": "142-import-nt009-fields",
+          "path": "storage/app/phase4b-import142-development-20261027/import142-integration-scoped-validation.json",
+          "sha256": "50b2a42c65b236ecab41da4dee6cd1f2acf03e54700214043380336276c62c37",
+          "status": "IMPORT142_NT009_FIELD_MODEL_AND_REAL_OBSERVED_SCHEMA_REFUSAL_SCOPED_VALIDATED"
+        },
+        {
+          "package": "143-complete-local-import-dps-profile",
+          "path": "storage/app/phase4b-import143-development-20261027/import143-integration-scoped-validation.json",
+          "sha256": "2282f0128916d13d54f26ba70d701e5196893e35701c9649ded7d5f93e4f37d4",
+          "status": "IMPORT143_COMPLETE_LOCAL_DPS_PROFILE_ASSEMBLED_DIRECTED_NATIVE_AUDITED_OFFICIAL_ACCEPTANCE_REFUSED"
+        },
+        {
+          "package": "B30-B31",
+          "path": "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+          "sha256": "b3b3a51b9efbc66ff57c3044ed9fda443d87dcc77fbcd06e2790d50012e971ee",
+          "status": "B30_B31_BASE_ROUNDING_IN_VERSIONED_BUNDLES"
+        },
+        {
+          "package": "B36",
+          "path": "storage/app/phase4b-b36-development-20261106/b36-scoped-validation.json",
+          "sha256": "1f1932ffd6fdf16ea4c304a608ab5fd2c5dd9c6a48fda5ffe657486d42da4de2",
+          "status": "B36_TRAVEL_AGENCY_REGIME_MATERIALIZED"
+        },
+        {
+          "package": "B37",
+          "path": "storage/app/phase4b-b37-development-20261106/b37-scoped-validation.json",
+          "sha256": "591cf7cc78acc88008515dde2af16759a8ce0e3a8f46afeedf01e9ca3507f5dd",
+          "status": "B37_REAL_ESTATE_REGIME_MATERIALIZED"
+        }
+      ],
+      "baseline_gap": "143 montaDPS local completa do perfil de importacao141/142 com identidade/partes/endereco,camposNT009 e valores declarados reconciliados. XSD oficial observado rejeita estruturaNT009 eRN230 E9996 rejeita emitente tomador,apesar da exigenciaRN231 E0027. Concluir compatibilidade/aplicabilidade,demais perfis/qualificacoes e requisitos originais;sem encerramento formal ou producao.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.2",
+      "group": "4B.4",
+      "requirement": "exclusões",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Exclusões documentadas e janela135; tipos/linhas/identidades estritos119.",
+          "remaining": "Qualificação material por regime/perfil/evento ainda incompleta; descontos/reembolsos não são exclusão irrestrita.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "135-own",
+          "path": "storage/app/phase4b-own135-development-20261023/own135-local-validation.json",
+          "sha256": "614b762403d90705e5dd0a763d64ebebc06cd6a9431ac621a2976593abf6ec2a",
+          "status": "LOCAL_SOFTWARE_OWN_REVENUE_V2_VALIDATED_NOT_FULL_PAIR"
+        },
+        {
+          "package": "135-own-bridge",
+          "path": "storage/app/phase4b-own-bridge135-development-20261023/own-bridge135-local-validation.json",
+          "sha256": "2c3245607f5ba145e3965bb25556345783831c9bea8a8d11e0d8386ab476d680",
+          "status": "LOCAL_ALL_OWN_TAX_PRICE_BRIDGE_VALIDATED_NOT_FULL_DPS"
+        },
+        {
+          "package": "135-pair",
+          "path": "storage/app/phase4b-pair135-development-20261023/pair135-full-validation.json",
+          "sha256": "8af4b36b0106aa66def73e6b401fe3f2f528a074d6bc77d7fbb6a741be8f4409",
+          "status": "PAIR135_LOCAL_CLI_AND_FULL_REGRESSION_VALIDATED_NOT_PHASE_CLOSURE"
+        },
+        {
+          "package": "136-own-federal",
+          "path": "storage/app/phase4b-own136-development-20261023/own136-integration-scoped-validation.json",
+          "sha256": "12065031acc57d93a62625610cef5f67bd5f253275e5b67f5afed048075b0a38",
+          "status": "OWN136_LOCAL_CLI_SCOPED_VALIDATED_FULL_SUITE_PENDING"
+        },
+        {
+          "package": "136-full",
+          "path": "storage/app/phase4b-own136-development-20261023/own136-full-validation.json",
+          "sha256": "67258ea37af44b7e78df2ec9221d42042de6b6d2fdc8b32d449d065d98ef3ef2",
+          "status": "OWN136_LOCAL_CLI_AND_FULL_REGRESSION_VALIDATED_NOT_PHASE_CLOSURE"
+        },
+        {
+          "package": "137-full",
+          "path": "storage/app/phase4b-retention137-development-20261023/retention137-full-validation.json",
+          "sha256": "84ad1d283f5d575482984f6e3b302be52f662c96b4dd3f42a90cc1af34b05542",
+          "status": "RETENTION137_LOCAL_CLI_AND_FULL_REGRESSION_VALIDATED_NOT_PHASE_CLOSURE"
+        },
+        {
+          "package": "139-producer",
+          "path": "storage/app/phase4b-public139-development-20261026/public139-integration-scoped-validation.json",
+          "sha256": "f433b34cf08355ca666982a6602f86562f9a8bf11c11a6e803274109ae128ce3",
+          "status": "PUBLIC139_PRODUCER_AND_QUESTIONS_INTEGRATED_PAIR_COORDINATOR_PENDING"
+        },
+        {
+          "package": "139-pair",
+          "path": "storage/app/phase4b-public139-development-20261026/public139-pair-integration-scoped-validation.json",
+          "sha256": "38975a4e969afe345b627c32e17279a282b9687060e870474f2b2d5cdc592097",
+          "status": "PUBLIC139_COMPLETE_PAIR_CLI_AND_DIRECTED_REGRESSION_VALIDATED_NOT_PHASE_CLOSURE"
+        },
+        {
+          "package": "B30-B31",
+          "path": "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+          "sha256": "b3b3a51b9efbc66ff57c3044ed9fda443d87dcc77fbcd06e2790d50012e971ee",
+          "status": "B30_B31_BASE_ROUNDING_IN_VERSIONED_BUNDLES"
+        },
+        {
+          "package": "B32",
+          "path": "storage/app/phase4b-b32-development-20261105/b32-scoped-validation.json",
+          "sha256": "38915cf623ceb27c2c097267092719af50e0e70cf063ded2c4d8b9583c133c51",
+          "status": "B32_TAX_INCLUSIVE_PRICE_IN_VERSIONED_BUNDLE"
+        }
+      ],
+      "baseline_gap": "139 integra cinco perfis públicos de retenção por documento,perguntaSiafi e alternativas de componente,no parBRL completo com próprios preservados. Concluir demais perfis/regimes,eventos,câmbio,exclusões materiais e documentos obrigatórios do escopo original;produção separada.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.3",
+      "group": "4B.4",
+      "requirement": "descontos",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Desconto incondicional exige prova; desconto condicionado não reduz automaticamente a base.",
+          "remaining": "Completar espécies/perfis e compatibilidade com preço documental ISS por evento.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B30-B31",
+          "path": "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+          "sha256": "b3b3a51b9efbc66ff57c3044ed9fda443d87dcc77fbcd06e2790d50012e971ee",
+          "status": "B30_B31_BASE_ROUNDING_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Concluir descontos por espécie/perfil e preço/baseISS documental,sem subtrair desconto condicionado indevidamente. Evidências vazias e linhas ambíguas já são recusadas.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.4",
+      "group": "4B.4",
+      "requirement": "acréscimos",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Acréscimos com decimal exato, referência material e linhas únicas119.",
+          "remaining": "Ramos restantes/eventos ainda não têm prova completa do vínculo e inclusão de acréscimos.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B30-B31",
+          "path": "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+          "sha256": "b3b3a51b9efbc66ff57c3044ed9fda443d87dcc77fbcd06e2790d50012e971ee",
+          "status": "B30_B31_BASE_ROUNDING_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Concluir acréscimos nos perfis restantes e seus vínculos materiais. Booleanos,floats e tokens inexatos não são mais convertidos em valores monetários.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.5",
+      "group": "4B.4",
+      "requirement": "reembolsos",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Reembolso exige terceiro/documento/evidência; entradas vazias e monetários inexatos recusados.",
+          "remaining": "Qualificação causal de cada espécie/perfil não é provada só pela presença dos identificadores.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B30-B31",
+          "path": "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+          "sha256": "b3b3a51b9efbc66ff57c3044ed9fda443d87dcc77fbcd06e2790d50012e971ee",
+          "status": "B30_B31_BASE_ROUNDING_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Concluir a qualificação causal/documental de reembolsos por perfil. Identificadores vazios de terceiro/documento/evidência já são recusados.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.6",
+      "group": "4B.4",
+      "requirement": "operações combinadas",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "A145/A146 tratam independentes e principal/acessório sem dupla tributação ou preço inventado.",
+          "remaining": "Perfis importação/exportação/eventos aplicáveis e projeção de B faltam; componente doméstico BRL não é alcance universal.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B41",
+          "path": "storage/app/phase4b-b41-development-20261106/b41-scoped-validation.json",
+          "sha256": "1f3750896fdcfad195512aa55deba00e64a578dc7b983e6837ff51433001f2ca",
+          "status": "B41_COMBINED_REGIME_SUPPLIES"
+        }
+      ],
+      "baseline_gap": "Demonstrate multiple service/supply/profile allocation and legal treatment;do not substitute multiple adjustments for this requirement.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.7",
+      "group": "4B.4",
+      "requirement": "alíquotas padrão",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Catálogo temporal seleciona taxas por tributo/local/data/conhecimento e recusa parâmetro não comprovado.",
+          "remaining": "Demais períodos/jurisdições dependem de parâmetros oficiais; completar ramos sem inventar taxa futura.",
+          "A155_touches": true,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Qualify remaining periods/jurisdictions with official parameters;never invent future rates.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.8",
+      "group": "4B.4",
+      "requirement": "alíquotas reduzidas",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Profissional e anexo têm qualificadores independentes da classificação; teste integrado existe.",
+          "remaining": "Benefícios/perfis restantes precisam materialidade e incidência temporal; não generalizar redução de uma profissão.",
+          "A155_touches": true,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B35",
+          "path": "storage/app/phase4b-b35-development-20261106/b35-scoped-validation.json",
+          "sha256": "bc4f1bdc04f2ee2a17418f76ab6819e228d0734bd9b9f521d7cbf8a347c46516",
+          "status": "B35_HOSPITALITY_REGIME_MATERIALIZED"
+        }
+      ],
+      "baseline_gap": "Complete remaining benefit/profile applicability and evidence;one profession is not universal reduced-rate coverage.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.9",
+      "group": "4B.4",
+      "requirement": "redução de base",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "NAO_INICIADO_OU_NAO_COMPROVADO",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "LACUNA_REAL",
+          "observed_scope": "FinancialBaseEngine deduz despesas elegíveis; isso não comprova benefício de redução de base.",
+          "remaining": "Nenhum contrato específico de redução legal de base identificado no módulo RTC inspecionado. Qualificar hipótese oficial e implementar prova própria.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B24",
+          "path": "storage/app/phase4b-b24-development-20261105/b24-scoped-validation.json",
+          "sha256": "84bcee65a792b6540844aadc1c5decb91b8a91bb029aa675cc6d2fa373454eb4",
+          "status": "B24_A156_H6_H7_ACTIVATED_IN_VERSIONED_BUNDLE"
+        }
+      ],
+      "baseline_gap": "Implement/qualify legally applicable base-reduction contracts and their proof in required families,without inventing benefits.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.10",
+      "group": "4B.4",
+      "requirement": "regimes específicos",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Qualificador financeiro e bases192/193, débitos e testes de escopo integrado estão presentes.",
+          "remaining": "Confirmar resultado corrente do runner antes de repetir lacuna histórica; famílias específicas restantes e integração final não completas.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B35",
+          "path": "storage/app/phase4b-b35-development-20261106/b35-scoped-validation.json",
+          "sha256": "bc4f1bdc04f2ee2a17418f76ab6819e228d0734bd9b9f521d7cbf8a347c46516",
+          "status": "B35_HOSPITALITY_REGIME_MATERIALIZED"
+        },
+        {
+          "package": "B36",
+          "path": "storage/app/phase4b-b36-development-20261106/b36-scoped-validation.json",
+          "sha256": "1f1932ffd6fdf16ea4c304a608ab5fd2c5dd9c6a48fda5ffe657486d42da4de2",
+          "status": "B36_TRAVEL_AGENCY_REGIME_MATERIALIZED"
+        },
+        {
+          "package": "B37",
+          "path": "storage/app/phase4b-b37-development-20261106/b37-scoped-validation.json",
+          "sha256": "591cf7cc78acc88008515dde2af16759a8ce0e3a8f46afeedf01e9ca3507f5dd",
+          "status": "B37_REAL_ESTATE_REGIME_MATERIALIZED"
+        },
+        {
+          "package": "B38",
+          "path": "storage/app/phase4b-b38-development-20261106/b38-scoped-validation.json",
+          "sha256": "a535969c8c35c8fa176a380b7340e0f1c4b0c2132df407ddcc72bf42055b4b69",
+          "status": "B38_HEALTH_PLAN_INTERMEDIATION_MATERIALIZED"
+        },
+        {
+          "package": "B40",
+          "path": "storage/app/phase4b-b40-development-20261106/b40-scoped-validation.json",
+          "sha256": "203b7c924f4e61eecdb2c993177942e93d58b45258b74b8699d8c819ecd3baa3",
+          "status": "B40_PERIOD_REGIMES_ASSESSED"
+        }
+      ],
+      "baseline_gap": "Complete required specific regimes and their integration;do not claim the integrated runner reached RTC for this fixture.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.11",
+      "group": "4B.4",
+      "requirement": "arredondamento",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Decimais exatos119, frações A150 e arredondamento financeiro por componente, inclusive meio centavo.",
+          "remaining": "Matriz por moeda/perfil/evento ainda incompleta; divisão territorial exata não prova arredondamento monetário.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [
+        {
+          "package": "B30-B31",
+          "path": "storage/app/phase4b-b31-development-20261105/b31-scoped-validation.json",
+          "sha256": "b3b3a51b9efbc66ff57c3044ed9fda443d87dcc77fbcd06e2790d50012e971ee",
+          "status": "B30_B31_BASE_ROUNDING_IN_VERSIONED_BUNDLES"
+        }
+      ],
+      "baseline_gap": "Concluir a matriz de arredondamento por moeda,perfil e período. Tipos monetários inexatos já são recusados,sem reescrever o histórico.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.12",
+      "group": "4B.4",
+      "requirement": "IBS estadual e municipal separados",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+          "observed_scope": "Campos IBS estadual/municipal separados; composições A145 e territorial A150 preservam separação.",
+          "remaining": "Faltam casos materiais municipais não zero e períodos/jurisdições qualificados; não substituir por taxa futura sintética.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete qualified nonzero municipal/jurisdiction/date cases,without inferred parameters.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.13",
+      "group": "4B.4",
+      "requirement": "CBS separada",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "IMPLEMENTADO_SEM_EVIDENCIA_INTEGRAL",
+          "observed_scope": "CBS preservada separadamente em cálculo, composição e débitos financeiros.",
+          "remaining": "Prova integral de benefícios/regimes/eventos e parâmetros posteriores não concluída; efeitos de crédito pertencem a B.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Complete later rates,benefits,regimes and payment/credit effects with qualified parameters.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    },
+    {
+      "id": "4B.4.14",
+      "group": "4B.4",
+      "requirement": "memória de cálculo auditável",
+      "baseline_acceptance": {
+        "owner": "A",
+        "implementation_state": "PARCIAL",
+        "historical_state": "PARTIAL_OR_UNPROVEN_MANDATORY_SCOPE",
+        "external_dependency_state": "EVIDENCIA_A_RECEBIDA_H5_CONSOLIDADA_PELO_B",
+        "sandbox_acceptance": false,
+        "note": "Classificacao do Agente A (H5) consolidada pelo B; nao equivale a aceite integral.",
+        "a_report_h5": {
+          "classification": "PARCIAL",
+          "observed_scope": "Memórias, hashes, origem por linha e replay próprios; A153 tem oráculo independente e saídas legadas preservadas.",
+          "remaining": "Cobertura auditável por família/evento/documento restante; hashes não suprem erro de conteúdo ou ausência de cenário.",
+          "A155_touches": false,
+          "whole_item_accepted": false,
+          "source": "docs/fiscal/agent-a/20261104/requirements44-handoff-H5.json@7f7abafa1f43"
+        }
+      },
+      "baseline_evidence": [],
+      "baseline_gap": "Concluir memória e proveniência por evento/documento,com cobertura das demais famílias. Linhas indistintas já exigem referências próprias;nenhuma deduplicação silenciosa foi usada.",
+      "review_state": "CURRENT_IMPLEMENTATION_AND_FULL_SCOPE_EVIDENCE_REVIEW_PENDING",
+      "whole_item_accepted": false,
+      "current_increments": []
+    }
+  ],
+  "whole_front_complete": false,
+  "groups_closed": 0,
+  "production_ready": false,
+  "source_matrix_sha256": "6cd08aded6d83919f0b903d0a0271f215195155392b65a01578d46172ee3244d",
+  "next_package": "A165:combined import/export/event supplies per original front1 package3"
+}

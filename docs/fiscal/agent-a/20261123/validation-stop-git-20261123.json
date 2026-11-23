@@ -1,0 +1,56 @@
+{
+  "status": "DIRECTED_CHECKPOINT_VALIDATIONS_PASSED",
+  "created_at": "2026-11-23T16:09:54.743771-03:00",
+  "scope": "A159-A164 plus existing TaxPoint86/147;A165 functional scope not validated",
+  "regression": {
+    "passed": 557,
+    "assertions": 1689
+  },
+  "legacy_taxpoint": {
+    "passed": 52,
+    "assertions": 161
+  },
+  "php_syntax_files": 49,
+  "a165_functional_tests_complete": false,
+  "static_checks": {
+    "observed_at": "2026-11-23T19:08:23.920063+00:00",
+    "runs": [
+      {
+        "label": "phpstan",
+        "command": [
+          "C:/tools/php85/php.exe",
+          "-d",
+          "memory_limit=1G",
+          "vendor/bin/phpstan",
+          "analyse",
+          "--configuration=D:/ProjetoSaasExports/front1-a160-20261123-v1/phpstan-serial.neon",
+          "--memory-limit=1G",
+          "--no-progress",
+          "--error-format=raw"
+        ],
+        "exit_code": 0,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0
+      },
+      {
+        "label": "bundle-integrity",
+        "command": [
+          "C:/tools/php85/php.exe",
+          "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\verify-bundles.php"
+        ],
+        "exit_code": 0,
+        "stdout_bytes": 308,
+        "stderr_bytes": 0
+      }
+    ]
+  },
+  "full_suite_complete": false,
+  "production_ready": false,
+  "external_directory": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1",
+  "external_receipts_sha256": {
+    "validation-a164.json": "f4872e23d3e777c48d22a8d98c9ba123eefb59c3dccb1d50af108ae8decb4b50",
+    "legacy-taxpoint-run.json": "d1e70957cf7095e08f58df3bc9fae66182e031f09572979bc5f4ba84611d2960",
+    "precommit-static-and-bundles.json": "879da5d588630da301c10145469a468f9962a1190748337b824a917c3fd7de2f",
+    "php-syntax-check.json": "02ddf67d695b46b14eaf680265827fda5d05ae27230726507f3b39dfaa8b210e"
+  }
+}

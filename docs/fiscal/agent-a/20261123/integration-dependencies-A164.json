@@ -1,0 +1,21 @@
+{
+  "task": "A164",
+  "policy": "NEW_CROSS_FRONT_OUTPUT_IS_AN_EXPLICIT_INTEGRATION_TASK_NOT_A_STOP_FOR_INDEPENDENT_DEVELOPMENT",
+  "dependencies": [
+    {
+      "id": "A164.I1",
+      "status": "OPEN_EXTERNAL_CATALOG_QUALIFICATION",
+      "requested_owner_scope": "FRONT2_OFFICIAL_CATALOGS_WITH_FRONT1_ACTIVATION",
+      "required_output": "Primary-source calendar qualification for RFB/CGIBS refund acts, with applicable authority/purpose, temporal lifecycle, version, byte hashes, explicit daily coverage and evidence of geographic/administrative applicability.",
+      "consumer": "split_calendars_a163;SplitCalendar163;RefundDeadline164",
+      "integration_action": "Review scope and lifecycle,materialize an immutable own bundle with qualified rows,run positive/negative calendar and refund scenarios.No direct edit of historical bundles.",
+      "must_not_substitute": ["A financial-market banking calendar for a tax-authority normal-expedient calendar", "A procedural litigation calendar for a refund-act calendar without applicability proof", "A synthetic candidate for official publication"],
+      "current_behavior": "Official catalog empty;explicit synthetic candidate allowed only inside synthetic test envelope;no official activation fabricated.",
+      "independent_work_continues": "FRONT1_PACKAGE3_COMBINED_IMPORT_EXPORT_EVENTS"
+    }
+  ],
+  "front2_delivery_claimed": false,
+  "messages_sent": false,
+  "whole_front_complete": false,
+  "production_ready": false
+}

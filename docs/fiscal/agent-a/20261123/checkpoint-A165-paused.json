@@ -1,0 +1,76 @@
+{
+  "task": "A165",
+  "status": "PAUSED_BY_USER_IN_PROGRESS_NOT_VALIDATED",
+  "observed_at": "2026-11-23T17:26:21.863142+00:00",
+  "last_validated_delivery": "A164;557 tests/1689 assertions;PHPStan0/Pint/12 modesCLI",
+  "last_validation_receipt": "docs/fiscal/agent-a/20261123/validation-A164.json",
+  "draft_files_sha256": {
+    "app/Modules/Fiscal/ConsumptionReform/CrossBorderTaxPoint165.php": "5560493e70738f5c2981fbc273918efc52e414d4ddc73f16314fba5042da84c1",
+    "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php": "9fddf5fbba3d5b9d2e10b0c7f98b46135cb960496afd43f463d88eba331ddd51",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "ce159a688dbf3a0356dbe0f7e34192d32f8f688a6a908b7217ad21b9787766d8",
+    "app/Modules/Fiscal/ConsumptionReform/SupplyCalculation165.php": "7a58b3993869b8eb044fedb602b6d2bc2a43625188f0dae3df26507cf122e628",
+    "app/Modules/Fiscal/ConsumptionReform/CombinedOperation165.php": "b20a72a8cc8983cbd27bbcc9c4a9283559d4ec55a45507ac0cd46d19c02d542a",
+    "app/Console/Commands/AssessCombinedOperation165Command.php": "7dad233fd0f14fc91c5b91eda0c23feb18fd0215006d73f94058deb8fd12d82e",
+    "scripts/fork_phase4b_a165_combined_bundle.py": "8f1a390444316654d280c6b98ccc538307195d6221971d3705ab409290930584",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.23-a165-draft1.json": "e5a9b181d432aed6a1acf33fc335ef5f705ed406ff3da8a192a8f63f993830a6"
+  },
+  "draft_changes": [
+    "New combined operation orchestrator with per-supply RTC+integrated execution,native invoice-line conservation,BRL totals and explicit nominal vs fiscal status.",
+    "Additive cross-border tax-point entry point in TaxPointContext86;old entry point preserved.",
+    "Typed nominal adapter,CLI and own draft bundle/fact/question;not yet validated."
+  ],
+  "observed_validation": {
+    "A165_tests_run": false,
+    "last_phpstan_exit": 1,
+    "last_phpstan_log": "D:/ProjetoSaasExports/front1-a165-20261123-dev-v1/phpstan-dev1.log",
+    "last_error": "notIdentical.alwaysTrue at CombinedOperation165 line133;subsequent change requires positive document totals and checks allocation equality;not rerun."
+  },
+  "probes": "D:/ProjetoSaasExports/front1-a165-20261123-dev-v1",
+  "probe_findings": [
+    "Current import141 scenario needs domicile151 qualification before its monetary checkpoint.",
+    "Current full BRL export VALID in both runners;partial export remains documented ACTION_REQUIRED."
+  ],
+  "next_steps": [
+    "Recheck PHPStan and format new files.",
+    "Build A165 fixtures from current bundle;qualify import domicile by actual parties/destination,exercise foreign/full/partial exports and cross-border ordinary/continuous events.",
+    "Verify typed adapter field shapes,synthetic withholding,dual-runner comparison,source lifecycle,and native/BRL conservation;test missing and contradictory contexts.",
+    "Verify production-control ID used in bundle fork,then run own activation and meaningful cumulative regression.",
+    "Preserve prior contracts and all44 IDs;continue remaining original front1 packages."
+  ],
+  "active_development_process": false,
+  "whole_front_complete": false,
+  "groups_closed": 0,
+  "production_ready": false,
+  "hashes_at_original_pause": {
+    "app/Modules/Fiscal/ConsumptionReform/CrossBorderTaxPoint165.php": "5560493e70738f5c2981fbc273918efc52e414d4ddc73f16314fba5042da84c1",
+    "app/Modules/Fiscal/ConsumptionReform/TaxPointContext86.php": "bd057e634d440d6c678bb0ccda518102625d93b1d6ab12219356dbf499e1ac12",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "ce159a688dbf3a0356dbe0f7e34192d32f8f688a6a908b7217ad21b9787766d8",
+    "app/Modules/Fiscal/ConsumptionReform/SupplyCalculation165.php": "3c2ac2440ac3af712ec558701f9bac348dc8a2e475db0bd80b912284f47b6a34",
+    "app/Modules/Fiscal/ConsumptionReform/CombinedOperation165.php": "b20a72a8cc8983cbd27bbcc9c4a9283559d4ec55a45507ac0cd46d19c02d542a",
+    "app/Console/Commands/AssessCombinedOperation165Command.php": "7dad233fd0f14fc91c5b91eda0c23feb18fd0215006d73f94058deb8fd12d82e",
+    "scripts/fork_phase4b_a165_combined_bundle.py": "8f1a390444316654d280c6b98ccc538307195d6221971d3705ab409290930584",
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.23-a165-draft1.json": "e5a9b181d432aed6a1acf33fc335ef5f705ed406ff3da8a192a8f63f993830a6"
+  },
+  "precommit_safety_checks": {
+    "at": "2026-11-23T16:09:15.255603-03:00",
+    "formatting_only_after_pause": true,
+    "php_syntax_files": 49,
+    "a165_functional_tests_complete": false,
+    "prior_scope_regression": {
+      "passed": 557,
+      "assertions": 1689,
+      "receipt": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\validation-a164.json"
+    },
+    "legacy_taxpoint_regression": {
+      "passed": 52,
+      "assertions": 161,
+      "receipt": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\legacy-taxpoint-run.json"
+    },
+    "static_and_bundle_checks": {
+      "status": "PASS",
+      "receipt": "D:\\ProjetoSaasExports\\front1-stop-commit-20261123-v1\\precommit-static-and-bundles.json",
+      "phpstan_exit_code": 0,
+      "bundles_integrity_checked": 7
+    }
+  }
+}

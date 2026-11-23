@@ -1,0 +1,310 @@
+{
+  "task": "A159",
+  "created_at": "2026-11-23T11:54:50.919649+00:00",
+  "base_commit": "f8f22d867403b17f2ccf77cfd94e3317216a7924",
+  "scope": "Split schedule with not-yet-initiated future installments",
+  "environment": "HOST_PHP85_NOT_CONTAINER",
+  "full_suite_complete": false,
+  "production_ready": false,
+  "groups_closed": 0,
+  "runs": [
+    {
+      "label": "directed-tests",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "vendor/pestphp/pest/bin/pest",
+        "tests/Fiscal/Unit/SplitPayment158Test.php",
+        "tests/Fiscal/Unit/SplitTransaction158Test.php",
+        "tests/Fiscal/Unit/SplitLedger158Test.php",
+        "tests/Fiscal/Unit/SplitSchedule159Test.php",
+        "tests/Fiscal/Integration/SplitPayment158IntegrationTest.php",
+        "tests/Fiscal/Integration/SplitPaymentIntegrationB34Test.php",
+        "tests/Fiscal/Integration/HandoffActivationB34Test.php",
+        "tests/Fiscal/Integration/SplitSchedule159IntegrationTest.php",
+        "tests/Fiscal/Unit/AcquirerCollection157Test.php",
+        "tests/Fiscal/Integration/AcquirerCollection157IntegrationTest.php",
+        "tests/Fiscal/Integration/HealthPlanIntermediationB38Test.php",
+        "tests/Fiscal/Integration/TemporalMatrixB39Test.php",
+        "--compact",
+        "--colors=never"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "phpstan",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "vendor/bin/phpstan",
+        "analyse",
+        "--memory-limit=1G",
+        "--no-progress",
+        "--error-format=raw"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "pint",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "vendor/bin/pint",
+        "--test",
+        "app/Modules/Fiscal/ConsumptionReform/SplitLedger158.php",
+        "app/Modules/Fiscal/ConsumptionReform/SplitPlannedInstallment159.php",
+        "app/Modules/Fiscal/ConsumptionReform/SplitPaymentIntegrationB34.php",
+        "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php",
+        "app/Console/Commands/AssessSplitPayment158Command.php",
+        "scripts/agent_a/split159_fixture.php",
+        "tests/Fiscal/Unit/SplitSchedule159Test.php",
+        "tests/Fiscal/Integration/SplitSchedule159IntegrationTest.php"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "console-check",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "scripts/check_fiscal_console.php"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "fixture",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "-r",
+        "require 'vendor/autoload.php'; require 'scripts/agent_a/split159_fixture.php'; echo json_encode(split159Ledger(), JSON_THROW_ON_ERROR);"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "cli-first",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "artisan",
+        "fiscal:rtc:assess-split-payment",
+        "D:\\ProjetoSaasExports\\front1-a159-20261123-final-v1\\input.json",
+        "--mode=schedule"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "cli-repeat",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "artisan",
+        "fiscal:rtc:assess-split-payment",
+        "D:\\ProjetoSaasExports\\front1-a159-20261123-final-v1\\input.json",
+        "--mode=schedule"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "pass": true
+    },
+    {
+      "label": "cli-tampered",
+      "command": [
+        "C:/tools/php85/php.exe",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_mbstring.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_pdo_sqlite.dll",
+        "-d",
+        "extension=C:\\tools\\php85\\ext\\php_sqlite3.dll",
+        "-d",
+        "memory_limit=1G",
+        "artisan",
+        "fiscal:rtc:assess-split-payment",
+        "D:\\ProjetoSaasExports\\front1-a159-20261123-final-v1\\input.json",
+        "--mode=schedule"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "pass": true
+    }
+  ],
+  "cli_byte_deterministic": true,
+  "cli_replay_matches": true,
+  "decimal_oracle": [
+    {
+      "tax": "IBS",
+      "field": "allocated",
+      "expected": "30.00",
+      "actual": "30.00",
+      "pass": true
+    },
+    {
+      "tax": "IBS",
+      "field": "segregated",
+      "expected": "10.00",
+      "actual": "10.00",
+      "pass": true
+    },
+    {
+      "tax": "IBS",
+      "field": "remaining",
+      "expected": "30.00",
+      "actual": "30.00",
+      "pass": true
+    },
+    {
+      "tax": "CBS",
+      "field": "allocated",
+      "expected": "60.00",
+      "actual": "60.00",
+      "pass": true
+    },
+    {
+      "tax": "CBS",
+      "field": "segregated",
+      "expected": "20.00",
+      "actual": "20.00",
+      "pass": true
+    },
+    {
+      "tax": "CBS",
+      "field": "remaining",
+      "expected": "60.00",
+      "actual": "60.00",
+      "pass": true
+    }
+  ],
+  "runtime_hashes": {
+    "app/Modules/Fiscal/ConsumptionReform/SplitLedger158.php": "713a905fa9220a19b1355a1b8deafe497d9a80d9ba4c8bab7e53dbe9ec73605e",
+    "app/Modules/Fiscal/ConsumptionReform/SplitPlannedInstallment159.php": "95d2df3c2301b3d358c7e24eef4f24cca273da30f37a236387e0dfcebabb6bc8",
+    "app/Modules/Fiscal/ConsumptionReform/SplitPaymentIntegrationB34.php": "8ea8c0d103505898c0f1d86db517087d4f4baeaba799c2cc651b2d639714e67b",
+    "app/Modules/Fiscal/ConsumptionReform/ConsumptionReformEngine.php": "d1fec385c17f7194473214bc55cd1bd469d4ddb9c5ff8e4bb3fb7c902faee15a",
+    "app/Console/Commands/AssessSplitPayment158Command.php": "214ecd703e4ceec997560a1fff049b15e1283127dcfd0b72b4fd4831fd94a340",
+    "scripts/agent_a/split159_fixture.php": "dd9684bf60755f75097966d7a9bcbd098fd3ab23545d87e20cf4a2252fe8c442",
+    "tests/Fiscal/Unit/SplitSchedule159Test.php": "6bf25a882cb7b60503e90db420d609be46963095bca91005af9f7098472f0d3a",
+    "tests/Fiscal/Integration/SplitSchedule159IntegrationTest.php": "fa4d01668cdc568b3a14583b1b49602d19b4e335dd9c4cea84c808f92f516155"
+  },
+  "limitations": [
+    "No Docker daemon/container validation",
+    "No fiscal revision/reset lifecycle yet",
+    "No multiple payments per boleto yet",
+    "No new official deployment or simplified percentage"
+  ],
+  "directed_tests": {
+    "passed": 276,
+    "assertions": 1066,
+    "failed": 0
+  },
+  "evidence_root": "D:\\ProjetoSaasExports\\front1-a159-20261123-final-v1",
+  "console_http": {
+    "status": 200,
+    "url": "http://127.0.0.1:8091/console-fiscal/status",
+    "runtime": "PHP85_NATIVE_LOCAL_SERVER",
+    "container_checked": false
+  },
+  "official_index_observed": {
+    "url": "https://cgibs.gov.br/split-payment",
+    "date": "2026-11-23",
+    "operations": "1.0.1",
+    "times": "1.0.1",
+    "integration": "1.1.1",
+    "openapi": "1.1.1",
+    "manual_bytes_revalidated": false
+  },
+  "resource_hashes": {
+    "resources/fiscal/bundles/consumption-phase4b-2026.11.23-a159-draft1.json": "81f9694ced0f08d2061f4792afba4f4e7a25e72a105a0f5b1c9c09b95279ed9c",
+    "resources/fiscal/catalogs/rtc-codes-2026.11.23-a159-draft1.json": "564262a89757fd6fb782242854cf687b54e0829e6839d8610eca7be4d796f27e",
+    "resources/fiscal/production/phase4b-controls-2026.11.23-a159-draft1.json": "f4ac7fd7a4de145cb5976280f3fc9c7fefabb78f6ce2d84e1ff5e0cbf0f8aac6",
+    "resources/fiscal/questions/consumption-integrated-2026.11.23-a159-draft1.json": "599471ecb22a84afe24d69a8f9257da85662dc089942f101476e06290241290e"
+  },
+  "evidence_hashes": {
+    "cli-first.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cli-first.stdout.log": "26b4cef3e22bfe021a43fbd211775aae5b424e64e4c75d37df6fc36e832cfde5",
+    "cli-repeat.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cli-repeat.stdout.log": "26b4cef3e22bfe021a43fbd211775aae5b424e64e4c75d37df6fc36e832cfde5",
+    "cli-tampered.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cli-tampered.stdout.log": "1da9176d3ad0cabdaf7a80325df8b83723adcae53bb028ad6071f589388bdc15",
+    "console-check.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "console-check.stdout.log": "7ec6ef0d572458b55c8dc08ab6159947579857a396d2b50c14a9563ac8d86c8b",
+    "directed-tests.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "directed-tests.stdout.log": "5c0fda65fbdff9e6e2ae058a110308f32d1dc3d0d4be6f4b3e6b29da947b827b",
+    "fixture.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture.stdout.log": "da567fdc6366266bc96bb5d57056478a9b67a287a21f8f4265bf35922d7c5fbe",
+    "phpstan.stderr.log": "575efa8db94a1b8ca3067652967ee0fb62a123281e41aff20724e93c4b2546be",
+    "phpstan.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pint.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pint.stdout.log": "cd1a94fc2cf6a965b86e1a4809d6c7fb9148b1ee374e1010ed2ac96ff4876ec2"
+  },
+  "previous_attempts": [
+    {
+      "path": "D:/ProjetoSaasExports/front1-a159-20261123-v1/directed-tests-v1.log",
+      "result": "273 passed,1 failed writing historical B39 evidence with errno28; original restored byte for byte"
+    },
+    {
+      "path": "D:/ProjetoSaasExports/front1-a159-20261123-v1/directed-tests-v2.log",
+      "result": "274 passed/1052 assertions, before final lifecycle tests"
+    }
+  ]
+}
